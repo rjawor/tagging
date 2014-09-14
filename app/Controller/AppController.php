@@ -36,8 +36,8 @@ class AppController extends Controller {
         'Session',
         'Auth' => array(
             'loginRedirect' => array(
-                'controller' => 'posts',
-                'action' => 'index'
+                'controller' => 'pages',
+                'action' => 'display'
             ),
             'logoutRedirect' => array(
                 'controller' => 'pages',
@@ -53,6 +53,8 @@ class AppController extends Controller {
     );
 
     public function beforeFilter() {
-        $this->Auth->allow('index', 'view');
+        $this->Auth->allow('display');
+        $this->Auth->loginError = "Nieprawidłowa nazwa użytkownika lub hasło.";    
+        $this->Auth->authError = "Brak dostępu, zaloguj się!";
     }
 }

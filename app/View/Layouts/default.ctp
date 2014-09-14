@@ -14,7 +14,8 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeDescription = __d('cake_dev', 'Tagowanie tekstów hinduskich');
+$systemDescription = __d('cake_dev', 'Tagowanie tekstów hinduskich');
+$cakeDescription = __d('cake_dev', 'CakePHP');
 $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 ?>
 <!DOCTYPE html>
@@ -22,7 +23,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title>
-		<?php echo $cakeDescription ?>:
+		<?php echo $systemDescription ?>:
 		<?php echo $title_for_layout; ?>
 	</title>
 	<?php
@@ -38,7 +39,18 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 <body>
 	<div id="container">
 		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://rjawor.vm.wmi.amu.edu.pl/tagging/'); ?></h1>
+			<div style="float:right">
+			<?php
+			if (AuthComponent::user()) {
+                // The user is logged in, show the logout link
+                echo "Zalogowany jako <b>".AuthComponent::user()['username']."</b> | ".$this->Html->link('Wyloguj się', array('controller' => 'users', 'action' => 'logout'));
+            } else {
+                // The user is not logged in, show login link
+                echo "niezalogowany | ".$this->Html->link('Zaloguj się', array('controller' => 'users', 'action' => 'login'));
+            }
+            ?>
+            </div>
+			<h1><?php echo $this->Html->link($systemDescription, 'http://rjawor.vm.wmi.amu.edu.pl/tagging/'); ?></h1>
 		</div>
 		<div id="content">
 

@@ -3,11 +3,14 @@
 <?php echo $this->Form->create('User'); ?>
     <fieldset>
         <legend>
-            <?php echo __('Please enter your username and password'); ?>
+            <?php echo __('Podaj nazwę użytkownika i hasło'); ?>
         </legend>
-        <?php echo $this->Form->input('username');
-        echo $this->Form->input('password');
+        <?php echo $this->Form->input('username',  array('label' => 'Nazwa użytkownika'));
+        echo $this->Form->input('password',  array('label' => 'Hasło'));
     ?>
     </fieldset>
-<?php echo $this->Form->end(__('Login')); ?>
+<?php echo $this->Form->end(__('Zaloguj')); ?>
+
+Nie masz konta? <?php echo $this->Html->link('Zarejestruj się', array('controller' => 'users', 'action' => 'add')); ?>
+
 </div>

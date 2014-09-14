@@ -15,7 +15,7 @@ class UsersController extends AppController {
             if ($this->Auth->login()) {
                 return $this->redirect($this->Auth->redirect());
             }
-            $this->Session->setFlash(__('Invalid username or password, try again'));
+            $this->Session->setFlash(__('Błędna nazwa użytkownika lub hasło, spróbuj ponownie.'));
         }
     }
 
@@ -31,7 +31,7 @@ class UsersController extends AppController {
     public function view($id = null) {
         $this->User->id = $id;
         if (!$this->User->exists()) {
-            throw new NotFoundException(__('Invalid user'));
+            throw new NotFoundException(__('Nieznany użytkownik'));
         }
         $this->set('user', $this->User->read(null, $id));
     }
@@ -40,12 +40,12 @@ class UsersController extends AppController {
         if ($this->request->is('post')) {
             $this->User->create();
             if ($this->User->save($this->request->data)) {
-                $this->Session->setFlash(__('The user has been saved'));
+                $this->Session->setFlash(__('Użytkownik został zarejestrowany. Użyj linku "Zaloguj się".'));
                 return $this->redirect($this->Auth->redirect());
 #                return $this->redirect(array('action' => 'index'));
             }
             $this->Session->setFlash(
-                __('The user could not be saved. Please, try again.')
+                __('Błąd rejestrowania użytkownika.')
             );
         }
     }
@@ -53,15 +53,15 @@ class UsersController extends AppController {
     public function edit($id = null) {
         $this->User->id = $id;
         if (!$this->User->exists()) {
-            throw new NotFoundException(__('Invalid user'));
+            throw new NotFoundException(__('Nieprawidłowy użytkownik.'));
         }
         if ($this->request->is('post') || $this->request->is('put')) {
             if ($this->User->save($this->request->data)) {
-                $this->Session->setFlash(__('The user has been saved'));
+                $this->Session->setFlash(__('Dane użytkownika zapisane.'));
                 return $this->redirect(array('action' => 'index'));
             }
             $this->Session->setFlash(
-                __('The user could not be saved. Please, try again.')
+                __('Błąd uaktualniania danych użytkownika.')
             );
         } else {
             $this->request->data = $this->User->read(null, $id);
@@ -74,13 +74,13 @@ class UsersController extends AppController {
 
         $this->User->id = $id;
         if (!$this->User->exists()) {
-            throw new NotFoundException(__('Invalid user'));
+            throw new NotFoundException(__('Nieprawidłowy użytkownik.'));
         }
         if ($this->User->delete()) {
-            $this->Session->setFlash(__('User deleted'));
+            $this->Session->setFlash(__('Użytkownik skasowany.'));
             return $this->redirect(array('action' => 'index'));
         }
-        $this->Session->setFlash(__('User was not deleted'));
+        $this->Session->setFlash(__('Uzytkownik nie został skasowany.'));
         return $this->redirect(array('action' => 'index'));
     }
 
