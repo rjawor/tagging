@@ -13,6 +13,8 @@ class UsersController extends AppController {
     public function login() {
         if ($this->request->is('post')) {
             if ($this->Auth->login()) {
+                $this->User->id = $this->Auth->user('id');
+                $this->User->saveField('last_login', date(DATE_ATOM));
                 return $this->redirect($this->Auth->redirect());
             }
             $this->Session->setFlash(__('Błędna nazwa użytkownika lub hasło, spróbuj ponownie.'));

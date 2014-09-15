@@ -30,6 +30,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->Html->meta('icon');
 
 		echo $this->Html->css('cake.generic');
+		echo $this->Html->css('menu');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -51,6 +52,13 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
             ?>
             </div>
 			<h1><?php echo $this->Html->link($systemDescription, 'http://rjawor.vm.wmi.amu.edu.pl/tagging/'); ?></h1>
+            <div id='cssmenu'>
+                <ul>
+                    <li><a href='#'><span>Pulpit</span></a></li>
+                    <li><a href='#'><span>Dokumenty</span></a></li>
+                    <li class='last'><a href='#'><span>Konfiguracja</span></a></li>
+                </ul>
+            </div>            
 		</div>
 		<div id="content">
 

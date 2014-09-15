@@ -28,6 +28,9 @@ CREATE TABLE IF NOT EXISTS `taggingdb`.`users` (
   `password` VARCHAR(255) NULL,
   `created` DATETIME NULL,
   `role_id` INT NULL,
+  `last_login` DATETIME NULL,
+  `current_document_id` INT NULL,
+  `current_document_offset` INT NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_users_roles_idx` (`role_id` ASC),
   CONSTRAINT `fk_users_roles`
