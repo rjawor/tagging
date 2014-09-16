@@ -19,8 +19,7 @@
                 );
             ?>
         </td>
-        <td>
-        </td>
+        <td><?php echo $document['Language']['code']; ?> (<?php echo $document['Language']['description']; ?>)</td>
         <td>
         </td>
         <td>
