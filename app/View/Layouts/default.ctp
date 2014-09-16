@@ -54,8 +54,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			<h1><?php echo $this->Html->link($systemDescription, 'http://rjawor.vm.wmi.amu.edu.pl/tagging/'); ?></h1>
             <div id='cssmenu'>
                 <ul>
-                    <li><a href='#'><span>Pulpit</span></a></li>
-                    <li><a href='#'><span>Dokumenty</span></a></li>
+                    <li><a href='/tagging/dashboard'><span>Pulpit</span></a></li>
+                    <li><a href='/tagging/documents'><span>Dokumenty</span></a></li>
                     <li class='last'><a href='#'><span>Konfiguracja</span></a></li>
                 </ul>
             </div>            

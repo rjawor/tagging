@@ -42,6 +42,19 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
+-- Table `taggingdb`.`languages`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `taggingdb`.`languages` ;
+
+CREATE TABLE IF NOT EXISTS `taggingdb`.`languages` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `code` VARCHAR(10) NULL,
+  `description` TEXT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
 -- Table `taggingdb`.`documents`
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `taggingdb`.`documents` ;
@@ -50,11 +63,18 @@ CREATE TABLE IF NOT EXISTS `taggingdb`.`documents` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(70) NULL,
   `creator_id` INT NULL,
+  `language_id` INT NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_documents_users1_idx` (`creator_id` ASC),
+  INDEX `fk_documents_languages1_idx` (`language_id` ASC),
   CONSTRAINT `fk_documents_users1`
     FOREIGN KEY (`creator_id`)
     REFERENCES `taggingdb`.`users` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_documents_languages1`
+    FOREIGN KEY (`language_id`)
+    REFERENCES `taggingdb`.`languages` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
@@ -87,6 +107,8 @@ CREATE TABLE IF NOT EXISTS `taggingdb`.`words` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `sentence_id` INT NULL,
   `text` VARCHAR(255) NULL,
+  `stem` VARCHAR(255) NULL,
+  `suffix` VARCHAR(255) NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_words_sentences1_idx` (`sentence_id` ASC),
   CONSTRAINT `fk_words_sentences1`
@@ -105,7 +127,9 @@ DROP TABLE IF EXISTS `taggingdb`.`word_annotation_types` ;
 CREATE TABLE IF NOT EXISTS `taggingdb`.`word_annotation_types` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NULL,
-  `strict_choices` TINYINT(1) NULL,
+  `choices_enabled` TINYINT(1) NULL,
+  `text_enabled` TINYINT(1) NULL,
+  `description` TEXT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
@@ -118,7 +142,6 @@ DROP TABLE IF EXISTS `taggingdb`.`word_annotations` ;
 CREATE TABLE IF NOT EXISTS `taggingdb`.`word_annotations` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `text_value` VARCHAR(255) NULL,
-  `choice_value` INT NULL,
   `type_id` INT NULL,
   `word_id` INT NULL,
   PRIMARY KEY (`id`),
@@ -164,6 +187,7 @@ DROP TABLE IF EXISTS `taggingdb`.`sentence_annotation_types` ;
 CREATE TABLE IF NOT EXISTS `taggingdb`.`sentence_annotation_types` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NULL,
+  `description` TEXT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
@@ -182,6 +206,30 @@ CREATE TABLE IF NOT EXISTS `taggingdb`.`sentence_annotations` (
   CONSTRAINT `fk_sentence_annotations_sentence_annotation_types1`
     FOREIGN KEY (`type_id`)
     REFERENCES `taggingdb`.`sentence_annotation_types` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `taggingdb`.`word_annotations_has_word_annotation_type_choices`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `taggingdb`.`word_annotations_has_word_annotation_type_choices` ;
+
+CREATE TABLE IF NOT EXISTS `taggingdb`.`word_annotations_has_word_annotation_type_choices` (
+  `word_annotations_id` INT NOT NULL,
+  `word_annotation_type_choices_id` INT NOT NULL,
+  PRIMARY KEY (`word_annotations_id`, `word_annotation_type_choices_id`),
+  INDEX `fk_word_annotations_has_word_annotation_type_choices_word_a_idx` (`word_annotation_type_choices_id` ASC),
+  INDEX `fk_word_annotations_has_word_annotation_type_choices_word_a_idx1` (`word_annotations_id` ASC),
+  CONSTRAINT `fk_word_annotations_has_word_annotation_type_choices_word_ann1`
+    FOREIGN KEY (`word_annotations_id`)
+    REFERENCES `taggingdb`.`word_annotations` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_word_annotations_has_word_annotation_type_choices_word_ann2`
+    FOREIGN KEY (`word_annotation_type_choices_id`)
+    REFERENCES `taggingdb`.`word_annotation_type_choices` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
