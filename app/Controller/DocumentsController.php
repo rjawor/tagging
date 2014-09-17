@@ -4,14 +4,16 @@ class DocumentsController extends AppController {
     public $helpers = array('Html', 'Form');
 
     public function index() {
-        $this->set('documents', $this->Document->find('all', array('contain' => array('Language'))));
+        $this->Document->recursive = 0;
+        $this->set('documents', $this->Document->find('all'));
     }
     
     public function view($id = null) {
         if (!$id) {
             throw new NotFoundException(__('Nieprawidłowy identyfikator dokumentu'));
         }
-
+        
+        $this->Document->recursive = 2;
         $document = $this->Document->findById($id);
         if (!$document) {
             throw new NotFoundException(__('Nieprawidłowy dokument'));

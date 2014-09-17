@@ -2,6 +2,7 @@ SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 
+DROP SCHEMA IF EXISTS `taggingdb` ;
 CREATE SCHEMA IF NOT EXISTS `taggingdb` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci ;
 USE `taggingdb` ;
 
@@ -62,13 +63,13 @@ DROP TABLE IF EXISTS `taggingdb`.`documents` ;
 CREATE TABLE IF NOT EXISTS `taggingdb`.`documents` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(70) NULL,
-  `creator_id` INT NULL,
+  `user_id` INT NULL,
   `language_id` INT NULL,
   PRIMARY KEY (`id`),
-  INDEX `fk_documents_users1_idx` (`creator_id` ASC),
+  INDEX `fk_documents_users1_idx` (`user_id` ASC),
   INDEX `fk_documents_languages1_idx` (`language_id` ASC),
   CONSTRAINT `fk_documents_users1`
-    FOREIGN KEY (`creator_id`)
+    FOREIGN KEY (`user_id`)
     REFERENCES `taggingdb`.`users` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,

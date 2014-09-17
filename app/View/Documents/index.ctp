@@ -5,7 +5,7 @@
         <th>Nazwa</th>
         <th>Język</th>
         <th>Właściciel</th>
-        <th>Akcje</th>
+        <!--<th>Akcje</th>-->
     </tr>
 
     <?php foreach ($documents as $document): ?>
@@ -20,9 +20,8 @@
             ?>
         </td>
         <td><?php echo $document['Language']['code']; ?> (<?php echo $document['Language']['description']; ?>)</td>
-        <td>
-        </td>
-        <td>
+        <td><?php echo $document['User']['username']; ?></td>
+        <!-- <td>
             <?php
                 echo $this->Form->postLink(
                     'Delete',
@@ -35,7 +34,7 @@
                     'Edit', array('action' => 'edit', $document['Document']['id'])
                 );
             ?>
-        </td>
+        </td> -->
     </tr>
     <?php endforeach; ?>
 

@@ -1,8 +1,8 @@
 <?php
 
 class Document extends AppModel {
-    public $actsAs = array('Containable');
-    public $belongsTo = array('Language');
+    public $belongsTo = array('Language', 'User');
+    public $hasMany = array('Sentence');
 }
 
 ?>
