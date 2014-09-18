@@ -1,7 +1,9 @@
 <?php if(isset($documentWindow)) { ?>
 
-<b>
+<h1>
 here be document window
-</b>
+</h1>
+
+<?php print_r($documentWindow) ?>
 
 <?php } ?>

@@ -1,6 +1,6 @@
 <?php
 
-App::uses('AppController', 'Controller', 'User');
+App::uses('AppController', 'Controller', 'User', 'Document');
 
 class DashboardController extends AppController {
 
@@ -9,17 +9,21 @@ class DashboardController extends AppController {
 
         $currentUser = $userModel->findById($this->Auth->user('id'));
 
-        $document_id = $currentUser['User']['current_document_id'];
+        $documentId = $currentUser['User']['current_document_id'];
         $offset = $currentUser['User']['current_document_offset'];
         
         if (!$offset) {
             $offset = 0;
         }
         
-        if (!$document_id) {
+        if (!$documentId) {
             $this->Session->setFlash(__('Wybierz dokument z menu Dokumenty'));
         } else {
-            $this->set('documentWindow', 1);
+            $documentModel = ClassRegistry::init('Document');
+            $documentModel->recursive = 3;
+            
+            $documentWindow = $documentModel->findById($documentId); 
+            $this->set('documentWindow', $documentWindow);
         }
     }
     

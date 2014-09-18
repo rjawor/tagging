@@ -8,4 +8,4 @@ INSERT INTO `sentence_annotation_types` VALUES (1,'english','Translation into En
 
 INSERT INTO `languages` VALUES (1,'hi','Hindi');
 
-INSERT INTO `roles` VALUES (1,'administrator'),(2,'edytor'),(3,'czytelnik');
+INSERT INTO `roles` VALUES (1,'administrator'), (2,'edytor'), (3,'czytelnik');

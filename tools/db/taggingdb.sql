@@ -202,22 +202,29 @@ CREATE TABLE IF NOT EXISTS `taggingdb`.`sentence_annotations` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `text` TEXT NULL,
   `type_id` INT NULL,
+  `sentence_id` INT NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_sentence_annotations_sentence_annotation_types1_idx` (`type_id` ASC),
+  INDEX `fk_sentence_annotations_sentences1_idx` (`sentence_id` ASC),
   CONSTRAINT `fk_sentence_annotations_sentence_annotation_types1`
     FOREIGN KEY (`type_id`)
     REFERENCES `taggingdb`.`sentence_annotation_types` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_sentence_annotations_sentences1`
+    FOREIGN KEY (`sentence_id`)
+    REFERENCES `taggingdb`.`sentences` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `taggingdb`.`word_annotations_has_word_annotation_type_choices`
+-- Table `taggingdb`.`word_annotations_word_annotation_type_choices`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `taggingdb`.`word_annotations_has_word_annotation_type_choices` ;
+DROP TABLE IF EXISTS `taggingdb`.`word_annotations_word_annotation_type_choices` ;
 
-CREATE TABLE IF NOT EXISTS `taggingdb`.`word_annotations_has_word_annotation_type_choices` (
+CREATE TABLE IF NOT EXISTS `taggingdb`.`word_annotations_word_annotation_type_choices` (
   `word_annotations_id` INT NOT NULL,
   `word_annotation_type_choices_id` INT NOT NULL,
   PRIMARY KEY (`word_annotations_id`, `word_annotation_type_choices_id`),
