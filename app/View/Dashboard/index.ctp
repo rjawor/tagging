@@ -1,3 +1,7 @@
+<?php if(isset($documentWindow)) { ?>
+
 <b>
-here be dashboard
+here be document window
 </b>
+
+<?php } ?>

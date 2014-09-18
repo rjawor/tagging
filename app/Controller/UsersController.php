@@ -1,6 +1,7 @@
 <?php
 
 App::uses('AppController', 'Controller');
+App::uses('BlowfishPasswordHasher', 'Controller/Component/Auth');
 
 class UsersController extends AppController {
 
@@ -41,10 +42,14 @@ class UsersController extends AppController {
     public function add() {
         if ($this->request->is('post')) {
             $this->User->create();
+            if (isset($this->request->data['User']['password'])) {
+                $passwordHasher = new BlowfishPasswordHasher();
+                $this->request->data['User']['password'] = $passwordHasher->hash($this->request->data['User']['password']);
+            }
             if ($this->User->save($this->request->data)) {
-                $this->Session->setFlash(__('Użytkownik został zarejestrowany. Użyj linku "Zaloguj się".'));
+
+                $this->Session->setFlash(__('Użytkownik został zarejestrowany. Użyj linku "Zaloguj się".'), 'flashes/success');
                 return $this->redirect($this->Auth->redirect());
-#                return $this->redirect(array('action' => 'index'));
             }
             $this->Session->setFlash(
                 __('Błąd rejestrowania użytkownika.')
