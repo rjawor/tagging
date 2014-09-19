@@ -32,6 +32,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->Html->css('cake.generic');
 		echo $this->Html->css('menu');
 
+        echo $this->Html->script('jquery');
 		echo $this->Html->script('dashboard');
 
 		echo $this->fetch('meta');
@@ -39,7 +40,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->fetch('script');
 	?>
 </head>
-<body>
+<body onLoad="updateDashboard()">
 	<div id="container">
 		<div id="header">
 			<div style="float:right">

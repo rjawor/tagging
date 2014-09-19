@@ -177,7 +177,7 @@ table td.actions a {
 	padding:2px 5px;
 }
 
-.annotation_column {
+.annotation-column {
     width: 80px;
     text-align:right;
 }
@@ -190,8 +190,23 @@ table td.actions a {
     display:none;
 }
 
-.context table {
+.context div {
     display:none;
+}
+
+.clickable-image {
+    cursor:pointer;
+}
+
+
+.disabled-image {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.words-row {
+    font-weight:bold;
 }
 
 /* SQL log */
