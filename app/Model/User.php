@@ -4,8 +4,6 @@ App::uses('AppModel', 'Model');
 
 class User extends AppModel {
 
-    public $hasMany = array('Document');
-
     public $validate =
     array(
         'username' => array(

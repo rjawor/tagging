@@ -8,5 +8,5 @@ INSERT INTO `sentence_annotations` (id, text, type_id, sentence_id) VALUES (1, '
 
 INSERT INTO `word_annotations` (id, text_value, type_id, word_id) VALUES (1, 'Rajgrah', 1, 1);
 
-INSERT INTO `word_annotations_word_annotation_type_choices` VALUES (1, 4), (1, 6);
+INSERT INTO `word_annotation_type_choices_word_annotations` VALUES (1, 4), (1, 6);
 

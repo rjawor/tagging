@@ -141,7 +141,6 @@ table {
 	clear: both;
 	color: #333;
 	margin-bottom: 10px;
-	width: 100%;
 }
 th {
 	border:0;
@@ -176,6 +175,23 @@ td.actions {
 table td.actions a {
 	margin: 0px 6px;
 	padding:2px 5px;
+}
+
+.annotation_column {
+    width: 80px;
+    text-align:right;
+}
+
+.inactive {
+    display:none;
+}
+
+.active p {
+    display:none;
+}
+
+.context table {
+    display:none;
 }
 
 /* SQL log */

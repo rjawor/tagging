@@ -1,6 +1,6 @@
 <?php
 
-App::uses('AppController', 'Controller', 'User', 'Document');
+App::uses('AppController', 'Controller', 'User', 'Document', 'WordAnnotationType', 'SentenceAnnotationType');
 
 class DashboardController extends AppController {
 
@@ -19,11 +19,19 @@ class DashboardController extends AppController {
         if (!$documentId) {
             $this->Session->setFlash(__('Wybierz dokument z menu Dokumenty'));
         } else {
+            $this->set('offset', $offset);            
+            
             $documentModel = ClassRegistry::init('Document');
-            $documentModel->recursive = 3;
+            $documentModel->recursive = 4;
             
             $documentWindow = $documentModel->findById($documentId); 
             $this->set('documentWindow', $documentWindow);
+            
+            $wordAnnotationTypeModel = ClassRegistry::init('WordAnnotationType');
+            $this->set('wordAnnotationTypes', $wordAnnotationTypeModel->find('all'));            
+
+            $sentenceAnnotationTypeModel = ClassRegistry::init('SentenceAnnotationType');
+            $this->set('sentenceAnnotationTypes', $sentenceAnnotationTypeModel->find('all'));            
         }
     }
     
