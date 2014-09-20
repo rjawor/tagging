@@ -84,6 +84,15 @@ function setEdited(sentenceNumber, gridY, gridX) {
     updateSentence(sentenceNumber);
 }
 
+function getSentenceNumber() {
+    var element = document.getElementById('offset');
+    if (element != null) {
+        return parseInt(element.value);
+    } else {
+        return 0;
+    }
+}
+
 function getWordCount(sentenceNumber) {
     var element = document.getElementById('sentence'+sentenceNumber+'-word-count');
     if (element != null) {
@@ -108,6 +117,21 @@ function getGridX(sentenceNumber) {
         return parseInt(element.value);
     } else {
         return 0;
+    }
+}
+
+
+function setGridX(sentenceNumber, newValue) {
+    var element = document.getElementById('sentence'+sentenceNumber+'-grid-x');
+    if (element != null) {
+        element.value = newValue;
+    }
+}
+
+function setGridY(sentenceNumber, newValue) {
+    var element = document.getElementById('sentence'+sentenceNumber+'-grid-y');
+    if (element != null) {
+        element.value = newValue;
     }
 }
 
@@ -140,22 +164,129 @@ function setEditMode(sentenceNumber, editMode) {
     }
 }
 
+function toggleEditMode(sentenceNumber) {
+    var element = document.getElementById('sentence'+sentenceNumber+'-edit-mode');
+    if (element != null) {
+        if (element.value == "1") {
+            element.value = "0";
+        } else {
+            element.value = "1";        
+        }
+    }
+}
+
+function getWordCount(sentenceNumber) {
+    var element = document.getElementById('sentence'+sentenceNumber+'-word-count');
+    if (element != null) {
+        return parseInt(element.value);
+    } else {
+        return 0;
+    }
+}
+
+function getWordAnnotationCount(sentenceNumber) {
+    var element = document.getElementById('sentence'+sentenceNumber+'-word-annotation-count');
+    if (element != null) {
+        return parseInt(element.value);
+    } else {
+        return 0;
+    }
+}
+
+function getSentenceAnnotationCount(sentenceNumber) {
+    var element = document.getElementById('sentence'+sentenceNumber+'-sentence-annotation-count');
+    if (element != null) {
+        return parseInt(element.value);
+    } else {
+        return 0;
+    }
+}
+
+function switchSelectionLeft() {
+    var sentenceNumber = getSentenceNumber();
+    var gridX = getGridX(sentenceNumber);
+    if (gridX > 0) {
+        setGridX(sentenceNumber, gridX - 1);
+        setEditMode(sentenceNumber, false);
+        updateSentence(sentenceNumber);
+    }
+}
+
+function switchSelectionRight() {
+    var sentenceNumber = getSentenceNumber();
+    var gridX = getGridX(sentenceNumber);
+    var gridXMax = getWordCount(sentenceNumber);
+    if (gridX < gridXMax - 1) {
+        setGridX(sentenceNumber, gridX + 1);
+        setEditMode(sentenceNumber, false);
+        updateSentence(sentenceNumber);
+    }
+}
+
+function switchSelectionUp() {
+    var sentenceNumber = getSentenceNumber();
+    var gridY = getGridY(sentenceNumber);
+    if (gridY > 0) {
+        setGridY(sentenceNumber, gridY - 1);
+        setEditMode(sentenceNumber, false);
+        updateSentence(sentenceNumber);
+    }
+}
+
+function switchSelectionDown() {
+    var sentenceNumber = getSentenceNumber();
+    var gridY = getGridY(sentenceNumber);
+    var wordAnnotationCount = getWordAnnotationCount(sentenceNumber);
+    var sentenceAnnotationCount = getSentenceAnnotationCount(sentenceNumber);
+    
+    
+    if (gridY < wordAnnotationCount + sentenceAnnotationCount - 1) {
+        setGridY(sentenceNumber, gridY + 1);
+        if (gridY >= wordAnnotationCount - 1) {
+            setGridX(sentenceNumber, 0);        
+        }
+        setEditMode(sentenceNumber, false);
+        updateSentence(sentenceNumber);
+    }
+}
+
+function enterHandle() {
+    var sentenceNumber = getSentenceNumber();
+    
+    toggleEditMode(sentenceNumber);
+    updateSentence(sentenceNumber);
+}
+
+function escapeHandle() {
+    var sentenceNumber = getSentenceNumber();
+    setEditMode(sentenceNumber, false);
+    updateSentence(sentenceNumber);
+}
+
 $(document).keydown(function(e) {
     switch(e.which) {
         case 37: // left
-        alert('left');
+        switchSelectionLeft();
         break;
 
         case 38: // up
-        alert('up');
+        switchSelectionUp();
         break;
 
         case 39: // right
-        alert('right');
+        switchSelectionRight();
         break;
 
         case 40: // down
-        alert('down');
+        switchSelectionDown();
+        break;
+
+        case 13: // enter
+        enterHandle();
+        break;
+
+        case 27: // escape
+        escapeHandle();
         break;
 
         default: return; // exit this handler for other keys

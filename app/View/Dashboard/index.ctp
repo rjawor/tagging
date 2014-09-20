@@ -9,7 +9,8 @@
 <?php foreach ($documentWindow['Sentence'] as $sentence): ?>
     <span onkeydown="keyboardHandler(<?php echo $sentenceCount; ?>)" name="sentence" id="sentence<?php echo $sentenceCount; ?>">
         <input type="hidden" id="sentence<?php echo $sentenceCount; ?>-word-count" value="<?php echo count($sentence['Word']) ?>" />
-        <input type="hidden" id="sentence<?php echo $sentenceCount; ?>-annotation-count" value="<?php echo count($wordAnnotationTypes)+count($sentenceAnnotationTypes) ?>" />
+        <input type="hidden" id="sentence<?php echo $sentenceCount; ?>-word-annotation-count" value="<?php echo count($wordAnnotationTypes) + 1 ?>" />
+        <input type="hidden" id="sentence<?php echo $sentenceCount; ?>-sentence-annotation-count" value="<?php echo count($sentenceAnnotationTypes) ?>" />
         <input type="hidden" id="sentence<?php echo $sentenceCount; ?>-grid-x" value="0" />
         <input type="hidden" id="sentence<?php echo $sentenceCount; ?>-grid-y" value="0" />
         <input type="hidden" id="sentence<?php echo $sentenceCount; ?>-edit-mode" value="0" />
@@ -44,22 +45,27 @@
             ?>
 
             <table>
+                
                 <tr class="words-row">
                     <td class="annotation-column"></td>
-                    <?php foreach ($sentence['Word'] as $word): ?>
-                        <td class="normal-cell"><?php echo $word['text'] ?></td>
-                    <?php endforeach; ?>
+                    <?php
+                        $wordCount = 0;
+                        foreach ($sentence['Word'] as $word): ?>
+                        <td id="cell:<?php echo $sentenceCount.':0:'.$wordCount; ?>" class="normal-cell"><?php echo $word['text'] ?></td>
+                    <?php
+                            $wordCount++;
+                        endforeach; ?>
                 </tr>
 
                 <?php
-                    $annotationTypeCount = 0;
+                    $annotationTypeCount = 1;
                     foreach ($wordAnnotationTypes as $wordAnnotationType): ?>
                 <tr>
                     <td class="annotation-column"><?php echo $wordAnnotationType['WordAnnotationType']['name'] ?></td>
                     <?php
                         $wordCount = 0;
                         foreach ($sentence['Word'] as $word): ?>
-                        <td onDblClick="setEdited(<?php echo $sentenceCount.','.$annotationTypeCount.','.$wordCount; ?>)" onClick="setSelected(<?php echo $sentenceCount.','.$annotationTypeCount.','.$wordCount; ?>)" class="normal-cell" id="cell:<?php echo $sentenceCount.':'.$annotationTypeCount.':'.$wordCount; ?>"></td>
+                        <td onClick="setEdited(<?php echo $sentenceCount.','.$annotationTypeCount.','.$wordCount; ?>)" class="normal-cell" id="cell:<?php echo $sentenceCount.':'.$annotationTypeCount.':'.$wordCount; ?>"></td>
                     <?php
                         $wordCount++;
                         endforeach; ?>
@@ -71,7 +77,7 @@
                 <?php foreach ($sentenceAnnotationTypes as $sentenceAnnotationType): ?>
                 <tr>
                     <td class="annotation-column"><?php echo $sentenceAnnotationType['SentenceAnnotationType']['name'] ?></td>
-                    <td id="cell:<?php echo $sentenceCount.':'.$annotationTypeCount.':0'; ?>" onDblClick="setEdited(<?php echo $sentenceCount.','.$annotationTypeCount.',0'; ?>)" onClick="setSelected(<?php echo $sentenceCount.','.$annotationTypeCount.',0'; ?>)" colspan="<?php echo count($sentence['Word']) ?>"></td>
+                    <td id="cell:<?php echo $sentenceCount.':'.$annotationTypeCount.':0'; ?>" onClick="setEdited(<?php echo $sentenceCount.','.$annotationTypeCount.',0'; ?>)" colspan="<?php echo count($sentence['Word']) ?>"></td>
                 </tr>
                 <?php
                     $annotationTypeCount++;
