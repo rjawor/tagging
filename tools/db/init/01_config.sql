@@ -1,8 +1,8 @@
 SET NAMES 'utf8' COLLATE 'utf8_general_ci';
 
-INSERT INTO `word_annotation_types` VALUES (1,'glossing',1,1,'na podstawie Leipzig glossing rules'),(2,'POS',1,0,'oznaczenie części mowy'),(3,'syntax',1,0,'informacja syntaktyczna'),(4,'semantics',1,0,'informacja semantyczna'),(5,'pragmatic',1,1,'informacja pragmatyczna');
+INSERT INTO `word_annotation_types` VALUES (1,'glossing - lexeme',0,'glossing - informacja leksykalna'), (2,'glossing - grammar',1,'glossing - informacja gramatyczna'), (3,'POS',1,'oznaczenie części mowy'),(4,'syntax',1,'informacja syntaktyczna'),(5,'semantics',1,'informacja semantyczna'),(6,'pragmatic',1,'informacja pragmatyczna');
 
-INSERT INTO `word_annotation_type_choices` VALUES (1,'OBL',1),(2,'PPP',1),(3,'F',1),(4,'SG',1),(5,'PL',1),(6,'M',1),(7,'PRON',2),(8,'NOUN',2),(9,'PRNOUN',2),(10,'PREP',2),(11,'PART',2),(12,'SUBJ',3),(13,'V',3),(14,'AG',4),(15,'REC',4),(16,'TOP',5);
+INSERT INTO `word_annotation_type_choices` VALUES (1,'OBL',2),(2,'PPP',2),(3,'F',2),(4,'SG',2),(5,'PL',2),(6,'M',2),(7,'PRON',3),(8,'NOUN',3),(9,'PRNOUN',3),(10,'PREP',3),(11,'PART',3),(12,'SUBJ',4),(13,'V',4),(14,'AG',5),(15,'REC',5),(16,'TOP',6);
 
 INSERT INTO `sentence_annotation_types` VALUES (1,'english','Translation into English');
 

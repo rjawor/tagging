@@ -128,8 +128,7 @@ DROP TABLE IF EXISTS `taggingdb`.`word_annotation_types` ;
 CREATE TABLE IF NOT EXISTS `taggingdb`.`word_annotation_types` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NULL,
-  `choices_enabled` TINYINT(1) NULL,
-  `text_enabled` TINYINT(1) NULL,
+  `strict_choices` TINYINT(1) NULL,
   `description` TEXT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;

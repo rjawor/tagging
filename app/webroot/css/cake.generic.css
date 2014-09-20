@@ -209,6 +209,14 @@ table td.actions a {
     font-weight:bold;
 }
 
+td.selected {
+     border: 2px solid #274da5;
+}
+
+td.edited {
+     border: 2px solid red;
+}
+
 /* SQL log */
 .cake-sql-log {
 	background: #fff;
