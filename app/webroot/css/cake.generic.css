@@ -209,12 +209,29 @@ table td.actions a {
     font-weight:bold;
 }
 
+div[name=sentence] {
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
 td.selected {
      border: 2px solid #274da5;
 }
 
 td.edited {
      border: 2px solid red;
+}
+
+td.selected .edit-field {
+    display:none;
+}
+
+td.edited .ro-display {
+    display:none;
+}
+
+td.normal-cell .edit-field {
+    display:none;
 }
 
 /* SQL log */

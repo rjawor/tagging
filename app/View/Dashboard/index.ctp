@@ -4,10 +4,11 @@
 <br/><br/>
 
 <input id="offset" type="hidden" value="<?php echo $offset ?>" />
+<input id="document-id" type="hidden" value="<?php echo $documentWindow['Document']['id'] ?>" />
 
 <?php $sentenceCount = 0; ?>
 <?php foreach ($documentWindow['Sentence'] as $sentence): ?>
-    <span onkeydown="keyboardHandler(<?php echo $sentenceCount; ?>)" name="sentence" id="sentence<?php echo $sentenceCount; ?>">
+    <div name="sentence" id="sentence<?php echo $sentenceCount; ?>">
         <input type="hidden" id="sentence<?php echo $sentenceCount; ?>-word-count" value="<?php echo count($sentence['Word']) ?>" />
         <input type="hidden" id="sentence<?php echo $sentenceCount; ?>-word-annotation-count" value="<?php echo count($wordAnnotationTypes) + 1 ?>" />
         <input type="hidden" id="sentence<?php echo $sentenceCount; ?>-sentence-annotation-count" value="<?php echo count($sentenceAnnotationTypes) ?>" />
@@ -15,6 +16,7 @@
         <input type="hidden" id="sentence<?php echo $sentenceCount; ?>-grid-y" value="0" />
         <input type="hidden" id="sentence<?php echo $sentenceCount; ?>-edit-mode" value="0" />
         <p>
+            <?php echo ($sentenceCount+1); ?>.&nbsp;
             <?php foreach ($sentence['Word'] as $word): ?>
                 <?php echo $word['text'] ?>&nbsp;
             
@@ -24,7 +26,7 @@
             <?php 
                 $options = array("alt" => "poprzednie zdanie",
                                 "title" => "poprzednie zdanie",
-                                "onClick" => "prevSentence(".$documentWindow['Document']['id'].");");
+                                "onClick" => "prevSentence();");
                 if ($sentenceCount > 0) {
                     $options['class'] = 'clickable-image';
                 } else {
@@ -34,7 +36,7 @@
 
                 $options = array("alt" => "następne zdanie",
                                 "title" => "następne zdanie",
-                                "onClick" => "nextSentence(".$documentWindow['Document']['id'].");");
+                                "onClick" => "nextSentence();");
                                 
                 if($sentenceCount < count($documentWindow['Sentence'])-1) {
                     $options['class'] = 'clickable-image';
@@ -43,15 +45,22 @@
                 }
                 echo $this->Html->image("down.png", $options);
             ?>
-
+            <hr/>
             <table>
                 
                 <tr class="words-row">
-                    <td class="annotation-column"></td>
+                    <td class="annotation-column"><?php echo ($sentenceCount + 1)?>.</td>
                     <?php
                         $wordCount = 0;
                         foreach ($sentence['Word'] as $word): ?>
-                        <td id="cell:<?php echo $sentenceCount.':0:'.$wordCount; ?>" class="normal-cell"><?php echo $word['text'] ?></td>
+                        <td onClick="setEdited(<?php echo $sentenceCount.',0,'.$wordCount; ?>)" id="cell:<?php echo $sentenceCount.':0:'.$wordCount; ?>" class="normal-cell">
+                            <span class="ro-display">
+                                <?php echo $word['text'] ?>
+                            </span>
+                            <span class="edit-field">
+                                <input type="text" value="<?php echo $word['text'] ?>" />
+                            </span>                            
+                        </td>
                     <?php
                             $wordCount++;
                         endforeach; ?>
@@ -83,9 +92,10 @@
                     $annotationTypeCount++;
                     endforeach; ?>
             </table>
+            <hr/>
         </div>
         <?php $sentenceCount++; ?>
-    </span>
+    </div>
 <?php endforeach; ?>
 
 <?php } ?>

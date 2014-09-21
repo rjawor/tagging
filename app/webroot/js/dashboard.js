@@ -17,8 +17,9 @@ function updateDashboard() {
     }
 }
 
-function prevSentence(documentId) {
+function prevSentence() {
     var offsetElement = document.getElementById('offset');
+    var documentId = getDocumentId();
     if (offsetElement != null) {
         var offset = parseInt(offsetElement.value);
         if (offset > 0) {
@@ -32,6 +33,7 @@ function prevSentence(documentId) {
 
 function nextSentence(documentId) {
     var offsetElement = document.getElementById('offset');
+    var documentId = getDocumentId();
     if (offsetElement != null) {
         var offset = parseInt(offsetElement.value);
         var sentencesCount = document.getElementsByName('sentence').length;
@@ -54,6 +56,10 @@ function updateSentence(sentenceNumber) {
     if (activeCell != null) {
         if (getEditMode(sentenceNumber)) {
             activeCell.className = 'edited';
+            var editField = activeCell.querySelector('.edit-field>input');
+            if (editField != null) {
+                editField.focus();
+            }
         } else {
             activeCell.className = 'selected';        
         }
@@ -90,6 +96,15 @@ function getSentenceNumber() {
         return parseInt(element.value);
     } else {
         return 0;
+    }
+}
+
+function getDocumentId() {
+    var element = document.getElementById('document-id');
+    if (element != null) {
+        return parseInt(element.value);
+    } else {
+        return -1;
     }
 }
 
@@ -215,8 +230,10 @@ function switchSelectionLeft() {
 function switchSelectionRight() {
     var sentenceNumber = getSentenceNumber();
     var gridX = getGridX(sentenceNumber);
+    var gridY = getGridY(sentenceNumber);
+    var wordAnnotationCount = getWordAnnotationCount(sentenceNumber);
     var gridXMax = getWordCount(sentenceNumber);
-    if (gridX < gridXMax - 1) {
+    if (gridY < wordAnnotationCount && gridX < gridXMax - 1) {
         setGridX(sentenceNumber, gridX + 1);
         setEditMode(sentenceNumber, false);
         updateSentence(sentenceNumber);
@@ -257,39 +274,119 @@ function enterHandle() {
     updateSentence(sentenceNumber);
 }
 
+function enterEditHandle() {
+    var sentenceNumber = getSentenceNumber();
+    alert('saving word');
+    //save word
+    toggleEditMode(sentenceNumber);
+    updateSentence(sentenceNumber);
+}
+
 function escapeHandle() {
     var sentenceNumber = getSentenceNumber();
     setEditMode(sentenceNumber, false);
     updateSentence(sentenceNumber);
 }
 
-$(document).keydown(function(e) {
-    switch(e.which) {
-        case 37: // left
+function leftArrowHandle() {
+    var sentenceNumber = getSentenceNumber();
+    if (!getEditMode(sentenceNumber)) {
         switchSelectionLeft();
-        break;
-
-        case 38: // up
-        switchSelectionUp();
-        break;
-
-        case 39: // right
-        switchSelectionRight();
-        break;
-
-        case 40: // down
-        switchSelectionDown();
-        break;
-
-        case 13: // enter
-        enterHandle();
-        break;
-
-        case 27: // escape
-        escapeHandle();
-        break;
-
-        default: return; // exit this handler for other keys
     }
-    e.preventDefault(); // prevent the default action (scroll / move caret)
+}
+
+
+function rightArrowHandle() {
+    var sentenceNumber = getSentenceNumber();
+    if (!getEditMode(sentenceNumber)) {
+        switchSelectionRight();
+    }
+}
+
+function upArrowHandle() {
+    var sentenceNumber = getSentenceNumber();
+    if (!getEditMode(sentenceNumber)) {
+        switchSelectionUp();
+    }
+}
+
+function downArrowHandle() {
+    var sentenceNumber = getSentenceNumber();
+    if (!getEditMode(sentenceNumber)) {
+        switchSelectionDown();
+    }
+}
+
+function ctrlUpArrowHandle() {
+    var sentenceNumber = getSentenceNumber();
+    if (!getEditMode(sentenceNumber)) {
+        prevSentence();
+    }
+}
+
+function ctrlDownArrowHandle() {
+    var sentenceNumber = getSentenceNumber();
+    if (!getEditMode(sentenceNumber)) {
+        nextSentence();
+    }
+}
+
+$(document).keydown(function(e) {
+    var sentenceNumber = getSentenceNumber();
+    if (!getEditMode(sentenceNumber)) {
+        if (e.ctrlKey) {
+            switch(e.which) {
+                case 38:
+                    ctrlUpArrowHandle();
+                break;
+
+                case 40:
+                    ctrlDownArrowHandle();
+                break;
+
+                default: return; // exit this handler for other keys
+            }
+        } else {
+            switch(e.which) {
+                case 37:
+                    leftArrowHandle();
+                break;
+
+                case 38:
+                    upArrowHandle();
+                break;
+
+                case 39:
+                    rightArrowHandle();
+                break;
+
+                case 40:
+                    downArrowHandle();
+                break;
+
+                case 13:
+                enterHandle();
+                break;
+
+                case 27:
+                escapeHandle();
+                break;
+
+                default: return; // exit this handler for other keys
+            }
+        }
+        e.preventDefault(); // prevent the default action (scroll / move caret)
+    } else { //keys working in edit mode
+        switch(e.which) {
+            case 13:
+            enterEditHandle();
+            break;
+
+            case 27:
+            escapeHandle();
+            break;
+
+            default: return; // exit this handler for other keys
+        }    
+    }
 });

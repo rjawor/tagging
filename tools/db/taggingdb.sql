@@ -110,6 +110,7 @@ CREATE TABLE IF NOT EXISTS `taggingdb`.`words` (
   `text` VARCHAR(255) NULL,
   `stem` VARCHAR(255) NULL,
   `suffix` VARCHAR(255) NULL,
+  `splitted` TINYINT(1) NULL DEFAULT 0,
   PRIMARY KEY (`id`),
   INDEX `fk_words_sentences1_idx` (`sentence_id` ASC),
   CONSTRAINT `fk_words_sentences1`

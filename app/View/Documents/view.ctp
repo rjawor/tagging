@@ -5,6 +5,7 @@ $sentenceCounter = 0;
 foreach ($document['Sentence'] as $sentence): ?>
 
 <p>
+    <?php echo ($sentenceCounter+1); ?>.&nbsp;
     <?php echo $this->Html->image("edit.png", array(
                 "alt" => "edit",
                 'url' => array('controller' => 'dashboard', 'action' => 'setCurrentDocument', $document['Document']['id'], $sentenceCounter)
