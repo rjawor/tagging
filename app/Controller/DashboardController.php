@@ -24,15 +24,65 @@ class DashboardController extends AppController {
             $documentModel = ClassRegistry::init('Document');
             $documentModel->recursive = 4;
             
-            $documentWindow = $documentModel->findById($documentId); 
-            $this->set('documentWindow', $documentWindow);
+            $documentWindow = $documentModel->findById($documentId);
             
             $wordAnnotationTypeModel = ClassRegistry::init('WordAnnotationType');
-            $this->set('wordAnnotationTypes', $wordAnnotationTypeModel->find('all'));            
-
+            $wordAnnotationTypes = $wordAnnotationTypeModel->find('all');
+            
             $sentenceAnnotationTypeModel = ClassRegistry::init('SentenceAnnotationType');
-            $this->set('sentenceAnnotationTypes', $sentenceAnnotationTypeModel->find('all'));            
+            $sentenceAnnotationTypes = $sentenceAnnotationTypeModel->find('all');            
+
+            $sentenceIndex = 0;            
+            foreach ($documentWindow['Sentence'] as $sentence) {
+                $wordAnnotations = array();
+                
+                foreach ($wordAnnotationTypes as $wordAnnotationType) {
+                    $annotationObject = array('type' => $wordAnnotationType,
+                                              'annotations' => array()
+                                              );
+                    foreach ($sentence['Word'] as $word) {
+                        array_push($annotationObject['annotations'], $this->getWordAnnotation($word, $wordAnnotationType));
+                    }
+                    array_push($wordAnnotations, $annotationObject);
+                }
+                
+                $documentWindow['Sentence'][$sentenceIndex]['WordAnnotations'] = $wordAnnotations;
+                
+                $sentenceAnnotations = array();
+                foreach ($sentenceAnnotationTypes as $sentenceAnnotationType) {
+                    $annotationObject = array('type' => $sentenceAnnotationType,
+                                              'annotation' => $this->getSentenceAnnotation($sentence, $sentenceAnnotationType)
+                                              );
+                    array_push($sentenceAnnotations, $annotationObject);
+                }
+                
+                $documentWindow['Sentence'][$sentenceIndex]['SentenceAnnotations'] = $sentenceAnnotations;
+
+                $sentenceIndex++;
+            }
+
+            $this->set('documentWindow', $documentWindow);
+            $this->set('wordAnnotationCount', count($wordAnnotationTypes));
+            $this->set('sentenceAnnotationCount', count($sentenceAnnotationTypes));
         }
+    }
+    
+    private function getSentenceAnnotation($sentence, $sentenceAnnotationType) {
+        foreach ($sentence['SentenceAnnotation'] as $sentenceAnnotation) {
+            if ($sentenceAnnotation['type_id'] == $sentenceAnnotationType['SentenceAnnotationType']['id']) {
+                return $sentenceAnnotation;
+            }
+        }
+        return array();
+    }
+
+    private function getWordAnnotation($word, $wordAnnotationType) {
+        foreach ($word['WordAnnotation'] as $wordAnnotation) {
+            if ($wordAnnotation['type_id'] == $wordAnnotationType['WordAnnotationType']['id']) {
+                return $wordAnnotation;
+            }
+        }
+        return array();
     }
     
     public function setCurrentDocument($document_id, $offset) {
