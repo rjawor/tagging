@@ -28,7 +28,7 @@ class DashboardController extends AppController {
             
             $wordAnnotationTypeModel = ClassRegistry::init('WordAnnotationType');
             $wordAnnotationTypes = $wordAnnotationTypeModel->find('all');
-            
+         
             $sentenceAnnotationTypeModel = ClassRegistry::init('SentenceAnnotationType');
             $sentenceAnnotationTypes = $sentenceAnnotationTypeModel->find('all');            
 
@@ -64,6 +64,7 @@ class DashboardController extends AppController {
             $this->set('documentWindow', $documentWindow);
             $this->set('wordAnnotationCount', count($wordAnnotationTypes));
             $this->set('sentenceAnnotationCount', count($sentenceAnnotationTypes));
+            $this->set('hotKeys', array('q', 'w', 'e', 'r', 'a', 's', 'd', 'f', 'z', 'x', 'c', 'v'));
         }
     }
     

@@ -160,6 +160,8 @@ th a.desc:after {
 	content: ' ⇡';
 }
 table tr td {
+    line-height:200%;
+    max-width:150px;
 	padding: 6px;
 	text-align: left;
 	vertical-align: top;
@@ -231,6 +233,28 @@ td.edited .ro-display {
 }
 
 td.normal-cell .edit-field {
+    display:none;
+}
+
+.choice-available {
+    border: 1px solid #274da5;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: #FFFFFF;
+}
+
+.choice-selected {
+    border: 2px solid #274da5;
+    border-radius: 5px;
+    background-color: #EBF5FF;
+ 	padding: 2px;
+}
+
+td.normal-cell .choice-available {
+    display:none;
+}
+
+td.selected .choice-available {
     display:none;
 }
 
@@ -395,6 +419,12 @@ input[type=checkbox] {
 	margin: 0px 6px 7px 2px;
 	width: auto;
 }
+
+input[type=button] {
+    font-size:100%;
+	width: auto;
+}
+
 div.checkbox label {
 	display: inline;
 }

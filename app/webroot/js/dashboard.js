@@ -22,6 +22,7 @@ function prevSentence() {
     var documentId = getDocumentId();
     if (offsetElement != null) {
         var offset = parseInt(offsetElement.value);
+        setEditMode(offset, false);
         if (offset > 0) {
             offset--;
             offsetElement.value = offset;
@@ -37,6 +38,7 @@ function nextSentence(documentId) {
     if (offsetElement != null) {
         var offset = parseInt(offsetElement.value);
         var sentencesCount = document.getElementsByName('sentence').length;
+        setEditMode(offset, false);
         if (offset < sentencesCount - 1) {
             offset++;
             offsetElement.value = offset;
@@ -85,6 +87,7 @@ function setSelected(sentenceNumber, gridY, gridX) {
 }
 
 function setEdited(sentenceNumber, gridY, gridX) {
+    setEditMode(sentenceNumber, false); //switching off editing of current cell
     setEditMode(sentenceNumber, true);
     setGrid(sentenceNumber, gridY, gridX);
     updateSentence(sentenceNumber);
@@ -168,12 +171,17 @@ function getEditMode(sentenceNumber) {
     }
 }
 
-function setEditMode(sentenceNumber, editMode) {
+function setEditMode(sentenceNumber, editMode, preventSave) {
+    preventSave = preventSave || false;
     var element = document.getElementById('sentence'+sentenceNumber+'-edit-mode');
     if (element != null) {
         if (editMode) {
             element.value = "1";
         } else {
+            if (element.value == "1" && !preventSave) { //edit mode was switched off, but not by ESC
+                alert('saving cell');
+                //save cell
+            }
             element.value = "0";        
         }
     }
@@ -183,6 +191,8 @@ function toggleEditMode(sentenceNumber) {
     var element = document.getElementById('sentence'+sentenceNumber+'-edit-mode');
     if (element != null) {
         if (element.value == "1") {
+            alert('saving cell');
+            //save cell
             element.value = "0";
         } else {
             element.value = "1";        
@@ -274,17 +284,9 @@ function enterHandle() {
     updateSentence(sentenceNumber);
 }
 
-function enterEditHandle() {
-    var sentenceNumber = getSentenceNumber();
-    alert('saving word');
-    //save word
-    toggleEditMode(sentenceNumber);
-    updateSentence(sentenceNumber);
-}
-
 function escapeHandle() {
     var sentenceNumber = getSentenceNumber();
-    setEditMode(sentenceNumber, false);
+    setEditMode(sentenceNumber, false, true);
     updateSentence(sentenceNumber);
 }
 
@@ -319,74 +321,113 @@ function downArrowHandle() {
 
 function ctrlUpArrowHandle() {
     var sentenceNumber = getSentenceNumber();
-    if (!getEditMode(sentenceNumber)) {
-        prevSentence();
-    }
+    prevSentence();
 }
 
 function ctrlDownArrowHandle() {
     var sentenceNumber = getSentenceNumber();
-    if (!getEditMode(sentenceNumber)) {
-        nextSentence();
-    }
+    nextSentence();
+}
+
+function selectOption() {
+    alert('option selected');
+}
+
+function hotKeyHandle(number) {
+    alert('hot key pressed: '+number);
 }
 
 $(document).keydown(function(e) {
     var sentenceNumber = getSentenceNumber();
-    if (!getEditMode(sentenceNumber)) {
-        if (e.ctrlKey) {
-            switch(e.which) {
-                case 38:
-                    ctrlUpArrowHandle();
-                break;
-
-                case 40:
-                    ctrlDownArrowHandle();
-                break;
-
-                default: return; // exit this handler for other keys
-            }
-        } else {
-            switch(e.which) {
-                case 37:
-                    leftArrowHandle();
-                break;
-
-                case 38:
-                    upArrowHandle();
-                break;
-
-                case 39:
-                    rightArrowHandle();
-                break;
-
-                case 40:
-                    downArrowHandle();
-                break;
-
-                case 13:
-                enterHandle();
-                break;
-
-                case 27:
-                escapeHandle();
-                break;
-
-                default: return; // exit this handler for other keys
-            }
-        }
-        e.preventDefault(); // prevent the default action (scroll / move caret)
-    } else { //keys working in edit mode
+    if (e.ctrlKey) {
         switch(e.which) {
+            case 38:
+                ctrlUpArrowHandle();
+            break;
+
+            case 40:
+                ctrlDownArrowHandle();
+            break;
+
+            default: return; // exit this handler for other keys
+        }
+    } else {
+        switch(e.which) {
+            case 37:
+                leftArrowHandle();
+            break;
+
+            case 38:
+                upArrowHandle();
+            break;
+
+            case 39:
+                rightArrowHandle();
+            break;
+
+            case 40:
+                downArrowHandle();
+            break;
+
             case 13:
-            enterEditHandle();
+            enterHandle();
             break;
 
             case 27:
             escapeHandle();
             break;
+            
+            case 81:  //q
+            hotKeyHandle(0);
+            break;
+
+            case 87:  //w
+            hotKeyHandle(1);
+            break;
+
+            case 69:  //e
+            hotKeyHandle(2);
+            break;
+
+            case 82:  //r
+            hotKeyHandle(3);
+            break;
+
+            case 65:  //a
+            hotKeyHandle(4);
+            break;
+
+            case 83:  //s
+            hotKeyHandle(5);
+            break;
+
+            case 68:  //d
+            hotKeyHandle(6);
+            break;
+
+            case 70:  //f
+            hotKeyHandle(7);
+            break;
+
+            case 90:  //z
+            hotKeyHandle(8);
+            break;
+
+            case 88:  //x
+            hotKeyHandle(9);
+            break;
+
+            case 67:  //c
+            hotKeyHandle(10);
+            break;
+
+            case 86:  //v
+            hotKeyHandle(11);
+            break;
 
             default: return; // exit this handler for other keys
-        }    
+        }
     }
+    e.preventDefault(); // prevent the default action (scroll / move caret)
+
 });

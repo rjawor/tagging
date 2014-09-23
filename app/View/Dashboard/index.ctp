@@ -80,13 +80,31 @@
                             class="normal-cell"
                             id="cell:<?php echo $sentenceIndex.':'.$annotationTypeCount.':'.$wordIndex; ?>">
                             <?php
-                                if ($wordAnnotations['type']['WordAnnotationType']['strict_choices']) { ?>    
+                                if ($wordAnnotations['type']['WordAnnotationType']['strict_choices']) {
+                                $selectedChoices = array(); ?>
                                 <span class="ro-display">
-                                    <!-- ro combo -->
+                                <?php
+                                if (count($annotation) > 0) {
+                                    foreach ($annotation['WordAnnotationTypeChoice'] as $selectedChoice) {
+                                        array_push($selectedChoices, $selectedChoice['id']); ?>
+                                        <input type="button" class="choice-selected" value="<?php echo $selectedChoice['value']; ?>" />
+                                <?php        
+                                    }
+                                } ?>
                                 </span>
                                 <span class="edit-field">
-                                    <!-- editable combo -->
-                                </span>                            
+                                <?php
+                                    $choiceIndex = 0;
+                                    foreach ($wordAnnotations['type']['WordAnnotationTypeChoice'] as $choice) {
+                                ?>
+                                        <input onfocus="this.blur()" type="button" onclick="selectOption()" class="<?php echo in_array($choice['id'], $selectedChoices) ? 'choice-selected' : 'choice-available' ?>" value="<?php echo $choice['value'];if ($choiceIndex < count($hotKeys)) { echo '&nbsp;['.$hotKeys[$choiceIndex].']'; ?>"/>
+                                <?php       }
+                                        
+                                        $choiceIndex++;
+                                    }
+                                ?>
+                                   </span>
+                                    
                             <?php } else { ?>
                                 <span class="ro-display">
                                     <?php echo isset($annotation['text_value']) ? $annotation['text_value'] : '';  ?>
