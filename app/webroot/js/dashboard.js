@@ -54,7 +54,7 @@ function updateSentence(sentenceNumber) {
         sentenceCells[i].className = 'normal-cell';
     }
     
-    var activeCell = document.getElementById('cell:'+sentenceNumber+':'+getGridY(sentenceNumber)+':'+getGridX(sentenceNumber));
+    var activeCell = document.getElementById('cell-'+sentenceNumber+'-'+getGridY(sentenceNumber)+'-'+getGridX(sentenceNumber));
     if (activeCell != null) {
         if (getEditMode(sentenceNumber)) {
             activeCell.className = 'edited';
@@ -179,8 +179,7 @@ function setEditMode(sentenceNumber, editMode, preventSave) {
             element.value = "1";
         } else {
             if (element.value == "1" && !preventSave) { //edit mode was switched off, but not by ESC
-                alert('saving cell');
-                //save cell
+                saveCell(sentenceNumber);
             }
             element.value = "0";        
         }
@@ -191,13 +190,40 @@ function toggleEditMode(sentenceNumber) {
     var element = document.getElementById('sentence'+sentenceNumber+'-edit-mode');
     if (element != null) {
         if (element.value == "1") {
-            alert('saving cell');
-            //save cell
+            saveCell(sentenceNumber);
             element.value = "0";
         } else {
             element.value = "1";        
         }
     }
+}
+
+function saveCell(sentenceNumber) {
+    var gridX = getGridX(sentenceNumber);
+    var gridY = getGridY(sentenceNumber);
+    var cellId = 'cell-'+sentenceNumber+'-'+gridY+'-'+gridX;
+    var cell = document.getElementById(cellId);
+    var cellTypeId = cellId+'-type';
+    var cellTypeElement = document.getElementById(cellTypeId);
+
+    var displaySpan = cell.querySelector('.ro-display');
+    var editSpan = cell.querySelector('.edit-field');
+    
+    if (cellTypeElement.value == 'text') {
+        var textInputElement = editSpan.querySelector('input[type=text]');
+        displaySpan.innerHTML = textInputElement.value;
+    } else {
+        var selectedChoices = editSpan.querySelectorAll('input.choice-selected');
+        displaySpan.innerHTML = '';
+        if (selectedChoices != null) {
+            for (var i=0; i< selectedChoices.length; i++) {
+                var choiceValueArr = selectedChoices[i].value.match(/^(\w+).*/);
+                var choiceValue = choiceValueArr[1];
+                displaySpan.innerHTML = displaySpan.innerHTML + '<input type="button" class="choice-selected" value="'+choiceValue+'" />';
+            }
+        }
+    }
+    
 }
 
 function getWordCount(sentenceNumber) {
@@ -329,16 +355,27 @@ function ctrlDownArrowHandle() {
     nextSentence();
 }
 
-function selectOption() {
-    alert('option selected');
+function toggleSelectedChoice(element) {
+    if (element.className == 'choice-selected') {
+        element.className = 'choice-available';
+    } else {
+        element.className = 'choice-selected';    
+    }
 }
 
 function hotKeyHandle(number) {
-    alert('hot key pressed: '+number);
+    var sentenceNumber = getSentenceNumber();
+    var gridX = getGridX(sentenceNumber);
+    var gridY = getGridY(sentenceNumber);
+    var choiceId = 'cell-'+sentenceNumber+'-'+gridY+'-'+gridX+'-choice-'+number;
+    var choiceElement = document.getElementById(choiceId);
+    if (choiceElement != null) {
+        toggleSelectedChoice(choiceElement);
+        saveCell(sentenceNumber);
+    }
 }
 
 $(document).keydown(function(e) {
-    var sentenceNumber = getSentenceNumber();
     if (e.ctrlKey) {
         switch(e.which) {
             case 38:
@@ -428,6 +465,9 @@ $(document).keydown(function(e) {
             default: return; // exit this handler for other keys
         }
     }
-    e.preventDefault(); // prevent the default action (scroll / move caret)
+    var editMode = getEditMode(getSentenceNumber());
+    if (!editMode) {
+        e.preventDefault(); // prevent the default action (scroll / move caret)
+    }
 
 });

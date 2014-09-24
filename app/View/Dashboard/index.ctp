@@ -54,8 +54,9 @@
                         $wordIndex = 0;
                         foreach ($sentence['Word'] as $word): ?>
                         <td onClick="setEdited(<?php echo $sentenceIndex.',0,'.$wordIndex; ?>)"
-                            id="cell:<?php echo $sentenceIndex.':0:'.$wordIndex; ?>"
+                            id="cell-<?php echo $sentenceIndex.'-0-'.$wordIndex; ?>"
                             class="normal-cell">
+                            <input type="hidden" id="cell-<?php echo $sentenceIndex.'-0-'.$wordIndex.'-type'; ?>" value="text" />
                             <span class="ro-display">
                                 <?php echo $word['text'] ?>
                             </span>
@@ -78,10 +79,11 @@
                         foreach ($wordAnnotations['annotations'] as $annotation): ?>
                         <td onClick="setEdited(<?php echo $sentenceIndex.','.$annotationTypeCount.','.$wordIndex; ?>)"
                             class="normal-cell"
-                            id="cell:<?php echo $sentenceIndex.':'.$annotationTypeCount.':'.$wordIndex; ?>">
+                            id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-'.$wordIndex; ?>">
                             <?php
                                 if ($wordAnnotations['type']['WordAnnotationType']['strict_choices']) {
                                 $selectedChoices = array(); ?>
+                                <input type="hidden" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-'.$wordIndex.'-type'; ?>" value="choices" />
                                 <span class="ro-display">
                                 <?php
                                 if (count($annotation) > 0) {
@@ -97,7 +99,7 @@
                                     $choiceIndex = 0;
                                     foreach ($wordAnnotations['type']['WordAnnotationTypeChoice'] as $choice) {
                                 ?>
-                                        <input onfocus="this.blur()" type="button" onclick="selectOption()" class="<?php echo in_array($choice['id'], $selectedChoices) ? 'choice-selected' : 'choice-available' ?>" value="<?php echo $choice['value'];if ($choiceIndex < count($hotKeys)) { echo '&nbsp;['.$hotKeys[$choiceIndex].']'; ?>"/>
+                                        <input id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-'.$wordIndex.'-choice-'.$choiceIndex; ?>" onfocus="this.blur()" type="button" onclick="toggleSelectedChoice(this)" class="<?php echo in_array($choice['id'], $selectedChoices) ? 'choice-selected' : 'choice-available' ?>" value="<?php echo $choice['value'];if ($choiceIndex < count($hotKeys)) { echo '&nbsp;['.$hotKeys[$choiceIndex].']'; ?>"/>
                                 <?php       }
                                         
                                         $choiceIndex++;
@@ -106,6 +108,8 @@
                                    </span>
                                     
                             <?php } else { ?>
+                                <input type="hidden" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-'.$wordIndex.'-type'; ?>" value="text" />
+
                                 <span class="ro-display">
                                     <?php echo isset($annotation['text_value']) ? $annotation['text_value'] : '';  ?>
                                 </span>
@@ -125,9 +129,10 @@
                 <?php foreach ($sentence['SentenceAnnotations'] as $sentenceAnnotations): ?>
                 <tr>
                     <td class="annotation-column"><?php echo $sentenceAnnotations['type']['SentenceAnnotationType']['name'] ?></td>
-                    <td class="normal-cell" id="cell:<?php echo $sentenceIndex.':'.$annotationTypeCount.':0'; ?>"
+                    <td class="normal-cell" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-0'; ?>"
                         onClick="setEdited(<?php echo $sentenceIndex.','.$annotationTypeCount.',0'; ?>)"
                         colspan="<?php echo count($sentence['Word']) ?>">
+                        <input type="hidden" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-0-type'; ?>" value="text" />
                         <span class="ro-display">
                             <?php echo isset($sentenceAnnotations['annotation']['text']) ? $sentenceAnnotations['annotation']['text'] : '';  ?>
                         </span>
