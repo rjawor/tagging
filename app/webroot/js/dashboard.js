@@ -212,16 +212,48 @@ function saveCell(sentenceNumber) {
     if (cellTypeElement.value == 'text') {
         var textInputElement = editSpan.querySelector('input[type=text]');
         displaySpan.innerHTML = textInputElement.value;
+        
+        var wordAnnotationTypeElement = document.getElementById(cellId+'-word-annotation-type-id');
+        if (wordAnnotationTypeElement != null) { //word annotation
+            var wordAnnotationTypeId = wordAnnotationTypeElement.value;
+            var wordId = document.getElementById(cellId+'-word-id').value;
+            $.ajax({async:true, url:"/tagging/wordAnnotations/saveWordTextAnnotation/"+wordId+"/"+wordAnnotationTypeId+"/"+textInputElement.value.replace(/ /g, '%20')});
+
+        } else { //sentence annotation
+            var sentenceAnnotationTypeId = document.getElementById(cellId+'-sentence-annotation-type-id').value;
+            var sentenceId = document.getElementById(cellId+'-sentence-id').value;
+            $.ajax({async:true, url:"/tagging/sentenceAnnotations/saveSentenceAnnotation/"+sentenceId+"/"+sentenceAnnotationTypeId+"/"+textInputElement.value.replace(/ /g, '%20')});
+        }
     } else {
         var selectedChoices = editSpan.querySelectorAll('input.choice-selected');
         displaySpan.innerHTML = '';
+        var selectedChoicesIds=[];
         if (selectedChoices != null) {
             for (var i=0; i< selectedChoices.length; i++) {
                 var choiceValueArr = selectedChoices[i].value.match(/^(\w+).*/);
                 var choiceValue = choiceValueArr[1];
                 displaySpan.innerHTML = displaySpan.innerHTML + '<input type="button" class="choice-selected" value="'+choiceValue+'" />';
+
+                var selectedChoiceId = document.getElementById(selectedChoices[i].id+'-type-id').value;
+                selectedChoicesIds[selectedChoicesIds.length] = selectedChoiceId;
             }
         }
+        
+        var wordAnnotationTypeId = document.getElementById(cellId+'-word-annotation-type-id').value;
+        var wordId = document.getElementById(cellId+'-word-id').value;
+        
+        var selectedChoicesIdsString = '';
+        for(var i=0; i<selectedChoicesIds.length; i++) {
+            selectedChoicesIdsString += selectedChoicesIds[i];
+            if (i < selectedChoicesIds.length - 1) {
+                selectedChoicesIdsString += ',';
+            }   
+        }
+        if (selectedChoicesIdsString == '') {
+            selectedChoicesIdsString = 'none';
+        }
+        $.ajax({async:true, url:"/tagging/wordAnnotations/saveWordChoicesAnnotation/"+wordId+"/"+wordAnnotationTypeId+"/"+selectedChoicesIdsString});
+
     }
     
 }

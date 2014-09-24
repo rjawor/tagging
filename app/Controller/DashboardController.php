@@ -87,6 +87,8 @@ class DashboardController extends AppController {
     }
     
     public function setCurrentDocument($document_id, $offset) {
+        $this->autoRender = false;
+
         $userModel = ClassRegistry::init('User');
         $currentUser = $userModel->findById($this->Auth->user('id'));
         

@@ -225,11 +225,12 @@ ENGINE = InnoDB;
 DROP TABLE IF EXISTS `taggingdb`.`word_annotation_type_choices_word_annotations` ;
 
 CREATE TABLE IF NOT EXISTS `taggingdb`.`word_annotation_type_choices_word_annotations` (
-  `word_annotation_id` INT NOT NULL,
-  `word_annotation_type_choice_id` INT NOT NULL,
-  PRIMARY KEY (`word_annotation_id`, `word_annotation_type_choice_id`),
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `word_annotation_id` INT NULL,
+  `word_annotation_type_choice_id` INT NULL,
   INDEX `fk_word_annotations_has_word_annotation_type_choices_word_a_idx` (`word_annotation_type_choice_id` ASC),
   INDEX `fk_word_annotations_has_word_annotation_type_choices_word_a_idx1` (`word_annotation_id` ASC),
+  PRIMARY KEY (`id`),
   CONSTRAINT `fk_word_annotations_has_word_annotation_type_choices_word_ann1`
     FOREIGN KEY (`word_annotation_id`)
     REFERENCES `taggingdb`.`word_annotations` (`id`)

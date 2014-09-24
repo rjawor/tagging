@@ -3,7 +3,7 @@
     <tr>
         <th>Id</th>
         <th></th>
-        <th>Nazwa</th>
+        <th width="50%">Nazwa</th>
         <th>Język</th>
         <th>Właściciel</th>
         <!--<th>Akcje</th>-->

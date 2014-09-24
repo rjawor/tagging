@@ -57,6 +57,8 @@
                             id="cell-<?php echo $sentenceIndex.'-0-'.$wordIndex; ?>"
                             class="normal-cell">
                             <input type="hidden" id="cell-<?php echo $sentenceIndex.'-0-'.$wordIndex.'-type'; ?>" value="text" />
+                            <input type="hidden" id="cell-<?php echo $sentenceIndex.'-0-'.$wordIndex.'-word-id'; ?>" value="<?php echo $word['id']; ?>" />
+                            <input type="hidden" id="cell-<?php echo $sentenceIndex.'-0-'.$wordIndex.'-word-annotation-type-id'; ?>" value="0" />
                             <span class="ro-display">
                                 <?php echo $word['text'] ?>
                             </span>
@@ -80,6 +82,8 @@
                         <td onClick="setEdited(<?php echo $sentenceIndex.','.$annotationTypeCount.','.$wordIndex; ?>)"
                             class="normal-cell"
                             id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-'.$wordIndex; ?>">
+                            <input type="hidden" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-'.$wordIndex.'-word-id'; ?>" value="<?php echo $sentence['Word'][$wordIndex]['id']; ?>" />
+                            <input type="hidden" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-'.$wordIndex.'-word-annotation-type-id'; ?>" value="<?php echo $wordAnnotations['type']['WordAnnotationType']['id']; ?>" />
                             <?php
                                 if ($wordAnnotations['type']['WordAnnotationType']['strict_choices']) {
                                 $selectedChoices = array(); ?>
@@ -100,6 +104,7 @@
                                     foreach ($wordAnnotations['type']['WordAnnotationTypeChoice'] as $choice) {
                                 ?>
                                         <input id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-'.$wordIndex.'-choice-'.$choiceIndex; ?>" onfocus="this.blur()" type="button" onclick="toggleSelectedChoice(this)" class="<?php echo in_array($choice['id'], $selectedChoices) ? 'choice-selected' : 'choice-available' ?>" value="<?php echo $choice['value'];if ($choiceIndex < count($hotKeys)) { echo '&nbsp;['.$hotKeys[$choiceIndex].']'; ?>"/>
+                                        <input type="hidden" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-'.$wordIndex.'-choice-'.$choiceIndex.'-type-id'; ?>" value="<?php echo $choice['id'] ?>" />
                                 <?php       }
                                         
                                         $choiceIndex++;
@@ -133,6 +138,8 @@
                         onClick="setEdited(<?php echo $sentenceIndex.','.$annotationTypeCount.',0'; ?>)"
                         colspan="<?php echo count($sentence['Word']) ?>">
                         <input type="hidden" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-0-type'; ?>" value="text" />
+                        <input type="hidden" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-0-sentence-id'; ?>" value="<?php echo $sentence['id']; ?>" />
+                        <input type="hidden" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-0-sentence-annotation-type-id'; ?>" value="<?php echo $sentenceAnnotations['type']['SentenceAnnotationType']['id']; ?>" />
                         <span class="ro-display">
                             <?php echo isset($sentenceAnnotations['annotation']['text']) ? $sentenceAnnotations['annotation']['text'] : '';  ?>
                         </span>
