@@ -108,7 +108,7 @@
                     $annotationTypeCount = 1;
                     foreach ($sentence['WordAnnotations'] as $wordAnnotations): ?>
                 <tr>
-                    <td class="annotation-column"><?php echo $wordAnnotations['type']['WordAnnotationType']['name'] ?></td>
+                    <td class="annotation-column" title="<?php echo $wordAnnotations['type']['WordAnnotationType']['description'] ?>"><?php echo $wordAnnotations['type']['WordAnnotationType']['name'] ?></td>
                     <?php
                         $wordIndex = 0;
                         foreach ($wordAnnotations['annotations'] as $annotation): ?>
@@ -126,7 +126,7 @@
                                     if (count($annotation) > 0) {
                                         foreach ($annotation['WordAnnotationTypeChoice'] as $selectedChoice) {
                                             array_push($selectedChoices, $selectedChoice['id']); ?>
-                                            <input type="button" class="choice-selected" value="<?php echo $selectedChoice['value']; ?>" />
+                                            <input type="button" class="choice-selected" title="<?php echo $selectedChoice['description']; ?>" value="<?php echo $selectedChoice['value']; ?>" />
                                     <?php        
                                         }
                                     } ?>
@@ -152,7 +152,7 @@
                                         if (count($annotation) > 0) {
                                             foreach ($annotation['WordAnnotationTypeChoice'] as $selectedChoice) {
                                                 array_push($selectedChoices, $selectedChoice['id']); ?>
-                                                <input type="button" class="choice-selected" value="<?php echo $selectedChoice['value']; ?>" />
+                                                <input type="button" class="choice-selected" title="<?php echo $selectedChoice['description']; ?>" value="<?php echo $selectedChoice['value']; ?>" />
                                         <?php        
                                             }
                                         }
@@ -161,7 +161,7 @@
                                         $choiceIndex = 0;
                                         foreach ($wordAnnotations['type']['WordAnnotationTypeChoice'] as $choice) {
                                     ?>
-                                            <input id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-'.$wordIndex.'-choice-'.$choiceIndex; ?>" onfocus="this.blur()" type="button" onclick="toggleSelectedChoice(this)" class="<?php echo in_array($choice['id'], $selectedChoices) ? 'choice-selected' : 'choice-available' ?>" value="<?php echo $choice['value'];if ($choiceIndex < count($hotKeys)) { echo '&nbsp;['.$hotKeys[$choiceIndex].']'; ?>"/>
+                                            <input id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-'.$wordIndex.'-choice-'.$choiceIndex; ?>" onfocus="this.blur()" type="button" onclick="toggleSelectedChoice(this)" class="<?php echo in_array($choice['id'], $selectedChoices) ? 'choice-selected' : 'choice-available' ?>" title="<?php echo $choice['description']; ?>" value="<?php echo $choice['value'];if ($choiceIndex < count($hotKeys)) { echo '&nbsp;['.$hotKeys[$choiceIndex].']'; ?>"/>
                                             <input type="hidden" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-'.$wordIndex.'-choice-'.$choiceIndex.'-type-id'; ?>" value="<?php echo $choice['id'] ?>" />
                                     <?php       }
                                             
@@ -192,7 +192,7 @@
 
                 <?php foreach ($sentence['SentenceAnnotations'] as $sentenceAnnotations): ?>
                 <tr>
-                    <td class="annotation-column"><?php echo $sentenceAnnotations['type']['SentenceAnnotationType']['name'] ?></td>
+                    <td class="annotation-column" title="<?php echo $sentenceAnnotations['type']['SentenceAnnotationType']['description'] ?>"><?php echo $sentenceAnnotations['type']['SentenceAnnotationType']['name'] ?></td>
                     <td class="normal-cell" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-0'; ?>"
                         onClick="setEdited(<?php echo $sentenceIndex.','.$annotationTypeCount.',0'; ?>)"
                         colspan="<?php echo count($sentence['Word']) ?>">

@@ -17,7 +17,7 @@ class DashboardController extends AppController {
         }
         
         if (!$documentId) {
-            $this->Session->setFlash(__('Wybierz dokument z menu Dokumenty'));
+            $this->Session->setFlash(__('Select a document in the Documents view'));
         } else {
             $this->set('offset', $offset);            
             

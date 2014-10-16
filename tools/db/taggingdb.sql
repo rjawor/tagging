@@ -171,6 +171,7 @@ CREATE TABLE IF NOT EXISTS `taggingdb`.`word_annotation_type_choices` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `value` VARCHAR(255) NULL,
   `word_annotation_type_id` INT NULL,
+  `description` TEXT NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_word_annotation_type_choices_word_annotation_types1_idx` (`word_annotation_type_id` ASC),
   CONSTRAINT `fk_word_annotation_type_choices_word_annotation_types1`
