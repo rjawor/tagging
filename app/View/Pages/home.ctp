@@ -8,10 +8,10 @@
 App::uses('Debugger', 'Utility');
 ?>
 
-Witaj w systemie tagowania tekstów hinduskich. Użyj menu górnego aby przejść do interesującego Cię działu:
+Welcome to the IA tagger. Use the menu bar to navigate:
 <ul>
-    <li><b>Pulpit</b> - praca nad tagowaniem konkretnego dokumentu,</li>
-    <li><b>Dokumenty</b> - import i przeglądanie dokumentów,</li>
-    <li><b>Konfiguracja</b> - zmiana parametrów działania systemu, w tym typów oznaczeń.</li>
+    <li><b>Dashboard</b> - work on current document,</li>
+    <li><b>Documents</b> - import and browsing of the documents,</li>
+    <li><b>Configuration</b> - changing the system parameters, including annotation types.</li>
 </ul>
 

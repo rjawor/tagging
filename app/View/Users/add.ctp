@@ -1,10 +1,10 @@
 <div class="users form">
 <?php echo $this->Form->create('User'); ?>
     <fieldset>
-        <legend><?php echo __('Zarejestruj się'); ?></legend>
-        <?php echo $this->Form->input('username', array('label' => 'Nazwa użytkownika'));
-        echo $this->Form->input('password', array('label' => 'Hasło'));
+        <legend><?php echo __('Register'); ?></legend>
+        <?php echo $this->Form->input('username', array('label' => 'Username'));
+        echo $this->Form->input('password', array('label' => 'Password'));
     ?>
     </fieldset>
-<?php echo $this->Form->end(__('Zarejestruj')); ?>
+<?php echo $this->Form->end(__('Register')); ?>
 </div>

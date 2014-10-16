@@ -54,7 +54,7 @@ class AppController extends Controller {
 
     public function beforeFilter() {
         $this->Auth->allow('display');
-        $this->Auth->loginError = "Nieprawidłowa nazwa użytkownika lub hasło.";    
-        $this->Auth->authError = "Brak dostępu, zaloguj się!";
+        $this->Auth->loginError = "Invalid username or password.";    
+        $this->Auth->authError = "Access denied, log in!";
     }
 }

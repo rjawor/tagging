@@ -1,7 +1,7 @@
 <?php
 
 class WordAnnotationType extends AppModel {
-    public $hasMany = array('WordAnnotationTypeChoice');
+    public $hasMany = array('WordAnnotationTypeChoice' => array ('order' => 'WordAnnotationTypeChoice.value'));
 }
 
 ?>

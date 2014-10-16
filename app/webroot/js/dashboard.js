@@ -335,11 +335,38 @@ function switchSelectionDown() {
     }
 }
 
+function getCellType(sentenceNumber) {
+    var gridX = getGridX(sentenceNumber);
+    var gridY = getGridY(sentenceNumber);
+    var cellId = 'cell-'+sentenceNumber+'-'+gridY+'-'+gridX;
+    var cell = document.getElementById(cellId);
+    var cellTypeId = cellId+'-type';
+    var cellTypeElement = document.getElementById(cellTypeId);
+    return cellTypeElement.value;
+}
+
 function enterHandle() {
     var sentenceNumber = getSentenceNumber();
+    if(getCellType(sentenceNumber) == 'multiple-choices') {
+        if (!getEditMode(sentenceNumber)) {
+            setEditMode(sentenceNumber, true);
+            updateSentence(sentenceNumber);
+        } else {
+            handleEnterInMultipleChoices(sentenceNumber);
+        }
+    } else {
+        toggleEditMode(sentenceNumber);
+        updateSentence(sentenceNumber);
+    }
+}
+
+function handleEnterInMultipleChoices(sentenceNumber) {
+    var gridX = getGridX(sentenceNumber);
+    var gridY = getGridY(sentenceNumber);
+    var cellId = 'cell-'+sentenceNumber+'-'+gridY+'-'+gridX;
+    var cell = document.getElementById(cellId);
     
-    toggleEditMode(sentenceNumber);
-    updateSentence(sentenceNumber);
+    alert('handle enter in multiple choices');    
 }
 
 function escapeHandle() {
@@ -497,9 +524,6 @@ $(document).keydown(function(e) {
             default: return; // exit this handler for other keys
         }
     }
-    var editMode = getEditMode(getSentenceNumber());
-    if (!editMode) {
-        e.preventDefault(); // prevent the default action (scroll / move caret)
-    }
 
 });
+

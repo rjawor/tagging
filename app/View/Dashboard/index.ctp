@@ -6,6 +6,39 @@
 <input id="offset" type="hidden" value="<?php echo $offset ?>" />
 <input id="document-id" type="hidden" value="<?php echo $documentWindow['Document']['id'] ?>" />
 
+
+<script>
+<?php 
+    foreach ($wordAnnotationTypes as $wordAnnotationType) {
+        if ($wordAnnotationType['WordAnnotationType']['multiple_choices'] == 1) {
+            ?>
+
+            $(function() {
+                $( ".multiple-suggestions-input-<?php echo $wordAnnotationType['WordAnnotationType']['id'];?>" ).autocomplete({
+                    source: [
+                    <?php
+                        $counter = 0;
+                        foreach ($wordAnnotationType['WordAnnotationTypeChoice'] as $choice) {
+                            echo "\"".$choice['value']."\"";
+                            if ($counter < count($wordAnnotationType['WordAnnotationTypeChoice']) - 1) {
+                                echo ",";
+                            }
+                            $counter++;
+                        }
+                    ?>
+                    ]
+                });
+            });
+
+            <?php
+        }
+    }
+?>    
+</script>
+
+
+
+
 <?php $sentenceIndex = 0; ?>
 <?php foreach ($documentWindow['Sentence'] as $sentence): ?>
     <div name="sentence" id="sentence<?php echo $sentenceIndex; ?>">
@@ -87,32 +120,58 @@
                             <?php
                                 if ($wordAnnotations['type']['WordAnnotationType']['strict_choices']) {
                                 $selectedChoices = array(); ?>
-                                <input type="hidden" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-'.$wordIndex.'-type'; ?>" value="choices" />
+                                <input type="hidden" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-'.$wordIndex.'-type'; ?>" value="<?php echo $wordAnnotations['type']['WordAnnotationType']['multiple_choices'] ? 'multiple-choices': 'choices' ?>" />
                                 <span class="ro-display">
-                                <?php
-                                if (count($annotation) > 0) {
-                                    foreach ($annotation['WordAnnotationTypeChoice'] as $selectedChoice) {
-                                        array_push($selectedChoices, $selectedChoice['id']); ?>
-                                        <input type="button" class="choice-selected" value="<?php echo $selectedChoice['value']; ?>" />
-                                <?php        
-                                    }
-                                } ?>
+                                    <?php
+                                    if (count($annotation) > 0) {
+                                        foreach ($annotation['WordAnnotationTypeChoice'] as $selectedChoice) {
+                                            array_push($selectedChoices, $selectedChoice['id']); ?>
+                                            <input type="button" class="choice-selected" value="<?php echo $selectedChoice['value']; ?>" />
+                                    <?php        
+                                        }
+                                    } ?>
                                 </span>
                                 <span class="edit-field">
-                                <?php
-                                    $choiceIndex = 0;
-                                    foreach ($wordAnnotations['type']['WordAnnotationTypeChoice'] as $choice) {
-                                ?>
-                                        <input id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-'.$wordIndex.'-choice-'.$choiceIndex; ?>" onfocus="this.blur()" type="button" onclick="toggleSelectedChoice(this)" class="<?php echo in_array($choice['id'], $selectedChoices) ? 'choice-selected' : 'choice-available' ?>" value="<?php echo $choice['value'];if ($choiceIndex < count($hotKeys)) { echo '&nbsp;['.$hotKeys[$choiceIndex].']'; ?>"/>
-                                        <input type="hidden" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-'.$wordIndex.'-choice-'.$choiceIndex.'-type-id'; ?>" value="<?php echo $choice['id'] ?>" />
-                                <?php       }
-                                        
-                                        $choiceIndex++;
+                                <?php                                    
+                                    if ($wordAnnotations['type']['WordAnnotationType']['multiple_choices']) {
+                                    ?>
+                                    
+                                    <input onfocus="this.value='';" class="multiple-suggestions-input-<?php echo $wordAnnotations['type']['WordAnnotationType']['id']?>" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-'.$wordIndex.'-input';?>"/>                                    
+                                    
+                                    <datalist id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-'.$wordIndex.'-datalist';?>">
+                                        <?php
+                                        $choiceIndex = 0;
+                                        foreach ($wordAnnotations['type']['WordAnnotationTypeChoice'] as $choice) {
+                                        ?>
+                                          <option value="<?php echo $choice['value']?>">
+                                        <?php
+                                            $choiceIndex++;
+                                        } ?>
+                                    </datalist>
+                                    <?php
+                                        if (count($annotation) > 0) {
+                                            foreach ($annotation['WordAnnotationTypeChoice'] as $selectedChoice) {
+                                                array_push($selectedChoices, $selectedChoice['id']); ?>
+                                                <input type="button" class="choice-selected" value="<?php echo $selectedChoice['value']; ?>" />
+                                        <?php        
+                                            }
+                                        }
+                                    
+                                    } else {
+                                        $choiceIndex = 0;
+                                        foreach ($wordAnnotations['type']['WordAnnotationTypeChoice'] as $choice) {
+                                    ?>
+                                            <input id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-'.$wordIndex.'-choice-'.$choiceIndex; ?>" onfocus="this.blur()" type="button" onclick="toggleSelectedChoice(this)" class="<?php echo in_array($choice['id'], $selectedChoices) ? 'choice-selected' : 'choice-available' ?>" value="<?php echo $choice['value'];if ($choiceIndex < count($hotKeys)) { echo '&nbsp;['.$hotKeys[$choiceIndex].']'; ?>"/>
+                                            <input type="hidden" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-'.$wordIndex.'-choice-'.$choiceIndex.'-type-id'; ?>" value="<?php echo $choice['id'] ?>" />
+                                    <?php       }
+                                            
+                                            $choiceIndex++;
+                                        }
                                     }
                                 ?>
                                    </span>
                                     
-                            <?php } else { ?>
+                            <?php } else { #text field ?>
                                 <input type="hidden" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-'.$wordIndex.'-type'; ?>" value="text" />
 
                                 <span class="ro-display">

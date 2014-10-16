@@ -1,11 +1,11 @@
-<p><?php echo $this->Html->link('Dodaj dokument', array('action' => 'add')); ?></p>
+<p><?php echo $this->Html->link('Add document', array('action' => 'add')); ?></p>
 <table>
     <tr>
         <th>Id</th>
         <th></th>
-        <th width="50%">Nazwa</th>
-        <th>Język</th>
-        <th>Właściciel</th>
+        <th width="50%">Name</th>
+        <th>Language</th>
+        <th>Owner</th>
         <!--<th>Akcje</th>-->
     </tr>
 

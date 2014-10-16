@@ -14,7 +14,7 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-$systemDescription = __d('cake_dev', 'Tagowanie tekstów hinduskich');
+$systemDescription = __d('cake_dev', 'IA tagger');
 $cakeDescription = __d('cake_dev', 'CakePHP');
 $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 ?>
@@ -33,12 +33,16 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->Html->css('menu');
 
         echo $this->Html->script('jquery');
+        echo $this->Html->script('jquery-ui');
 		echo $this->Html->script('dashboard');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
+		
+		
 	?>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
 </head>
 <body onLoad="updateDashboard()">
 	<div id="container">
@@ -47,19 +51,19 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			<?php
 			if (AuthComponent::user()) {
                 // The user is logged in, show the logout link
-                echo "Zalogowany jako <b>".AuthComponent::user()['username']."</b> | ".$this->Html->link('Wyloguj się', array('controller' => 'users', 'action' => 'logout'));
+                echo "Logged in as <b>".AuthComponent::user()['username']."</b> | ".$this->Html->link('Logout', array('controller' => 'users', 'action' => 'logout'));
             } else {
                 // The user is not logged in, show login link
-                echo "niezalogowany | ".$this->Html->link('Zaloguj się', array('controller' => 'users', 'action' => 'login'));
+                echo "anonymous | ".$this->Html->link('Log in', array('controller' => 'users', 'action' => 'login'));
             }
             ?>
             </div>
 			<h1><?php echo $this->Html->link($systemDescription, 'http://rjawor.vm.wmi.amu.edu.pl/tagging/'); ?></h1>
             <div id='cssmenu'>
                 <ul>
-                    <li><a href='/tagging/dashboard'><span>Pulpit</span></a></li>
-                    <li><a href='/tagging/documents'><span>Dokumenty</span></a></li>
-                    <li class='last'><a href='#'><span>Konfiguracja</span></a></li>
+                    <li><a href='/tagging/dashboard'><span>Dashboard</span></a></li>
+                    <li><a href='/tagging/documents'><span>Documents</span></a></li>
+                    <li class='last'><a href='#'><span>Configuration</span></a></li>
                 </ul>
             </div>            
 		</div>
