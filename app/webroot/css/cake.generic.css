@@ -275,6 +275,14 @@ td.selected .choice-available {
 	color:#fff;
 }
 
+#document-list {
+    float:left;
+}
+
+#import-box {
+    float:right;
+}
+
 /** Paging **/
 .paging {
 	background:#fff;
