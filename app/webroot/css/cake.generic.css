@@ -250,6 +250,10 @@ td.normal-cell .edit-field {
  	padding: 2px;
 }
 
+.choice-inactive {
+    display:none;
+}
+
 td.normal-cell .choice-available {
     display:none;
 }

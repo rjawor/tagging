@@ -224,7 +224,7 @@ function saveCell(sentenceNumber) {
             var sentenceId = document.getElementById(cellId+'-sentence-id').value;
             $.ajax({async:true, url:"/tagging/sentenceAnnotations/saveSentenceAnnotation/"+sentenceId+"/"+sentenceAnnotationTypeId+"/"+textInputElement.value.replace(/ /g, '%20')});
         }
-    } else {
+    } else if (cellTypeElement.value == 'choices' || cellTypeElement.value == 'multiple-choices') {
         var selectedChoices = editSpan.querySelectorAll('input.choice-selected');
         displaySpan.innerHTML = '';
         var selectedChoicesIds=[];
@@ -253,7 +253,6 @@ function saveCell(sentenceNumber) {
             selectedChoicesIdsString = 'none';
         }
         $.ajax({async:true, url:"/tagging/wordAnnotations/saveWordChoicesAnnotation/"+wordId+"/"+wordAnnotationTypeId+"/"+selectedChoicesIdsString});
-
     }
     
 }
@@ -363,10 +362,25 @@ function enterHandle() {
 function handleEnterInMultipleChoices(sentenceNumber) {
     var gridX = getGridX(sentenceNumber);
     var gridY = getGridY(sentenceNumber);
-    var cellId = 'cell-'+sentenceNumber+'-'+gridY+'-'+gridX;
-    var cell = document.getElementById(cellId);
+    var inputId = 'cell-'+sentenceNumber+'-'+gridY+'-'+gridX+'-input';
+    var input = document.getElementById(inputId);
     
-    alert('handle enter in multiple choices');    
+    if (input.value != '') {
+        var cellId = 'cell-'+sentenceNumber+'-'+gridY+'-'+gridX;
+        var cell = document.getElementById(cellId);
+        
+        
+        var selector = 'input[value="'+input.value+' x"]';
+        var enteredElement = cell.querySelector(selector);
+        input.value = '';
+        if (enteredElement != null) {
+            enteredElement.className = 'choice-selected';
+            saveCell(sentenceNumber);
+        }
+    } else {
+        toggleEditMode(sentenceNumber);
+        updateSentence(sentenceNumber);
+    }
 }
 
 function escapeHandle() {
@@ -422,15 +436,24 @@ function toggleSelectedChoice(element) {
     }
 }
 
+function deselectChoice(element) {
+    element.className = 'choice-inactive';
+}
+
 function hotKeyHandle(number) {
     var sentenceNumber = getSentenceNumber();
     var gridX = getGridX(sentenceNumber);
     var gridY = getGridY(sentenceNumber);
-    var choiceId = 'cell-'+sentenceNumber+'-'+gridY+'-'+gridX+'-choice-'+number;
-    var choiceElement = document.getElementById(choiceId);
-    if (choiceElement != null) {
-        toggleSelectedChoice(choiceElement);
-        saveCell(sentenceNumber);
+    var cellId = 'cell-'+sentenceNumber+'-'+gridY+'-'+gridX;
+    var cellTypeId = cellId+'-type';
+    var cellTypeElement = document.getElementById(cellTypeId);
+    if (cellTypeElement.value == 'choices') {
+        var choiceId = 'cell-'+sentenceNumber+'-'+gridY+'-'+gridX+'-choice-'+number;
+        var choiceElement = document.getElementById(choiceId);
+        if (choiceElement != null) {
+            toggleSelectedChoice(choiceElement);
+            saveCell(sentenceNumber);
+        }
     }
 }
 

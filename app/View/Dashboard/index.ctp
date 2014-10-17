@@ -19,7 +19,7 @@
                     <?php
                         $counter = 0;
                         foreach ($wordAnnotationType['WordAnnotationTypeChoice'] as $choice) {
-                            echo "\"".$choice['value']."\"";
+                            echo "{ value: \"".$choice['value']."\", label: \"".$choice['value']." - ".$choice['description']."\"}";
                             if ($counter < count($wordAnnotationType['WordAnnotationTypeChoice']) - 1) {
                                 echo ",";
                             }
@@ -137,27 +137,19 @@
                                     ?>
                                     
                                     <input onfocus="this.value='';" class="multiple-suggestions-input-<?php echo $wordAnnotations['type']['WordAnnotationType']['id']?>" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-'.$wordIndex.'-input';?>"/>                                    
-                                    
-                                    <datalist id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-'.$wordIndex.'-datalist';?>">
-                                        <?php
+                                    <?php
+
+
                                         $choiceIndex = 0;
                                         foreach ($wordAnnotations['type']['WordAnnotationTypeChoice'] as $choice) {
-                                        ?>
-                                          <option value="<?php echo $choice['value']?>">
-                                        <?php
-                                            $choiceIndex++;
-                                        } ?>
-                                    </datalist>
+                                    ?>
+                                            <input id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-'.$wordIndex.'-choice-'.$choiceIndex; ?>" onfocus="this.blur()" type="button" onclick="deselectChoice(this)" class="<?php echo in_array($choice['id'], $selectedChoices) ? 'choice-selected' : 'choice-inactive' ?>" title="<?php echo $choice['description']; ?>" value="<?php echo $choice['value'];?> x"/>
+                                            <input type="hidden" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-'.$wordIndex.'-choice-'.$choiceIndex.'-type-id'; ?>" value="<?php echo $choice['id'] ?>" />
                                     <?php
-                                        if (count($annotation) > 0) {
-                                            foreach ($annotation['WordAnnotationTypeChoice'] as $selectedChoice) {
-                                                array_push($selectedChoices, $selectedChoice['id']); ?>
-                                                <input type="button" class="choice-selected" title="<?php echo $selectedChoice['description']; ?>" value="<?php echo $selectedChoice['value']; ?>" />
-                                        <?php        
-                                            }
+                                            $choiceIndex++;
                                         }
                                     
-                                    } else {
+                                    } else { // regular strict choices
                                         $choiceIndex = 0;
                                         foreach ($wordAnnotations['type']['WordAnnotationTypeChoice'] as $choice) {
                                     ?>
