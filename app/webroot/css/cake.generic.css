@@ -184,6 +184,14 @@ table td.actions a {
     text-align:right;
 }
 
+.word-split .word-unsplit-field {
+    display:none;
+}
+
+.word-unsplit .word-split-field {
+    display:none;
+}
+
 .inactive {
     display:none;
 }

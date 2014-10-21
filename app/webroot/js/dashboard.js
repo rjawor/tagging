@@ -54,11 +54,18 @@ function updateSentence(sentenceNumber) {
         sentenceCells[i].className = 'normal-cell';
     }
     
-    var activeCell = document.getElementById('cell-'+sentenceNumber+'-'+getGridY(sentenceNumber)+'-'+getGridX(sentenceNumber));
+    var cellId = 'cell-'+sentenceNumber+'-'+getGridY(sentenceNumber)+'-'+getGridX(sentenceNumber);
+    var activeCell = document.getElementById(cellId);
     if (activeCell != null) {
         if (getEditMode(sentenceNumber)) {
             activeCell.className = 'edited';
-            var editField = activeCell.querySelector('.edit-field>input');
+            
+            var selector = '.edit-field input';
+            var splitElement = document.getElementById(cellId+'-split');
+            if (splitElement != null && splitElement.value == '0') {
+                selector = '.edit-field .word-unsplit-field input'
+            }
+            var editField = activeCell.querySelector(selector);
             if (editField != null) {
                 editField.focus();
             }
@@ -224,6 +231,23 @@ function saveCell(sentenceNumber) {
             var sentenceId = document.getElementById(cellId+'-sentence-id').value;
             $.ajax({async:true, url:"/tagging/sentenceAnnotations/saveSentenceAnnotation/"+sentenceId+"/"+sentenceAnnotationTypeId+"/"+textInputElement.value.replace(/ /g, '%20')});
         }
+    } else if (cellTypeElement.value == 'word') {
+        var splitElement = document.getElementById(cellId+'-split');
+        var wordId = document.getElementById(cellId+'-word-id').value;
+        if (splitElement.value == '0') {
+            var wordTextElement = cell.querySelector('.edit-field .word-unsplit-field input');
+            $.ajax({async:true, url:"/tagging/words/saveWord/"+wordId+"/0/"+wordTextElement.value.replace(/ /g, '%20')+"/none/none"});
+            displaySpan.innerHTML = wordTextElement.value;            
+        } else {
+            var wordTextElements = cell.querySelectorAll('.edit-field .word-split-field input');
+            var stem = wordTextElements[0].value.replace(/ /g, '%20');
+            var suffix = wordTextElements[1].value.replace(/ /g, '%20');
+            
+            $.ajax({async:true, url:"/tagging/words/saveWord/"+wordId+"/1/none/"+stem+"/"+suffix});
+            var splitDisplaySpan = cell.querySelector('.ro-display .word-split-field');
+            splitDisplaySpan.innerHTML = stem+'&nbsp;&ndash;&nbsp;'+suffix;
+        }
+    
     } else if (cellTypeElement.value == 'choices' || cellTypeElement.value == 'multiple-choices') {
         var selectedChoices = editSpan.querySelectorAll('input.choice-selected');
         displaySpan.innerHTML = '';
@@ -428,6 +452,33 @@ function ctrlDownArrowHandle() {
     nextSentence();
 }
 
+function ctrlJHandle(e) {
+    var sentenceNumber = getSentenceNumber();
+    var gridX = getGridX(sentenceNumber);
+    var gridY = getGridY(sentenceNumber);
+    var cellId = 'cell-'+sentenceNumber+'-'+gridY+'-'+gridX;
+    var splitSpan = document.getElementById(cellId+'-split-span');
+    if (splitSpan != null && splitSpan.className == "word-unsplit" && getEditMode(sentenceNumber)) {
+        splitSpan.className="word-split"; 
+        var splitElement = document.getElementById(cellId+'-split');
+        splitElement.value = '1';
+           
+        var inputUnsplit = splitSpan.querySelector('.word-unsplit-field input');
+        var splitInputs = splitSpan.querySelectorAll('.word-split-field input');
+        var stemInput = splitInputs[0];
+        var suffixInput = splitInputs[1];
+        
+        pos = inputUnsplit.selectionStart;
+        
+        stemInput.value = inputUnsplit.value.substring(0,pos);
+        suffixInput.value = inputUnsplit.value.substring(pos, inputUnsplit.value.length);        
+        stemInput.focus();
+
+        e.preventDefault();
+    }
+    
+}
+
 function toggleSelectedChoice(element) {
     if (element.className == 'choice-selected') {
         element.className = 'choice-available';
@@ -466,6 +517,10 @@ $(document).keydown(function(e) {
 
             case 40:
                 ctrlDownArrowHandle();
+            break;
+
+            case 74:
+                ctrlJHandle(e);
             break;
 
             default: return; // exit this handler for other keys

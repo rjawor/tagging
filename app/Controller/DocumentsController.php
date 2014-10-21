@@ -7,7 +7,12 @@ class DocumentsController extends AppController {
 
     public function index() {
         $this->Document->recursive = 0;
-        $this->set('documents', $this->Document->find('all'));
+        $this->set('documents',
+                   $this->Document->find('all', array(
+                                                   'conditions' => array('user_id =' =>  $this->Auth->user('id'))
+                                                )
+                                        )
+                  );
         $languageModel = ClassRegistry::init('Language');
         $languages = $languageModel->find('all');
         $languageOptions = array();
