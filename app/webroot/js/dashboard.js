@@ -27,7 +27,7 @@ function prevSentence() {
             offset--;
             offsetElement.value = offset;
             updateDashboard();
-            $.ajax({async:true, url:"/tagging/dashboard/setCurrentDocument/"+documentId+"/"+offset});
+            $.ajax({async:true, url:"../tagging/dashboard/setCurrentDocument/"+documentId+"/"+offset});
         }
     }
 }
@@ -43,7 +43,7 @@ function nextSentence(documentId) {
             offset++;
             offsetElement.value = offset;
             updateDashboard();
-            $.ajax({async:true, url:"/tagging/dashboard/setCurrentDocument/"+documentId+"/"+offset});
+            $.ajax({async:true, url:"../tagging/dashboard/setCurrentDocument/"+documentId+"/"+offset});
         }
     }
 }
@@ -224,26 +224,26 @@ function saveCell(sentenceNumber) {
         if (wordAnnotationTypeElement != null) { //word annotation
             var wordAnnotationTypeId = wordAnnotationTypeElement.value;
             var wordId = document.getElementById(cellId+'-word-id').value;
-            $.ajax({async:true, url:"/tagging/wordAnnotations/saveWordTextAnnotation/"+wordId+"/"+wordAnnotationTypeId+"/"+textInputElement.value.replace(/ /g, '%20')});
+            $.ajax({async:true, url:"../tagging/wordAnnotations/saveWordTextAnnotation/"+wordId+"/"+wordAnnotationTypeId+"/"+textInputElement.value.replace(/ /g, '%20')});
 
         } else { //sentence annotation
             var sentenceAnnotationTypeId = document.getElementById(cellId+'-sentence-annotation-type-id').value;
             var sentenceId = document.getElementById(cellId+'-sentence-id').value;
-            $.ajax({async:true, url:"/tagging/sentenceAnnotations/saveSentenceAnnotation/"+sentenceId+"/"+sentenceAnnotationTypeId+"/"+textInputElement.value.replace(/ /g, '%20')});
+            $.ajax({async:true, url:"../tagging/sentenceAnnotations/saveSentenceAnnotation/"+sentenceId+"/"+sentenceAnnotationTypeId+"/"+textInputElement.value.replace(/ /g, '%20')});
         }
     } else if (cellTypeElement.value == 'word') {
         var splitElement = document.getElementById(cellId+'-split');
         var wordId = document.getElementById(cellId+'-word-id').value;
         if (splitElement.value == '0') {
             var wordTextElement = cell.querySelector('.edit-field .word-unsplit-field input');
-            $.ajax({async:true, url:"/tagging/words/saveWord/"+wordId+"/0/"+wordTextElement.value.replace(/ /g, '%20')+"/none/none"});
+            $.ajax({async:true, url:"../tagging/words/saveWord/"+wordId+"/0/"+wordTextElement.value.replace(/ /g, '%20')+"/none/none"});
             displaySpan.innerHTML = wordTextElement.value;            
         } else {
             var wordTextElements = cell.querySelectorAll('.edit-field .word-split-field input');
             var stem = wordTextElements[0].value.replace(/ /g, '%20');
             var suffix = wordTextElements[1].value.replace(/ /g, '%20');
             
-            $.ajax({async:true, url:"/tagging/words/saveWord/"+wordId+"/1/none/"+stem+"/"+suffix});
+            $.ajax({async:true, url:"../tagging/words/saveWord/"+wordId+"/1/none/"+stem+"/"+suffix});
             var splitDisplaySpan = cell.querySelector('.ro-display .word-split-field');
             splitDisplaySpan.innerHTML = stem+'&nbsp;&ndash;&nbsp;'+suffix;
         }
@@ -276,7 +276,7 @@ function saveCell(sentenceNumber) {
         if (selectedChoicesIdsString == '') {
             selectedChoicesIdsString = 'none';
         }
-        $.ajax({async:true, url:"/tagging/wordAnnotations/saveWordChoicesAnnotation/"+wordId+"/"+wordAnnotationTypeId+"/"+selectedChoicesIdsString});
+        $.ajax({async:true, url:"../tagging/wordAnnotations/saveWordChoicesAnnotation/"+wordId+"/"+wordAnnotationTypeId+"/"+selectedChoicesIdsString});
     }
     
 }

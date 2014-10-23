@@ -58,7 +58,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
             }
             ?>
             </div>
-			<h1><?php echo $this->Html->link($systemDescription, 'http://rjawor.vm.wmi.amu.edu.pl/tagging/'); ?></h1>
+			<h1><?php echo $this->Html->link($systemDescription, '../'); ?></h1>
 			<?php if (Configure::check('test-version')) { ?>
 			        <h2>Test version</h2>
 			<?php } ?>
