@@ -6,7 +6,7 @@
             <th width="50%">Name</th>
             <th>Language</th>
             <th>Owner</th>
-            <!--<th>Akcje</th>-->
+            <th>Actions</th>
         </tr>
 
         <?php foreach ($documents as $document): ?>
@@ -28,20 +28,22 @@
             </td>
             <td><?php echo $document['Language']['description']; ?> (<?php echo $document['Language']['code']; ?>)</td>
             <td><?php echo $document['User']['username']; ?></td>
-            <!-- <td>
+            <td>
                 <?php
                     echo $this->Form->postLink(
                         'Delete',
                         array('action' => 'delete', $document['Document']['id']),
-                        array('confirm' => 'Are you sure?')
+                        array('confirm' => 'Deleting a document will also delete all the annotations. Are you sure?')
                     );
                 ?>
+            <!-- 
                 <?php
                     echo $this->Html->link(
                         'Edit', array('action' => 'edit', $document['Document']['id'])
                     );
                 ?>
-            </td> -->
+              -->   
+            </td>
         </tr>
         <?php endforeach; ?>
 

@@ -94,7 +94,7 @@ CREATE TABLE IF NOT EXISTS `taggingdb`.`sentences` (
   CONSTRAINT `fk_sentences_documents1`
     FOREIGN KEY (`document_id`)
     REFERENCES `taggingdb`.`documents` (`id`)
-    ON DELETE NO ACTION
+    ON DELETE CASCADE
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
@@ -116,7 +116,7 @@ CREATE TABLE IF NOT EXISTS `taggingdb`.`words` (
   CONSTRAINT `fk_words_sentences1`
     FOREIGN KEY (`sentence_id`)
     REFERENCES `taggingdb`.`sentences` (`id`)
-    ON DELETE NO ACTION
+    ON DELETE CASCADE
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
@@ -157,7 +157,7 @@ CREATE TABLE IF NOT EXISTS `taggingdb`.`word_annotations` (
   CONSTRAINT `fk_word_annotations_words1`
     FOREIGN KEY (`word_id`)
     REFERENCES `taggingdb`.`words` (`id`)
-    ON DELETE NO ACTION
+    ON DELETE CASCADE
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
@@ -216,7 +216,7 @@ CREATE TABLE IF NOT EXISTS `taggingdb`.`sentence_annotations` (
   CONSTRAINT `fk_sentence_annotations_sentences1`
     FOREIGN KEY (`sentence_id`)
     REFERENCES `taggingdb`.`sentences` (`id`)
-    ON DELETE NO ACTION
+    ON DELETE CASCADE
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
@@ -236,7 +236,7 @@ CREATE TABLE IF NOT EXISTS `taggingdb`.`word_annotation_type_choices_word_annota
   CONSTRAINT `fk_word_annotations_has_word_annotation_type_choices_word_ann1`
     FOREIGN KEY (`word_annotation_id`)
     REFERENCES `taggingdb`.`word_annotations` (`id`)
-    ON DELETE NO ACTION
+    ON DELETE CASCADE
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_word_annotations_has_word_annotation_type_choices_word_ann2`
     FOREIGN KEY (`word_annotation_type_choice_id`)

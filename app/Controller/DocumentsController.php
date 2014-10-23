@@ -84,7 +84,8 @@ class DocumentsController extends AppController {
 
         if ($this->Document->delete($id)) {
             $this->Session->setFlash(
-                __('Dokument o id: %s został usunięty.', h($id))
+                __('Document (id: %s) was successfully deleted.', h($id)),
+                'flashes/success'
             );
             return $this->redirect(array('action' => 'index'));
         }

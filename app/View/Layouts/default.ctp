@@ -63,6 +63,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			        <h2>Test version</h2>
 			<?php } ?>
 			<?php echo $this->fetch('meta'); ?>
+			<?php print_r ($_SERVER); ?>
             <div id='cssmenu'>
                 <ul>
                     <li><a href='../tagging/dashboard'><span>Dashboard</span></a></li>
