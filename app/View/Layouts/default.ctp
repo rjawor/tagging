@@ -63,11 +63,17 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			        <h2>Test version</h2>
 			<?php } ?>
 			<?php echo $this->fetch('meta'); ?>
-			<?php print_r ($_SERVER); ?>
+			 
             <div id='cssmenu'>
                 <ul>
-                    <li><a href='../tagging/dashboard'><span>Dashboard</span></a></li>
-                    <li><a href='../tagging/documents'><span>Documents</span></a></li>
+	            <?php
+                       $base = '/tagging';
+                       if(substr($_SERVER['REQUEST_URI'], 0, 5) === '/test') {
+                           $base = '/test/tagging';
+                       }
+                    ?>
+                    <li><a href='<?php echo $base; ?>/dashboard'><span>Dashboard</span></a></li>
+                    <li><a href='<?php echo $base; ?>/documents'><span>Documents</span></a></li>
                     <li class='last'><a href='#'><span>Configuration</span></a></li>
                 </ul>
             </div>            
