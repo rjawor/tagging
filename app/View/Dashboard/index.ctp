@@ -90,7 +90,7 @@
                             id="cell-<?php echo $sentenceIndex.'-0-'.$wordIndex; ?>"
                             class="normal-cell">
                             <input type="hidden" id="cell-<?php echo $sentenceIndex.'-0-'.$wordIndex.'-type'; ?>" value="word" />
-                            <input type="hidden" id="cell-<?php echo $sentenceIndex.'-0-'.$wordIndex.'-value'; ?>" value="" />
+                            <input type="hidden" id="cell-<?php echo $sentenceIndex.'-0-'.$wordIndex.'-value'; ?>" value="<?php echo $word['split']?$word['stem'].",".$word['suffix']:$word['text'];?>" />
                             <input type="hidden" id="cell-<?php echo $sentenceIndex.'-0-'.$wordIndex.'-split'; ?>" value="<?php echo $word['split']?"1":"0";?>" />
                             <input type="hidden" id="cell-<?php echo $sentenceIndex.'-0-'.$wordIndex.'-word-id'; ?>" value="<?php echo $word['id']; ?>" />
                             <input type="hidden" id="cell-<?php echo $sentenceIndex.'-0-'.$wordIndex.'-word-annotation-type-id'; ?>" value="0" />
@@ -145,6 +145,8 @@
                                         }
                                     } ?>
                                 </span>
+                                <input type="hidden" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-'.$wordIndex.'-value'; ?>" value="<?php echo implode(",", $selectedChoices); ?>" />
+
                                 <span class="edit-field">
                                 <?php                                    
                                     if ($wordAnnotations['type']['WordAnnotationType']['multiple_choices']) {
@@ -179,6 +181,7 @@
                                     
                             <?php } else { #text field ?>
                                 <input type="hidden" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-'.$wordIndex.'-type'; ?>" value="text" />
+                                <input type="hidden" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-'.$wordIndex.'-value'; ?>" value="<?php echo isset($annotation['text_value']) ? $annotation['text_value'] : '';  ?>" />
 
                                 <span class="ro-display">
                                     <?php echo isset($annotation['text_value']) ? $annotation['text_value'] : '';  ?>
@@ -203,6 +206,7 @@
                         onClick="setEdited(<?php echo $sentenceIndex.','.$annotationTypeCount.',0'; ?>)"
                         colspan="<?php echo count($sentence['Word']) ?>">
                         <input type="hidden" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-0-type'; ?>" value="text" />
+                        <input type="hidden" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-0-value'; ?>" value="<?php echo isset($sentenceAnnotations['annotation']['text']) ? $sentenceAnnotations['annotation']['text'] : '';  ?>" />
                         <input type="hidden" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-0-sentence-id'; ?>" value="<?php echo $sentence['id']; ?>" />
                         <input type="hidden" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-0-sentence-annotation-type-id'; ?>" value="<?php echo $sentenceAnnotations['type']['SentenceAnnotationType']['id']; ?>" />
                         <span class="ro-display">
