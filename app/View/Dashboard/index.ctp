@@ -90,13 +90,14 @@
                             id="cell-<?php echo $sentenceIndex.'-0-'.$wordIndex; ?>"
                             class="normal-cell">
                             <input type="hidden" id="cell-<?php echo $sentenceIndex.'-0-'.$wordIndex.'-type'; ?>" value="word" />
+                            <input type="hidden" id="cell-<?php echo $sentenceIndex.'-0-'.$wordIndex.'-value'; ?>" value="" />
                             <input type="hidden" id="cell-<?php echo $sentenceIndex.'-0-'.$wordIndex.'-split'; ?>" value="<?php echo $word['split']?"1":"0";?>" />
                             <input type="hidden" id="cell-<?php echo $sentenceIndex.'-0-'.$wordIndex.'-word-id'; ?>" value="<?php echo $word['id']; ?>" />
                             <input type="hidden" id="cell-<?php echo $sentenceIndex.'-0-'.$wordIndex.'-word-annotation-type-id'; ?>" value="0" />
                             <span id="cell-<?php echo $sentenceIndex.'-0-'.$wordIndex.'-split-span'; ?>" class="<?php if ($word['split']) { echo "word-split"; } else {echo "word-unsplit";} ?>">
                                 <span class="ro-display">
                                     <span class="word-split-field">
-                                        <?php echo $word['stem']."&nbsp;&ndash;&nbsp;".$word['suffix']; ?>
+                                        <?php echo $word['stem']."&nbsp;&#124;&nbsp;".$word['suffix']; ?>
                                     </span>
                                     <span class="word-unsplit-field">
                                         <?php echo $word['text']; ?>
@@ -104,7 +105,7 @@
                                 </span>
                                 <span class="edit-field">
                                     <span class="word-split-field">
-                                        <input type="text" value="<?php echo $word['stem'] ?>" />&nbsp;&ndash;&nbsp;<input type="text" value="<?php echo $word['suffix'] ?>" />                                    
+                                        <input type="text" value="<?php echo $word['stem'] ?>" />&nbsp;&#124;&nbsp;<input type="text" value="<?php echo $word['suffix'] ?>" />                                    
                                     </span>
                                     <span class="word-unsplit-field">
                                        <input type="text" value="<?php echo $word['text'] ?>" />
