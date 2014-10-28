@@ -33,10 +33,28 @@
             <?php
         }
     }
-?>    
+    ?>
+    
+    var choicesObject = {
+
+    <?php    
+    foreach ($wordAnnotationTypes as $wordAnnotationType) {
+        foreach ($wordAnnotationType['WordAnnotationTypeChoice'] as $choice) {
+            echo "\"choice".$choice['id']."value\":\"".$choice['value']."\",";       
+            echo "\"choice".$choice['id']."description\":\"".$choice['description']."\",";       
+        }
+    }
+    
+    ?>
+    
+    "none":"none"};
 </script>
 
-
+<?php
+    function normalizeText($text) {
+        return preg_replace('/ /', '%20', $text);
+    }
+?>
 
 
 <?php $sentenceIndex = 0; ?>
@@ -90,7 +108,7 @@
                             id="cell-<?php echo $sentenceIndex.'-0-'.$wordIndex; ?>"
                             class="normal-cell">
                             <input type="hidden" id="cell-<?php echo $sentenceIndex.'-0-'.$wordIndex.'-type'; ?>" value="word" />
-                            <input type="hidden" id="cell-<?php echo $sentenceIndex.'-0-'.$wordIndex.'-value'; ?>" value="<?php echo $word['split']?$word['stem'].",".$word['suffix']:$word['text'];?>" />
+                            <input type="hidden" id="cell-<?php echo $sentenceIndex.'-0-'.$wordIndex.'-value'; ?>" value="<?php echo $word['split']?normalizeText($word['stem']).",".normalizeText($word['suffix']):normalizeText($word['text']);?>" />
                             <input type="hidden" id="cell-<?php echo $sentenceIndex.'-0-'.$wordIndex.'-split'; ?>" value="<?php echo $word['split']?"1":"0";?>" />
                             <input type="hidden" id="cell-<?php echo $sentenceIndex.'-0-'.$wordIndex.'-word-id'; ?>" value="<?php echo $word['id']; ?>" />
                             <input type="hidden" id="cell-<?php echo $sentenceIndex.'-0-'.$wordIndex.'-word-annotation-type-id'; ?>" value="0" />
@@ -180,8 +198,8 @@
                                    </span>
                                     
                             <?php } else { #text field ?>
-                                <input type="hidden" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-'.$wordIndex.'-type'; ?>" value="text" />
-                                <input type="hidden" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-'.$wordIndex.'-value'; ?>" value="<?php echo isset($annotation['text_value']) ? $annotation['text_value'] : '';  ?>" />
+                                <input type="hidden" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-'.$wordIndex.'-type'; ?>" value="word-text" />
+                                <input type="hidden" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-'.$wordIndex.'-value'; ?>" value="<?php echo isset($annotation['text_value']) ? normalizeText($annotation['text_value']) : '';  ?>" />
 
                                 <span class="ro-display">
                                     <?php echo isset($annotation['text_value']) ? $annotation['text_value'] : '';  ?>
@@ -205,8 +223,8 @@
                     <td class="normal-cell" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-0'; ?>"
                         onClick="setEdited(<?php echo $sentenceIndex.','.$annotationTypeCount.',0'; ?>)"
                         colspan="<?php echo count($sentence['Word']) ?>">
-                        <input type="hidden" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-0-type'; ?>" value="text" />
-                        <input type="hidden" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-0-value'; ?>" value="<?php echo isset($sentenceAnnotations['annotation']['text']) ? $sentenceAnnotations['annotation']['text'] : '';  ?>" />
+                        <input type="hidden" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-0-type'; ?>" value="sentence-text" />
+                        <input type="hidden" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-0-value'; ?>" value="<?php echo isset($sentenceAnnotations['annotation']['text']) ? normalizeText($sentenceAnnotations['annotation']['text']) : '';  ?>" />
                         <input type="hidden" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-0-sentence-id'; ?>" value="<?php echo $sentence['id']; ?>" />
                         <input type="hidden" id="cell-<?php echo $sentenceIndex.'-'.$annotationTypeCount.'-0-sentence-annotation-type-id'; ?>" value="<?php echo $sentenceAnnotations['type']['SentenceAnnotationType']['id']; ?>" />
                         <span class="ro-display">
