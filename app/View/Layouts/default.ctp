@@ -66,14 +66,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			 
             <div id='cssmenu'>
                 <ul>
-	            <?php
-                       $base = '/tagging';
-                       if(substr($_SERVER['REQUEST_URI'], 0, 5) === '/test') {
-                           $base = '/test/tagging';
-                       }
-                    ?>
-                    <li><a href='<?php echo $base; ?>/dashboard'><span>Dashboard</span></a></li>
-                    <li><a href='<?php echo $base; ?>/documents'><span>Documents</span></a></li>
+	            <li><a href='/dashboard'><span>Dashboard</span></a></li>
+                    <li><a href='/documents'><span>Documents</span></a></li>
                     <li class='last'><a href='#'><span>Configuration</span></a></li>
                 </ul>
             </div>            

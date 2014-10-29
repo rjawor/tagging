@@ -27,7 +27,7 @@ function prevSentence() {
             offset--;
             offsetElement.value = offset;
             updateDashboard();
-            $.ajax({async:true, url:"../tagging/dashboard/setCurrentDocument/"+documentId+"/"+offset});
+            $.ajax({async:true, url:"/tagging/dashboard/setCurrentDocument/"+documentId+"/"+offset});
         }
     }
 }
@@ -43,7 +43,7 @@ function nextSentence(documentId) {
             offset++;
             offsetElement.value = offset;
             updateDashboard();
-            $.ajax({async:true, url:"../tagging/dashboard/setCurrentDocument/"+documentId+"/"+offset});
+            $.ajax({async:true, url:"/tagging/dashboard/setCurrentDocument/"+documentId+"/"+offset});
         }
     }
 }
@@ -338,22 +338,22 @@ function saveCell(sentenceNumber) {
         var wordAnnotationTypeElement = document.getElementById(cellId+'-word-annotation-type-id');
         var wordAnnotationTypeId = wordAnnotationTypeElement.value;
         var wordId = document.getElementById(cellId+'-word-id').value;
-        $.ajax({async:true, url:"../tagging/wordAnnotations/saveWordTextAnnotation/"+wordId+"/"+wordAnnotationTypeId+"/"+valueElement.value});
+        $.ajax({async:true, url:"/tagging/wordAnnotations/saveWordTextAnnotation/"+wordId+"/"+wordAnnotationTypeId+"/"+valueElement.value});
     } else if (cellTypeElement.value == 'sentence-text') {
         var sentenceAnnotationTypeId = document.getElementById(cellId+'-sentence-annotation-type-id').value;
         var sentenceId = document.getElementById(cellId+'-sentence-id').value;
-        $.ajax({async:true, url:"../tagging/sentenceAnnotations/saveSentenceAnnotation/"+sentenceId+"/"+sentenceAnnotationTypeId+"/"+valueElement.value});
+        $.ajax({async:true, url:"/tagging/sentenceAnnotations/saveSentenceAnnotation/"+sentenceId+"/"+sentenceAnnotationTypeId+"/"+valueElement.value});
     } else if (cellTypeElement.value == 'word') {
         var splitElement = document.getElementById(cellId+'-split');
         var wordId = document.getElementById(cellId+'-word-id').value;
         if (splitElement.value == '0') {
-            $.ajax({async:true, url:"../tagging/words/saveWord/"+wordId+"/0/"+valueElement.value+"/none/none"});
+            $.ajax({async:true, url:"/tagging/words/saveWord/"+wordId+"/0/"+valueElement.value+"/none/none"});
         } else {
             var wordTextElements = cell.querySelectorAll('.edit-field .word-split-field input');
             var stemAndSuffix = valueElement.value.split(",");
             var stem = stemAndSuffix[0];
             var suffix = stemAndSuffix[1];
-            $.ajax({async:true, url:"../tagging/words/saveWord/"+wordId+"/1/none/"+stem+"/"+suffix});
+            $.ajax({async:true, url:"/tagging/words/saveWord/"+wordId+"/1/none/"+stem+"/"+suffix});
         }
     } else if (cellTypeElement.value == 'choices' || cellTypeElement.value == 'multiple-choices') {
         var wordAnnotationTypeId = document.getElementById(cellId+'-word-annotation-type-id').value;
@@ -362,7 +362,7 @@ function saveCell(sentenceNumber) {
         if (selectedChoicesIdsString == '') {
             selectedChoicesIdsString = 'none';
         }
-        $.ajax({async:true, url:"../tagging/wordAnnotations/saveWordChoicesAnnotation/"+wordId+"/"+wordAnnotationTypeId+"/"+selectedChoicesIdsString});
+        $.ajax({async:true, url:"/tagging/wordAnnotations/saveWordChoicesAnnotation/"+wordId+"/"+wordAnnotationTypeId+"/"+selectedChoicesIdsString});
     }
     
 }
