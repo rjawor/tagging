@@ -66,8 +66,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			 
             <div id='cssmenu'>
                 <ul>
-	            <li><a href='/dashboard'><span>Dashboard</span></a></li>
-                    <li><a href='/documents'><span>Documents</span></a></li>
+	            <li><a href='/tagging/dashboard'><span>Dashboard</span></a></li>
+                    <li><a href='/tagging/documents'><span>Documents</span></a></li>
                     <li class='last'><a href='#'><span>Configuration</span></a></li>
                 </ul>
             </div>            
