@@ -454,7 +454,7 @@ function getCellType(sentenceNumber) {
     return cellTypeElement.value;
 }
 
-function enterHandle() {
+function enterHandle(e) {
     var sentenceNumber = getSentenceNumber();
     if(getCellType(sentenceNumber) == 'multiple-choices') {
         if (!getEditMode(sentenceNumber)) {
@@ -467,6 +467,7 @@ function enterHandle() {
         toggleEditMode(sentenceNumber);
         updateSentence(sentenceNumber);
     }
+    e.preventDefault();
 }
 
 function handleEnterInMultipleChoices(sentenceNumber) {
@@ -658,7 +659,7 @@ $(document).keydown(function(e) {
             break;
 
             case 13:
-            enterHandle();
+            enterHandle(e);
             break;
 
             case 27:
