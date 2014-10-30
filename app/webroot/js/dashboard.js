@@ -565,6 +565,30 @@ function ctrlJHandle(e) {
     
 }
 
+function ctrlKHandle(e) {
+    var sentenceNumber = getSentenceNumber();
+    var gridX = getGridX(sentenceNumber);
+    var gridY = getGridY(sentenceNumber);
+    var cellId = 'cell-'+sentenceNumber+'-'+gridY+'-'+gridX;
+    var splitSpan = document.getElementById(cellId+'-split-span');
+    if (splitSpan != null && splitSpan.className == "word-split" && getEditMode(sentenceNumber)) {
+        splitSpan.className="word-unsplit"; 
+        var splitElement = document.getElementById(cellId+'-split');
+        splitElement.value = '0';
+           
+        var inputUnsplit = splitSpan.querySelector('.word-unsplit-field input');
+        var splitInputs = splitSpan.querySelectorAll('.word-split-field input');
+        var stemInput = splitInputs[0];
+        var suffixInput = splitInputs[1];
+        
+        inputUnsplit.value = stemInput.value+suffixInput.value;
+        inputUnsplit.focus();
+
+        e.preventDefault();
+    }
+    
+}
+
 function toggleSelectedChoice(element) {
     if (element.className == 'choice-selected') {
         element.className = 'choice-available';
@@ -607,6 +631,10 @@ $(document).keydown(function(e) {
 
             case 74:
                 ctrlJHandle(e);
+            break;
+            
+            case 75:
+                ctrlKHandle(e);
             break;
 
             default: return; // exit this handler for other keys
