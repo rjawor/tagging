@@ -224,10 +224,12 @@ function denormalizeText(text) {
     return text.replace(/\%20/g, ' ');
 }
 
-function updateCellValue(sentenceNumber) {
-    //updates cell value field based on input data
-    var gridX = getGridX(sentenceNumber);
-    var gridY = getGridY(sentenceNumber);
+
+function updateCellValue(sentenceNumber, gridX, gridY) {
+    if (gridX == null || gridY == null) {
+        gridX = getGridX(sentenceNumber);
+        gridY = getGridY(sentenceNumber);    
+    }
     var cellId = 'cell-'+sentenceNumber+'-'+gridY+'-'+gridX;
     var cell = document.getElementById(cellId);
     var cellTypeId = cellId+'-type';
@@ -268,13 +270,33 @@ function updateCellValue(sentenceNumber) {
             valueElement.value = '';
         }
     }
+
 }
 
 
-function updateCellDisplay(sentenceNumber) {
-    //TODO updates cell display based on value
-    var gridX = getGridX(sentenceNumber);
-    var gridY = getGridY(sentenceNumber);
+function modifyValue(sentenceNumber, gridX, gridY, value) {
+    var valueElement = document.getElementById('cell-'+sentenceNumber+'-'+gridY+'-'+gridX+'-value');
+    valueElement.value = value;
+    updateCellDisplay(sentenceNumber, gridX, gridY); 
+}
+
+function testInput() {
+   sentenceNumber = getSentenceNumber();
+   modifyValue(sentenceNumber, 0,0,'test,ing');
+   modifyValue(sentenceNumber, 0,1,'test input');
+   modifyValue(sentenceNumber, 0,2,'22,45');
+   modifyValue(sentenceNumber, 0,3,'83,84');
+   
+    
+    
+}
+
+
+function updateCellDisplay(sentenceNumber, gridX, gridY) {
+    if (gridX == null || gridY == null) {
+        gridX = getGridX(sentenceNumber);
+        gridY = getGridY(sentenceNumber);    
+    }
     var cellId = 'cell-'+sentenceNumber+'-'+gridY+'-'+gridX;
     var cell = document.getElementById(cellId);
     var cellTypeId = cellId+'-type';
@@ -317,16 +339,38 @@ function updateCellDisplay(sentenceNumber) {
             displaySpan.innerHTML = displaySpan.innerHTML + '<input type="button" class="choice-selected" value="'+choicesObject['choice'+id+'value']+'" title="'+choicesObject['choice'+id+'description']+'"/>';
         }
         
-        //TODO update edit field!
+        var elements = editSpan.querySelectorAll('input[type="button"]');
+        for (var i = 0; i< elements.length; i++) {
+	    if (cellTypeElement.value == 'choices') {
+                elements[i].className = 'choice-available';
+	    } else {
+		elements[i].className = 'choice-inactive';
+            }
+        }
+        
+        for (var i=0; i< selectedChoicesIds.length; i++) {
+            var id = selectedChoicesIds[i];
+            var idElement = editSpan.querySelector('input[type="hidden"][value="'+id+'"]');
+            var matches = idElement.id.match(/cell-\d+-\d+-\d+-choice-(\d+)-type-id/);
+            var choiceNumber = matches[1];
+            var element = document.getElementById(cellId+'-choice-'+choiceNumber);
+            if (element != null) {
+                element.className = 'choice-selected';
+            }
+        } 
+
+
     }
-    
+
 
 }
 
-function saveCell(sentenceNumber) {
-    // based on value field
-    var gridX = getGridX(sentenceNumber);
-    var gridY = getGridY(sentenceNumber);
+function saveCell(sentenceNumber, gridX, gridY) {
+    //based on value field
+    if (gridX == null || gridY == null) {
+        gridX = getGridX(sentenceNumber);
+        gridY = getGridY(sentenceNumber);    
+    }
     var cellId = 'cell-'+sentenceNumber+'-'+gridY+'-'+gridX;
     var cell = document.getElementById(cellId);
     var cellTypeId = cellId+'-type';
