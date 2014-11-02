@@ -280,18 +280,6 @@ function modifyValue(sentenceNumber, gridX, gridY, value) {
     updateCellDisplay(sentenceNumber, gridX, gridY); 
 }
 
-function testInput() {
-   sentenceNumber = getSentenceNumber();
-   modifyValue(sentenceNumber, 0,0,'test,ing');
-   modifyValue(sentenceNumber, 0,1,'test input');
-   modifyValue(sentenceNumber, 0,2,'22,45');
-   modifyValue(sentenceNumber, 0,3,'83,84');
-   
-    
-    
-}
-
-
 function updateCellDisplay(sentenceNumber, gridX, gridY) {
     if (gridX == null || gridY == null) {
         gridX = getGridX(sentenceNumber);

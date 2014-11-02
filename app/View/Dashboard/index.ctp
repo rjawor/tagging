@@ -97,7 +97,6 @@
                 echo $this->Html->image("down.png", $options);
             ?>
             <hr/>
-            <input type="button" onclick="testInput();" value="set" />
             <table>
                 
                 <tr class="words-row">
