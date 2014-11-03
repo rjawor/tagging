@@ -14,7 +14,14 @@ foreach ($document['Sentence'] as $sentence): ?>
     ?>
     &nbsp;          
     <?php foreach ($sentence['Word'] as $word): ?>
-        <?php echo $word['text'] ?>&nbsp;
+        <?php
+            if ($word['split'] == 1) {
+                echo $word['stem']."&nbsp;&#124;&nbsp;".$word['suffix'];
+            } else {
+                echo $word['text'];
+            }
+        
+        ?>&nbsp;
     <?php endforeach; ?>
 
 </p>

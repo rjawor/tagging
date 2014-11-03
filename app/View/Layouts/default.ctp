@@ -44,7 +44,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	?>
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
 </head>
-<body onload="updateSentence(0)">
+<body onload="updateSentence()">
 	<div id="container">
 		<div id="header">
 			<div style="float:right">

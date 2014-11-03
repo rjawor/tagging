@@ -18,7 +18,7 @@ function nextSentence(documentId) {
     var documentId = getDocumentId();
     if (offsetElement != null) {
         var offset = parseInt(offsetElement.value);
-        var sentencesCount = document.getElementsByName('sentence').length;
+        var sentencesCount = document.getElementById('document-sentences-count').value;
         setEditMode(offset, false);
         if (offset < sentencesCount - 1) {
             offset++;
@@ -29,7 +29,8 @@ function nextSentence(documentId) {
     }
 }
 
-function updateSentence(sentenceNumber) {
+function updateSentence() {
+    var sentenceNumber = getSentenceNumber();
     var sentenceCells = document.querySelectorAll('#sentence'+sentenceNumber+" td.selected,td.edited");
     for (var i=0; i<sentenceCells.length; i++) {
         sentenceCells[i].className = 'normal-cell';

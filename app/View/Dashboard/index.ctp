@@ -52,16 +52,30 @@
     }
 ?>
 
-<?php for($i = 0; $i < $currentSentenceIndex; $i++) { ?>
+<?php
+     $sentenceNumber = $offset - $currentSentenceIndex + 1;
+
+     for($i = 0; $i < $currentSentenceIndex; $i++) { ?>
 <p>
-    <?php foreach ($sentencesWindow[$i]['Word'] as $word): ?>
-        <?php echo $word['text'] ?>&nbsp;
+    <?php
+        echo $sentenceNumber.".&nbsp;";
+        $sentenceNumber++;   
+        foreach ($sentencesWindow[$i]['Word'] as $word): ?>
+        <?php
+            if ($word['split'] == 1) {
+                echo $word['stem']."&nbsp;&#124;&nbsp;".$word['suffix'];
+            } else {
+                echo $word['text'];
+            }
+        
+        ?>&nbsp;
     
     <?php endforeach; ?>
 </p>
 <?php } ?>
 
 <div name="sentence" id="sentence<?php echo $offset; ?>">
+    <input type="hidden" id="document-sentences-count" value="<?php echo $sentencesCount ?>" />
     <input type="hidden" id="sentence<?php echo $offset; ?>-word-count" value="<?php echo count($sentence['Word']) ?>" />
     <input type="hidden" id="sentence<?php echo $offset; ?>-word-annotation-count" value="<?php echo $wordAnnotationCount + 1 ?>" />
     <input type="hidden" id="sentence<?php echo $offset; ?>-sentence-annotation-count" value="<?php echo $sentenceAnnotationCount ?>" />
@@ -95,7 +109,7 @@
         <table>
             
             <tr class="words-row">
-                <td class="annotation-column"><?php echo ($offset + 1)?>.</td>
+                <td class="annotation-column"><?php echo $sentenceNumber; $sentenceNumber++;?>.</td>
                 <?php
                     $wordIndex = 0;
                     foreach ($sentence['Word'] as $word): ?>
@@ -240,8 +254,17 @@
 
 <?php for($i = $currentSentenceIndex + 1; $i < count($sentencesWindow); $i++) { ?>
 <p>
-    <?php foreach ($sentencesWindow[$i]['Word'] as $word): ?>
-        <?php echo $word['text'] ?>&nbsp;
+    <?php
+        echo $sentenceNumber.".&nbsp;";
+        $sentenceNumber++;   
+        foreach ($sentencesWindow[$i]['Word'] as $word): ?>
+        <?php
+            if ($word['split'] == 1) {
+                echo $word['stem']."&nbsp;&#124;&nbsp;".$word['suffix'];
+            } else {
+                echo $word['text'];
+            }
+        ?>&nbsp;
     
     <?php endforeach; ?>
 </p>
