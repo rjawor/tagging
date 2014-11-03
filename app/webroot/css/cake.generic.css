@@ -192,18 +192,6 @@ table td.actions a {
     display:none;
 }
 
-.inactive {
-    display:none;
-}
-
-.active p {
-    display:none;
-}
-
-.context div {
-    display:none;
-}
-
 .clickable-image {
     cursor:pointer;
 }

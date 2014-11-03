@@ -1,22 +1,3 @@
-function updateDashboard() {
-    var offsetElement = document.getElementById('offset');
-    if (offsetElement != null) {
-        var offset = parseInt(offsetElement.value);
-        
-        var sentences = document.getElementsByName('sentence');
-        for (var i=0; i<sentences.length; i++) {
-            if (i == offset) {
-                sentences[i].className = 'active';
-                updateSentence(i);
-            } else if (Math.abs(i - offset) <= 2) {
-                sentences[i].className = 'context';            
-            } else {
-                sentences[i].className = 'inactive';
-            }
-        }
-    }
-}
-
 function prevSentence() {
     var offsetElement = document.getElementById('offset');
     var documentId = getDocumentId();
@@ -26,8 +7,8 @@ function prevSentence() {
         if (offset > 0) {
             offset--;
             offsetElement.value = offset;
-            updateDashboard();
             $.ajax({async:true, url:"/tagging/dashboard/setCurrentDocument/"+documentId+"/"+offset});
+            document.location.href = "/tagging/dashboard/index/"+documentId+"/"+offset;
         }
     }
 }
@@ -42,8 +23,8 @@ function nextSentence(documentId) {
         if (offset < sentencesCount - 1) {
             offset++;
             offsetElement.value = offset;
-            updateDashboard();
             $.ajax({async:true, url:"/tagging/dashboard/setCurrentDocument/"+documentId+"/"+offset});
+            document.location.href = "/tagging/dashboard/index/"+documentId+"/"+offset;            
         }
     }
 }

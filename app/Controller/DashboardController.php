@@ -1,31 +1,64 @@
 <?php
 
-App::uses('AppController', 'Controller', 'User', 'Document', 'WordAnnotationType', 'SentenceAnnotationType');
+App::uses('AppController', 'Controller', 'User', 'Document', 'Sentence', 'WordAnnotationType', 'SentenceAnnotationType');
 
 class DashboardController extends AppController {
 
-    public function index() {
-        $userModel = ClassRegistry::init('User');
+    public function index($documentId = -1, $offset = -1) {
+        $contextSize = 1;
 
+        $userModel = ClassRegistry::init('User');
         $currentUser = $userModel->findById($this->Auth->user('id'));
 
-        $documentId = $currentUser['User']['current_document_id'];
-        $offset = $currentUser['User']['current_document_offset'];
-        
-        if (!$offset) {
-            $offset = 0;
+        if ($documentId < 0) {
+            $documentId = $currentUser['User']['current_document_id'];
+            $offset = $currentUser['User']['current_document_offset'];
+            if (!$offset) {
+                $offset = 0;
+            }
         }
-        
+
         if (!$documentId) {
             $this->Session->setFlash(__('Select a document in the Documents view'));
         } else {
-            $this->set('offset', $offset);            
+            $sentenceModel = ClassRegistry::init('Sentence');
+            $sentencesCount = $sentenceModel->find('count', array(
+                                                                'conditions' => array (
+                                                                                    'document_id' => $documentId
+                                                                                ),
+                                                                'recursive' => -1
+                                                            )
+                                                   );
             
-            $documentModel = ClassRegistry::init('Document');
-            $documentModel->recursive = 4;
+
+            if ($offset < $contextSize) {
+                $computedOffset = 0;
+                $limit = $contextSize - $offset + 1;
+            } else {
+                $computedOffset = $offset - $contextSize;
+                $limit = 2 * $contextSize + 1;
+            }
+
+            $sentencesWindow = $sentenceModel->find('all', array(
+                                                                'conditions' => array (
+                                                                                    'document_id' => $documentId
+                                                                                ),
+                                                                'recursive' => 1,
+                                                                'offset' => $computedOffset,
+                                                                'limit' => $limit
+                                                            )
+                                                    );
+                                                    
+            if ($offset < $contextSize) {
+                $currentSentenceIndex = $offset;
+            } else {
+                $currentSentenceIndex = $contextSize;
+            }
+           
             
-            $documentWindow = $documentModel->findById($documentId);
-            
+            $sentenceModel->recursive = 3;
+            $sentence = $sentenceModel->findById($sentencesWindow[$currentSentenceIndex]['Sentence']['id']);
+                        
             $wordAnnotationTypeModel = ClassRegistry::init('WordAnnotationType');
             $wordAnnotationTypes = $wordAnnotationTypeModel->find('all');
 
@@ -33,38 +66,41 @@ class DashboardController extends AppController {
             $sentenceAnnotationTypes = $sentenceAnnotationTypeModel->find('all');            
 
             $sentenceIndex = 0;            
-            foreach ($documentWindow['Sentence'] as $sentence) {
-                $wordAnnotations = array();
-                
-                foreach ($wordAnnotationTypes as $wordAnnotationType) {
-                    $annotationObject = array('type' => $wordAnnotationType,
-                                              'annotations' => array()
-                                              );
-                    foreach ($sentence['Word'] as $word) {
-                        array_push($annotationObject['annotations'], $this->getWordAnnotation($word, $wordAnnotationType));
-                    }
-                    array_push($wordAnnotations, $annotationObject);
-                }
 
-                $documentWindow['Sentence'][$sentenceIndex]['WordAnnotations'] = $wordAnnotations;
-                
-                $sentenceAnnotations = array();
-                foreach ($sentenceAnnotationTypes as $sentenceAnnotationType) {
-                    $annotationObject = array('type' => $sentenceAnnotationType,
-                                              'annotation' => $this->getSentenceAnnotation($sentence, $sentenceAnnotationType)
-                                              );
-                    array_push($sentenceAnnotations, $annotationObject);
+            $wordAnnotations = array();
+            
+            foreach ($wordAnnotationTypes as $wordAnnotationType) {
+                $annotationObject = array('type' => $wordAnnotationType,
+                                          'annotations' => array()
+                                          );
+                foreach ($sentence['Word'] as $word) {
+                    array_push($annotationObject['annotations'], $this->getWordAnnotation($word, $wordAnnotationType));
                 }
-                
-                $documentWindow['Sentence'][$sentenceIndex]['SentenceAnnotations'] = $sentenceAnnotations;
-
-                $sentenceIndex++;
+                array_push($wordAnnotations, $annotationObject);
             }
 
-            $this->set('documentWindow', $documentWindow);
+            $sentence['WordAnnotations'] = $wordAnnotations;
+            
+            $sentenceAnnotations = array();
+            foreach ($sentenceAnnotationTypes as $sentenceAnnotationType) {
+                $annotationObject = array('type' => $sentenceAnnotationType,
+                                          'annotation' => $this->getSentenceAnnotation($sentence, $sentenceAnnotationType)
+                                          );
+                array_push($sentenceAnnotations, $annotationObject);
+            }
+            
+            $sentence['SentenceAnnotations'] = $sentenceAnnotations;
+
+
+            $this->set('sentence', $sentence);
+            $this->set('sentencesCount', $sentencesCount);
+            $this->set('sentencesWindow', $sentencesWindow);
+            $this->set('currentSentenceIndex', $currentSentenceIndex);
             $this->set('wordAnnotationCount', count($wordAnnotationTypes));
             $this->set('wordAnnotationTypes', $wordAnnotationTypes);
             $this->set('sentenceAnnotationCount', count($sentenceAnnotationTypes));
+            $this->set('offset', $offset);
+            $this->set('documentId', $documentId);
             $this->set('hotKeys', array('q', 'w', 'e', 'r', 'a', 's', 'd', 'f', 'z', 'x', 'c', 'v'));
         }
     }
