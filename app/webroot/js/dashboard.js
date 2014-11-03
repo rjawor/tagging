@@ -321,7 +321,12 @@ function updateCellDisplay(sentenceNumber, gridX, gridY) {
     
     } else if (cellTypeElement.value == 'choices' || cellTypeElement.value == 'multiple-choices') {
         displaySpan.innerHTML = '';
-        var selectedChoicesIds=valueElement.value.split(",");
+        if (valueElement.value != '') {
+            var selectedChoicesIds=valueElement.value.split(",");
+        } else {
+            var selectedChoicesIds=[];        
+        }
+        
         for (var i=0; i< selectedChoicesIds.length; i++) {
             var id = selectedChoicesIds[i];
             displaySpan.innerHTML = displaySpan.innerHTML + '<input type="button" class="choice-selected" value="'+choicesObject['choice'+id+'value']+'" title="'+choicesObject['choice'+id+'description']+'"/>';

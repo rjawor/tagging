@@ -61,18 +61,21 @@ class WordAnnotationsController extends AppController {
             $wordAnnotationId = $wordAnnotation['WordAnnotation']['id'];
         }
         
-        $data = array();
         
-        $choicesArray = array();
-        foreach (explode(",", $choices) as $choiceId) {
-            array_push($data, array(
-                                'word_annotation_id' => $wordAnnotationId,
-                                'word_annotation_type_choice_id' => $choiceId
-                              )
-            );
-        }
         $this->WordAnnotation->WordAnnotationTypeChoicesWordAnnotation->deleteAll(array('word_annotation_id' => $wordAnnotationId), false);
-        $this->WordAnnotation->WordAnnotationTypeChoicesWordAnnotation->saveAll($data);
+
+        if ($choices != 'none') {
+            $choicesArray = array();
+            $data = array();
+            foreach (explode(",", $choices) as $choiceId) {
+                array_push($data, array(
+                                    'word_annotation_id' => $wordAnnotationId,
+                                    'word_annotation_type_choice_id' => $choiceId
+                                  )
+                );
+            }
+            $this->WordAnnotation->WordAnnotationTypeChoicesWordAnnotation->saveAll($data);
+        }
     }
 }
 
