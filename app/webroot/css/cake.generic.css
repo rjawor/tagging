@@ -653,6 +653,10 @@ input[type=submit]:active,
 	text-decoration: none;
 }
 
+input[type=text] {
+    min-width:100px;
+}
+
 /** Related **/
 .related {
 	clear: both;

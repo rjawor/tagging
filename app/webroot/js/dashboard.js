@@ -54,6 +54,20 @@ function updateSentence() {
         } else {
             activeCell.className = 'selected';        
         }
+        var offset = $('#'+activeCell.id).offset();
+        var width = $(window).width();
+        var margin = 50;
+        if (offset.left > width - margin) {
+            $('div#content').animate({
+                scrollTop: 0,
+                scrollLeft: offset.left - 150 + $('div#content').scrollLeft()
+            });
+        } else if (offset.left < margin) {
+            $('div#content').animate({
+                scrollTop: 0,
+                scrollLeft: offset.left + 150 + $('div#content').scrollLeft() - width
+            });
+        }
     }
 }
 
