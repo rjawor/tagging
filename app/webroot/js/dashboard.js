@@ -213,13 +213,12 @@ function toggleEditMode(sentenceNumber) {
 }
 
 function normalizeText(text) {
-    return text.replace(/^\s+/, '').replace(/\s+$/, '').replace(/ /g, '%20');
+    return text.replace(/^\s+/, '').replace(/\s+$/, '');
 }
 
-function denormalizeText(text) {
-    return text.replace(/\%20/g, ' ');
+function escapeHTML(text) {
+    return text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/\"/g,'&quot;');
 }
-
 
 function updateCellValue(sentenceNumber, gridX, gridY) {
     if (gridX == null || gridY == null) {
@@ -236,7 +235,7 @@ function updateCellValue(sentenceNumber, gridX, gridY) {
 
     if (cellTypeElement.value == 'word-text' || cellTypeElement.value == 'sentence-text') {
         var textInputElement = editSpan.querySelector('input[type=text]');
-        valueElement.value = normalizeText(textInputElement.value);
+        valueElement.value = normalizeText(escapeHTML(textInputElement.value));
         
     } else if (cellTypeElement.value == 'word') {
         var splitElement = document.getElementById(cellId+'-split');
@@ -291,15 +290,15 @@ function updateCellDisplay(sentenceNumber, gridX, gridY) {
     var editSpan = cell.querySelector('.edit-field');
 
     if (cellTypeElement.value == 'word-text' || cellTypeElement.value == 'sentence-text') {
-        displaySpan.innerHTML = denormalizeText(valueElement.value);
+        displaySpan.innerHTML = valueElement.value;
         var textInputElement = editSpan.querySelector('input[type=text]');
-        textInputElement.value = denormalizeText(valueElement.value);        
+        textInputElement.value = valueElement.value;        
     } else if (cellTypeElement.value == 'word') {
         var splitElement = document.getElementById(cellId+'-split');
         if (splitElement.value == '0') {
-            displaySpan.innerHTML = denormalizeText(valueElement.value);            
+            displaySpan.innerHTML = valueElement.value;            
             var wordTextElement = cell.querySelector('.edit-field .word-unsplit-field input');
-            wordTextElement.value = denormalizeText(valueElement.value);
+            wordTextElement.value = valueElement.value;
         } else {
             var stemAndSuffix = valueElement.value.split(",");
             var stem = stemAndSuffix[0];
@@ -307,12 +306,12 @@ function updateCellDisplay(sentenceNumber, gridX, gridY) {
 
             var splitDisplaySpan = cell.querySelector('.ro-display .word-split-field');
             if (splitDisplaySpan != null) {
-                splitDisplaySpan.innerHTML = denormalizeText(stem)+'&nbsp;&#124;&nbsp;'+denormalizeText(suffix);
+                splitDisplaySpan.innerHTML = stem+'&nbsp;&#124;&nbsp;'+suffix;
             }
             
             var wordTextElements = cell.querySelectorAll('.edit-field .word-split-field input');
-            wordTextElements[0].value = denormalizeText(stem);
-            wordTextElements[1].value = denormalizeText(suffix);
+            wordTextElements[0].value = stem;
+            wordTextElements[1].value = suffix;
         }
     
     } else if (cellTypeElement.value == 'choices' || cellTypeElement.value == 'multiple-choices') {
@@ -371,12 +370,12 @@ function saveCell(sentenceNumber, gridX, gridY) {
         var wordAnnotationTypeElement = document.getElementById(cellId+'-word-annotation-type-id');
         var wordAnnotationTypeId = wordAnnotationTypeElement.value;
         var wordId = document.getElementById(cellId+'-word-id').value;
-        $.ajax({async:true, url:"/tagging/wordAnnotations/saveWordTextAnnotation/"+wordId+"/"+wordAnnotationTypeId+"/"+valueElement.value});
+        $.post( "/tagging/wordAnnotations/saveWordTextAnnotation", { wordId: wordId, wordAnnotationTypeId: wordAnnotationTypeId, text: valueElement.value } );
     } else if (cellTypeElement.value == 'sentence-text') {
         var sentenceAnnotationTypeId = document.getElementById(cellId+'-sentence-annotation-type-id').value;
         var sentenceId = document.getElementById(cellId+'-sentence-id').value;
-        $.ajax({async:true, url:"/tagging/sentenceAnnotations/saveSentenceAnnotation/"+sentenceId+"/"+sentenceAnnotationTypeId+"/"+valueElement.value});
-    } else if (cellTypeElement.value == 'word') {
+        $.post( "/tagging/sentenceAnnotations/saveSentenceAnnotation", { sentenceId: sentenceId, sentenceAnnotationTypeId: sentenceAnnotationTypeId, text: valueElement.value} );        
+     } else if (cellTypeElement.value == 'word') {
         var splitElement = document.getElementById(cellId+'-split');
         var wordId = document.getElementById(cellId+'-word-id').value;
         if (splitElement.value == '0') {

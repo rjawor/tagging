@@ -76,7 +76,7 @@ CREATE TABLE IF NOT EXISTS `testtaggingdb`.`documents` (
   CONSTRAINT `fk_documents_languages1`
     FOREIGN KEY (`language_id`)
     REFERENCES `testtaggingdb`.`languages` (`id`)
-    ON DELETE NO ACTION
+    ON DELETE SET NULL
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
@@ -132,6 +132,7 @@ CREATE TABLE IF NOT EXISTS `testtaggingdb`.`word_annotation_types` (
   `strict_choices` TINYINT(1) NULL,
   `multiple_choices` TINYINT(1) NULL,
   `description` TEXT NULL,
+  `position` INT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
@@ -152,7 +153,7 @@ CREATE TABLE IF NOT EXISTS `testtaggingdb`.`word_annotations` (
   CONSTRAINT `fk_word_annotations_word_annotation_types1`
     FOREIGN KEY (`type_id`)
     REFERENCES `testtaggingdb`.`word_annotation_types` (`id`)
-    ON DELETE NO ACTION
+    ON DELETE CASCADE
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_word_annotations_words1`
     FOREIGN KEY (`word_id`)
@@ -172,12 +173,13 @@ CREATE TABLE IF NOT EXISTS `testtaggingdb`.`word_annotation_type_choices` (
   `value` VARCHAR(255) NULL,
   `word_annotation_type_id` INT NULL,
   `description` TEXT NULL,
+  `position` INT NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_word_annotation_type_choices_word_annotation_types1_idx` (`word_annotation_type_id` ASC),
   CONSTRAINT `fk_word_annotation_type_choices_word_annotation_types1`
     FOREIGN KEY (`word_annotation_type_id`)
     REFERENCES `testtaggingdb`.`word_annotation_types` (`id`)
-    ON DELETE NO ACTION
+    ON DELETE CASCADE
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
@@ -191,6 +193,7 @@ CREATE TABLE IF NOT EXISTS `testtaggingdb`.`sentence_annotation_types` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(45) NULL,
   `description` TEXT NULL,
+  `position` INT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
@@ -211,7 +214,7 @@ CREATE TABLE IF NOT EXISTS `testtaggingdb`.`sentence_annotations` (
   CONSTRAINT `fk_sentence_annotations_sentence_annotation_types1`
     FOREIGN KEY (`type_id`)
     REFERENCES `testtaggingdb`.`sentence_annotation_types` (`id`)
-    ON DELETE NO ACTION
+    ON DELETE CASCADE
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_sentence_annotations_sentences1`
     FOREIGN KEY (`sentence_id`)
@@ -227,7 +230,7 @@ ENGINE = InnoDB;
 DROP TABLE IF EXISTS `testtaggingdb`.`word_annotation_type_choices_word_annotations` ;
 
 CREATE TABLE IF NOT EXISTS `testtaggingdb`.`word_annotation_type_choices_word_annotations` (
-  `id` INT NOT NULL AUTO_INCREMENT,
+  `id` BIGINT NOT NULL AUTO_INCREMENT,
   `word_annotation_id` INT NULL,
   `word_annotation_type_choice_id` INT NULL,
   INDEX `fk_word_annotations_has_word_annotation_type_choices_word_a_idx` (`word_annotation_type_choice_id` ASC),
@@ -241,7 +244,7 @@ CREATE TABLE IF NOT EXISTS `testtaggingdb`.`word_annotation_type_choices_word_an
   CONSTRAINT `fk_word_annotations_has_word_annotation_type_choices_word_ann2`
     FOREIGN KEY (`word_annotation_type_choice_id`)
     REFERENCES `testtaggingdb`.`word_annotation_type_choices` (`id`)
-    ON DELETE NO ACTION
+    ON DELETE CASCADE
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
