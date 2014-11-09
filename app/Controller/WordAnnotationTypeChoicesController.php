@@ -16,7 +16,10 @@ class WordAnnotationTypeChoicesController extends AppController {
         if ($this->request->is('post')) {
             $this->WordAnnotationTypeChoice->create();
             $data = $this->request->data;
-            $maxPosition = $this->WordAnnotationTypeChoice->find('first', array('fields' =>  array('max(position) AS max_pos')));            
+            $maxPosition = $this->WordAnnotationTypeChoice->find('first', array(
+                                            'fields' =>  array('max(position) AS max_pos'),
+                                            'conditions' => array('word_annotation_type_id' => $wordAnnotationTypeId)
+                                        ));            
             $data['WordAnnotationTypeChoice']['position'] = $maxPosition[0]['max_pos']+1;
             $data['WordAnnotationTypeChoice']['word_annotation_type_id'] = $wordAnnotationTypeId;
             if ($this->WordAnnotationTypeChoice->save($data)) {
@@ -26,6 +29,21 @@ class WordAnnotationTypeChoicesController extends AppController {
             $this->Session->setFlash(__('Unable to add new word annotation type choice.'));
         }
     }
+    
+    public function move($wordAnnotationTypeId, $position, $offset) {
+        $this->WordAnnotationTypeChoice->recursive = 0;
+        $current = $this->WordAnnotationTypeChoice->find('first', array('conditions'=> array('word_annotation_type_id'=>$wordAnnotationTypeId, 'position'=>$position)));
+        $neighbour = $this->WordAnnotationTypeChoice->find('first', array('conditions'=> array('word_annotation_type_id'=>$wordAnnotationTypeId,'position'=>$position+$offset)));
+        $current['WordAnnotationTypeChoice']['position'] = $position + $offset;
+        $neighbour['WordAnnotationTypeChoice']['position'] = $position;
+        if ($this->WordAnnotationTypeChoice->save($current) && $this->WordAnnotationTypeChoice->save($neighbour)) {
+            $this->Session->setFlash(__('Successfully changed order.'), 'flashes/success');
+            return $this->redirect(array('action' => 'index', $wordAnnotationTypeId));
+        }
+        $this->Session->setFlash(__('Unable to change order.'));
+        
+    }
+
         
     public function delete($wordAnnotationTypeId, $id) {
         if ($this->request->is('get')) {

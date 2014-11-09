@@ -21,7 +21,7 @@
             <td><?php echo $sentenceAnnotationType['SentenceAnnotationType']['description']; ?></td>
             <td>
                 <?php 
-                    if ($sentenceAnnotationType['SentenceAnnotationType']['position'] > 1) {
+                    if ($sentenceAnnotationType['SentenceAnnotationType']['position'] > 0) {
                         echo $this->Html->image('up.png', array(
                                                               'alt' => 'Move up',
                                                               'title' => 'Move up',
@@ -29,7 +29,7 @@
                                                           )
                                                );
                     }
-                    if ($sentenceAnnotationType['SentenceAnnotationType']['position'] < count($sentenceAnnotationTypes) ) {
+                    if ($sentenceAnnotationType['SentenceAnnotationType']['position'] < count($sentenceAnnotationTypes) - 1 ) {
                         echo $this->Html->image('down.png', array(
                                                               'alt' => 'Move down',
                                                               'title' => 'Move down',

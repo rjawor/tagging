@@ -17,23 +17,23 @@
 
         <?php foreach ($wordAnnotationTypeChoices as $wordAnnotationTypeChoice): ?>
         <tr>
-            <td><?php echo $wordAnnotationTypeChoice['WordAnnotationTypeChoice']['value']; ?> - <?php echo $wordAnnotationTypeChoice['WordAnnotationTypeChoice']['position']; ?></td>
+            <td><?php echo $wordAnnotationTypeChoice['WordAnnotationTypeChoice']['value']; ?></td>
             <td><?php echo $wordAnnotationTypeChoice['WordAnnotationTypeChoice']['description']; ?></td>
             <td>
                 <?php 
-                    if ($wordAnnotationTypeChoice['WordAnnotationTypeChoice']['position'] > 1) {
+                    if ($wordAnnotationTypeChoice['WordAnnotationTypeChoice']['position'] > 0) {
                         echo $this->Html->image('up.png', array(
                                                               'alt' => 'Move up',
                                                               'title' => 'Move up',
-                                                              'url' => array('action' => 'move', $wordAnnotationTypeChoice['WordAnnotationTypeChoice']['position'], -1)
+                                                              'url' => array('action' => 'move', $wordAnnotationTypeId, $wordAnnotationTypeChoice['WordAnnotationTypeChoice']['position'], -1)
                                                           )
                                                );
                     }
-                    if ($wordAnnotationTypeChoice['WordAnnotationTypeChoice']['position'] < count($wordAnnotationTypeChoices) ) {
+                    if ($wordAnnotationTypeChoice['WordAnnotationTypeChoice']['position'] < count($wordAnnotationTypeChoices) - 1 ) {
                         echo $this->Html->image('down.png', array(
                                                               'alt' => 'Move down',
                                                               'title' => 'Move down',
-                                                              'url' => array('action' => 'move', $wordAnnotationTypeChoice['WordAnnotationTypeChoice']['position'], 1)
+                                                              'url' => array('action' => 'move', $wordAnnotationTypeId, $wordAnnotationTypeChoice['WordAnnotationTypeChoice']['position'], 1)
                                                           )
                                                );
                     }

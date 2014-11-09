@@ -25,7 +25,7 @@
             <td><?php echo $wordAnnotationType['WordAnnotationType']['multiple_choices']?"+":"-"; ?></td>
             <td>
                 <?php 
-                    if ($wordAnnotationType['WordAnnotationType']['position'] > 1) {
+                    if ($wordAnnotationType['WordAnnotationType']['position'] > 0) {
                         echo $this->Html->image('up.png', array(
                                                               'alt' => 'Move up',
                                                               'title' => 'Move up',
@@ -33,7 +33,7 @@
                                                           )
                                                );
                     }
-                    if ($wordAnnotationType['WordAnnotationType']['position'] < count($wordAnnotationTypes) ) {
+                    if ($wordAnnotationType['WordAnnotationType']['position'] < count($wordAnnotationTypes) - 1 ) {
                         echo $this->Html->image('down.png', array(
                                                               'alt' => 'Move down',
                                                               'title' => 'Move down',
