@@ -60,10 +60,10 @@ class DashboardController extends AppController {
             $sentence = $sentenceModel->findById($sentencesWindow[$currentSentenceIndex]['Sentence']['id']);
                         
             $wordAnnotationTypeModel = ClassRegistry::init('WordAnnotationType');
-            $wordAnnotationTypes = $wordAnnotationTypeModel->find('all');
+            $wordAnnotationTypes = $wordAnnotationTypeModel->find('all', array('order' => 'position'));
 
             $sentenceAnnotationTypeModel = ClassRegistry::init('SentenceAnnotationType');
-            $sentenceAnnotationTypes = $sentenceAnnotationTypeModel->find('all');            
+            $sentenceAnnotationTypes = $sentenceAnnotationTypeModel->find('all', array('order' => 'position'));            
 
             $sentenceIndex = 0;            
 

@@ -1,7 +1,6 @@
 <div id="document-list">
     <table>
         <tr>
-            <th>Id</th>
             <th></th>
             <th width="50%">Name</th>
             <th>Language</th>
@@ -11,7 +10,6 @@
 
         <?php foreach ($documents as $document): ?>
         <tr>
-            <td><?php echo $document['Document']['id']; ?></td>
             <td><?php echo $this->Html->image("edit.png", array(
                                     "alt" => "edit",
                                     'url' => array('controller' => 'dashboard', 'action' => 'setCurrentDocument', $document['Document']['id'], 0)
