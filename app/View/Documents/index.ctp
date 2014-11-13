@@ -4,10 +4,10 @@
         <tr>
             <th>Id</th>
             <th></th>
-            <th width="50%">Name</th>
+            <th>Name</th>
             <th>Language</th>
             <th>Owner</th>
-            <th>Actions</th>
+            <th width="200px">Actions</th>
         </tr>
 
         <?php foreach ($documents as $document): ?>

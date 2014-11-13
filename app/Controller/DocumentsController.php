@@ -1,6 +1,6 @@
 <?php
 
-App::uses('Language', 'Model');
+App::uses('Language', 'Model', 'Sentence', 'Word');
 
 class DocumentsController extends AppController {
     public $helpers = array('Html', 'Form');
@@ -22,7 +22,11 @@ class DocumentsController extends AppController {
         $this->set('languageOptions', $this->getLanguageOptions());
     }
     
-    public function view($id = null) {
+    public function view($id = null, $editMode = 0) {
+        if ($editMode == 1 && $this->Auth->user()['role_id'] > 2) {
+            $this->Session->setFlash('This action needs editor privileges.');
+            $this->redirect(array('action' => 'index'));
+        }        
         if (!$id) {
             throw new NotFoundException(__('Invalid document id.'));
         }
@@ -33,6 +37,8 @@ class DocumentsController extends AppController {
             throw new NotFoundException(__('Invalid document'));
         }
         $this->set('document', $document);
+        $this->set('editMode', $editMode);
+        $this->set('roleId', $this->Auth->user()['role_id']);
     }
     
     public function add() {
@@ -87,6 +93,111 @@ class DocumentsController extends AppController {
         }
     }
     
+    public function split($documentId, $sentenceId, $splitPos) {
+        if ($this->Auth->user()['role_id'] > 2) {
+            $this->Session->setFlash('This action needs editor privileges.');
+            $this->redirect('/');
+        }
+
+	$sentenceModel = ClassRegistry::init('Sentence');
+        $sentenceModel->recursive = 0;
+        $wordModel = ClassRegistry::init('Word');
+        $wordModel->recursive = 0;
+
+        $currSentence = $sentenceModel->findById($sentenceId);
+
+	$newSentenceId = $this->insertEmptySentence($documentId, $currSentence['Sentence']['position'] + 1);
+
+	$wordModel->updateAll(
+                        array(
+                            'sentence_id' => $newSentenceId,
+                            'position' => 'position-'.$splitPos
+                        ),
+                        array(
+                            'sentence_id' => $sentenceId,
+			    'position >=' => $splitPos 
+                        )
+                    );
+
+        $this->redirect(array('action'=>'view', $documentId, 1));
+                
+    }
+    
+    private function insertEmptySentence($documentId, $position) {
+        $sentenceModel = ClassRegistry::init('Sentence');
+        $sentenceModel->recursive = 0;
+
+	$sentenceModel->updateAll(
+                            array(
+                                'position' => 'position+1'
+                            ),
+                            array(
+                                'document_id' => $documentId,
+                                'position >=' => $position
+                            )
+                        );
+	
+	$newSentence = array('Sentence'=>array('document_id' => $documentId, 'position' => $position));
+	$sentenceModel->create();
+	$sentenceModel->save($newSentence);
+	return $sentenceModel->id;
+    }
+
+
+    private function removeSentence($sentenceId) {
+        $sentenceModel = ClassRegistry::init('Sentence');
+        $sentenceModel->recursive = 0;
+
+        $deletedSentence = $sentenceModel->findById($sentenceId);
+        $sentenceModel->updateAll(
+                            array(
+                                'position' => 'position-1'
+                            ),
+                            array(
+                                'document_id' => $deletedSentence['Sentence']['document_id'],
+                                'position >' => $deletedSentence['Sentence']['position']
+                            )
+                        );
+        $sentenceModel->delete($deletedSentence['Sentence']['id']);
+    }
+    
+    public function joinNext($documentId, $sentenceId) {
+        if ($this->Auth->user()['role_id'] > 2) {
+            $this->Session->setFlash('This action needs editor privileges.');
+            $this->redirect('/');
+        }
+        
+        $sentenceModel = ClassRegistry::init('Sentence');
+        $sentenceModel->recursive = 0;
+        $wordModel = ClassRegistry::init('Word');
+        $wordModel->recursive = 0;
+
+        $currSentence = $sentenceModel->findById($sentenceId);
+        $nextSentence = $sentenceModel->find('first', array('conditions' => array('document_id'=>$documentId, 'position' => $currSentence['Sentence']['position']+1)));
+        
+        $maxPosCurrSentence = $wordModel->find('first', array('fields' =>  array('max(position) AS max_pos'),
+                                                              'conditions' => array('sentence_id' => $sentenceId)
+                                                        )
+                                              )[0]['max_pos'];
+	if (!isset($maxPosCurrSentence)) {
+		$maxPosCurrSentence=0;
+	}
+        $wordModel->updateAll(
+                        array(
+                            'sentence_id' => $sentenceId,
+                            'position' => 'position+'.$maxPosCurrSentence
+                        ),
+                        array(
+                            'sentence_id' => $nextSentence['Sentence']['id']
+                        )
+                    );
+
+        $this->removeSentence($nextSentence['Sentence']['id']);
+                
+        $this->redirect(array('action'=>'view', $documentId, 1));
+                
+    }
+
     public function delete($id) {
         if ($this->Auth->user()['role_id'] > 2) {
             $this->Session->setFlash('This action needs editor privileges.');
