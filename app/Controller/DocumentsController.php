@@ -127,20 +127,20 @@ class DocumentsController extends AppController {
         $sentenceModel = ClassRegistry::init('Sentence');
         $sentenceModel->recursive = 0;
 
-	$sentenceModel->updateAll(
-                            array(
-                                'position' => 'position+1'
-                            ),
-                            array(
-                                'document_id' => $documentId,
-                                'position >=' => $position
-                            )
-                        );
+	    $sentenceModel->updateAll(
+                                array(
+                                    'position' => 'position+1'
+                                ),
+                                array(
+                                    'document_id' => $documentId,
+                                    'position >=' => $position
+                                )
+                            );
 	
-	$newSentence = array('Sentence'=>array('document_id' => $documentId, 'position' => $position));
-	$sentenceModel->create();
-	$sentenceModel->save($newSentence);
-	return $sentenceModel->id;
+	    $newSentence = array('Sentence'=>array('document_id' => $documentId, 'position' => $position));
+	    $sentenceModel->create();
+	    $sentenceModel->save($newSentence);
+	    return $sentenceModel->id;
     }
 
 
