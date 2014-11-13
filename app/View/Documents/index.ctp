@@ -30,6 +30,8 @@
             <td><?php echo $document['Language']['description']; ?> (<?php echo $document['Language']['code']; ?>)</td>
             <td><?php echo $document['User']['username']; ?></td>
             <td>
+                <?php if ($roleId < 3) { ?>
+
                 <?php
                     echo $this->Html->link(
                         'Edit',
@@ -44,6 +46,7 @@
                         array('confirm' => 'Deleting a document will also delete all the annotations. Are you sure?')
                     );
                 ?>
+                <?php } ?>
             </td>
         </tr>
         <?php endforeach; ?>

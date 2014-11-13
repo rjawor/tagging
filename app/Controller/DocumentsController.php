@@ -18,6 +18,7 @@ class DocumentsController extends AppController {
     public function index() {
         $this->Document->recursive = 0;
         $this->set('documents', $this->Document->find('all'));
+        $this->set('roleId', $this->Auth->user()['role_id']);
         $this->set('languageOptions', $this->getLanguageOptions());
     }
     
@@ -35,6 +36,10 @@ class DocumentsController extends AppController {
     }
     
     public function add() {
+        if ($this->Auth->user()['role_id'] > 2) {
+            $this->Session->setFlash('This action needs editor privileges.');
+            $this->redirect('/');
+        }
         if ($this->request->is('post')) {
             $handle = @fopen($this->data['Documents']['file']['tmp_name'], "r");
             if ($handle) {
@@ -83,6 +88,10 @@ class DocumentsController extends AppController {
     }
     
     public function delete($id) {
+        if ($this->Auth->user()['role_id'] > 2) {
+            $this->Session->setFlash('This action needs editor privileges.');
+            $this->redirect('/');
+        }
         if ($this->request->is('get')) {
             throw new MethodNotAllowedException();
         }
@@ -97,6 +106,10 @@ class DocumentsController extends AppController {
     }
 
     public function edit($id = null) {
+        if ($this->Auth->user()['role_id'] > 2) {
+            $this->Session->setFlash('This action needs editor privileges.');
+            $this->redirect('/');
+        }
         if (!$id) {
             throw new NotFoundException(__('Invalid document'));
         }
