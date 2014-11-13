@@ -1,8 +1,18 @@
 <div id="word-annotation-types-list">
+    <h3>Word annotation types list</h3>
+    <?php
+    echo $this->Html->image('left.png', array(
+                                          'alt' => 'back to configuration',
+                                          'title' => 'back to configuration',
+                                          'url' => array('controller'=>'configuration')
+                                      )
+                           );
+    ?>
+    <br/><br/>
     <p>
         <?php
             echo $this->Html->link(
-                'Add word annotation type', array('action' => 'add')
+                '+ Add word annotation type', array('action' => 'add')
             );
         ?>
     </p>

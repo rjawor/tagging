@@ -1,5 +1,7 @@
 <?php if(isset($sentence)) { ?>
 
+<input id="userRoleId" type="hidden" value="<?php echo $userRoleId ?>" />
+
 <input id="offset" type="hidden" value="<?php echo $offset ?>" />
 <input id="document-id" type="hidden" value="<?php echo $documentId ?>" />
 

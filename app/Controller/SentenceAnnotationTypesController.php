@@ -4,6 +4,10 @@ class SentenceAnnotationTypesController extends AppController {
     public $helpers = array('Html', 'Form');
 
     public function index() {
+        if ($this->Auth->user()['role_id'] != 1) {
+            $this->Session->setFlash('This action needs administrative privileges.');
+            $this->redirect('/');
+        }    
         $this->SentenceAnnotationType->recursive = 0;
         $this->set('sentenceAnnotationTypes',
                    $this->SentenceAnnotationType->find('all', array('order' => 'position'))
@@ -11,6 +15,10 @@ class SentenceAnnotationTypesController extends AppController {
     }
     
     public function move($position, $offset) {
+        if ($this->Auth->user()['role_id'] != 1) {
+            $this->Session->setFlash('This action needs administrative privileges.');
+            $this->redirect('/');
+        }    
         $this->SentenceAnnotationType->recursive = 0;
         $current = $this->SentenceAnnotationType->find('first', array('conditions'=> array('position'=>$position)));
         $neighbour = $this->SentenceAnnotationType->find('first', array('conditions'=> array('position'=>$position+$offset)));
@@ -26,6 +34,10 @@ class SentenceAnnotationTypesController extends AppController {
 
         
     public function add() {
+        if ($this->Auth->user()['role_id'] != 1) {
+            $this->Session->setFlash('This action needs administrative privileges.');
+            $this->redirect('/');
+        }    
         if ($this->request->is('post')) {
             $this->SentenceAnnotationType->create();
             $data = $this->request->data;
@@ -40,6 +52,10 @@ class SentenceAnnotationTypesController extends AppController {
     }
         
     public function delete($id) {
+        if ($this->Auth->user()['role_id'] != 1) {
+            $this->Session->setFlash('This action needs administrative privileges.');
+            $this->redirect('/');
+        }    
         if ($this->request->is('get')) {
             throw new MethodNotAllowedException();
         }
@@ -54,6 +70,10 @@ class SentenceAnnotationTypesController extends AppController {
     }
 
     public function edit($id = null) {
+        if ($this->Auth->user()['role_id'] != 1) {
+            $this->Session->setFlash('This action needs administrative privileges.');
+            $this->redirect('/');
+        }    
         if (!$id) {
             throw new NotFoundException(__('Invalid sentence annotation type'));
         }

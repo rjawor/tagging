@@ -1,4 +1,12 @@
-<h1>Edit word annotation type choice</h1>
+<h3>Edit word annotation type choice</h3>
+<?php
+echo $this->Html->image('left.png', array(
+                                      'alt' => 'back to choices list',
+                                      'title' => 'back to choices list',
+                                      'url' => array('action'=>'index', $wordAnnotationTypeId)
+                                  )
+                       );
+?>
 <?php
 echo $this->Form->create('WordAnnotationTypeChoice');
 echo $this->Form->input('value');

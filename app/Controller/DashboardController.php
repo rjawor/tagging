@@ -45,6 +45,7 @@ class DashboardController extends AppController {
                                                                                 ),
                                                                 'recursive' => 1,
                                                                 'offset' => $computedOffset,
+                                                                'order' => 'position',
                                                                 'limit' => $limit
                                                             )
                                                     );
@@ -101,6 +102,7 @@ class DashboardController extends AppController {
             $this->set('sentenceAnnotationCount', count($sentenceAnnotationTypes));
             $this->set('offset', $offset);
             $this->set('documentId', $documentId);
+            $this->set('userRoleId', $currentUser['User']['role_id']);
             $this->set('hotKeys', array('q', 'w', 'e', 'r', 'a', 's', 'd', 'f', 'z', 'x', 'c', 'v'));
         }
     }

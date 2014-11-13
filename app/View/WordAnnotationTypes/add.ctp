@@ -1,4 +1,13 @@
-<h1>Add word annotation type</h1>
+<h3>Add word annotation type</h3>
+<?php
+echo $this->Html->image('left.png', array(
+                                      'alt' => 'back to word annotation types list',
+                                      'title' => 'back to word annotation types list',
+                                      'url' => array('action'=>'index')
+                                  )
+                       );
+?>
+<br/><br/>
 <?php
 echo $this->Form->create('WordAnnotationType');
 echo $this->Form->input('name');

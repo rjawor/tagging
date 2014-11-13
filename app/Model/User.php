@@ -1,27 +1,29 @@
 <?php
 
-App::uses('AppModel', 'Model');
+App::uses('AppModel', 'Model', 'Role');
 
 class User extends AppModel {
+
+    public $belongsTo = 'Role';
 
     public $validate =
     array(
         'username' => array(
             'required' => array(
                 'rule' => array('notEmpty'),
-                'message' => 'Nazwa użytkownika jest wymagana'
+                'message' => 'The name is required'
             ),
             
             'unique' => array(
                 'rule' => array('isUnique'),
-                'message' => 'Ta nazwa użytkownika jest zajęta'
+                'message' => 'This name is taken'
             )
         ),
 
         'password' => array(
             'required' => array(
                 'rule' => array('notEmpty'),
-                'message' => 'Hasło jest wymagane'
+                'message' => 'Password is required'
             )
         )
     );

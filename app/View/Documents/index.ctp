@@ -1,6 +1,8 @@
 <div id="document-list">
+    <h3>Documents list</h3>
     <table>
         <tr>
+            <th>Id</th>
             <th></th>
             <th width="50%">Name</th>
             <th>Language</th>
@@ -10,6 +12,7 @@
 
         <?php foreach ($documents as $document): ?>
         <tr>
+            <td><?php echo $document['Document']['id']; ?></td>
             <td><?php echo $this->Html->image("edit.png", array(
                                     "alt" => "edit",
                                     'url' => array('controller' => 'dashboard', 'action' => 'setCurrentDocument', $document['Document']['id'], 0)
@@ -28,19 +31,19 @@
             <td><?php echo $document['User']['username']; ?></td>
             <td>
                 <?php
+                    echo $this->Html->link(
+                        'Edit',
+                        array('action' => 'edit', $document['Document']['id'])
+                    );
+                ?>
+                &nbsp;&nbsp;
+                <?php
                     echo $this->Form->postLink(
                         'Delete',
                         array('action' => 'delete', $document['Document']['id']),
                         array('confirm' => 'Deleting a document will also delete all the annotations. Are you sure?')
                     );
                 ?>
-            <!-- 
-                <?php
-                    echo $this->Html->link(
-                        'Edit', array('action' => 'edit', $document['Document']['id'])
-                    );
-                ?>
-              -->   
             </td>
         </tr>
         <?php endforeach; ?>

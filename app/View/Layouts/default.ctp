@@ -51,7 +51,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			<?php
 			if (AuthComponent::user()) {
                 // The user is logged in, show the logout link
-                echo "Logged in as <b>".AuthComponent::user()['username']."</b> | ".$this->Html->link('Logout', array('controller' => 'users', 'action' => 'logout'));
+                echo "Logged in as <b>".AuthComponent::user()['username']."</b> | ".$this->Html->link('Change password', array('controller' => 'users', 'action' => 'changePassword'))." | ".$this->Html->link('Logout', array('controller' => 'users', 'action' => 'logout'));
             } else {
                 // The user is not logged in, show login link
                 echo "anonymous | ".$this->Html->link('Log in', array('controller' => 'users', 'action' => 'login'));
@@ -67,8 +67,18 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
             <div id='cssmenu'>
                 <ul>
 	            <li><a href='/tagging/dashboard'><span>Dashboard</span></a></li>
+	            <?php
+	            $user = AuthComponent::user();
+	            if ($user['role_id'] == 1) { ?>
                     <li><a href='/tagging/documents'><span>Documents</span></a></li>
                     <li class='last'><a href='/tagging/configuration'><span>Configuration</span></a></li>
+                <?php
+                } else {
+                ?>
+                    <li class='last'><a href='/tagging/documents'><span>Documents</span></a></li>                
+                <?php
+                } ?>
+
                 </ul>
             </div>            
 		</div>

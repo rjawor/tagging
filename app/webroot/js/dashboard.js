@@ -89,7 +89,19 @@ function setSelected(sentenceNumber, gridY, gridX) {
     updateSentence(sentenceNumber);
 }
 
+function checkUserPrivileges() {
+    var roleId = document.getElementById('userRoleId');
+    if (roleId != null) {
+        return roleId.value < 3;
+    } else {
+        return false;
+    }
+}
+
 function setEdited(sentenceNumber, gridY, gridX) {
+    if (!checkUserPrivileges()) {
+        return;
+    }
     if (!(getEditMode(sentenceNumber) &&
           getGridX(sentenceNumber) == gridX &&
           getGridX(sentenceNumber) == gridX)) {
@@ -186,6 +198,9 @@ function updateAndSaveCell(sentenceNumber) {
 }
 
 function setEditMode(sentenceNumber, editMode, preventSave) {
+    if (!checkUserPrivileges()) {
+        return;
+    }
     preventSave = preventSave || false;
     var element = document.getElementById('sentence'+sentenceNumber+'-edit-mode');
     if (element != null) {
@@ -201,6 +216,9 @@ function setEditMode(sentenceNumber, editMode, preventSave) {
 }
 
 function toggleEditMode(sentenceNumber) {
+    if (!checkUserPrivileges()) {
+        return;
+    }
     var element = document.getElementById('sentence'+sentenceNumber+'-edit-mode');
     if (element != null) {
         if (element.value == "1") {

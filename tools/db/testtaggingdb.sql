@@ -71,7 +71,7 @@ CREATE TABLE IF NOT EXISTS `testtaggingdb`.`documents` (
   CONSTRAINT `fk_documents_users1`
     FOREIGN KEY (`user_id`)
     REFERENCES `testtaggingdb`.`users` (`id`)
-    ON DELETE NO ACTION
+    ON DELETE SET NULL
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_documents_languages1`
     FOREIGN KEY (`language_id`)
@@ -89,6 +89,7 @@ DROP TABLE IF EXISTS `testtaggingdb`.`sentences` ;
 CREATE TABLE IF NOT EXISTS `testtaggingdb`.`sentences` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `document_id` INT NULL,
+  `position` INT NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_sentences_documents1_idx` (`document_id` ASC),
   CONSTRAINT `fk_sentences_documents1`
@@ -111,6 +112,7 @@ CREATE TABLE IF NOT EXISTS `testtaggingdb`.`words` (
   `stem` VARCHAR(255) NULL,
   `suffix` VARCHAR(255) NULL,
   `split` TINYINT(1) NULL DEFAULT 0,
+  `position` INT NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_words_sentences1_idx` (`sentence_id` ASC),
   CONSTRAINT `fk_words_sentences1`

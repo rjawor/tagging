@@ -10,7 +10,4 @@
     ?>
     </fieldset>
 <?php echo $this->Form->end(__('Log in')); ?>
-
-Don't have an account? <?php echo $this->Html->link('Register', array('controller' => 'users', 'action' => 'add')); ?>
-
 </div>

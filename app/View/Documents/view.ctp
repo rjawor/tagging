@@ -1,4 +1,14 @@
-<p><strong><?php echo h($document['Document']['name']); ?></strong></p>
+<?php
+echo $this->Html->image('left.png', array(
+                                      'alt' => 'back to documents list',
+                                      'title' => 'back to documents list',
+                                      'url' => array('action'=>'index')
+                                  )
+                       );
+?>
+<br/><br/>
+
+<h3><?php echo h($document['Document']['name']); ?></h3>
 
 <?php
 $sentenceCounter = 0;

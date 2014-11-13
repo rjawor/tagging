@@ -1,8 +1,18 @@
 <div id="word-annotation-type-choices-list">
+    <h3>Choices list for word annotation type: <?php echo $wordAnnotationType['WordAnnotationType']['name'];?></h3>
+    <?php
+    echo $this->Html->image('left.png', array(
+                                          'alt' => 'back to word annotations list',
+                                          'title' => 'back to word annotations list',
+                                          'url' => array('controller'=>'wordAnnotationTypes','action'=>'index')
+                                      )
+                           );
+    ?>
+    <br/><br/>
     <p>
         <?php
             echo $this->Html->link(
-                'Add word annotation type choice', array('action' => 'add', $wordAnnotationTypeId)
+                '+ Add word annotation type choice', array('action' => 'add', $wordAnnotationType['WordAnnotationType']['id'])
             );
         ?>
     </p>
@@ -25,7 +35,7 @@
                         echo $this->Html->image('up.png', array(
                                                               'alt' => 'Move up',
                                                               'title' => 'Move up',
-                                                              'url' => array('action' => 'move', $wordAnnotationTypeId, $wordAnnotationTypeChoice['WordAnnotationTypeChoice']['position'], -1)
+                                                              'url' => array('action' => 'move', $wordAnnotationType['WordAnnotationType']['id'], $wordAnnotationTypeChoice['WordAnnotationTypeChoice']['position'], -1)
                                                           )
                                                );
                     }
@@ -33,7 +43,7 @@
                         echo $this->Html->image('down.png', array(
                                                               'alt' => 'Move down',
                                                               'title' => 'Move down',
-                                                              'url' => array('action' => 'move', $wordAnnotationTypeId, $wordAnnotationTypeChoice['WordAnnotationTypeChoice']['position'], 1)
+                                                              'url' => array('action' => 'move', $wordAnnotationType['WordAnnotationType']['id'], $wordAnnotationTypeChoice['WordAnnotationTypeChoice']['position'], 1)
                                                           )
                                                );
                     }
@@ -43,14 +53,14 @@
                 <?php
                     echo $this->Html->link(
                         'Edit',
-                        array('action' => 'edit', $wordAnnotationTypeId, $wordAnnotationTypeChoice['WordAnnotationTypeChoice']['id'])
+                        array('action' => 'edit', $wordAnnotationType['WordAnnotationType']['id'], $wordAnnotationTypeChoice['WordAnnotationTypeChoice']['id'])
                     );
                 ?>
                 &nbsp;&nbsp;
                 <?php
                     echo $this->Form->postLink(
                         'Delete',
-                        array('action' => 'delete', $wordAnnotationTypeId, $wordAnnotationTypeChoice['WordAnnotationTypeChoice']['id']),
+                        array('action' => 'delete', $wordAnnotationType['WordAnnotationType']['id'], $wordAnnotationTypeChoice['WordAnnotationTypeChoice']['id']),
                         array('confirm' => 'Are you sure?')
                     );
                 ?>

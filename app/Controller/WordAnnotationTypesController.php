@@ -4,6 +4,10 @@ class WordAnnotationTypesController extends AppController {
     public $helpers = array('Html', 'Form');
 
     public function index() {
+        if ($this->Auth->user()['role_id'] != 1) {
+            $this->Session->setFlash('This action needs administrative privileges.');
+            $this->redirect('/');
+        }    
         $this->WordAnnotationType->recursive = 0;
         $this->set('wordAnnotationTypes',
                    $this->WordAnnotationType->find('all', array('order' => 'position'))
@@ -11,6 +15,10 @@ class WordAnnotationTypesController extends AppController {
     }
     
     public function move($position, $offset) {
+        if ($this->Auth->user()['role_id'] != 1) {
+            $this->Session->setFlash('This action needs administrative privileges.');
+            $this->redirect('/');
+        }    
         $this->WordAnnotationType->recursive = 0;
         $current = $this->WordAnnotationType->find('first', array('conditions'=> array('position'=>$position)));
         $neighbour = $this->WordAnnotationType->find('first', array('conditions'=> array('position'=>$position+$offset)));
@@ -25,6 +33,10 @@ class WordAnnotationTypesController extends AppController {
     }
     
     public function add() {
+        if ($this->Auth->user()['role_id'] != 1) {
+            $this->Session->setFlash('This action needs administrative privileges.');
+            $this->redirect('/');
+        }    
         if ($this->request->is('post')) {
             $this->WordAnnotationType->create();
             $data = $this->request->data;
@@ -39,6 +51,10 @@ class WordAnnotationTypesController extends AppController {
     }
         
     public function delete($id) {
+        if ($this->Auth->user()['role_id'] != 1) {
+            $this->Session->setFlash('This action needs administrative privileges.');
+            $this->redirect('/');
+        }    
         if ($this->request->is('get')) {
             throw new MethodNotAllowedException();
         }
@@ -53,6 +69,10 @@ class WordAnnotationTypesController extends AppController {
     }
     
     public function edit($id = null) {
+        if ($this->Auth->user()['role_id'] != 1) {
+            $this->Session->setFlash('This action needs administrative privileges.');
+            $this->redirect('/');
+        }    
         if (!$id) {
             throw new NotFoundException(__('Invalid word annotation type'));
         }

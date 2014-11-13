@@ -5,21 +5,20 @@ App::uses('Language', 'Model');
 class DocumentsController extends AppController {
     public $helpers = array('Html', 'Form');
 
-    public function index() {
-        $this->Document->recursive = 0;
-        $this->set('documents',
-                   $this->Document->find('all', array(
-                                                   'conditions' => array('user_id =' =>  $this->Auth->user('id'))
-                                                )
-                                        )
-                  );
+    private function getLanguageOptions() {
         $languageModel = ClassRegistry::init('Language');
         $languages = $languageModel->find('all');
         $languageOptions = array();
         foreach ($languages as $language) {
             $languageOptions[$language['Language']['id']] = $language['Language']['description'].' ('.$language['Language']['code'].')';
         }
-        $this->set('languageOptions', $languageOptions);        
+        return $languageOptions;    
+    }
+
+    public function index() {
+        $this->Document->recursive = 0;
+        $this->set('documents', $this->Document->find('all'));
+        $this->set('languageOptions', $this->getLanguageOptions());
     }
     
     public function view($id = null) {
@@ -47,18 +46,24 @@ class DocumentsController extends AppController {
                                   'Sentence' => array()
                             );
                 
+                $sentencePos = 0;
                 while (($buffer = fgets($handle, 4096)) !== false) {
                     $wordTexts = preg_split("/\s+/", $buffer);
                     
                     if(count($wordTexts) > 0) {
                         $sentence = array('Word' => array());
+                        
+                        $wordPos = 0;
                         foreach($wordTexts as $wordText) {
                             if ($wordText != '') {
-                                array_push($sentence['Word'], array('text' => $wordText));
+                                array_push($sentence['Word'], array('position' => $wordPos, 'text' => $wordText));
+                                $wordPos++;
                             }
                         }
                         
                         if (count($sentence['Word']) > 0) {                  
+                            $sentence['position'] = $sentencePos;
+                            $sentencePos++;
                             array_push($document['Sentence'], $sentence);
                         }
                     }
@@ -90,6 +95,32 @@ class DocumentsController extends AppController {
             return $this->redirect(array('action' => 'index'));
         }
     }
+
+    public function edit($id = null) {
+        if (!$id) {
+            throw new NotFoundException(__('Invalid document'));
+        }
+
+        $document = $this->Document->findById($id);
+        if (!$document) {
+            throw new NotFoundException(__('Invalid document'));
+        }
+
+        if ($this->request->is(array('post', 'put'))) {
+            $this->Document->id = $id;
+            if ($this->Document->save($this->request->data)) {
+                $this->Session->setFlash(__('Your document has been updated.'), 'flashes/success');
+                return $this->redirect(array('action' => 'index'));
+            }
+            $this->Session->setFlash(__('Unable to update your document.'));
+        }
+
+        if (!$this->request->data) {
+            $this->request->data = $document;
+        }
+        $this->set('languageOptions', $this->getLanguageOptions());
+    }
+
 }
 
 ?>

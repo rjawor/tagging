@@ -1,4 +1,4 @@
-<h3>Add language</h3>
+<h3>Edit language</h3>
 <?php
 echo $this->Html->image('left.png', array(
                                       'alt' => 'back to language list',

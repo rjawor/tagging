@@ -1,18 +1,32 @@
 <?php
 
+App::uses('AppController', 'Controller', 'WordAnnotationType');
+
 class WordAnnotationTypeChoicesController extends AppController {
     public $helpers = array('Html', 'Form');
 
     public function index($wordAnnotationTypeId) {
+        if ($this->Auth->user()['role_id'] != 1) {
+            $this->Session->setFlash('This action needs administrative privileges.');
+            $this->redirect('/');
+        }    
+        $wordAnnotationTypeModel = ClassRegistry::init('WordAnnotationType');
+        $wordAnnotationTypeModel->recursive = 0;
+        $wordAnnotationType = $wordAnnotationTypeModel->findById($wordAnnotationTypeId);
+        
         $this->WordAnnotationTypeChoice->recursive = 0;
         $wordAnnotationTypeChoices = $this->WordAnnotationTypeChoice->find('all', array(
                                   'conditions' => array('word_annotation_type_id' => $wordAnnotationTypeId),
                                   'order' =>'position'));
         $this->set('wordAnnotationTypeChoices', $wordAnnotationTypeChoices);
-        $this->set('wordAnnotationTypeId', $wordAnnotationTypeId);
+        $this->set('wordAnnotationType', $wordAnnotationType);
     }
         
     public function add($wordAnnotationTypeId) {
+        if ($this->Auth->user()['role_id'] != 1) {
+            $this->Session->setFlash('This action needs administrative privileges.');
+            $this->redirect('/');
+        }    
         if ($this->request->is('post')) {
             $this->WordAnnotationTypeChoice->create();
             $data = $this->request->data;
@@ -28,9 +42,14 @@ class WordAnnotationTypeChoicesController extends AppController {
             }
             $this->Session->setFlash(__('Unable to add new word annotation type choice.'));
         }
+        $this->set('wordAnnotationTypeId', $wordAnnotationTypeId);
     }
     
     public function move($wordAnnotationTypeId, $position, $offset) {
+        if ($this->Auth->user()['role_id'] != 1) {
+            $this->Session->setFlash('This action needs administrative privileges.');
+            $this->redirect('/');
+        }    
         $this->WordAnnotationTypeChoice->recursive = 0;
         $current = $this->WordAnnotationTypeChoice->find('first', array('conditions'=> array('word_annotation_type_id'=>$wordAnnotationTypeId, 'position'=>$position)));
         $neighbour = $this->WordAnnotationTypeChoice->find('first', array('conditions'=> array('word_annotation_type_id'=>$wordAnnotationTypeId,'position'=>$position+$offset)));
@@ -46,6 +65,10 @@ class WordAnnotationTypeChoicesController extends AppController {
 
         
     public function delete($wordAnnotationTypeId, $id) {
+        if ($this->Auth->user()['role_id'] != 1) {
+            $this->Session->setFlash('This action needs administrative privileges.');
+            $this->redirect('/');
+        }    
         if ($this->request->is('get')) {
             throw new MethodNotAllowedException();
         }
@@ -60,6 +83,10 @@ class WordAnnotationTypeChoicesController extends AppController {
     }
     
     public function edit($wordAnnotationTypeId, $id = null) {
+        if ($this->Auth->user()['role_id'] != 1) {
+            $this->Session->setFlash('This action needs administrative privileges.');
+            $this->redirect('/');
+        }    
         if (!$id) {
             throw new NotFoundException(__('Invalid word annotation type choice'));
         }
@@ -81,6 +108,7 @@ class WordAnnotationTypeChoicesController extends AppController {
         if (!$this->request->data) {
             $this->request->data = $wordAnnotationTypeChoice;
         }
+        $this->set('wordAnnotationTypeId', $wordAnnotationTypeId);
     }
 }
 
