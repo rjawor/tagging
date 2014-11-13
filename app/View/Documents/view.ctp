@@ -42,7 +42,7 @@ $sentenceCounter = 0;
 $sentenceCount = count($document['Sentence']);
 foreach ($document['Sentence'] as $sentence): ?>
 
-<p>
+<p id="sentence<?php echo $sentence['id'] ?>">
     <?php echo ($sentenceCounter+1); ?>.&nbsp;
     <?php echo $this->Html->image("edit.png", array(
                 "alt" => "edit",

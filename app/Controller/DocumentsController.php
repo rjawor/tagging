@@ -115,11 +115,11 @@ class DocumentsController extends AppController {
                         ),
                         array(
                             'sentence_id' => $sentenceId,
-			    'position >=' => $splitPos 
+            			    'position >=' => $splitPos 
                         )
                     );
 
-        $this->redirect(array('action'=>'view', $documentId, 1));
+        $this->redirect(array('action'=>'view', $documentId, 1, '#'=>'sentence'.$sentenceId));
                 
     }
     
@@ -179,13 +179,13 @@ class DocumentsController extends AppController {
                                                               'conditions' => array('sentence_id' => $sentenceId)
                                                         )
                                               )[0]['max_pos'];
-	if (!isset($maxPosCurrSentence)) {
-		$maxPosCurrSentence=0;
-	}
+	    if (!isset($maxPosCurrSentence)) {
+		    $maxPosCurrSentence=0;
+	    }
         $wordModel->updateAll(
                         array(
                             'sentence_id' => $sentenceId,
-                            'position' => 'position+'.$maxPosCurrSentence
+                            'position' => 'position+'.$maxPosCurrSentence.'+1'
                         ),
                         array(
                             'sentence_id' => $nextSentence['Sentence']['id']
@@ -194,7 +194,7 @@ class DocumentsController extends AppController {
 
         $this->removeSentence($nextSentence['Sentence']['id']);
                 
-        $this->redirect(array('action'=>'view', $documentId, 1));
+        $this->redirect(array('action'=>'view', $documentId, 1, '#'=>'sentence'.$sentenceId));
                 
     }
 
