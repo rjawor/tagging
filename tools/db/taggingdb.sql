@@ -113,12 +113,20 @@ CREATE TABLE IF NOT EXISTS `taggingdb`.`words` (
   `suffix` VARCHAR(255) NULL,
   `split` TINYINT(1) NULL DEFAULT 0,
   `position` INT NULL,
+  `is_postposition` TINYINT(1) NULL,
+  `postposition_id` INT NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_words_sentences1_idx` (`sentence_id` ASC),
+  INDEX `fk_words_words1_idx` (`postposition_id` ASC),
   CONSTRAINT `fk_words_sentences1`
     FOREIGN KEY (`sentence_id`)
     REFERENCES `taggingdb`.`sentences` (`id`)
     ON DELETE CASCADE
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_words_words1`
+    FOREIGN KEY (`postposition_id`)
+    REFERENCES `taggingdb`.`words` (`id`)
+    ON DELETE SET NULL
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
