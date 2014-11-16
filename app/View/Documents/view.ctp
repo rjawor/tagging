@@ -60,19 +60,23 @@ foreach ($document['Sentence'] as $sentence): ?>
     <?php
         foreach ($sentence['Word'] as $word) {
             echo $word['text'];
-            if ($wordIndex < $wordCount - 1) {
-                if ($editMode) {
-                    echo "&nbsp;";
-                    echo $this->Html->image('split.png', array(
-                                          'alt' => 'split here',
-                                          'title' => 'split here',
-                                          'url' => array('action'=>'split', $document['Document']['id'], $sentence['id'], $wordIndex + 1),
-                                          'style' => 'vertical-align:middle'
-                                      )
-                           );
-                    echo "&nbsp;";
-                } else {
-                    echo "&nbsp;";
+            if (isset($word['postposition_id'])) {
+                echo "&ndash;";
+            } else {
+                if ($wordIndex < $wordCount - 1) {
+                    if ($editMode) {
+                        echo "&nbsp;";
+                        echo $this->Html->image('split.png', array(
+                                              'alt' => 'split here',
+                                              'title' => 'split here',
+                                              'url' => array('action'=>'split', $document['Document']['id'], $sentence['id'], $wordIndex + 1),
+                                              'style' => 'vertical-align:middle'
+                                          )
+                               );
+                        echo "&nbsp;";
+                    } else {
+                        echo "&nbsp;";
+                    }
                 }
             }
             $wordIndex++;

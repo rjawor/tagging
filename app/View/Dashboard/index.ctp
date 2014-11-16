@@ -62,17 +62,14 @@
     <?php
         echo $sentenceNumber.".&nbsp;";
         $sentenceNumber++;   
-        foreach ($sentencesWindow[$i]['Word'] as $word): ?>
-        <?php
-            if ($word['split'] == 1) {
-                echo $word['stem']."&nbsp;&#124;&nbsp;".$word['suffix'];
+        foreach ($sentencesWindow[$i]['Word'] as $word) {
+            echo $word['text'];
+            if (isset($word['postposition_id'])) {
+                echo "&ndash;";
             } else {
-                echo $word['text'];
+                echo "&nbsp;";
             }
-        
-        ?>&nbsp;
-    
-    <?php endforeach; ?>
+        }?>
 </p>
 <?php } ?>
 
@@ -81,9 +78,9 @@
     <input type="hidden" id="sentence<?php echo $offset; ?>-word-count" value="<?php echo count($sentence['Word']) ?>" />
     <input type="hidden" id="sentence<?php echo $offset; ?>-word-annotation-count" value="<?php echo $wordAnnotationCount + 1 ?>" />
     <input type="hidden" id="sentence<?php echo $offset; ?>-sentence-annotation-count" value="<?php echo $sentenceAnnotationCount ?>" />
-    <input type="hidden" id="sentence<?php echo $offset; ?>-grid-x" value="0" />
+    <input type="hidden" id="sentence<?php echo $offset; ?>-grid-x" value="<?php echo $gridX ?>" />
     <input type="hidden" id="sentence<?php echo $offset; ?>-grid-y" value="0" />
-    <input type="hidden" id="sentence<?php echo $offset; ?>-edit-mode" value="0" />
+    <input type="hidden" id="sentence<?php echo $offset; ?>-edit-mode" value="<?php echo $editMode;?>" />
     <div>
         <?php 
             $options = array("alt" => "previous sentence",
@@ -109,7 +106,18 @@
         ?>
         <hr/>
         <table>
-            
+            <tr>
+                <td></td>
+                <?php 
+                foreach ($sentence['Word'] as $word) { ?>
+                      
+                <td class="<?php if($word['is_postposition']) { echo "right-bracket";}  ?><?php if(isset($word['postposition_id'])) { echo "left-bracket";}  ?>"
+                >
+                </td>    
+                
+                <?php } ?>
+                
+            </tr>
             <tr class="words-row">
                 <td class="annotation-column"><?php echo $sentenceNumber; $sentenceNumber++;?>.</td>
                 <?php
@@ -119,26 +127,62 @@
                         id="cell-<?php echo $offset.'-0-'.$wordIndex; ?>"
                         class="normal-cell">
                         <input type="hidden" id="cell-<?php echo $offset.'-0-'.$wordIndex.'-type'; ?>" value="word" />
-                        <input type="hidden" id="cell-<?php echo $offset.'-0-'.$wordIndex.'-value'; ?>" value="<?php echo $word['split']?normalizeText($word['stem']).",".normalizeText($word['suffix']):normalizeText($word['text']);?>" />
-                        <input type="hidden" id="cell-<?php echo $offset.'-0-'.$wordIndex.'-split'; ?>" value="<?php echo $word['split']?"1":"0";?>" />
+                        <input type="hidden" id="cell-<?php echo $offset.'-0-'.$wordIndex.'-value'; ?>" value="<?php echo normalizeText($word['text']);?>" />
                         <input type="hidden" id="cell-<?php echo $offset.'-0-'.$wordIndex.'-word-id'; ?>" value="<?php echo $word['id']; ?>" />
                         <input type="hidden" id="cell-<?php echo $offset.'-0-'.$wordIndex.'-word-annotation-type-id'; ?>" value="0" />
-                        <span id="cell-<?php echo $offset.'-0-'.$wordIndex.'-split-span'; ?>" class="<?php if ($word['split']) { echo "word-split"; } else {echo "word-unsplit";} ?>">
                             <span class="ro-display">
-                                <span class="word-split-field">
-                                    <?php echo $word['stem']."&nbsp;&#124;&nbsp;".$word['suffix']; ?>
-                                </span>
-                                <span class="word-unsplit-field">
-                                    <?php echo $word['text']; ?>
-                                </span>
+                                <?php echo $word['text']; ?>
                             </span>
                             <span class="edit-field">
-                                <span class="word-split-field">
-                                    <input type="text" value="<?php echo $word['stem'] ?>" />&nbsp;&#124;&nbsp;<input type="text" value="<?php echo $word['suffix'] ?>" />                                    
-                                </span>
-                                <span class="word-unsplit-field">
-                                   <input type="text" value="<?php echo $word['text'] ?>" />
-                                </span>
+                               <input id="theinput" type="text" value="<?php echo $word['text'] ?>" />
+                               <?php
+                                   if (!$word['is_postposition']) {
+                                       echo $this->Html->image("plus.png", array("id" => "insertWord".$wordIndex,
+                                                                                 "alt" => "insert word before current (ctrl + i)",
+                                                                                 "title" => "insert word before current (ctrl + i)",
+                                                                                 "url" => array("controller" => "words", "action"=>"insertWord", $documentId, $offset, $sentence['Sentence']['id'], $word['position'])
+                                                                           )
+                                                              );
+                                       echo "&nbsp;";
+                                   }
+                                   if ($wordIndex == count($sentence['Word']) - 1) {                       
+                                       echo $this->Html->image("plusNext.png", array("id" => "insertAfterWord".$wordIndex,
+                                                                                 "alt" => "insert word after current (ctrl + o)",
+                                                                                 "title" => "insert word after current (ctrl + o)",
+                                                                                 "url" => array("controller" => "words", "action"=>"insertAfterWord", $documentId, $offset, $sentence['Sentence']['id'], $word['position'])
+                                                                           )
+                                                              );
+                                       echo "&nbsp;";
+                                   }
+                                   if (!isset($word['postposition_id'])) {                       
+                                       echo $this->Html->image("delete.png", array("id" => "deleteWord".$wordIndex,
+                                                                                 "alt" => "delete word (ctrl + l)",
+                                                                                 "title" => "delete word (ctrl + l)",
+                                                                                 "onClick" => "return confirm('You are about to remove this word with all its annotations. Are you sure?');",
+                                                                                 "url" => array("controller" => "words", "action"=>"deleteWord", $documentId, $offset, $word['id'], $word['position'])
+                                                                           )
+                                                              );
+                                       echo "&nbsp;";
+                                   }                       
+                                   if (!isset($word['postposition_id']) && $wordIndex < count($sentence['Word']) - 1 && !$word['is_postposition'] && !isset($sentence['Word'][$wordIndex+1]['postposition_id'])) {                       
+                                       echo $this->Html->image("curlyBracket.png", array("id" => "markPostposition".$wordIndex,
+                                                                                 "alt" => "mark the next word as postposition of current (ctrl + j)",
+                                                                                 "title" => "mark the next word as postposition of current (ctrl + j)",
+                                                                                 "url" => array("controller" => "words", "action"=>"markPostposition", $documentId, $offset, $sentence['Sentence']['id'], $word['position'])
+                                                                           )
+                                                              );
+                                       echo "&nbsp;";
+                                   }
+                                   
+                                   if (isset($word['postposition_id']) || $word['is_postposition']) {
+                                   echo $this->Html->image("curlyBracketX.png", array("id" => "unmarkPostposition".$wordIndex,
+                                                                             "alt" => "unmark postposition binding (ctrl + k)",
+                                                                             "title" => "unmark postposition binding (ctrl + k)",
+                                                                             "url" => array("controller" => "words", "action"=>"unmarkPostposition", $documentId, $offset, $sentence['Sentence']['id'], $word['position'])
+                                                                       )
+                                                          );
+                                   }
+                               ?>
                             </span>
                         </span>                   
                     </td>
@@ -259,16 +303,14 @@
     <?php
         echo $sentenceNumber.".&nbsp;";
         $sentenceNumber++;   
-        foreach ($sentencesWindow[$i]['Word'] as $word): ?>
-        <?php
-            if ($word['split'] == 1) {
-                echo $word['stem']."&nbsp;&#124;&nbsp;".$word['suffix'];
+        foreach ($sentencesWindow[$i]['Word'] as $word) {
+            echo $word['text'];
+            if (isset($word['postposition_id'])) {
+                echo "&ndash;";
             } else {
-                echo $word['text'];
+                echo "&nbsp;";
             }
-        ?>&nbsp;
-    
-    <?php endforeach; ?>
+        } ?>
 </p>
 <?php } ?>
 

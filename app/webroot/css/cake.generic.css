@@ -250,6 +250,18 @@ td.normal-cell .edit-field {
     display:none;
 }
 
+.left-bracket {
+    background: url('../img/leftBracket.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.right-bracket {
+    background: url('../img/rightBracket.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
 td.normal-cell .choice-available {
     display:none;
 }

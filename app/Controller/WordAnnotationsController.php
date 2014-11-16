@@ -5,6 +5,7 @@ App::uses('AppController', 'Controller', 'Word', 'WordAnnotationTypeChoicesWordA
 class WordAnnotationsController extends AppController {
       
     public function saveWordTextAnnotation() {
+        $this->autoRender = false;
         if ($this->request->is('post')) {
             $wordId = $this->request->data['wordId'];
             $wordAnnotationTypeId = $this->request->data['wordAnnotationTypeId'];

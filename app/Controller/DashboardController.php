@@ -4,7 +4,7 @@ App::uses('AppController', 'Controller', 'User', 'Document', 'Sentence', 'WordAn
 
 class DashboardController extends AppController {
 
-    public function index($documentId = -1, $offset = -1) {
+    public function index($documentId = -1, $offset = -1, $gridX = 0, $editMode = 0) {
         $contextSize = 1;
 
         $userModel = ClassRegistry::init('User');
@@ -101,6 +101,8 @@ class DashboardController extends AppController {
             $this->set('wordAnnotationTypes', $wordAnnotationTypes);
             $this->set('sentenceAnnotationCount', count($sentenceAnnotationTypes));
             $this->set('offset', $offset);
+            $this->set('gridX', $gridX);
+            $this->set('editMode', $editMode);
             $this->set('documentId', $documentId);
             $this->set('userRoleId', $currentUser['User']['role_id']);
             $this->set('hotKeys', array('q', 'w', 'e', 'r', 'a', 's', 'd', 'f', 'z', 'x', 'c', 'v'));
