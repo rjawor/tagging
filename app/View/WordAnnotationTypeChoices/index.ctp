@@ -1,9 +1,9 @@
 <div id="word-annotation-type-choices-list">
-    <h3>Choices list for word annotation type: <?php echo $wordAnnotationType['WordAnnotationType']['name'];?></h3>
+    <h3>Tags list for word annotation level: <?php echo $wordAnnotationType['WordAnnotationType']['name'];?></h3>
     <?php
     echo $this->Html->image('left.png', array(
-                                          'alt' => 'back to word annotations list',
-                                          'title' => 'back to word annotations list',
+                                          'alt' => 'back to word annotation levels list',
+                                          'title' => 'back to word annotation levels list',
                                           'url' => array('controller'=>'wordAnnotationTypes','action'=>'index')
                                       )
                            );
@@ -12,7 +12,7 @@
     <p>
         <?php
             echo $this->Html->link(
-                '+ Add word annotation type choice', array('action' => 'add', $wordAnnotationType['WordAnnotationType']['id'])
+                '+ Add tag', array('action' => 'add', $wordAnnotationType['WordAnnotationType']['id'])
             );
         ?>
     </p>

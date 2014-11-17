@@ -1,5 +1,5 @@
 <div id="word-annotation-types-list">
-    <h3>Word annotation types list</h3>
+    <h3>Word annotation levels list</h3>
     <?php
     echo $this->Html->image('left.png', array(
                                           'alt' => 'back to configuration',
@@ -12,7 +12,7 @@
     <p>
         <?php
             echo $this->Html->link(
-                '+ Add word annotation type', array('action' => 'add')
+                '+ Add word annotation level', array('action' => 'add')
             );
         ?>
     </p>
@@ -73,7 +73,7 @@
                     if ($wordAnnotationType['WordAnnotationType']['strict_choices']) {
                         echo "&nbsp;&nbsp;";
                         echo $this->Html->link(
-                            'Edit choices',
+                            'Edit tags',
                             array('controller' => 'WordAnnotationTypeChoices', 'action' => 'index', $wordAnnotationType['WordAnnotationType']['id'])
                         );
                     }

@@ -1,5 +1,5 @@
 <div id="sentetnce-annotation-types-list">
-    <h3>Sentence annotation types list</h3>
+    <h3>Sentence annotation levels list</h3>
     <?php
     echo $this->Html->image('left.png', array(
                                           'alt' => 'back to configuration',
@@ -12,7 +12,7 @@
     <p>
         <?php
             echo $this->Html->link(
-                '+ Add sentence annotation type', array('action' => 'add')
+                '+ Add sentence annotation level', array('action' => 'add')
             );
         ?>
     </p>

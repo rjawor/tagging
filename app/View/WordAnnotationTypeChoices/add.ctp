@@ -1,8 +1,8 @@
-<h3>Add word annotation type choice</h3>
+<h3>Add tag</h3>
 <?php
 echo $this->Html->image('left.png', array(
-                                      'alt' => 'back to choices list',
-                                      'title' => 'back to choices list',
+                                      'alt' => 'back to tags list',
+                                      'title' => 'back to tags list',
                                       'url' => array('action'=>'index', $wordAnnotationTypeId)
                                   )
                        );
