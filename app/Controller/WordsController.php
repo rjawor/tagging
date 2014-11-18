@@ -9,13 +9,29 @@ class WordsController extends AppController {
         if ($this->request->is('post')) {
             $wordId = $this->request->data['wordId'];
             $text = $this->request->data['text'];
-            //CakeLog::write('debug', 'saveWord: wordId='.$wordId." text=".$text);
-            $data = array(
-                'Word' => array(
-                    'id' => $wordId,
-                    'text' => $text
-                )
-            );
+
+            $split = isset($this->request->data['wordSplit']) && $this->request->data['wordSplit'] == '1';
+
+            if ($split) {
+                $data = array(
+                    'Word' => array(
+                        'id' => $wordId,
+                        'text' => $text,
+                        'split' => $split,
+                        'stem' => $this->request->data['stem'],
+                        'suffix' => $this->request->data['suffix']
+                    )
+                );
+            } else {
+                $data = array(
+                    'Word' => array(
+                        'id' => $wordId,
+                        'text' => $text,
+                        'split' => $split
+                    )
+                );
+            
+            }
             
 
             $this->Word->save($data);

@@ -59,7 +59,11 @@ foreach ($document['Sentence'] as $sentence): ?>
     
     <?php
         foreach ($sentence['Word'] as $word) {
-            echo $word['text'];
+            if ($word['split'] == 1) {
+                echo $word['stem']."&#124;".$word['suffix'];
+            } else {
+                echo $word['text'];
+            }
             if (isset($word['postposition_id'])) {
                 echo "&ndash;";
             } else {

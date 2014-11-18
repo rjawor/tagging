@@ -260,8 +260,18 @@ function updateCellValue(sentenceNumber, gridX, gridY) {
         valueElement.value = normalizeText(escapeHTML(textInputElement.value));
         
     } else if (cellTypeElement.value == 'word') {
-        var wordTextElement = cell.querySelector('.edit-field input');
-        valueElement.value = normalizeText(escapeHTML(wordTextElement.value));            
+        var splitElement = document.getElementById(cellId+'-split');
+        if (splitElement.value == '0') {
+            var wordTextElement = cell.querySelector('.edit-field .word-unsplit-field input');
+            valueElement.value = normalizeText(escapeHTML(wordTextElement.value)); 
+        } else {
+            var wordTextElements = cell.querySelectorAll('.edit-field .word-split-field input');
+            var stem = normalizeText(escapeHTML(wordTextElements[0].value));
+            var suffix = normalizeText(escapeHTML(wordTextElements[1].value));   
+            valueElement.value = stem+','+suffix;
+        }
+        
+        
     } else if (cellTypeElement.value == 'choices' || cellTypeElement.value == 'multiple-choices') {
         var selectedChoices = editSpan.querySelectorAll('input.choice-selected');
         var selectedChoicesIds=[];
@@ -308,9 +318,24 @@ function updateCellDisplay(sentenceNumber, gridX, gridY) {
         textInputElement.value = deEscapeHTML(valueElement.value);        
     } else if (cellTypeElement.value == 'word') {
         var splitElement = document.getElementById(cellId+'-split');
-        displaySpan.innerHTML = valueElement.value;            
-        var wordTextElement = cell.querySelector('.edit-field input');
-        wordTextElement.value = deEscapeHTML(valueElement.value);
+        if (splitElement.value == '0') {
+            displaySpan.innerHTML = valueElement.value;            
+            var wordTextElement = cell.querySelector('.edit-field .word-unsplit-field input');
+            wordTextElement.value = deEscapeHTML(valueElement.value);
+        } else {
+            var stemAndSuffix = valueElement.value.split(",");
+            var stem = stemAndSuffix[0];
+            var suffix = stemAndSuffix[1];
+
+            var splitDisplaySpan = cell.querySelector('.ro-display .word-split-field');
+            if (splitDisplaySpan != null) {
+                splitDisplaySpan.innerHTML = stem+'&#124;'+suffix;
+            }
+            
+            var wordTextElements = cell.querySelectorAll('.edit-field .word-split-field input');
+            wordTextElements[0].value = deEscapeHTML(stem);
+            wordTextElements[1].value = deEscapeHTML(suffix);
+        }
     
     } else if (cellTypeElement.value == 'choices' || cellTypeElement.value == 'multiple-choices') {
         displaySpan.innerHTML = '';
@@ -376,7 +401,17 @@ function saveCell(sentenceNumber, gridX, gridY) {
      } else if (cellTypeElement.value == 'word') {
         var splitElement = document.getElementById(cellId+'-split');
         var wordId = document.getElementById(cellId+'-word-id').value;
-        $.post( "/tagging/words/saveWord", { wordId: wordId, text: valueElement.value} );        
+        
+        if (splitElement.value == '0') {
+            $.post( "/tagging/words/saveWord", { wordId: wordId, text: valueElement.value, wordSplit:0} );        
+        } else {
+            var wordTextElements = cell.querySelectorAll('.edit-field .word-split-field input');
+            var stemAndSuffix = valueElement.value.split(",");
+            var stem = stemAndSuffix[0];
+            var suffix = stemAndSuffix[1];
+            $.post( "/tagging/words/saveWord", { wordId: wordId, text: valueElement.value, wordSplit:1, stem: stem, suffix:suffix} );        
+        }
+
       } else if (cellTypeElement.value == 'choices' || cellTypeElement.value == 'multiple-choices') {
         var wordAnnotationTypeId = document.getElementById(cellId+'-word-annotation-type-id').value;
         var wordId = document.getElementById(cellId+'-word-id').value;
@@ -597,6 +632,58 @@ function handleWordOperation(e, operation) {
     }
 }
 
+function splitWord(e) {
+    var sentenceNumber = getSentenceNumber();
+    var gridX = getGridX(sentenceNumber);
+    var gridY = getGridY(sentenceNumber);
+    var cellId = 'cell-'+sentenceNumber+'-'+gridY+'-'+gridX;
+    var splitSpan = document.getElementById(cellId+'-split-span');
+    if (splitSpan != null && splitSpan.className == "word-unsplit" && getEditMode(sentenceNumber)) {
+        splitSpan.className="word-split"; 
+        var splitElement = document.getElementById(cellId+'-split');
+        splitElement.value = '1';
+           
+        var inputUnsplit = splitSpan.querySelector('.word-unsplit-field input');
+        var splitInputs = splitSpan.querySelectorAll('.word-split-field input');
+        var stemInput = splitInputs[0];
+        var suffixInput = splitInputs[1];
+        
+        pos = inputUnsplit.selectionStart;
+        
+        stemInput.value = inputUnsplit.value.substring(0,pos);
+        suffixInput.value = inputUnsplit.value.substring(pos, inputUnsplit.value.length);        
+        stemInput.focus();
+
+        e.preventDefault();
+    }
+    
+}
+
+function unsplitWord(e) {
+    var sentenceNumber = getSentenceNumber();
+    var gridX = getGridX(sentenceNumber);
+    var gridY = getGridY(sentenceNumber);
+    var cellId = 'cell-'+sentenceNumber+'-'+gridY+'-'+gridX;
+    var splitSpan = document.getElementById(cellId+'-split-span');
+    if (splitSpan != null && splitSpan.className == "word-split" && getEditMode(sentenceNumber)) {
+        splitSpan.className="word-unsplit"; 
+        var splitElement = document.getElementById(cellId+'-split');
+        splitElement.value = '0';
+           
+        var inputUnsplit = splitSpan.querySelector('.word-unsplit-field input');
+        var splitInputs = splitSpan.querySelectorAll('.word-split-field input');
+        var stemInput = splitInputs[0];
+        var suffixInput = splitInputs[1];
+        
+        inputUnsplit.value = stemInput.value+suffixInput.value;
+        inputUnsplit.focus();
+
+        e.preventDefault();
+    }
+    
+}
+
+
 
 $(document).keydown(function(e) {
     if (e.ctrlKey) {
@@ -614,11 +701,11 @@ $(document).keydown(function(e) {
             break;
             
             case 74: //j
-                handleWordOperation(e, 'markPostposition');
+                splitWord(e);
             break;
             
             case 75: //k
-                handleWordOperation(e, 'unmarkPostposition');
+                unsplitWord(e);
             break;
             
             case 76: //l
@@ -629,6 +716,14 @@ $(document).keydown(function(e) {
                 handleWordOperation(e, 'insertAfterWord');
             break;
             
+            case 85: //u
+                handleWordOperation(e, 'unmarkPostposition');
+            break;
+
+            case 89: //y
+                handleWordOperation(e, 'markPostposition');
+            break;
+
             default: return; // exit this handler for other keys
         }
     } else {
