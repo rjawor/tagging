@@ -129,7 +129,8 @@ function updateSuggestionBox(suggestionBox, suggestions) {
         suggestionBox.className = 'suggestion-box';
         jQuery.data(suggestionBox, "suggestions", suggestions);
         for (var i = 0; i < suggestions.count; i++) {
-            suggestionsHtml += '<tr><td><img style="cursor:pointer" src="/tagging/img/apply.png" title="apply suggestion" onclick="applySuggestion('+suggestions.gridX+','+i+')" alt="apply suggestion"></td>';
+            var index = i+1;
+            suggestionsHtml += '<tr><td><img style="cursor:pointer" src="/tagging/img/apply.png" title="apply suggestion (ctrl + '+index+')" onclick="applySuggestion('+suggestions.gridX+','+i+')" alt="apply suggestion"></td>';
             suggestionsHtml += '<td>'+suggestions.data[i].text+'</td>';
             var annotations = suggestions.data[i].annotations;
             for (var j = 0; j < annotations.length; j++) {
