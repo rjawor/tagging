@@ -1,8 +1,81 @@
 <?php
 
 App::uses('AppController', 'Controller');
+App::uses('WordAnnotationType', 'Model');
+App::uses('AnnotatedWord', 'Lib');
+
 
 class WordsController extends AppController {
+
+    public function getSuggestions() {
+        $this->autoRender = false;
+        if ($this->request->is('post')) {	        
+	        $gridX = $this->request->data['gridX'];
+
+	        $wordId = $this->request->data['wordId'];
+            $this->Word->recursive = 0;
+	        $word = $this->Word->findById($wordId);
+	        
+            $identicalWords = array();
+//	        CakeLog::write('debug', 'Getting suggestions for word: '.print_r($word,true));
+            $this->Word->recursive = 2;
+	        if ($word['Word']['split']) {
+	            if (isset($word['Word']['stem']) || isset($word['Word']['suffix'])) {
+    	            $identicalWords = $this->Word->find('all', array('conditions' => array('id !=' => $wordId, 'stem'=>$word['Word']['stem'], 'suffix'=>$word['Word']['suffix'])));
+	            }
+	        } else {
+	            if (isset($word['Word']['text'])) {
+    	            $identicalWords = $this->Word->find('all', array('conditions' => array('id !=' => $wordId, 'text'=>$word['Word']['text'])));
+    	        }
+	        }
+	        
+//	        CakeLog::write('debug', 'Identical words: '.print_r($identicalWords,true));
+
+            $annotatedWords = array();
+            foreach ($identicalWords as $identicalWord) {
+                $annotatedWord = new AnnotatedWord($identicalWord);
+                if ($annotatedWord->hasAnnotations() && !$this->arrayContainsAnnotation($annotatedWords, $annotatedWord)) {
+                    $this->insertIntoWordsArray($annotatedWords, $annotatedWord);
+                }
+            }	        
+	        
+//  	        CakeLog::write('debug', 'Annotated words: '.print_r($annotatedWords,true));
+
+            $wordAnnotationTypeModel = ClassRegistry::init('WordAnnotationType');
+            $wordAnnotationTypes = $wordAnnotationTypeModel->find('all', array('order'=>'position'));
+	        $suggestionsData = array();
+	        $limit = 3;
+	        $index = 0;
+	        while($index < count($annotatedWords) && $index < $limit) {
+	            array_push($suggestionsData, $annotatedWords[$index]->getSuggestionData($wordAnnotationTypes));
+	            $index++;
+	        }
+        	    
+//        	CakeLog::write('debug', 'suggestionsData: '.print_r($suggestionsData, true));
+	        return json_encode(array("gridX" => $gridX, "count" => count($suggestionsData), "data"=>$suggestionsData));
+		}
+    }
+
+    private function insertIntoWordsArray(&$array, $annotatedWord) {
+        $length = count($array);
+        for($i=0;$i<$length;$i++) {
+            if ($annotatedWord->containsAnnotation($array[$i])) {
+                unset($array[$i]);
+            }
+        }
+        $array = array_values($array);
+        array_push($array, $annotatedWord);
+    }
+    
+    private function arrayContainsAnnotation($array, $annotatedWord) {
+        foreach ($array as $word) {
+            if ($word->containsAnnotation($annotatedWord)) {
+                return true;
+            }
+        }
+        return false;
+    }
+    
 
     public function saveWord() {
         $this->autoRender = false;

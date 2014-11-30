@@ -54,21 +54,103 @@ function updateSentence() {
         } else {
             activeCell.className = 'selected';        
         }
-        var offset = $('#'+activeCell.id).offset();
-        var width = $(window).width();
-        var margin = 50;
-        if (offset.left > width - margin) {
-            $('div#content').animate({
-                scrollTop: 0,
-                scrollLeft: offset.left - 150 + $('div#content').scrollLeft()
-            });
-        } else if (offset.left < margin) {
-            $('div#content').animate({
-                scrollTop: 0,
-                scrollLeft: offset.left + 150 + $('div#content').scrollLeft() - width
-            });
+        
+        var firstReloadElement = document.getElementById('first-reload');
+        if (firstReloadElement.value == "1") {
+            updateSuggestions();
+            firstReloadElement.value = "0";
+        }
+
+        adjustScroll();
+    }
+}
+
+function adjustScroll() {
+    var sentenceNumber = getSentenceNumber();
+    var cellId = 'cell-'+sentenceNumber+'-'+getGridY(sentenceNumber)+'-'+getGridX(sentenceNumber);
+    var activeCell = document.getElementById(cellId);
+    var offset = $('#'+activeCell.id).offset();
+    var width = $(window).width();
+
+    $('div#content').animate({
+        scrollTop: 0,
+        scrollLeft: $('div#content').scrollLeft() + offset.left - 500
+    }, 100);
+
+}
+
+function hideAllSuggestionBoxes() {
+    var suggestionBoxes = document.querySelectorAll("div[id$='suggestion-box']");
+    for (var i=0; i<suggestionBoxes.length; i++) {
+        suggestionBoxes[i].className = 'suggestion-box-inactive';
+    }
+}
+
+function updateSuggestions() {
+    var wordCellId = 'cell-'+getSentenceNumber()+'-0-'+getGridX(getSentenceNumber());
+    var wordId = document.getElementById(wordCellId+'-word-id').value;
+	
+    document.getElementById(wordCellId+'-preloader').className="preloader-active";
+    $.ajax({
+		type: "POST",
+		url: "/tagging/words/getSuggestions",
+		data: { wordId: wordId, gridX:getGridX(getSentenceNumber()) },
+    })
+    .done(function( jsonString ) {
+        var sentenceNumber = getSentenceNumber();
+		var suggestions = jQuery.parseJSON(jsonString);
+	    var wordCellId = 'cell-'+getSentenceNumber()+'-0-'+suggestions.gridX;
+        var suggestionBox = document.getElementById(wordCellId+'-suggestion-box');
+        updateSuggestionBox(suggestionBox, suggestions);
+        document.getElementById(wordCellId+'-preloader').className="preloader-inactive";
+    });
+}
+
+function applySuggestion(gridX, suggestionIndex) {
+    var wordCellId = 'cell-'+getSentenceNumber()+'-0-'+gridX;
+    var suggestionBox = document.getElementById(wordCellId+'-suggestion-box');
+    if (suggestionBox.className == 'suggestion-box') {
+        var suggestions = jQuery.data(suggestionBox, "suggestions");
+        if (suggestionIndex < suggestions.count) {
+            var annotations = suggestions.data[suggestionIndex].annotations;
+            for (var i = 0; i < annotations.length; i++) {
+                //we add 1 to the position, because the first word annotation is at gridY = 1
+                modifyValue(getSentenceNumber(), gridX, parseInt(annotations[i].position)+1, annotations[i].value);
+            }
         }
     }
+}
+
+function updateSuggestionBox(suggestionBox, suggestions) {
+	if (suggestions.count == 0) {
+        suggestionBox.className = 'suggestion-box-inactive';        
+	} else {
+	    var suggestionsHtml = '<table>';
+        suggestionBox.className = 'suggestion-box';
+        jQuery.data(suggestionBox, "suggestions", suggestions);
+        for (var i = 0; i < suggestions.count; i++) {
+            suggestionsHtml += '<tr><td><img style="cursor:pointer" src="/tagging/img/apply.png" title="apply suggestion" onclick="applySuggestion('+suggestions.gridX+','+i+')" alt="apply suggestion"></td>';
+            suggestionsHtml += '<td>'+suggestions.data[i].text+'</td>';
+            var annotations = suggestions.data[i].annotations;
+            for (var j = 0; j < annotations.length; j++) {
+                suggestionsHtml += '<td>';
+                var annotation = annotations[j];
+                if (annotation.type == 'text') {
+                    suggestionsHtml += annotation.value;
+                } else if (annotation.type == 'choices') {
+                    var choices = annotation.choices;
+                    for(var k = 0; k < choices.length; k++) {
+                        var choice = choices[k];
+                        suggestionsHtml += '<input type="button" class="choice-selected" title="'+choice.description+'" value="'+choice.value+'" />';
+                    }
+                }
+                suggestionsHtml += '</td>';
+            }
+            suggestionsHtml += '</tr>';
+        }
+        suggestionsHtml += '</table>';
+        suggestionBox.innerHTML = suggestionsHtml;
+	}
 }
 
 function setGrid(sentenceNumber, gridY, gridX) {
@@ -110,6 +192,8 @@ function setEdited(sentenceNumber, gridY, gridX) {
         setEditMode(sentenceNumber, true);
         setGrid(sentenceNumber, gridY, gridX);
         updateSentence(sentenceNumber);
+        hideAllSuggestionBoxes();
+        updateSuggestions();
     }
 }
 
@@ -296,6 +380,7 @@ function modifyValue(sentenceNumber, gridX, gridY, value) {
     var valueElement = document.getElementById('cell-'+sentenceNumber+'-'+gridY+'-'+gridX+'-value');
     valueElement.value = value;
     updateCellDisplay(sentenceNumber, gridX, gridY); 
+    saveCell(sentenceNumber, gridX, gridY); 
 }
 
 function updateCellDisplay(sentenceNumber, gridX, gridY) {
@@ -457,6 +542,8 @@ function switchSelectionLeft() {
     if (gridX > 0) {
         setGridX(sentenceNumber, gridX - 1);
         setEditMode(sentenceNumber, false);
+        hideAllSuggestionBoxes();
+        updateSuggestions();
         updateSentence(sentenceNumber);
     }
 }
@@ -470,6 +557,8 @@ function switchSelectionRight() {
     if (gridY < wordAnnotationCount && gridX < gridXMax - 1) {
         setGridX(sentenceNumber, gridX + 1);
         setEditMode(sentenceNumber, false);
+        hideAllSuggestionBoxes();
+        updateSuggestions();
         updateSentence(sentenceNumber);
     }
 }
@@ -684,6 +773,11 @@ function unsplitWord(e) {
 }
 
 
+function suggestionHandle(e, suggestionNumber) {
+    applySuggestion(getGridX(getSentenceNumber()), suggestionNumber);
+    e.preventDefault();
+}
+
 
 $(document).keydown(function(e) {
     if (e.ctrlKey) {
@@ -694,6 +788,18 @@ $(document).keydown(function(e) {
 
             case 40:
                 ctrlDownArrowHandle();
+            break;
+
+            case 49: //1
+                suggestionHandle(e, 0);
+            break;
+
+            case 50: //2
+                suggestionHandle(e, 1);
+            break;
+
+            case 51: //3
+                suggestionHandle(e, 2);
             break;
 
             case 73: //i

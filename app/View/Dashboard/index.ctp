@@ -1,9 +1,10 @@
 <?php if(isset($sentence)) { ?>
 
+<br/><br/><br/>
 <input id="userRoleId" type="hidden" value="<?php echo $userRoleId ?>" />
-
 <input id="offset" type="hidden" value="<?php echo $offset ?>" />
 <input id="document-id" type="hidden" value="<?php echo $documentId ?>" />
+<input id="first-reload" type="hidden" value="1" />
 
 <script>
 <?php 
@@ -113,10 +114,26 @@
             <tr>
                 <td></td>
                 <?php 
-                foreach ($sentence['Word'] as $word) { ?>
-                      
-                <td class="<?php if($word['is_postposition']) { echo "right-bracket";}  ?><?php if(isset($word['postposition_id'])) { echo "left-bracket";}  ?>"
-                >
+                foreach ($sentence['Word'] as $word) {
+                    $className = "bracket-cell";
+                    if($word['is_postposition']) {
+                        $className .= " right-bracket";
+                    }
+                    if(isset($word['postposition_id'])) {
+                        $className .= " left-bracket";
+                    }
+                ?>
+                <td class="<?php echo $className; ?>" >
+					<?php
+						echo $this->Html->image("preloader.gif", array("id" => 'cell-'.$offset.'-0-'.$word['position'].'-preloader',
+   				                                                       "title" => "loading suggestions...",
+                                                                       "class" => "preloader-inactive"
+																	
+																 )
+									           );
+					?>
+                    <div id="cell-<?php echo $offset.'-0-'.$word['position'].'-suggestion-box'; ?>" class="suggestion-box-inactive">
+                    </div>
                 </td>    
                 
                 <?php } ?>
