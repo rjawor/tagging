@@ -168,13 +168,36 @@ class DocumentsController extends AppController {
         }
         
         $sentenceModel = ClassRegistry::init('Sentence');
-        $sentenceModel->recursive = 0;
+        $sentenceModel->recursive = 1;
         $wordModel = ClassRegistry::init('Word');
         $wordModel->recursive = 0;
 
         $currSentence = $sentenceModel->findById($sentenceId);
         $nextSentence = $sentenceModel->find('first', array('conditions' => array('document_id'=>$documentId, 'position' => $currSentence['Sentence']['position']+1)));
         
+        if (!empty($nextSentence['SentenceAnnotation'])) {
+            for($i=0;$i<count($nextSentence['SentenceAnnotation']);$i++) {
+                $nextAnnotation = $nextSentence['SentenceAnnotation'][$i];
+
+                $found = 0;
+                if(!empty($currSentence['SentenceAnnotation'])) {
+                    for($i=0;$i<count($currSentence['SentenceAnnotation']);$i++) {
+                        if ($currSentence['SentenceAnnotation'][$i]['type_id'] == $nextAnnotation['type_id']) {
+                            $currSentence['SentenceAnnotation'][$i]['text'] .= ' '.$nextAnnotation['text'];
+                            $found = 1;
+                        }
+                    }
+                }
+                if (!$found) {
+                    if (empty($currSentence['SentenceAnnotation'])) {
+                        $currSentence['SentenceAnnotation'] = array();
+                    }
+                    array_push($currSentence['SentenceAnnotation'], array('type_id'=>$nextAnnotation['type_id'], 'text' => $nextAnnotation['text']));
+                }
+            }
+            
+            $sentenceModel->saveAll($currSentence);
+        }
         $maxPosCurrSentence = $wordModel->find('first', array('fields' =>  array('max(position) AS max_pos'),
                                                               'conditions' => array('sentence_id' => $sentenceId)
                                                         )
@@ -196,6 +219,18 @@ class DocumentsController extends AppController {
                 
         $this->redirect(array('action'=>'view', $documentId, 1, '#'=>'sentence'.$sentenceId));
                 
+    }
+    
+    private function getSentenceAnnotation($sentence, $typeId) {
+        if(!empty($sentence['SentenceAnnotation'])) {
+            for($i=0;$i<count($sentence['SentenceAnnotation']);$i++) {
+                if ($sentence['SentenceAnnotation'][$i]['type_id'] == $typeId) {
+                    return $sentence['SentenceAnnotation'][$i];
+                }
+            }
+        }
+        
+        return null;
     }
 
     public function delete($id) {
