@@ -280,6 +280,7 @@ function updateAndSaveCell(sentenceNumber) {
     updateCellValue(sentenceNumber);
     saveCell(sentenceNumber);
     updateCellDisplay(sentenceNumber);
+    updateSuggestions();
 }
 
 function setEditMode(sentenceNumber, editMode, preventSave) {
@@ -479,7 +480,12 @@ function saveCell(sentenceNumber, gridX, gridY) {
         var wordAnnotationTypeElement = document.getElementById(cellId+'-word-annotation-type-id');
         var wordAnnotationTypeId = wordAnnotationTypeElement.value;
         var wordId = document.getElementById(cellId+'-word-id').value;
-        $.post( "/tagging/wordAnnotations/saveWordTextAnnotation", { wordId: wordId, wordAnnotationTypeId: wordAnnotationTypeId, text: valueElement.value } );
+        $.ajax({
+          type: 'POST',
+          url: "/tagging/wordAnnotations/saveWordTextAnnotation",
+          data: { wordId: wordId, wordAnnotationTypeId: wordAnnotationTypeId, text: valueElement.value },
+          async:false
+        });
     } else if (cellTypeElement.value == 'sentence-text') {
         var sentenceAnnotationTypeId = document.getElementById(cellId+'-sentence-annotation-type-id').value;
         var sentenceId = document.getElementById(cellId+'-sentence-id').value;
@@ -489,13 +495,23 @@ function saveCell(sentenceNumber, gridX, gridY) {
         var wordId = document.getElementById(cellId+'-word-id').value;
         
         if (splitElement.value == '0') {
-            $.post( "/tagging/words/saveWord", { wordId: wordId, text: valueElement.value, wordSplit:0} );        
+            $.ajax({
+              type: 'POST',
+              url: "/tagging/words/saveWord",
+              data: { wordId: wordId, text: valueElement.value, wordSplit:0},
+              async:false
+            });
         } else {
             var wordTextElements = cell.querySelectorAll('.edit-field .word-split-field input');
             var stemAndSuffix = valueElement.value.split(",");
             var stem = stemAndSuffix[0];
             var suffix = stemAndSuffix[1];
-            $.post( "/tagging/words/saveWord", { wordId: wordId, text: valueElement.value, wordSplit:1, stem: stem, suffix:suffix} );        
+            $.ajax({
+              type: 'POST',
+              url: "/tagging/words/saveWord",
+              data: { wordId: wordId, text: valueElement.value, wordSplit:1, stem: stem, suffix:suffix},
+              async:false
+            });
         }
 
       } else if (cellTypeElement.value == 'choices' || cellTypeElement.value == 'multiple-choices') {

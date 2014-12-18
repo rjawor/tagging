@@ -7,6 +7,8 @@ App::uses('AnnotatedWord', 'Lib');
 
 class WordsController extends AppController {
 
+
+
     public function getSuggestions() {
         $this->autoRender = false;
         if ($this->request->is('post')) {	        
@@ -45,15 +47,81 @@ class WordsController extends AppController {
             $wordAnnotationTypes = $wordAnnotationTypeModel->find('all', array('order'=>'position'));
 	        $suggestionsData = array();
 	        $limit = 3;
-	        $index = 0;
-	        while($index < count($annotatedWords) && $index < $limit) {
-	            array_push($suggestionsData, $annotatedWords[$index]->getSuggestionData($wordAnnotationTypes));
-	            $index++;
+	        $awIndex = 0;
+	        $suggestionsIndex = 0;
+	        while($awIndex < count($annotatedWords) && $suggestionsIndex < $limit) {
+	            array_push($suggestionsData, $annotatedWords[$awIndex]->getSuggestionData($wordAnnotationTypes));
+	            $awIndex++;
+	            $suggestionsIndex++;
+	        }
+	        
+	        $acIndex = 0;
+	        $autocompleteWords = $this->getAutocompleteWords($wordId);
+	        while($acIndex < count($autocompleteWords) && $suggestionsIndex < $limit) {
+	            array_push($suggestionsData, $autocompleteWords[$acIndex]->getSuggestionData($wordAnnotationTypes));
+	            $acIndex++;
+	            $suggestionsIndex++;
 	        }
         	    
 //        	CakeLog::write('debug', 'suggestionsData: '.print_r($suggestionsData, true));
 	        return json_encode(array("gridX" => $gridX, "count" => count($suggestionsData), "data"=>$suggestionsData));
 		}
+    }
+    
+    private function getAutocompleteWords($wordId) {
+    
+        
+        $rules = array(
+                     array(
+                        "conditions" => array(
+                                            "Word.split" => "1",
+                                            "Word.suffix" => "i"
+                                        ),
+                        "complete" => array("Word" => array(
+                                                          "text" => "*|i",
+                                                          "split" => 0,
+                                                          "id" => -1,
+                                                          "stem" => "",
+                                                          "suffix" => ""
+                                                      ),
+
+                                           "WordAnnotation" => array(
+                                                                   array(
+                                                                       "type_id" => 2,
+                                                                        "WordAnnotationTypeChoice" => array(
+                                                                                                          array(
+                                                                                                              "id" => 46,
+                                                                                                              "value" => "LOC",
+                                                                                                              "description" => "locative"
+                                                                                                          )
+                                                                                                      )
+
+                                                                   ),
+                                                                   array(
+                                                                       "type_id" => 3,
+                                                                        "WordAnnotationTypeChoice" => array(
+                                                                                                          array(
+                                                                                                              "id" => 78,
+                                                                                                              "value" => "NOUN",
+                                                                                                              "description" => "noun"
+                                                                                                          )
+                                                                                                      )
+
+                                                                   )
+                                                               )
+                                      )
+                     )
+                 );
+    
+        $result = array();
+        foreach ($rules as $rule) {
+            $count = $this->Word->find('count', array('conditions' => array("Word.id" => $wordId)+$rule["conditions"]));
+            if($count > 0) {
+                array_push($result, new AnnotatedWord($rule['complete']));
+            }            
+        }
+        
+        return $result;
     }
 
     private function insertIntoWordsArray(&$array, $annotatedWord) {
