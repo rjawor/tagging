@@ -127,6 +127,17 @@ class DashboardController extends AppController {
         return array();
     }
     
+    public function viewWord($wordId) {
+        $this->autoRender = false;
+        $documentModel = ClassRegistry::init('Document');
+        $data = $documentModel->query("SELECT * FROM documents INNER JOIN sentences ON documents.id = sentences.document_id INNER JOIN words ON sentences.id = words.sentence_id WHERE words.id = ".$wordId);
+        $documentId = $data[0]['documents']['id'];
+        $offset = $data[0]['sentences']['position'];
+        $gridX = $data[0]['words']['position'];
+        
+        return $this->redirect(array('action' => 'index', $documentId, $offset, $gridX));
+        
+    }
     public function setCurrentDocument($document_id, $offset) {
         $this->autoRender = false;
 

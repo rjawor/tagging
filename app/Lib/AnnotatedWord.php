@@ -8,10 +8,13 @@ class AnnotatedWord {
     private $suffix;
     
     private $split;
+
+    private $id;
     
     private $annotations;
 
     public function __construct($wordData) {
+        $this->id = $wordData['Word']['id'];
         $this->text = $wordData['Word']['text'];
         $this->stem = $wordData['Word']['stem'];
         $this->suffix = $wordData['Word']['suffix'];
@@ -59,6 +62,10 @@ class AnnotatedWord {
             }
         }
         return true;
+    }
+    
+    public function getId() {
+        return $this->id;
     }
     
     private function findAnnotationByType($annotationList, $typeId) {
@@ -115,6 +122,23 @@ class AnnotatedWord {
         usort($annotationsArray, array($this, 'compareAnnotations'));
         $data['annotations'] = $annotationsArray;
         return $data;
+    }
+    
+    public function getHtml($wordAnnotationTypes) {
+        $data = $this->getSuggestionData($wordAnnotationTypes);
+        $result = "<td>".$data['text']."</td>";
+        foreach ($data['annotations'] as $annotation) {
+            if ($annotation['type'] == 'text') {
+                $result .= "<td>".$annotation['value']."</td>";
+            } else if ($annotation['type'] == 'choices') {
+                $result.="<td>";
+                foreach($annotation['choices'] as $choice) {
+                    $result .= '<input type="button" class="choice-selected" title="'.$choice['description'].'" value="'.$choice['value'].'" />';
+                }
+                $result.="</td>";
+            }
+        }
+        return $result;
     }
 
     private function getAnnotationType($wordAnnotationTypes, $id) {

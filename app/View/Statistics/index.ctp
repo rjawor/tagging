@@ -1,0 +1,145 @@
+<?php
+
+    $standardCollocations = array(
+                                  array(
+                                      'desc' => 'A(INS)',
+                                      'value' => '87,42'
+                                  ),
+                                  array(
+                                      'desc' => 'A(NOM)',
+                                      'value' => '87,51'
+                                  ),
+                                  array(
+                                      'desc' => 'A(OBL)',
+                                      'value' => '87,52'
+                                  ),
+                                  array(
+                                      'desc' => 'O(NOM)',
+                                      'value' => '89,51'
+                                  ),
+                                  array(
+                                      'desc' => 'O(ACC)',
+                                      'value' => '89,6'
+                                  ),
+                                  array(
+                                      'desc' => 'O(OBL)',
+                                      'value' => '89,52'
+                                  )
+                              );
+
+    $statistics = array(
+        array(
+            'main' => array(
+                          'desc' => 'Converbs (CVB on the levels "Grammar" and "POS")',
+                          'short' => 'CVB',
+                          'value' => '21,85'
+                      ),
+            'collocations' => $standardCollocations
+        ),
+        array(
+            'main' => array(
+                          'desc' => 'Participles (PTCP on the levels "Grammar" and "POS")',
+                          'short' => 'PTCP(PTCP)',
+                          'value' => '65,81'
+                      ),
+            'collocations' => $standardCollocations
+        ),
+        array(
+            'main' => array(
+                          'desc' => 'Verb participles (PTCP on the level "Grammar", V on "SYNTAX")',
+                          'short' => 'PTCP(V)',
+                          'value' => '65,90'
+                      ),
+            'collocations' => $standardCollocations
+        ),
+        array(
+            'main' => array(
+                          'desc' => 'Infinitives (INF on the levels "Grammar" and "POS")',
+                          'short' => 'INF',
+                          'value' => '41,86'
+                      ),
+            'collocations' => $standardCollocations
+        )
+        
+    );
+?>
+
+Welcome to the statistics panel. Here you can view the following statistics:
+
+
+
+<ul>
+    <?php
+        foreach($statistics as $position) {
+        ?>
+        <li style="margin:1em 0">
+            <form method="post" name="<?php echo $position['main']['short'];?>" action="/tagging/statistics/singleWords">
+		    <input type="hidden" name="mainValue" value="<?php echo $position['main']['value']; ?>"/>
+	        </form>
+    	    <a href="#" onclick="document.forms['<?php echo $position['main']['short'];?>'].submit()" ><?php echo $position['main']['desc'];?></a>
+    	<?php if (count($position['collocations']) > 0) {
+            echo "<ul>";
+    	    foreach ($position['collocations'] as $collocation) {
+    	        ?>
+                <li style="margin:1em 0">
+                    <form method="post" name="<?php echo $position['main']['short'].'_'.$collocation['desc']; ?>" action="/tagging/statistics/collocations">
+		            <input type="hidden" name="mainValue" value="<?php echo $position['main']['value'];?>"/>
+		            <input type="hidden" name="collocationValue" value="<?php echo $collocation['value'];?>"/>
+	                </form>
+	                <a href="#" onclick="document.forms['<?php echo $position['main']['short'].'_'.$collocation['desc']; ?>'].submit()" ><?php echo $position['main']['short'].' + '.$collocation['desc']; ?></a>
+                </li>                    	        
+    	        <?php
+    	    }
+            echo "</ul>";
+    	}?>
+	    </li>        
+        <?php
+        }
+    
+    ?>  
+    <!--  
+        <form method="post" name="converbs" action="/tagging/statistics/singleWords">
+		<input type="hidden" name="data" value="21,85"/>
+	    </form>
+	    <ul>
+            <li style="margin:1em 0">
+                <form method="post" name="converbs_ains" action="/tagging/statistics/collocations">
+		        <input type="hidden" name="data" value="21,85"/>
+	            </form>
+	            <a href="#" onclick="document.forms['converbs_ains'].submit()" >CVB + A(INS)</a>
+            </li>
+            <li style="margin:1em 0">
+                <form method="post" name="converbs_anom" action="/tagging/statistics/collocations">
+		        <input type="hidden" name="data" value="21,85"/>
+	            </form>
+	            <a href="#" onclick="document.forms['converbs_anom'].submit()" >CVB + A(NOM)</a>
+            </li>
+            <li style="margin:1em 0">
+                <form method="post" name="converbs_aobl" action="/tagging/statistics/collocations">
+		        <input type="hidden" name="data" value="21,85"/>
+	            </form>
+	            <a href="#" onclick="document.forms['converbs_aobl'].submit()" >CVB + A(OBL)</a>
+            </li>
+            <li style="margin:1em 0">
+                <form method="post" name="converbs_onom" action="/tagging/statistics/collocations">
+		        <input type="hidden" name="data" value="21,85"/>
+	            </form>
+	            <a href="#" onclick="document.forms['converbs_onom'].submit()" >CVB + O(NOM)</a>
+            </li>
+            <li style="margin:1em 0">
+                <form method="post" name="converbs_oacc" action="/tagging/statistics/collocations">
+		        <input type="hidden" name="data" value="21,85"/>
+	            </form>
+	            <a href="#" onclick="document.forms['converbs_oacc'].submit()" >CVB + O(ACC)</a>
+            </li>
+            <li style="margin:1em 0">
+                <form method="post" name="converbs_oobl" action="/tagging/statistics/collocations">
+		        <input type="hidden" name="data" value="21,85"/>
+	            </form>
+	            <a href="#" onclick="document.forms['converbs_oobl'].submit()" >CVB + O(OBL)</a>
+            </li>
+	    
+	    </ul>	
+    </li>
+    -->
+</ul>
