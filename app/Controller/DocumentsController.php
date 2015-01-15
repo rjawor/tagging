@@ -65,10 +65,33 @@ class DocumentsController extends AppController {
                         $sentence = array('Word' => array());
                         
                         $wordPos = 0;
+                        $punct = ".,!?";
                         foreach($wordTexts as $wordText) {
                             if ($wordText != '') {
-                                array_push($sentence['Word'], array('position' => $wordPos, 'text' => $wordText));
-                                $wordPos++;
+                                $prefix = "";
+                                $suffix = "";
+                                if (strpos($punct, $wordText[0]) !== FALSE) {
+                                    $prefix = $wordText[0];
+                                    $wordText = substr($wordText, 1);
+                                
+                                }
+                                if (strpos($punct, $wordText[strlen($wordText)-1]) !== FALSE) {
+                                    $suffix = $wordText[strlen($wordText)-1];
+                                    $wordText = substr($wordText, 0, strlen($wordText)-1);
+                                }
+                                
+                                if ($prefix != '') {
+                                    array_push($sentence['Word'], array('position' => $wordPos, 'text' => $prefix));
+                                    $wordPos++;
+                                }
+                                if ($wordText != '') {
+                                    array_push($sentence['Word'], array('position' => $wordPos, 'text' => $wordText));
+                                    $wordPos++;
+                                }
+                                if ($suffix != '') {
+                                    array_push($sentence['Word'], array('position' => $wordPos, 'text' => $suffix));
+                                    $wordPos++;
+                                }
                             }
                         }
                         

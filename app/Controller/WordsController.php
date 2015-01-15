@@ -2,6 +2,8 @@
 
 App::uses('AppController', 'Controller');
 App::uses('WordAnnotationType', 'Model');
+App::uses('WordAnnotation', 'Model');
+App::uses('WordAnnotationTypeChoicesWordAnnotation', 'Model');
 App::uses('AnnotatedWord', 'Lib');
 
 
@@ -273,6 +275,55 @@ class WordsController extends AppController {
         
         return $this->redirect(array('controller' => 'dashboard', 'action' => 'index', $documentId, $documentOffset, $position));    
     }    
+    
+    public function copyFromPrev($documentId, $documentOffset, $sentenceId, $position) {
+        $this->autoRender = false;
+        $currentWord = $this->Word->find('first', array('conditions'=> array('sentence_id'=>$sentenceId, 'position'=>$position)));
+        $prevWord = $this->Word->find('first', array('conditions'=> array('sentence_id'=>$sentenceId, 'position'=>$position-1)));
+        $this->copyAnnotations($prevWord['Word']['id'], $currentWord['Word']['id']);           
+        
+        return $this->redirect(array('controller' => 'dashboard', 'action' => 'index', $documentId, $documentOffset, $position, 1));    
+    }    
+
+    public function copyFromNext($documentId, $documentOffset, $sentenceId, $position) {
+        $this->autoRender = false;
+        $currentWord = $this->Word->find('first', array('conditions'=> array('sentence_id'=>$sentenceId, 'position'=>$position)));
+        $nextWord = $this->Word->find('first', array('conditions'=> array('sentence_id'=>$sentenceId, 'position'=>$position+1)));
+        $this->copyAnnotations($nextWord['Word']['id'], $currentWord['Word']['id']);           
+        
+        return $this->redirect(array('controller' => 'dashboard', 'action' => 'index', $documentId, $documentOffset, $position, 1));    
+    }    
+
+    private function copyAnnotations($sourceWordId, $targetWordId) {
+        $wordAnnotationModel = ClassRegistry::init('WordAnnotation');
+        $wordAnnotationTypeChoicesWordAnnotationModel = ClassRegistry::init('WordAnnotationTypeChoicesWordAnnotation');
+        
+        $sourceAnnotations = $wordAnnotationModel->find('all', array('conditions'=> array('word_id'=>$sourceWordId)));
+        //CakeLog::write('debug',"copying from word: ".$sourceWordId." to word: ".$targetWordId." annotations: ". print_r($sourceAnnotations, true));
+        if (count($sourceAnnotations > 0)) {
+            $wordAnnotationModel->deleteAll(array('word_id' => $targetWordId));    
+        }
+        foreach ($sourceAnnotations as $sourceAnnotation) {
+            $newAnnotation = array(
+                'word_id' => $targetWordId,
+                'text_value' => $sourceAnnotation['WordAnnotation']['text_value'],
+                'type_id' => $sourceAnnotation['WordAnnotation']['type_id']
+            );
+            $wordAnnotationModel->create();
+            $wordAnnotationModel->save($newAnnotation);
+            $newId = $wordAnnotationModel->id;
+            foreach($sourceAnnotation['WordAnnotationTypeChoice'] as $choice) {
+                $newConnection = array(
+                    'word_annotation_id' => $newId,
+                    'word_annotation_type_choice_id' => $choice['id']
+                );
+                $wordAnnotationTypeChoicesWordAnnotationModel->create();
+                $wordAnnotationTypeChoicesWordAnnotationModel->save($newConnection);
+            }
+        }
+        
+    }
+    
 }
 
 ?>

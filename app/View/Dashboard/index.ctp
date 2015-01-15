@@ -169,7 +169,7 @@
                                    <input type="text" value="<?php echo $word['text'] ?>" />
                                 </span>
                                 <?php
-                                   if (!$word['is_postposition']) {
+                                   if ($wordIndex == 0) {
                                        echo $this->Html->image("plus.png", array("id" => "insertWord".$wordIndex,
                                                                                  "alt" => "insert word before current (ctrl + i)",
                                                                                  "title" => "insert word before current (ctrl + i)",
@@ -178,7 +178,7 @@
                                                               );
                                        echo "&nbsp;";
                                    }
-                                   if ($wordIndex == count($sentence['Word']) - 1) {                       
+                                   if (!isset($word['postposition_id'])) {                       
                                        echo $this->Html->image("plusNext.png", array("id" => "insertAfterWord".$wordIndex,
                                                                                  "alt" => "insert word after current (ctrl + o)",
                                                                                  "title" => "insert word after current (ctrl + o)",
@@ -212,6 +212,22 @@
                                                                              "alt" => "unmark postposition binding (ctrl + u)",
                                                                              "title" => "unmark postposition binding (ctrl + u)",
                                                                              "url" => array("controller" => "words", "action"=>"unmarkPostposition", $documentId, $offset, $sentence['Sentence']['id'], $word['position'])
+                                                                       )
+                                                          );
+                                   }
+                                   if ($wordIndex > 0) {
+                                   echo $this->Html->image("copyFromPrev.png", array("id" => "copyFromPrev".$wordIndex,
+                                                                             "alt" => "copy annotations from previous word",
+                                                                             "title" => "copy annotations from previous word",
+                                                                             "url" => array("controller" => "words", "action"=>"copyFromPrev", $documentId, $offset, $sentence['Sentence']['id'], $word['position'])
+                                                                       )
+                                                          );
+                                   }
+                                   if ($wordIndex < count($sentence['Word']) - 1) {
+                                   echo $this->Html->image("copyFromNext.png", array("id" => "copyFromNext".$wordIndex,
+                                                                             "alt" => "copy annotations from next word",
+                                                                             "title" => "copy annotations from next word",
+                                                                             "url" => array("controller" => "words", "action"=>"copyFromNext", $documentId, $offset, $sentence['Sentence']['id'], $word['position'])
                                                                        )
                                                           );
                                    }
