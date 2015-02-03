@@ -16,6 +16,11 @@ Welcome to the IA tagger. Use the menu bar to navigate:
     $user = AuthComponent::user();
     if ($user['role_id'] == 1) { ?>
     <li><b>Configuration</b> - changing the system parameters, including annotation types.</li>
-    <?php } ?>
+    <?php }
+    ?>
 </ul>
+<br /><br />
+<p>
+    The full user manual in English is available <?php echo $this->Html->link('here', '/files/manual.docx', array('target' => '_blank'));?>.
+</p>    
 
