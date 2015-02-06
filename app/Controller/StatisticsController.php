@@ -32,6 +32,8 @@ class StatisticsController extends AppController {
 
     public function collocations() {
         if ($this->request->is('post')) {
+            $MAX_DIST = 10;
+            
 	        $mainParams = explode(',',$this->request['data']['mainValue']);	
 	        $collocationParams = explode(',',$this->request['data']['collocationValue']);	
             
@@ -47,7 +49,7 @@ class StatisticsController extends AppController {
                 if ($mwId != $prevMwId) {
                     $minDist  = $dist;                    
                 }
-                if ($dist == $minDist) {
+                if ($dist == $minDist && $dist < $MAX_DIST + 1) {
                     array_push($collocations, array(
                                                   'mwId' => $mwId,
                                                   'mwText' => $this->getWordText($rawCollocation['MW']),

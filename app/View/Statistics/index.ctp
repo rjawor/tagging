@@ -59,6 +59,18 @@
                           'value' => '41,86'
                       ),
             'collocations' => $standardCollocations
+        ),
+        array(
+            'main' => array(
+                          'desc' => 'Verbs (VRB on the level "POS", V on the level "syntax")',
+                          'short' => 'VRB(V)',
+                          'value' => '80,90'
+                      ),
+            'including' => array(
+                          'short' => 'PPP(V)',
+                          'value' => '57,90'
+                      ),
+            'collocations' => $standardCollocations
         )
         
     );
@@ -87,6 +99,20 @@ Welcome to the statistics panel. Here you can view the following statistics:
 		            <input type="hidden" name="collocationValue" value="<?php echo $collocation['value'];?>"/>
 	                </form>
 	                <a href="#" onclick="document.forms['<?php echo $position['main']['short'].'_'.$collocation['desc']; ?>'].submit()" ><?php echo $position['main']['short'].' + '.$collocation['desc']; ?></a>
+	                <?php
+	                    if(isset($position['including'])) {
+	                ?>
+                    <li>
+                        <form method="post" name="<?php echo $position['main']['short'].'_'.$collocation['desc'].'_including'; ?>" action="/tagging/statistics/collocations">
+                        <input type="hidden" name="mainValue" value="<?php echo $position['main']['value'].','.$position['including']['value'];?>"/>
+                        <input type="hidden" name="collocationValue" value="<?php echo $collocation['value'];?>"/>
+                        </form>
+                        including: <a href="#" onclick="document.forms['<?php echo $position['main']['short'].'_'.$collocation['desc'].'_including'; ?>'].submit()"><?php echo $position['including']['short'].' + '.$collocation['desc']; ?></a>
+
+                    </li>	                
+	                <?php    
+	                    }
+	                ?>
                 </li>                    	        
     	        <?php
     	    }
@@ -97,49 +123,5 @@ Welcome to the statistics panel. Here you can view the following statistics:
         }
     
     ?>  
-    <!--  
-        <form method="post" name="converbs" action="/tagging/statistics/singleWords">
-		<input type="hidden" name="data" value="21,85"/>
-	    </form>
-	    <ul>
-            <li style="margin:1em 0">
-                <form method="post" name="converbs_ains" action="/tagging/statistics/collocations">
-		        <input type="hidden" name="data" value="21,85"/>
-	            </form>
-	            <a href="#" onclick="document.forms['converbs_ains'].submit()" >CVB + A(INS)</a>
-            </li>
-            <li style="margin:1em 0">
-                <form method="post" name="converbs_anom" action="/tagging/statistics/collocations">
-		        <input type="hidden" name="data" value="21,85"/>
-	            </form>
-	            <a href="#" onclick="document.forms['converbs_anom'].submit()" >CVB + A(NOM)</a>
-            </li>
-            <li style="margin:1em 0">
-                <form method="post" name="converbs_aobl" action="/tagging/statistics/collocations">
-		        <input type="hidden" name="data" value="21,85"/>
-	            </form>
-	            <a href="#" onclick="document.forms['converbs_aobl'].submit()" >CVB + A(OBL)</a>
-            </li>
-            <li style="margin:1em 0">
-                <form method="post" name="converbs_onom" action="/tagging/statistics/collocations">
-		        <input type="hidden" name="data" value="21,85"/>
-	            </form>
-	            <a href="#" onclick="document.forms['converbs_onom'].submit()" >CVB + O(NOM)</a>
-            </li>
-            <li style="margin:1em 0">
-                <form method="post" name="converbs_oacc" action="/tagging/statistics/collocations">
-		        <input type="hidden" name="data" value="21,85"/>
-	            </form>
-	            <a href="#" onclick="document.forms['converbs_oacc'].submit()" >CVB + O(ACC)</a>
-            </li>
-            <li style="margin:1em 0">
-                <form method="post" name="converbs_oobl" action="/tagging/statistics/collocations">
-		        <input type="hidden" name="data" value="21,85"/>
-	            </form>
-	            <a href="#" onclick="document.forms['converbs_oobl'].submit()" >CVB + O(OBL)</a>
-            </li>
-	    
-	    </ul>	
-    </li>
-    -->
+
 </ul>
