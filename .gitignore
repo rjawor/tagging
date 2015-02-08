@@ -1,4 +1,6 @@
 app/tmp
 app/Config/core.php
 app/Config/database.php
-
+app/Plugin/TinyMCE/.gitignore
+app/Plugin/TinyMCE/.semver
+app/Plugin/TinyMCE/.travis.yml

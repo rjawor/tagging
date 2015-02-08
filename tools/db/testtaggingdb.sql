@@ -259,6 +259,19 @@ CREATE TABLE IF NOT EXISTS `testtaggingdb`.`word_annotation_type_choices_word_an
 ENGINE = InnoDB;
 
 
+-- -----------------------------------------------------
+-- Table `testtaggingdb`.`help_sections`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `testtaggingdb`.`help_sections` ;
+
+CREATE TABLE IF NOT EXISTS `testtaggingdb`.`help_sections` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `position` INT NULL,
+  `text` TEXT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
+
+
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;

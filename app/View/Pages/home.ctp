@@ -19,8 +19,4 @@ Welcome to the IA tagger. Use the menu bar to navigate:
     <?php }
     ?>
 </ul>
-<br /><br />
-<p>
-    The full user manual in English is available <?php echo $this->Html->link('here', '/files/manual.docx', array('target' => '_blank'));?>.
-</p>    
 

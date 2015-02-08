@@ -68,17 +68,15 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
                 <ul>
 	            <li><a href='/tagging/dashboard'><span>Dashboard</span></a></li>
                 <li><a href='/tagging/documents'><span>Documents</span></a></li>
+                <li><a href='/tagging/statistics'><span>Statistics</span></a></li>                
 	            <?php
 	            $user = AuthComponent::user();
 	            if ($user['role_id'] == 1) { ?>
-                    <li><a href='/tagging/statistics'><span>Statistics</span></a></li>                
-                    <li class='last'><a href='/tagging/configuration'><span>Configuration</span></a></li>
+                    <li><a href='/tagging/configuration'><span>Configuration</span></a></li>
                 <?php
-                } else {
+                }
                 ?>
-                    <li class='last'><a href='/tagging/statistics'><span>Statistics</span></a></li>                
-                <?php
-                } ?>
+                <li class='last'><a href='/tagging/helpSections'><span>Help</span></a></li>                
 
                 </ul>
             </div>            
