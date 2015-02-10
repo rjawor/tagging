@@ -76,7 +76,7 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
                 <?php
                 }
                 ?>
-                <li class='last'><a href='/tagging/helpSections'><span>Help</span></a></li>                
+                <li class='last'><a href='http://rjawor.vm.wmi.amu.edu.pl/wiki/' target='_blank'><span>Help</span></a></li>                
 
                 </ul>
             </div>            
