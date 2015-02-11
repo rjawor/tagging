@@ -4,6 +4,7 @@ App::uses('QueryBuilder', 'Lib');
 App::uses('AnnotatedWord', 'Lib');
 App::uses('Word', 'Model');
 App::uses('Sentence', 'Model');
+App::uses('Document', 'Model');
 App::uses('WordAnnotationTypeChoice', 'Model');
 App::uses('WordAnnotationType', 'Model');
 
@@ -12,10 +13,29 @@ App::uses('WordAnnotationType', 'Model');
 class StatisticsController extends AppController {
     public function singleWords() {
         if ($this->request->is('post')) {
+            $this->set('mainValue', $this->request['data']['mainValue']);
+            $documentModel = ClassRegistry::init('Document');
+            $documentModel->recursive = 1;
+            $documents = $documentModel->find('all');
+            $this->set('documents', $documents);
+            
+            if (isset($this->request['data']['documentIds'])) {
+    	        $documentIds = $this->request['data']['documentIds'];
+            } else {
+                $documentIds = array();
+            }
+            
+            $this->set('documentIds', $documentIds);
 	        $params = explode(',',$this->request['data']['mainValue']);	
             $wordModel = ClassRegistry::init('Word');
             $wordModel->recursive = 2;
-            $words = $wordModel->find('all', array('order'=>'case Word.split when 1 then concat(Word.stem, Word.suffix) else Word.text end','conditions'=> array('Word.id IN ('.QueryBuilder::singleWord($params).')')));
+            $options = array('order'=>'case Word.split when 1 then concat(Word.stem, Word.suffix) else Word.text end','conditions'=> array('Word.id IN ('.QueryBuilder::singleWordChoices($params).')'));
+            if (!empty($documentIds)) {
+                array_push($options['conditions'],'Word.id IN ('.QueryBuilder::singleWordDocuments($documentIds).')');
+            } else {
+                array_push($options['conditions'],'false');            
+            }
+            $words = $wordModel->find('all', $options);
 	        $annotatedWords = array();
             foreach($words as $word) {
                 array_push($annotatedWords, new AnnotatedWord($word));
@@ -32,13 +52,28 @@ class StatisticsController extends AppController {
 
     public function collocations() {
         if ($this->request->is('post')) {
+            $this->set('mainValue', $this->request['data']['mainValue']);
+            $this->set('collocationValue', $this->request['data']['collocationValue']);
             $MAX_DIST = 10;
             
+            $documentModel = ClassRegistry::init('Document');
+            $documentModel->recursive = 1;
+            $documents = $documentModel->find('all');
+            $this->set('documents', $documents);
+            
+            if (isset($this->request['data']['documentIds'])) {
+    	        $documentIds = $this->request['data']['documentIds'];
+            } else {
+                $documentIds = array();
+            }
+            
+            $this->set('documentIds', $documentIds);
+
 	        $mainParams = explode(',',$this->request['data']['mainValue']);	
 	        $collocationParams = explode(',',$this->request['data']['collocationValue']);	
             
             $sentenceModel = ClassRegistry::init('Sentence');
-            $rawCollocations = $sentenceModel->query(QueryBuilder::collocations($mainParams, $collocationParams));
+            $rawCollocations = $sentenceModel->query(QueryBuilder::collocations($documentIds, $mainParams, $collocationParams));
             
             $collocations = array();
             $prevMwId = -1;
@@ -67,6 +102,8 @@ class StatisticsController extends AppController {
 
     }
     
+    
+    
     private function getWordText($wordData) {
         if ($wordData['split']) {
             return $wordData['stem']."|".$wordData['suffix'];
@@ -76,6 +113,15 @@ class StatisticsController extends AppController {
     }
 
     public function index() {
+        $documentModel = ClassRegistry::init('Document');
+        $documentModel->recursive = 0;
+        $documents = $documentModel->find('all');
+        $documentIds = array();
+        foreach($documents as $document) {
+            array_push($documentIds, $document['Document']['id']);
+        }
+        $this->set('documentIds', $documentIds);
+
     }
 }
 

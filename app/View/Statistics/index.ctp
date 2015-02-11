@@ -87,6 +87,11 @@ Welcome to the statistics panel. Here you can view the following statistics:
         <li style="margin:1em 0">
             <form method="post" name="<?php echo $position['main']['short'];?>" action="/tagging/statistics/singleWords">
 		    <input type="hidden" name="mainValue" value="<?php echo $position['main']['value']; ?>"/>
+            <?php foreach($documentIds as $documentId) {
+            ?>
+                <input type="hidden" name="documentIds[]" value="<?php echo $documentId;?>" />
+            <?php
+            }?>
 	        </form>
     	    <a href="#" onclick="document.forms['<?php echo $position['main']['short'];?>'].submit()" ><?php echo $position['main']['desc'];?></a>
     	<?php if (count($position['collocations']) > 0) {
@@ -97,6 +102,11 @@ Welcome to the statistics panel. Here you can view the following statistics:
                     <form method="post" name="<?php echo $position['main']['short'].'_'.$collocation['desc']; ?>" action="/tagging/statistics/collocations">
 		            <input type="hidden" name="mainValue" value="<?php echo $position['main']['value'];?>"/>
 		            <input type="hidden" name="collocationValue" value="<?php echo $collocation['value'];?>"/>
+                    <?php foreach($documentIds as $documentId) {
+                    ?>
+                        <input type="hidden" name="documentIds[]" value="<?php echo $documentId;?>" />
+                    <?php
+                    }?>
 	                </form>
 	                <a href="#" onclick="document.forms['<?php echo $position['main']['short'].'_'.$collocation['desc']; ?>'].submit()" ><?php echo $position['main']['short'].' + '.$collocation['desc']; ?></a>
 	                <?php
@@ -106,6 +116,11 @@ Welcome to the statistics panel. Here you can view the following statistics:
                         <form method="post" name="<?php echo $position['main']['short'].'_'.$collocation['desc'].'_including'; ?>" action="/tagging/statistics/collocations">
                         <input type="hidden" name="mainValue" value="<?php echo $position['main']['value'].','.$position['including']['value'];?>"/>
                         <input type="hidden" name="collocationValue" value="<?php echo $collocation['value'];?>"/>
+                        <?php foreach($documentIds as $documentId) {
+                        ?>
+                            <input type="hidden" name="documentIds[]" value="<?php echo $documentId;?>" />
+                        <?php
+                        }?>
                         </form>
                         including: <a href="#" onclick="document.forms['<?php echo $position['main']['short'].'_'.$collocation['desc'].'_including'; ?>'].submit()"><?php echo $position['including']['short'].' + '.$collocation['desc']; ?></a>
 
