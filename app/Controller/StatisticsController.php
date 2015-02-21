@@ -2,6 +2,7 @@
 
 App::uses('QueryBuilder', 'Lib');
 App::uses('AnnotatedWord', 'Lib');
+App::uses('DataDumper', 'Lib');
 App::uses('Word', 'Model');
 App::uses('Sentence', 'Model');
 App::uses('Document', 'Model');
@@ -11,6 +12,21 @@ App::uses('WordAnnotationType', 'Model');
 
 
 class StatisticsController extends AppController {
+    public function taggerdownload() {
+        $this->viewClass = 'Media';
+        // Download app/tmp/example.txt
+        $params = array(
+            'id'        => 'hindi.txt',
+            'name'      => 'hindi',
+            'download'  => true,
+            'extension' => 'txt',
+            'path'      => APP . 'tmp' . DS
+        );
+        
+        DataDumper::dumpTagsToFile($params['path'].$params['id']);
+        $this->set($params);
+    }
+
     public function singleWords() {
         if ($this->request->is('post')) {
             $this->set('mainValue', $this->request['data']['mainValue']);

@@ -76,7 +76,7 @@
     );
 ?>
 
-Welcome to the statistics panel. Here you can view the following statistics:
+Welcome to the statistics panel. Here you can download the <a href="/tagging/statistics/taggerdownload">complete tagged text</a> or view the following statistics:
 
 
 
