@@ -298,10 +298,10 @@ class WordsController extends AppController {
         $wordAnnotationModel = ClassRegistry::init('WordAnnotation');
         $wordAnnotationTypeChoicesWordAnnotationModel = ClassRegistry::init('WordAnnotationTypeChoicesWordAnnotation');
         
-        $sourceAnnotations = $wordAnnotationModel->find('all', array('conditions'=> array('word_id'=>$sourceWordId)));
+        $sourceAnnotations = $wordAnnotationModel->find('all', array('conditions'=> array('word_id'=>$sourceWordId, 'type_id !='=>1)));
         //CakeLog::write('debug',"copying from word: ".$sourceWordId." to word: ".$targetWordId." annotations: ". print_r($sourceAnnotations, true));
         if (count($sourceAnnotations > 0)) {
-            $wordAnnotationModel->deleteAll(array('word_id' => $targetWordId));    
+            $wordAnnotationModel->deleteAll(array('word_id' => $targetWordId, 'type_id !='=>1));    
         }
         foreach ($sourceAnnotations as $sourceAnnotation) {
             $newAnnotation = array(
