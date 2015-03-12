@@ -112,7 +112,7 @@ function applySuggestion(gridX, suggestionIndex) {
     if (suggestionBox.className == 'suggestion-box') {
         var suggestions = jQuery.data(suggestionBox, "suggestions");
         if (suggestionIndex < suggestions.count) {
-            var annotations = suggestions.data[suggestionIndex].annotations;
+            var annotations = suggestions.data[suggestionIndex].suggestion.annotations;
             for (var i = 0; i < annotations.length; i++) {
                 //we add 1 to the position, because the first word annotation is at gridY = 1
                 modifyValue(getSentenceNumber(), gridX, parseInt(annotations[i].position)+1, annotations[i].value);
@@ -128,11 +128,18 @@ function updateSuggestionBox(suggestionBox, suggestions) {
 	    var suggestionsHtml = '<table>';
         suggestionBox.className = 'suggestion-box';
         jQuery.data(suggestionBox, "suggestions", suggestions);
+        //alert(JSON.stringify(suggestions));
         for (var i = 0; i < suggestions.count; i++) {
             var index = i+1;
             suggestionsHtml += '<tr><td><img style="cursor:pointer" src="/tagging/img/apply.png" title="apply suggestion (ctrl + '+index+')" onclick="applySuggestion('+suggestions.gridX+','+i+')" alt="apply suggestion"></td>';
-            suggestionsHtml += '<td>'+suggestions.data[i].text+'</td>';
-            var annotations = suggestions.data[i].annotations;
+            if (suggestions.data[i].suggestionCount == 0) {
+	            suggestionsHtml += '<td><input title="this suggestion comes from predefined rules" type="button" class="suggestion-count-box" value="R" /></td>';            
+            } else {
+	            suggestionsHtml += '<td><a title="view one of the words with this annotation" href="/tagging/dashboard/viewWord/'+suggestions.data[i].wordId+'" target="_blank"><img src="/tagging/img/editSmall.png"/></a></td>';
+		        suggestionsHtml += '<td><input title="suggestion frequency score" type="button" class="suggestion-count-box" value="'+suggestions.data[i].suggestionCount+'" /></td>';
+            }
+	        suggestionsHtml += '<td>'+suggestions.data[i].suggestion.text+'</td>';            
+            var annotations = suggestions.data[i].suggestion.annotations;
             for (var j = 0; j < annotations.length; j++) {
                 suggestionsHtml += '<td>';
                 var annotation = annotations[j];

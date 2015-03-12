@@ -281,6 +281,14 @@ td.selected .choice-available {
     margin-bottom:20px;    
 }
 
+.suggestion-count-box {
+    border: 2px solid #FF0000;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+ 	padding: 2px;
+ 	font-weight:bold;
+}
+
 .suggestion-box {
     position:absolute;
     top:-110px;

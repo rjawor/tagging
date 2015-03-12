@@ -41,7 +41,8 @@ class WordsController extends AppController {
                 if ($annotatedWord->hasAnnotations() && !$this->arrayContainsAnnotation($annotatedWords, $annotatedWord)) {
                     $this->insertIntoWordsArray($annotatedWords, $annotatedWord);
                 }
-            }	        
+            }
+            usort($annotatedWords, array($this, 'compareAnnotatedWords'));      
 	        
 //  	        CakeLog::write('debug', 'Annotated words: '.print_r($annotatedWords,true));
 
@@ -52,7 +53,7 @@ class WordsController extends AppController {
 	        $awIndex = 0;
 	        $suggestionsIndex = 0;
 	        while($awIndex < count($annotatedWords) && $suggestionsIndex < $limit) {
-	            array_push($suggestionsData, $annotatedWords[$awIndex]->getSuggestionData($wordAnnotationTypes));
+	            array_push($suggestionsData, array('wordId' => $annotatedWords[$awIndex]['word']->getId(),'suggestionCount' => $annotatedWords[$awIndex]['count'], 'suggestion'=>$annotatedWords[$awIndex]['word']->getSuggestionData($wordAnnotationTypes)));
 	            $awIndex++;
 	            $suggestionsIndex++;
 	        }
@@ -60,7 +61,7 @@ class WordsController extends AppController {
 	        $acIndex = 0;
 	        $autocompleteWords = $this->getAutocompleteWords($wordId);
 	        while($acIndex < count($autocompleteWords) && $suggestionsIndex < $limit) {
-	            array_push($suggestionsData, $autocompleteWords[$acIndex]->getSuggestionData($wordAnnotationTypes));
+	            array_push($suggestionsData, array('suggestionCount' => 0, 'suggestion' => $autocompleteWords[$acIndex]->getSuggestionData($wordAnnotationTypes)));
 	            $acIndex++;
 	            $suggestionsIndex++;
 	        }
@@ -68,6 +69,14 @@ class WordsController extends AppController {
 //        	CakeLog::write('debug', 'suggestionsData: '.print_r($suggestionsData, true));
 	        return json_encode(array("gridX" => $gridX, "count" => count($suggestionsData), "data"=>$suggestionsData));
 		}
+    }
+    
+    private function compareAnnotatedWords($a, $b) {
+        if ($a['count'] == $b['count']) {
+           return 0;
+        }
+
+        return ($a['count'] < $b['count']) ? 1 : -1;
     }
     
     private function getAutocompleteWords($wordId) {
@@ -128,18 +137,21 @@ class WordsController extends AppController {
 
     private function insertIntoWordsArray(&$array, $annotatedWord) {
         $length = count($array);
+        $baseCount = 0;
         for($i=0;$i<$length;$i++) {
-            if ($annotatedWord->containsAnnotation($array[$i])) {
+            if ($annotatedWord->containsAnnotation($array[$i]['word'])) {
+                $baseCount += $array[$i]['count'];
                 unset($array[$i]);
             }
         }
         $array = array_values($array);
-        array_push($array, $annotatedWord);
+        array_push($array, array('word'=>$annotatedWord, 'count' => ($baseCount + 1)));
     }
     
-    private function arrayContainsAnnotation($array, $annotatedWord) {
-        foreach ($array as $word) {
-            if ($word->containsAnnotation($annotatedWord)) {
+    private function arrayContainsAnnotation(&$array, $annotatedWord) {
+        for ($i=0;$i<count($array);$i++) {
+            if ($array[$i]['word']->containsAnnotation($annotatedWord)) {
+            	$array[$i]['count'] = $array[$i]['count'] + 1;
                 return true;
             }
         }
