@@ -1,4 +1,8 @@
 <?php
+
+App::uses('Utils', 'Lib');
+
+
 echo $this->Html->image('left.png', array(
                                       'alt' => 'back to documents list',
                                       'title' => 'back to documents list',
@@ -44,6 +48,14 @@ foreach ($document['Sentence'] as $sentence): ?>
 
 <p id="sentence<?php echo $sentence['id'] ?>">
     <?php echo ($sentenceCounter+1); ?>.&nbsp;
+    <?php 
+        if (Utils::isSentenceStarted($sentence['id'])) {
+            echo $this->Html->image("started.png", array(
+                "alt" => "started",
+                "title" => "the annotation of this sentence is started"
+                     ));
+        }
+    ?>
     <?php echo $this->Html->image("edit.png", array(
                 "alt" => "edit",
                 'url' => array('controller' => 'dashboard', 'action' => 'setCurrentDocument', $document['Document']['id'], $sentenceCounter)
