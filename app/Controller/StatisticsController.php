@@ -70,8 +70,12 @@ class StatisticsController extends AppController {
         if ($this->request->is('post')) {
             $this->set('mainValue', $this->request['data']['mainValue']);
             $this->set('collocationValue', $this->request['data']['collocationValue']);
-            $MAX_DIST = 10;
-            
+            if ($this->request['data']['immediate'] == 1) {
+                $MAX_DIST = 0;
+            } else {
+                $MAX_DIST = 10;
+            }
+
             $documentModel = ClassRegistry::init('Document');
             $documentModel->recursive = 1;
             $documents = $documentModel->find('all');
@@ -101,13 +105,16 @@ class StatisticsController extends AppController {
                     $minDist  = $dist;                    
                 }
                 if ($dist == $minDist && $dist < $MAX_DIST + 1) {
-                    array_push($collocations, array(
-                                                  'mwId' => $mwId,
-                                                  'mwText' => $this->getWordText($rawCollocation['MW']),
-                                                  'cwText' => $this->getWordText($rawCollocation['CW']),
-                                                  'sepWords' => ($dist-1)
-                                              )
-                              );                
+                    if ($dist > 0) { // it might be that the word can be its own collocation
+
+                        array_push($collocations, array(
+                                                      'mwId' => $mwId,
+                                                      'mwText' => $this->getWordText($rawCollocation['MW']),
+                                                      'cwText' => $this->getWordText($rawCollocation['CW']),
+                                                      'sepWords' => ($dist-1)
+                                                  )
+                                  );
+                    }            
                 }
                 $prevMwId = $mwId;                
             }

@@ -30,11 +30,25 @@
     $statistics = array(
         array(
             'main' => array(
-                          'desc' => 'Converbs (CVB on the levels "Grammar" and "POS")',
+                          'desc' => 'Converbs (CVB on the level "Grammar")',
                           'short' => 'CVB',
                           'value' => '21'
                       ),
             'collocations' => $standardCollocations
+        ),
+        array(
+            'main' => array(
+                          'desc' => 'Converbs...',
+                          'short' => 'CVB',
+                          'value' => '21'
+                      ),
+            'collocations' => array(
+                                  array(
+                                      'desc' => 'immediately VRB',
+                                      'value' => '80',
+                                      'immediate' => true
+                                  )
+                              )
         ),
         array(
             'main' => array(
@@ -54,7 +68,7 @@
         ),
         array(
             'main' => array(
-                          'desc' => 'Infinitives (INF on the levels "Grammar" and "POS")',
+                          'desc' => 'Infinitives (INF on the level "POS")',
                           'short' => 'INF',
                           'value' => '41'
                       ),
@@ -104,6 +118,7 @@ Welcome to the statistics panel. Here you can view the following statistics:
                     <form method="post" name="<?php echo $position['main']['short'].'_'.$collocation['desc']; ?>" action="/tagging/statistics/collocations">
 		            <input type="hidden" name="mainValue" value="<?php echo $position['main']['value'];?>"/>
 		            <input type="hidden" name="collocationValue" value="<?php echo $collocation['value'];?>"/>
+		            <input type="hidden" name="immediate" value="<?php echo isset($collocation['immediate']);?>"/>
                     <?php foreach($documentIds as $documentId) {
                     ?>
                         <input type="hidden" name="documentIds[]" value="<?php echo $documentId;?>" />
