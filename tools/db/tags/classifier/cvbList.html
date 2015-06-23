@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Converb list</title>
+
+<style>
+.word {
+    font-weight:bold;
+}
+
+.word a {
+    font-weight:normal;
+    font-size:10px;
+}
+.context-hidden {
+    display:none;
+}
+
+</style>
+<script type="text/javascript">
+<!--
+    function toggle_visibility(id) {
+       var e = document.getElementById(id);
+       if(e.style.display == 'block')
+          e.style.display = 'none';
+       else
+          e.style.display = 'block';
+    }
+//-->
+</script>
+</head>
+
+<body>
+
+<p class="word">
+cat <a href="#" onclick="toggle_visibility('context0');">show/hide context</a>
+</p>
+<p id="context0" class="context-hidden">
+The cat sat on the mat.
+</p>
+<p class="word">
+dog  <a href="#" onclick="toggle_visibility('context1');">show/hide context</a>
+</p>
+<p  id="context1" class="context-hidden">
+The dog sat on the mat.
+</p>
+<p class="word">
+bird <a href="#" onclick="toggle_visibility('context2');">show/hide context</a>
+</p>
+<p  id="context2" class="context-hidden">
+The bird sat on the mat.
+</p>
+
+
+
+</body>
+</html>

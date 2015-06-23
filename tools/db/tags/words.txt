@@ -1,0 +1,891 @@
+karī_empty 
+rājagṛha_oNOUNMSGNOM nagar-i_oNOUN śreṇika_oNOUNMSGNOM rājā,_oNOUNMSGNOM cillaṇā_oNOUNFSG paṭṭa-rājñī._oNOUNFSG 
+isiṃ_empty eka_empty mātanga_oNOUNM nai_empty kaḷatra_oNOUNFSG hnai_empty akāḷ-i_oADV āmbā_oNOUNMSGOBL nuṃ_empty ḍohalu_oNOUNFSG ūpanu._oVPPP 
+te_cPRON āmbā_oNOUNM nu_empty cora_oNOUNM abhayakumār-iṃ_oNOUNM bṛhat-kumārī_oNOUNFSG nī_empty kathā_oNOUNFSG kahī_oCVBCVB buddhi_oNOUNFSG naiṃ_empty baḷi_oNOUNF pragaṭa_oADJ kīdhu_oVPPPVRB teha-hnai_cPRON śreṇika-rā-iṃ_oNOUNM kahiu_oVPPPVRB jai_cPRON vidyā_oNOUNFSG dii,_oVPPPVRB tu_cPRON mūkauṃ._oVRB 
+tīṇaiṃ_cPRON māniu._oVPPPVRB 
+śreṇika_oNOUNMSGNOM siṃhāsaṇ-i_oNOUNM baiṭhau_oVPPPVRB vidyā_oNOUNFSG paḍhai_oVRB 
+eka_empty nāpita_oNOUNMSGNOM vidyā_oNOUNFSG naiṃ_empty baḷi_oNOUNM āpaṇau_cPRON charapalu_oNOUNM ākāśa-maṇḍaḷi_oNOUNM rākhai_oVRB 
+eka_empty vāra_oNOUN loke_oNOUNMSGOBL pūchiuṃ_oVRB e_cPRON vidyā_oNOUNFSG tumhār-aiṃ_cPRON guru_oNOUNMSGNOM kuṇa?_cPRON 
+teha_cPRON bhaṇī_empty bīja_oNOUNM guru_oNOUNM nau_empty nihnawa_oNOUNMSGNOM na_empty karivu_oINFINF 
+rājapurī_oNOUNFSG nām-i_oNOUNM purī._oNOUNFSG haṃsa_oNOUNMSGNOM nām-i_oNOUNM rājā,_oNOUNMSGNOM samyaktwa-mūla-śrāwaka-dharma-dhurā_oNOUNM dharatau._oPTCP aner-ai_empty diwas-i_oNOUNM māsa-ghasra-laṃghya_oNOUNMSGNOM mārg-i_oNOUNM ratnaśr̥ṃgagiri_empty pūrvaja-kārit-i_oPTCPPTCP śrīr̥ṣabhadewa-dewagr̥h-i_oNOUNM tīrtha-yātrā_oNOUNFSG kariv-ā_oINFINF sakala-loka_empty sahitu_oADP satya-vacana-mahitu_empty garva-rahitu_empty hūṃt-au_oPTCPPTCP cāli-u._oVPPPVRB 
+ardha-mārg-i_oNOUNM saṃgh-i_oNOUNM gayai_oPTCPPTCP hūṃt-ai_oPTCPPTCP pāchā_oNOUNMSGOBL hūṃt-au_oPTCPPTCP cara_oNOUNMSGNOM eku_empty āwi-u._oVPPPVRB rājendra-rai-ṃ_oNOUNM vīnawai_oVRB mahārāja!_oNOUNM tumha_cPRON cāliyāṃ_empty pāch-ai_oNOUN dasam-ai_empty diwas-i_oNOUNM arjuna_oNOUNMSGNOM nām-i_oNOUNM 
+sīmāḷau_empty purī_oNOUNFSG levā_oINFINF āwiu,_oVPPP tumhe_cPRON jike_cPRON rakṣapāḷa_oNOUNM melhiyā_oVPPP hūṃtā_oPTCPPTCP ti_cPRON sarve_cPRON tiṇi_cPRON jitā,_oVPPPVRB rājapurī_oNOUNFSG āpaṇī_cPRON kari_oCVBCVB baiṭhau,_oVRB bhaya-bhīta_oADJ loku_oNOUNMSGNOM vesāsī_oADJ karī_oCVBCVB tumhār-ai_cPRON siṃhāsan-i_oNOUNM upaviṣṭu_empty vartai,_oVRB anerā_oNOUN naiṃ_empty ghar-i_oNOUNM nāṭhau_empty chai_oCVBCVB sumitra_oNOUNMSGNOM nām-i_oNOUNM maṃtrī,_oNOUNMSGNOM tiṇi_cPRON hauṃ_cPRON tumha_cPRON kanhai_oADP mokaḷiu_oVPPPVRB iṇi_cPRON kāraṇ-i_oNOUNM ju_cPRON kāṃi_cPRON yuktu_oADJ huyai_oVRB su_cPRON kījau._oVRB 
+tadā-kāḷ-i_oNOUNM samipa-gata_empty ji_cPRON chaiṃ_oVRB subhaṭa_oNOUNMSGNOM tehe_cPRON kahiuṃ_oVPPPVRB mahārāja!_oNOUNM hawaṛāṃ_oADV pāchā_oADV vaḷiyai,_oVRB amha_cPRON hūtāṃ_oPTCPPTCP kauṇa_cPRON tāhar-ai_cPRON pur-i_oNOUNM visphurai._oVRB tīha_cPRON āgai_oADV rājā_oNOUNMSGNOM kahai_oVRB puṇya-prāpti-nibaṃdhanu_oINFINF yātrā-karaṇu_oINFINF melhī-karī_oCVBCVB puṇya-lābha_oNOUNMSGNOM rājya_oNOUNFSG taṇai_empty kāraṇi_oNOUNM pāchauṃ_oADV vaḷanu_oINF yuktau_oADJ nahīṃ,_empty tathā_oADV sarva-nāsihiṃ_oNOUN yātrā_oNOUNFSG a-karī_oCVBCVB hauṃ_cPRON vaḷauṃ_oVRB nahī._empty 
+isauṃ_oADV bhaṇī-kari_oCVBCVB haṃsu_oNOUNMSGNOM rājā_oNOUNMSGNOM āghau_oADV cāliu._oVPPPVRB pariwāru_oNOUNMSGNOM krami-krami_oADV sagaḷau_oADV pāchau_oADV vaḷiu._oVPPPVRB eku_empty chatra-dharu_oNOUNMSGNOM āpaṇapā_cPRON pāsi_oADP dekhī-karī_oCVBCVB vastrālaṃkāra-turaṃgamādi_oNOUNM vastu_oNOUNMSGNOM samastu_oADV de-karī_oCVBCVB pāchau_oADV mokaḷiu._oVPPPVRB loka_oNOUNMSGNOM pāchau_oADV gayau_oVPPPVRB tau_oADV tīrthābhimukha_oNOUNMSGNOM ekalau_oADJ pāda-cārihiṃ-ji_oADV cāliu._oVPPPVRB 
+kahī-eka_cPRON aṭawī_oNOUNFSG māhi_empty mahīpati_oNOUNMSGOBL rahaiṃ_empty dekhatāī-ji_oPTCPPTCP hūṃtā_empty mr̥ga_oNOUNMSGNOM eka_empty parā_oADV hūṃtau_oPTCPPTCP nāṭhau_empty āwī-karī_oCVBCVB latā-vitāna_oNOUNMSGOBL māhi_oADP paiṭhau._oVPPPVRB teha_cPRON nai_oADP pag-i_oNOUNM lāgau_empty bhīla_oNOUNMSGNOM eka_empty dhanuṣki_oNOUNFSG caḍāwii_oCVBCVB sari_oNOUNFSG sāṃdhii_oCVBCVB āwiu,_oVPPPVRB rājendra_oNOUNMSGOBL kanhā_empty pūchai_oVRB mahāpurusa!_oNOUNM iṇi_cPRON patracchanni_oNOUNM vani_oNOUNM mr̥ga_oNOUNMSGOBL taṇai_empty pagu_oNOUNMSGNOM dīsai_oVRB nahī,_empty su_empty puṇi_empty mr̥gu_oNOUNMSGNOM māharau_cPRON bhakṣyu_oNOUNMSGNOM kihāṃ_empty gayau?_oVPPPVRB 
+tau_empty pāch-ai_oADV rājā_oNOUNMSGNOM citti_oNOUNFSG ciṃtawai_oCVBCVB sāṃcai_oNOUNFSG kahii_oVPPPVRB mr̥gu_oNOUNMSGNOM vināsu_oADJ huyai,_oVRB kūṛai_oNOUNMSGNOM kahiyai_oVRB dvitīya-vrata-bhaṃgu_empty hūyai,_oVRB tiṇi_cPRON kāraṇi_oNOUNM buddhi_oNOUNFSG karī_oADP eu_cPRON vipratārivau._oINFINF isauṃ_cPRON cītavī-karī_oCVBCVB rājā_oNOUNMSGNOM bhaṇai_oVRB aho!_empty māharau_cPRON svarūpu_oNOUNMSGNOM pūchai?_oVRB mārga-bhraṣṭu_empty hauṃ_cPRON īhāṃ_oADV āwiu._oVPPPVRB bhīlu_oNOUNMSGNOM bhaṇai_oVRB mūḍha!_oNOUNM nāṭhau_empty mr̥gu_oNOUNMSGNOM kihāṃ_cPRON gayau?_oVPPPVRB rājā_oNOUNMSGNOM bhaṇaī_oVRB hauṃ_cPRON su_cPRON haṃsa_oNOUNMSGNOM nāmi_oNOUNM purusu._oNOUNMSGNOM āheṛī_oNOUNMSGNOM gāḍhai_oADJ swar-i_oNOUNM kahai_oVRB mr̥ga_oNOUNMSGOBL nau_empty mārgu_oNOUNMSGNOM mūrkha!_oNOUNM mū_cPRON rahaiṃ_empty kahi._oVRB rājā_oNOUNMSGNOM bhaṇai_oVRB rājapurī_oNOUNFSG māharau_cPRON thānaku._oNOUNMSGNOM 
+āheṛī_oNOUNMSGNOM kop-i_oNOUNM caḍiu_empty bhaṇai_oVRB ju_cPRON tū_cPRON rahaiṃ_oADP badhiratā-vyādhi_oNOUNFSG gāḍhau_oADJ chai,_oVRB sū_cPRON gāḍherau_oADJ hoijiu._oVRB isau_cPRON bhaṇī-karī_oCVBCVB bhīla_oNOUNMSGNOM anerai_oADJ mārg-i_oNOUNM gayau._oVPPPVRB mr̥ga_oNOUNM rahaiṃ_oADP mati_oNOUNFSG prayogi_oNOUNM choḍawī-karī_oCVBCVB āpaṇau_cPRON vratu_oNOUNMSGNOM alīka-vacana-parihāra-lakṣaṇu_oNOUNMSGNOM akhaṃḍu_oADJ pratipaḷāi._oVRB 
+tihāṃ-hūtauṃ_oADV āghau_oADJ cāliu._oVPPPVRB sāmuhā_oNOUNM āwatā_oPTCPPTCP muni_oNOUNMSGOBL rahaiṃ_oADP vāṃdī_oNOUNFSG karī_oCVBCVB mārgu_oNOUNMSGNOM melhī-karī_oCVBCVB āghau_oNOUNMSGNOM cāliu._oVPPPVRB yama-kiṃkara_oNOUNMSGNOM sarīkhā_oADV bhīla_oNOUNMSGNOM bi_empty kopāruṇa-locana_oNOUNMSGNOM dhaṇuhi_oNOUNFSG caḍhāwii_oCVBCVB sari_oNOUNFSG sāṃdhii_oCVBCVB āwī-karī_oCVBCVB rājendra_oNOUNMSGNOM āgaiṃ_oNOUN kahaiṃ_oVRB cira-kāḷa_oNOUNM taṇau_oADP caurya_oNOUNMSGNOM nimittu_oNOUNMSGNOM sūrū_oNOUNMSGNOM nāmi_oNOUNM pallī-pati_oNOUNMSGNOM nīsariu._oVPPPVRB dūrai_oNOUNFSG tau_empty eha_cPRON vana_oNOUNMSGOBL māhi_oADP muṃḍa_oADJ pākhaṃḍika_oNOUNMSGNOM eka_empty rahaiṃ_empty dekhī-karī_oCVBCVB 'a-śakunu_oNOUNMSGNOM eu'_cPRON iṇi_cPRON kāraṇ-i_oNOUNM teha_cPRON mārāwiwā_oINFINF kāraṇ-i_oNOUNM amhe_cPRON mokaḷiyā._oVPPPVRB su_cPRON pākhaṃḍiku_oNOUNMSGNOM jai_empty tauṃ_oADP dīṭhau_oVPPPVRB tau_cPRON amha_cPRON āgai_oNOUN kahi._oVRB tau_empty rāu_oNOUNMSGNOM man-i_oNOUNM cītawai_oVRB jau_empty hauṃ_cPRON maunu_oADJ kari_oCVBCVB rahisu_oVRB athawā_empty vyāja-vacana_oNOUNMSGNOM bhaṇisu_oVRB tau_empty bhīla_oNOUNMSGNOM saraḷa-i_oADJ mārg-i_oNOUNM jāyatā_oPTCPPTCP hūṃtā_oPTCPPTCP muni_oNOUNMSGOBL rahaiṃ_oADP vināsa-hetu_oNOUNM hoisiiṃ,_oVRB tiṇi_cPRON kāraṇi_oNOUNM sāṃpratu_oADV asatyu_oNOUNMSGNOM jai_empty kahiyai_oVRB tau_empty satya_oNOUNMSGNOM kanhā_oADP adhika_oADV puṇya-kāraku_oADJ huyai._oVRB iti_empty śabdacchalai_oNOUNM tau_empty satyu_oNOUNMSGNOM asatyu_oNOUNMSGNOM rājā_oNOUNMSGNOM kahai_oVRB jiṇi_empty mārgi_oNOUNM tumhe_cPRON jāu_oVRB chau_oVRB teha_cPRON mārga_oNOUNMSGOBL hūṃtau_oPTCPPTCP ju_empty vāmau_oADJ mārgu_oNOUNMSGNOM tiṇi_cPRON mārgi_oNOUNM mahātmā_oNOUNMSGNOM jāi_oVRB chai._oVRB 
+viśva-jaṃtu-jāta-rakṣiṇi_oNOUNFSG karī_oCVBCVB dakṣiṇu_oADJ muni_oNOUNMSGOBL taṇau_oADP dakṣiṇu_oADJ mārgu_oNOUNMSGNOM melhī-karī_oCVBCVB vām-ai_oADJ sakala_oADJ jīwa-vighāta-bhāvi_oNOUNFSG karī_oCVBCVB vām-ai_oADJ mārg-i_oNOUNM jima_cPRON pūrvihiṃ_oADJ ti_cPRON bhīla_oNOUNM 
+jāyatā_oPTCPPTCP hūṃtā_oPTCPPTCP timahi-ji_cPRON gayā._oVPPPVRB muni_oNOUNMSGNOM kuśal-i_oADJ kṣem-i_oNOUNM pahutau._oVPPPVRB ti_cPRON bhīla_oNOUNMSGNOM bihuṃ_empty prakārahaṃ_oNOUNM karī_oCVBCVB a-mārg-i_oNOUNM gayā._oVPPPVRB rājā_oNOUNMSGNOM vacana-sudhā-seka-samullāsita-kīrti-kalpalatā-vitānu_oADJ hūṃtau_oPTCPPTCP āghau_oADV cāliu._oVPPP 
+saṃdhyā-sama-i_oNOUNM mahā-druma_oNOUNMSGOBL eka_empty adhobhāg-i_oNOUNM vāsi_oCVBCVB rahiu._oVPPPVRB saṃgh-i_oNOUNMSGOBL samudr-i_oNOUNM dhanavaṃt-i_oADJ cauthai_empty diwasi_oNOUNM paṛisiyāṃ,_oVRB dhana-salila_oNOUNMSGOBL māhi_oADP vilasiyāṃ,_oVRB daridrya-dhūli_oNOUNFSG utārisiyāṃ_oVRB isī_cPRON vāta_oNOUNFSG karatā_oPTCPPTCP vanāntarita_oADJ cora_oNOUNM rājendr-i_oNOUNM tihāṃ_cPRON jāṇiyā._oVPPPVRB kisī_cPRON pari_oNOUN e_cPRON cora_oNOUNM saṃgha-vighāta-kāraka_oNOUNM nahīṃ_empty huiiṃ_oVRB jetaḷahiṃ_empty mana_oNOUNMSGOBL māhi_oADP rājendru_oNOUNMSGNOM isī_cPRON pari_oNOUN cītawai_oVRB tetaḷai_empty dīpikā-dīpitāśāvakāśa_oNOUNM udāyudha_oNOUNM mahāyodha_oNOUNM tihāṃ_cPRON āwiyā._oVPPPVRB rājendra_oNOUNMSGOBL āgai_oADP bhaṇaiṃ_oVRB tauṃ_cPRON kauṇu?_cPRON kai-eka_empty cora_oNOUNM saghaṃ-vighāta-kāraka_oNOUNM herakaiṃ_oNOUNM amha_cPRON āgai_empty ihāṃ_cPRON kahiyā_oVPPPVRB chai,_oVRB jai_empty tauṃ_cPRON jāṇai_oVRB tau_empty kahi,_oVRB jima_empty ti_oVRB cora_oNOUNM mārī-karī_oCVBCVB 
+saṃgha-rakṣā_oNOUNFSG karī_oCVBCVB yaśa_oNOUNMSGNOM anai_empty puṇyu_oNOUNMSGNOM bi_empty vastu_oNOUNMSGNOM upārjāṃ,_oVRB jiṇi_cPRON kāraṇi_oNOUNM śrīpura-nagara-nāyaki_oNOUNM śrīgādhi-nāmaki_oNOUNM jina-śāsana_oNOUNMSGNOM tīhaṃ_cPRON corahaṃ_oNOUNM mārivā_oINFINF nimittu_oADP amhe_cPRON mokaḷiyā_oVPPPVRB chāṃ._oVRB rājā_oNOUNMSGNOM punarapi_oADV citti_oNOUNM cīṃtawai_oVRB sācai_oNOUNM bhaṇii_empty cora-ghāta-pātaku_oNOUNMSGNOM lāgai,_oVRB kūṛai_oNOUNM bhaṇii_empty saṃgha-lūṃṭaṇu_oINFINF dūsaṇu_oNOUNMSGNOM lāgai._oVRB isauṃ_cPRON cītawī-karī_oCVBCVB rāu_oNOUNMSGNOM bhaṇaī_oVRB tumhe_cPRON saṃghi_oNOUNM jāwau,_oVRB tihāṃ_oADV gayā_oPTCPPTCP hūṃtāṃ_oPTCPPTCP tumha_cPRON rahaiṃ_oADPDAT saṃgha-rakṣā_oNOUNFSG puṇyu_oNOUNMSGNOM anai_empty yaśu_oNOUNMSGNOM be_empty bola_oNOUNMSGNOM hosiiṃ._oVRB ti_cPRON puruṣa_oNOUNM rājā-nai_oNOUNM nai_oADP vacani_oNOUNFSG karī_oCVBCVB raṃjiyā_empty saṃgha_oNOUNM māhi_oADP gayā._oVPPPVRB 
+latā-vitāni_oNOUNM hūṃtā_oPTCPPTCP cora_oNOUNM nīsariyā._oVPPPVRB rājendra_oNOUNMSGOBL ne_empty page_oNOUNM āwī-karī_oCVBCVB paṛiyā._oVPPPVRB isauṃ_cPRON vīnavaiṃ_oVRB aho!_empty mahāpuruṣa!_oNOUNM taiṃ_cPRON amhe_cPRON ihāṃ_oADV chatā_oPTCPPTCP jāṇiyā_oVRB puṇa_empty amhārī_cPRON dayā_oNOUNFSG karī_oCVBCVB taiṃ_cPRON na_empty kahiyāiṃ,_oVPPPVRB tiṇi_cPRON kāraṇ-i_oNOUNM tau_cPRON amha_cPRON rahaiṃ_oADPDAT jīvatavya-dātā_oNOUNMSGNOM paropakārī_oADJ pitā._oNOUNMSGNOM isauṃ_oADJ bhaṇī_oCVBCVB praṇamī-karī_oCVBCVB vaḷī_oCVBCVB gayā._oVPPPVRB 
+prabhāti_oNOUNM rājā_oNOUNMSGNOM āghau_oADJ cāliu._oVPPP ketaḷī_oADV kāḷa_oNOUNMSGNOM gayā_empty huṃtā_oPTCPPTCP ūtāwāḷa_oADJ asawāra_oNOUNM ke-eka_empty rāya_oNOUNMSGOBL rahaiṃ_empty miliyā._oVPPPVRB rāya_oNOUNMSGOBL āgai_oADP kahaiṃ_oVRB jiṇi_cPRON amhārau_cPRON ṭhākuru_oNOUNMSGNOM daṃḍiu_oVPPPVRB sū_cPRON haṃsa_oNOUNMSGNOM ihāṃ_oADV kihāṃ-ī_oADV dīṭhau?_oVPPPVRB jau_empty dīṭhau_oVPPPVRB tau_empty kahi,_oVRB jimi_empty sū_cPRON mārī-karī_oCVBCVB āpaṇā_cPRON ṭhākura_oADP taṇau_oADP vairu_oNOUNMSGNOM sodhauṃ._oVRB 
+isau_oADJ sāṃbhaḷī-karī_oCVBCVB rājā_oNOUNMSGNOM mana_oNOUNMSGOBL māhi_oADP cīṃtavai_oVRB āpaṇā_cPRON jīwitavya_oNOUNMSGOBL taṇaiṃ_cPRON kāraṇ-i_oNOUNM kauṇu_cPRON vicakṣaṇ_oADJ kūḍauṃ_oNOUNMSGNOM bolai?_oVRB isauṃ_oADJ cīṃtavī_oCVBCVB rāu_oNOUNMSGNOM bhaṇai_oVRB hauṃ_cPRON su_cPRON haṃsa_oNOUNMSGNOM rājā._oNOUNMSGNOM āyudha_oNOUNMSGNOM le-karī_oCVBCVB āgai_oADV ūbhau_oVPPPVRB huyau._oVPPPVRB 
+tau_oADV eka_empty gamai_oNOUN aneki_empty aśwādhirūḍha_oADJ prauḍha_oADJ subhaṭa,_oNOUNM bījai_oADJ gamai_oNOUNMSGOBL eku_empty haṃsu_oNOUNMSGNOM rājā._oNOUNMSGNOM tau_empty pāchai_oNOUNMSGOBL dharma-prabhāvaitau_oADJ yuddhu_oNOUNMSGNOM karatau_oPTCPPTCP rājā_oNOUNMSGNOM ghaṇeī_oADJ asawāre_oNOUNM pāchau_oADJ karī_oCVBCVB na_empty sakiu._oVRB kiṃtu_empty paṃca-parameṣṭhi_oNOUNFSG mahāmaṃtra-samaraṇa-paramāṇu_oADJ teū_cPRON ju_cPRON eku_empty sarva_cPRON nirjiṇī-karī_oCVBCVB saṃgrāma-bhūmi-pīṭhi_oNOUNM rahiu._oVPPPVRB 
+satyavādin!_oNOUNM jaya_oNOUNM jayeti-vāda-pūrvaka,_oNOUNM dewa_oNOUNM duṃdubhi-nāda-karaṇa-samagāḷu,_oADJ paṃca-varṇa_oNOUNM kusuma-nī_oNOUNF vr̥ṣṭi_oNOUNFSG rājendra_oNOUNMSGOBL nai_oADP mastak-i_oNOUNM karatau,_oPTCPPTCP teha_cPRON vana_oNOUNMSGOBL taṇau_oADP adhyakṣu_oNOUNMSGNOM tryakṣu_oNOUNMSGNOM nām-i_oNOUNM yakṣu_oNOUNMSGNOM pratyakṣu_oNOUNMSGNOM āgilai_oADJ gamai_oNOUNMSGNOM hūyau_oVPPP ratnaśr̥ṃgābhidhāni_oADJ giri_oNOUNMSGNOM jiṇi_cPRON dini_oNOUNM yātrā_oNOUNFSG huyai,_oVPPP āju_oADV su_cPRON diwasu_oNOUNMSGNOM tiṇi_cPRON kāraṇ-i_oNOUNM iṇi_cPRON vimāṇ-i_oNOUNM māharai_cPRON caḍi,_oVRB jima_empty hawaḍāi-ji_oADV tihāṃ_oADV jāiyai._oVRB 
+tau_oADV rājā_oNOUNMSGNOM vimāni_oNOUNM caḍiu._oVPPPVRB guhya_oVRB kanai_oADP ardhāsani_oNOUNM samāsīnu_empty hūṃtau_oPTCPPTCP haṃsa_oNOUNMSGNOM dewa-gr̥h-i_oNOUNM āwiu._oVPPPVRB divya_oADJ kusuma_oNOUNMSGNOM gaṃdhasāra_oNOUNMSGNOM ghanasāra_oNOUNMSGNOM kastūrikā_oNOUNFSG aguru_oNOUNMSGNOM vārahaṃ_oADP karī_oCVBCVB jina-biṃbaha_oNOUNFSG rahaiṃ_oADP mahā-pūja_oNOUNFSG karī_oCVBCVB yātrā_oNOUNFSG saṃpūrṇa_oADJ karai._oVRB 
+vimānādhirūḍhu_empty rājapurī-parisarodyāni_oNOUNM āwiu._oVRB yakṣi_oNOUNM arjuna_oNOUNMSGNOM ripu_oNOUNMSGNOM bāṃdhī-karī_oCVBCVB page_oNOUNM āṇi_oCVBCVB ghātiu._oVPPPVRB haṃsu_oNOUNMSGNOM rājā_oNOUNMSGNOM rājapurī_oNOUNFSG māhi_oADP āwi_oCVBCVB rāji_oNOUNM baiṭhau._oVPPPVRB yakṣu,_oNOUNMSGNOM āpaṇai_cPRON thānaki_oNOUNM pahutau._oVPPPVRB haṃsu_oNOUNMSGNOM rājendru_oNOUNMSGNOM rājapurī-jana_oNOUNM rahaiṃ_oADP mahā-harṣu_oNOUNMSGNOM ūpajāwatau_oPTCPPTCP satya-prabhāwi_oNOUNM puraṃdara_oNOUNMSGOBL jima_oADV prājyu_oADJ rājyu_oNOUNMSGNOM pratipāḷi-karī_oCVBCVB dewaloki_oNOUNM gayau._oVPPPVRB 
+﻿isii_empty awasari_oNOUNM kaliṃga_oNOUN deśa_oNOUNMSGOBL nau_oADP rājā_oNOUNMSGNOM sūrasena_oNOUN rājya-bhraṣṭa_oADJ vairīe_oNOUNM kāḍhiu_empty huṃtu._oVRB 
+kuru-des-i_oNOUNM gajapura-nr̥pa_oNOUNMSGOBL nī_empty sevā_oNOUNFSG karivā_oINFINF lāgau._oPTCPV 
+tiṇi_cPRON gāma_oNOUNM cyāri_empty oḷga_oNOUNFSG āpyā._oVRB 
+tihāṃ_cPRON sukh-i_oNOUNM rahai._oVRB 
+hiwa_empty teha_cPRON nī_oADP bhāryā_oNOUNFSG vijayādewī-kūkhi-i_oNOUNFSG putra_oNOUNM ūpanā._oVPPPVRB 
+amarasena_oNOUN vairasena_oNOUN ehawai_oADJ nāmi-i_oNOUNM bewai_empty hūyā._oVPPPVRB 
+krami-krami_oADV yauvanāwasthā_oNOUNFSG pāmī_oCVBCVB sakaḷa_oADJ kāḷa_oNOUNF nai_empty vikhai_oNOUNM kuśaḷa_oADJ hūyā._oVPPPVRB 
+jana_oNOUN nai_oADP prīya_oADJ guṇa_oNOUNM nā_oADP eka_oADJ thānaka_oNOUN ehawā_oADJ te_cPRON binhai_empty putra_oNOUNM dekhī_oCVBCVB sauki_oADJ mātā_oNOUNFSG mana_oNOUNMSGOBL māhi_oADP cīṃtawai_oVRB jāṃ_empty e_cPRON bewai_empty jīwai_oVRB tāṃ_empty māharā_cPRON putra_oNOUNM naiṃ_oADPDAT rāja_oNOUNM nahī_empty hui._oVRB 
+pachai_oADV māyā_oNOUNFSG lagī_oADP rājā_oNOUNMSGOBL nai_oADPDAT kahivā_oINFINF lāgī_oVRB -_empty rājan!_oNOUNM e_cPRON tāharā_cPRON putra_oNOUNM bewai_empty duḥśīla_oADJ anai_empty rāgāṃdha_empty thakāi_oCVB je_cPRON divasa_oNOUN tonūṃ_cPRON kaṭaka_oNOUNFSG cāliu_oPTCP huṃtau_oPTCP te_cPRON dina_oNOUN lagī_oADP māharī_cPRON prārthanā_oNOUNFSG aneke_oADJ prakāre_oNOUNM karatāṃ,_oPTCP paṇi_empty maiṃ_cPRON moṭai_oADJ koṣṭi-i_oNOUN karī_oADP śīla_oNOUNMSGOBL nī_oADP rakṣā_oNOUNFSG kīdhī._oVRB 
+hiwai_oADV ja-kāī_cPRON tāharā_cPRON kuḷa_oNOUNMSGOBL nai_oADPDAT ucita_oADJ huwai_oVRB te_cPRON kari._oVRB 
+ityādi_oADV vacana_oNOUNM sāṃbhaḷī,_oCVBCVB ajāṇatai_empty aṇavimāsii,_empty grāma_oNOUNMSGOBL nau_oADP mūḷagu_oADJ mātaṃga_oNOUNM ādeśa_oNOUN dīdhauṃ_oPTCP je_cPRON bihuṃ_empty putra_oNOUNM nā_oADP mastaka_oNOUNM lei_oCVBCVB āwi._oVPPPVRB 
+pachai_oADV mātaṃga_oNOUNM ādeśa_oNOUNM pāmī_oCVBCVB jihāṃ_empty amarasena_oNOUN chai_oVRB tihāṃ_cPRON āwī_oCVBCVB rājā_oNOUNMSGOBL nu_oADP ādeśa_oNOUNM kahiu_oVPPPVRB ju_empty mujha_cPRON nai_oADPDAT rājā-i_oNOUNM ehavu_empty ādeśa_oNOUNM dīdhau_oVPPPVRB chai._oVRB 
+pachai_oADV bewai_empty putra_oNOUNMSGNOM kahivā_oINFINF lāgā_oPTCPV amhārā_cPRON mastaka_oNOUNM lai,_oVRB rājā_oNOUNMSGOBL nu_oADP ādesa_oNOUNM pramāṇa_oNOUNM kari._oVRB 
+pachai_oADV mātaṃga_oNOUNM cīṃtawai_oVRB -rājā_oNOUNMSGOBL nu_oADP ādesa_oNOUNM sācau_oNOUNFSG hūu,_oPTCPV kima_empty karauṃ,_oVRB e_cPRON tu_empty mahāpuruṣa._oNOUNM 
+pachai_oADV kumāra_oNOUNM nai_oADPDAT kahivā_oINFINF lāgau_oPTCPV ehawau_empty karma_oNOUNM hūṃ_cPRON kima_empty karūṃ?_oVRB 
+paṇi_empty tumheṃ_cPRON mayā_oNOUNFSG karī_oCVBCVB deśāṃtar-i_oNOUNM pahucau,_oVRB hūṃ_cPRON citrakāra_oNOUNMSGOBL pāhaiṃ_oADP te_empty māthā_oNOUNM karāwī_oCVBCVB rājā_oNOUNMSGOBL nai_oADPDAT dekhāṛasuṃ._oVRB 
+isiuṃ_empty sāṃbhaḷī_oCVBCVB bewai_empty bāṃdhawa_oNOUNM deśāṃtara_oNOUN bhaṇī_oADP cālyā._oPTCPV 
+pachai_oADV mātaṃg-i_oNOUNM māthā_oNOUNM tima_empty karī_oCVBCVB rājā_oNOUNMSGOBL nai_oADPDAT dekhāṛyā_oVPPPVRB jima_empty rājā-i_oNOUNM jāṇī_oCVBCVB na_empty sakyā._oPTCPV 
+hiwa_oADV te_cPRON vāta_oNOUNFSG sāṃbhaḷī_oCVBCVB mātreī_oADJ mātā_oNOUNFSG harakhī._oVPPPVRB 
+hiwa_oADV amarasena-vayarasena_oNOUN mātā_oNOUNFSG mātreī_oADJ nūṃ_oADP viḷasita_empty jāṇī_oCVBCVB āścarya_oNOUNM jovā_empty nai_oADP kāji_oADP deśāṃtara_oNOUN bhaṇī_oADP cālyā._oVPPPVRB 
+isii_oADV saṃdhyā_oNOUNFSG nai_oADP kāḷi_oNOUNFSG eka_oADJ aṭawī_oNOUNFSG māhi_oADP gayā._oVPPPVRB 
+rātra-iṃ_oNOUNFSG vr̥kṣae_oNOUNM taḷaiṃ_oADP sūtā._oVPPPVRB 
+aṭawī_oNOUNFSG māhi_oADP bhaya_oNOUNMSGNOM jāṇī_oCVBCVB amarasena_oNOUN sūtau,_oPTCPV vairasena_oNOUN puhara-i_oNOUNM baiṭhu._oVPPPVRB 
+etaḷai_empty sūṛī_oNOUNF bhūmikā-sthita_oNOUNFSG sūṛā_oNOUNMSGOBL nai_oADPDAT kahivā_oINFINF lāgī_oVRB bho_empty swāmin!_oNOUNM e_cPRON bewai_empty mahāpuruṣa_oNOUNM āvyā_oVRB chai,_oVRB vr̥khā_oNOUNM taḷa-i_oNOUNM sūtā_oPTCP chai,_oVRB teha_cPRON nai_oADPDAT kāṃīka_empty upagāra_oNOUNMSGNOM kījai._empty 
+sūṛa-i_oNOUNM kahiu-_oVRB āpaṇa_cPRON pakṣī,_oNOUNM eha_cPRON naiṃ_oADPDAT kehau_empty upakāra_oNOUNM kījai?_oVRB 
+timai_empty sūṛī_oNOUNFSG kahiu-_oVRB swāmī_oNOUNM 
+sāṃbhaḷu,_oVRB sukūṭaśaila_oNOUN parvata,_oNOUNM tihāṃ_cPRON vidyādhara_oNOUN āpaṇī_cPRON vidyā_oNOUNFSG nī_oADP parīkṣā_oNOUNFSG bhaṇī_oADP vidyā_oNOUNFSG abhimaṃtri_oADJ bi_empty āṃbā_oNOUNM vāvyā_oPTCP chai,_oVRB teha_cPRON māhi_oADP vaḍā_oADJ āṃbā_oNOUNMSGOBL nā_oADP phaḷa_oNOUNM jiko_cPRON khāi_oVRB teha_cPRON nai_oADPDAT sāta_empty dina_oNOUNM māhi_oADP rāja_oNOUNM hui,_oVRB anai_empty laghu_oADJ āṃbā_oNOUNMSGOBL nā_oADP phaḷa_oNOUNMSGOBL nai_oADP bhakṣiṇ-i_oNOUNM prabhāt-i_oNOUNM kuruḷā_oNOUNM karatāṃ_oPTCPPTCP pāṃca_empty sai_empty dīnāra_oNOUN mukha_oNOUNMSGOBL huṃtā_oADP paṛai._oVRB 
+isiuṃ_empty kahī_oCVBCVB bewai_empty paṃkhī_oNOUNM uḍī_oCVBCVB āṃbā_oNOUNMSGOBL nā_oADP phaḷa_oNOUNM bi_empty āṇī_oCVBCVB vayarasena_oNOUN naiṃ_oADP utsaṃg-i_oNOUN mūṃkyā._oPTCP 
+paṇa_empty vayarasena_oNOUN rāja_oNOUNM viṇa_empty kahiiṃ,_empty vaḍūṃ_oADJ phaḷa_oNOUNM amarasena_oNOUN nai_oADPDAT dīdhūṃ,_oVRB laghu_oADJ phaḷa_oNOUNM āpaṇapa-iṃ_cPRON līdhūṃ._oVRB 
+pachī_oADV vījai_empty dina_oNOUNM ekākī_oADJ baisī_empty tāḷāw-i_oNOUNM jaī_oCVBCVB kurḷā_oNOUNM karivā_oINFINF lāgau._oPTCP 
+tetaḷai_oADV pāṃca_empty sai_empty dīnāra_oNOUN mukha_oNOUNMSGOBL hūṃtā_oADP paṛiyā._oPTCPV 
+ti_cPRON vāra_oNOUNM pachī_oADV tīṇa-iṃ_cPRON dravya-iṃ_oNOUNM bhojana-vastrādika_oNOUNM leī_oCVBCVB sukha_oNOUNM bhogawatā_oPTCPPTCP ekaṇi_empty nagar-i_oNOUNM jātā_oPTCPPTCP sukha_oNOUNM viḷasatā_oPTCPPTCP vayarasena_oNOUN nagarī_oNOUNFSG māhi_oADP veśyā_oNOUNFSG nai_oADP ghar-i_oNOUNM jaī_oCVBCVB rahiu._oPTCPV 
+amarasena_oNOUN nagarī_oNOUNFSG naiṃ_oADP parisar-i_oNOUNM rahiu._oPTCPV 
+etaḷai_oADV nagara_oNOUNMSGOBL nuṃ_oADP rājā_oNOUNMSGNOM mūu._oPTCPV pāṃca_empty divya_oNOUN adhivāsyāṃ._oPTCP 
+amarasena_oNOUN kāṃcananagara_oNOUN naiṃ_oADP udyāna-van-i_oNOUNM vr̥kṣa-mūḷ-i_oNOUNM sūtau_oPTCPPTCP dekhī_oCVBCVB pāṃca_empty divy-e_oNOUNF rāj-i_oNOUNM baisāriu._oPTCPPTCP 
+vayarasena_oNOUN kautukī_oADJ huṃtu_oPTCPPTCP veśyā_oNOUNFSG nai_oADP ghar-i_oNOUNM rahiu._oPTCPV 
+bhāi-iṃ_oNOUNM joyāviu_oPTCPPTCP paṇi_empty lāghau_oPTCPPTCP nahīṃ._empty 
+anyadā_oADV māgadhikī_oNOUN kuṭṭinī_oNOUN vayarasena_oNOUN vyāpāra-rahita_empty dhana-vyaya_oNOUNM karatu_oPTCPPTCP dekhī_oCVBCVB pūchiu_oPTCPPTCP je_empty priyatama_oNOUNM 
+vyāpāra_oNOUNMSGOBL viṇa_empty ewaṛau_empty kharicivau_oINFINF kima_empty pahucai_oVRB chai._oVRB 
+mugdha-swabhāwi-i_oNOUNM āṃbā_oNOUNMSGOBL nuṃ_oADP bhakṣaṇa_oNOUNM kahiu_oVPPPVRB jū_empty āmra_oNOUNMSGOBL nā_oADP bhakṣaṇa_oNOUNMSGOBL lagī_oADP pāṃca_empty sai_empty dīnāra_oNOUN nī_oADP prāpti._oNOUNFSG 
+tisya-i_oADV vesyā-e_oNOUNFSG jīmāṛī_oCVBCVB vamatā_empty okhadha_oNOUNM deī_oCVBCVB āmra-phaḷa_oNOUNMSGOBL nī_oADP guṭhilī_oNOUNFSG pāchī_oADV vamāwī._oPTCPPTCP 
+pachai_oADV vayarasena_oNOUN ni-dravya_oNOUNM jāṇī_oCVBCVB ghara_oNOUNMSGOBL hūṃtu_oADP kāḍhiu._oPTCPPTCP 
+phaḷa_oNOUNM vesyā-i_oNOUNFSG līdhau._oVPPP 
+tisya-i_oADV vayarasena_oNOUN nagara_oNOUNM chāṃḍī_oCVBCVB udyāna-van-i_oNOUNM āwiu,_oPTCPPTCP vilakṣya_empty 
+isi-i_oADV rātri-i_oNOUNFSG triṇṇi_empty vastu_oNOUNM corī_oCVBCVB cyāra_empty cora_oNOUNM bhāga_empty kīdhai_empty kaḷaha_oNOUNM karivā_oINFINF lāgā._oPTCPPTCP 
+paṇi_empty je_cPRON triṇṇi_empty vastu,_oNOUNF anai_empty cyāri_empty cora,_oNOUNM te_cPRON bhāga_oNOUNM meli_oNOUNM kima-hī_empty na_empty paṛai._oVRB 
+isi-i_oADV vayarasena_oNOUN cora_oNOUNM māhi_oADP miliu._oPTCPPTCP kaḷaha-svarūpa_oNOUNM pūchivā_oINFINF lāgau._oPTCP 
+te_cPRON kahivā_oINFINF lāgā-_oPTCPPTCP amhe_cPRON cyāri_empty cora,_oNOUNM anai_empty kaṃthā,_empty e_cPRON vastu_oNOUNF triṇhi_empty vihaṃcī_oCVBCVB na_empty sakāṃ._oVRB 
+vayarasena_oNOUN kahiu_oPTCPV kauṇa_cPRON prabhāva_oNOUNM vastu_oNOUNF nu._oADP 
+te_cPRON kahivā_oINFINF lāgā-_oPTCPPTCP eka_empty siddhi-puruṣa,_oNOUNM tiṇi_cPRON cha_empty māsa_oNOUNM tāṃī_oADP dewatā_oNOUNMSGOBL nūṃ_oADPDAT ārādhana_oNOUNFSG kīdhūṃ,_oVPPP tiṇi_cPRON tūṭhai_oADJ dewatā-i_oNOUNM e_cPRON triṇṇi_empty vastu_oNOUNFSG āpī._oPTCPPTCP 
+teha_cPRON nūṃ_oADP e_cPRON prabhāwa_oNOUNMSGNOM kathā_oNOUNFSG jhāṭakiyai_oVRB anai_empty pāṃca_empty sai_empty dīnāra_oNOUNM paṛai,_oVRB lakuṭa_oNOUNMSGOBL nā_oADP prabhāwa-tu_oNOUNM śastra_oNOUNM na_empty lāgai._oVRB 
+pāūyā_oNOUNFSG nai_oADP prabhāw-i_oNOUNM jima_oADV ākāśa-gāminī_oNOUNFSG vidyā-iṃ_oNOUNFSG ākās-i_oNOUNM uḍīi_oVRB (uḍiyai)_oVRB tima_oADV e_cPRON pāūyā_oNOUNFSG nai_oADP prabhāw-i_oNOUNM uḍīi_oVRB 
+ehawau_empty prabhāwa_oNOUNMSGNOM sāṃbhaḷī_oCVBCVB kumāra_oNOUNMSGNOM kahiu-_oVRB mai_cPRON purā-pūrvi_oADV e_cPRON yogī_oNOUNMSGOBL nūṃ_oADP veṣa_oNOUNM pahiriuṃ_oVRB nathī_empty teha_cPRON bhaṇī_oVRB eka_empty vāra,_oNOUNM kahau_oVRB tau,_cPRON pahirī_oCVBCVB jowauṃ._oVRB 
+tīe_cPRON kahiu-_oVRB eka_empty vāra_oNOUNM pahiri._empty 
+pachai_oADV kumār-i_oNOUNM kaṃthā_oNOUNFSG pahirī,_oVPPPVRB lakuṭa_oNOUNM hāth-i_oNOUNM kīdhau,_oVPPPVRB pāūyā_oNOUNF pag-i_oNOUNM ghālyā._oVPPPVRB anai_empty ākās-i_oNOUNM ūḍiu_oVPPPVRB kumāra._oNOUNMSGNOM 
+cora_oNOUNM vaṃcyā_oADJ hūtā_oPTCPPTCP yathā-sthānaki_oADV pahūtā._oPTCPV 
+yathā_oADV vayarasena_oNOUN vaḷī_oADV triṇṇi_empty vastu_oNOUNM nai_oADP prabhāw-i_oNOUNM nagara_oNOUNMSGOBL māhi_oADP bhoga_oNOUNM bhogawai._oVRB 
+ketaḷe_empty dine_oNOUNM tiṇi_cPRON kuṭṭinī-i_oNOUNFSG te_cPRON vayarasena_oNOUN bhoga_oNOUNM bhogavatu_oPTCPPTCP dekhī_oCVBCVB vaḷī_oADV prapaṃca_oNOUNM kari_oCVBCVB āpaṇa-i_cPRON ghar-i_oNOUNM āṇyau._oVRB 
+ketḷai_empty kāḷi_empty vyāpāra-rahita_empty dhana-vyaya_oNOUNM karatu_oPTCPPTCP kumāra_oNOUNM dekhī_oCVBCVB vaḷī_oADV veśyā-iṃ_oNOUNFSG prīti_oNOUNFSG lagī_oADP pūchiuṃ._oVPPPVRB 
+tisyai_oADV mugdha-swabhāwa_oNOUNM lagī_oADP kumār-i_oNOUNM kahiu_oVPPPVRB pāūyā_oNOUNFSG nai_oADP prabhāw-i_oNOUNM deśāṃtara_oNOUN hūṃtau_oADP dhana_oNOUNM āṇī_oCVBCVB viḷasauṃ._oVRB 
+tetaḷai_oADV te_cPRON māyā_oNOUNFSG racī_oCVBCVB kahai_oVRB vatsa_oNOUNM 
+taiṃ_cPRON gayaiṃ_oNOUN maiṃ_cPRON tāharai_cPRON viyog-i_oNOUNM vidhurāwaṭī_oNOUN nā_oADP sukha_oNOUNM nai_oADP kāji_oADP samudra_oNOUNMSGOBL māhi_oADP yakṣa_oNOUNM teha_cPRON nai_oADP yātrā_oNOUNFSG kāī_empty bheṭaṇau_oINFINF mānau_oVRB chai,_oVRB te_cPRON pāuyā_oNOUNFSG nai_oADP prabhāw-i_oNOUNM anai_empty tāharai_cPRON prasādi-i_oNOUNFSG tu_empty yātrā_oNOUNFSG karauṃ._oVRB 
+kumār-i_oNOUNM kahiu_oVPPPVRB tima_oADV huu._oVRB 
+tetaḷai_oADV kumāra_oNOUNMSGNOM pādukā_oNOUNF nai_oADP baḷ-i_oNOUNM veśyā-sahita_empty samudra_oNOUNMSGOBL māhi_oADP yakṣa_oNOUNM bhuwan-i_oNOUNM āwiu._oVPPPVRB 
+pahilauṃ_empty pāuyā_oNOUNF ūtārī_oCVBCVB deharā_oNOUNMSGOBL māhi_oADP paiṭhu._empty 
+tetaḷai_oADV veśyā_oNOUNFSG pādukā_oNOUNF nivarā_empty pāmī_oCVBCVB pag-i_oNOUNM ghālī_oCVBCVB āpaṇai_cPRON nagar-i_oNOUNM āwī._oVPPPVRB 
+kumāra_oNOUNMSGNOM ju_empty pāchau_oADV joi_oADJ tu_empty pādukā_oNOUNF sahita_oADP veśyā_oNOUNFSG nai_oADPDAT na_empty dekhai._oVRB 
+pachai_oADV bhayi-i_oNOUNM cakiu_oADJ huṃtau_oPTCPPTCP kumāra_oNOUNMSGNOM jihāṃ_oADV jetai_empty ubhau_empty rahiu_oVPPPVRB tetai_empty koī_empty eka_oADJ vidyādhara_oNOUN tihāṃ_cPRON āwiu._oVPPPVRB 
+tiṇi_cPRON kumāra_oNOUNMSGOBL nai_oADPDAT kahiu-_oVPPPVRB taiṃ_cPRON māharoparodh-i_oNOUNM pakṣa_empty eka_oADJ yakṣa_oNOUNMSGOBL nī_oADP pūjā_oNOUNFSG variwī,_empty paṇi_empty je_cPRON pākhatī_empty bi_empty vr̥kṣa_oNOUNM chai_oVRB te_cPRON taḷahāri_empty taiṃ_cPRON na_empty jāivūṃ._oINF 
+ehawī_oADJ sīkha_oNOUNFSG deī_oCVBCVB modakādi_oNOUN sāmagrī_oNOUNF panara_empty dina_oNOUNM nī_oADP tihāṃ_cPRON mūṃkī_oCVBCVB vidyādhara_oNOUN ākāś-i_oNOUNM uḍiu._oVPPPVRB 
+anyadā_oADV kumāra_oNOUNMSGNOM kautukīyā_oADJ hutau_oPTCPPTCP vr̥kṣa_oNOUNM tai_oADP āwiu._oVPPPVRB 
+phūla_oNOUNM dekhī_oCVBCVB sūṃghiyau._oVPPPVRB 
+tetaḷai_oADV kumāra_oNOUNMSGNOM phūla_oNOUNMSGOBL nā_oADP prabhāwa-tu_oNOUNM gardabha_oNOUNM hūu._oVPPPVRB 
+pachai_oADV panara_empty dina_oNOUNM nai_oADP prāṃti_oADV tihāṃ_cPRON āwiu_oVPPPVRB khecara._oNOUNMSGNOM 
+te_cPRON tehawau_empty svarūpa_oNOUNM kumāra_oNOUNMSGOBL nū_oADPDAT dekhī_oCVBCVB bījā_oADJ vr̥kṣa_oNOUNMSGOBL nau_oADP phūla_oNOUNM sūṃghāḍiu._oVPPPVRB 
+vaḷī_oADV kumāra_oNOUNMSGNOM manuṣya_oNOUNM hūu._oVPPPVRB āścarya_oNOUNM kawaṇa_cPRON kāraṇa._oNOUNM 
+khecara_oNOUNMSGNOM kahai_oVRB khara-vidyā_oNOUNF anai_empty manuṣya-vidyā-i_oNOUNFSG karī_oADP adhiṣṭhita_oNOUN kāraṇa_oNOUNMSGOBL lagī_oADP vr̥kṣa_oNOUNM binai._empty 
+pachai_oADV kumār-i_oNOUNM te_cPRON bewei_empty vr̥kṣa_oNOUNM nā_oADP phūla_oNOUNM jūjūā_empty gāṃṭhaṛī-i_oNOUNFSG bāṃdhyā._oVPPPVRB 
+tetai_oADV vidyādhara_oNOUN dayā_oNOUNFSG lagī_oADP pāṃcamai_empty dini_oNOUNM kumāra_oNOUNM kāṃcanapura_oNOUN leī_oCVBCVB mūṃkiu._oVPPPVRB 
+pachai_oADV te_cPRON kumāra_oNOUNMSGNOM pūrva-rīti-iṃ_oNOUNFSG kaṃthā_oNOUNFSG nai_oADP prabhāw-i_oNOUNM sukha_oNOUNM bhogawai._oVRB 
+vaḷī_oADV tiṇi_cPRON veśyā-iṃ_oNOUNFSG dīṭhau._oVPPPVRB 
+vaḷī_oADV tiṇi_cPRON prapaṃca_oNOUNM karī_oCVBCVB ghar-i_oNOUNM āṇiu._oVPPPVRB 
+kumara_oNOUNMSGNOM pūchai_oVRB tūṃ_cPRON kima_empty ihāṃ_cPRON āwī?_oVPPPVRB 
+yau_empty veśyā_oNOUNFSG kahai_oVRB tū_cPRON jetaḷai_oADV pādukā_oNOUNF mūṃkī_oCVBCVB dewa-kuḷa_oNOUN māhi_oADP paiṭhu_oVRB tetaḷai_oADV eka_empty siddha-puruṣa_oNOUNM pādukā_oNOUNF leī_oCVBCVB nāsivā_oINFINF lāgau,_oVPPPVRB huṃ_cPRON teha_cPRON nai_oADP pag-i_oNOUNM vilagī,_oVPPPVRB tiṇi_cPRON ihāṃ_oADV mūkī,_oVPPPVRB paṇi_empty vaccha!_oNOUNM 
+kahi_oVRB tū_cPRON āwiu_oVPPPVRB kima?_empty 
+kumāra_oNOUNMSGNOM kahai_oVRB yakṣa_oNOUNMSGOBL nā_oADP prasāda_oNOUNMSGOBL lagī_oADP hūṃ_cPRON ihāṃ_oADV āwiu._oVPPPVRB 
+veśyā_oNOUNFSG pūchai_oVRB tujha_oNOUN nai_oADPDAT kāī_cPRON dīdhau?_oVPPPVRB 
+kumāra_oNOUNMSGNOM kahai_oVRB mujhanai_cPRON okhadha_oNOUNM dīdhau,_oVPPPVRB jiṇi_cPRON jarā_oNOUNFSG jāi,_oVRB yauwana_oNOUNMSGNOM āwai._oVRB 
+ehawai_oADV veśyā_oNOUNFSG lobha_oNOUNMSGOBL lagī_oADP kahivā_oINFINF lāgī_oVPPPVRB mujha_cPRON nai_oADPDAT te_cPRON ūkhadhī_empty āpi._oVRB 
+kumāra_oNOUNMSGNOM tatkāḷa_oADV te_cPRON phūla_oNOUNM sūṃghāṛyā,_oVPPPVRB tetaḷai_oADV magadhā_oNOUN phīṭī_oCVBCVB rāsabhī_oNOUNFSG huī._oVPPPVRB 
+kumāra_oNOUNMSGNOM lakuṭa_oNOUNM leī_oCVBCVB rāsabhī-i_oNOUNFSG caḍiu._oVPPPVRB 
+pachai_oADV ūbhaiṃ_oNOUN cahuṃṭa-iṃ_oNOUN lakuṭa-i_oNOUNM kūṭai._oVRB 
+loka_oNOUNM milyā._oVPPPVRB kahai_oVRB aho_empty kumāra_oNOUNMSGNOM mūki._oVRB 
+kumāra_oNOUNMSGNOM tau_empty na_empty mūkai._oVRB 
+tetaḷai_oADV sarva_cPRON veśyā_oNOUNFSG pokāra_oNOUNFSG karivā_oINFINF lāgī._oVPPPVRB 
+tetaḷai_oADV talāra_oNOUNM āvyā._oVPPPVRB 
+parāṇa_oNOUNM karavā_oINFINF lāgā._oVPPPVRB 
+tisyai_oADV kumāra_oNOUNMSGNOM lakuṭa-i_oNOUNM te_cPRON tima_oADV haṇyā_oVPPPVRB jima_empty tīe_cPRON jaī_oCVBCVB rājā_oNOUNMSGNOM vīnawiu._oVPPPVRB 
+pachai_oADV rājā_oNOUNMSGNOM sapariwāra_oNOUNM kaṭaka_oNOUNFSG leī_oCVBCVB ju_empty āwiu._oVPPPVRB 
+tetaḷai_oADV oḷakhiu_oVRB -_empty bhāī._oNOUNM 
+rājā_oNOUNMSGNOM pachai_oADV prapaṃca_oNOUNM jāṇī_oCVBCVB kuṭṭinī_oNOUN mūkāwī._oVPPPVRB 
+bewe_empty bhāī_oNOUNM milyā._oVPPPVRB 
+mahā_oADJ pramoda_oNOUNM ūpanau._oADJ 
+pachai_oADV mātā-pitā_oNOUNM grāma_oNOUNMSGOBL huṃtāṃ_oADP aṇāwī_oCVBCVB rāja_oNOUNM karavā_oINFINF lāgā._oVPPPVRB 
+﻿atra_oADV prastāw-i_oNOUNM mahārājādhirāja_oNOUNMSGNOM mahārājā_oNOUNMSGNOM śrī_oNOUN kalyāṇamala_oNOUNMSGNOM vikramanagar-i_oNOUNM rāja_oNOUNFSG karai_oVRB chai._oVRB 
+tiṇa_cPRON samaya_oNOUNMSGOBL dilī_oNOUN pātisāha_oNOUNMSGNOM śrī_oNOUN serasāha_oNOUNMSGNOM rāja_oNOUNFSG karai_oVRB chai._oVRB tiṇa_cPRON rai_oADP putra_oNOUNMSGNOM salemasāha_oNOUNMSGNOM sāhijādo_oNOUNMSGNOM vaḍo_oADV adalī_oADJ huyo._oVRB 
+tiṇa_cPRON samai_oNOUNM jodhapura_oNOUNM rāwa_oNOUNMSGNOM mālade_oNOUNMSGNOM rāja_oNOUNFSG karai_oVRB chai._oVRB 
+vistāra_oADV āge_oADV likhījasī,_oVRB piṇa_empty saṃkhepa_oADV thoṛo-so_oADJ likhiyai_oVRB chai._oVRB 
+iṇā_cPRON prastāw-i_oNOUNM rāwa_oNOUNMSGNOM mālade_oNOUNMSGNOM kaṭaka_oNOUNFSG kari_oCVBCVB vīkānera_empty āyo._oVPPPVRB 
+rāwa_oNOUNMSGNOM jaitasiṃgha_oNOUNMSGNOM yuddha_empty kari_oCVBCVB waikuṃṭha_oNOUNMSGNOM sidhāyo._oVPPPVRB 
+rāwa_oNOUNMSGNOM kalyāṇamalajī_oNOUNMSGOBL nūṃ_oADPDAT ṭhākuriyāsara_oNOUNM grāma_oNOUNM ṭīko_oNOUNMSGNOM huyo_oVRB para_empty vikho_oNOUNMSGNOM huyo._oVRB 
+rāwa_oNOUNMSGNOM kalyāṇamala_oNOUNMSGNOM āpa_empty dilī_oNOUN pātisāha_oNOUNMSGOBL śrī_oNOUN serasāha_oNOUNMSGOBL kanhai_oADP sidhāyā._oVRB 
+pātisāha_oNOUNMSGOBL nuṃ_oADPDAT miliyā._oVPPPVRB 
+guḍho_oNOUNMSGNOM sarasai_oNOUNM kiyo._oVPPPVRB 
+tiyai_cPRON prastāw-i_oNOUNM pātisāha_oNOUNMSGOBL kanhaī_oADPDAT paradhāna_oNOUNM melhiyā_empty hutā_oPTCPPTCP sū_cPRON āyā._oVPPPVRB 
+tivār-ai_oNOUNM pātisāhajī_oNOUNMSGNOM saraso_oNOUNMSGNOM pāṭaṇa_oNOUNMSGNOM vāsa_oNOUNMSGNOM gāṃwa_oNOUNMSGNOM diyo;_oVPPPVRB 
+bahuta_oADV dilāsā_oNOUNFSG muṃkī._oVPPPVRB 
+ekaṇ-ī_empty prastāw-i_oNOUNM pātisāha_oNOUNMSGNOM śrī_oNOUNMSGNOM sersāha_oNOUNMSGNOM salemasāha_oNOUNMSGNOM bāpa-beṭo_oNOUN doūṃ_empty vikhai_oNOUN paṛiyai_oCVBCVB rāwa_oNOUNMSGNOM lūṇakarṇa_oNOUNMSGOBL kanhai_oADPDAT cākarī_empty vīkānera_oNOUN āya_oCVBCVB rahiyā_oVPPPVRB hutā._oPTCPV 
+tiṇa_cPRON bāta_oNOUNFSG ro_oADP vistāra_oNOUNMSGNOM āgai_oADV likhījasī._oVRB 
+tiṇi_cPRON upagāra_oNOUNMSGNOM kiyai_empty rāya_oNOUNMSGOBL śrī_oNOUNMSGOBL kalyāṇamala_oNOUNMSGOBL ro_oADP upagāra_oNOUNMSGNOM kari-nai_oCVBCVB śrī_oNOUNMSGNOM serasāha_oNOUNMSGNOM rāwa_oNOUNMSGNOM śrī_oNOUNMSGOBL jaitasiṃghajī_oNOUNM rai_oADP vaira_oNOUNMSGNOM vāḷaṇa_empty rai_oADP kiyai_empty rāwa_oNOUNMSGOBL māladai_oNOUNMSGOBL aupari_oADP āpa_empty padhāri-ara_oCVBCVB rāwa_oNOUNMSGOBL mālade_oNOUNMSGOBL rā_empty rajapūta-umarāwa_oNOUNM ghāṇā_empty māriyā._oVRB 
+bhāja-kari_oVRB pīpaḷoda_oNOUNMSGOBL rai_oADP pāhaṛe_oNOUNM paiṭho._oVPPPVRB 
+vīkānera_oNOUN vaḷe_empty rāwa_oNOUNMSGNOM kalyāṇamala_oNOUNMSGNOM āi_oCVBCVB rāja_oNOUNMSGNOM virājaṇa_oINFINF lāgā._oVPPPVRB 
+iṇā_cPRON samaiy-ai_oNOUNM pātisāha_oNOUNMSGNOM serasāha_oNOUNMSGNOM varasa_empty āṭha_empty dilī_empty rāja_oNOUNMSGNOM kari-ara_oCVBCVB kāḷiṃjara_oNOUNMSGNOM gayo_oVPPPVRB huto._oPTCPV 
+taṭhai_cPRON nāḷi-goḷā_oNOUNM calāwatā_oPTCPPTCP eka_empty nāḷi_oNOUNFSG phāṭi_oCVBCVB pachī_oADV paṛī._empty 
+tivār-ai_oNOUN pātisāha_oNOUNMSGNOM nāḷi_oNOUNFSG huṃtā_oADP nijīka_oADV hutā._oPTCP 
+tiṇi_cPRON dārū_oNOUNMSGNOM pātisāha_oNOUNMSGNOM bāḷi_oCVB māriyo._oVPPPVRB 
+tāharāṃ_empty dilī_oNOUN ṭīk-ai_empty salemasāha_oNOUNMSGNOM pātasāha_oNOUNMSGNOM baiṭho._oVPPPVRB 
+varasa_oNOUNMSGNOM sāta_empty pātisāhī_empty kari-ara_oCVBCVB mīṃc-i_empty mūṃyo._oVPPPVRB 
+tiṇa_cPRON rai_oADP pāṭa_oNOUNMSGNOM edala_oNOUNMSGNOM dīkaro_oNOUNMSGNOM baiṭho._oVPPPVRB 
+pātisāha_oNOUNMSGNOM dilī_empty māṃhe_oADP huyo_oVPPPVRB dina_oNOUN aḍhāī._empty 
+tiṇa_cPRON pātisāha_oNOUNMSGOBL ro_oADP māmo_oNOUNMSGNOM mamarejakhāna._oNOUNMSGNOM 
+tiṇi_cPRON edala_oNOUNMSGOBL nūṃ_oADP māri-ara_oCVBCVB ṭīko_oNOUNMSGNOM liyo._oVPPPVRB dilī_oNOUNFSG ro._oADP 
+pātisāha_oNOUNMSGOBL setī_oADP lūṇaharāma_oNOUNMSGNOM kiyo._oVPPPVRB 
+tiṇi_cPRON visekhi_oNOUNMSGNOM mamarejakhāna_oNOUNMSGNOM āpa_empty gahilo_oADJ huyo._oVPPPVRB 
+tāharāṃ_empty tiṇa_cPRON rai_oADP ukīl-i_oNOUNM kāḷiṃjara_empty māṃhe_oADP rākhi-nai_oCVBCVB mamareja_oNOUNMSGOBL nūṃ_oADP āpa_empty hemū_oNOUNMSGNOM pātisāhī_oNOUNFSG rākhi_oVRB lī._oVRB 
+iyai_empty samaiy-ai_oNOUNM hamāūṃ_oNOUNMSGNOM pātisāha_oNOUNMSGNOM kāvila_oNOUNMSGOBL hūṃtā_oADP āyo._oVPPPVRB 
+āpasa_oNOUNFSG meṃ_oADP mamarejasāha_oNOUNMSGOBL rī_oADP phoja_oNOUNFSG huṃtā_oADP veḍhi_oNOUNFSG huyī._oVPPPVRB 
+phoja_oNOUNFSG bhāgī._oVPPPVRB 
+paṭhāṇa_oNOUNM vicaḷiyā._oVPPPVRB 
+paṃjāba_oNOUNFSG lī._oVPPPVRB 
+hamāūṃ_oNOUNMSGNOM pātisāha_oNOUNMSGNOM siṃhanada_empty āyo._oVPPPVRB 
+pātisāha_oNOUNMSGOBL hamāūṃ_empty rai_oADP sāthi_oADP akabara_empty varasa_oNOUNMSGNOM teraha_empty māsa_oNOUNMSGNOM chaha_empty ro_oADP huto._oPTCPV 
+akabara_empty rai-sāthi_oADP phoja_oNOUNFSG de-ara_oCVBCVB kalanora_oNOUNMSGOBL nūṃ_oADPDAT melhi-ara_oCVBCVB pātisāha_oNOUNMSGNOM hamāūṃ_oNOUNMSGNOM dilī_oNOUNFSG āyo._oVPPPVRB 
+pātisāhī_oNOUNFSG karatāṃ_oPTCPPTCP thakāṃ_empty eka_empty dina_oNOUN muṇār-ai_oNOUNFSG pātisāha_oNOUNMSGNOM hamāūṃ_oNOUNMSGNOM caḍhiyā_empty hutā_oPTCPPTCP tihāṃ_cPRON thī_oADP paṛiyā_oVRB ara_empty haka_oADJ huya._oVRB 
+pātisāha_oNOUNMSGNOM akabara_oNOUNMSGNOM kalānūra_oNOUNMSGOBL māhe_oADP rāja_oNOUNM baiṭho._oVPPPVRB 
+uṭhā_cPRON huṃtī_oADP dilī_oNOUNFSG nūṃ_oADPDAT hāliyā._oVPPPVRB 
+tāharāṃ_empty hemū_oNOUNMSGNOM pūraba_empty kāḷiṃjar-ai_empty huṃtā_oADP dilī_oNOUNFSG āyo._oVPPPVRB 
+āya-nai_oCVBCVB dilī_oNOUNFSG lī_oVPPPVRB 
+taṭhai_cPRON dilī_oNOUNFSG māṃhe_oADP pātisāha_oNOUNMSGOBL akabara_oNOUNMSGOBL ro_oADP umarāwa_oNOUNMSGNOM turatībega_oNOUNMSGNOM huto_oPTCPV 
+sū_cPRON nāsi-ara_oCVBCVB akabara_oNOUNMSGOBL pātisāha_empty pāsi_oADP gayo_oVPPPVRB 
+tāharāṃ_empty umarāwa_oNOUNMSGNOM bhairawabega_oNOUNMSGNOM anai_empty valīvega_oNOUNMSGNOM iyāṃ_cPRON bulāya_oCVBCVB turatībega_oNOUNMSGOBL nūṃ_oADP kahiyo_oVPPPVRB re_empty turatībega!_oNOUNM 
+thārai_cPRON māthai_oADP akabara_oNOUNMSGOBL pātisāha_oNOUNMSGOBL salāmata_oNOUNMSGNOM huto_oPTCPV ara_empty tūṃ_cPRON vāṇiy-ai_empty āgai_oADP bhāji-ara_oCVBCVB āyo_oVPPPVRB sū_cPRON kyūṃ?_empty 
+iso_cPRON javāba_oNOUNMSGNOM karatāṃ_oPTCPPTCP samāna_oADJ turatībega_oNOUNMSGNOM jāṇiyo_oVPPP jū_empty mhārī_empty adaba_empty paṛai_empty isaṛai_oADV kāṃpiyo._empty 
+tisai_oADV pātisāha_oNOUNMSGOBL rai_oADP hukama_oNOUNMSGNOM kāri-ari_oCVBCVB umarāw-ai_oNOUNM saiṃhath-i_oNOUNM māriyo_oVRB ara_empty gāḍiyo._oVRB 
+pāchai_oADV damāmo_oNOUNMSGNOM de-ara_oCVBCVB caḍhiyo_oVPPPVRB akabara_oNOUNMSGNOM pātisāha_oNOUNMSGOBL dilī_oNOUNFSG nūṃ_oADPDAT 
+pāṇipaṃtha_oNOUNMSGNOM āyo._oVPPPVRB 
+taṭhai_cPRON ḍerā_oNOUNM huwai_oVRB hutā._oPTCPV 
+ara_empty hemū_oNOUNMSGNOM dilī_oNOUNFSG ro_oADP caḍhiyo_oVPPPVRB pātisāha_oNOUNM sāmho_empty pāṇīpaṃtha_oNOUNMSGNOM āi_oCVBCVB ḍerā_oNOUNM paṛiyā_oVRB chai._oVRB 
+tisaṛai-sai_oADV pātisāhajī_oNOUNMSGNOM nūṃ_oADPDAT khabari_oNOUNFSG huyī._oVPPPVRB 
+tāharāṃ_oADV pātisāhajī_oNOUNMSGNOM hemū_oNOUNMSGNOM rā_oADP ḍerāṃ_oNOUNM ūparai_oADV āwatā_oPTCPPTCP hutā._oPTCPV 
+sū_cPRON vīc-i_oNOUNM naḷā_oNOUNM ūṃḍā_oADJ vahatā_oPTCPV hutā._oPTCPV 
+pāṇī_oNOUNMSGOBL kā_oADP pūra_oNOUNM bahuta_oADV thā._empty 
+tethi_oADV bhairawabega_oNOUNMSGNOM kahiyo_oVPPPVRB upāṛi-ara_oCVBCVB ghoṛā_oNOUNM māṃhe_oADP ghālo,_oVRB jyūṃ_empty utari_oCVBCVB pāri_oVRB jāhiṃ;_oVRB jike_cPRON ḍūbeṃge_oVRB sū_cPRON pātisāha_oNOUNMSGOBL rai_oADP sira_empty sadakai;_oNOUNM ara_empty jike_cPRON tira_oCVBCVB nikaḷasī_oVRB sū_cPRON pātisāhajī_oNOUNMSGOBL ke_oADP bakhata_empty teṃ_oADP nikaḷeṃge._empty 
+tāharāṃ_oADV pātisāhajī_oNOUNMSGNOM pahilo-hī_empty ghoṛo_oNOUNMSGNOM pāṇī_oNOUNMSGOBL māṃhe_oADP diyo._oVPPPVRB 
+tāharāṃ_oADV pātisāhajī_oNOUNMSGNOM tari_oCVBCVB nīsariyā._oVPPPVRB 
+vāṃsai_oADV bījā-hī_empty amarāwa_oNOUNM tari_oCVBCVB nīsariyā._oVPPPVRB 
+paṇi_empty hajāra_empty eka_empty ghoṛā_oNOUNM būṛi_oCVBCVB mūyā._empty 
+hajāra_empty cyāri_empty tari_oCVBCVB nīsariyā._oVPPPVRB 
+tiyāṃ_cPRON rī_oADP phoja_oNOUNF cyāri_empty kiyāṃ._oVRB 
+hajāra-hajāra_empty asawāra_empty rī_oADP aeka-aeka_empty phoja_oNOUNF thī._oVRB 
+tāharāṃ_oADV paṭhāṇāṃ_oNOUNM setī_oADP laṛāī_oNOUNFSG kī_oVPPPVRB 
+sū_cPRON mugalāṃ_empty rī_oADP phoja_oNOUNFSG muṛī._oVPPPVRB 
+vāṃsā_oADV paṭhāṇe_oNOUNM caṃpa_oNOUNFSG kī_oVPPPVRB tīrāṃ_oNOUNM rī_oADP 
+tāharaṃ_oADV mugale_oNOUNM vicaḷate_oPTCPPTCP hīja_empty māra_oNOUNFSG kī_oVPPPVRB 
+titarai_oADV bījī_oADJ phoja_oNOUNF mugalāṃ_oNOUNM rī_oADP paṭhāṇaṃ_oNOUNM āḍī_oADJ āyī_oVPPPVRB 
+beḍhi_oNOUNFSG huyī._oVPPPVRB 
+ima_oADV hīja_empty adaḷa-badaḷa_oADV laṛāī_oNOUNFSG 4-5_empty huyī._oVPPPVRB 
+tāharāṃ_empty paṭhāṇa_oNOUNM vicaḷiyā._oVPPPVRB 
+tāharāṃ_oADV hemū_oNOUNMSGNOM hawāī_oADJ hāthī_oNOUNMSGOBL ūpari_oADP baiṭho_oVPPPVRB huto_oPTCPV ara_empty tīra_oNOUNMSGNOM āṃkh-i_oNOUNFSG māṃhe_oADP lāgo_oVPPPVRB 
+sū_oADV lohī_oNOUNMSGNOM jharato_oPTCPPTCP hāthī_oNOUNMSGOBL pari_oADP baiṭho_oVPPPVRB chai._oVRB 
+tisaṛai_oADV phoja_oNOUNFSG vicaḷī_oVPPPVRB 
+tāharāṃ_oADV paṭhāṇa_oNOUNM nāṭhā_oVPPPVRB 
+nāsatāṃ_oPTCPPTCP hīja_empty māṃhe_oADP hemū_oNOUNMSGNOM nāṭho_empty jāi_empty chai._oVRB 
+tisaṛai-sai_oADV sāhū_oNOUN kulīkhāna_oNOUN valībega_oNOUN āpaṛiyo._oVPPPVRB 
+tāhaṛāṃ_oADV puchiyo_oVRB pīlavana_oNOUNMSGOBL nūṃ_oADPDAT 
+kuṇa_cPRON chai_oVRB re!_empty 
+kuṇa_cPRON hai_oVRB re_empty yahū?_cPRON 
+tāharāṃ_oADV pahilī_empty to_empty naṭi_oCVBCVB gayo_oVPPPVRB 
+pachai_oADV kahiyo_oVPPPVRB jī_cPRON vasaṃtarāya_oNOUN o_cPRON hīja_empty chai_oVRB 
+tāharāṃ_oADV garahiyo._oVPPPVRB 
+garahi-ara_oCVBCVB pātisāhajī_oNOUNMSGOBL rī-hajūra_oADP āṇiyo._oVPPPVRB 
+khānakhānā_oNOUNMSGNOM pātisāhajī_oNOUNMSGOBL nūṃ_oADPDAT kahiyo_oVPPPVRB pātisāhajī_oNOUNM 
+āpa_cPRON saihath-i_oNOUNM māro_oVRB to_empty gājī_oNOUNMSGNOM huwo._oVRB 
+tāharāṃ_oADV pātisāhajī_oNOUNMSGNOM kahiyo_oVPPPVRB jū_empty mharai_empty kiyai_empty to_empty māryo_empty na_empty jāi._empty 
+tāharāṃ_oADV vāra_oNOUNM do-cāra_empty umarāw-e_oNOUNM kahiyo_oVPPPVRB 
+piṇa_empty pātisāhajī_oNOUNMSGNOM kahai_oVRB hūṃ_cPRON na_empty mārū_oVRB miharabāṇī_oNOUNFSG āwai._oVRB 
+tisai_oADV aekai_empty pāsai_oNOUNMSGOBL bairamakhāna_oNOUNMSGNOM ara_empty bījai_oADJ pāsa_empty balībega_empty ghaṃṭi-kāri_oCVBCVB māriyo_oVPPPVRB chai._oVRB 
+tā_empty pachai_oADV pātisāhajī_oNOUNMSGNOM dilī_oNOUNFSG nū_oADPDAT khaṛiyā_oVPPPVRB chai._oVRB 
+ara_empty rāwa_oNOUNMSGNOM mālade_oNOUNMSGNOM bhāgo._oVRB 
+teha_cPRON hnaiṃ_empty eka-stabha-_oNOUN āvāsa_oNOUNM nu_empty ḍohalu_oNOUNMSGNOM ūpanu._oVPPPVRB 
+te_cPRON abhayakumār-iṃ_oNOUNM dewatā_oNOUNMSGNOM owarādhī_oCVBCVB teha_cPRON pāhiṃ_oADP sarvartuka-vana_oNOUNMSGNOM sahita_oADP eka_empty stabha-āwāsa_oNOUNMSGNOM karāwī_oCVBCVB pūriu._oVPPPVRB 
+abhayakumār-iṃ_oNOUNM kahiu_oVPPPVRB mātanga_oNOUNM hnaiṃ_empty siṃhāsan-i_oNOUNM baisāri_oVRB vidyā_oNOUNFSG lio_oVRB tu_oADV āvai_oVRB 
+eka_empty vāra_oNOUNM nī_empty paḍhī_empty te_cPRON vidyā_oNOUNFSG āwī._oVPPPVRB 
+ima_empty anereū_empty vidyā_oNOUNFSG lete_oPTCPPTCP vinaya_oNOUNMSGNOM karivu_oINFINF 
+tīṇaiṃ_cPRON mātang-iṃ_oNOUNM awanāminī_empty vidyā_oNOUNFSG naiṃ_empty bal-iṃ_oNOUNM sarvartuka_oNOUNM vana_oNOUNM nā_empty āmbā_oNOUNMSGOBL nī_empty ḍāḷa_oNOUNFSG namāṛī_oCVBCVB āmbā_oNOUNM leī_oCVBCVB ḍohalu_oNOUNMSGNOM pūriu._oVRB 
+ghaṇī_empty vāri_oNOUN mātangiṃ_oNOUNM vidyā_oNOUNFSG kahī,_oVPPPVRB puṇa_empty āvai_oVRB nahīṃ._empty 
+pachai_oADV mātanga_oNOUNMSGNOM siṃhāsan-i_oNOUNM baisarī_oCVBCVB be_empty hātha_oNOUNM joṛī_oCVBCVB śreṇika_oNOUNMSGNOM mahā-rāya_oNOUNMSGNOM āgaḷi_oADV ūbhu_oVPPP vidyā_oNOUNFSG lii._oVPPPVRB 
+te_cPRON kanhai_oADV ekai_empty tridaṇḍii_oNOUNM te_cPRON vidyā_oNOUNFSG līdhī_oVPPPVRB 
+tridaṇḍiu_oNOUNMSGNOM videśii_oNOUNM jai_oCVBCVB tīṇi_cPRON vidyāiṃ_oNOUNFSG āpaṇā_oADV tridaṇḍa_oNOUNMSGNOM ākāśa-maṇḍaḷ-i_oNOUNM rākhai_oVRB 
+te_cPRON dekhī_oCVBCVB vismaya_oNOUN hūntu_oPTCPPTCP loka_oNOUNMSGNOM teha_cPRON hnaiṃ_empty pūjā-bhakti_oNOUNFSG karaiṃ._oVRB 
+tīṇaiṃ_cPRON lājata-iṃ_oNOUNM nāpita_oNOUNM na_empty kahiu_oVPPPVRB 
+ima_cPRON kahiuṃ_oVPPPVRB himavanta-vāsī_oNOUNMSGNOM māharu_cPRON vidyā_oNOUNFSG nu_empty guru_oNOUNMSGNOM 
+tīṇaiṃ_cPRON guru_oNOUNMSGOBL naiṃ_empty olawiwai-ṃ_empty karī_oVPPPVRB tridaṇḍa_oNOUNMSGNOM khaṛakhaṛāṭa_oNOUNM karatauṃ_oPTCPPTCP bhuṃi-ṃ_oNOUNFSG paḍiuṃ._oVPPPVRB 
+loke_oNOUNMSGOBL sahūe_empty hasiuṃ_oVPPPVRB 
+āpa_empty kaṭaka_oNOUNFSG kari_oCVBCVB guḍho_empty sāthi_oADP le-ara_oCVBCVB sarasai_empty sidhayā._oVPPPVRB 
+bayāṇo,_oNOUNMSGNOM haiṃsāra,_oNOUNMSGNOM mewāta,_oNOUNMSGNOM raivāṛī_oNOUNFSG sameta_oADP paṛaganā_oNOUNM mūṃkiyā._oVPPPVRB 
+varasa_oNOUNMSGNOM eka_empty rāja_oNOUNMSGNOM kiyo._oVPPPVRB 
+nagar-i_oNOUN asdf_empty 
+﻿yasyāṅke_empty ca_empty vibhāti_empty 
+so’yaṃ_cPRON bhūtivibhūṣaṇaḥ_oADJ suravaraḥ_oADJ sarvādhipaḥ_oNOUN sarvadā_oADV 
+śarvaḥ_oADJ sarvagataḥ_oADJ śivaḥ_oNOUNMSGNOM śaśinibhaḥ_oADJ śrīśaṅkaraḥ_oNOUNMSGNOM pātu_oADJ mām._cPRON 
+ekadā_empty prastāwa_empty śrīparasarāmajī_oNOUNMSGNOM rājā_oNOUNMSGNOM janaka_oNOUNMSGNOM rai_oADP prāhuṇā_empty āyā_oVPPPVRB thā_oVRB 
+tivārai_oNOUNM śrīparasarāmajī_oNOUNMSGNOM nūṃ_oADPDAT bhojana_oNOUNM huwato_oPTCPV tho_oVRB 
+tivārai_oNOUNM parasarāmajī_oNOUNMSGNOM rājā_oNOUNMSGOBL janaka_oNOUNMSGOBL nūṃ_oADPDAT kahyo_oVRB jū_cPRON ḍhoḷa_oNOUNMSGNOM dirāwo_oVRB śrī_oNOUNMSGOBL mahādewajī_oNOUNMSGOBL rai_oADP hātha_oNOUNM ro_oADP dhanuṣa_empty chai_oVRB tiṇa_cPRON rī_oADP pūjā_oNOUNFSG kari_oCVBCVB pachai_oADV bhojana_oNOUNM karāṃ_oVRB 
+tivārai_oNOUNM rājā_oNOUNMSGNOM janaka_oNOUNMSGNOM sītājī_oNOUNFSG nai_oADPDAT kahyo_oVRB the_cPRON ḍhoḷa_oNOUNMSGNOM dirāwo_oVRB jima_empty parasarāmajī_oNOUNMSGNOM dhanuṣa_oNOUNMSGNOM rī_oADP pūjā_oNOUNFSG karai_oVRB 
+tivārai_oNOUNM sītājī_oNOUNFSG ḍhoḷa_oNOUNMSGNOM dirāwatā_oPTCPPTCP thakā_empty ḍāwā_oADJ hātha_oNOUNMSGOBL sūṃ_oADP dhanuṣa_oNOUNMSGNOM uṭhāyo_oVPPPVRB anai_empty ḍhoḷa_oNOUNMSGNOM de-nai_oCVBCVB jīmaṇā_oADJ hātha_oNOUNMSGOBL sūṃ_oADP nīco_oADV meliyo_oVPPPVRB 
+tarai_empty parasarāmajī_oNOUNMSGNOM dīṭho_oVPPPVRB 
+dekha-nai_oCVBCVB acarija_oNOUNMSGNOM pāyo_oVPPPVRB e_cPRON kanyā_oNOUNFSG mahābaḷawaṃta_oADJ 
+tarai_empty rājā_oNOUNMSGNOM janaka_oNOUNMSGNOM parasarāmajī_oNOUNMSGOBL nūṃ_oADPDAT pūchiyo_oVRB jū_empty mhārī_cPRON putrī_oNOUNFSG vara-prāpta_oADJ huyī_oVRB so_empty kiṇa_cPRON nūṃ_oADPDAT pāṇi-grahaṇa_oNOUNMSGNOM karāūṃ_oVRB 
+tivārai_oNOUNM parasarāmajī_oNOUNMSGNOM kahiyo_oVPPPVRB jū_empty e_cPRON mhāro_cPRON dhanuṣa_oNOUNMSGNOM caḍhāwai_oVRB tiṇā_cPRON nūṃ_oADPDAT pāṇigrahaṇa_oNOUNMSGNOM karāe_oVRB 
+tivārai_oNOUNM rājā_oNOUNMSGNOM janaka_oNOUNMSGNOM kahiyo_oVPPPVRB the_cPRON kahyo_oVRB sū_empty paramāṇa_empty jiko_cPRON o_cPRON dhanuṣa_oNOUNMSGNOM caḍhāwasī_oVRB tiṇa_cPRON nūṃ_oADPDAT paraṇāyīsa_oVRB 
+hiwai_oADV uwā-hīja_oADV prataṃgyā_oNOUNFSG jhālī_oVRB jo_cPRON e_cPRON dhanuṣa_oNOUNMSGNOM caḍhāwai_oVRB tiṇa_cPRON nūṃ_oADPDAT paraṇāūṃ_oVRB 
+tiṇa_cPRON vastai_oADP sabhā-maṃḍapa_oNOUNMSGNOM racāyo_oVPPPVRB chai_oVRB 
+aneka_oADJ desa-desa_oNOUN nā_oADP vaḍā-vaḍā_oADJ rājawī_oNOUNM āya_oCVBCVB miliyā_oVPPPVRB chai_oVRB 
+rāṇo_oNOUNMSGNOM rāwaṇa_oNOUNMSGNOM piṇa_empty āyo_oVPPPVRB chai_oVRB 
+bījā_oADJ piṇa_empty rājā_oNOUNMSGNOM durjūdhana_oNOUNMSGNOM yudhiṣṭhira_oNOUNMSGNOM arjuna_oNOUNMSGNOM bhīma_oNOUNMSGNOM ityādika_empty aneka_oADJ rājawī_oNOUNM āyā_oVPPPVRB chai_oVRB 
+piṇa_empty dhanuṣa_oNOUNMSGNOM kiṇa_cPRON hī_empty rājawī_oNOUNM setī_oADP khisai_oVRB nahīṃ_empty 
+rājā_oNOUNMSGNOM rāwaṇa_oNOUNMSGNOM soṃ_oADP to_empty piṇa_empty khisyo_oVPPPVRB nahīṃ_empty 
+hātha_oNOUNMSGNOM heṭhai_oADV āyo_oVPPPVRB sū_cPRON niṭṭha_oADV kāḍhiyo_oVPPPVRB 
+rājā_oNOUNMSGNOM rāwaṇa_oNOUNMSGNOM khisāṇo_oADJ paṛi_oCVBCVB ghara-i_oNOUNM gayo_oVPPPVRB 
+āpa_empty rā_oADP maṃtrī_oNOUNMSGNOM rākha-kara_oCVBCVB kahyo_oVRB e_cPRON kanyā_oNOUNFSG kuṇa_cPRON paraṇai_oVRB tiṇa_cPRON rī_oADP nigāha_oNOUNFSG rākhijyo_oVRB 
+ima_oADV kahi_oCVBCVB ghara-i_oNOUNM gayo_oVPPPVRB 
+bījā-hī_empty rājawī_oNOUNM piṇa_empty khisāṇā_oVRB paṛiyā_oVPPPVRB 
+tarai_empty rājā_oNOUNMSGNOM janaka_oNOUNMSGNOM viśwāmitra_oNOUNMSGOBL rikhīśwara_oNOUNMSGOBL nūṃ_oADPDAT teṛo_oNOUNMSGNOM meliyo_oVPPPVRB 
+tarai_empty wiśwāmitrajī_oNOUNMSGNOM śrīrāmacaṃdrajī-lakhamaṇajī_oNOUN nūṃ_oADP sāthai_empty le-nai_oCVBCVB āwai_oVRB chai_oVRB 
+tiwārai_empty gotama_oNOUNMSGOBL risīsara_oNOUNMSGOBL rī_oADP astrī_oNOUNFSG ahilyā_oNOUNFSG so_empty gotama_oNOUNMSGNOM rikhī_oNOUNMSGOBL rai_oADP śrāpa_oNOUNMSGNOM kari_oCVBCVB sila_oNOUNFSG huyī_empty paṛī_oVPPPVRB chai_oVRB 
+tiṇa_cPRON gotama_oNOUNMSGNOM risi_oNOUNMSGNOM śrāpa_oNOUNMSGNOM dīyo_oVPPPVRB tivārai_oNOUNM astrī_oNOUNFSG kahyo_oVRB svāmī_oNOUNM 
+mhāro_cPRON kadi_cPRON uddhāra_oNOUNMSGNOM husī_empty 
+tivārai_oNOUNM śrīrāmacaṃdrajī_oNOUNMSGNOM kheha_oNOUNFSG pagāṃ_oNOUNM rī_oADP lāgī_oVPPPVRB 
+ti_cPRON bārai_empty kheha_oNOUNFSG lāgata_oPTCPPTCP samāna_oADJ divya_oADJ deha_oNOUNFSG dhari-nai_oCVBCVB sila_oNOUNFSG ākāsa_oNOUNMSGOBL nūṃ_oADPDAT ūḍī_oVPPPVRB 
+so_empty yūṃ_oADV karatā_oPTCPPTCP āgai_oADV nadī_oNOUNFSG āyī_oVPPPVRB 
+su_oADV jhīwara_oNOUNM sila_oNOUNFSG uḍatī_oPTCPPTCP dekhi-nai_oCVBCVB nāwāṃ_oNOUNM le-nai_oCVBCVB nāṭhā_oVPPPVRB 
+pūṭhai_oADV sūṃ_oADP sāda_oNOUNM ghaṇā-hī_oADJ kiyā_oVPPPVRB piṇa_empty nāwaṛiyā_oNOUNM nāwa_oNOUNF pāchī_oADV āṇai_oVRB nahīṃ_empty 
+nāwaṛiyā_oNOUNM kahai_oVRB thāṃharā_cPRON paga_oNOUNMSGOBL lāgāṃ_empty sila_oNOUNFSG uḍī_oVPPPVRB chai_oVRB to_empty māharī_cPRON nāwāṃ_oNOUNF uḍai_oVRB to_empty māṃharo_cPRON kuṭaṃba_oNOUNMSGNOM bhūkhāṃ_oNOUNMSGOBL marai_oVRB mhe_cPRON māṃharā_cPRON hātha_oNOUNMSGOBL sūṃ_oADP thāṃharā_cPRON paga_oNOUNM dhoya-nai_oCVBCVB nāwāṃ_oNOUNM ūpari_oADP baisāṇisyāṃ_oVRB nadī_oNOUNFSG para_oADV utārisyāṃ_oVRB 
+ti_cPRON vārai_oNOUNM paga_oNOUNM dhoya-nai_oCVBCVB nadī_oNOUNFSG pāra_oADV ūtariyā_oVPPPVRB 
+jhīwar_oNOUNM nūṃ_oADPDAT kuṭaṃba_oNOUNMSGNOM sūdho_oADV ūdhariyo_oVPPPVRB 
+pachai_oADV rājā_oNOUNMSGNOM janaka-rai_oNOUNMSGNOM nagara_oNOUNMSGOBL āyā_oVPPPVRB 
+pachai_oADV rājā_oNOUNMSGNOM janaka_oNOUNMSGNOM viśwāmitra_oNOUNMSGOBL rikha_oNOUNMSGOBL nūṃ_oADPDAT ghaṇo_oADV ādara-māna_oNOUNMSGNOM diyo_oVPPPVRB 
+hiwai_oADV rājā_oNOUNMSGNOM janaka_oNOUNMSGNOM viśwāmitrajī_oNOUNMSGOBL nūṃ_oADPDAT pūchai_oVRB chai_oVRB ai_cPRON bāḷaka_oNOUNM kuṇai_cPRON rā_oADP chai_oVRB 
+tarai_empty viśwāmitra_oNOUNMSGNOM rikha_oNOUNMSGNOM kahiyo_oVPPPVRB ai_cPRON rājā_oNOUNMSGOBL dasaratha_oNOUNMSGOBL rā_oADP dīkarā_oNOUNM chai_oVRB 
+bījā_oADJ rājawī_oNOUNM dhanuṣa_oNOUNMSGOBL nūṃ_oADP khasai_oVRB chai_oVRB piṇa_empty khisai_oVRB nahīṃ_empty 
+tarai_empty śrīrāmcaṃdrajī_oNOUNMSGNOM viśwāmitra_oNOUNMSGOBL nūṃ_oADPDAT pūchiyo_oVPPPVRB chai_oVRB je_empty the_cPRON āgyā_oNOUNMSGNOM dyo_oVRB to_empty mhe-ī_cPRON dhanuṣa_oNOUNMSGNOM jowāṃ_oVRB 
+tivārai_oNOUNM viśwāmitra_oNOUNMSGNOM kahyo_oVRB jowo_oVRB 
+tivārai_oNOUNM rājā_oNOUNMSGNOM janaka_oNOUNMSGNOM kahiyo_oVPPPVRB ai_cPRON bāḷaka_oNOUNM kāsūṁ_cPRON jowasī_oVRB 
+tarai_empty viśwāmitra_oNOUNMSGNOM kahiyo_oVPPPVRB a_oNOUNMSGNOM bāḷaka_oNOUNM rājā_oNOUNMSGOBL dasaratha_oNOUNMSGOBL rā_oADP chai_oVRB rāji_oNOUNM jowaṇa_oINFINF dyo_oVRB thāṃharā_cPRON manoratha_oNOUNM ai_cPRON pūraṇa_oADJ karasi_oVRB 
+tarai_empty śrīrāmacaṃdrajī_oNOUNMSGNOM paḷawaṭa_oNOUNMSGNOM bāṃdhi-nai_oCVBCVB dhanuṣa_oNOUNMSGNOM cāḍhaṇa_oINFINF nūṃ_oADPDAT tayāra_oADJ huwā_oVPPPVRB 
+tivārai_oNOUNM lakhamaṇajī_oNOUNMSGOBL nūṃ_oADPDAT kahyo_oVRB jū_cPRON itarā_oADJ rājawī_oNOUNM baiṭhā_oVPPPVRB chai_oVRB tihāṃ_cPRON meṃ_oADP koī_empty vīra_oNOUNMSGNOM na_empty chai_oVRB jū_empty dhanuṣa_oNOUNMSGNOM chaḍhāwai_oVRB 
+tivārai_oNOUNM lakhamaṇajī_oNOUNMSGNOM kahiyo_oVPPPVRB rāji_oNOUNM yūṃ_oADV kahījai_oVRB nahīṃ_empty jo_cPRON vīra_oNOUNMSGNOM koī_empty na_empty chai_oVRB piṇa_empty dhanuṣa_oNOUNMSGNOM bodo_oADJ chai_oVRB rāji_oNOUNM hukama_oNOUNMSGNOM dyo_oVRB dhanuṣa_oNOUNMSGOBL bhāṃji_oCVBCVB kuṭakā_oNOUNM karūṃ_oVRB 
+tarai_empty śrīrāmacaṃdrajī_oNOUNMSGNOM kahiyo_oVPPPVRB tūṃ_cPRON śeṣanāga_oNOUNMSGOBL ro_oADP awatāra_oNOUNMSGNOM chai_oVRB piṇa_empty au_empty dhanuṣa_oNOUNMSGNOM mo_cPRON nūṃ_oADPDAT cāḍhaṇo_oINFINF sītā_oNOUNFSG paraṇawī_oINFINF 
+tarai_empty śrī_oNOUNMSGNOM raghunāthajī_oNOUNMSGNOM pāghaṛī_oNOUNFSG rā_oADP peca_oNOUNM samāri_oCVBCVB kāṭhā_oADJ kiyā_oVPPPVRB pītāṃbara_oNOUNMSGNOM kaṛi-yai_oNOUN bāṃdhiyo_oVPPPVRB anai_empty bāṃhāṃ_oNOUNF doūṃ_empty ūṃcī_oADJ cāḍhī_oVPPPVRB 
+tarai_empty lakhamaṇajī_oNOUNMSGNOM śeṣanāga_oNOUNMSGOBL nūṃ_oADPDAT sārata_oNOUNFSG dīwī_oVPPPVRB jū_empty tūṃ_cPRON sāwaceta_oADJ hue_oVRB prithawī_oNOUNFSG matāṃ_empty ḍulaṇa_oINF dewo_oINFINF 
+pachai_oADV kūrma_oNOUNMSGOBL nūṃ_oADPDAT kahiyo_oVPPPVRB tūṃ_cPRON sāwadhāna_oADJ hue_oVRB 
+pachai_oADV dase_empty digapāḷāṃ_empty nūṃ_oADPDAT kahiyo_oVPPPVRB the_cPRON sāwadhāna_oADJ hujyo_oVRB prithawī_oNOUNFSG ḍulaṇa_oINF matāṃ_empty dewo_oINFINF 
+iṇa_cPRON samai_oNOUNM śrī_oNOUNMSGOBL sītājī_oNOUNFSG gokha_oNOUNMSGNOM baiṭhā_oVPPPVRB dekhai_oVRB chai_oVRB 
+śrī_oNOUNMSGNOM raghunāthajī_oNOUNMSGNOM uṭhi_oCVBCVB jāya-nai_oCVBCVB viśwāmitrajī_oNOUNMSGOBL nūṃ_oADPDAT namaskāra_oNOUNMSGNOM kiyo_oVPPPVRB 
+namaskāra_oNOUNMSGNOM kari_oCVBCVB page_oNOUNM lāgi_oCVBCVB mātha-i_oNOUN hātha_oNOUNMSGNOM dirāya-nai_oCVBCVB āya-nai_oCVBCVB śrī_oNOUNMSGNOM rāmacaṃdrajī_oNOUNMSGNOM ḍāwā_oADJ hātha_oNOUNMSGOBL sūṃ_oADP dhanuṣa_oNOUNMSGNOM uṭhāya_oVRB liyo_oVPPPVRB 
+uṭhāya_oVRB le-nai_oCVBCVB namāyo_oVPPPVRB namāya-nai_oCVBCVB caḍhāyo_oVPPPVRB caḍhāya-nai_oCVBCVB khāṃciyo_oVPPPVRB khāṃci-nai_oCVBCVB bhāṃjiyo_oVPPPVRB 
+sū_cPRON dhanuṣa_oNOUNMSGNOM namāyo_oVPPPVRB tarai_empty sītā_oNOUNFSG rī_oADP lāja_oNOUNFSG namāyī_oVPPPVRB anai_empty jivārai_empty dhanuṣa_oNOUNMSGNOM khāṃciyo_oVPPPVRB tivārai_oNOUNM sītā_oNOUNFSG ro_oADP mana_oNOUNMSGNOM khāṃciyo_oVPPPVRB anai_empty dhanuṣa_oNOUNMSGNOM bhāgo_oVPPPVRB jivārai_empty sītā_oNOUNFSG rā_oADP mana_oNOUNMSGOBL rā_oADP sāṃsā_oNOUNM bhāgā_oVPPPVRB 
+hiwai_oADV dhanuṣa_oNOUNMSGNOM bhājatāṃ_oPTCPPTCP isaṛo_cPRON araṛāṭa_cPRON huwo_oVPPPVRB so_empty parasarāma_oNOUNMSGNOM tapasyā_oNOUNFSG karato_oPTCPV tho_oVRB so_empty jāṇiyo_oVPPPVRB au_empty kāsūṃ_cPRON sabda_oNOUNMSGNOM huwo_oVPPPVRB 
+gokha_oNOUNMSGNOM thī_oADP sītājī_oNOUNFSG ūtarī_oVPPPVRB śrīrāmacaṃdrajī_oNOUNMSGOBL rai_oADPDAT varamāḷa_oNOUNFSG ghātī_oVPPPVRB 
+devatāe_oNOUNM dewa-duṃdubhī_oNOUNFSG vajāyī_oVPPPVRB phūlāṃ_oNOUNM rī_oADP varakhā_oNOUNFSG kīwī_oVPPPVRB 
+rājā_oNOUNMSGOBL janaka_oNOUNMSGOBL rai_oADP ghara-i_oNOUNM aneka_oADJ vājā_oNOUNM vājiyā_oVPPPVRB 
+jai-jaikāra_empty sabda_oNOUNMSGNOM huwā_oVPPPVRB 
+viśwāmitrajī_oNOUNMSGOBL khusī_oADJ huwā_oVPPPVRB 
+rājā_oNOUNMSGNOM janaka_oNOUNMSGNOM khusī_oADJ huwo_oVPPPVRB 
+atha_oADV iṇa_cPRON samīae_oNOUNM rāṇa-i_oNOUNM rāwaṇa_oNOUNMSGNOM maṃtrawī_oNOUNM vīra_oADJ rākhyā_oVPPPVRB thā_oVRB so_empty jāya_oCVBCVB rāwaṇa_oNOUNMSGOBL nūṃ_oADPDAT kahiyo_oVPPPVRB jū_cPRON śrīrāmacaṃdrajī_oNOUNMSGNOM dhanuṣa_oNOUNMSGOBL bhāgo_oVPPPVRB sītā_oNOUNFSG paraṇī_oVPPPVRB 
+hiwai_oADV rājā_oNOUNMSGNOM janaka_oNOUNMSGNOM viśwāmitrajī_oNOUNMSGOBL nūṃ_oADPDAT kahyo_oVRB the_cPRON lagana_oNOUNMSGNOM thāpi_oCVBCVB dasarathajī_oNOUNMSGNOM vegā_oADV teṛāwo_oVRB jū_empty jāna_oNOUNMSGNOM kari_oCVBCVB āwo_oVRB 
+tivārai_oNOUNM śrī_oNOUNMSGNOM viśwāmitrajī_oNOUNMSGNOM lagana_oNOUNMSGNOM thāpi_oCVBCVB vadhāīhāra_oNOUNMSGNOM melhiyo_oVPPPVRB jū_empty jāna_oNOUNFSG kari_oCVBCVB vegā_oADV padhāro_oVRB 
+hiwai_oADV rājā_oNOUNMSGNOM dasaratha_oNOUNMSGNOM beṭā_oNOUNM sāthi_oADV le_oCVBCVB sabaḷī_oADJ jāna_oNOUNFSG kari_oCVBCVB mithulā_empty nagarī_oNOUNFSG āya_oCVBCVB ḍerā_oNOUNM kiyā_oVPPPVRB 
+rājā_oNOUNMSGNOM janaka_oNOUNMSGNOM sāmho_oADV āya_oCVBCVB miliyo_oVPPPVRB 
+śrīrāmacaṃdrajī_oNOUNMSGNOM lakhamaṇajī_oNOUNMSGNOM rājā_oNOUNMSGOBL daśaratha_oNOUNMSGOBL rai_oADP pāṃw-ai_oNOUNM āya_oCVBCVB lāgā_oVPPPVRB 
+rājā_oNOUNMSGNOM janak-ai_oNOUNM rājā_oNOUNMSGOBL daśaratha_oNOUNMSGOBL rā_oADP cyāra_empty beṭā_oNOUNM āpa_empty rī_oADP beṭī-bhātījī_oNOUNF kari_empty cyāre_empty caṃwarī_oNOUNF bāṃdhi-nai_oCVBCVB paraṇāyā_empty 
+ghaṇī_oADV bhagati_oNOUNFSG kīwī_oVPPPVRB 
+ghaṇe_oADV pakavāne_oNOUN kari_oCVBCVB ghaṇā_empty bhāta_oNOUNM diyā_oVPPPVRB 
+ghaṇī_oADV pahirāwaṇī_oNOUNF kīwī_oVPPPVRB 
+ghaṇo_oADV dāyajo_oNOUNMSGNOM dīyo_oVPPPVRB 
+ghaṇā_oADV hāthī_oNOUNM ghoṛā_oNOUNM vahila_oNOUNM sukhapāḷa-_oNOUNM sejhawāḷā_oNOUNM pramukha_empty ghaṇā_oNOUNM dāsa-dāsī_oNOUNM khawāsa_oNOUNM pramukha_empty ghaṇā_empty de-nai_oCVBCVB halāṇo_oINFINF kiyo_oVPPPVRB 
+rājā_oNOUNMSGNOM janaka_oNOUNMSGNOM ghaṇī_oADV bhuṃya_oNOUNFSG tāṃī_oADP puhacāwaṇa_oINFINF nūṃ_oADPDAT āyo_oVPPPVRB 
+rājā_oNOUNMSGNOM janaka_oNOUNMSGNOM rājā_oNOUNMSGOBL daśaratha_oNOUNMSGOBL sūṃ_oADP praṇāma_oNOUNMSGNOM kari_oCVBCVB juhāra_oNOUNMSGNOM kari_oCVBCVB pācho_oADV vaḷiyo_oVPPPVRB 
+vasiṣṭa_oNOUNMSGNOM rikhi_oNOUNMSGNOM viśwāmitra_oNOUNMSGNOM rikhi_oNOUNMSGNOM rathāṃ_oNOUNM vaiṭhā_empty sātha_oADV vahai_oVRB chai_oVRB 
+rājā_oNOUNMSGOBL dasaratha_oNOUNMSGOBL ro_oADP ratha_oNOUNMSGNOM āgai_oADV chai_oVRB 
+vāṃsai_oADV śrī_oNOUNMSGOBL rāmacaṃdrajī_oNOUNMSGOBL ro_oADP ratha_oNOUNMSGNOM chai_oVRB 
+ghaṇo_oADV sātha_oADV 
+ghūmar-ai_oNOUNMSGOBL sūṃ_oADP uchawa_oNOUNMSGNOM karatā_oPTCPPTCP vahai_oVRB chai_oVRB 
+atha_oADV iṇa_cPRON samīy-ai_oNOUNM parasarāmajī_oNOUNMSGNOM māth-ai_oNOUNM jaṭā_oNOUNM gaḷ-ai_oNOUNM janeū_oNOUNMSGNOM kaṛi-yāṃ_oNOUNFSG bhātho_oNOUNMSGNOM hātha_oNOUNMSGOBL meṃ_oADP dhanuṣa_oNOUNMSGNOM khawāṃ_oNOUNM ūpara_oADP pharasī_oNOUNFSG rātā_oADJ netra_oNOUNM kiyāṃ_empty gaḷagaḷārawa_oNOUNFSG karato_oPTCPPTCP gājato_oPTCPPTCP raudra-bīhāmaṇo_oADJ rūpa_oNOUNMSGNOM kiyāṃ_empty āwai_oVRB chai_oVRB 
+jyūṃ_empty parasarāma_oNOUNMSGNOM āwato_oPTCPPTCP dīṭho_oVPPPVRB jyūṃ_empty rājā_oNOUNMSGOBL dasaratha_oNOUNMSGOBL rī_oADP phauja_empty calī_oVPPPVRB jāya_oVRB thī_oVRB so_empty sarava_oADJ ūbhī_oVPPPVRB rahī_oVPPPVRB 
+ratha_oNOUNMSGNOM ūbhā_oVPPPVRB rākhyā_oVPPPVRB 
+parasarāmajī_oNOUNMSGNOM śrīrāmacaṃdrajī_oNOUNMSGOBL rā_oADP ratha_oNOUNMSGNOM āḍo_oADV āya_oCVBCVB ūbho_oVPPPVRB rahyo_oVPPPVRB 
+tivārai_oNOUNM parasarāmajī_oNOUNMSGNOM kahaṇa_oINFINF lāgā_oVPPPVRB rāmacaṃda_empty taiṃ_cPRON mhāro_cPRON dhanuṣa_oNOUNMSGNOM kyoṃ_empty bhāgo_oVPPPVRB 
+tūṃ_cPRON mo_cPRON sūṃ_oADP juddha_oNOUNMSGNOM kari_oVRB 
+parasarāma_oNOUNMSGOBL ro_oADP rūpa_oNOUNMSGNOM dekha-nai_oCVBCVB rājā_oNOUNMSGNOM dasaratha_oNOUNMSGNOM bīhano_oVPPPVRB jū_empty o_cPRON moṭo_oNOUNMSGNOM rāmacaṃdra_oNOUNMSGNOM bāḷaka_oNOUNMSGNOM viḍhaṇa_oINFINF rī_oADP mīḍha_oNOUNFSG kisī_cPRON 
+parasarāma_oNOUNMSGNOM āḍo_oADV ūbho_oVPPPVRB 
+tivārai_oNOUNM śrīrāmacaṃdrajī_oNOUNMSGNOM ratha_oNOUNMSGOBL thī_oADP utari-nai_oCVBCVB kahiyo_oVPPPVRB mhāṃ_cPRON nai_empty thāṃ_cPRON veḍha_oNOUNFSG rī_oADP mīḍha_oNOUNFSG kāī_cPRON nahīṃ_empty 
+au_empty māharo_cPRON gaḷo_oNOUNMSGNOM ā_oNOUNMSGNOM thāṃharī_cPRON pharasī_oNOUNFSG the_cPRON jāṇo_oVRB jyūṃ_empty karo_oVRB piṇa_empty mhe_cPRON khitrī_oNOUNMSGNOM brāhmaṇa_oNOUNMSGOBL sāmo_oADP hātha_oNOUNM na_empty karāṃ_oVRB 
+jyūṃ-jyūṃ_empty śrirāmcaṃdrajī_oNOUNMSGNOM guṇa-mīnati_empty karai_oVRB tyūṃ-tyūṃ_empty pharasarāmajī_oNOUNMSGNOM ghaṇai_oADV baḷa_oNOUNMSGOBL caḍhyo_oVPPPVRB tyūṃ-tyūṃ_empty dasarathajī_oNOUNMSGNOM bīhai_oVRB 
+parasarāma_oNOUNMSGNOM ghaṇo_oADV baḷa_oNOUNMSGOBL karaṇa_oINFINF lāgo_oVPPPVRB 
+tarai_empty rāmacaṃdrajī_oNOUNMSGNOM kahiyo_oVPPPVRB parasarāmajī_oNOUNM āwo_oVRB āpai_cPRON milāṃ_oVRB 
+parasarāmajī_oNOUNMSGNOM miliyā_oVPPPVRB tarai_empty rāmacaṃdrajī_oNOUNMSGNOM teja_oADV khāṃca_oVRB liyo_oVPPPVRB 
+parasarāmajī_oNOUNMSGNOM bāṃbhaṇa_oNOUNMSGOBL ro_oADP bāṃbhaṇa_oNOUNMSGNOM huya_oVRB gayo_oVPPPVRB 
+tivārai_oNOUNM parasarāma_oNOUNMSGOBL ro_oADP dhanuṣa-bhātho_oNOUNMSGNOM uraho_oADV liyo_oVPPPVRB 
+parasarāma_oNOUNMSGOBL nūṃ_oADPDAT kahiyo_oVPPPVRB hiwai_oADV pare_oADV jāya_oCVBCVB vanakhaṃḍa_oNOUNMSGOBL rai_oADP vikhai_oADV tapa_oNOUNMSGNOM karo_oVRB 
+parasarāma_oNOUNMSGNOM nadī-taṭ-ai_oNOUNM brāhmaṇa_oNOUNMSGNOM hoya_oCVBCVB tapa_oNOUNMSGNOM karaṇa_oINFINF lāgo_oVPPPVRB 
+rājā_oNOUNMSGNOM daśarathajī_oNOUNMSGNOM śrīrāmacaṃdrajī_oNOUNMSGNOM ajodhyā_empty padhāriyā_oVPPPVRB 
+rājā_oNOUNMSGNOM daśaratha_oNOUNMSGNOM rājya_oNOUNFSG karai_oVRB chai_oVRB 
+hiwai_oADV viśwāmitra_oNOUNMSGOBL nūṃ_oADPDAT sīkha_oNOUNFSG dīdhī_oVPPPVRB 
+﻿rāṇī_oNOUN sāṃgo_oNOUN rāyamalota_oNOUN cītoṛa_oNOUN rāja_oNOUNM karai_oVRB chai_oVRB 
+ṭīkāyata_oNOUNM beṭo_oNOUNM ratanasī_oNOUN rāṭhauṛa-dhanāī-_oNOUN rai_oADP peṭa-_oNOUNMSGOBL ro_oADP chai_oVRB 
+rāṇo_oNOUNMSGNOM sāṃgo_oNOUN pachai_oADV hāḍī_empty karametī_empty hāḍā_empty naravada-_empty rī_oADP beṭī_oNOUNFSG paraṇiyo_oVPPP tho_oVRB 
+sū_empty rāṇo_oNOUNMSGNOM karametī-_oNOUN sūṃ_oADP ghaṇī_empty mayā_oNOUNFSG karai_oVRB chai_oVRB 
+pachai_oADV karametī-_oNOUN rai_oADP beṭā_oNOUNM do_empty huwā-_oVPPPVRB vikramādita_oNOUN udaisiṃgha_oNOUN 
+tiṇāṃ-_cPRON sū_oADP rāṇo_oNOUNMSGNOM ghaṇī_oADV mayā_oNOUNFSG karai_oVRB chai_oVRB 
+sū_oADV eka_oADJ dina_oNOUNM dīwāṇa-_oNOUNMSGOBL sūṃ_oADP karametī_oNOUN araja_oNOUNFSG kīvī-_oVRB dīwāṇa_oNOUNMSGNOM ghaṇā_oADV dina_oNOUNM salāmata_oNOUNFSG -rahai_oVRB piṇa_empty vikramādita-udaisiṃgha_oNOUN nānhā_oADJ chai_oVRB 
+rāwaḷai_cPRON ṭīkāita_empty sāhabī-_oNOUNFSG ro_oADP dhaṇī_oNOUNM ratanasī_oNOUN chai_oVRB rāja_empty baiṭhāṃ_empty kāṃika_empty iṇāṃ-_cPRON ro_oADP sūla_oNOUNM karo_empty to_empty bhalo_oADV chai_oVRB 
+tarai_oADV rāṇai_oNOUNM pūchiyo_oVRB the_cPRON kiṇa_cPRON bhāta_empty araja_oNOUNFSG karo_oVRB cho_oVRB 
+tarai_oADV karametī_oNOUN hāḍī_oNOUN kahyo_oVRB iṇaṃ-_cPRON nūṃ_oADPDAT riṇathaṃbhora_oNOUN sārīkhī_oADJ ṭhoṛa_empty ratanasī-_oNOUN nai_oADPDAT pūcha-nai_oCVBCVB dījai_oVRB nai_empty hāḍā_oNOUN sūrajamala_oNOUN sārīkhā_oADJ rajapūta-_oNOUN nūṃ_oADPDAT bāṃha_oNOUNFSG jhalāyījai_oVRB 
+ā_cPRON vāta_oNOUNFSG dīvāṇa-hī_oNOUNM kabūla_oNOUNM karī_oVRB 
+savārai_oADV dīvāṇa_oNOUNM juṛiyo_oVRB tarai_oADV kaṃvara_oNOUNM ratanasī-_oNOUN nūṃ_oADPDAT raṇai_oNOUNM sāṃgai_oNOUN kahayo-_oVRB vikramādita-_oNOUN udaisiṃgha_oNOUN thārā_cPRON lohaṛā_oADJ bhāī_oNOUNM chai_oVRB tiṇāṃ-_cPRON nūṃ_oADP eka_empty paga-_oNOUNM ṭhoṛa_empty dīnī_oINFINF cahījai_oVRB 
+sū_empty rāṇo_oNOUNMSGNOM vaḍo_oADJ dūṭha_oADJ ṭhākura_oNOUNM cho_oVRB sū_oADV ratanasī_oNOUN kyū_oADV phera_empty kahi_oCVBCVB sakyo_oVRB nahīṃ_empty 
+tarai_oADV rāṇai_oNOUNM ratanasī-_oNOUN nūṃ_oADPDAT kahayo-_oVRB riṇathaṃbhora_oNOUN iṇāṃ-_cPRON nūṃ_oADPDAT do_oVRB 
+tarai_oADV ratanasī_oNOUN kahayo-_oVPPPVRB bhalāṃ_empty 
+tarai_oADV rāṇai_oNOUNM vikramādita-udaisiṃgha-_oNOUN nūṁ_oADPDAT kahayo-_oVRB mhe_cPRON thāṃ-_cPRON nūṃ_oADPDAT riṇathaṃbhora_oNOUN diyo_oVRB the_cPRON uṭha_oCVBCVB tasalīma_oNOUNFSG karo_oVRB 
+tarai_oADV iṇa_cPRON tasalīma_oNOUNFSG karī_oVPPPVRB 
+tarai_oADV hāḍo_oNOUN sūrajamala_oNOUN darabāra_oNOUNM baiṭho_empty tho_oVRB 
+tarai_oADV rāṇai_oNOUNM sāṃgai_oNOUN sūrajamala-_oNOUN nūṃ_oADPDAT kahayo_oVRB --mhe_cPRON vikramādita-udaisiṃgha-_oNOUN nūṃ_oADPDAT riṇathaṃbhora_oNOUN dāṃ_oVRB chāṃ_oVRB sū_oADV the_cPRON iṇāṃ-_cPRON rī_oADP bāṃha_oNOUNFSG jhālo_oVRB ai_cPRON mhe_cPRON thāṃharai_cPRON kholai_oNOUNM ghātāṃ_oVRB chāṃ_oVRB 
+tarai_oADV sūrajamala_oNOUN kahayo-_oVRB mhārai_cPRON iṇa_cPRON vāta-_oNOUNFSG sūṃ_oADP kāma_oNOUNM koī_cPRON nahīṃ_empty hūṃ_cPRON cītoṛa_oNOUN ṭīkai_oNOUNM baisai_oVRB jiṇa-_cPRON ro_oADP cākara_oNOUNMSGNOM chūṃ_oVRB mhārai_cPRON iṇa-_cPRON sūṃ_oADP koī_cPRON talo_oNOUN nahīṃ_empty 
+tarai_oADV rāṇai_oNOUNM sāgai_oNOUN valai_oADV ghaṇo_oADV haṭha_oNOUNM kara_oCVBCVB kahayo-_oVPPPVRB aai_cPRON ḍāvaḍā_oNOUNM nānhā_oADJ chai_oVRB thāṃharā_cPRON bhāṇeja_oNOUNM chai_oVRB būṃdī-_oNOUNF sūṃ_oADP riṇathaṃbhora_oNOUN nijīka_oADV chai,_oVRB tūṃ_cPRON bhalo_oADJ rajapūta_oNOUN chai_oVRB tada_oADV iṇāṃ-_cPRON rī_oADP bāṃha_oNOUNFSG to-_cPRON nūṃ_oADPDAT jhalāvāṃ_oVRB chāṃ_oVRB 
+sūrajamala_oNOUN araja_oNOUNFSG kīvī-_oVRB dīvāṇa_oNOUNM phuramāvo_empty so_cPRON to_empty sira-māthā_oNOUNM ūpara_oADP mhe_cPRON hukama-_oNOUNMSGOBL rā_oADP cākara_oNOUNM chāṃ_oVRB piṇa_empty dīvāṇa-_oNOUN nūṃ_oADPDAT sau_empty varasa_oNOUNMSGNOM poṃhacai_oVRB tarai_oADV mhāṃ-_cPRON nūṃ_oADPDAT ratanasī_oNOUN māraṇa-_oINFINF nū_oADPDAT tayāra_oADJ huvai_oVRB tiṇa_cPRON vāstai_oADP mhāṃ-_cPRON sūṃ_oADP ā_cPRON vāta_oNOUNFSG dīvāṇa-_oNOUN rai_oADP kahe_empty havai_empty nahīṃ_empty nai_empty ratanasī-jī_oNOUN phuramāvai_empty vāta_oNOUNFSG alādī_empty chai_oVRB 
+tarai_oADV rāṇai_oNOUNM ratanasī_oNOUN sāmo_oADP joyo_oVPPPVRB 
+ratanasī_oNOUN kahayo_oVPPPVRB sūrajamala-_oNOUN nūṃ_oADPDAT the_cPRON dīvāṇa_oNOUNM hukama_oNOUNMSGNOM karai_oVRB sū_oADV karo_oVRB aai_cPRON mhārā_cPRON bhāī_oNOUNM chai_oVRB the_cPRON mahārā_cPRON sagā_oNOUNM cho_oVRB rajapūta_oNOUN cho_oVRB mhe_cPRON thāṃ-_cPRON sūṃ_oADP buro_oADV mānāṃ_oVRB nahī_empty 
+tarai_oADV sūrajamala_oNOUN dīvāṇa_oNOUNM kahayo_oVPPPVRB tyūṃ_oADV kiyo_oVPPPVRB 
+rāṇai_oNOUNM sāṃgai_oNOUN riṇathaṃbhora_oNOUN vikramādita-udaisiṃgha-_oNOUN nūṃ_oADPDAT diyo_oVPPPVRB 
+iṇe_cPRON jāya_oCVBCVB amala_oNOUNM kiyo_oVPPPVRB 
+hāḍo_oNOUN nārāyaṇadāsa_oNOUN mūvo_oVPPPVRB tarai_oADV rāṇai_oNOUNM sāgai_oNOUN sūrajamala-_oNOUN nūṃ_oADPDAT ṭīko_oNOUNM meliyo_oVPPPVRB lāla-lasakara_oNOUN ghoṛo_oNOUNM airākī_oADJ kīmata_oNOUNFSG ru0_oNOUNM bīsa_empty hajāra_empty hāthī_oNOUNM meghanāda_oNOUN kīmata_oNOUNFSG ru0_oNOUNM sāṭha_empty hajāra-_empty rī-ro_oADP diyo_oVPPPVRB 
+rāṇo_oNOUNMSGNOM sāṃgo_oNOUN hāḍā_oNOUN sūrajamala-_oNOUN thī_oADP beṭāṃ-_oNOUNM thī_oADP idhako_empty pyāra_oNOUNM karai_oVRB chai_oVRB 
+ā_cPRON vāta_oNOUNFSG aṭhai-hī_empty rahī_oVPPPVRB 
+taṭhā_oADV pachai_oADV kitarā-eka_oADV dine_oNOUNM rāṇai_oNOUNM sāṃgai_oNOUNM kāla_oNOUNM kiyo_oVPPPVRB 
+ṭīkai_oNOUNM ratanasī_oNOUN baiṭho_oVPPPVRB 
+hāḍī_oNOUN karametī_oNOUN āpa-_cPRON rā_oADP beṭāṃ-_oNOUNM nūṃ_oADPDAT le_oCVBCVB riṇathaṃbhora_oNOUN gayī_oVPPPVRB 
+ratanasī-_oNOUNF rī_oADP chātī_oNOUNFSG māṃhe_oADP riṇathaṃbhora_oNOUN bhāvai_oVRB nahīṃ_empty 
+pūrabiyā_oNOUNM pūraṇamala-_oNOUN nūṃ_oADPDAT riṇathaṃbhora_oNOUN meliyo_oVPPPVRB 
+kahayo-_oVPPPVRB thūṃ_cPRON vikramādita-udaisiṃgha-_oNOUN nūṃ_oADPDAT teḍa_oCVBCVB lāva_oVRB 
+tarai_oADV o_cPRON riṇathaṃbhora_oNOUN gayo_oVPPPVRB 
+tarai_oADV hāḍī_oNOUN karametī_oNOUN kahayo-_oVPPPVRB aai_cPRON to_empty ḍāvaṛā_oNOUNM nānhā_oADJ chai_oVRB iṇāṃ-_cPRON ro_oADP jabāba_oNOUNM sūrajamalajī_oNOUN karasī_oVRB 
+tarai_oADV o_cPRON būṃdī_oNOUN sūrajamala-jī_oNOUN kanai_oADP gayo_oVPPPVRB 
+jāya-nai_oCVBCVB kahayo-_oVPPPVRB rāṇai_oNOUNM ratanasī_oNOUN vikramādita-udaisiṃgha-_oNOUN nūṃ_oADPDAT teṛāyā_oVPPPVRB cha_oVRB sū_cPRON vai_cPRON kahai_oVRB chai_oVRB māṃharo_cPRON jabāba_oNOUNM sūrajamalajī_oNOUN karasī_oVRB 
+tarai_oADV sūrajamala_oNOUN kahayo-_oVPPPVRB mhe-hī_cPRON āvāṃ_oVRB chāṃ_oVRB tarai_oADV dīvāṇa-_oNOUN sūṃ_oADP hakīkata_oNOUNFSG mālama_oADJ karasyāṃ_oVRB 
+tarai_oADV pūraṇamala_oNOUN cītoṛa_oNOUN āyo_oVPPPVRB 
+rāṇai_oNOUNM hakīkata_oNOUNFSG pūchī_oVPPPVRB 
+tarai_oADV iṇā_cPRON kahayo-_oVPPPVRB vai_cPRON to_empty ghaṇūṃ-hī_oADV āvai_oVRB piṇa_empty sūrajamala_oNOUN āvaṇa_oINFINF dai_oVRB nahīṃ_empty 
+tarai_oADV ratanasī-_oNOUNF rai_oADP ḍīla_oNOUNM āga_oNOUNFSG lāgī_oVPPPVRB 
+āgai_oADV piṇa_empty ṭīkā-_oNOUNMSGOBL ro_oADP sūrajamala_oNOUN hāthī_oNOUNM eka_empty ghoṛo_oNOUNM eka_empty le_oCVBCVB āyo_oVPPPVRB tho;_oVRB sū_cPRON ratanasī_oNOUN rākhiyā_oVPPPVRB nahīṃ_empty 
+kahyo-_oVRB rāṇai_oNOUNM sāṃgai_oNOUN to-_cPRON nūṃ_oADPDAT lāla-lasakara_oNOUN ghoṛo_oNOUNM meghanāda_oNOUN hāthī_oNOUNM tīkai_oNOUNM diyā_oVPPPVRB sū_cPRON mo-_cPRON nūṃ_oADPDAT de_oVRB 
+iṇa_cPRON kahyo-_oVRB hūṁ_cPRON kyūṃ_oADV jāṭa-paṭela_oNOUNM tho_oVRB nahīṃ_empty sū_oADV cāraṇa_oNOUNM diyā_oVPPPVRB thā;_oVRB sū_empty hamai_oADV pāchā_oADV māṃgiyā_oVRB dūṃ_oVRB 
+vāta_oNOUNFSG karāṛāṃ_oNOUNF bārai_oADP huyī_oVPPPVRB 
+rāṇo_oNOUNMSGNOM ratanasī_oNOUN sūrajamala-_oNOUN nūṃ_oADPDAT māraṇa-_oINFINF rā_oADP dāva-ghāva_oNOUNM karai_oVRB chai_oVRB 
+tiṇa_cPRON samai_oNOUNM cāraṇa_oNOUNM bhāṇo_oNOUN mīsaṇa_oNOUN jāta-_oNOUNFSG ro_oADP goṛā-_empty bārahaṭha_empty cītoṛa-_oNOUN rai_oADP gāṃva_oNOUNM gaḍha-kodamiyai_oNOUNM rahai_oVRB chai_oVRB 
+sū_cPRON nāṃvajādī_oADJ cāraṇa_oNOUNM chai_oVRB 
+vaḍo_oADJ ākharāṃ-_oNOUNM ro_oADP karaṇahāra_oNOUNM chai_oVRB 
+sū_oADV bhāṇā-_oNOUN rā_oADP jajamāna_oNOUNM goḍa_oNOUNM chai_oVRB 
+būṃdī-_oNOUN cākara_oNOUNM chai_oVRB 
+tiṇā_cPRON kanai_oADP jāya_empty chai_oVRB 
+māsa_oNOUNMSGNOM eka_empty duya_empty māsa_oNOUNM uṭhai_oADV rahai_oVRB 
+tarai_oADV bhāṇo_oNOUN hāḍā_oNOUN sūrajamala-_oNOUN rai_oADP piṇa_empty uṭhai_oADV jāvai_oVRB tarai_oADV mujaro_oNOUNM karai_oVRB 
+guṇe-gītāṃ_oNOUNM gāvai_oVRB 
+tada_oADV sūrajamala_oNOUN ghaṇī_oADV mayā_oNOUNFSG karai_oVRB chai_oVRB 
+eka_oADJ dina_oNOUNM sūrajamalajī_oNOUN kahyo-_oVPPPVRB bhāṇājī_oNOUN 
+hālo_oVRB sūrāṃ-_oNOUNM rī_oADP sikāra_oNOUNM jāvāṃ_oVRB 
+bhāṇo_oNOUN nai_empty sūrajamala_oNOUN sikāra_oNOUNM surāṃ-_oNOUNM rī_oADP gayā_oVPPPVRB 
+bījo_oADJ sātha_oADV hākai_oNOUNFSG meliyo_oVPPPVRB 
+bhāṇo_oNOUN nai_empty sūrajamala_oNOUN doya_empty jaṇā-hījha_oNOUNM hutā_oPTCPV 
+sūra_oNOUNMSGNOM to_empty hātha_oNOUNM nāyā_oVPPPVRB nai_empty doya_empty rīcha_oNOUNM ājājīta_oADJ 
+āgai-pīchai_oADV āyā_oVPPPVRB 
+isaṛā_empty kade_oADV āṃkhiyāṃ-hī_oNOUNF dīṭhā_oNOUNF nahīṃ_empty jiṇāṃ_empty 
+sū_oADV sūrajamala_oNOUN uṇa-_cPRON sūṃ_oADP bāthāṃ_oNOUNFSG huvo_oVPPPVRB ._empty 
+eka_empty kaṭārī-_oNOUNFSG sūṃ_oADP māra_oVRB pāṛiyo_oVPPPVRB 
+titarai_oADV dūjo_oNOUNMSGNOM āyo_oVPPPVRB 
+uṇa-_cPRON nūṃ-hī_oADPDAT uṇa-hīja_cPRON bhāṃti_oNOUNFSG māriyo_oVPPPVRB 
+bhāṇa-_oNOUN nūṃ_oADPDAT vaḍo_oADJ icaraja_oNOUNMSGNOM āyo_oVPPPVRB 
+sū_oADV bhāṇai_oNOUN kahyo--_oVRB the_cPRON kāsūṃ_oADV kiyo_oVPPPVRB 
+tarai_oADV kahyo-_oVPPPVRB kāsūṃ_cPRON karāṃ_oVRB 
+māḍāṃ_empty galai_empty paṛiyā_oVRB 
+pachai_oADV pāchā_oADV āyā_oVPPPVRB 
+bhāṇai_oNOUN gīta-guṇe_oNOUNM sūrajamala-_oNOUN nūṃ_oADPDAT rījhāviyo_oVPPPVRB 
+tarai_oADV sūrajamala_oNOUN jāṇiyo-_oVPPPVRB lāla-lasakara-ghoṛo_oNOUNM nai_empty meghanāda_oNOUN hāthī_oNOUNM lārai_oADP rāṇo_oNOUNMSGNOM paṛiyo_oVPPPVRB chai_oVRB ,_empty sū_oADV māharā_cPRON paradhāna-rajapūta_oNOUNM mo-_cPRON nūṃ_oADPDAT dabāya-_oCVBCVB nai_oADP rāṇā-_oNOUNMSGOBL nūṃ_oADPDAT dirāvasī_oVRB to_empty hūṃ_cPRON bhāṇā_oNOUN sarīkhā_oADV pātra-_oNOUNMSGOBL nai_oADPDAT de-nai_oCVBCVB amara_oADJ karūṃ_oVRB 
+ghoṛo_oNOUNM hāthī_oNOUNM donūṃ_empty bhāṇā-_oNOUN nūṃ_oADPDAT diyā_oVPPPVRB 
+bhāṇā-_oNOUN nūṃ_oADPDAT vaḍī_oADJ mauja_oNOUNFSG de_oCVBCVB lākha_empty de_oCVBCVB vidā_oNOUNFSG kiyo_oVPPPVRB 
+sū_oADV rāṇā-_oNOUNMSGOBL ro_oADP ḍero_oNOUNM cītoṛa-_oNOUN thī_oADP kosa_oNOUNM dasa_empty sikāra_oNOUNM ramaṇa-_oNOUNM rai_oADP misa_oNOUNM kiyo_oVPPPVRB chai_oVRB 
+mana_oNOUNMSGOBL māṃhe_oADP sūrajamala_oNOUN māraṇa-_oINFINF ro_oADP mato_oNOUNM chai_oVRB 
+rāṇī_oNOUNFSG paṃvāra_oNOUN rāvata_oNOUNMSGOBL karamacaṃda-_oNOUN rī_oADP beṭī_oNOUNFSG sāthai_empty chai_oVRB 
+sū_oADV bhāṇo_oNOUN uṭhai_oADV āyo_oVPPPVRB dīvāṇa-_oNOUN rai_oADP mujarai_oNOUNM 
+tarai_oADV dīvāṇa_oNOUNM pūchī-_oVPPPVRB kaṭhai_empty hutā_oPTCPV 
+bhāṇai_oNOUN araja_oNOUNFSG kīvī-_oVPPPVRB būṃdī_oNOUN huto_oPTCPV 
+tarai_oADV ratanasī_oNOUN kahyo-_oVPPPVRB sūrajamala-_oNOUN rī_oADP bāta_oNOUNFSG kaho_oVRB 
+tarai_oADV ghaṇā_oADV sūrajamala-_oNOUN rā_oADP bakhāṇa_oNOUNM kiyā_oVPPPVRB 
+tarai_oADV rāṇā-_oNOUNMSGOBL nūṃ_oADPDAT suhāṇo_oINF nahīṃ_empty 
+bhāṇo_oNOUN samajhayo_oVRB nahīṃ_empty jū_empty rāṇo_oNOUNMSGNOM iṇa-_cPRON sūṃ_oADP itarī_cPRON ku-mayā_oNOUNFSG karai_oVRB chai_oVRB 
+tarai_oADV rāṇai_oNOUNM puchiyo-_oVPPPVRB itarā_oADJ sūrajamala-_oNOUN rā_oADP bakhāṇa_oNOUNM karo_oVRB cho_oVRB sū_empty itaro_cPRON sūrajamala-_oNOUN meṃ_oADP kāsūṃ_oADV dīṭho_oVPPPVRB 
+tarai_oADV bhāṇai_oNOUN rīchāṃ-_oNOUNM rī_oADP vāta_oNOUNFSG māṃḍa_empty kahī_oVPPPVRB nai_empty kahyo-_oVPPPVRB dīvāṇa_oNOUNM 
+sūrajamala_oNOUN isaṛo_cPRON rajapūta_oNOUN chai_oVRB jiko_cPRON uṇa-_cPRON nūṃ_oADPDAT mārai_oVRB sū_cPRON kusale_oNOUNF na_empty jāya_oVRB 
+tarai_oADV rāṇai_oNOUNM iṇa_cPRON vāta_oNOUNFSG ūpara_oADP bohata_oADV bhāṇā-_oNOUN sūṃ_oADP buro_oADV māniyo_oVPPPVRB 
+titarai_oADV kiṇī-eka_cPRON bhāṇā-_oNOUN nūṃ_oADPDAT pūchiyo-_oVPPPVRB the_cPRON itaro_cPRON sūrajamala-_oNOUN ro_oADP jasa_oNOUNM karo_oVRB sū_oADV hamāra_oADV thāṃ-_cPRON nūṃ_oADPDAT kāsūṃ_oADV diyo_oVPPPVRB 
+tarai_oADV kahyo-_oVPPPVRB mo_cPRON nūṃ_oADPDAT lāla-lasakara_oNOUN ghoṛo_oNOUNM meghanāda_oNOUN hāthī_oNOUNM nai_empty lākha-pasāva_oNOUN diyo_oVPPPVRB 
+tarai_oADV rāṇā-_oNOUNMSGOBL rai_oADP valai_oADV jora_oNOUNM āga_oNOUNFSG lāgī_oVPPPVRB 
+bhāṇā-_oNOUN nūṃ_oADPDAT kahyo-_oVPPPVRB the_cPRON māṃharī_cPRON hada-_oNOUNFSG meṃ_oADP mata_empty raho_oVRB the_cPRON būṃdī_oNOUN jāvo_oVRB 
+tarai_oADV bhāṇo_oNOUN pūṁcha_oNOUNFSG jhāṭaka_oCVBCVB ūṭhiyo_oVPPPVRB 
+pācho_oADV būṃdī-_oNOUN nai_oADPDAT hāliyo_oVPPPVRB 
+taṭhā_oADV pahalī_oADV ā_cPRON khabara_oNOUNFSG sūrajamala-_oNOUN nūṃ_oADPDAT pohatī_oVPPPVRB 
+sūrajamala_oNOUN sāmā_oADV ādamī_oNOUNM bhāṇā-_oNOUN rai_oADP meliyā_oVPPPVRB 
+ghaṇo_oADV ādara_oNOUNM kara_oCVBCVB teṛa_oCVBCVB hiraṇāmo_oNOUN gāṃva_oNOUNM sāsaṇa_oNOUNM kiyo;_oVPPPVRB ghoṛā_oNOUNM hāthī_oNOUNM lākha-pasāva_oNOUN ghaṇoī_oADV dravya_oNOUNM diyo_oVPPPVRB 
+kahyo-_oVPPPVRB mhāro_cPRON bhāga_oNOUNMSGNOM 
+dīvāṇa_oNOUNMSGNOM mo-_cPRON soṃ_oADP vaḍī_oADJ mayā_oNOUNFSG karī_oVPPPVRB bhāṇa_oNOUN sarīkho_cPRON pāta_oNOUNMSGNOM diyo_oVPPPVRB 
+sū_oADV rāṇo_oNOUNMSGNOM sikāra_oNOUNMSGNOM khelato-khelato_oPTCPPTCP būṃdī_oNOUN disāṃ_oNOUNF āvai_oVRB chai_oVRB 
+sūrajamala_oNOUN kanai_oADP ādamiyāṃ-ūpara-ādamī_oNOUNMSGNOM āvai_oVRB chai-_oVRB satāba_oADV āvo_oVRB 
+sūrajamala_oNOUN jāṇai_oVRB chai-_oVRB jāūṃ_oVRB ka_oADV na_empty jāūṃ_oVRB 
+tarai_oADV eka_oADJ dina_oNOUNMSGNOM mājī_oNOUNFSG khetū_oNOUN rāṭhoṛa-_oNOUN nai_oADPDAT pūchiyo-_oVPPPVRB mo-_cPRON nūṃ_oADPDAT rāṇā-_oNOUNMSGOBL rā_oADP ādamiyāṃ-ūpara-ādamī_oNOUNM teṛā_oVPPPVRB āvai_oVRB chai_oVRB mo-_cPRON sūṁ_oADP rāṇo_oNOUNMSGNOM buro_oADV chai_oVRB mo-_cPRON nūṃ_oADPDAT mārasī;_empty kaho_oVRB to_empty vikho_oADJ kara_oCVBCVB rāṇā-_oNOUNMSGOBL nūṃ_oADPDAT hātha_oNOUNMSGNOM dikhāū_oVRB 
+tarai_oADV mā_oNOUNFSG kahyo-_oVPPPVRB isaṛī_cPRON bāta_oNOUNFSG kyūṃ_oADV kījai_oVRB 
+āpe_cPRON iṇāṃ-_cPRON rā_oADP sadā_oADV cākara_oNOUNM chāṃ_oVRB isaṛī_cPRON to_empty āja_oADV pahalī_oADV āpāṃ-_cPRON sūṃ_oADP burī_oNOUNFSG koī_cPRON huī_oVRB nahīṃ_empty jo_cPRON rāṇo_oNOUNMSGNOM to-_cPRON nūṃ_oADPDAT mārasī_oVRB to-hī_empty satāva_oADV rāṇā_oNOUNMSGOBL kanai_oADP jāvo_oVRB ghaṇī_oADV cākarī_oNOUNFSG karo_oVRB 
+tarai_oADV sūrajamala_oNOUN rāṇā_oNOUNMSGOBL kanai_oADP gayo_oVPPPVRB 
+gokahna-_oNOUN rai_oADP tīrathavālo_oADJ vājaṇo_empty gāṃva_oNOUNM būṃdi-cītoṛa-_oNOUN rī_oADP gaṛāsaṃgha_oNOUNMSGNOM chai_oVRB taṭhai_cPRON āya_oCVBCVB miliyo_oVPPPVRB 
+rāṇo_oNOUNMSGNOM mana-_oNOUNMSGOBL meṃ_oADP ghaṇī_oADV khoṭa_oNOUNFSG rākhai_oVRB chai_oVRB 
+nai_empty sūrajamala-_oNOUN ro_oADP ādara_oNOUNMSGNOM ghaṇo_oADV kiyo_oVPPPVRB 
+‘sūrajamala_oNOUN bhāī'_oNOUN kaha_oCVBCVB vatalāyo_oVPPPVRB 
+pachai_oADV ekaṇa_oADJ dina_oNOUNMSGNOM kahyo--_oVPPPVRB mhe_cPRON eka_oADJ hāthī_oNOUNM liyo_oVPPPVRB chai_oVRB tiṇa_cPRON mhe_cPRON bhelī_oCVBCVB asavārī_oNOUNFSG karāṃ_oVRB -pachai_oADV uvā_cPRON hāthī_oNOUNMSGOBL rāṇo_oNOUNMSGNOM caḍhiyo_oVPPPVRB 
+sūrajamala-hī_oNOUN ghoṛai_oNOUNM caḍha_oCVBCVB āyo_oVPPPVRB 
+ekaṇa_oADJ ṭhoṛa_empty sākaṛī_oADJ disī_oNOUNFSG sūrajamala_oNOUN ūpara_oADP hāthī_oNOUNM vahato_oPTCP tho_oVRB 
+ratanasī_oNOUN āpa_cPRON caḍhiyo_oVPPPVRB tho_oVRB 
+sūrajamala_oNOUN ūpara_oADP hāthī_oNOUNM jhokiyo_oVPPPVRB 
+sū_oADV sūrajamala_oNOUN ghoṛo_oNOUNM lāta_oNOUNFSG māra_oCVBCVB kāḍha_oCVBCVB diyo_oVPPPVRB dāva_oNOUNMSGNOM ṭāliyo_oVPPPVRB 
+sūrajamala_oNOUN rīsa_oNOUNFSG karī_oVPPPVRB 
+rāṇai_oNOUNM kahyo-_oVPPPVRB hāthī_oNOUNMSGNOM māḍaṃ_oADV āyo_oVPPPVRB 
+ghaṇī_oADV halabhala_oNOUNFSG kī_oVPPPVRB 
+dina_oNOUNMSGNOM eka_oADJ āḍo_oADV ghāta-_empty nai_oADPDAT kahyo_oVRB –āpai_cPRON sikāra_oNOUNMSGNOM sūarāṃ-_oNOUNM rī_oADP mūlāṃ-_oNOUNM rī_oADP khelasyā_oVRB 
+tarai_oADV sūrajamala_oNOUN kahyo-_oVPPPVRB bhalī_oADJ vāta_oNOUNFSG 
+eka_oADJ dina-_oNOUNMSGOBL rī_oADP vāta_oNOUNFSG chai_oVRB 
+rāṇo_oNOUNMSGNOM paṃvāra_oNOUN rāṇī_oNOUNFSG āgai_oADP kahai_oVRB chai-_oVRB eka_oADJ mhe_cPRON sāsato_oADJ sūara_oNOUNMSGNOM ekala_oNOUNMSGNOM mārasyāṃ_oVRB 
+thāṃ-_cPRON nūṃ_oADPDAT tamāso_oNOUNMSGNOM dikhāvasyā_oVRB 
+tīratha_oNOUNMSGNOM gokahna-_oNOUN rai_oADP paṃvāra_oNOUN rāṇī_oNOUNFSG sināna_oNOUNMSGNOM karāṇa_oINFINF gayī_oVPPPVRB thī_oVRB 
+tathā_empty pahalī_oADV sūrajamala_oNOUN sināna_oNOUNMSGNOM karaṇa_oINFINF gayo_oVPPPVRB tho_oVRB 
+sū_oADV paṃvāra_oNOUN āyī_oVPPPVRB tarai_oADV dhotiyo-hīja_oNOUNMSGNOM pahara_oCVBCVB kanai_oADP huya_oCVBCVB nīsariyo_oVPPPVRB 
+tarai_oADV paṃvāra_oNOUN sūrajamala-_oNOUN nūṃ_oADPDAT dīṭho_oVPPPVRB kiṇa-hī-_cPRON nūṃ_oADPDAT pūchiyo-_oVPPPVRB o_cPRON kuṇa_cPRON 
+tarai_oADV kahyo-_oVPPPVRB o_cPRON sūrajamala_oNOUN hāḍo_oNOUN būṃdī-_oNOUN ro_oADP dhaṇī_oNOUNM jiṇa-_cPRON sūṃ_oADP dīvāṇa_oNOUNMSGNOM ku-mayā_oNOUNFSG karai_oVRB chai_oVRB 
+tarai_oADV paṃvāra_oNOUN samadhī-_oVPPPVRB rāṇo_oNOUNMSGNOM sūara-sūara_oNOUNM karai_oVRB chai_oVRB sū_oADV iṇa-_cPRON nūṃ_oADPDAT māraṇa_oINFINF matai_oNOUNM chai_oVRB 
+rātai_oNOUNFSG paṃvāra_oNOUN gayī_oVPPPVRB tarai_oADV rāṇai_oNOUNM vālai_oADV vāta_oNOUNFSG sūara-_oNOUNMSGOBL rī_oADP calāyī_oVPPPVRB 
+tarai_oADV paṃvāra_oNOUN kahyo-_oVPPPVRB o_cPRON sūara_oNOUNMSGNOM mhe_cPRON dīṭho_oVPPPVRB uṇa-_cPRON ro_oADP nāṃva_oNOUNMSGNOM the_cPRON mata_empty lyo_oVRB 
+tarai_oADV rāṇai_oNOUNM kahyo-_oVPPPVRB tūṃ_cPRON kāsūṃ_oADV jāṇai_oVRB 
+tarai_oADV paṃvāra_oNOUN kahyo-_oVPPPVRB uṇa-_cPRON nūṃ_oADPDAT cheṛasī_oVRB sū_oADV kusale_oNOUNFSG na_empty āvai_oVRB 
+tada_oADV rāṇai_oNOUNM buro_oADV māniyo_oVPPPVRB 
+pachai_oADV savāre_oADV rāṇo_oNOUNMSGNOM sūrajamala-_oNOUN nai_oADPDAT le_oCVBCVB sikāra_oNOUNMSGNOM gayo_oVPPPVRB 
+mūle_oNOUNM baiṭhā_oVPPPVRB 
+dujo_oNOUNMSGNOM sātha_oADV āparo-pārako_oADJ dūro_oADJ kiyo_oVPPPVRB 
+rāṇo_oNOUNMSGNOM nai_empty pūraṇamala_oNOUN pūrabiyo_oNOUNM chai_oVRB 
+sūrajamala_oNOUN nai_empty sūrajamala-_oNOUN ro_oADP eka_oADJ khavāsa_oNOUNMSGNOM chai_oVRB 
+tiṇa_cPRON samai_oNOUNM rāṇai_oNOUNM pūraṇamala-_oNOUN nūṃ_oADPDAT kahyo_oVRB tūṃ_cPRON sūrajamala-_oNOUN nai_oADPDAT loha_oNOUNMSGNOM kara_oVRB 
+sū_oADV iṇa-_cPRON sūṃ_oADP loha_oNOUNMSGNOM kiyo_oVPPPVRB na_empty gāyo_oVPPPVRB 
+tarai_oADV rāṇo_oNOUNMSGNOM ghoṛai_oNOUNM caḍha_oCVBCVB sūrajamala-_oNOUN nūṃ_oADPDAT jhaṭako_oNOUNMSGNOM vāyo_oVPPPVRB 
+sū_cPRON māthā_oNOUNMSGOBL rī_oADP khoparī_oNOUNFSG le_oCVBCVB gāyo_oVPPPVRB 
+sūrajamala_oNOUN ūbho_oVPPPVRB chai_oVRB 
+titarai_oADV pūraṇamala_oNOUN tīchera_oNOUNMSGNOM vāhayo_oVPPPVRB sū_oADV sūrajamala-_oNOUN rī_oADP sāthala_oNOUNF lāgo_oVPPPVRB 
+sūrajamala_oNOUN doḍa-nai_oCVBCVB pūraṇamala-_oNOUN nūṃ_oADPDAT pāḍiyo_oVPPPVRB 
+uṇa_cPRON kūkava_oNOUNMSGNOM kiyā_oVPPPVRB 
+tarai_oADV rāṇo_oNOUNMSGNOM uṇa-_cPRON rā_oADP ūpara-_empty nūṃ_oADPDAT valai_oADV āyo_oVPPPVRB 
+sūrajamala-_oNOUN nūṃ_oADPDAT loha_oNOUNMSGNOM vāhayo_oVPPPVRB 
+sūrajamala_oNOUN vāga-_oNOUNMSGOBL rī_oADP jeha_empty jhāla-nai_oCVBCVB kaṭārī_oNOUNFSG galā_oNOUNMSGOBL nīcā-_oADJ sūṃ_oADP vāhī_oVPPPVRB sū_oADV rāṇā-_oNOUNMSGOBL rī_oADP sūṃṭī_oNOUNFSG āvatā_oPTCP rahī_oVPPPVRB 
+rāṇo_oNOUNMSGNOM ghoṛā-_oNOUNMSGOBL sūṃ_oADP heṭho_oADJ paḍiyo_oVPPPVRB 
+paṛatai-hīja_oPTCP pāṇī_oNOUNMSGNOM māṃgiyo_oVPPPVRB 
+tarai_oADV sūrajamala_oNOUN kahyo-_oVPPPVRB kāla-_oNOUNMSGOBL rā_oADP khādhā_oNOUNMSGOBL hamai_oADV pāṇī_oNOUNMSGNOM pī_oCVBCVB sakai_oVRB nahīṃ_empty 
+pachai_oADV sūrajamala-rāṇo_oNOUN behūṃ_empty muvā_oVPPPVRB 
+pavāra_oNOUN satī_oNOUNFSG huī_oVPPPVRB 
+rāṇā-_oNOUNMSGOBL ro_oADP dāga_oNOUNMSGNOM pāṭaṇa_oNOUN huvo_oVPPPVRB 
+ratanasī-_oNOUNF rai_oADP beṭo_oNOUNM koī_cPRON na_empty huto_oPTCPV 
+tarai_oADV rajapūte_oNOUNM sāre_cPRON mila-nai_oCVBCVB karametī_oNOUN hāḍī_oNOUN nai_empty vikramādita-udaisiṃgha-_oNOUN nūṃ_oADPDAT riṇathaṃbhora-_oNOUN sūṃ_oADP teṛa_oCVBCVB liyā_oVPPPVRB 
+ai_cPRON āyā_oVPPPVRB 
+vikramādita-_oNOUN nūṃ_oADPDAT ṭīko_oNOUNMSGNOM huvo_oVPPPVRB 
+vikramādita-udaisiṃgha_oNOUN sūrajamala-_oNOUN rā_oADP beṭā_oNOUNMSGOBL suratāṇa-_oNOUN nūṃ_oADPDAT būṃdī-_oNOUN ro_oADP ṭīko_oNOUNMSGNOM diyo_oVPPPVRB 
+mhe_cPRON khitrī_oNOUNMSGNOM the_cPRON brāhmaṇa_oNOUNMSGNOM tiṇa_cPRON vāsatai_oADP mhe_cPRON brāhmaṇa_oNOUNMSGOBL rā_oADP dāsa_oNOUNM 
+thāṃha_cPRON rai_oADP gaḷ-ai_oNOUNM janeū_oNOUNMSGNOM māharai_cPRON hātha_oNOUNMSGOBL sastra_oNOUNM māharai_cPRON hātha_oNOUNMSGOBL eka_empty guṇa_oNOUNM thāṃ_cPRON rai_oADP gaḷ-ai_oNOUNM nawa_empty guṇa_oNOUNM mhāṃ_cPRON nai_empty thāṃ_cPRON samawaṛa-_oNOUNFSG kisī_cPRON 
+﻿isī_cPRON pari_oNOUN tyā_cPRON khauṃdāḷama_oNOUNMSGNOM gorī_oNOUNMSGNOM rājā_oNOUNMSGNOM bāraha_empty lakha_empty māḷawā_oNOUN rau_oADP cakaravaratī_oNOUNMSGNOM 
+tai_cPRON rai_oADP tewāṇūṃ_empty lākha_empty māḷawā_oNOUN rā_oADP kaṭaka-baṃdha_oNOUNM 
+tai_cPRON kaṭaka-baṃdha_oNOUNM āraṃbha-pāraṃbha_empty garawātana_empty gaḍāwarau_empty 
+tai_cPRON kaṭaka-bāṃdh-i_oNOUNM māṃhi_oADP tau_oADV kahai_oCVBCVB dikhāḷauṃ_oVRB 
+usamākhāna_oNOUNMSGNOM phatekhāna_oNOUNMSGNOM gajanīkhāna_oNOUNMSGNOM umarakhāna_oNOUNMSGNOM haibatikhāna_oNOUNMSGNOM 
+khāna_oNOUNMSGNOM tau_oADV mugīsa_oNOUNMSGNOM sārikhā_oADV 
+hindū_oNOUNMSGNOM rājā_oNOUNMSGNOM kawaṇa-kawaṇa_cPRON 
+sakala_oADJ hī_empty saka-baṃdhī_oNOUNM sakaḷa-kaḷā-saṃpūraṇa_oNOUNM rājā_oNOUNMSGNOM narasiṃgha_oNOUNMSGNOM sārīkhā_oADV 
+tai_cPRON narasiṃghadāsa_oNOUNMSGOBL kā_oADP kaṭaka-baṃdha_oNOUNMSGOBL cālitāṃ_oPTCPPTCP sāṃtar-i_oADJ āgal-ai_oADJ daḷ-i_oNOUNM pāṇī_oNOUNMSGNOM pāchil-ai_oADJ daḷ-i_oNOUNM kādama_oNOUNMSGNOM 
+tai_cPRON kādama_oNOUNMSGNOM kai_oADP ṭhāh-i_oNOUNM kheha_oNOUNFSG uḍatī_oPTCPV jāi_oVRB 
+dūsarau_empty vikamāīta_oNOUNMSGNOM 
+dūho_empty 
+eka-i_empty vann-i_oNOUNM vasaṃtaṛā_oADJ ewaṛa_oADJ aṃtara_oNOUNMSGNOM kāi_empty 
+sīha_oNOUNMSGNOM kawaḍḍī_oNOUNMSGNOM naha_empty lahai_oVRB gaiwara_oNOUNMSGNOM lakkh-i_empty vikāi_oVRB 
+kuṃḍaḷiyo_empty 
+gaiwara-gaḷ-ai_oNOUNM gaḷatthiyau_oNOUNMSGNOM jahaṃ_cPRON khaṃcai_oVRB tahaṃ_cPRON jāi_oVRB 
+sīha_oNOUNMSGNOM gaḷatthaṇa_oNOUNMSGNOM jai_cPRON sahai_oVRB tau_oADV daha_empty lakkh-i_empty vikāya_oVRB 
+tau_oADV daha_empty lakkh-i_empty vikāi_oVRB mola_oNOUNMSGNOM jāṇawi_oVRB muṃhagerā_oADJ 
+kaṛavā_oNOUNMSGOBL kāraṇ-i_oNOUNM kathina_oNOUNMSGOBL kopi_oCVBCVB khauṃdāḷima_oNOUNMSGOBL kerā_oADP 
+veḍha_oNOUNFSG kīdha_empty paṛiyāra_oNOUNMSGNOM nihasi_oCVBCVB kaṭṭārau_oNOUNMSGNOM duhuṃ_empty kari_oNOUN 
+rāi_oNOUNMSGNOM na_empty grahau_oVPPPVRB narasiṃgha_oNOUNMSGNOM gaḷ-ai_oNOUNM gaḷahatha_oNOUNMSGNOM jauṃ_empty gaiwar-i_oNOUNM 
+te_cPRON rājā_oNOUNMSGNOM narasiṃghadāsa_oNOUNMSGNOM sārīkhā_oADV 
+battīsa_empty sahasa_empty sāhaṇa_oNOUNM riṇa-khet-i_oNOUNM melhi_oCVBCVB cālyau_oVPPPVRB 
+madonamatta_oNOUNMSGNOM hastī_oNOUNMSGNOM melhi_oCVBCVB cālyau_oVPPPVRB 
+āpaṇa_empty jāi_oCVBCVB samaṃd-ai_oNOUNM ghālyau_oVPPPVRB 
+samaṃda_oNOUNMSGNOM jāi_oCVBCVB khāṃḍau_oNOUNMSGNOM pakhāḷyau_oVPPPVRB 
+aneka_oADJ rāi_oNOUNM mada-gaḷita_empty kara_oNOUNM melhyā_oVPPPVRB 
+te_cPRON rājā_oNOUNMSGNOM narasiṃghadāsa_oNOUNMSGNOM sārīkhā_oADV 
+te_cPRON rājā_oNOUNMSGOBL narasiṃhadāsa_oNOUNMSGOBL kā_oADP kuṃwara_oNOUNM tau_oADV cāṃdajī_oNOUNMSGNOM khemajī_oNOUNMSGNOM sārikhā_oADV 
+mātaṃgapurī_oNOUN kā_oADP cakravatī_oNOUNM lakhamarāwa_oNOUNMSGNOM sārikhā_oADV dewīsāha_oNOUNMSGNOM sārikhā_oADV 
+būṃdī_oNOUN kā_oADP cakravartī_oNOUNM awara_empty dewaṛā_oNOUN hiṃdū-rāi_oNOUNM baṃdi-choḍa_oNOUNM dūsarā_empty mālade-samarasīha_oNOUNMSGNOM sārikhā_oADV 
+desa_oNOUNMSGNOM tau_oADV kauṇa-kauṇa_cPRON 
+satiyāsī_empty ,_empty namiyāṛa_empty mānadhātā_empty āseri_empty dūgaura_empty silārapura_empty kā_oADP kaṭakibandha_oNOUNM 
+majha-desa_empty tau_oADV māṃḍawa_empty dhāra_empty ujīṇa_empty sīhaura_empty khaṃḍa-khaṃḍa_oNOUNM kā_oADP nagara-nagara_oNOUNM kā_oADP khāna-mīra-amarāwa_oNOUNM caturaṃga_oADJ daḷa_oNOUNFSG caḍhi_oCVBCVB cālyā_oVPPPVRB pātasāha_oNOUNMSGNOM āpuṇapau_oNOUNMSGNOM ghālyā_oVPPPVRB 
+isau_oADJ hiṃdū_oNOUNMSGNOM rājā_oNOUNMSGNOM upakaṃṭhi_oADV kauṇa_cPRON chai_oVRB jikai_cPRON mani_oNOUNM pātisāha_oNOUNMSGOBL kī_oADP rīsa_oNOUNFSG basī_oVPPPVRB 
+kauṇa_cPRON kā_oADP māthā_oNOUNMSGOBL taiṃ_oADP khisī_oVPPPVRB 
+kauṇa-hai_cPRON daī_oNOUNMSGNOM rūṭhau_oVPPPVRB 
+kauṇa_cPRON kī_oADP māī_oNOUNFSG viwāṇī_oVPPPVRB jū_empty sāmau_oADV rahai_oVRB aṇī-pāṇī_oNOUNFSG 
+āju_oADV tau_oADV soma_oNOUNMSGNOM sātala_oNOUNMSGNOM kānhaṛade_oNOUNMSGNOM nahīṃ_empty tilakachapar-i_oNOUN gahila-uta_oNOUNMSGNOM nahīṃ_empty sīhaur-i_oNOUN rauḷu_oNOUNMSGNOM nahīṃ_empty haṭha_oNOUNMSGOBL kau_oADP rāu_oNOUNMSGNOM hamīra_oNOUNMSGNOM āthamyau_empty 
+aura_empty pātisāha_oNOUNM huwā_oVPPPVRB ālā_oNOUNM āgilerā_oNOUNM ara_empty bhalā-bhalerā_oNOUNM tyāṃ_cPRON tau_oADV caurāsī_empty druga_oNOUNM liyā_oVPPPVRB thā_oVRB dihāṛ-ai_oNOUNM pāṛai_empty 
+yau_empty tau_oADV dūsarau_empty jiṇī_cPRON caurāsī_empty druga_oNOUNM liyā_oVPPPVRB thā_oVRB ekai_empty dihāṛ-ai_oNOUNM 
+teṇi_cPRON pātisāh-i_oNOUN āyāṃ_empty sāṃtari_empty kuṇa_cPRON sahai_oVRB 
+kuṇai_cPRON sahijai_oVRB 
+kuṇa_cPRON kī_oADP juktī_oNOUNFSG ?_empty 
+kuṇa_cPRON kī_oADP prāptī_oNOUNFSG 
+kuṇa_cPRON kī_oADP māi_oNOUNFSG viyāṇī_oVPPPVRB jū_empty sāmau_oADV rahai_oVRB aṇī-pāṇī_oNOUNFSG 
+yau_empty tau_oADV pātisāha_oNOUNMSGNOM uttara-dakkhiṇa-pūraba-pacchima_oNOUNM kau_oADP jaitawāra_oNOUNMSGNOM i_cPRON kā_oADP purukhāratha-prawāṛāṃ_oNOUNM nāhi_empty pāra_oNOUNMSGNOM 
+dhana-dhana_oNOUNM ho_empty rājā_oNOUNM acaḷesara_oNOUNM 
+thārau_cPRON jiyau_oNOUNMSGNOM jiṇi_cPRON pātisāha_oNOUNMSGOBL sauṃ_oADP khāṃḍau_oNOUNMSGNOM liyau_oVPPPVRB 
+teṇi_cPRON pātisāha_oNOUNMSGOBL āyāṃ_empty sāṃtari_empty sata_oNOUNMSGNOM chāṃḍai_oVRB nahī_empty khatra_oNOUNMSGNOM khāṃḍai_oVRB nahī_empty 
+dīṇa_oADJ na_empty bhākhai_oVRB pāgāra_oNOUNMSGNOM laṃghita_oADJ na_empty hoyai_oVRB 
+te_cPRON rājā_oNOUNMSGOBL acaḷesara_oNOUNMSGOBL sārikhā_oADV acaḷa_oNOUNMSGNOM nai_empty aceḷesa-hī_oNOUNMSGNOM hoyai_oVRB 
+aceḷesara_oNOUNMSGNOM tau_oADV kisau_cPRON 
+uttara-dakkhiṇa-pūraba-pacchima_oNOUNM kau_oADP bhaṛa-kiṃwāṛa_oNOUNMSGNOM āinyāṃ_empty ajaipāḷa_oNOUNMSGOBL ahaṃkār-i_oNOUNM rāwaṇa_oNOUNMSGNOM dūsarau_empty dhārū_oNOUNMSGNOM tīsarau_empty siṃghaṇa_oNOUNMSGNOM 
+chai_empty darasaṇa_oNOUNM chayāṇawai_empty pākhaṃḍa_oNOUNM kau_oADP adhāra_oNOUNMSGNOM bāḷau_oNOUNMSGNOM cakaravati_oNOUNMSGNOM 
+dhana-dhana_oNOUNMSGNOM ho_empty rājā_oNOUNMSGNOM acaḷesara_oNOUNMSGNOM 
+thārau_cPRON jiyau_oNOUNMSGNOM jiṇi_cPRON hai_empty pātisāha_oNOUNMSGOBL sauṃ_oADP khāṃḍau_oNOUNMSGNOM liyau_oVPPPVRB 
+isā-eka_empty tai_cPRON pātasāha_oNOUNMSGOBL rā_oADP kaṭakabaṃdha_oNOUNM acaḷesara_oNOUNMSGOBL ūpari_oADP chūṭā_oVPPPVRB vāṭa_oNOUNMSGOBL kā_oADP khaṛa-iṃdhaṇa_oNOUNM khūṭā_oVPPPVRB draha_oNOUNM kā_oADP pāṇī_oNOUNM tūṭā;_oVPPPVRB 
+parabatāṃ_oNOUNM siri_oADV paṃtha_oNOUNMSGNOM lāgā_oVPPPVRB dughaṭa_oNOUNM ghaṭa_oNOUNM bhāgā_oVPPPVRB sūra_oNOUNMSGNOM sūjhai_oVRB nahīṃ_empty kheha_oNOUNFSG āgā_oADV 
+dūho_empty 
+haiwara-gaiwara_oNOUNM pāidaḷa_oNOUNMSGNOM puhawi_oNOUNFSG na_empty pārāwāra_oADJ 
+gorī_oNOUNMSGNOM rāu_oNOUNMSGNOM giri_oNOUNMSGNOM āsanau_oADV gau_oVPPPVRB gaḍha_oNOUNMSGNOM gaṃjaṇahāra_oNOUNMSGNOM 
+kahayo-_oVPPPVRB rāvalai_cPRON vicāra_oNOUNM āvai_oVRB sū_oADV ṭhoṛa_oNOUN dījai_oVRB 
+mahādhara_oNOUNMSGNOM tau_oADV kawaṇa-kawaṇa_cPRON 
+tiṇa_cPRON veḷā_oNOUNM dātāra_oNOUNMSGNOM jhūjhāra_oNOUNMSGNOM rājā_oNOUNMSGNOM ratana_oNOUNMSGNOM mūṃchāṃ_oNOUNM kara_oNOUNM ghāti_oCVBCVB bolai_oVRB taravāra_oNOUNMSGNOM tolai_oVRB āgai_oADP laṃkā-kurakheta_oNOUNMSGNOM mahābhāratha_oNOUNMSGNOM huwā_oVPPPVRB dewa-dāṇawa_empty laṛi_oCVBCVB muwā_empty 
+cyāri_empty juga_oNOUNM kathā_oNOUNFSG rahī_oVPPPVRB vedavyāsa-vālamīka_oNOUNM kahī_empty 
+o_cPRON tīsaro_empty mahābhāratha_oNOUNMSGNOM āgama_oNOUNM kahatā_oPTCPV ujeṇi_empty kheta_oNOUNMSGNOM 
+agani-sora_oNOUNM gājasī_oVRB pawana_oNOUNMSGNOM vājasī_oVRB 
+tikā_cPRON to_empty vāta_oNOUNFSG āya_oCVBCVB sākābaṃdha_oADJ sire_oADJ caḍhī_oVPPPVRB 
+dui_empty rāha_oNOUNFSG pātisāhāṃ_oNOUNM rī_oADP phaujāṃ_oNOUNF aṛī_oVPPPVRB 
+veda-sāsatra_oNOUNM vatāyā_oVPPPVRB sū_cPRON awasāṇa_oNOUNM āyā_oVPPPVRB 
+ujeṇi_empty kheta_oNOUNMSGNOM dhārā_empty tīratha_oNOUNMSGNOM dhaṇī_oNOUNMSGOBL ro_oADP kāma_oNOUNM 
+khitrī_oNOUNMSGOBL ro_oADP dharama_oNOUNMSGNOM sācawījai_oVRB lohāṃ_oNOUNM rā_oADP vāha_oNOUNM selāṃ_oNOUNM rā_oADP dhamaṃkā_oNOUNM lījai_oVRB nai_empty dījai_oVRB 
+khāṃḍā_oNOUNMSGOBL rī_oADP khaṭākhaṛi_oNOUNFSG jhaṭājhaṛi_oNOUNFSG ḍaṃḍāhaṛi_oNOUNFSG khelījai_oVRB pātisāhāṃ_oNOUNM rī_oADP gaja-ghaṛā_oNOUNFSG paṛījai_oVRB aujhaṛāṁ_oNOUNM māri_oCVBCVB ṭhelījai_oVRB 
+pātisāhāṃ_oNOUNM rai_oADP chatra_oNOUNM ghāwa_oNOUNMSGNOM kījai_oVRB purajā-purajā_oNOUNM hui_oCVBCVB jhaṛāṃ_oVRB to_empty vaikuṃṭha_oNOUNMSGNOM caḍhījai_oVRB 
+kyūṃ_oADV bārahaṭha_empty jasarāja_empty 
+hāṃ_empty mahārāja_oNOUNM 
+mahārāja_oNOUNMSGOBL rā_oADP manoratha_oNOUNM śrīmahārāja_oNOUNMSGNOM pūrai_oVRB akhiyāta_oNOUNFSG ūbarai_oVRB mahārāja_oNOUNMSGOBL rā_oADP muṃhaṛā_oNOUNMSGOBL āgai_oADP laṛāṃ_oVRB ṭūka-ṭūka_oNOUNM hoya_oCVBCVB paṛāṃ_oVRB 
+atarā-māhe_oADV sācorā_empty macharīka_oNOUNM gāhiṛa_oNOUNM rā_oADP gāḍā_oNOUNM phaujāṃ_oNOUNF rā_oADP lāḍā_oNOUNM kālhī_oNOUNM rā_oADP kaḷasa_oNOUNM satī_oNOUNFSG rā_oADP nāḷera_oNOUNM sādūḷa_oNOUNM rā_oADP sādūḷa_oNOUNM bhagawāna-amara_oNOUNM boliyā_oVPPPVRB bahādara_oNOUNMSGNOM 
+e_cPRON to_empty kahai_oVRB golāṃ_oNOUNM sara_oNOUNM bāṇāṃ_oNOUNM rī_oADP māri_oNOUNFSG lopi_oCVBCVB hāthiyāṃ_oNOUNM rā_oADP kuṃbhāthaḷāṃ_oNOUNM khaga-charā_oNOUNM vajāṛāṃ_oVRB gaja-ḍhāla_oNOUNF pāṛāṃ_oVRB 
+pātisāhāṃ_oNOUNM rā_oADP khāsāṃ_oADJ jhaṃḍāṃ_oNOUNM jāḍāṃ_oADJ thaṃḍāṃ_oADJ āḍāṃ_oADJ khaṃḍāṃ_oNOUNM jāyasyāṃ_oVRB rūka-piyālā_oNOUNM pīyasyāṃ_oVRB -_empty pāyasyāṃ_oVRB 
+cācari_oNOUNMSGNOM vihaṃḍasyāṃ_oVRB vihaṃḍāya-syāṃ_oVRB 
+dewatā_oNOUNMSGNOM syābāsa_empty kahisī_empty cyāra_empty juga_oNOUNM bāta_oNOUNFSG rahisī_oVRB 
+itarā-māhe_oADV boliyo_oVPPPVRB giradhara_oNOUNMSGNOM gāṃgāwata_oNOUNMSGNOM rāwatāṃ_oNOUNM pati_oNOUNMSGNOM rāwata_oNOUNMSGNOM pātisāhāṃ_oNOUNM rī_oADP nara_oNOUNM haiṃvara_oNOUNM kuṃjara_oNOUNM ghaṛāṃ_oNOUNFSG pachāṛāṃ_oVRB caṃda_oNOUNMSGNOM jasanāmo_oNOUNMSGNOM cāṛāṃ_oVRB 
+itarā-māhe_oADV boliyo_oVPPPVRB sāhibo_oNOUNMSGNOM kumbhāṇī_oNOUNMSGNOM muradharā_oNOUNMSGOBL ro_oADP aṇī-pāṇī_oNOUNMSGNOM 
+au_cPRON to_empty kahai_oVRB māharai_cPRON to_empty bhagawānadāsa_oNOUNMSGNOM vāghauta_oNOUNMSGNOM kahatā_oVRB 
+awasāṇa_oNOUNM maraṇa_oNOUNMSGNOM khaga-dhārā_oNOUNMSGNOM sāmi-kām-i_oNOUNM bhaṃjiyai_oVRB dehā_oNOUNFSG 
+socita_oNOUNMSGNOM cita_oNOUNMSGNOM nita-nittaṃ_oADV pāijjai_oVRB punna-rehā_oNOUNFSG 
+asa_cPRON au_cPRON tau_oADV vaḍo_oADJ awasāṇa_oNOUNM āyo_oVPPPVRB 
+ūṃḍai_oADJ drah-i_oNOUNM kilakilā_oNOUNMSGNOM jyūṃ_empty phūladhārā_oNOUNFSG vica_oADV uḍi_oCVBCVB paṛāṃ_oVRB 
+pātisāhāṃ_oNOUNM rī_oADP phaujāṃ_oNOUNMSGOBL sūṃ_oADP laṛāṃ_oVRB 
+mahābhāratha_oNOUNMSGNOM kari_oCVBCVB marāṃ_oVRB bagaṛī-jodhāṇa_oNOUNM ūjaḷā_oADJ karāṃ_oVRB 
+itarā-māhe_oADV boliyo_oVPPPVRB rāsau_oNOUNMSGNOM kuṃwara_oNOUNMSGNOM dūsaro_empty madhukara_oNOUNMSGNOM 
+au_cPRON to_empty kahai_oVRB jaḷāboḷa_oADJ riṇa-samaṃda_oNOUNMSGOBL māhe_oADP asi-jihāja_oNOUNM dharāṃ_oVRB kilaṃbāṃ_oNOUNM ghaṛā_oNOUNFSG māri_oCVBCVB pārī_oADV karāṃ_oVRB 
+marāṃ_oVRB to_empty apacharā_oNOUNF varāṃ_oVRB 
+nahīṃ_empty to_empty jīwita_oADJ siṃbha_empty hui_oCVBCVB ūbarāṃ_oVRB 
+bārahaṭha_oNOUNMSGNOM kahai_oVRB bāpa_oNOUNM ho_empty bāpa_oNOUNM 
+bāpa_oNOUNMSGOBL rai_oADP joṛai_oADV atuḷibaḷa_oNOUNMSGNOM bhalo_oADV trāṛiyo_oVPPPVRB bāḷa_oNOUNMSGNOM dhamaḷa_oNOUNMSGNOM 
+mahārāja_oNOUNM vimāha_oNOUNMSGOBL rai_oADP āgama_oADV maṃgala-dhawala_empty khaṃbhāicī_empty kījai_oVRB 
+piṇa_empty au_cPRON mahābhāratha_oNOUNMSGOBL ro_oADP āgama_oNOUNMSGNOM 
+eka_empty vāra_oNOUNM sūrāṃ_oNOUNM pūrāṃ_oADJ rā_oADP awasāṇa-siddha_oNOUNM khatriyāṃ_oNOUNM rā_oADP vaḍā_oADJ rāga_oNOUNMSGOBL māhe_oADP vaḍā_oADJ dūhā_oNOUNM gawāṛo_oVRB jyūṃ_empty sūrāṃ_oNOUNM pūrāṃ_oADJ rā_oADP cācarāṃ_oNOUNM rā_oADP kesa_oNOUNM caṇaṇāi-nai_oCVBCVB ūbhā_oVPPPVRB huwai_oVRB porisa_oNOUNMSGNOM caṛai_oVRB sīṃga_oNOUNMSGNOM brahmāṃḍa_oNOUNMSGNOM aṛai_oVRB kāyarāṃ_oNOUNM dhaṛā_oNOUNM paṛai_oVRB 
+vihāṇai_oNOUNM mrata-loka_oNOUNMSGOBL teṃ_oADP sraga-loka_oNOUNMSGNOM jāyasyāṃ_oVRB sūrāṃ_oNOUNM pūrāṃ_oADJ khitriyāṃ_oNOUNM rī_oADP vāta_oNOUNFSG suṇo_oVRB āpaṇī-hī_cPRON keī-eka_cPRON suṇasī_oVRB 
+vāha-vāha_empty bārahaṭhajī_oNOUNM 
+bhalī_oADV kahī_oVPPPVRB mana_oNOUNMSGOBL rī_oADP lahī_oVPPPVRB 
+hukama_oNOUNMSGNOM kiyā_oVPPPVRB jāṃgaṛiyai_oNOUNM baḍa_oADJ rāga_oNOUNMSGOBL māhe_oADP dūhā_oNOUNM diyā_oVPPPVRB 
+parijāū_oADJ dūhā_oNOUNM vegaṛai_oADJ sāṃḍa_oNOUNMSGOBL dhawaḷa_oADJ rā_oADP dūhā_oNOUNM ekala-giṛa_oNOUNMSGOBL vārāha_oNOUNMSGOBL rā_oADP dūhā_oNOUNM muṃja-mārawaṇī_oNOUNM rā_oADP dūhā_oNOUNM rāwa_oNOUNMSGOBL riṇamala_oNOUNMSGOBL rā_oADP dūhā_oNOUNM rāwa_oNOUNMSGOBL amara_oNOUNMSGOBL rā_oADP dūhā_oNOUNM kalyāṇamala_oNOUNMSGOBL rāyamalota_oNOUNMSGOBL rā_oADP dūhā_oNOUNM karaṇa_oNOUNMSGOBL rāmota_oNOUNMSGOBL rā_oADP dūhā_oNOUNM tejasī_oNOUNMSGOBL ḍūṃgarasīyota_oNOUNMSGOBL rā_oADP dūhā_oNOUNM 
+jaimala-pattā_oNOUNM rā_oADP dūhā_oNOUNM jaitā-kūṃpā_oNOUNM rā_oADP dūhā_oNOUNM prithīrāja_oNOUNMSGOBL jaitāwata_oNOUNMSGOBL rā_oADP dūhā_oNOUNM gāṃgā_empty ḍūṃgarota_empty rā_oADP dūhā_oNOUNM akhairāja_oNOUNMSGOBL sonigarā_oNOUNMSGOBL rā_oADP dūhā_oNOUNM nagai_oNOUNMSGOBL bhāramalota_oNOUNMSGOBL rā_oADP dūhā_oNOUNM amarai_oNOUNMSGOBL dharamāwata_oNOUNMSGOBL rā_oADP dūhā_oNOUNM īsara_oNOUNMSGOBL jīwāwata_oNOUNMSGOBL rā_oADP dūhā_oNOUNM sobhā_oNOUNMSGOBL sācorā_oNOUNMSGOBL vīkamasī_oNOUNMSGOBL rā_oADP dūhā_oNOUNM awara-hī_empty chattīsa_empty vaṃsa_oNOUNM awasāṇa-siddha_oADJ khitriyāṃ_oNOUNM rā_oADP dūhā_oNOUNM gāyā_oVPPPVRB ara_empty suṇāyā_oVPPPVRB 
+gajabaṃdha_oNOUNMSGNOM chatrabaṃdha_oNOUNMSGNOM gajarāja_oNOUNMSGNOM guṛasī_oVRB hiṃdū-asurāyaṇa_oNOUNMSGNOM laṛasī_oVRB 
+dilī_oNOUNFSG rā_oADP bhara_oNOUNM bhāratha_oNOUNMSGNOM bhuje_oNOUNM diyā_oVPPPVRB kamadhaja_oNOUNM mudai_oADV kiyā_oVPPPVRB 
+riṇakheta_oNOUNMSGOBL rai_oADP vikhai_oADV raṃgiyai_oADJ vāṇāsi_oNOUNM matavāḷā_oNOUNM jyūṃ_empty ghūmatā_oPTCPPTCP thakā_empty hāthiyāṃ_oNOUNM sūṃ_oADP ṭallā_oNOUNM khāyasyāṃ;_oVRB 
+mahārudra_empty nai_oADPDAT sira_empty pesa_oNOUNFSG karāṃ_oVRB apacharāṃ_oNOUNF varāṃ_oVRB 
+jaba_oADV tēṃ_cPRON rāmu_oNOUNMSGNOM byāhi_empty ghara_oNOUNMSGOBL āē_oVRB nita_empty nava_oADJ maṃgala_oNOUN badhāē._oVRB 
+bhuvana_oNOUN cāridasa_oADJ bhūdhara_oNOUN bhārī_oVRB sukṛta_empty mēgha_empty baraṣahi_empty sukha_oNOUNM bārī._oVRB 
+ridhi_oNOUN sidhi_oNOUN saṃpati_oNOUN nadīṃ_oNOUN suhāī_oVRB avadha_empty kahuṃ_oADP āī._oVRB 
+pura_empty nara_empty nāri_empty amōla_empty suṃdara_empty saba_empty 
+kahi_oCVBCVB na_empty jāi_cPRON kachu_empty nagara_oNOUNMSGOBL bibhūtī_empty janu_empty 
+saba_oADJ bidhi_empty saba_oADJ pura_oNOUN lōga_oNOUN rāmacaṃda_oNOUNM mukha_empty caṃdu_oNOUN 
+mātu_oNOUN saba_oADJ sahēlī_oNOUN 
+rāma_oNOUN rūpu_oNOUN gunasīlu_oNOUN pramudita_empty hōi_oVRB dēkhi_empty suni_empty rāū._empty 
+saba_oADJ abhilāṣu_oNOUN 
+achata_empty 
+ēka_empty samaya_oNOUNM saba_oADJ sahita_oADP samājā_empty rājasabhāṃ_empty raghurāju_empty 
+sakala_oADJ sukṛta_empty mūrati_empty naranāhū_empty rāma_oNOUN sujasu_empty suni_empty 
+nṛpa_empty saba_oADJ rahahiṃ_empty lōkapa_oNOUN prīti_oNOUNFSG 
+tibhuvana_empty tīni_empty kāla_oNOUNM jaga_empty bhāga_empty dasaratha_oNOUNM sama_empty nāhīṃ._empty 
+maṃgalamūla_empty rāmu_oNOUNMSGNOM suta_oNOUN jō_cPRON thōra_empty sabu_empty 
+rāyaṃ_oNOUNMSGOBL kara_oNOUNM līnhā_oVRB mukuṭa_empty sama_empty kīnhā._oVRB 
+śravana_oNOUNMSGOBL samīpa_oADP bhaē_oVRB sita_empty kēsā_oNOUNM ._empty jaraṭhapanu_empty 
+nṛpa_oNOUNM jubarāja_oNOUN rāma_oNOUNMSGOBL kahuṃ_oADP dēhū_oVRB jīvana_empty janama_empty lēhū._oVRB 
+yaha_cPRON bicāru_oNOUNMSGNOM ura_empty āni_oCVBCVB nṛpa_oNOUNM sudinu_oNOUNMSGNOM suavasaru_oNOUNMSGNOM pāi_oCVBCVB 
+prēma_empty mana_oNOUNM gurahi_empty sunāyau_oVRB jāi..2._oVRB 
+kahai_oVRB bhuālu_empty sunia_oVRB munināyaka_empty bhaē_oVRB rāma_oNOUN saba_oADJ saba_oADJ 
+sēvaka_oNOUN saciva_oNOUN sakala_oADJ purabāsī_oNOUN jē_cPRON hamārē_oADJ ari_oNOUN mitra_oNOUN udāsī._oNOUN 
+sabahi_empty rāmu_oNOUNMSGNOM priya_oADJ prabhu_empty asīsa_empty 
+sahita_oADP parivāra_oNOUN karahiṃ_empty saba_oADJ 
+jē_cPRON gura_oNOUN carana_oNOUN sira_empty dharahīṃ_oVRB tē_cPRON janu_empty sakala_oADJ bibhava_empty basa_empty karahīṃ._oVRB 
+mōhi_cPRON sama_empty yahu_cPRON anubhayau_empty na_empty dūjēṃ_oVRB sabu_empty pāyauṃ_oVRB pāvani_empty pūjēṃ._oVRB 
+aba_oADV abhilāṣu_oNOUN ēku_empty mana_oNOUNMSGOBL mōrēṃ_oVRB pūjahi_empty nātha_empty anugraha_empty 
+muni_oNOUNMSGNOM prasanna_oADJ lakhi_empty sahaja_empty sanēhū_empty kahēu_oVRB narēsa_empty rajāyasu_empty dēhū._oVRB 
+rājana_oNOUNM nāmu_oNOUNMSGNOM jasu_empty saba_oADJ abhimata_oNOUN dātāra_empty 
+mana_oNOUNMSGOBL abhilāṣu_oNOUN tumhāra..3._oADJ 
+saba_oADJ guru_oNOUNMSGNOM prasanna_oADJ jiyaṃ_empty bōlēu_oVRB 
+nātha_empty rāmu_oNOUNMSGNOM kariahiṃ_oVRB kahia_oVRB karia_oVRB 
+mōhi_cPRON achata_empty yahu_cPRON hōi_oVRB lōga_oNOUN saba_oADJ lōcana_empty 
+prabhu_empty yaha_cPRON ēka_oADJ 
+puni_empty na_empty sōca_empty na_empty 
+suni_oCVBCVB muni_oNOUNM dasaratha_oNOUNM bacana_oNOUN maṃgala_oNOUN mūla_oNOUN bhāē._empty 
+sunu_empty nṛpa_oNOUNM na_empty 
+rāmu_oNOUNMSGNOM 
+na_empty karia_oVRB nṛpa_empty sabui_empty 
+sudina_empty sumaṃgalu_empty jaba_oADV rāmu_oNOUNMSGNOM hōhiṃ_empty jubarāju..4._empty 
+mudita_oADJ mahipati_oNOUNM maṃdira_empty āē_oVRB sēvaka_oNOUN saciva_oNOUN sumaṃtru_oNOUN bōlāē._oVRB 
+sunāē._oVRB 
+lāgai_oVRB karahu_oVRB haraṣi_empty hiyaom_empty rāmahi_empty 
+maṃtrī_oNOUNMSGNOM mudita_oADJ sunata_empty priya_oADJ bānī_empty abhimata_oNOUN biravaom_empty parēu_empty janu_empty pānī._empty 
+saciva_oNOUN karahi_oVRB kara_oNOUNM jōrī_oCVBCVB jiahu_oVRB jagatapati_oNOUNM barisa_empty karōrī._empty 
+maṃgala_empty bhala_oADJ bicārā_empty bēgia_empty nātha_oNOUNM na_empty lāia_empty bārā._empty 
+nṛpahi_empty mōdu_empty suni_oVRB saciva_oNOUN subhāṣā_oNOUN baḍhata_empty bauṃḍa_empty janu_empty lahī_oVRB susākhā._empty 
+kahēu_oVRB bhūpa_oNOUN munirāja_oNOUN jōi_oADJ jōi_oADJ āyasu_empty hōi_oVRB 
+rāma_oNOUN rāja_oNOUNM abhiṣēka_empty hita_empty bēgi_empty karahu_oVRB sōi_empty sōi..5._empty 
+haraṣi_empty munīsa_oNOUNM kahēu_oVRB mṛdu_oADJ bānī_empty ānahu_oVRB sakala_oADJ sutīratha_oNOUN pānī._oNOUN 
+auṣadha_empty mūla_empty phūla_oNOUNM phala_oNOUNM pānā_oNOUN kahē_empty nāma_oNOUN gani_empty maṃgala_empty nānā._empty 
+cāmara_empty bahu_empty 
+manigana_empty bastu_empty anēkā_oADJ jō_cPRON jaga_empty bhūpa_oNOUN abhiṣēkā._empty 
+bēda_empty bidita_empty kahi_oCVBCVB sakala_oADJ bidhānā_oNOUN kahēu_oVRB racahu_empty pura_oNOUN bibidha_oADJ 
+saphala_empty 
+racahu_oVRB kahahu_oVRB 
+pūjahu_oVRB ganapati_empty gura_oNOUN kuladēvā_empty saba_oADJ bidhi_empty karahu_oVRB bhūmisura_empty sēvā._empty 
+dhvaja_empty patāka_empty tōrana_empty kalasa_oNOUNM sajahu_oVRB turaga_empty ratha_oNOUNM nāga_empty 
+sira_empty munibara_empty bacana_empty sabu_empty nija_oADJ nija_oADJ kājahiṃ_empty lāga..6._oVRB 
+jō_cPRON munīsa_oNOUNM dīnhā_empty sō_cPRON prathama_empty janu_empty kīnhā._oVRB 
+pūjata_empty rājā_oNOUNM karata_empty rāma_oNOUN maṃgala_empty 
+sunata_empty rāma_oNOUN abhiṣēka_empty suhāvā_empty avadha_empty 
+rāma_oNOUN sīya_oNOUN tana_empty saguna_empty janāē_empty pharakahiṃ_empty maṃgala_empty aṃga_empty suhāē._oVRB 
+saprēma_empty parasapara_empty kahahīṃ_oVRB bharata_oNOUN āgamanu_oNOUN ahahīṃ._oVRB 
+bahuta_oADJ dina_oNOUNM ati_empty avasērī_empty saguna_empty priya_oADJ 
+bharata_oNOUN sarisa_empty priya_oADJ kō_empty jaga_empty māhīṃ_empty ihai_empty saguna_empty phalu_empty dūsara_empty nāhīṃ._empty 
+rāmahi_empty sōca_empty dina_oNOUNM rātī_empty aṃḍanhi_empty kamaṭha_empty hradau_empty jēhi_empty 
+parama_empty 
+janu_empty 
+sunāē_oVRB bhūṣana_empty pāē._oVRB 
+prēma_empty mana_oNOUN anurāgīṃ_empty maṃgala_empty kalasa_oNOUNM saba_oADJ lāgīṃ._oVRB 
+sumitrāom_empty manimaya_empty bibidha_oADJ bhāomti_empty 
+ānaomda_empty rāma_oNOUNMSGOBL 
+grāmadēbi_empty kahēu_oVRB 
+jēhi_empty hōi_oVRB rāma_oNOUN kalyānū_empty dēhu_oVRB dayā_oNOUNFSG kari_oADP sō_cPRON 
+maṃgala_oNOUN 
+rāma_oNOUN rāja_oNOUNMSGNOM abhiṣēku_empty suni_empty nara_oNOUNM nāri_empty 
+lagē_empty sumaṃgala_empty sajana_empty saba_oADJ bidhi_empty anukūla_empty bicāri..8._empty 
+taba_empty naranāhaom_oNOUNMSGOBL basiṣṭhu_oNOUNMSGNOM bōlāē_oVRB rāmadhāma_empty sikha_oNOUNFSG dēna_oINF paṭhāē._oVRB 
+gura_oNOUN āgamanu_oNOUNM sunata_oPTCPV raghunāthā_oNOUNMSGNOM dvāra_oNOUN āi_empty pada_oNOUN māthā._oNOUN 
+dēi_oCVBCVB ghara_oNOUNMSGOBL ānē_empty sōraha_empty pūji_empty sanamānē._empty 
+gahē_oVRB carana_oNOUN siya_oNOUNFSG sahita_oADP bahōrī_empty bōlē_oVRB rāmu_oNOUNM kamala_empty kara_oNOUNM jōrī._empty 
+sēvaka_oNOUN sadana_empty svāmi_oNOUNM āgamanū_oNOUNM maṃgala_oNOUN mūla_oNOUN amaṃgala_oNOUN 
+tadapi_empty ucita_oADJ janu_empty bōli_oCVBCVB saprītī_empty paṭhaia_oVRB kāja_empty nātha_oNOUNM asi_empty nītī._empty 
+punīta_empty āju_oADV yahu_cPRON gēhū._oNOUNMSGNOM 
+āyasu_empty hōi_oVRB sō_cPRON karauṃ_oVRB gōsāī_empty sēvaka_oNOUNM lahai_oVRB svāmi_oNOUNM sēvakāī._empty 
+suni_empty sanēha_empty bacana_empty muni_oNOUNM raghubarahi_empty 
+rāma_empty na_empty tumha_cPRON kahahu_oVRB asa_empty 
+barani_empty rāma_oNOUNMSGOBL guna_oNOUNM sīlu_empty subhāū_empty bōlē_oVRB prēma_empty munirāū._oNOUNMSGNOM 
+bhūpa_oNOUN cāhata_oVRB dēna_oINFINF tumhahi_empty jubarājū._empty 
+rāma_oNOUNM karahu_oVRB saba_oADJ ājū_oADV jauṃ_empty bidhi_empty kusala_empty nibāhai_empty kājū._empty 
+guru_oNOUNMSGNOM sikha_oNOUNFSG dēi_oCVBCVB rāya_oNOUNMSGOBL pahiṃ_oADP gayau_oVRB rāma_oNOUNM hṛdayaom_empty 
+ēka_oADJ saṃga_empty saba_oADJ bhōjana_oNOUNM sayana_oNOUNM kēli_empty 
+karanabēdha_empty biāhā_empty saba_oADJ 
+yahu_cPRON ēkū_empty abhiṣēkū._empty 
+prabhu_empty saprēma_empty bhagata_oVRB mana_oNOUNMSGOBL kai_oADP 
+avasara_empty āē_oVRB lakhana_oNOUNM prēma_oNOUN ānaṃda_oNOUN 
+priya_oADJ raghukula_empty caṃda..10._empty 
+bibidha_oADJ nahiṃ_empty 
+bharata_oNOUN āgamanu_oNOUNM sakala_oADJ manāvahiṃ_oVRB āvahuom_empty nayana_empty phalu_empty pāvahiṃ._oVRB 
+bāṭa_empty ghara_oNOUNMSGOBL galīṃ_empty athāī_empty kahahiṃ_oVRB parasapara_empty lōga_oNOUN lōgāī._empty 
+kāli_oNOUNFSG bhali_oADJ pūjihi_oVRB abhilāṣu_oNOUN hamārā._oADJ 
+kanaka_empty siṃghāsana_empty sīya_oNOUNFSG samētā_oADP baiṭhahiṃ_empty rāmu_oNOUNMSGNOM hōi_oVRB cita_oNOUNMSGNOM cētā._empty 
+sakala_oADJ kahahiṃ_oVRB kaba_oADV hōihi_oVRB kālī_oNOUNFSG bighana_empty manāvahiṃ_empty dēva_empty 
+tinhahi_cPRON sōhāi_empty na_empty avadha_empty badhāvā_empty cōrahi_empty caṃdini_empty rāti_empty na_empty 
+sārada_oNOUN bōli_oCVBCVB binaya_empty karahīṃ_oVRB parahīṃ._oVRB 
+hamāri_oADJ mātu_oNOUNFSG karia_oVRB sōi_empty āju_oADV 
+rāmu_oNOUNMSGNOM jāhiṃ_oVRB bana_empty rāju_empty taji_empty hōi_oVRB sakala_oADJ surakāju..11._empty 
+suni_empty sura_empty binaya_empty ṭhāḍhai_oVRB pachitātī_empty bhaiuom_empty 
+dēkhi_oCVBCVB dēva_empty puni_empty kahahiṃ_oVRB nihōrī_empty mātu_oNOUNFSG tōhi_empty nahiṃ_empty thōriu_empty 
+bisamaya_empty haraṣa_empty rahita_empty raghurāū_empty tumha_cPRON jānahu_oVRB saba_oADJ rāma_oNOUNMSGOBL prabhāū._empty 
+jīva_oNOUN sukha_oNOUNM dukha_empty avadha_empty dēva_empty lāgī._oVPPPVRB 
+bāra_empty gahi_oCVBCVB carana_oNOUN saomkōcau_empty calī_oVPPPVRB bicāri_empty bibudha_empty 
+ūomca_oADJ nivāsu_oNOUNMSGNOM nīci_oADJ karatūtī_empty dēkhi_oCVBCVB na_empty sakahiṃ_empty parāi_empty bibhūtī._empty 
+kabi_empty 
+hṛdayaom_empty dasaratha_oNOUNM pura_oNOUN āī_empty janu_empty 
+kaikēi_empty 
+kari_empty 
+﻿majha_oADV thakī_empty māṃya_oADP aika_empty dhāṇī_empty jathai_oNOUN nītha_oADV paccīsa_empty tīseka_empty ghara_oNOUN hosī_oVRB 
+pakkā_oADJ ghara_oNOUN dhāṇī_empty māṃya_oADP doyaka_empty hosī_oVRB 
+dūjā_empty sagalā_oADJ jhūṃpā_oNOUN māṃya_oADP jīvaṇa_oNOUN basara_oNOUN karai_oVRB paryāvaraṇa_oNOUN pradūṣaṇa_oNOUN re_oADP nāṃva_oNOUN sūṃ_oADP anajāṇa_oNOUN sagalā_oADJ mauja_oNOUN sū_oADP raive_oVRB 
+athai_oADV kathai_oADV havā_oNOUN pradūṣaṇa_oNOUN vāṇī_oNOUN (dhvani)_oNOUN pradūṣaṇa_oNOUN ara_empty jala_oNOUN pradūṣaṇa_oNOUN naiṛau_oADJ ī_cPRON phaṭkyau_oVRB 
+sagalā_oADJ parivāra_oNOUN khetī_oNOUN kai_oADP dhāṃdā_oNOUN pālai_oVRB ara_empty iṇa_cPRON māthai_oADP īṅaja_oADV ghara_oNOUN ro_oADP gujaro_oNOUN kāṛhai_oVRB 
+thāṇī_oNOUN saira_oNOUN rī_oADP sagalī_oADJ bāṃtā_oNOUN sūṃ_oADP anajāṇa_oNOUN 
+do_empty tīneka_empty gharāṃ_oNOUN māya_oNOUN jarūra_oADV mila_oVRB jāvai_oVRB 
+sagalā_oADJ mauja_oNOUN sūṃ_oADP hilamila_oNOUN raive_oVRB 
+mūṃṛā_oNOUN māthai_oADP aṇūtā_oADJ nūra_oADJ 
+karadī_oNOUN meṇata_oNOUN karai_oVRB ara_empty peṭa_oNOUN pālai_oVRB 
+paṇa_empty iṇa_cPRON dhāṇī_oADJ rau_oNOUN raivāsī_oVRB 
+dīla_oNOUN sūṃ_oADP lāṃtho_oADJ avadhūta_oNOUN para_empty lata_oNOUN khoṭī_oADJ paṛagī_oADJ dārū_oNOUN pivaṇa_oVRB rī_oADP iṇa_cPRON bāṇa_oNOUN ke_oADP kāraṇa_oNOUN galiyāṃ_oNOUN māya_oNOUN rūlato_oVRB phirai_oADV ara_empty thothī_oADJ hathāyāṃ_oNOUN karato_oVRB raive_oVRB 
+kāma_oNOUN dhaṃdhā_oNOUN rau_oADP tau_empty nāṃva_oNOUN ī_cPRON nī_empty ghara_oNOUN 
+māṃya_oADP pandre_empty bīseka_empty chālyā_oVRB jarūrahai_oVRB 
+jiṇasū_cPRON ghara_oNOUN ro_oADP ṭabāro_oNOUN nitha_oADV guṛakai_oVRB 
+magaliyā_oNOUN rī_oADP chorī_oNOUN dhāpuṛī_oNOUN chālyā_oVRB carāve_oVRB 
+barasa_oNOUN pandreka_empty rī_oADP vhaigī_oNOUN paṇa_empty posāla_oNOUN ro_oADP mūṃdo_oNOUN taka_oADJ dekhyo_oVRB 
+posāṇa_oNOUN dhāṇī_oNOUN sūṃ_oADP alagī_oADV dūjai_empty gāṃva_oNOUN māṃya_oADP hī_empty ara_empty dhāṇī_oNOUN maṃya_oADP hoyā_empty kāṃī_cPRON vhaito_oVRB 
+gāṃva_oNOUN rā_oADP ghaṇakharā_oNOUN būdhiyā_oNOUN to_empty aika_empty ī_cPRON jūnī_oNOUN raṭa_oNOUN lagāyāṃ_empty baithyā_oVRB ha_oVRB bhaṇāī_oVRB kiso_oADJ vilāyata_oNOUN jāvaṇo_oVRB hai_oVRB 
+āpāṃ_cPRON ne_oADP au_cPRON īja_oNOUN dhaṃdhau_oNOUN karaṇo_oVRB hai_oVRB 
+ara_empty chorayāṃ_oNOUN ne..._oADP 
+āṃro_cPRON to_empty nāṃva_oNOUN letā_oVRB ī_cPRON bhaṃvārāṃ_oADJ āṃkhyāṃ_oNOUN jāvai_oVRB chorayāṃ_oNOUN ne_oADP bhaṇāra_empty ke_cPRON karaṇo_oVRB hai_oVRB 
+ai_cPRON to_empty parāe_oADV ghara_oNOUN jāsī_oVRB ara_empty lacūlā_oADJ caukī_oNOUN karasī_oVRB e_cPRON to_empty parāyo_oADJ dhana_oNOUN hai_oVRB parāeṃ_oADP ghara_oNOUN jāsī_oVRB 
+bakhata_oNOUN rī_oADP bāta_oNOUN rāja_oNOUN rī_oADP yojanā_oNOUN mujaba_oADV dhāṇī_oNOUN māṃya_oADV ākhara_oADJ kendra_oNOUN khulyī_oVRB 
+kanai_oADV gāṃva_oNOUN rī_oADP aika_empty bhaṇī_empty paṛhī_empty chorī_oNOUN nīlama_oNOUN ne_oADP o_cPRON ākhara_oADJ kendra_oNOUN calāvaṇa_oNOUN ro_oADP bīṛo_oNOUN sūṃpiyau_oVRB 
+keī_cPRON tināṃ_cPRON tāṃī_oADP vīṃ_cPRON dhāṇī_cPRON rā_oADP minakha_oNOUN lugāyā_oNOUN tābai_oADV āyā_oVRB para_empty uṇa_cPRON ākhara_oADJ dū_empty nīlama_oNOUN re_empty samajhāvaṇa_empty dhāṇī_oNOUN rā_oADV ghaṇakarā_oADJ ṭābarāṃ_oNOUN ne_oADP kendra_oNOUN māthai_oADP paṛhāvaṇa_oVRB sārū_oADP hāmī_cPRON bharī_oVRB ara_empty dekhatā_empty dekhatā_empty ṭābara_oNOUN padhaṇa_empty lāga_oVRB 
+aika_empty dina_oNOUN rī_oADP bāta_oNOUN dhāpuṛī-pagadāṇdī_oNOUN rai_oADP māṃya_oADV chālyāṃ_oNOUN carāve_oVRB āparī_cPRON dhuna_oNOUN meṃ_oADP lāgyoṛī_empty gīta_oNOUN gāvai_oVRB hī_oVRB 
+chaila_oNOUN bhaṃvara_oNOUN rau_oADP kāgadiyau_oADJ mhaiṃ_cPRON bācūṃlā_oNOUN jī_oNOUN bācūṃlā_oNOUN cha_oVRB iṇa_cPRON īja_oNOUN olī_oNOUN bā_oNOUN kitarī_oADJ bāla_oNOUN gāī_oVRB hī_oVRB 
+ākhara_oNOUN dūta_oNOUN nīlama_oNOUN bathī_empty kara_empty dhāṇī_oNOUN jāvai_oVRB hī_oVRB 
+nīmala_oNOUN kī_oADP tāla_oNOUN cthāpuṛī_oNOUN ro_oADP gīta_oNOUN suṇiyau_oVRB ara_empty mātho_oADV dhuṇiyo_oVRB mana_oNOUN māṃya_oADP kīṃ_cPRON kaivaṇa_empty lagīcha_oVRB ā_cPRON aṇapaṛha_oADJ kiyāṃ_empty kāgada_oNOUN bāṃcelā_oVRB para_empty iṇaro_cPRON supano_oNOUN mhai_cPRON sāṃco_oADJ karūlāṃ_oVRB 
+ara_empty dhāpuṛī_oNOUN ne_oADP naidī_oNOUN bulāī_oVRB bīnai_oADP samajhāī_empty ki_oADP tū_cPRON cāvai_oVRB o_cPRON ākhara_oADJ kendra_oNOUN māthai_oADP āya_empty siṃjhvā_oNOUN rā_oADP paṛha_oVRB sakai_oVRB ara_empty thāṃro_cPRON kāgada_oNOUN vāṃcaṇa_oNOUN rau_oADP supanau_oNOUN pūro_oADJ kara_oVRB sake_oVRB 
+dhāpuṛī_oNOUN haṃsatī_empty thakī_empty kahavaṇa_empty lāgī_oVRB kisī_cPRON bāṃta_oVRB karo_oVRB ho..._oVRB 
+abai_oADV kuṇasī_cPRON padhaṇa_empty rī_oADP osthā_oNOUN hai..._oVRB 
+abai_oADV to_empty hātha_oNOUN ī_cPRON ko_oADP tule_oADJ nīṃ..._empty 
+nīlama_oNOUN paṇa_empty haṃsatī_empty thakī_empty samajhāvaṇa_empty lāgī_oVRB gailī_oVRB huī_oVRB hai..._oVRB 
+e_cPRON phakata_empty thārau_cPRON mana_oNOUN rau_oADP bahama_oNOUN hai_oVRB 
+thū_cPRON mharai_cPRON kanai_oADP mhai_cPRON thanai_cPRON bhaṇāva_oNOUN desyūṃ_oVRB 
+nīmala_oNOUN rī_oADP bāta_oNOUN suṇa_empty dhāpuṛī_oNOUN re_oADP mana_oNOUN māṃya_oADP bhaṇāī_empty karaṇa_oNOUN rau_oADP umāva_oNOUN vāpariyo_oVRB 
+siṃjhyā_oNOUN tāṃī_oADP gharāṃ_oNOUN jāva_oVRB sagalī_oADJ vigata_oNOUN māṃ_oNOUN ne_oADP suṇāī_oVRB 
+para_empty beṭī_oNOUN rī_oADP bāta_oNOUN suṇatā_empty māvaṛa_oNOUN rī_oADP āṃkhyā_oNOUN sūṃ_oADP āṃsuvāṃ_oNOUN rī_oADP dhāra_oNOUN bahavaṇa_empty lāgī_oVRB 
+bā_oNOUN rovatī_empty thakī_empty kaivā_empty lāgī_oVRB beṭī_oNOUN mhanai_cPRON to_empty kīṃ_cPRON olamo_oNOUN konīṃ_empty para_oADP dhārā_oNOUN dāruṛiyā_oADJ bāpa_oNOUN ne_oADP thā_oVRB paṛī_oVRB to_empty donyū_empty re_oADP hāṭakāṃ_oNOUN ro_oADP cūramo_oNOUN kara_empty nhākhasī_oVRB 
+uṇanai_cPRON kuṇa_cPRON samajhāsī_oVRB dhāpuṛī_oNOUN pherūṃ_oVRB kaivaṇa_oVRB lāgī_oVRB bāpū_oNOUN nitakā_oNOUN dārū_oNOUN rā_oADP nasā_oNOUN ne_oADP hiṃdatā_empty thakā_empty ādhī_oADJ tāṃī_oADP gharā_oNOUN pūgai_oVRB jitai_oADV mhaiṃ_cPRON baigī_oNOUN sī_oADP pāchī_oADP āya_empty jāsyūṃ_oVRB beṭī_oNOUN re_oADP mana_oNOUN rī_oADP pīṛa_oNOUN ara_empty umāva_oNOUN ne_oADP dekha_oVRB māṃ_oNOUN rī_oADP chārī_oNOUN bharījagī_empty ara_empty kahyo_oVRB beṭī_oNOUN thūṃ_cPRON jā_oVRB 
+abai_oADV dhāpuṛī_oNOUN ākhara_oADJ kendra_oNOUN para_oADP nitakā_oNOUN jāvaṇa_empty lāgī_oVRB umāva_oNOUN ara_empty lagane_oNOUN pāṃṇa_oNOUN dhāpuṛī_oNOUN baigī_oNOUN sī_oADP akhabāra_oNOUN rā_oADP ākhara_oADJ vāṃcaṇa_empty lāgagī_oVRB 
+paṇa_empty bāṃcaṇa_empty lāgagī_oVRB 
+māṃ_oNOUN āparī_cPRON beṭī_oNOUN ne_oADP iyāṃ_oADV dekha_empty ghaṇī_oADV rājī_oADJ vhī_oVRB bā_oNOUN rāja_oNOUN rī_oADP yojanā_oNOUN rā_oADP ghaṇā_oADV bakhāṇa_oNOUN karaṇa_empty lāgī_oVRB dhāṇī_oNOUN rā_oADP ghaṇakarā_oNOUN bhalāī_oADJ paṛhāī_oNOUN karaṇa_empty lāgā_oVRB 
+dhālī_oNOUN rā_oADP sagalā_oADJ minakha_oNOUN lugāyāṃ_oNOUN ṭābara_oNOUN abai_oADV nīmala_oNOUN ākhara_oADJ kaive_oVRB 
+nīlama_oNOUN ne_oADP dhāṇī_oNOUN māṃya_oADP ghaṇau_oADV sanmāna_oNOUN daive_oVRB 
+bakhata_oNOUN kitanai_cPRON ī_cPRON udīkai_oVRB konī_empty ara_empty bakhata_oNOUN āyā_empty dhāpuṛī_oNOUN moṭyāra_oADJ vhaigī_oNOUN kanai_oADV gāṃva_oNOUN meṃ_oADP dhāpuṛī_oNOUN ro_oADP byāva_oNOUN vhaigo_oVRB 
+dhāpūṛī_oNOUN ro_oADP dhaṇī_oNOUN paṇa_empty ākhara_oADJ bācaṇa_oNOUN jogo_oNOUN ī_cPRON ho_oVRB 
+dhāpuṛī_oNOUN ghara_oNOUN ro_oADP sagalo_oADJ kāma_oNOUN kāja_oNOUN āparai_cPRON balabūtai_oNOUN karaṇa_empty lāgī_oVRB 
+dhāpuṛī_oNOUN sāsarā_oNOUN māṃya_oADP sagalo_oADJ re_oADP mana_oNOUN bhāvaṇa_oVRB lāgī_oVRB 
+gāṃva_oNOUN māṃya_oADP koī_cPRON baithaka_oNOUN kai_cPRON miṭiṃga_oNOUN vhai_oVRB to_empty dhāpuṛī_oNOUN ne_oADP jarūra_oADV bulāvai_oVRB 
+abakālai_oADV gāṃva_oNOUN rai_oADP sirapaṃca_oNOUN ro_oADP lugāyāṃ_oNOUN miliyo_oVRB ā_cPRON khabara_oNOUN rī_oADP gāṃva_oNOUN māṃya_oADP ki_oADP abakālai_oADV gāṃva_oNOUN ro_oADP sirapaṃca_oNOUN lugāī_oNOUN baṇasī_oVRB 
+gāṃva_oNOUN moṭo_oADJ iṇa_cPRON sārū_oADJ lugāyāṃ_oNOUN ro_oADP paṇa_empty iṇa_cPRON re_oADP sagalā_oADJ ne_oADP dhāpuṛī_oNOUN ī_cPRON ja_oVRB jaṃcī_oVRB 
+gāṃva_oNOUN rī_oADP baithaka_oNOUN vhī_oVRB 
+kuṇa_cPRON ī_cPRON dhāpuṛī_oNOUN re_oADP nāṃva_oNOUN māthai_oADP virodha_oADV nīṃ_empty jatāyo_oVRB ara_empty gāṃva_oNOUN rī_oADP siraipaṃca_oNOUN cuṇa_oVRB dī_oVRB 
+dhāpuṛī_oNOUN vhai_oVRB hātha_oNOUN joṛa_oNOUN sagalā_oADJ gāṃva_oNOUN vālo_oNOUN ro_oADP ābhāra_oNOUN jatāyau_oVRB 
+ara_empty āparā_cPRON bhāṣaṇa_oNOUN meṃ_oADP sūṃ_oADP aṇapaṛha_oADJ eka_empty chālyāṃ_oNOUN carāvaṇa_empty dhāpuṛī_oNOUN gāṃva_oNOUN rā_oADP siramora_oNOUN tāṃī_oADP nīṃ_empty socyau_oVRB ho_oVRB paṇa_empty rāja_oNOUN rī_oADP yojanā_oNOUN re_oADP mujaba_oADV khulyau_oVRB ākhara_oADJ kendra_oNOUN mhanai_cPRON iṇa_cPRON tāṃī_oADP meṃ_oADP mahatāū_oNOUN nibhāī_oVRB 
+āpa_cPRON sagalāṃ_oADJ sūṃ_oADP ā_cPRON īja_oNOUN cāvūṃ_oVRB ke_cPRON āpa_cPRON āparā_cPRON ṭābarāṃ_oNOUN ne_oADP jarūra_oADV bhaṇāvo_oVRB 
+dhinavādaṅa_oNOUN dhāpuṛī_oNOUN āparai_cPRON piyara_oNOUN gaī_oVRB māṃ_oNOUN bāpū_oNOUN ne_oADP dhoka_oNOUN donī_oVRB 
+āja_oADV māṃ_oNOUN odhaṇī_oNOUN ro_oADP pallo_oNOUN (āṃcala)_oNOUN khuśī_oADJ re_oADP āsuvāṃ_oNOUN sūṃ_oADP tara_oADJ vhaigo_oVRB ho_oVRB 
+bāpū_oNOUN paṇa_empty ghaṇau_oADV rājī_oADJ vhiyau_oVRB 
+beṭī_oNOUN re_empty siraipaṃca_oNOUN baṇaṇa_empty rī_oADP khusī_oADJ māṃya_oADP bo_cPRON dārū_oNOUN choṛa_oVRB diyau_oVRB 
+kyūṃke_empty abai_oADV uṇarī_cPRON āṃkhyāṃ_oNOUN khulagī_oVRB uṇaro_cPRON sira_oNOUN ūṃco_oADJ vhaigo_oVRB ho_oVRB 
+abai_oADV bo_cPRON siraipaṃca_oNOUN beṭī_oNOUN ro_oADP bāpa_oNOUN kahijai_oVRB 
+dhāpuṛī_oNOUN dhāṇī_oNOUN ghara-ghara_oNOUN jāya_empty būṛhā_oADJ baderāṃ_oNOUN ne_oADP dhoka_oNOUN dīnī_oVRB ara_empty ṭābarāṃ_oNOUN ne_oADP paṛhāvaṇa_empty rī_oADP bhulāvaṇa_empty detī_oVRB rahī_oVRB 
+ākhara_oADJ kendra_oNOUN pūkī_empty ākhara_oADJ bainajī_empty nīlama_oNOUN sūṃ_oADP galai_oADV milī_oVRB 
+kaivaṇa_empty lāgī_oVRB hai_oVRB o_empty rāja_oNOUN ara_empty iṇarī_cPRON yojanāvāṃ_oNOUN māṃya_oADP chālyāṃ_oVRB carāvaṇa_empty ālī_oVRB dhāpuṛī_oNOUN iṇa_cPRON tāṃī_oADP pugī_oVRB 
+dhāpuṛī_oNOUN khuda_cPRON husyāra_oADJ hī_oVRB iṇa_cPRON khātara_oNOUN sagalā_oADJ kāgada_oNOUN pānaṛā_empty khuī_oVRB ī_cPRON bāṃcatī_empty ara_empty gāṃva_oNOUN ro_oADP vikā_oADV karāyo_oVRB 
+abai_oADV uṇane_cPRON bhaṇiyā_empty paṛhiyā_empty siraipaṃca_oNOUN pati_oNOUN kai_cPRON dūjā_empty moṭā_oADJ rūṃkha_oNOUN rī_oADP jarūrata_oNOUN nī_empty paṛī_oVRB hī_oVRB 
+dhāpuṛī_oNOUN gāṃva_oNOUN ro_oADP ara_empty parivāra_oNOUN ro_oADP nāṃva_oNOUN ūṃcau_oADJ kīno_oVRB 
+bā_oNOUN jaī_cPRON jāvatī_oVRB ara_empty baithaka_oNOUN hovatī_oVRB pailī_empty ṭābarāṃ_oNOUN ne_oADP padhāvaṇa_empty rī_oADP bhulāvaṇa_empty daivatī_oVRB pachai_oADV dūjīṃ_empty baṃtala_oNOUN karatī_oVRB 
+﻿śrī_oADJ śrī_oADJ parameswara_oNOUNMSGNOM jī_oADJ satya_oNOUNMSGNOM chai_oVRB 
+svasti_empty śrī_oNOUNMSGNOM gāṃwa_oNOUNMSGNOM ḍāyalāṇā_empty suthāne_oNOUNM caudharījī_oNOUN śrī_oNOUNMSGNOM rājasiṃghajī_oNOUN jyoga_empty laskara-_oNOUNMSGOBL thāṃ_empty rāja_oNOUNMSGNOM śrī_oNOUNMSGNOM duragādāsajī_oNOUN likhāwataṃ_oVRB juhāra_oNOUNMSGNOM awadhārajo_oVRB jī_oADJ 
+aṭhā-_oADV rā_oADP samācāra_oNOUNM śrī_oADJ mahārājājī-_oNOUNMSGOBL rā_oADP teja-pratāpa_oNOUNMSGOBL kara_oADP bhalā_oADJ hai_oVRB 
+rāja-_oNOUNMSGOBL rā_oADP kāgaḷa_oNOUNMSGNOM samācāra_oNOUNM sadā_oADV bhalā_oADJ cāhījai_oVRB 
+rāja_oNOUNMSGOBL uprāṃta_empty mhāṃrai_cPRON kāṃī_cPRON vāta_oNOUNFSG na_empty chai_oVRB 
+aṭhā_oADV sārū_oADP kāma-kāja_oNOUNM huwai_oVRB sū_oADV likhiyā_empty karajo_oVRB kiṇī_cPRON vāta-_oNOUNFSG rī_oADP judāyagī_oNOUNFSG mata_empty jāṇajo_oVRB 
+aṭhā-uṭhā-_oADV rī_oADP eka_oADJ vāta_oNOUNFSG kara_oCVBCVB jāṇajo_oVRB jī_oADJ 
+apraṃca_empty rāja-_oNOUNMSGOBL ro_oADP kāgaḷa_oNOUNMSGNOM āyo_oVPPPVRB 
+samācāra_oNOUNM poṃchiyā_oVPPPVRB 
+āṃbāṃ-_oNOUNM rī_oADP lāpasī_oNOUNFSG melhī_oVPPPVRB thī_oVRB sū_cPRON pohatī_oVPPPVRB chai_oVRB 
+aprṃca_empty śrī_oADJ akabarajī-_oNOUN rī_oADP hujūra-_oNOUNMSGOBL thā_oADP kāsīda_oNOUNM āgai_oADV āyā_oVPPPVRB thā_oVRB 
+āṃ_cPRON sāthai_oADP samācāra_oNOUNM āyā_oVPPPVRB thā_oVRB sū_oADV mhe_cPRON rāja-_oNOUNMSGOBL nūṃ_oADPDAT pahalāṃ_oADV likhiyo_oVPPPVRB chai_oVRB 
+nai_empty dikhaṇā-_oNOUNMSGOBL rī_oADP khabara_oNOUNFSG āyāṃ_oVPPPVRB 
+yo_cPRON āyī_oVPPPVRB chai_oVRB mu0_empty kābula-_oNOUN thā_oADP amīrakhāṃ_oNOUN pātasāha-_oNOUNMSGOBL nuṃ_oADPDAT vākā-_oNOUNM meṃ_oADP likhiyo_oVPPPVRB chai_oVRB jū_empty akabarajī-_oNOUN ro_oADP thāṇo_oNOUNMSGNOM khaṃdhāra_oNOUN āyo_oVPPPVRB chai_oVRB nai_empty asawārī_oNOUNFSG huyī_oVPPPVRB chai_oVRB satāba_oADV hindusathāna-_oNOUNMSGOBL nūṃ_oADPDAT āwasī_oVRB 
+tiṇa_cPRON ūpara_oADP ājama_oNOUN tārā-_empty nūṃ_oADPDAT vidā_oNOUNFSG kiyo_oVPPPVRB chai_oVRB 
+rājā_oNOUNMSGOBL rāmasiṃgha-_oNOUNMSGOBL rā_oADP potarā-_oNOUNM nūṃ_oADPDAT doya_empty hajārī_oNOUNF cāra_empty hajāra_empty asawāra_oNOUNM nai_empty eka_empty kiroṛa_empty dāma_oNOUNM ināma_oNOUNMSGNOM de-_oCVBCVB nai_oADP rājārāma_oNOUNMSGOBL ūpara_oADP vidā_oNOUNFSG kiyo_oVPPPVRB chai_oVRB 
+aura_empty samācāra_oNOUNM āwasī_oVRB sū_cPRON rāja-_oNOUNMSGOBL nai_oADPDAT likhasāṃ_oVRB 
+samasatha_oADJ sātha-_oADV ro_oADP juhāra_oNOUNMSGNOM awadhārajo_oVRB 
+vaḷatā_oPTCPPTCP kāgada-samācāra_oNOUNM vegā_oADV dejo_oVRB 
+āsāḍha_oNOUNMSGNOM sudi_oNOUNFSG 13_empty ravivāra_oNOUNMSGNOM mukāma_oNOUNMSGNOM koṭaṛā_oNOUN 
+﻿adālatī_oADJ nyāya-_oNOUNMSGOBL nūṃ_oADPDAT adala_oNOUNMSGNOM gahaṇo_oNOUNMSGNOM kahaje_oVRB 
+mulka-_oNOUNMSGOBL rī_oADP nai_empty nūra-_oNOUNMSGOBL rī_oADP ā_cPRON saṃvāraṇahāra_oADJ jota_oNOUNFSG chai_oVRB 
+prabhū-_oNOUNMSGOBL rī_oADP moṭā_oADJ baṃdāṃ-_oNOUNM nuṃ_oADPDAT āhī_cPRON āgyā_oNOUNFSG chai_oVRB adala_oNOUNMSGNOM karo_oVRB ahasāṇa_oNOUNMSGNOM karo_oVRB 
+adala_oNOUNMSGNOM o_cPRON chai_oVRB nyāya_oNOUNMSGNOM doharāṃ-dūbaḷā-_oNOUNM nūṃ_oADPDAT sabalāṃ_oNOUNM kanhai_oADP dirāwai_oVRB 
+ahsāṇa_oNOUNMSGNOM o_cPRON chai_oVRB je_cPRON doharāṃ-dūbaḷāṃ-nirāsāṃ_oNOUNM ūpara_oADP dayā_oNOUNFSG kara_oCVBCVB uṇa-_cPRON rī_oADP manasā_oNOUNFSG pūraṇa_oADJ karai_oVRB 
+vaḍāṃ_oNOUNM kahī_oVPPPVRB chai_oVRB eka_oADJ sāyata_oNOUNMSGNOM nyāya-_oNOUNMSGOBL rī_oADP bādaśāha-_oNOUNMSGOBL nūṃ_oADPDAT tola-_oNOUNMSGOBL maiṃ_oADP sāṭha_empty varasa-_oNOUNM rī_oADP baṃdagī_oNOUNFSG jyūṃ_empty kharī_oADJ chai_oVRB 
+baṃdagī-_oNOUNFSG ro_oADP napho_oNOUNMSGNOM karaṇaiwāḷā_oNOUNMSGOBL siwāya_oADV kiṇī_cPRON dūjā-_oNOUNM nūṃ_oADPDAT na_empty pahoṃcai;_oVRB nai_empty phāyado_oNOUNMSGNOM adala-_oNOUNMSGOBL ro_oADP khāsa-āma_oNOUNM moṭā-choṭāṃ-_oNOUNM nūṃ_oADPDAT pahoṃcai_oVRB 
+dharama_oNOUNMSGNOM karaṇa-_oNOUNMSGOBL rī_oADP bhalāī_oNOUNFSG adala-_oNOUNMSGOBL sūṃ_oADP āchī_oADJ kāyama_oADJ dīsai_oVRB 
+nyāya-_oNOUNMSGOBL ro_oADP dharama_oNOUNMSGNOM lekhā-_oNOUNMSGOBL sūṃ_oADP ghaṇo_oADV chai_oVRB mana-_oNOUNMSGOBL rai_oADP vicāra-_oNOUNMSGOBL sūṃ_oADP bāhara_oADV chai_oVRB 
+eka_oADJ bādaśāha-_oNOUNMSGOBL nūṃ_oADPDAT icchā_oNOUNFSG huī_oVPPPVRB je_cPRON makkai-sarīpha-_oNOUN rī_oADP jātrā_oNOUNFSG karūṃ_oVRB 
+﻿pātūṛī_oNOUN gāṃva_oNOUN rī_oADP rohī_oNOUN meṃ_oADP chālyāṃ_oNOUN carābai_oVRB hī_oVRB 
+umara_oNOUN rai_oADP lagahai_oVRB ṭagai_oNOUN hosī_oVRB mana_oNOUN sūṃ_oADP bholī-dhālī_oADJ para_empty āṃkha_oNOUN uṇiyārai_oNOUN phūṭarī_oADJ ara_empty husyāra_oADJ chorī_oNOUN 
+iṇarai_cPRON doya_empty moṭī_oADJ bainā_oNOUN hī_empty jo_cPRON ghara_oNOUN ro_oADP kāma_oNOUN kāṇa_oNOUN īja_oNOUN karai_oVRB hī_oVRB 
+pātūṛī_oNOUN gāṃva_oNOUN rī_oADP posāla_oNOUN māṃya_oADP bhaṇai_oVRB hī_oVRB 
+bā_oNOUN bhaṇāī_empty padhāī_empty meṃ_oADP sūṃ_oADP agāṛī_oADV khātara_oNOUN posāla_oNOUN rā_oADP sagalā_oADJ māṭa_oNOUN sāṅaba_oNOUN bātūṛī_oNOUN ro_oADP ghaṇau_oADJ lāṛa_oNOUN rākhatā_oVRB hā_oVRB 
+eka_empty dina_oNOUN pātūṛī_oNOUN rohī_oNOUN meṃ_oADP chālyāṃ_oNOUN carāvai_oVRB hī_oVRB 
+chālyāṃ_oNOUN kanai_oADV sī_oADP dhorā_oNOUN māthai_oADP phoga_oNOUN cabāvai_oVRB hī_oVRB pātūṛī_oNOUN naiṛai_oADV eka_empty nāṛī_oNOUN para_oADV pāṇī_oNOUN levaṇa_empty gaī_oVRB to_empty vā_cPRON ṭābara_oNOUN paṇā_oNOUN rī_oADP ramata_oNOUN meṃ_oADP lāgagī_oVRB ara_empty thoṛī_oADJ tāla_oNOUN bathai_oVRB ī_cPRON māṭī_oNOUN rā_oADP ramatiyā_oNOUN baṇāvaṇa_empty lāgagī_oVRB 
+pherūṃ_oVRB hātha_oNOUN paga_oNOUN dhovaṇa_empty sārū_oADP nādī_oNOUN re_oADP pāṇa_oNOUN māṃya_oADP utarī_oVRB to_empty ajāṇacaka_oADV pātūṛī_oNOUN ro_oADP paga_oNOUN uṃṛai_oADJ khādā_oNOUN māṃya_oADP paṛagau_oVRB ara_empty bā_oNOUN pisalara_empty pāṇī_oNOUN māṃya_oADP gucalakā_oNOUN khāvaṇa_empty lāgī_oVRB 
+hākā_oNOUN karaṇa_empty lāgī_oVRB 
+nādī_oNOUN kāṃnī_oADV hūṃ_cPRON hākā_oNOUN rohī_oNOUN meṃ_oADP chālyāṃ_oNOUN carāvatā_empty uṇarai_cPRON sāgai_oADP padhaṇa_empty bhojā_oNOUN rai_oADP kānāṃ_oADP paṛī_oVRB to_empty ubhā_empty pagāṃ_oNOUN dauṛara_empty ne_oADP pāṇī_oNOUN sūṃ_oADP bārai_oADP kādhī_oVRB 
+pātūṛī_oNOUN re_oADP nāka_oNOUN ara_empty mūṃdai_oNOUN sūṃ_oADP pāṇī_oNOUN āyau_oVRB ghaṛī_oNOUN doyake_empty re_oADP pathai_oADP pātaṛū_oNOUN ro_oADP jīva_oNOUN tābai_oADV āyau_oVRB 
+bā_oNOUN bhojā_oNOUN ne_oADP dauṛatā_empty āvato_empty dekha_oVRB liyau_oVRB ho_oVRB 
+bā_oNOUN gharāṃ_oNOUN jāya_empty sagalī_oADJ bītī_empty bāta_oNOUN āparī_cPRON māṃ_oNOUN ara_empty bāpū_oNOUN ne_oADP batāī_oVRB to_empty pātūṛī_oNOUN rā_oADP māyata_oNOUN ghaṇā_oADV rājī_oADJ vhiyā_oVRB 
+bhojā_oNOUN ne_oADP gharāṃ_oNOUN āvaṇa_empty ro_oADP kahyo_oVRB 
+bhojo_oNOUN rā_oADP māyatāṃ_oNOUN ghaṇā_oADJ bakhāṇa_oNOUN karyā_cPRON bhaī_oNOUN bhojā_oNOUN āja_oADV thūṃ_cPRON bathai_oVRB nī_empty vhaito_oVRB ara_empty pātūṛī_oNOUN ne_oADP bārai_oADP nīṃ_empty kādhatau_oVRB to_empty ā_cPRON āja_oADV mara_oVRB ī_empty jātī_oVRB 
+pātūṛī_oNOUN bhaujā_oNOUN eka_empty dorau_oADJ bāṃdha_oNOUN dharama_oNOUN ro_oADP bhāī_oNOUN māna_oVRB liyau_oVRB 
+tīnūṃ_empty baināṃ_oNOUN bhojā_oNOUN ne_oADP dharama_oNOUN ro_oADP bhāī_oNOUN bālapaṇā_oNOUN rī_oADP bhaula_oNOUN meṃ_oADP sagalau_oADV dūdha_oNOUN nijara_oADV āvai_oVRB 
+bhojo_oNOUN paṇa_empty pātūṛī_oNOUN ara_empty dūjī_empty nai_oADP baināṃ_oNOUN samajhaṇa_empty lāgau_oVRB 
+bhojau_oNOUN khātā_empty pītā_empty ro_oADP chorau_oVRB ho_oVRB iṇa_cPRON khātara_oNOUN iṇarāṃ_cPRON māṃyata_oNOUN uṇanai_cPRON saira_oNOUN rī_oADP aṃgrejī_oADJ posāṇa_oNOUN māṃya_oADP sārū_oADJ saira_oNOUN mela_oNOUN diyau_oVRB ho_oVRB 
+bakhata_oNOUN udīkai_oVRB ara_empty ṭaima_cPRON nikalā_oVRB jaija_oVRB nīṃ_empty lāgī_oVRB 
+bakhata_oNOUN āyā_empty pātūṛī_oNOUN moṭyāra_oADJ vhaigī_oVRB dīla_oNOUN bharīyai_oADJ golai_oVRB 
+gola_oNOUN uṇiyāro_oVRB 
+moṭī_oADJ moṭī_oADJ āṃkhyāṃ_oNOUN 
+goro_oADJ dīla_oNOUN ghaṇī_oADJ phūṭarī_oADJ lāgai_oVRB hī_empty pātūṛī_oNOUN 
+para_empty uṇarai_cPRON ghara_oNOUN rī_oADP māṛī_empty hālata_oNOUN re_oADP kāraṇa_oNOUN tīnūṃ_empty moṭyāra_oADJ choryāṃ_oNOUN ro_oADP byāva_oNOUN ajai_oADV nī_empty vhai_oVRB sakiyau_oVRB ho_oVRB 
+bhojo_oNOUN paṛhāī_oNOUN karatau_empty thakau_empty saira_oNOUN rī_oADP jagata_oNOUN posāla_oNOUN māṃya_oADP padhaṇa_empty lāgau_oVRB hau_oVRB 
+para_empty bathai_oNOUN rī_oADP saubata_oNOUN re_oADP bhojā_oNOUN ara_empty dārū_oNOUN ara_empty dūjā_empty naśā_oNOUN karaṇa_empty lāgago_oVRB 
+ā_cPRON kaiva_empty hai_oVRB ki_empty kālyā_oNOUN re_oADP kanai_oADP dholyo_oVRB raive_oVRB to_empty guṇa_oNOUN nīṃ_empty to_empty lakhaṇa_oNOUN to_empty levai_oVRB ija_oNOUN 
+iṇa_cPRON mujaba_oADV bhojo_oNOUN paṇa_empty dūjā_empty chorāṃ_oNOUN rī_oADP dekhā_oVRB dekhī_oVRB saubata_oNOUN māṃya_oADP phaṃsago_oVRB ho_oVRB 
+ara_empty iṇā_cPRON ījī_oNOUN uṃdhī_oADJ saubata_oNOUN re_oADP kāraṇa_oNOUN paṛhāī_oNOUN adhabīcālai_oADV choda_empty saira_oNOUN rī_oADP eka_empty hoṭala_oNOUN māṃya_oADP naukarī_oNOUN karaṇa_empty lāgau_oVRB ara_empty pachai_oADV dharū_oNOUN hoṭala_oNOUN khola_empty mainejara_oNOUN baṇa_oVRB baithagau_oVRB 
+uṇarī_oNOUN hoṭa_oNOUN māṃya_oADP keī_cPRON bhāṃta_oNOUN rā_oADP kālā_oNOUN kāranāmā_oNOUN vhaitai_oVRB raivatā_oVRB bhojo_oNOUN āparī_cPRON hoṭala_oNOUN māṃya_oADP sagalī_oADJ devaṇa_oNOUN ro_oADP vādau_oNOUN kara_empty disāvarī_oNOUN minakhāṃ_oNOUN sūṃ_oADP aṇūtau_oADJ paīsau_oNOUN lūṭatau_oVRB 
+bīrai_oNOUN kane_oADV shaira_oNOUN ara_empty āsai_cPRON pāsai_oNOUN rī_oADP ghaṇakarī_oADJ kālā_oNOUN dhaṃdhā_oNOUN karaṇa_empty ālī_oVRB choryāṃ_oNOUN ara_empty lugāyāṃ_oNOUN rā_oADP thāṇā_oNOUN thikāṇā_oNOUN likhyoṛā_oVRB hā_oVRB 
+bhojā_oNOUN īyā_oADV to_empty gāṃva_oNOUN āyā_empty barasa_oNOUN bīta_oVRB gayā_oVRB para_empty māyatāṃ_oNOUN rī_oADP olūṃ_oNOUN āvaṇa_empty tāṃī_oADP ghaṛī_oNOUN do_empty ghaṛī_oNOUN sārū_oADJ mila_oVRB pāchau_oADV saira_oNOUN pagū_oNOUN jāvatau_oVRB ho_oVRB 
+bhojā_oNOUN rā_oADP gāṃva_oNOUN māṃya_oADP ghaṇā_oADJ bakhāṇa_oNOUN vhaitā_oVRB kyūṃki_empty bo_cPRON kadaiī_oADV gāṃva_oNOUN āvato_oVRB to_empty būṭa_oNOUN sūṭa_oNOUN ara_empty lagāyāṃ_empty camacamātī_empty palakā_oNOUN palaka_oNOUN karatī_oVRB disāvarī_oNOUN kāra_oNOUN sūṃ_oADP āvato_oVRB ho_oVRB 
+para_empty gāṃva_oNOUN rā_oADP nai_empty kāṃī_cPRON thā_oVRB to_empty sagalau_oADV dholau_oADJ dholau_oADJ dūdha_oNOUN ī_cPRON jāṇai_oVRB hā_oVRB 
