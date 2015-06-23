@@ -71,7 +71,7 @@ class StatisticsController extends AppController {
             $this->set('mainValue', $this->request['data']['mainValue']);
             $this->set('collocationValue', $this->request['data']['collocationValue']);
             if ($this->request['data']['immediate'] == 1) {
-                $MAX_DIST = 0;
+                $MAX_DIST = 1;
             } else {
                 $MAX_DIST = 10;
             }
