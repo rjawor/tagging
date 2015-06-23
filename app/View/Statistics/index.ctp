@@ -32,7 +32,7 @@
             'main' => array(
                           'desc' => 'Converbs (CVB on the levels "Grammar" and "POS")',
                           'short' => 'CVB',
-                          'value' => '21,85'
+                          'value' => '21'
                       ),
             'collocations' => $standardCollocations
         ),
@@ -56,7 +56,7 @@
             'main' => array(
                           'desc' => 'Infinitives (INF on the levels "Grammar" and "POS")',
                           'short' => 'INF',
-                          'value' => '41,86'
+                          'value' => '41'
                       ),
             'collocations' => $standardCollocations
         ),
