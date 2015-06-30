@@ -84,11 +84,7 @@ class PHPWord_Template {
         if(substr($search, 0, 2) !== '${' && substr($search, -1) !== '}') {
             $search = '${'.$search.'}';
         }
-        
-        if(!is_array($replace)) {
-            $replace = utf8_encode($replace);
-        }
-        
+                
         $this->_documentXML = str_replace($search, $replace, $this->_documentXML);
     }
     

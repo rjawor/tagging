@@ -147,7 +147,7 @@ class PHPWord_Shared_String
 	 * @return boolean
 	 */
 	public static function IsUTF8($value = '') {
-		return utf8_encode(utf8_decode($value)) === $value;
+		return mb_check_encoding($value, "UTF-8");
 	}
 
 	/**

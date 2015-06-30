@@ -18,7 +18,7 @@ class GeneratorController extends AppController {
         $section = $PHPWord->createSection();
 
         // Add text elements
-        $section->addText('Hello World!zażółć gęślą jaźńZAŻÓŁĆ GĘŚLĄ JAŹŃ');
+        $section->addText('Hello World! zażółć gęślą jaźńZAŻÓŁĆ GĘŚLĄ JAŹŃ');
         $section->addText($exampleWord['Word']['text']);
         $section->addTextBreak(2);
 
@@ -37,7 +37,7 @@ class GeneratorController extends AppController {
         $objWriter->save('/tmp/MyText.docx');
         
         //now mess with CakePHP send file
-]        $this->response->file(
+        $this->response->file(
             '/tmp/MyText.docx',
             array('download' => true, 'name' => 'generated.docx')
         );
