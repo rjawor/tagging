@@ -64,7 +64,6 @@ class DashboardController extends AppController {
            
             $sentenceData = Utils::getSentenceData($sentencesWindow[$currentSentenceIndex]['Sentence']['id']);
 
-
             $this->set('sentence', $sentenceData['sentence']);
             $this->set('wordAnnotationCount', $sentenceData['wordAnnotationCount']);
             $this->set('wordAnnotationTypes', $sentenceData['wordAnnotationTypes']);

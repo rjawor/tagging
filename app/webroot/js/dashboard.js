@@ -802,6 +802,13 @@ function suggestionHandle(e, suggestionNumber) {
     e.preventDefault();
 }
 
+function toggleVisibility(id) {
+   var e = document.getElementById(id);
+   if(e.style.display == 'inline')
+      e.style.display = 'none';
+   else
+      e.style.display = 'inline';
+}
 
 $(document).keydown(function(e) {
     if (e.ctrlKey) {

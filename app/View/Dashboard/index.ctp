@@ -108,7 +108,50 @@
                 $options['class'] = 'disabled-image';                
             }
             echo $this->Html->image("down.png", $options);
+            
+            $options = array("alt" => "export sentence to Word",
+                            "title" => "export sentence to Word",
+                            "style" => "cursor:pointer",
+                            "onClick" => "toggleVisibility('exportOptions');");
+            echo $this->Html->image("word.png", $options);
         ?>
+        <span id="exportOptions" style="display:none">
+            <?php
+                echo $this->Form->create(false, array('url' => array('controller' => 'generator', 'action' => 'generatedocx')
+                                                ));
+                #echo "<pre>".print_r($sentence, true)."</pre>";                                
+                $startIndexOptions = array();
+                $endIndexOptions = array();
+                $wordIndex = 0;
+                foreach ($sentence['Word'] as $word) {
+                    if ($word['split']) {
+                        $wordText = $word['stem'].'-'.$word['suffix'];
+                    } else {            
+                        $wordText = $word['text'];
+                    }
+                    $startIndexOptions[$wordIndex] = $wordText;
+                    $endIndexOptions[$wordIndex+1] = $wordText;
+                    
+                    $wordIndex++;
+                }
+                $lastWordIndex = $wordIndex;
+                
+                $maxLevelOptions = array();
+                $levelIndex = 1;
+                foreach ($sentence['WordAnnotations'] as $annotationData) {
+                    $wordAnnotationType = $annotationData['type']['WordAnnotationType'];
+                    $maxLevelOptions[$levelIndex] = $wordAnnotationType['name'];
+                    $levelIndex++;
+                }
+                $lastLevelIndex = $levelIndex - 1;
+                
+                echo $this->Form->input('sentenceId', array('type' => 'hidden', 'value'=>$sentence['Sentence']['id']));
+                echo $this->Form->input('startIndex', array('label'=>'From word:','options'=>$startIndexOptions, 'empty' => false));
+                echo $this->Form->input('endIndex', array('label'=>'To word:','options'=>$endIndexOptions, 'default'=>$lastWordIndex, 'empty' => false));
+                echo $this->Form->input('maxLevel', array('label'=>'Up to level:','options'=>$maxLevelOptions, 'default'=>$lastLevelIndex, 'empty' => false));
+                echo $this->Form->end('Export');
+            ?>
+        </span>
         <hr/>
         <table>
             <tr>
