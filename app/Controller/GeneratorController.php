@@ -1,45 +1,113 @@
 <?php
 
 App::uses('AppController', 'Controller');
-App::uses('Word', 'Model');
 App::uses('PHPWord', 'Lib');
-
+App::uses('Utils', 'Lib');
 
 class GeneratorController extends AppController {
     
-    public function generatedocx() {
-        $wordModel = ClassRegistry::init('Word');
-        $exampleWord = $wordModel->findById(381388);
-
+    public function generatedocx($sentenceId, $startIndex, $endIndex, $maxLevel) {
+        $tmpDocumentPath = '/tmp/IAtagger_generated.docx';
+        
+        $sentenceData = Utils::getSentenceData($sentenceId);
         // New Word Document
         $PHPWord = new PHPWord();
 
         // New portrait section
         $section = $PHPWord->createSection();
+        
+        $PHPWord->addParagraphStyle('centering', array('align'=>'center'));
+        $PHPWord->addParagraphStyle('rightAlign', array('align'=>'right'));
+        $PHPWord->addFontStyle('wordsRowTextStyle', array('bold'=>true));
+        $PHPWord->addFontStyle('tagsTextStyle', array('bold'=>true, 'color'=>'000066', 'align'=>'center'));
+        $PHPWord->addFontStyle('defaultTextStyle', array('bold'=>false));
+        
+        $wordsRowCellStyle = array('borderTopSize'=>6,
+                                   'borderTopColor'=>'006699', 
+                                   'borderLeftSize'=>6,
+                                   'borderLeftColor'=>'006699',
+                                   'borderRightSize'=>6,
+                                   'borderRightColor'=>'006699',
+                                   'borderBottomSize'=>18,
+                                   'borderBottomColor'=>'000066',
+                                   'bgColor'=>'E2F0FF',
+                                   'cellMargin'=>30,
+                                   'valign'=>'center');
+        $cellStyle = array('borderSize'=>6, 'borderColor'=>'006699', 'cellMargin'=>30, 'valign'=>'center');
+        $table = $section->addTable();
 
-        // Add text elements
-        $section->addText('Hello World! zażółć gęślą jaźńZAŻÓŁĆ GĘŚLĄ JAŹŃ');
-        $section->addText($exampleWord['Word']['text']);
-        $section->addTextBreak(2);
+        // Bracket row
+        $table->addRow();
+        $table->addCell(900);
+        $wordIndex = 0;
+        foreach ($sentenceData['sentence']['Word'] as $word) {
+            if ($wordIndex >= $startIndex && $wordIndex < $endIndex) {
+                $cell = $table->addCell(2000);
+                if ($word['postposition_id']) {
+                    $cell->addImage('/var/www/html/tagging/app/webroot/img/leftBracket.png', array('width'=>40, 'height'=>15, 'align'=>'right'));        
+                }
+                if ($word['is_postposition']) {
+                    $cell->addImage('/var/www/html/tagging/app/webroot/img/rightBracket.png', array('width'=>40, 'height'=>15, 'align'=>'left'));        
+                }
+            }
+            $wordIndex++;
+        }
 
-        $section->addText('I am inline styled.', array('name'=>'Verdana', 'color'=>'006699'));
-        $section->addTextBreak(2);
+        // Words row
+        $table->addRow(900);
+        $table->addCell(900, $wordsRowCellStyle);
+        $wordIndex = 0;
+        foreach ($sentenceData['sentence']['Word'] as $word) {
+            if ($wordIndex >= $startIndex && $wordIndex < $endIndex) {
+                $cell = $table->addCell(2000, $wordsRowCellStyle);
+                if ($word['split']) {
+                    $wordText = $word['stem'].'-'.$word['suffix'];
+                } else {            
+                    $wordText = $word['text'];
+                }
+                $cell->addText($wordText, 'wordsRowTextStyle', 'centering');
+            }
+            $wordIndex++;
+        }
 
-        $PHPWord->addFontStyle('rStyle', array('bold'=>true, 'italic'=>true, 'size'=>16));
-        $PHPWord->addParagraphStyle('pStyle', array('align'=>'center', 'spaceAfter'=>100));
-        $section->addText('I am styled by two style definitions.', 'rStyle', 'pStyle');
-        $section->addText('I have only a paragraph style definition.', null, 'pStyle');
-
-
+        // Annotation rows
+        $levelIndex = 0;
+        foreach ($sentenceData['sentence']['WordAnnotations'] as $annotationData) {
+            if ($levelIndex < $maxLevel) {
+                $table->addRow(900);
+                
+                $wordAnnotationType = $annotationData['type']['WordAnnotationType'];
+                // annotation name cell
+                $cell = $table->addCell(900, $cellStyle);
+                $cell->addText($wordAnnotationType['name'], 'defaultTextStyle', 'rightAlign');
+                
+                $wordIndex = 0;
+                foreach ($annotationData['annotations'] as $annotation) {
+                    if ($wordIndex >= $startIndex && $wordIndex < $endIndex) {
+                        $cell = $table->addCell(900, $cellStyle);
+                        if (!empty($annotation)) {
+                            if ($wordAnnotationType['strict_choices']) {
+                                foreach ($annotation['WordAnnotationTypeChoice'] as $choice) {
+                                    $cell->addText($choice['value'], 'tagsTextStyle', 'centering');
+                                }
+                            } else {
+                                $cell->addText($annotation['text_value'], 'defaultTextStyle', 'centering');                    
+                            }
+                        }
+                    }
+                    $wordIndex++;
+                }
+            }
+            $levelIndex++;
+        }
 
         // Save File
         $objWriter = PHPWord_IOFactory::createWriter($PHPWord, 'Word2007');
-        $objWriter->save('/tmp/MyText.docx');
+        $objWriter->save($tmpDocumentPath);
         
-        //now mess with CakePHP send file
         $this->response->file(
-            '/tmp/MyText.docx',
-            array('download' => true, 'name' => 'generated.docx')
+            $tmpDocumentPath,
+            array('download' => true, 'name' => 'IAtagger_table.docx')
         );
         // Return response object to prevent controller from trying to render
         // a view
