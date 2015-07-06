@@ -197,12 +197,13 @@
                         <input type="hidden" id="cell-<?php echo $offset.'-0-'.$wordIndex.'-word-annotation-type-id'; ?>" value="0" />
                         <span id="cell-<?php echo $offset.'-0-'.$wordIndex.'-split-span'; ?>" class="<?php if ($word['split']) { echo "word-split"; } else {echo "word-unsplit";} ?>">
                             <span class="ro-display">
-                                <span class="word-split-field">
-                                    <?php echo $word['stem']."&#124;".$word['suffix']; ?>
-                                </span>
-                                <span class="word-unsplit-field">
-                                    <?php echo $word['text']; ?>
-                                </span>
+                                <?php
+                                if ($word['split'] == 1) {
+                                    echo $word['stem']."&#124;".$word['suffix'];
+                                } else {
+                                    echo $word['text'];
+                                }
+                                ?>
                             </span>
                             <span class="edit-field">
                                 <span class="word-split-field">

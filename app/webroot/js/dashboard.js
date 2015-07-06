@@ -398,8 +398,21 @@ function updateCellValue(sentenceNumber, gridX, gridY) {
 
 
 function modifyValue(sentenceNumber, gridX, gridY, value) {
-    var valueElement = document.getElementById('cell-'+sentenceNumber+'-'+gridY+'-'+gridX+'-value');
+    var cellId = 'cell-'+sentenceNumber+'-'+gridY+'-'+gridX;
+    var valueElement = document.getElementById(cellId+'-value');
     valueElement.value = value;
+    var cellTypeId = cellId+'-type';
+    var cellTypeElement = document.getElementById(cellTypeId);
+    if (cellTypeElement != null && cellTypeElement.value == 'word') {
+        var splitElement = document.getElementById(cellId+'-split');
+        if (splitElement != null) {
+            if (value.indexOf(',') > -1) {
+                splitElement.value = '1';
+            } else {
+                splitElement.value = '0';            
+            }
+        }
+    }
     updateCellDisplay(sentenceNumber, gridX, gridY); 
     saveCell(sentenceNumber, gridX, gridY); 
 }
@@ -423,21 +436,19 @@ function updateCellDisplay(sentenceNumber, gridX, gridY) {
         var textInputElement = editSpan.querySelector('input[type=text]');
         textInputElement.value = deEscapeHTML(valueElement.value);        
     } else if (cellTypeElement.value == 'word') {
+        var splitSpan = document.getElementById(cellId+'-split-span');
         var splitElement = document.getElementById(cellId+'-split');
         if (splitElement.value == '0') {
-            displaySpan.innerHTML = valueElement.value;            
+            splitSpan.className='word-unsplit'; 
+            displaySpan.innerHTML = deEscapeHTML(valueElement.value);            
             var wordTextElement = cell.querySelector('.edit-field .word-unsplit-field input');
             wordTextElement.value = deEscapeHTML(valueElement.value);
         } else {
+            splitSpan.className='word-split'; 
             var stemAndSuffix = valueElement.value.split(",");
             var stem = stemAndSuffix[0];
             var suffix = stemAndSuffix[1];
-
-            var splitDisplaySpan = cell.querySelector('.ro-display .word-split-field');
-            if (splitDisplaySpan != null) {
-                splitDisplaySpan.innerHTML = stem+'&#124;'+suffix;
-            }
-            
+            displaySpan.innerHTML = deEscapeHTML(stem)+'&#124;'+deEscapeHTML(suffix);
             var wordTextElements = cell.querySelectorAll('.edit-field .word-split-field input');
             wordTextElements[0].value = deEscapeHTML(stem);
             wordTextElements[1].value = deEscapeHTML(suffix);
@@ -774,8 +785,8 @@ function splitWord(e) {
     var gridY = getGridY(sentenceNumber);
     var cellId = 'cell-'+sentenceNumber+'-'+gridY+'-'+gridX;
     var splitSpan = document.getElementById(cellId+'-split-span');
-    if (splitSpan != null && splitSpan.className == "word-unsplit" && getEditMode(sentenceNumber)) {
-        splitSpan.className="word-split"; 
+    if (splitSpan != null && splitSpan.className == 'word-unsplit' && getEditMode(sentenceNumber)) {
+        splitSpan.className='word-split'; 
         var splitElement = document.getElementById(cellId+'-split');
         splitElement.value = '1';
            
@@ -801,8 +812,8 @@ function unsplitWord(e) {
     var gridY = getGridY(sentenceNumber);
     var cellId = 'cell-'+sentenceNumber+'-'+gridY+'-'+gridX;
     var splitSpan = document.getElementById(cellId+'-split-span');
-    if (splitSpan != null && splitSpan.className == "word-split" && getEditMode(sentenceNumber)) {
-        splitSpan.className="word-unsplit"; 
+    if (splitSpan != null && splitSpan.className == 'word-split' && getEditMode(sentenceNumber)) {
+        splitSpan.className='word-unsplit'; 
         var splitElement = document.getElementById(cellId+'-split');
         splitElement.value = '0';
            
