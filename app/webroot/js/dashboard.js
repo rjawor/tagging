@@ -300,7 +300,7 @@ function setEditMode(sentenceNumber, editMode, preventSave) {
         if (editMode) {
             element.value = "1";
         } else {
-            if (element.value == "1" && !preventSave) { //edit mode was switched off, but not by ESC
+            if (element.value == "1" && !preventSave) { //edit mode was switched off, but not by ESC or not in choices cell
                 updateAndSaveCell(sentenceNumber);
             }
             element.value = "0";        
@@ -340,28 +340,34 @@ function updateCellValue(sentenceNumber, gridX, gridY) {
         gridX = getGridX(sentenceNumber);
         gridY = getGridY(sentenceNumber);    
     }
+
+    
     var cellId = 'cell-'+sentenceNumber+'-'+gridY+'-'+gridX;
     var cell = document.getElementById(cellId);
     var cellTypeId = cellId+'-type';
     var cellTypeElement = document.getElementById(cellTypeId);
     var valueElement = document.getElementById(cellId+'-value');
-    
     var editSpan = cell.querySelector('.edit-field');
+    var oldValue = valueElement.value;
+    var newValue = '';
 
     if (cellTypeElement.value == 'word-text' || cellTypeElement.value == 'sentence-text') {
         var textInputElement = editSpan.querySelector('input[type=text]');
-        valueElement.value = normalizeText(escapeHTML(textInputElement.value));
+        newValue = normalizeText(escapeHTML(textInputElement.value))
+        valueElement.value = newValue;
         
     } else if (cellTypeElement.value == 'word') {
         var splitElement = document.getElementById(cellId+'-split');
         if (splitElement.value == '0') {
             var wordTextElement = cell.querySelector('.edit-field .word-unsplit-field input');
-            valueElement.value = normalizeText(escapeHTML(wordTextElement.value)); 
+            newValue = normalizeText(escapeHTML(wordTextElement.value)); 
+            valueElement.value = newValue;
         } else {
             var wordTextElements = cell.querySelectorAll('.edit-field .word-split-field input');
             var stem = normalizeText(escapeHTML(wordTextElements[0].value));
             var suffix = normalizeText(escapeHTML(wordTextElements[1].value));   
-            valueElement.value = stem+','+suffix;
+            newValue = stem+','+suffix;
+            valueElement.value = newValue;
         }
         
         
@@ -376,10 +382,16 @@ function updateCellValue(sentenceNumber, gridX, gridY) {
                 selectedChoicesIds[selectedChoicesIds.length] = selectedChoiceId;
             }
             var selectedChoicesIdsString = selectedChoicesIds.join();
-            valueElement.value = selectedChoicesIdsString;
+            newValue = selectedChoicesIdsString;
+            valueElement.value = newValue;
         } else {
-            valueElement.value = '';
+            newValue = '';
+            valueElement.value = newValue;
         }
+    }
+    if (oldValue != newValue) {
+        var opData = 
+        $.post( "/tagging/history/storeOperation", {type: 'modifyCellValue', gridX:gridX, gridY:gridY, oldValue:oldValue, newValue:newValue} );
     }
 
 }
@@ -471,6 +483,7 @@ function updateCellDisplay(sentenceNumber, gridX, gridY) {
 }
 
 function saveCell(sentenceNumber, gridX, gridY) {
+
     //based on value field
     if (gridX == null || gridY == null) {
         gridX = getGridX(sentenceNumber);
@@ -481,8 +494,7 @@ function saveCell(sentenceNumber, gridX, gridY) {
     var cellTypeId = cellId+'-type';
     var cellTypeElement = document.getElementById(cellTypeId);
     var valueElement = document.getElementById(cellId+'-value');
-    
-        
+            
     if (cellTypeElement.value == 'word-text') {
         var wordAnnotationTypeElement = document.getElementById(cellId+'-word-annotation-type-id');
         var wordAnnotationTypeId = wordAnnotationTypeElement.value;
@@ -633,6 +645,13 @@ function enterHandle(e) {
         } else {
             handleEnterInMultipleChoices(sentenceNumber);
         }
+    } else if(getCellType(sentenceNumber) == 'choices') {
+        if (!getEditMode(sentenceNumber)) {
+            setEditMode(sentenceNumber, true);
+        } else {
+            setEditMode(sentenceNumber, false, true);
+        }
+        updateSentence(sentenceNumber);
     } else {
         toggleEditMode(sentenceNumber);
         updateSentence(sentenceNumber);
@@ -659,7 +678,11 @@ function handleEnterInMultipleChoices(sentenceNumber) {
             updateAndSaveCell(sentenceNumber);
         }
     } else {
-        toggleEditMode(sentenceNumber);
+        if (getEditMode(sentenceNumber)) {
+            setEditMode(sentenceNumber, false, true);
+        } else {
+            setEditMode(sentenceNumber, true);        
+        }
         updateSentence(sentenceNumber);
     }
 }
@@ -810,6 +833,41 @@ function toggleVisibility(id) {
       e.style.display = 'inline';
 }
 
+function undoHandle() {
+    if (!getEditMode(getSentenceNumber())) {
+        $.post("/tagging/history/undo", function(data) {
+                               performOperation(data);
+                            });
+    }
+}
+
+function redoHandle() {
+    if (!getEditMode(getSentenceNumber())) {
+        $.post("/tagging/history/redo", function(data) {
+                               performOperation(data);
+                            });
+    }
+}
+
+function performOperation(operationData) {
+    var operation = jQuery.parseJSON(operationData);
+    if (operation.type == 'modifyCellValue') {
+        modifyValue(getSentenceNumber(), operation.gridX, operation.gridY, operation.newValue);
+    }
+}
+
+function clearHistoryHandle(e) {
+    $.post("/tagging/history/clear");
+    e.preventDefault();
+}
+
+function listOperationsHandle(e) {
+    $.post("/tagging/history/listOperations", function( data ) {
+                           alert("operations: " + data );
+                        });
+    e.preventDefault();
+}
+
 $(document).keydown(function(e) {
     if (e.ctrlKey) {
         switch(e.which) {
@@ -833,6 +891,18 @@ $(document).keydown(function(e) {
                 suggestionHandle(e, 2);
             break;
 
+            case 52: //4
+                listOperationsHandle(e);
+            break;
+
+            case 53: //5
+                clearHistoryHandle(e);
+            break;
+
+            case 66: //b
+                redoHandle();
+            break;
+            
             case 73: //i
                 handleWordOperation(e, 'insertWord');
             break;
@@ -859,6 +929,10 @@ $(document).keydown(function(e) {
 
             case 89: //y
                 handleWordOperation(e, 'markPostposition');
+            break;
+            
+            case 90: //z
+                undoHandle();
             break;
 
             default: return; // exit this handler for other keys

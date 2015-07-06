@@ -5,6 +5,7 @@ App::uses('WordAnnotationType', 'Model');
 App::uses('WordAnnotation', 'Model');
 App::uses('WordAnnotationTypeChoicesWordAnnotation', 'Model');
 App::uses('AnnotatedWord', 'Lib');
+App::uses('History', 'Lib');
 
 
 class WordsController extends AppController {
@@ -263,6 +264,8 @@ class WordsController extends AppController {
         $this->Word->save($baseWord);
         $this->Word->save($postposition);
         
+        History::storeOperation($this->Session, "markPostposition, base id: ".$baseWord['Word']['id'].", postposition id: ".$postposition['Word']['id']);
+
         return $this->redirect(array('controller' => 'dashboard', 'action' => 'index', $documentId, $documentOffset, $position));    
     }    
 
