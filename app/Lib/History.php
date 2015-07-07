@@ -72,8 +72,19 @@ class History {
                 $reversedOperation['gridY'] = $operation['gridY'];
                 $reversedOperation['oldValue'] = $operation['newValue'];
                 $reversedOperation['newValue'] = $operation['oldValue'];
+            } else if ($operation['type'] == 'applySuggestion') {
+                $reversedOperation['type'] = $operation['type'];
+                $modifications = array();
+                foreach($operation['modifications'] as $modification) {
+                    array_push($modifications, History::reverseOperation($modification));
+                }
+                $reversedOperation['modifications'] = $modifications;
             }
         }
+        /*
+        CakeLog::write('debug', 'operation: '.print_r($operation,true));
+        CakeLog::write('debug', 'reversed: '.print_r($reversedOperation,true));
+        */
         return $reversedOperation;
     }
 }

@@ -113,11 +113,30 @@ function applySuggestion(gridX, suggestionIndex) {
         var suggestions = jQuery.data(suggestionBox, "suggestions");
         if (suggestionIndex < suggestions.count) {
             var annotations = suggestions.data[suggestionIndex].suggestion.annotations;
+            var modifications = [];
             for (var i = 0; i < annotations.length; i++) {
                 //we add 1 to the position, because the first word annotation is at gridY = 1
-                modifyValue(getSentenceNumber(), gridX, parseInt(annotations[i].position)+1, annotations[i].value);
+                var gridY = parseInt(annotations[i].position)+1;
+                var oldValue = getCellValue(gridX, gridY);
+                var newValue = annotations[i].value;
+                if (oldValue != newValue) {
+                    modifications.push({type: 'modifyCellValue', gridX:gridX, gridY:gridY, oldValue:oldValue, newValue:newValue});
+                    modifyValue(getSentenceNumber(), gridX, gridY, newValue);
+                }
             }
+            $.post( "/tagging/history/storeOperation", {type: 'applySuggestion', modifications:modifications} );
+
         }
+    }
+}
+
+function getCellValue(gridX, gridY) {
+    var cellId = 'cell-'+getSentenceNumber()+'-'+gridY+'-'+gridX;
+    var valueElement = document.getElementById(cellId+'-value');
+    if (valueElement != null) {
+        return valueElement.value;
+    } else {
+        return '';
     }
 }
 
@@ -753,6 +772,7 @@ function toggleSelectedChoice(element) {
 
 function deselectChoice(element) {
     element.className = 'choice-inactive';
+    updateAndSaveCell(getSentenceNumber());
 }
 
 function hotKeyHandle(number) {
@@ -862,8 +882,15 @@ function redoHandle() {
 
 function performOperation(operationData) {
     var operation = jQuery.parseJSON(operationData);
+    //alert('performing operation: '+operationData);
     if (operation.type == 'modifyCellValue') {
         modifyValue(getSentenceNumber(), operation.gridX, operation.gridY, operation.newValue);
+    } else if (operation.type == 'applySuggestion') {
+        var modificationsLength = operation.modifications.length;
+        for (var i = 0; i < modificationsLength; i++) {
+            var modification = operation.modifications[i];
+            modifyValue(getSentenceNumber(), modification.gridX, modification.gridY, modification.newValue);
+        }
     }
 }
 
