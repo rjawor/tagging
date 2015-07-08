@@ -8,6 +8,7 @@ function prevSentence() {
             offset--;
             offsetElement.value = offset;
             $.ajax({async:true, url:"/tagging/dashboard/setCurrentDocument/"+documentId+"/"+offset});
+            $.post("/tagging/history/clear");
             document.location.href = "/tagging/dashboard/index/"+documentId+"/"+offset;
         }
     }
@@ -24,6 +25,7 @@ function nextSentence(documentId) {
             offset++;
             offsetElement.value = offset;
             $.ajax({async:true, url:"/tagging/dashboard/setCurrentDocument/"+documentId+"/"+offset});
+            $.post("/tagging/history/clear");
             document.location.href = "/tagging/dashboard/index/"+documentId+"/"+offset;            
         }
     }
@@ -891,6 +893,15 @@ function performOperation(operationData) {
             var modification = operation.modifications[i];
             modifyValue(getSentenceNumber(), modification.gridX, modification.gridY, modification.newValue);
         }
+    } else if (operation.type == 'unmarkPostposition' ||
+               operation.type == 'markPostposition' ||
+               operation.type == 'insertWord' ||
+               operation.type == 'deleteWord'
+               ) {
+        window.location.href = '/tagging/words/'+operation.type+'/'+operation.documentId+'/'
+                                                                   +operation.documentOffset+'/'
+                                                                   +operation.sentenceId+'/'
+                                                                   +operation.position+'/1';
     }
 }
 

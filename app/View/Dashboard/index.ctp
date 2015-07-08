@@ -235,8 +235,8 @@
                                        echo $this->Html->image("delete.png", array("id" => "deleteWord".$wordIndex,
                                                                                  "alt" => "delete word (ctrl + l)",
                                                                                  "title" => "delete word (ctrl + l)",
-                                                                                 "onClick" => "return confirm('You are about to remove this word with all its annotations. Are you sure?');",
-                                                                                 "url" => array("controller" => "words", "action"=>"deleteWord", $documentId, $offset, $word['id'], $word['position'])
+                                                                                 "onClick" => "return confirm('You are about to remove this word with all its annotations. This operation can not be undone (no ctrl+z!) Are you sure?');",
+                                                                                 "url" => array("controller" => "words", "action"=>"deleteWord", $documentId, $offset, $sentence['Sentence']['id'], $word['position'])
                                                                            )
                                                               );
                                        echo "&nbsp;";

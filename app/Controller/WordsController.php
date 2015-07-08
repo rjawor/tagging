@@ -213,10 +213,10 @@ class WordsController extends AppController {
 	    return $this->Word->id;
     }
     
-    private function removeWord($wordId) {
+    private function removeWord($sentenceId, $position, $preventHistory = 0) {
         $this->Word->recursive = 0;
 
-        $deletedWord = $this->Word->findById($wordId);
+        $deletedWord = $this->Word->find('first', array('conditions'=> array('sentence_id'=>$sentenceId, 'position'=>$position)));
         $this->Word->updateAll(
                             array(
                                 'position' => 'position-1'
@@ -226,33 +226,52 @@ class WordsController extends AppController {
                                 'position >' => $deletedWord['Word']['position']
                             )
                         );
+        History::offsetOperations($this->Session, $deletedWord['Word']['position'] + 1, -1);
         $this->Word->delete($deletedWord['Word']['id']);
     }
 
  
 
-    public function insertWord($documentId, $documentOffset, $sentenceId, $position) {
+    public function insertWord($documentId, $documentOffset, $sentenceId, $position, $preventHistory = 0) {
         $this->autoRender = false;
-        
         $this->insertEmptyWord($sentenceId, $position);
-        
-        return $this->redirect(array('controller' => 'dashboard', 'action' => 'index', $documentId, $documentOffset, $position, 1));    
+
+        History::offsetOperations($this->Session, $position + 1, 1);
+        if ($preventHistory == 0) {
+            History::storeOperation($this->Session, array("type"=>"insertWord",
+                                                          "documentId" => $documentId,
+                                                          "documentOffset" => $documentOffset,
+                                                          "sentenceId" => $sentenceId,
+                                                          "position" => $position
+                                                    ));            
+        }        
+        return $this->redirect(array('controller' => 'dashboard', 'action' => 'index', $documentId, $documentOffset, $position, 1-$preventHistory));    
     }    
 
-    public function insertAfterWord($documentId, $documentOffset, $sentenceId, $position) {
+    public function insertAfterWord($documentId, $documentOffset, $sentenceId, $position, $preventHistory = 0) {
         $this->autoRender = false;
         $this->insertEmptyWord($sentenceId, $position+1);
-        return $this->redirect(array('controller' => 'dashboard', 'action' => 'index', $documentId, $documentOffset, $position+1, 1));    
+        
+        History::offsetOperations($this->Session, $position+2, 1);
+        if ($preventHistory == 0) {
+            History::storeOperation($this->Session, array("type"=>"insertWord",
+                                                          "documentId" => $documentId,
+                                                          "documentOffset" => $documentOffset,
+                                                          "sentenceId" => $sentenceId,
+                                                          "position" => $position+1
+                                                    ));            
+        }
+        return $this->redirect(array('controller' => 'dashboard', 'action' => 'index', $documentId, $documentOffset, $position+1, 1-$preventHistory));    
     }    
 
-    public function deleteWord($documentId, $documentOffset, $wordId, $position) {
+    public function deleteWord($documentId, $documentOffset, $sentenceId, $position, $preventHistory = 0) {
         $this->autoRender = false;
-        $this->removeWord($wordId);
+        $this->removeWord($sentenceId, $position, $preventHistory);
         return $this->redirect(array('controller' => 'dashboard', 'action' => 'index', $documentId, $documentOffset, $position));    
     }    
 
 
-    public function markPostposition($documentId, $documentOffset, $sentenceId, $position) {
+    public function markPostposition($documentId, $documentOffset, $sentenceId, $position, $preventHistory = 0) {
         $this->autoRender = false;
         
         $baseWord = $this->Word->find('first', array('conditions'=> array('sentence_id'=>$sentenceId, 'position'=>$position)));
@@ -264,12 +283,18 @@ class WordsController extends AppController {
         $this->Word->save($baseWord);
         $this->Word->save($postposition);
         
-        History::storeOperation($this->Session, "markPostposition, base id: ".$baseWord['Word']['id'].", postposition id: ".$postposition['Word']['id']);
-
+        if ($preventHistory == 0) {
+            History::storeOperation($this->Session, array("type"=>"markPostposition",
+                                                          "documentId" => $documentId,
+                                                          "documentOffset" => $documentOffset,
+                                                          "sentenceId" => $sentenceId,
+                                                          "position" => $position
+                                                    ));
+        }
         return $this->redirect(array('controller' => 'dashboard', 'action' => 'index', $documentId, $documentOffset, $position));    
     }    
 
-    public function unmarkPostposition($documentId, $documentOffset, $sentenceId, $position) {
+    public function unmarkPostposition($documentId, $documentOffset, $sentenceId, $position, $preventHistory = 0) {
         $this->autoRender = false;
         
         $currentWord = $this->Word->find('first', array('conditions'=> array('sentence_id'=>$sentenceId, 'position'=>$position)));
@@ -286,6 +311,15 @@ class WordsController extends AppController {
 
         $this->Word->save($baseWord);
         $this->Word->save($postposition);
+
+        if ($preventHistory == 0) {
+            History::storeOperation($this->Session, array("type"=>"unmarkPostposition",
+                                                          "documentId" => $documentId,
+                                                          "documentOffset" => $documentOffset,
+                                                          "sentenceId" => $sentenceId,
+                                                          "position" => $baseWord['Word']['position']
+                                                    ));
+        }
         
         
         return $this->redirect(array('controller' => 'dashboard', 'action' => 'index', $documentId, $documentOffset, $position));    

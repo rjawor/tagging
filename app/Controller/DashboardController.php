@@ -7,6 +7,7 @@ App::uses('Sentence', 'Model');
 App::uses('WordAnnotationType', 'Model');
 App::uses('SentenceAnnotationType', 'Model');
 App::uses('Utils', 'Lib');
+App::uses('History', 'Lib');
 
 class DashboardController extends AppController {
 
@@ -22,6 +23,7 @@ class DashboardController extends AppController {
             if (!$offset) {
                 $offset = 0;
             }
+            History::clear($this->Session);
         }
 
         if (!$documentId) {

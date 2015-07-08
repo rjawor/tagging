@@ -51,6 +51,32 @@ class History {
     
     }
 
+    public static function offsetOperations($session, $startPos, $offset) {
+        $operations = $session->read(History::$operationsVarName);
+        for ($i=0;$i<count($operations);$i++) {
+            if ($operations[$i]['type'] == 'modifyCellValue') {
+                if($operations[$i]['gridX'] >= $startPos) {
+                    $operations[$i]['gridX'] = $operations[$i]['gridX'] + $offset;
+                }
+            } else if ($operations[$i]['type'] == 'applySuggestion') {
+                for($j=0; $j<count($operations[$i]['modifications']); $j++) {
+                    if($operations[$i]['modifications'][$j]['gridX'] >= $startPos) {
+                        $operations[$i]['modifications'][$j]['gridX'] = $operations[$i]['modifications'][$j]['gridX'] + $offset;
+                    }
+                }
+            } else if ($operations[$i]['type'] == 'markPostposition' ||
+                       $operations[$i]['type'] == 'unmarkPostposition' ||
+                       $operations[$i]['type'] == 'insertWord' ||
+                       $operations[$i]['type'] == 'deleteWord'                     
+                      ) {
+                if($operations[$i]['position'] >= $startPos) {
+                    $operations[$i]['position'] = $operations[$i]['position'] + $offset;
+                }
+            }            
+        }    
+        $session->write(History::$operationsVarName, $operations);
+    }
+
     public static function listOperations($session) {
         $operations = $session->read(History::$operationsVarName);
         $cursor = $session->read(History::$cursorVarName);
@@ -79,7 +105,32 @@ class History {
                     array_push($modifications, History::reverseOperation($modification));
                 }
                 $reversedOperation['modifications'] = $modifications;
+            } else if ($operation['type'] == 'markPostposition') {
+                $reversedOperation['type'] = 'unmarkPostposition';
+                $reversedOperation['documentId'] = $operation['documentId'];
+                $reversedOperation['documentOffset'] = $operation['documentOffset'];
+                $reversedOperation['sentenceId'] = $operation['sentenceId'];
+                $reversedOperation['position'] = $operation['position'];
+            } else if ($operation['type'] == 'unmarkPostposition') {
+                $reversedOperation['type'] = 'markPostposition';
+                $reversedOperation['documentId'] = $operation['documentId'];
+                $reversedOperation['documentOffset'] = $operation['documentOffset'];
+                $reversedOperation['sentenceId'] = $operation['sentenceId'];
+                $reversedOperation['position'] = $operation['position'];
+            } else if ($operation['type'] == 'insertWord') {
+                $reversedOperation['type'] = 'deleteWord';
+                $reversedOperation['documentId'] = $operation['documentId'];
+                $reversedOperation['documentOffset'] = $operation['documentOffset'];
+                $reversedOperation['sentenceId'] = $operation['sentenceId'];
+                $reversedOperation['position'] = $operation['position'];
+            } else if ($operation['type'] == 'deleteWord') {
+                $reversedOperation['type'] = 'insertWord';
+                $reversedOperation['documentId'] = $operation['documentId'];
+                $reversedOperation['documentOffset'] = $operation['documentOffset'];
+                $reversedOperation['sentenceId'] = $operation['sentenceId'];
+                $reversedOperation['position'] = $operation['position'];
             }
+
         }
         /*
         CakeLog::write('debug', 'operation: '.print_r($operation,true));
