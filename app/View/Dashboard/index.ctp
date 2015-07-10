@@ -263,7 +263,8 @@
                                    echo $this->Html->image("copyFromPrev.png", array("id" => "copyFromPrev".$wordIndex,
                                                                              "alt" => "copy annotations from previous word",
                                                                              "title" => "copy annotations from previous word",
-                                                                             "url" => array("controller" => "words", "action"=>"copyFromPrev", $documentId, $offset, $sentence['Sentence']['id'], $word['position'])
+                                                                             "style" => "cursor:pointer",
+                                                                             "onclick" => "copyAnnotations(".($word['position']-1).",".$word['position'].");"
                                                                        )
                                                           );
                                    }
@@ -271,7 +272,8 @@
                                    echo $this->Html->image("copyFromNext.png", array("id" => "copyFromNext".$wordIndex,
                                                                              "alt" => "copy annotations from next word",
                                                                              "title" => "copy annotations from next word",
-                                                                             "url" => array("controller" => "words", "action"=>"copyFromNext", $documentId, $offset, $sentence['Sentence']['id'], $word['position'])
+                                                                             "style" => "cursor:pointer",
+                                                                             "onclick" => "copyAnnotations(".($word['position']+1).",".$word['position'].");"
                                                                        )
                                                           );
                                    }

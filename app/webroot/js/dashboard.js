@@ -917,6 +917,23 @@ function listOperationsHandle(e) {
     e.preventDefault();
 }
 
+function copyAnnotations(sourceX, targetX) {
+    var annotationsCount = $('#sentence'+getSentenceNumber()+'-word-annotation-count').val();
+    var modifications = [];
+
+    for(var i=2;i<annotationsCount;i++) {
+        var sourceValue = $('#cell-'+getSentenceNumber()+'-'+i+'-'+sourceX+'-value').val();
+        var targetValue = $('#cell-'+getSentenceNumber()+'-'+i+'-'+targetX+'-value').val();
+        if (sourceValue != '' && sourceValue != targetValue) {
+            modifications.push({type: 'modifyCellValue', gridX:targetX, gridY:i, oldValue:targetValue, newValue:sourceValue});
+            modifyValue(getSentenceNumber(), targetX, i, sourceValue);
+        }
+    }
+    if (modifications.length > 0) {
+        $.post( "/tagging/history/storeOperation", {type: 'applySuggestion', modifications:modifications} );
+    }
+}
+
 $(document).keydown(function(e) {
     if (e.ctrlKey) {
         switch(e.which) {
@@ -939,7 +956,8 @@ $(document).keydown(function(e) {
             case 51: //3
                 suggestionHandle(e, 2);
             break;
-
+            
+            /* Debugging the history feature
             case 52: //4
                 listOperationsHandle(e);
             break;
@@ -947,7 +965,8 @@ $(document).keydown(function(e) {
             case 53: //5
                 clearHistoryHandle(e);
             break;
-
+            */
+            
             case 66: //b
                 redoHandle();
             break;
