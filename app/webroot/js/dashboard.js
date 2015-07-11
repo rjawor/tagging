@@ -784,7 +784,7 @@ function hotKeyHandle(number) {
     var cellId = 'cell-'+sentenceNumber+'-'+gridY+'-'+gridX;
     var cellTypeId = cellId+'-type';
     var cellTypeElement = document.getElementById(cellTypeId);
-    if (cellTypeElement.value == 'choices') {
+    if (cellTypeElement != null && cellTypeElement.value == 'choices') {
         var choiceId = 'cell-'+sentenceNumber+'-'+gridY+'-'+gridX+'-choice-'+number;
         var choiceElement = document.getElementById(choiceId);
         if (choiceElement != null) {

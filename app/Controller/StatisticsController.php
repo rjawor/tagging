@@ -146,6 +146,23 @@ class StatisticsController extends AppController {
         $this->set('documentIds', $documentIds);
 
     }
+
+    public function generator() {
+        $wordAnnotationTypeModel = ClassRegistry::init('WordAnnotationType');
+        $wordAnnotationTypes = $wordAnnotationTypeModel->find('all', array('order' => 'position'));
+        $this->set('wordAnnotationTypes', $wordAnnotationTypes);
+
+        $documentModel = ClassRegistry::init('Document');
+        $documentModel->recursive = 0;
+        $documents = $documentModel->find('all');
+        $documentIds = array();
+        foreach($documents as $document) {
+            array_push($documentIds, $document['Document']['id']);
+        }
+        $this->set('documentIds', $documentIds);
+
+    }
+
 }
 
 
