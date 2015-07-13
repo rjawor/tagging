@@ -143,6 +143,11 @@
                     $maxLevelOptions[$levelIndex] = $wordAnnotationType['name'];
                     $levelIndex++;
                 }
+                foreach ($sentence['SentenceAnnotations'] as $annotationData) {
+                    $sentenceAnnotationType = $annotationData['type']['SentenceAnnotationType'];
+                    $maxLevelOptions[$levelIndex] = $sentenceAnnotationType['name'];
+                    $levelIndex++;
+                }
                 $lastLevelIndex = $levelIndex - 1;
                 
                 echo $this->Form->input('sentenceId', array('type' => 'hidden', 'value'=>$sentence['Sentence']['id']));

@@ -16,6 +16,8 @@ class GeneratorController extends AppController {
             $tmpDocumentPath = '/tmp/IAtagger_generated.docx';
             
             $sentenceData = Utils::getSentenceData($sentenceId);
+            //die(print_r($sentenceData, true));
+
             // New Word Document
             $PHPWord = new PHPWord();
 
@@ -107,6 +109,25 @@ class GeneratorController extends AppController {
                 }
                 $levelIndex++;
             }
+            
+            foreach ($sentenceData['sentence']['SentenceAnnotations'] as $annotationData) {
+                if ($levelIndex < $maxLevel) {
+                    $table->addRow(900);
+                    $sentenceAnnotationType = $annotationData['type']['SentenceAnnotationType'];
+                    // annotation name cell
+                    $cell = $table->addCell(900, $cellStyle);
+                    $cell->addText($sentenceAnnotationType['name'], 'defaultTextStyle', 'centering');
+
+
+                    $spanningCellStyle = $cellStyle;
+                    $spanningCellStyle['gridSpan'] = $endIndex - $startIndex;
+                    $cell = $table->addCell(900, $spanningCellStyle);
+                    $text = isset($annotationData['annotation']['text']) ? $annotationData['annotation']['text'] : '';
+                    $cell->addText($text);
+                }            
+                $levelIndex++;
+            }
+            
 
             // Legend
             ksort($legend);

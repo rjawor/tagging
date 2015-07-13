@@ -501,10 +501,13 @@ class PHPWord_Writer_Word2007_Base extends PHPWord_Writer_Word2007_WriterPart {
 	
 	protected function _writeCellStyle(PHPWord_Shared_XMLWriter $objWriter = null, PHPWord_Style_Cell $style = null) {
 		$bgColor = $style->getBgColor();
+		$align = $style->getAlign();
 		$valign = $style->getVAlign();
 		$textDir = $style->getTextDirection();
 		$brdSz = $style->getBorderSize();
 		$brdCol = $style->getBorderColor();
+		$gridSpan = $style->getGridSpan();
+        $vMerge = $style->getVMerge();
 		
 		$bTop = (!is_null($brdSz[0])) ? true : false;
 		$bLeft = (!is_null($brdSz[1])) ? true : false;
@@ -512,7 +515,7 @@ class PHPWord_Writer_Word2007_Base extends PHPWord_Writer_Word2007_WriterPart {
 		$bBottom = (!is_null($brdSz[3])) ? true : false;
 		$borders = ($bTop || $bLeft || $bRight || $bBottom) ? true : false;
 		
-		$styles = (!is_null($bgColor) || !is_null($valign) || !is_null($textDir) || $borders) ? true : false;
+         $styles = (!is_null($bgColor) || !is_null($valign) || !is_null($textDir) || !is_null($gridSpan) || !is_null($vMerge) || $borders) ? true : false;
 		
 		if($styles) {
 			if(!is_null($textDir)) {
@@ -535,6 +538,26 @@ class PHPWord_Writer_Word2007_Base extends PHPWord_Writer_Word2007_WriterPart {
 				$objWriter->endElement();
 			}
 			
+			if(!is_null($align)) {
+                $objWriter->startElement('w:pPr');
+                    $objWriter->startElement('w:jc');
+                        $objWriter->writeAttribute('w:val', $valign);
+                    $objWriter->endElement();
+                $objWriter->endElement();
+            }
+            
+            if(!is_null($gridSpan)) {
+                $objWriter->startElement('w:gridSpan');
+                $objWriter->writeAttribute('w:val', $gridSpan);
+                $objWriter->endElement();
+            }
+
+            if(!is_null($vMerge)) {
+                $objWriter->startElement('w:vMerge');
+                $objWriter->writeAttribute('w:val', $vMerge);
+                $objWriter->endElement();
+            }
+            
 			if($borders) {
 				$_defaultColor = $style->getDefaultBorderColor();
 				

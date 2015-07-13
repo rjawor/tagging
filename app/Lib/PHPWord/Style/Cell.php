@@ -38,6 +38,21 @@ class PHPWord_Style_Cell {
 	const TEXT_DIR_BTLR = 'btLr';
 	const TEXT_DIR_TBRL = 'tbRl';
 	
+    /**
+     * Horizontal align
+     *
+     * @var string
+     */
+    private $_align;
+    /**
+     * for the colspan
+     */
+    private $_gridSpan;
+    /**
+     * for the rowspan
+     */
+    private $_vMerge;
+    
 	/**
 	 * Vertical align
 	 * 
@@ -127,6 +142,7 @@ class PHPWord_Style_Cell {
 	 * Create a new Cell Style
 	 */
 	public function __construct() {
+		$this->_align = null;
 		$this->_valign = null;
 		$this->_textDirection = null;
 		$this->_bgColor = null;
@@ -139,6 +155,8 @@ class PHPWord_Style_Cell {
 		$this->_borderBottomSize = null;
 		$this->_borderBottomColor = null;
 		$this->_defaultBorderColor = '000000';
+        $this->_gridSpan = null;
+        $this->_vMerge = null;
 	}
 	
 	/**
@@ -152,10 +170,38 @@ class PHPWord_Style_Cell {
 			$this->setBorderSize($value);
 		} elseif($key == '_borderColor') {
 			$this->setBorderColor($value);
-		} else {
+        } elseif($key == '_gridSpan') {
+            $this->setGridSpan($value);
+        } elseif($key == '_vMerge') {
+            $this->setVMerge($value);
+   		} else {
 			$this->$key = $value;
 		}
 	}
+	
+	public function getAlign() {
+        return $this->_align;
+    }
+
+    public function setAlign($pValue = null) {
+        $this->_align = $pValue;
+    }
+
+    public function setGridSpan($pValue = null) {
+        $this->_gridSpan = $pValue;
+    }
+
+    public function getGridSpan() {
+        return $this->_gridSpan;
+    }
+
+    public function setVMerge($pValue = null) {
+        $this->_vMerge = $pValue;
+    }
+
+    public function getVMerge() {
+        return $this->_vMerge;
+    }
 	
 	public function getVAlign() {
 		return $this->_valign;
