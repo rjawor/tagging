@@ -777,6 +777,11 @@ function deselectChoice(element) {
     updateAndSaveCell(getSentenceNumber());
 }
 
+function handleChoiceClick(choiceElement) {
+    toggleSelectedChoice(choiceElement);
+    updateAndSaveCell(getSentenceNumber());
+}
+
 function hotKeyHandle(number) {
     var sentenceNumber = getSentenceNumber();
     var gridX = getGridX(sentenceNumber);

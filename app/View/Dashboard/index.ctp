@@ -342,7 +342,7 @@
                                     $choiceIndex = 0;
                                     foreach ($wordAnnotations['type']['WordAnnotationTypeChoice'] as $choice) {
                                 ?>
-                                        <input id="cell-<?php echo $offset.'-'.$annotationTypeCount.'-'.$wordIndex.'-choice-'.$choiceIndex; ?>" onfocus="this.blur()" type="button" onclick="toggleSelectedChoice(this)" class="<?php echo in_array($choice['id'], $selectedChoices) ? 'choice-selected' : 'choice-available' ?>" title="<?php echo $choice['description']; ?>" value="<?php echo $choice['value'];if ($choiceIndex < count($hotKeys)) { echo '&nbsp;['.$hotKeys[$choiceIndex].']'; ?>"/>
+                                        <input id="cell-<?php echo $offset.'-'.$annotationTypeCount.'-'.$wordIndex.'-choice-'.$choiceIndex; ?>" onfocus="this.blur()" type="button" onclick="handleChoiceClick(this)" class="<?php echo in_array($choice['id'], $selectedChoices) ? 'choice-selected' : 'choice-available' ?>" title="<?php echo $choice['description']; ?>" value="<?php echo $choice['value'];if ($choiceIndex < count($hotKeys)) { echo '&nbsp;['.$hotKeys[$choiceIndex].']'; ?>"/>
                                         <input type="hidden" id="cell-<?php echo $offset.'-'.$annotationTypeCount.'-'.$wordIndex.'-choice-'.$choiceIndex.'-type-id'; ?>" value="<?php echo $choice['id'] ?>" />
                                 <?php       }
                                         
