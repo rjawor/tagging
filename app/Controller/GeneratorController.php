@@ -2,6 +2,7 @@
 
 App::uses('AppController', 'Controller');
 App::uses('PHPWord', 'Lib');
+App::uses('PHPExcel', 'Lib');
 App::uses('Utils', 'Lib');
 
 class GeneratorController extends AppController {
@@ -154,6 +155,155 @@ class GeneratorController extends AppController {
         
     }
     
+    public function generatexlsx() {
+        if ($this->request->is('post')) {
+            $sentenceId = $this->request['data']['sentenceId'];
+            $startIndex = $this->request['data']['startIndex'];
+            $endIndex = $this->request['data']['endIndex'];
+            $maxLevel = $this->request['data']['maxLevel'];
+            
+            $tmpDocumentPath = '/tmp/IAtagger_generated.xlsx';
+            
+            $objPHPExcel = new PHPExcel();
+
+            // Set document properties
+            $objPHPExcel->getProperties()->setCreator("IA tagger system")
+							             ->setLastModifiedBy("IA tagger system")
+							             ->setTitle("Sentence exported from IA tagger")
+							             ->setSubject("Sentence table")
+							             ->setDescription("Document generated automatically from the IA tagger system, containing exhaustive information about a single sentence in one of the Indo-Aryan languages.")
+							             ->setKeywords("IAtagger sentence generated")
+							             ->setCategory("Automatically generated file");
+
+
+            $objPHPExcel->setActiveSheetIndex(0);
+
+
+
+            // Add sentence data
+            $sentenceData = Utils::getSentenceData($sentenceId);
+
+            // Bracket row
+            $wordIndex = 0;
+            foreach ($sentenceData['sentence']['Word'] as $word) {
+                if ($wordIndex >= $startIndex && $wordIndex < $endIndex) {
+                    if ($word['postposition_id']) {
+                        $objPHPExcel->getActiveSheet()->getCellByColumnAndRow($wordIndex-$startIndex+1, 1)->setValue("{----");
+                    }
+                    if ($word['is_postposition']) {
+                        $objPHPExcel->getActiveSheet()->getCellByColumnAndRow($wordIndex-$startIndex+1, 1)->setValue("----}");
+                        $objPHPExcel->getActiveSheet()->getStyle(PHPExcel_Cell::stringFromColumnIndex($wordIndex-$startIndex+1)."1")->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
+                    }   
+                }
+                $wordIndex++;
+            }
+            
+            // Words row
+            $wordIndex = 0;
+            foreach ($sentenceData['sentence']['Word'] as $word) {
+                if ($wordIndex >= $startIndex && $wordIndex < $endIndex) {
+                    if ($word['split']) {
+                        $wordText = $word['stem'].'-'.$word['suffix'];
+                    } else {            
+                        $wordText = $word['text'];
+                    }
+                    $objPHPExcel->getActiveSheet()->getCellByColumnAndRow($wordIndex-$startIndex+1, 2)->setValue($wordText);
+                    $objPHPExcel->getActiveSheet()->getColumnDimensionByColumn($wordIndex-$startIndex+1)->setAutoSize(true);
+                }
+                $wordIndex++;
+            }
+            
+            $objPHPExcel->getActiveSheet()->getStyle("A2:ZZ2")->getFont()->setBold(true);
+            $objPHPExcel->getActiveSheet()->getStyle("A1:A100")->getFont()->setBold(true);
+            $objPHPExcel->getActiveSheet()->getStyle('B3:ZZ100')->getAlignment()->setWrapText(true);
+            $objPHPExcel->getActiveSheet()->getStyle('B3:ZZ100')->setQuotePrefix(true);
+
+            // Annotation rows
+
+            $legend = array();
+            $levelIndex = 0;
+            foreach ($sentenceData['sentence']['WordAnnotations'] as $annotationData) {
+                if ($levelIndex < $maxLevel) {
+                    
+                    $wordAnnotationType = $annotationData['type']['WordAnnotationType'];
+                    // annotation name cell
+                    $objPHPExcel->getActiveSheet()->getCellByColumnAndRow(0, $levelIndex+3)->setValue($wordAnnotationType['name']);
+                    
+                    $wordIndex = 0;
+                    foreach ($annotationData['annotations'] as $annotation) {
+                        if ($wordIndex >= $startIndex && $wordIndex < $endIndex) {
+                            $cellText = "";
+                            if (!empty($annotation)) {
+                                if ($wordAnnotationType['strict_choices']) {
+                                    foreach ($annotation['WordAnnotationTypeChoice'] as $choice) {
+                                        $cellText = $cellText.$choice['value']."\n";
+                                        $legend[$choice['value']]=$choice['description'];
+                                    }
+                                } else {
+                                    $cellText = $annotation['text_value'];
+                                }
+                            }
+                            $objPHPExcel->getActiveSheet()->getCellByColumnAndRow($wordIndex-$startIndex+1, $levelIndex+3)->setValue(trim($cellText));
+                        }
+                        $wordIndex++;
+                    }
+                }
+                $levelIndex++;
+            }
+            
+            foreach ($sentenceData['sentence']['SentenceAnnotations'] as $annotationData) {
+                if ($levelIndex < $maxLevel) {
+                    $objPHPExcel->getActiveSheet()->mergeCells('B'.($levelIndex+3).':'.PHPExcel_Cell::stringFromColumnIndex($endIndex-$startIndex).($levelIndex+3));
+
+                    $sentenceAnnotationType = $annotationData['type']['SentenceAnnotationType'];
+                    // annotation name cell
+                    $objPHPExcel->getActiveSheet()->getCellByColumnAndRow(0, $levelIndex+3)->setValue($sentenceAnnotationType['name']);
+
+                    $text = array_key_exists('text', $annotationData['annotation']) ? $annotationData['annotation']['text'] : '';
+                    $objPHPExcel->getActiveSheet()->getCellByColumnAndRow(1, $levelIndex+3)->setValue($text);
+                }            
+                $levelIndex++;
+            }
+
+            // Legend
+            $levelIndex = $maxLevel + 2;
+            
+            $objPHPExcel->getActiveSheet()->getCellByColumnAndRow(0, $levelIndex+3)->setValue("Legend");
+            ksort($legend);
+            $levelIndex++;
+            
+            foreach ($legend as $value => $description) {
+                $objPHPExcel->getActiveSheet()->getCellByColumnAndRow(0, $levelIndex+3)->setValue($value);
+                $objPHPExcel->getActiveSheet()->getCellByColumnAndRow(1, $levelIndex+3)->setValue($description);
+                $levelIndex++;
+            }
+
+            // Rename worksheet
+            $objPHPExcel->getActiveSheet()->setTitle('Sentence');
+
+
+            // Set active sheet index to the first sheet, so Excel opens this as the first sheet
+            $objPHPExcel->setActiveSheetIndex(0);
+
+
+            // Save Excel 2007 file
+            $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
+            $objWriter->save($tmpDocumentPath);
+
+            
+
+                      
+            $this->response->file(
+                $tmpDocumentPath,
+                array('download' => true, 'name' => 'IAtagger_table.xlsx')
+            );
+            // Return response object to prevent controller from trying to render
+            // a view
+            return $this->response;
+        
+        }
+        
+    }
 }
 
 ?>

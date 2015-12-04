@@ -114,11 +114,17 @@
                             "style" => "cursor:pointer",
                             "onClick" => "toggleVisibility('exportOptions');");
             echo $this->Html->image("word.png", $options);
+
+            $options = array("alt" => "export sentence to Excel",
+                            "title" => "export sentence to Excel",
+                            "style" => "cursor:pointer",
+                            "onClick" => "toggleVisibility('exportOptionsExcel');");
+            echo $this->Html->image("excel.png", $options);
         ?>
         <span id="exportOptions" style="display:none">
+            <h3>Word export options</h3>
             <?php
-                echo $this->Form->create(false, array('url' => array('controller' => 'generator', 'action' => 'generatedocx')
-                                                ));
+                echo $this->Form->create(false, array('url' => array('controller' => 'generator', 'action' => 'generatedocx')));
                 #echo "<pre>".print_r($sentence, true)."</pre>";                                
                 $startIndexOptions = array();
                 $endIndexOptions = array();
@@ -154,7 +160,49 @@
                 echo $this->Form->input('startIndex', array('label'=>'From word:','options'=>$startIndexOptions, 'empty' => false));
                 echo $this->Form->input('endIndex', array('label'=>'To word:','options'=>$endIndexOptions, 'default'=>$lastWordIndex, 'empty' => false));
                 echo $this->Form->input('maxLevel', array('label'=>'Up to level:','options'=>$maxLevelOptions, 'default'=>$lastLevelIndex, 'empty' => false));
-                echo $this->Form->end('Export');
+                echo $this->Form->end('Export to Word');
+            ?>
+        </span>
+        <span id="exportOptionsExcel" style="display:none">
+            <h3>Excel export options</h3>
+            <?php
+                echo $this->Form->create(false, array('url' => array('controller' => 'generator', 'action' => 'generatexlsx')));
+                #echo "<pre>".print_r($sentence, true)."</pre>";                                
+                $startIndexOptions = array();
+                $endIndexOptions = array();
+                $wordIndex = 0;
+                foreach ($sentence['Word'] as $word) {
+                    if ($word['split']) {
+                        $wordText = $word['stem'].'-'.$word['suffix'];
+                    } else {            
+                        $wordText = $word['text'];
+                    }
+                    $startIndexOptions[$wordIndex] = $wordText;
+                    $endIndexOptions[$wordIndex+1] = $wordText;
+                    
+                    $wordIndex++;
+                }
+                $lastWordIndex = $wordIndex;
+                
+                $maxLevelOptions = array();
+                $levelIndex = 1;
+                foreach ($sentence['WordAnnotations'] as $annotationData) {
+                    $wordAnnotationType = $annotationData['type']['WordAnnotationType'];
+                    $maxLevelOptions[$levelIndex] = $wordAnnotationType['name'];
+                    $levelIndex++;
+                }
+                foreach ($sentence['SentenceAnnotations'] as $annotationData) {
+                    $sentenceAnnotationType = $annotationData['type']['SentenceAnnotationType'];
+                    $maxLevelOptions[$levelIndex] = $sentenceAnnotationType['name'];
+                    $levelIndex++;
+                }
+                $lastLevelIndex = $levelIndex - 1;
+                
+                echo $this->Form->input('sentenceId', array('type' => 'hidden', 'value'=>$sentence['Sentence']['id']));
+                echo $this->Form->input('startIndex', array('label'=>'From word:','options'=>$startIndexOptions, 'empty' => false));
+                echo $this->Form->input('endIndex', array('label'=>'To word:','options'=>$endIndexOptions, 'default'=>$lastWordIndex, 'empty' => false));
+                echo $this->Form->input('maxLevel', array('label'=>'Up to level:','options'=>$maxLevelOptions, 'default'=>$lastLevelIndex, 'empty' => false));
+                echo $this->Form->end('Export to Excel');
             ?>
         </span>
         <hr/>
