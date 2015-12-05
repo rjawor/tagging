@@ -1,3 +1,24 @@
+function selectByLang(lang) {
+    $('input:checked').prop('checked', false);
+    $('input.checkboxDoc'+lang).prop('checked', 'true');
+    document.getElementById('filter_form').submit();
+}
+
+function toggleDocumentFilter() {
+    toggleVisibility('documentFilter');
+    $('#documentFilterInput').val(1-$('#documentFilterInput').val());
+}
+
+function selectAll() {
+    $('input[type=checkbox]').prop('checked', true);
+    document.getElementById('filter_form').submit();
+}
+
+function selectNone() {
+    $('input[type=checkbox]').prop('checked', false);
+    document.getElementById('filter_form').submit();
+}
+
 function prevSentence() {
     var offsetElement = document.getElementById('offset');
     var documentId = getDocumentId();

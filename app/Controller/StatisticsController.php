@@ -5,6 +5,7 @@ App::uses('AnnotatedWord', 'Lib');
 App::uses('DataDumper', 'Lib');
 App::uses('Word', 'Model');
 App::uses('Sentence', 'Model');
+App::uses('Language', 'Model');
 App::uses('Document', 'Model');
 App::uses('WordAnnotationTypeChoice', 'Model');
 App::uses('WordAnnotationType', 'Model');
@@ -34,6 +35,13 @@ class StatisticsController extends AppController {
             $documentModel->recursive = 1;
             $documents = $documentModel->find('all');
             $this->set('documents', $documents);
+
+            $languageModel = ClassRegistry::init('Language');
+            $languageModel->recursive = 1;
+            $languages = $languageModel->find('all');
+            $this->set('languages', $languages);
+
+            $this->set('documentFilter', array_key_exists('documentFilter', $this->request['data'])? $this->request['data']['documentFilter'] : 0  );
             
             if (isset($this->request['data']['documentIds'])) {
     	        $documentIds = $this->request['data']['documentIds'];
@@ -70,11 +78,18 @@ class StatisticsController extends AppController {
         if ($this->request->is('post')) {
             $this->set('mainValue', $this->request['data']['mainValue']);
             $this->set('collocationValue', $this->request['data']['collocationValue']);
+            $this->set('immediate', $this->request['data']['immediate']);
+            $this->set('documentFilter', array_key_exists('documentFilter', $this->request['data'])? $this->request['data']['documentFilter'] : 0  );
             if ($this->request['data']['immediate'] == 1) {
                 $MAX_DIST = 1;
             } else {
                 $MAX_DIST = 10;
             }
+
+            $languageModel = ClassRegistry::init('Language');
+            $languageModel->recursive = 1;
+            $languages = $languageModel->find('all');
+            $this->set('languages', $languages);
 
             $documentModel = ClassRegistry::init('Document');
             $documentModel->recursive = 1;
