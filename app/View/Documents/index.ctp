@@ -46,6 +46,14 @@
                         array('confirm' => 'Deleting a document will also delete all the annotations. Are you sure?')
                     );
                 ?>
+                &nbsp;&nbsp;
+                <?php echo $this->Html->image("excel.png", array(
+                                    "alt" => "export to Excel",
+                                    "title" => "export document to Excel",
+                                    "width" => "24px",
+                                    'url' => array('controller' => 'generator', 'action' => 'generatedocxlsx', $document['Document']['id'])
+                                     ));
+                ?>
                 <?php } ?>
             </td>
         </tr>
