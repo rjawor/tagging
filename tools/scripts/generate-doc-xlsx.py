@@ -69,9 +69,9 @@ def fillAnnotationLevels(sentenceIndex, sentenceId):
 def insertWord(sentenceIndex, wordPos, wordText, isPostposition, postpositionId):
     sentenceOffset = getSentenceOffset(sentenceIndex)
     if isPostposition:
-        worksheet.write(sentenceOffset, 1 + wordPos, '{--', leftStyle)
-    if postpositionId is not None:
         worksheet.write(sentenceOffset, 1 + wordPos, '--}', rightStyle)
+    if postpositionId is not None:
+        worksheet.write(sentenceOffset, 1 + wordPos, '{--', leftStyle)
     worksheet.write(sentenceOffset+1, 1 + wordPos, wordText.decode('utf-8'), wordStyle)
 
 def insertTag(sentenceIndex, wordPos, annotationLevel, annotationText):
