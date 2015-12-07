@@ -37,11 +37,12 @@ with con:
     for i in range(cur.rowcount):        
         row = cur.fetchone()
         sentenceId = int(row['sentenceId'])
+
         if sentenceId in sentenceAnnotations:
             sentenceAnnotations[sentenceId]["annotations"][int(row["position"])] = row["text"]
         else:
             sentenceAnnotations[sentenceId] = {'length':int(row["length"])}
-            if row["position"]:
+            if row["position"] is not None:
                 sentenceAnnotations[sentenceId]["annotations"] = {int(row["position"]):row["text"]}
 
 def getSentenceOffset(sentenceIndex):
@@ -101,8 +102,14 @@ with con:
         if annotationId:
             annotationText = row['annotationText']
             annotationLevel = int(row['annotationLevel'])
-            tags = row['tags']            
-            insertTag(sentenceIndex, wordPos, annotationLevel, row['annotationText'] if row['annotationText'] else row['tags'])
+            tags = row['tags']
+            text = ''
+            if row['annotationText'] is not None:
+                text = row['annotationText']
+            elif row['tags'] is not None:
+                text = row['tags']
+                       
+            insertTag(sentenceIndex, wordPos, annotationLevel, text)
             
 
 
