@@ -10,6 +10,8 @@ workbook = xlsxwriter.Workbook(sys.argv[1])
 worksheet = workbook.add_worksheet()
 bold = workbook.add_format({'bold': True})
 wordStyle = workbook.add_format({'bold':True,'align': 'center'})
+leftStyle = workbook.add_format({'bold':True,'align': 'left'})
+rightStyle = workbook.add_format({'bold':True,'align': 'right'})
 
 
 worksheet.set_column(0, 0, 10)
@@ -64,8 +66,12 @@ def fillAnnotationLevels(sentenceIndex, sentenceId):
                 annotationData = sentenceAnnotations[sentenceId]['annotations'][level[0]]
         worksheet.merge_range(sheetRow, 1, sheetRow, sentenceLength, annotationData.decode('utf-8'))
         
-def insertWord(sentenceIndex, wordPos, wordText):
+def insertWord(sentenceIndex, wordPos, wordText, isPostposition, postpositionId):
     sentenceOffset = getSentenceOffset(sentenceIndex)
+    if isPostposition:
+        worksheet.write(sentenceOffset, 1 + wordPos, '{--', leftStyle)
+    if postpositionId is not None:
+        worksheet.write(sentenceOffset, 1 + wordPos, '--}', rightStyle)
     worksheet.write(sentenceOffset+1, 1 + wordPos, wordText.decode('utf-8'), wordStyle)
 
 def insertTag(sentenceIndex, wordPos, annotationLevel, annotationText):
@@ -76,7 +82,7 @@ con = mdb.connect('localhost', 'webuser', 'tialof', 'taggingdb')
 with con:
     cur = con.cursor(mdb.cursors.DictCursor)
 
-    cur.execute("select sentences.id as sentenceId, words.id as wordId, words.position as wordPos, (case words.split when 1 then concat(words.stem, '-', words.suffix) else words.text end) as wordText, word_annotations.id as annotationId, word_annotations.text_value as annotationText, word_annotation_types.position as annotationLevel, group_concat(word_annotation_type_choices.value) as tags from sentences inner join words on words.sentence_id = sentences.id and document_id = %d left join word_annotations on word_annotations.word_id = words.id left join word_annotation_types on word_annotation_types.id = word_annotations.type_id left join word_annotation_type_choices_word_annotations on word_annotation_type_choices_word_annotations.word_annotation_id = word_annotations.id left join word_annotation_type_choices on word_annotation_type_choices.id = word_annotation_type_choices_word_annotations.word_annotation_type_choice_id group by sentenceId, wordId, annotationId, annotationLevel order by sentences.position, words.position" % docId)
+    cur.execute("select sentences.id as sentenceId, words.id as wordId, words.position as wordPos, words.is_postposition, words.postposition_id, (case words.split when 1 then concat(words.stem, '-', words.suffix) else words.text end) as wordText, word_annotations.id as annotationId, word_annotations.text_value as annotationText, word_annotation_types.position as annotationLevel, group_concat(word_annotation_type_choices.value) as tags from sentences inner join words on words.sentence_id = sentences.id and document_id = %d left join word_annotations on word_annotations.word_id = words.id left join word_annotation_types on word_annotation_types.id = word_annotations.type_id left join word_annotation_type_choices_word_annotations on word_annotation_type_choices_word_annotations.word_annotation_id = word_annotations.id left join word_annotation_type_choices on word_annotation_type_choices.id = word_annotation_type_choices_word_annotations.word_annotation_type_choice_id group by sentenceId, wordId, annotationId, annotationLevel order by sentences.position, words.position" % docId)
 
     sentenceIndex = -1
 
@@ -89,6 +95,8 @@ with con:
         wordId = int(row['wordId'])
         wordPos = int(row['wordPos'])
         wordText = row['wordText']
+        isPostposition = row['is_postposition']
+        postpositionId = row['postposition_id']
         annotationId = row['annotationId']
         
         
@@ -97,7 +105,7 @@ with con:
             fillAnnotationLevels(sentenceIndex, sentenceId)
             lastSentenceId = row['sentenceId'] 
         if wordId <> lastWordId:
-            insertWord(sentenceIndex, wordPos, wordText)
+            insertWord(sentenceIndex, wordPos, wordText, isPostposition, postpositionId)
             lastWordId = wordId
         if annotationId:
             annotationText = row['annotationText']
