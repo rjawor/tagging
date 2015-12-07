@@ -311,51 +311,7 @@ class GeneratorController extends AppController {
     
     public function generatedocxlsx($documentId) {
         $tmpDocumentPath = '/tmp/IAtagger_generated.xlsx';
-        shell_exec("/var/www/test/tagging/tools/scripts/generate-doc-xlsx.py ".$tmpDocumentPath." ".$documentId);
-        /*
-        set_time_limit(3600);
-        ini_set('max_execution_time', 3600);
-        
-        
-        
-        $objPHPExcel = new PHPExcel();
-
-        // Set document properties
-        $objPHPExcel->getProperties()->setCreator("IA tagger system")
-						             ->setLastModifiedBy("IA tagger system")
-						             ->setTitle("Document exported from IA tagger")
-						             ->setSubject("Document table")
-						             ->setDescription("Document generated automatically from the IA tagger system, containing exhaustive information about a document in one of the Indo-Aryan languages.")
-						             ->setKeywords("IAtagger document generated")
-						             ->setCategory("Automatically generated file");
-
-
-        $objPHPExcel->setActiveSheetIndex(0);
-
-        $legend = array();
-
-        $documentModel = ClassRegistry::init('Document');
-        $document = $documentModel->findById($documentId);
-        
-        $baseLine = 0;
-        foreach ($document['Sentence'] as $sentence) {
-            $this->addSentenceToExcel($objPHPExcel, $legend, $sentence['id'], 0, 300, 8, $baseLine);        
-            $baseLine += 11;
-        }
-
-        // Rename worksheet
-        $objPHPExcel->getActiveSheet()->setTitle('Sentence');
-
-
-        // Set active sheet index to the first sheet, so Excel opens this as the first sheet
-        $objPHPExcel->setActiveSheetIndex(0);
-
-
-        // Save Excel 2007 file
-        $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
-        $objWriter->save($tmpDocumentPath);
-        */
-
+        shell_exec("/var/www/html/tagging/tools/scripts/generate-doc-xlsx.py ".$tmpDocumentPath." ".$documentId);
         $this->response->file(
             $tmpDocumentPath,
             array('download' => true, 'name' => 'IAtagger_table.xlsx')
