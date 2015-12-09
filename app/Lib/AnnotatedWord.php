@@ -141,6 +141,21 @@ class AnnotatedWord {
         return $result;
     }
 
+    public function getRawHtml($wordAnnotationTypes) {
+        $data = $this->getSuggestionData($wordAnnotationTypes);
+        $result = $data['text']."&nbsp;";
+        foreach ($data['annotations'] as $annotation) {
+            if ($annotation['type'] == 'text') {
+                $result .= $annotation['value']."&nbsp;";
+            } else if ($annotation['type'] == 'choices') {
+                foreach($annotation['choices'] as $choice) {
+                    $result .= '<input type="button" class="choice-selected" title="'.$choice['description'].'" value="'.$choice['value'].'" />';
+                }
+            }
+        }
+        return $result;
+    }
+
     private function getAnnotationType($wordAnnotationTypes, $id) {
         foreach ($wordAnnotationTypes as $type) {
             if ($type['WordAnnotationType']['id'] == $id) {

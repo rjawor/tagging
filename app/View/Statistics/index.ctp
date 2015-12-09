@@ -92,7 +92,11 @@
 
 <!--Here you can download the <a href="/tagging/statistics/taggerdownload">complete tagged text</a>-->
 
-Welcome to the statistics panel. Here you can use the <a href="/tagging/statistics/generator">statistics generator</a> or view the following presets:
+<h3>Statistics generator</h3>
+<p>If you want to generate custom statistics, use the <a href="/tagging/statistics/generator">statistics generator</a>.</p>
+
+<h3>Predefined statistics</h3>
+</p>You can also view one of the following predefined statistics:</p>
 
 <ul>
     <?php

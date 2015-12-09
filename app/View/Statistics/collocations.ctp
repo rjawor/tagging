@@ -41,18 +41,25 @@ Total number of collocations found: <strong><?php echo count($collocations); ?><
 <table>
     <tr>
         <th>No.</th>
-        <th></th>
+        <th>Document</th>
+        <th>Language</th>
         <th>First word</th>
-        <th>Separating words</th>
         <th>Second word</th>
+        <th></th>
+        <th width="60%" >Context</th>
     </tr>
 
 <?php
-$number = 0;
-foreach ($collocations as $collocation) {
-    $number++;
+for ($i=0;$i<count($collocations);$i++) {
+    $collocation = $collocations[$i];
+    $context = $contexts[$i];
+    
     echo "<tr>";
-    echo "<td>".$number."</td>";
+    echo "<td>".($i+1)."</td>";
+    echo "<td>".$context[0]["documents"]["name"]."</td>";
+    echo "<td>".$context[0]["languages"]["code"]."</td>";
+    echo "<td>".$collocation['mwText']."</td>";
+    echo "<td>".$collocation['cwText']."</td>";
     
     $image = $this->Html->image("edit.png", array(
                     "alt" => "edit"                    
@@ -65,9 +72,30 @@ foreach ($collocations as $collocation) {
                             'target'=>'_blank', 
                             'escape' => false
                         ))."</td>";
-    echo "<td>".$collocation['mwText']."</td>";
-    echo "<td>".$collocation['sepWords']."</td>";
-    echo "<td>".$collocation['cwText']."</td>";
+    echo "<td>";
+    foreach ($context as $contextWord) {
+        if ($contextWord['words']['id'] == $collocation['mwId'] ||
+            $contextWord['words']['id'] == $collocation['cwId']) {
+            $text = "<b>";
+        } else {
+            $text = "";
+        }
+        
+        if ($contextWord['words']['split']) {        
+            $text .=  $contextWord['words']['stem']."-".$contextWord['words']['suffix'];
+        } else {
+            $text .= $contextWord['words']['text'];
+        }
+        $text = trim($text);
+        if ($contextWord['words']['id'] == $collocation['mwId'] ||
+            $contextWord['words']['id'] == $collocation['cwId']) {
+            $text .= "</b>";
+        }
+        
+        echo $text." ";
+    }
+  
+    echo "</td>";
     echo "</tr>\n";    
 }
 ?>

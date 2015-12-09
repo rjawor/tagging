@@ -29,6 +29,21 @@ class QueryBuilder {
         return $result;
     }
     
+    public static function multicollocations($documentIds, $multiWord1ChoiceIds, $multiWord2ChoiceIds, $multiWord3ChoiceIds) {
+        $result = "SELECT * FROM `sentences` INNER JOIN `words` AS MW1 ON `sentences`.`id` = MW1.`sentence_id` AND MW1.`id` IN (".self::singleWordChoices($multiWord1ChoiceIds).")";
+        if (!empty($documentIds)) {
+            $result .= " AND `sentences`.`document_id` IN (".implode(',', $documentIds).")";
+        } else {
+            $result .= " AND false";
+        }
+
+        $result .= " INNER JOIN `words` AS MW2 ON `sentences`.`id` = MW2.`sentence_id` AND MW2.`id` IN (".self::singleWordChoices($multiWord2ChoiceIds).")";
+
+        $result .= " INNER JOIN `words` AS MW3 ON `sentences`.`id` = MW3.`sentence_id` AND MW3.`id` IN (".self::singleWordChoices($multiWord3ChoiceIds).") ORDER BY `sentences`.`id`, MW1.`id`";
+        
+        return $result;
+    }
+
     private static function choiceCondition($number, $choiceId) {
         return " INNER JOIN `word_annotations` AS WA".$number." ON `words`.`id` = WA".$number.".`word_id` INNER JOIN `word_annotation_type_choices_word_annotations` AS CH".$number." ON WA".$number.".id = CH".$number.".`word_annotation_id` AND CH".$number.".`word_annotation_type_choice_id` = ".$choiceId;
     }
