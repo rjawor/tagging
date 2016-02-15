@@ -56,6 +56,18 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
+-- Table `testtaggingdb`.`folders`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `testtaggingdb`.`folders` ;
+
+CREATE TABLE IF NOT EXISTS `testtaggingdb`.`folders` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
 -- Table `testtaggingdb`.`documents`
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `testtaggingdb`.`documents` ;
@@ -65,9 +77,11 @@ CREATE TABLE IF NOT EXISTS `testtaggingdb`.`documents` (
   `name` VARCHAR(70) NULL,
   `user_id` INT NULL,
   `language_id` INT NULL,
+  `folder_id` INT NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_documents_users1_idx` (`user_id` ASC),
   INDEX `fk_documents_languages1_idx` (`language_id` ASC),
+  INDEX `fk_documents_folders1_idx` (`folder_id` ASC),
   CONSTRAINT `fk_documents_users1`
     FOREIGN KEY (`user_id`)
     REFERENCES `testtaggingdb`.`users` (`id`)
@@ -77,6 +91,11 @@ CREATE TABLE IF NOT EXISTS `testtaggingdb`.`documents` (
     FOREIGN KEY (`language_id`)
     REFERENCES `testtaggingdb`.`languages` (`id`)
     ON DELETE SET NULL
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_documents_folders1`
+    FOREIGN KEY (`folder_id`)
+    REFERENCES `testtaggingdb`.`folders` (`id`)
+    ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 

@@ -1,6 +1,6 @@
 <?php
 
-App::uses('Language', 'Model', 'Sentence', 'Word');
+App::uses('Language', 'Model', 'Sentence', 'Word', 'Folder');
 
 class DocumentsController extends AppController {
     public $helpers = array('Html', 'Form');
@@ -15,9 +15,24 @@ class DocumentsController extends AppController {
         return $languageOptions;    
     }
 
-    public function index() {
+    public function index($folderId = 0) {
         $this->Document->recursive = 0;
-        $this->set('documents', $this->Document->find('all'));
+        $folderModel = ClassRegistry::init('Folder');
+        if ($folderId > 0) {
+            $this->set('currentFolder', $folderModel->findById($folderId));
+            $folderCondition = $folderId;
+        } else {
+            $this->set('currentFolder', null);
+            $folderCondition = null;
+        }
+        $this->set('documents', $this->Document->find(
+                                                    'all',
+                                                    array(
+                                                        'conditions' => array('Document.folder_id' => $folderCondition)
+                                                    )
+                                                 )
+               );
+        $this->set('folders', $folderModel->find('all'));
         $this->set('roleId', $this->Auth->user()['role_id']);
         $this->set('languageOptions', $this->getLanguageOptions());
     }
@@ -272,6 +287,33 @@ class DocumentsController extends AppController {
             );
             return $this->redirect(array('action' => 'index'));
         }
+    }
+
+    public function moveToFolder($documentId, $folderId) {
+        if ($this->Auth->user()['role_id'] > 2) {
+            $this->Session->setFlash('This action needs editor privileges.');
+            $this->redirect('/');
+        }
+
+        $document = $this->Document->findById($documentId);
+        if (!$document) {
+            throw new NotFoundException(__('Invalid document'));
+        }
+
+        if ($folderId > 0) {
+            $folderValue = $folderId;
+        } else {
+            $folderValue = null;            
+        }
+
+        $this->Document->id = $documentId;
+        if ($this->Document->saveField('folder_id', $folderValue)) {
+            $this->Session->setFlash(__('Your document has been moved.'), 'flashes/success');
+        } else {
+            $this->Session->setFlash(__('Unable to move your document.'));
+        }
+        return $this->redirect(array('action' => 'index'));
+
     }
 
     public function edit($id = null) {

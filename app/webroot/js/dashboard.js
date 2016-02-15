@@ -1,3 +1,14 @@
+function moveToFolder(selectElement, documentId) {
+    var folderId = selectElement.options[ selectElement.selectedIndex ].value;
+    if (folderId >= 0) {
+        location.href='/tagging/documents/moveToFolder/'+documentId+'/'+folderId;
+    }
+}
+
+function folderAddForm() {
+    $('#folder_add_form').toggleClass('hidden');
+}
+
 function selectByLang(lang) {
     $('input:checked').prop('checked', false);
     $('input.checkboxDoc'+lang).prop('checked', 'true');

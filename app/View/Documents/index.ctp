@@ -1,5 +1,61 @@
 <div id="document-list">
-    <h3>Documents list</h3>
+    <?php
+    if (is_null($currentFolder)) {
+        $currentFolderName = "root";
+    ?>  
+    
+    <h3>Folders</h3>
+    <table>
+        <?php foreach ($folders as $folder): ?>
+        <tr>
+            <td><?php echo $this->Html->image('folder.png', array(
+                                      'alt' => 'folder',
+                                      'title' => 'go to folder',
+                                      'url' => array('action'=>'index', $folder['Folder']['id'])
+                                  )
+                       );
+                 ?></td>
+            <td><a href="/tagging/documents/index/<?php echo $folder['Folder']['id'];?>"><?php echo $folder['Folder']['name']; ?></a></td>
+            <td>
+                <?php
+                    echo $this->Html->link(
+                        'Edit',
+                        array('controller' => 'folders', 'action' => 'edit', $folder['Folder']['id'])
+                    );
+                ?>
+                &nbsp;&nbsp;
+                <?php
+                    echo $this->Form->postLink(
+                        'Delete',
+                        array('controller' => 'folders', 'action' => 'delete', $folder['Folder']['id']),
+                        array('confirm' => 'Documents from this folder will be moved to the root folder. Are you sure?')
+                    );
+                ?>
+            </td>
+        </tr>
+        <?php endforeach; ?>
+	</table>
+	<a style="cursor:pointer;" onclick="folderAddForm()">+ Add folder</a>
+	<div id="folder_add_form"class="hidden">
+    <?php 
+    echo $this->Form->create('Folder', array('action' => 'add'));
+    echo $this->Form->input('name', array('label' => 'New folder name:'));
+    echo $this->Form->end('Add');
+    ?>
+    </div>
+    <br/><br/>
+    <?php
+    } else {
+        echo $this->Html->image('left.png', array(
+                                          'alt' => 'back to the root folder',
+                                          'title' => 'back to the root folder',
+                                          'url' => array('action'=>'index')
+                                      )
+                           );
+        $currentFolderName = $currentFolder['Folder']['name'];        
+    }
+    ?>
+    <h3>Documents in folder: <?php echo $currentFolderName; ?></h3>
     <table>
         <tr>
             <th>Id</th>
@@ -7,7 +63,7 @@
             <th>Name</th>
             <th>Language</th>
             <th>Owner</th>
-            <th width="200px">Actions</th>
+            <th width="300px">Actions</th>
         </tr>
 
         <?php foreach ($documents as $document): ?>
@@ -54,6 +110,13 @@
                                     'url' => array('controller' => 'generator', 'action' => 'generatedocxlsx', $document['Document']['id'])
                                      ));
                 ?>
+                <select id="folderSelect<?php echo $document['Document']['id'];?>" onchange="moveToFolder(this, <?php echo $document['Document']['id'];?>)" style="width:100px">
+                    <option value="-1">Move to...</option>
+                    <option value="0">root</option>
+                    <?php foreach ($folders as $folder): ?>
+                    <option value="<?php echo $folder['Folder']['id'];?>"><?php echo $folder['Folder']['name'];?></option>
+                    <?php endforeach; ?> 
+                </select>
                 <?php } ?>
             </td>
         </tr>
