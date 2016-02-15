@@ -63,7 +63,7 @@
             <th>Name</th>
             <th>Language</th>
             <th>Owner</th>
-            <th width="300px">Actions</th>
+            <th width="200px">Actions</th>
         </tr>
 
         <?php foreach ($documents as $document): ?>
