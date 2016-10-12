@@ -63,6 +63,7 @@
             <th>Name</th>
             <th>Language</th>
             <th>Owner</th>
+            <th>Words</th>
             <th width="300px">Actions</th>
         </tr>
 
@@ -85,6 +86,7 @@
             </td>
             <td><?php echo $document['Language']['description']; ?> (<?php echo $document['Language']['code']; ?>)</td>
             <td><?php echo $document['User']['username']; ?></td>
+            <td><?php echo $wordCounts[$document['Document']['id']]; ?></td>
             <td>
                 <?php if ($roleId < 3) { ?>
 

@@ -32,6 +32,18 @@ class DocumentsController extends AppController {
                                                     )
                                                  )
                );
+        
+        $wordCountsRaw = $this->Document->query('select documents.id, count(words.id) as word_count  from documents inner join sentences on documents.id = sentences.document_id inner join words on sentences.id = words.sentence_id group by documents.id;');
+        
+        
+        $wordCounts = array();
+        
+        foreach($wordCountsRaw as $wordCount) {
+        	
+        	$wordCounts[$wordCount['documents']['id']] = $wordCount[0]['word_count'];
+        }
+        
+        $this->set('wordCounts', $wordCounts);        
         $this->set('folders', $folderModel->find('all'));
         $this->set('roleId', $this->Auth->user()['role_id']);
         $this->set('languageOptions', $this->getLanguageOptions());
