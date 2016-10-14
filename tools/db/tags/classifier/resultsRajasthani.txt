@@ -1,0 +1,19 @@
+Max precision:
+precision: 0.8667
+recall: 0.0867
+f-score: 0.1576
+For config:
+{'cvbEnding': 0, 'word': 1, 'suffix': 2, 'firstOrLast': 0, 'wordContext': 2, 'class': 0, 'classContext': 0}
+Max recall:
+precision: 0.7566
+recall: 0.3833
+f-score: 0.5088
+For config:
+{'cvbEnding': 0, 'word': 1, 'suffix': 4, 'firstOrLast': 0, 'wordContext': 0, 'class': 0, 'classContext': 0}
+Max fscore:
+precision: 0.7566
+recall: 0.3833
+f-score: 0.5088
+For config:
+{'cvbEnding': 0, 'word': 1, 'suffix': 4, 'firstOrLast': 0, 'wordContext': 0, 'class': 0, 'classContext': 0}
+

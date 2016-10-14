@@ -195,7 +195,14 @@ def run(config):
 
         print "Getting data"
         cur = con.cursor(mdb.cursors.DictCursor)
-        cur.execute("select words.sentence_id, words.id, (case words.split when 1 then concat(words.stem, words.suffix) else words.text end) as word_text, group_concat(word_annotation_type_choice_id order by word_annotation_type_choice_id asc) as tag from words left join word_annotations on words.id = word_annotations.word_id left join word_annotation_type_choices_word_annotations on word_annotations.id = word_annotation_type_choices_word_annotations.word_annotation_id group by word_id order by sentence_id, words.position")
+        
+        # for Awadhi only:
+        #cur.execute("select words.sentence_id, words.id, (case words.split when 1 then concat(words.stem, words.suffix) else words.text end) as word_text, group_concat(word_annotation_type_choice_id order by word_annotation_type_choice_id asc) as tag from words inner join sentences on words.sentence_id = sentences.id inner join documents on sentences.document_id = documents.id and documents.language_id = 3 left join word_annotations on words.id = word_annotations.word_id left join word_annotation_type_choices_word_annotations on word_annotations.id = word_annotation_type_choices_word_annotations.word_annotation_id group by word_id order by sentence_id, words.position")
+
+	# for Rajasthani only:
+        cur.execute("select words.sentence_id, words.id, (case words.split when 1 then concat(words.stem, words.suffix) else words.text end) as word_text, group_concat(word_annotation_type_choice_id order by word_annotation_type_choice_id asc) as tag from words inner join sentences on words.sentence_id = sentences.id inner join documents on sentences.document_id = documents.id and documents.language_id = 2 left join word_annotations on words.id = word_annotations.word_id left join word_annotation_type_choices_word_annotations on word_annotations.id = word_annotation_type_choices_word_annotations.word_annotation_id group by word_id order by sentence_id, words.position")
+
+        #cur.execute("select words.sentence_id, words.id, (case words.split when 1 then concat(words.stem, words.suffix) else words.text end) as word_text, group_concat(word_annotation_type_choice_id order by word_annotation_type_choice_id asc) as tag from words left join word_annotations on words.id = word_annotations.word_id left join word_annotation_type_choices_word_annotations on word_annotations.id = word_annotation_type_choices_word_annotations.word_annotation_id group by word_id order by sentence_id, words.position")
 
 
         corpusData = []
@@ -242,13 +249,12 @@ def run(config):
 # Main program
 
 
-config = {'word':1, 'suffix':4, 'class':1,'classContext':0, 'wordContext':0, 'cvbEnding':0, 'firstOrLast':0}
+#configs = [{'word':1, 'suffix':4, 'class':1,'classContext':0, 'wordContext':0, 'cvbEnding':0, 'firstOrLast':0}]
 
-#configs = [{'word':word, 'suffix':suffix, 'class':cl,'classContext':classContext, 'wordContext':wordContext, 'cvbEnding':cvbEnding, 'firstOrLast':firstOrLast} for word in range(2) for suffix in range(5) for cl in range(2) for classContext in range(3) for wordContext in range(3) for cvbEnding in range(2) for firstOrLast in range(2)]
+configs = [{'word':word, 'suffix':suffix, 'class':cl,'classContext':classContext, 'wordContext':wordContext, 'cvbEnding':cvbEnding, 'firstOrLast':firstOrLast} for word in range(2) for suffix in range(5) for cl in range(2) for classContext in range(3) for wordContext in range(3) for cvbEnding in range(2) for firstOrLast in range(2)]
 
 #configs = [{'word':word, 'suffix':suffix, 'class':cl,'classContext':classContext, 'wordContext':wordContext, 'cvbEnding':cvbEnding, 'firstOrLast':firstOrLast} for word in range(1,2) for suffix in range(4,5) for cl in range(2) for classContext in range(1) for wordContext in range(1) for cvbEnding in range(1) for firstOrLast in range(1)]
 
-configs = [config]
 
 maxPrecision = [(None, None, None), None]
 maxRecall = [(None, None, None), None]
