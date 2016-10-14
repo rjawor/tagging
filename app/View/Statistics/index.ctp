@@ -99,6 +99,10 @@
 </p>You can also view one of the following predefined statistics:</p>
 
 <ul>
+	    <li style="margin:1em 0">
+            <form method="post" name="sentences" action="/tagging/statistics/sentences"></form>
+    	    <a href="#" onclick="document.forms['sentences'].submit()">Sentences with "add info"</a>
+   	    </li>
     <?php
         foreach($statistics as $position) {
         ?>
