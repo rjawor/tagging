@@ -55,7 +55,7 @@ class StatisticsController extends AppController {
         
             $sentenceModel = ClassRegistry::init('Sentence');
             $sentenceModel->recursive = 1;
-            $query = "select *, sentences.id as sent_id, (select group_concat(case words.split when 1 then concat(words.stem, '|', words.suffix) else words.text end order by words.position separator ' ') from words where words.sentence_id = sent_id) as sentence_text from sentences inner join sentence_annotations on sentences.id = sentence_annotations.sentence_id and type_id = 1 inner join documents on documents.id = sentences.document_id inner join languages on languages.id = documents.language_id";
+            $query = "select *, sentences.id as sent_id, (select group_concat(case words.split when 1 then concat(words.stem, '|', words.suffix) else words.text end order by words.position separator ' ') from words where words.sentence_id = sent_id) as sentence_text from sentences inner join sentence_annotations on sentences.id = sentence_annotations.sentence_id and type_id = 1 and sentence_annotations.text != '' inner join documents on documents.id = sentences.document_id inner join languages on languages.id = documents.language_id";
             if (count($documentIds) > 0) {
             	$query = $query." where documents.id in (".join(',', $documentIds).")";
             }
