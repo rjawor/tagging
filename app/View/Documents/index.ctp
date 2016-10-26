@@ -2,8 +2,8 @@
     <?php
     if (is_null($currentFolder)) {
         $currentFolderName = "root";
-    ?>  
-    
+    ?>
+
     <h3>Folders</h3>
     <table>
         <?php foreach ($folders as $folder): ?>
@@ -11,23 +11,23 @@
             <td><?php echo $this->Html->image('folder.png', array(
                                       'alt' => 'folder',
                                       'title' => 'go to folder',
-                                      'url' => array('action'=>'index', $folder['Folder']['id'])
+                                      'url' => array('action'=>'index', $folder['Catalogue']['id'])
                                   )
                        );
                  ?></td>
-            <td><a href="/tagging/documents/index/<?php echo $folder['Folder']['id'];?>"><?php echo $folder['Folder']['name']; ?></a></td>
+            <td><a href="/tagging/documents/index/<?php echo $folder['Catalogue']['id'];?>"><?php echo $folder['Catalogue']['name']; ?></a></td>
             <td>
                 <?php
                     echo $this->Html->link(
                         'Edit',
-                        array('controller' => 'folders', 'action' => 'edit', $folder['Folder']['id'])
+                        array('controller' => 'catalogues', 'action' => 'edit', $folder['Catalogue']['id'])
                     );
                 ?>
                 &nbsp;&nbsp;
                 <?php
                     echo $this->Form->postLink(
                         'Delete',
-                        array('controller' => 'folders', 'action' => 'delete', $folder['Folder']['id']),
+                        array('controller' => 'catalogues', 'action' => 'delete', $folder['Catalogue']['id']),
                         array('confirm' => 'Documents from this folder will be moved to the root folder. Are you sure?')
                     );
                 ?>
@@ -37,8 +37,8 @@
 	</table>
 	<a style="cursor:pointer;" onclick="folderAddForm()">+ Add folder</a>
 	<div id="folder_add_form"class="hidden">
-    <?php 
-    echo $this->Form->create('Folder', array('action' => 'add'));
+    <?php
+    echo $this->Form->create('Catalogue', array('action' => 'add'));
     echo $this->Form->input('name', array('label' => 'New folder name:'));
     echo $this->Form->end('Add');
     ?>
@@ -52,7 +52,7 @@
                                           'url' => array('action'=>'index')
                                       )
                            );
-        $currentFolderName = $currentFolder['Folder']['name'];        
+        $currentFolderName = $currentFolder['Catalogue']['name'];
     }
     ?>
     <h3>Documents in folder: <?php echo $currentFolderName; ?></h3>
@@ -116,8 +116,8 @@
                     <option value="-1">Move to...</option>
                     <option value="0">root</option>
                     <?php foreach ($folders as $folder): ?>
-                    <option value="<?php echo $folder['Folder']['id'];?>"><?php echo $folder['Folder']['name'];?></option>
-                    <?php endforeach; ?> 
+                    <option value="<?php echo $folder['Catalogue']['id'];?>"><?php echo $folder['Catalogue']['name'];?></option>
+                    <?php endforeach; ?>
                 </select>
                 <?php } ?>
             </td>
@@ -129,11 +129,10 @@
 
 <div id="import-box">
     <h3>Import document from a text file</h3>
-    <?php 
+    <?php
     echo $this->Form->create('Documents', array('type' => 'file', 'action' => 'add'));
     echo $this->Form->input('file',array( 'type' => 'file'));
     echo $this->Form->input('language', array('type' => 'select', 'options' => $languageOptions,'empty' => false));
     echo $this->Form->end('Submit');
     ?>
 </div>
-

@@ -14,9 +14,9 @@ class GeneratorController extends AppController {
             $startIndex = $this->request['data']['startIndex'];
             $endIndex = $this->request['data']['endIndex'];
             $maxLevel = $this->request['data']['maxLevel'];
-            
+
             $tmpDocumentPath = '/tmp/IAtagger_generated.docx';
-            
+
             $sentenceData = Utils::getSentenceData($sentenceId);
             //die(print_r($sentenceData, true));
 
@@ -25,14 +25,14 @@ class GeneratorController extends AppController {
 
             // New portrait section
             $section = $PHPWord->createSection();
-            
+
             $PHPWord->addParagraphStyle('centering', array('align'=>'center'));
             $PHPWord->addFontStyle('wordsRowTextStyle', array('bold'=>true));
             $PHPWord->addFontStyle('tagsTextStyle', array('bold'=>true, 'color'=>'000066', 'align'=>'center'));
             $PHPWord->addFontStyle('defaultTextStyle', array('bold'=>false));
-            
+
             $wordsRowCellStyle = array('borderTopSize'=>6,
-                                       'borderTopColor'=>'006699', 
+                                       'borderTopColor'=>'006699',
                                        'borderLeftSize'=>6,
                                        'borderLeftColor'=>'006699',
                                        'borderRightSize'=>6,
@@ -53,10 +53,10 @@ class GeneratorController extends AppController {
                 if ($wordIndex >= $startIndex && $wordIndex < $endIndex) {
                     $cell = $table->addCell(2000);
                     if ($word['postposition_id']) {
-                        $cell->addImage('/var/www/html/tagging/app/webroot/img/leftBracket.png', array('width'=>40, 'height'=>15, 'align'=>'right'));        
+                        $cell->addImage('/var/www/html/tagging/app/webroot/img/leftBracket.png', array('width'=>40, 'height'=>15, 'align'=>'right'));
                     }
                     if ($word['is_postposition']) {
-                        $cell->addImage('/var/www/html/tagging/app/webroot/img/rightBracket.png', array('width'=>40, 'height'=>15, 'align'=>'left'));        
+                        $cell->addImage('/var/www/html/tagging/app/webroot/img/rightBracket.png', array('width'=>40, 'height'=>15, 'align'=>'left'));
                     }
                 }
                 $wordIndex++;
@@ -71,7 +71,7 @@ class GeneratorController extends AppController {
                     $cell = $table->addCell(2000, $wordsRowCellStyle);
                     if ($word['split']) {
                         $wordText = $word['stem'].'-'.$word['suffix'];
-                    } else {            
+                    } else {
                         $wordText = $word['text'];
                     }
                     $cell->addText($wordText, 'wordsRowTextStyle', 'centering');
@@ -85,12 +85,12 @@ class GeneratorController extends AppController {
             foreach ($sentenceData['sentence']['WordAnnotations'] as $annotationData) {
                 if ($levelIndex < $maxLevel) {
                     $table->addRow(900);
-                    
+
                     $wordAnnotationType = $annotationData['type']['WordAnnotationType'];
                     // annotation name cell
                     $cell = $table->addCell(900, $cellStyle);
                     $cell->addText($wordAnnotationType['name'], 'defaultTextStyle', 'centering');
-                    
+
                     $wordIndex = 0;
                     foreach ($annotationData['annotations'] as $annotation) {
                         if ($wordIndex >= $startIndex && $wordIndex < $endIndex) {
@@ -102,7 +102,7 @@ class GeneratorController extends AppController {
                                         $legend[$choice['value']]=$choice['description'];
                                     }
                                 } else {
-                                    $cell->addText($annotation['text_value'], 'defaultTextStyle', 'centering');                    
+                                    $cell->addText($annotation['text_value'], 'defaultTextStyle', 'centering');
                                 }
                             }
                         }
@@ -111,7 +111,7 @@ class GeneratorController extends AppController {
                 }
                 $levelIndex++;
             }
-            
+
             foreach ($sentenceData['sentence']['SentenceAnnotations'] as $annotationData) {
                 if ($levelIndex < $maxLevel) {
                     $table->addRow(900);
@@ -126,10 +126,10 @@ class GeneratorController extends AppController {
                     $cell = $table->addCell(900, $spanningCellStyle);
                     $text = isset($annotationData['annotation']['text']) ? $annotationData['annotation']['text'] : '';
                     $cell->addText($text);
-                }            
+                }
                 $levelIndex++;
             }
-            
+
 
             // Legend
             ksort($legend);
@@ -138,12 +138,12 @@ class GeneratorController extends AppController {
             foreach ($legend as $value => $description) {
                 $section->addListItem($value.' - '.$description);
             }
-            
+
 
             // Save File
             $objWriter = PHPWord_IOFactory::createWriter($PHPWord, 'Word2007');
             $objWriter->save($tmpDocumentPath);
-            
+
             $this->response->file(
                 $tmpDocumentPath,
                 array('download' => true, 'name' => 'IAtagger_table.docx')
@@ -151,20 +151,20 @@ class GeneratorController extends AppController {
             // Return response object to prevent controller from trying to render
             // a view
             return $this->response;
-        
+
         }
-        
+
     }
-    
+
     public function generatexlsx() {
         if ($this->request->is('post')) {
             $sentenceId = $this->request['data']['sentenceId'];
             $startIndex = $this->request['data']['startIndex'];
             $endIndex = $this->request['data']['endIndex'];
             $maxLevel = $this->request['data']['maxLevel'];
-            
+
             $tmpDocumentPath = '/tmp/IAtagger_generated.xlsx';
-            
+
             $objPHPExcel = new PHPExcel();
 
             // Set document properties
@@ -184,11 +184,11 @@ class GeneratorController extends AppController {
 
             // Legend
             $levelIndex = $maxLevel + 2;
-            
+
             $objPHPExcel->getActiveSheet()->getCellByColumnAndRow(0, $levelIndex+3)->setValue("Legend");
             ksort($legend);
             $levelIndex++;
-            
+
             foreach ($legend as $value => $description) {
                 $objPHPExcel->getActiveSheet()->getCellByColumnAndRow(0, $levelIndex+3)->setValue($value);
                 $objPHPExcel->getActiveSheet()->getCellByColumnAndRow(1, $levelIndex+3)->setValue($description);
@@ -214,13 +214,13 @@ class GeneratorController extends AppController {
             // Return response object to prevent controller from trying to render
             // a view
             return $this->response;
-        
+
         }
-        
+
     }
-    
+
     private function addSentenceToExcel(&$objPHPExcel, &$legend, $sentenceId, $startIndex, $endIndex, $maxLevel, $baseLine) {
-    
+
         // Add sentence data
         $sentenceData = Utils::getSentenceData($sentenceId);
 
@@ -234,18 +234,18 @@ class GeneratorController extends AppController {
                 if ($word['is_postposition']) {
                     $objPHPExcel->getActiveSheet()->getCellByColumnAndRow($wordIndex-$startIndex+1, 1+$baseLine)->setValue("----}");
                     $objPHPExcel->getActiveSheet()->getStyle(PHPExcel_Cell::stringFromColumnIndex($wordIndex-$startIndex+1).(1+$baseLine))->getAlignment()->setHorizontal(PHPExcel_Style_Alignment::HORIZONTAL_RIGHT);
-                }   
+                }
             }
             $wordIndex++;
         }
-        
+
         // Words row
         $wordIndex = 0;
         foreach ($sentenceData['sentence']['Word'] as $word) {
             if ($wordIndex >= $startIndex && $wordIndex < $endIndex) {
                 if ($word['split']) {
                     $wordText = $word['stem'].'-'.$word['suffix'];
-                } else {            
+                } else {
                     $wordText = $word['text'];
                 }
                 $objPHPExcel->getActiveSheet()->getCellByColumnAndRow($wordIndex-$startIndex+1, 2+$baseLine)->setValue($wordText);
@@ -253,7 +253,7 @@ class GeneratorController extends AppController {
             }
             $wordIndex++;
         }
-        
+
         $objPHPExcel->getActiveSheet()->getStyle("A".(2+$baseLine).":ZZ".(2+$baseLine))->getFont()->setBold(true);
         $objPHPExcel->getActiveSheet()->getStyle("A".(1+$baseLine).":A".(100+$baseLine))->getFont()->setBold(true);
         $objPHPExcel->getActiveSheet()->getStyle("A".(2+$baseLine).":ZZ".(100+$baseLine))->getAlignment()->setWrapText(true);
@@ -264,11 +264,11 @@ class GeneratorController extends AppController {
         $levelIndex = 0;
         foreach ($sentenceData['sentence']['WordAnnotations'] as $annotationData) {
             if ($levelIndex < $maxLevel) {
-                
+
                 $wordAnnotationType = $annotationData['type']['WordAnnotationType'];
                 // annotation name cell
                 $objPHPExcel->getActiveSheet()->getCellByColumnAndRow(0, $levelIndex+3+$baseLine)->setValue($wordAnnotationType['name']);
-                
+
                 $wordIndex = 0;
                 foreach ($annotationData['annotations'] as $annotation) {
                     if ($wordIndex >= $startIndex && $wordIndex < $endIndex) {
@@ -290,7 +290,7 @@ class GeneratorController extends AppController {
             }
             $levelIndex++;
         }
-        
+
         foreach ($sentenceData['sentence']['SentenceAnnotations'] as $annotationData) {
             if ($levelIndex < $maxLevel) {
                 $objPHPExcel->getActiveSheet()->mergeCells('B'.($levelIndex+3+$baseLine).':'.PHPExcel_Cell::stringFromColumnIndex($endIndex-$startIndex).($levelIndex+3+$baseLine));
@@ -301,14 +301,14 @@ class GeneratorController extends AppController {
 
                 $text = array_key_exists('text', $annotationData['annotation']) ? $annotationData['annotation']['text'] : '';
                 $objPHPExcel->getActiveSheet()->getCellByColumnAndRow(1, $levelIndex+3+$baseLine)->setValue($text);
-            }            
+            }
             $levelIndex++;
         }
-        
+
         unset($sentenceData);
 
-    } 
-    
+    }
+
     public function generatedocxlsx($documentId) {
         $tmpDocumentPath = '/tmp/IAtagger_generated.xlsx';
         shell_exec("/var/www/html/tagging/tools/scripts/generate-doc-xlsx.py ".$tmpDocumentPath." ".$documentId);
