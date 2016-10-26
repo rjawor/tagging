@@ -1,6 +1,6 @@
 <?php
 
-App::uses('Language', 'Model', 'Sentence', 'Word', 'Folder');
+App::uses('Language', 'Model', 'Sentence', 'Word');
 
 class DocumentsController extends AppController {
     public $helpers = array('Html', 'Form');
@@ -12,12 +12,12 @@ class DocumentsController extends AppController {
         foreach ($languages as $language) {
             $languageOptions[$language['Language']['id']] = $language['Language']['description'].' ('.$language['Language']['code'].')';
         }
-        return $languageOptions;    
+        return $languageOptions;
     }
 
     public function index($folderId = 0) {
         $this->Document->recursive = 0;
-        $folderModel = ClassRegistry::init('Folder');
+        $folderModel = ClassRegistry::init('Catalogue', true);
         if ($folderId > 0) {
             $this->set('currentFolder', $folderModel->findById($folderId));
             $folderCondition = $folderId;
@@ -28,36 +28,36 @@ class DocumentsController extends AppController {
         $this->set('documents', $this->Document->find(
                                                     'all',
                                                     array(
-                                                        'conditions' => array('Document.folder_id' => $folderCondition)
+                                                        'conditions' => array('Document.catalogue_id' => $folderCondition)
                                                     )
                                                  )
                );
-        
+
         $wordCountsRaw = $this->Document->query('select documents.id, count(words.id) as word_count  from documents inner join sentences on documents.id = sentences.document_id inner join words on sentences.id = words.sentence_id group by documents.id;');
-        
-        
+
+
         $wordCounts = array();
-        
+
         foreach($wordCountsRaw as $wordCount) {
-        	
+
         	$wordCounts[$wordCount['documents']['id']] = $wordCount[0]['word_count'];
         }
-        
-        $this->set('wordCounts', $wordCounts);        
+
+        $this->set('wordCounts', $wordCounts);
         $this->set('folders', $folderModel->find('all'));
         $this->set('roleId', $this->Auth->user()['role_id']);
         $this->set('languageOptions', $this->getLanguageOptions());
     }
-    
+
     public function view($id = null, $editMode = 0) {
         if ($editMode == 1 && $this->Auth->user()['role_id'] > 2) {
             $this->Session->setFlash('This action needs editor privileges.');
             $this->redirect(array('action' => 'index'));
-        }        
+        }
         if (!$id) {
             throw new NotFoundException(__('Invalid document id.'));
         }
-        
+
         $this->Document->recursive = 2;
         $document = $this->Document->findById($id);
         if (!$document) {
@@ -67,7 +67,7 @@ class DocumentsController extends AppController {
         $this->set('editMode', $editMode);
         $this->set('roleId', $this->Auth->user()['role_id']);
     }
-    
+
     public function add() {
         if ($this->Auth->user()['role_id'] > 2) {
             $this->Session->setFlash('This action needs editor privileges.');
@@ -83,14 +83,14 @@ class DocumentsController extends AppController {
                                                 ),
                                   'Sentence' => array()
                             );
-                
+
                 $sentencePos = 0;
                 while (($buffer = fgets($handle, 4096)) !== false) {
                     $wordTexts = preg_split("/\s+/", $buffer);
-                    
+
                     if(count($wordTexts) > 0) {
                         $sentence = array('Word' => array());
-                        
+
                         $wordPos = 0;
                         $punct = ".,!?";
                         foreach($wordTexts as $wordText) {
@@ -100,13 +100,13 @@ class DocumentsController extends AppController {
                                 if (strpos($punct, $wordText[0]) !== FALSE) {
                                     $prefix = $wordText[0];
                                     $wordText = substr($wordText, 1);
-                                
+
                                 }
                                 if (strpos($punct, $wordText[strlen($wordText)-1]) !== FALSE) {
                                     $suffix = $wordText[strlen($wordText)-1];
                                     $wordText = substr($wordText, 0, strlen($wordText)-1);
                                 }
-                                
+
                                 if ($prefix != '') {
                                     array_push($sentence['Word'], array('position' => $wordPos, 'text' => $prefix));
                                     $wordPos++;
@@ -121,8 +121,8 @@ class DocumentsController extends AppController {
                                 }
                             }
                         }
-                        
-                        if (count($sentence['Word']) > 0) {                  
+
+                        if (count($sentence['Word']) > 0) {
                             $sentence['position'] = $sentencePos;
                             $sentencePos++;
                             array_push($document['Sentence'], $sentence);
@@ -142,7 +142,7 @@ class DocumentsController extends AppController {
             return $this->redirect(array('action' => 'index'));
         }
     }
-    
+
     public function split($documentId, $sentenceId, $splitPos) {
         if ($this->Auth->user()['role_id'] > 2) {
             $this->Session->setFlash('This action needs editor privileges.');
@@ -165,14 +165,14 @@ class DocumentsController extends AppController {
                         ),
                         array(
                             'sentence_id' => $sentenceId,
-            			    'position >=' => $splitPos 
+            			    'position >=' => $splitPos
                         )
                     );
 
         $this->redirect(array('action'=>'view', $documentId, 1, '#'=>'sentence'.$sentenceId));
-                
+
     }
-    
+
     private function insertEmptySentence($documentId, $position) {
         $sentenceModel = ClassRegistry::init('Sentence');
         $sentenceModel->recursive = 0;
@@ -186,7 +186,7 @@ class DocumentsController extends AppController {
                                     'position >=' => $position
                                 )
                             );
-	
+
 	    $newSentence = array('Sentence'=>array('document_id' => $documentId, 'position' => $position));
 	    $sentenceModel->create();
 	    $sentenceModel->save($newSentence);
@@ -210,13 +210,13 @@ class DocumentsController extends AppController {
                         );
         $sentenceModel->delete($deletedSentence['Sentence']['id']);
     }
-    
+
     public function joinNext($documentId, $sentenceId) {
         if ($this->Auth->user()['role_id'] > 2) {
             $this->Session->setFlash('This action needs editor privileges.');
             $this->redirect('/');
         }
-        
+
         $sentenceModel = ClassRegistry::init('Sentence');
         $sentenceModel->recursive = 1;
         $wordModel = ClassRegistry::init('Word');
@@ -224,7 +224,7 @@ class DocumentsController extends AppController {
 
         $currSentence = $sentenceModel->findById($sentenceId);
         $nextSentence = $sentenceModel->find('first', array('conditions' => array('document_id'=>$documentId, 'position' => $currSentence['Sentence']['position']+1)));
-        
+
         if (!empty($nextSentence['SentenceAnnotation'])) {
             for($i=0;$i<count($nextSentence['SentenceAnnotation']);$i++) {
                 $nextAnnotation = $nextSentence['SentenceAnnotation'][$i];
@@ -245,7 +245,7 @@ class DocumentsController extends AppController {
                     array_push($currSentence['SentenceAnnotation'], array('type_id'=>$nextAnnotation['type_id'], 'text' => $nextAnnotation['text']));
                 }
             }
-            
+
             $sentenceModel->saveAll($currSentence);
         }
         $maxPosCurrSentence = $wordModel->find('first', array('fields' =>  array('max(position) AS max_pos'),
@@ -266,11 +266,11 @@ class DocumentsController extends AppController {
                     );
 
         $this->removeSentence($nextSentence['Sentence']['id']);
-                
+
         $this->redirect(array('action'=>'view', $documentId, 1, '#'=>'sentence'.$sentenceId));
-                
+
     }
-    
+
     private function getSentenceAnnotation($sentence, $typeId) {
         if(!empty($sentence['SentenceAnnotation'])) {
             for($i=0;$i<count($sentence['SentenceAnnotation']);$i++) {
@@ -279,7 +279,7 @@ class DocumentsController extends AppController {
                 }
             }
         }
-        
+
         return null;
     }
 
@@ -315,11 +315,11 @@ class DocumentsController extends AppController {
         if ($folderId > 0) {
             $folderValue = $folderId;
         } else {
-            $folderValue = null;            
+            $folderValue = null;
         }
 
         $this->Document->id = $documentId;
-        if ($this->Document->saveField('folder_id', $folderValue)) {
+        if ($this->Document->saveField('catalogue_id', $folderValue)) {
             $this->Session->setFlash(__('Your document has been moved.'), 'flashes/success');
         } else {
             $this->Session->setFlash(__('Unable to move your document.'));
