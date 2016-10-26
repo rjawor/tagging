@@ -1,5 +1,7 @@
 <form method="post" id="filter_form">
     <input type="hidden" name="data[mainValue]" value="<?php echo $mainValue; ?>" />
+    <input id="page_number" type="hidden" name="data[page]" value="<?php echo $page; ?>" />
+    <input id="total_pages" type="hidden"value="<?php echo $totalPages; ?>" />
     <input id="documentFilterInput" type="hidden" name="data[documentFilter]" value="<?php echo $documentFilter; ?>" />
     <a href="#" onclick="toggleDocumentFilter();">Show/hide document filtering</a>
     <span id="documentFilter" style="display:<?= !empty($documentFilter) && $documentFilter ? "inline":"none" ?>">
@@ -34,7 +36,8 @@
 
 <h3>Words</h3>
 
-Total number of words found: <strong><?php echo count($words); ?></strong>
+Total number of words found: <strong><?php echo $word_count; ?></strong><br/><br/>
+<a href="#" onclick="decreasePage();document.getElementById('filter_form').submit()">Previous</a> Page <?= ($page + 1)?> of <?= $totalPages?> <a href="#" onclick="increasePage();document.getElementById('filter_form').submit()">Next</a><br/><br/>
 
 
 <table>
@@ -51,22 +54,22 @@ Total number of words found: <strong><?php echo count($words); ?></strong>
 for ($i=0;$i<count($words);$i++) {
     $annotatedWord = $words[$i];
     $context = $contexts[$i];
-    
+
     echo "<tr>";
     echo "<td>".($i+1)."</td>";
     echo "<td>".$context[0]["documents"]["name"]."</td>";
     echo "<td>".$context[0]["languages"]["code"]."</td>";
     echo "<td>".$annotatedWord->getRawHtml($wordAnnotationTypes)."</td>";
-    
+
     $image = $this->Html->image("edit.png", array(
-                    "alt" => "edit"                    
+                    "alt" => "edit"
                      ));
-                     
+
     echo "<td>".$this->Html->link(
                         $image,
                         array('controller' => 'dashboard', 'action' => 'viewWord', $annotatedWord->getId()),
                         array(
-                            'target'=>'_blank', 
+                            'target'=>'_blank',
                             'escape' => false
                         ))."</td>";
     echo "<td>";
@@ -76,8 +79,8 @@ for ($i=0;$i<count($words);$i++) {
         } else {
             $text = "";
         }
-        
-        if ($contextWord['words']['split']) {        
+
+        if ($contextWord['words']['split']) {
             $text .=  $contextWord['words']['stem']."-".$contextWord['words']['suffix'];
         } else {
             $text .= $contextWord['words']['text'];
@@ -86,13 +89,12 @@ for ($i=0;$i<count($words);$i++) {
         if ($contextWord['words']['id'] == $annotatedWord->getId()) {
             $text .= "</b>";
         }
-        
+
         echo $text." ";
     }
-  
+
     echo "</td>";
-    echo "</tr>\n";    
+    echo "</tr>\n";
 }
 ?>
 </table>
-

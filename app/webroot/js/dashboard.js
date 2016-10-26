@@ -1,3 +1,23 @@
+function decreasePage() {
+    $('#page_number').val( function(i, oldval) {
+        if (parseInt(oldval) > 0) {
+            return --oldval;
+        } else {
+            return oldval;
+        }
+    });
+}
+function increasePage() {
+    $('#page_number').val( function(i, oldval) {
+        max = parseInt($('#total_pages').val());
+        if (parseInt(oldval) + 1 < max) {
+            return ++oldval;
+        } else {
+            return oldval;
+        }
+    });
+}
+
 function moveToFolder(selectElement, documentId) {
     var folderId = selectElement.options[ selectElement.selectedIndex ].value;
     if (folderId >= 0) {
@@ -58,7 +78,7 @@ function nextSentence(documentId) {
             offsetElement.value = offset;
             $.ajax({async:true, url:"/tagging/dashboard/setCurrentDocument/"+documentId+"/"+offset});
             $.post("/tagging/history/clear");
-            document.location.href = "/tagging/dashboard/index/"+documentId+"/"+offset;            
+            document.location.href = "/tagging/dashboard/index/"+documentId+"/"+offset;
         }
     }
 }
@@ -69,13 +89,13 @@ function updateSentence() {
     for (var i=0; i<sentenceCells.length; i++) {
         sentenceCells[i].className = 'normal-cell';
     }
-    
+
     var cellId = 'cell-'+sentenceNumber+'-'+getGridY(sentenceNumber)+'-'+getGridX(sentenceNumber);
     var activeCell = document.getElementById(cellId);
     if (activeCell != null) {
         if (getEditMode(sentenceNumber)) {
             activeCell.className = 'edited';
-            
+
             var selector = '.edit-field input';
             var splitElement = document.getElementById(cellId+'-split');
             if (splitElement != null && splitElement.value == '0') {
@@ -86,9 +106,9 @@ function updateSentence() {
                 editField.focus();
             }
         } else {
-            activeCell.className = 'selected';        
+            activeCell.className = 'selected';
         }
-        
+
         var firstReloadElement = document.getElementById('first-reload');
         if (firstReloadElement.value == "1") {
             updateSuggestions();
@@ -123,7 +143,7 @@ function hideAllSuggestionBoxes() {
 function updateSuggestions() {
     var wordCellId = 'cell-'+getSentenceNumber()+'-0-'+getGridX(getSentenceNumber());
     var wordId = document.getElementById(wordCellId+'-word-id').value;
-	
+
     document.getElementById(wordCellId+'-preloader').className="preloader-active";
     $.ajax({
 		type: "POST",
@@ -176,7 +196,7 @@ function getCellValue(gridX, gridY) {
 
 function updateSuggestionBox(suggestionBox, suggestions) {
 	if (suggestions.count == 0) {
-        suggestionBox.className = 'suggestion-box-inactive';        
+        suggestionBox.className = 'suggestion-box-inactive';
 	} else {
 	    var suggestionsHtml = '<table>';
         suggestionBox.className = 'suggestion-box';
@@ -186,12 +206,12 @@ function updateSuggestionBox(suggestionBox, suggestions) {
             var index = i+1;
             suggestionsHtml += '<tr><td><img style="cursor:pointer" src="/tagging/img/apply.png" title="apply suggestion (ctrl + '+index+')" onclick="applySuggestion('+suggestions.gridX+','+i+')" alt="apply suggestion"></td>';
             if (suggestions.data[i].suggestionCount == 0) {
-	            suggestionsHtml += '<td><input title="this suggestion comes from predefined rules" type="button" class="suggestion-count-box" value="R" /></td>';            
+	            suggestionsHtml += '<td><input title="this suggestion comes from predefined rules" type="button" class="suggestion-count-box" value="R" /></td>';
             } else {
 	            suggestionsHtml += '<td><a title="view one of the words with this annotation" href="/tagging/dashboard/viewWord/'+suggestions.data[i].wordId+'" target="_blank"><img src="/tagging/img/editSmall.png"/></a></td>';
 		        suggestionsHtml += '<td><input title="suggestion frequency score" type="button" class="suggestion-count-box" value="'+suggestions.data[i].suggestionCount+'" /></td>';
             }
-	        suggestionsHtml += '<td>'+suggestions.data[i].suggestion.text+'</td>';            
+	        suggestionsHtml += '<td>'+suggestions.data[i].suggestion.text+'</td>';
             var annotations = suggestions.data[i].suggestion.annotations;
             for (var j = 0; j < annotations.length; j++) {
                 suggestionsHtml += '<td>';
@@ -248,7 +268,7 @@ function setEdited(sentenceNumber, gridY, gridX) {
     if (!(getEditMode(sentenceNumber) &&
           getGridX(sentenceNumber) == gridX &&
           getGridX(sentenceNumber) == gridX)) {
-        
+
         setEditMode(sentenceNumber, false); //switching off editing of current cell
         setEditMode(sentenceNumber, true);
         setGrid(sentenceNumber, gridY, gridX);
@@ -356,7 +376,7 @@ function setEditMode(sentenceNumber, editMode, preventSave) {
             if (element.value == "1" && !preventSave) { //edit mode was switched off, but not by ESC or not in choices cell
                 updateAndSaveCell(sentenceNumber);
             }
-            element.value = "0";        
+            element.value = "0";
         }
     }
 }
@@ -371,7 +391,7 @@ function toggleEditMode(sentenceNumber) {
             updateAndSaveCell(sentenceNumber);
             element.value = "0";
         } else {
-            element.value = "1";        
+            element.value = "1";
         }
     }
 }
@@ -391,10 +411,10 @@ function deEscapeHTML(text) {
 function updateCellValue(sentenceNumber, gridX, gridY) {
     if (gridX == null || gridY == null) {
         gridX = getGridX(sentenceNumber);
-        gridY = getGridY(sentenceNumber);    
+        gridY = getGridY(sentenceNumber);
     }
 
-    
+
     var cellId = 'cell-'+sentenceNumber+'-'+gridY+'-'+gridX;
     var cell = document.getElementById(cellId);
     var cellTypeId = cellId+'-type';
@@ -408,22 +428,22 @@ function updateCellValue(sentenceNumber, gridX, gridY) {
         var textInputElement = editSpan.querySelector('input[type=text]');
         newValue = normalizeText(escapeHTML(textInputElement.value))
         valueElement.value = newValue;
-        
+
     } else if (cellTypeElement.value == 'word') {
         var splitElement = document.getElementById(cellId+'-split');
         if (splitElement.value == '0') {
             var wordTextElement = cell.querySelector('.edit-field .word-unsplit-field input');
-            newValue = normalizeText(escapeHTML(wordTextElement.value)); 
+            newValue = normalizeText(escapeHTML(wordTextElement.value));
             valueElement.value = newValue;
         } else {
             var wordTextElements = cell.querySelectorAll('.edit-field .word-split-field input');
             var stem = normalizeText(escapeHTML(wordTextElements[0].value));
-            var suffix = normalizeText(escapeHTML(wordTextElements[1].value));   
+            var suffix = normalizeText(escapeHTML(wordTextElements[1].value));
             newValue = stem+','+suffix;
             valueElement.value = newValue;
         }
-        
-        
+
+
     } else if (cellTypeElement.value == 'choices' || cellTypeElement.value == 'multiple-choices') {
         var selectedChoices = editSpan.querySelectorAll('input.choice-selected');
         var selectedChoicesIds=[];
@@ -443,7 +463,7 @@ function updateCellValue(sentenceNumber, gridX, gridY) {
         }
     }
     if (oldValue != newValue) {
-        var opData = 
+        var opData =
         $.post( "/tagging/history/storeOperation", {type: 'modifyCellValue', gridX:gridX, gridY:gridY, oldValue:oldValue, newValue:newValue} );
     }
 
@@ -462,18 +482,18 @@ function modifyValue(sentenceNumber, gridX, gridY, value) {
             if (value.indexOf(',') > -1) {
                 splitElement.value = '1';
             } else {
-                splitElement.value = '0';            
+                splitElement.value = '0';
             }
         }
     }
-    updateCellDisplay(sentenceNumber, gridX, gridY); 
-    saveCell(sentenceNumber, gridX, gridY); 
+    updateCellDisplay(sentenceNumber, gridX, gridY);
+    saveCell(sentenceNumber, gridX, gridY);
 }
 
 function updateCellDisplay(sentenceNumber, gridX, gridY) {
     if (gridX == null || gridY == null) {
         gridX = getGridX(sentenceNumber);
-        gridY = getGridY(sentenceNumber);    
+        gridY = getGridY(sentenceNumber);
     }
     var cellId = 'cell-'+sentenceNumber+'-'+gridY+'-'+gridX;
     var cell = document.getElementById(cellId);
@@ -487,17 +507,17 @@ function updateCellDisplay(sentenceNumber, gridX, gridY) {
     if (cellTypeElement.value == 'word-text' || cellTypeElement.value == 'sentence-text') {
         displaySpan.innerHTML = valueElement.value;
         var textInputElement = editSpan.querySelector('input[type=text]');
-        textInputElement.value = deEscapeHTML(valueElement.value);        
+        textInputElement.value = deEscapeHTML(valueElement.value);
     } else if (cellTypeElement.value == 'word') {
         var splitSpan = document.getElementById(cellId+'-split-span');
         var splitElement = document.getElementById(cellId+'-split');
         if (splitElement.value == '0') {
-            splitSpan.className='word-unsplit'; 
-            displaySpan.innerHTML = deEscapeHTML(valueElement.value);            
+            splitSpan.className='word-unsplit';
+            displaySpan.innerHTML = deEscapeHTML(valueElement.value);
             var wordTextElement = cell.querySelector('.edit-field .word-unsplit-field input');
             wordTextElement.value = deEscapeHTML(valueElement.value);
         } else {
-            splitSpan.className='word-split'; 
+            splitSpan.className='word-split';
             var stemAndSuffix = valueElement.value.split(",");
             var stem = stemAndSuffix[0];
             var suffix = stemAndSuffix[1];
@@ -506,20 +526,20 @@ function updateCellDisplay(sentenceNumber, gridX, gridY) {
             wordTextElements[0].value = deEscapeHTML(stem);
             wordTextElements[1].value = deEscapeHTML(suffix);
         }
-    
+
     } else if (cellTypeElement.value == 'choices' || cellTypeElement.value == 'multiple-choices') {
         displaySpan.innerHTML = '';
         if (valueElement.value != '') {
             var selectedChoicesIds=valueElement.value.split(",");
         } else {
-            var selectedChoicesIds=[];        
+            var selectedChoicesIds=[];
         }
-        
+
         for (var i=0; i< selectedChoicesIds.length; i++) {
             var id = selectedChoicesIds[i];
             displaySpan.innerHTML = displaySpan.innerHTML + '<input type="button" class="choice-selected" value="'+choicesObject['choice'+id+'value']+'" title="'+choicesObject['choice'+id+'description']+'"/>';
         }
-        
+
         var elements = editSpan.querySelectorAll('input[type="button"]');
         for (var i = 0; i< elements.length; i++) {
 	    if (cellTypeElement.value == 'choices') {
@@ -528,7 +548,7 @@ function updateCellDisplay(sentenceNumber, gridX, gridY) {
 		elements[i].className = 'choice-inactive';
             }
         }
-        
+
         for (var i=0; i< selectedChoicesIds.length; i++) {
             var id = selectedChoicesIds[i];
             var idElement = editSpan.querySelector('input[type="hidden"][value="'+id+'"]');
@@ -538,7 +558,7 @@ function updateCellDisplay(sentenceNumber, gridX, gridY) {
             if (element != null) {
                 element.className = 'choice-selected';
             }
-        } 
+        }
 
 
     }
@@ -551,14 +571,14 @@ function saveCell(sentenceNumber, gridX, gridY) {
     //based on value field
     if (gridX == null || gridY == null) {
         gridX = getGridX(sentenceNumber);
-        gridY = getGridY(sentenceNumber);    
+        gridY = getGridY(sentenceNumber);
     }
     var cellId = 'cell-'+sentenceNumber+'-'+gridY+'-'+gridX;
     var cell = document.getElementById(cellId);
     var cellTypeId = cellId+'-type';
     var cellTypeElement = document.getElementById(cellTypeId);
     var valueElement = document.getElementById(cellId+'-value');
-            
+
     if (cellTypeElement.value == 'word-text') {
         var wordAnnotationTypeElement = document.getElementById(cellId+'-word-annotation-type-id');
         var wordAnnotationTypeId = wordAnnotationTypeElement.value;
@@ -572,11 +592,11 @@ function saveCell(sentenceNumber, gridX, gridY) {
     } else if (cellTypeElement.value == 'sentence-text') {
         var sentenceAnnotationTypeId = document.getElementById(cellId+'-sentence-annotation-type-id').value;
         var sentenceId = document.getElementById(cellId+'-sentence-id').value;
-        $.post( "/tagging/sentenceAnnotations/saveSentenceAnnotation", { sentenceId: sentenceId, sentenceAnnotationTypeId: sentenceAnnotationTypeId, text: valueElement.value} );        
+        $.post( "/tagging/sentenceAnnotations/saveSentenceAnnotation", { sentenceId: sentenceId, sentenceAnnotationTypeId: sentenceAnnotationTypeId, text: valueElement.value} );
      } else if (cellTypeElement.value == 'word') {
         var splitElement = document.getElementById(cellId+'-split');
         var wordId = document.getElementById(cellId+'-word-id').value;
-        
+
         if (splitElement.value == '0') {
             $.ajax({
               type: 'POST',
@@ -606,7 +626,7 @@ function saveCell(sentenceNumber, gridX, gridY) {
         }
         $.ajax({async:true, url:"/tagging/wordAnnotations/saveWordChoicesAnnotation/"+wordId+"/"+wordAnnotationTypeId+"/"+selectedChoicesIdsString});
     }
-    
+
 }
 
 function getWordCount(sentenceNumber) {
@@ -678,12 +698,12 @@ function switchSelectionDown() {
     var gridY = getGridY(sentenceNumber);
     var wordAnnotationCount = getWordAnnotationCount(sentenceNumber);
     var sentenceAnnotationCount = getSentenceAnnotationCount(sentenceNumber);
-    
-    
+
+
     if (gridY < wordAnnotationCount + sentenceAnnotationCount - 1) {
         setGridY(sentenceNumber, gridY + 1);
         if (gridY >= wordAnnotationCount - 1) {
-            setGridX(sentenceNumber, 0);        
+            setGridX(sentenceNumber, 0);
         }
         setEditMode(sentenceNumber, false);
         updateSentence(sentenceNumber);
@@ -728,12 +748,12 @@ function handleEnterInMultipleChoices(sentenceNumber) {
     var gridY = getGridY(sentenceNumber);
     var inputId = 'cell-'+sentenceNumber+'-'+gridY+'-'+gridX+'-input';
     var input = document.getElementById(inputId);
-    
+
     if (input.value != '') {
         var cellId = 'cell-'+sentenceNumber+'-'+gridY+'-'+gridX;
         var cell = document.getElementById(cellId);
-        
-        
+
+
         var selector = 'input[value="'+input.value+' x"]';
         var enteredElement = cell.querySelector(selector);
         input.value = '';
@@ -745,7 +765,7 @@ function handleEnterInMultipleChoices(sentenceNumber) {
         if (getEditMode(sentenceNumber)) {
             setEditMode(sentenceNumber, false, true);
         } else {
-            setEditMode(sentenceNumber, true);        
+            setEditMode(sentenceNumber, true);
         }
         updateSentence(sentenceNumber);
     }
@@ -800,7 +820,7 @@ function toggleSelectedChoice(element) {
     if (element.className == 'choice-selected') {
         element.className = 'choice-available';
     } else {
-        element.className = 'choice-selected';    
+        element.className = 'choice-selected';
     }
 }
 
@@ -834,7 +854,7 @@ function hotKeyHandle(number) {
 function handleWordOperation(e, operation) {
     if (getEditMode(getSentenceNumber())) {
         $('#'+operation+getGridX(getSentenceNumber())).click();
-        e.preventDefault();    
+        e.preventDefault();
     }
 }
 
@@ -845,24 +865,24 @@ function splitWord(e) {
     var cellId = 'cell-'+sentenceNumber+'-'+gridY+'-'+gridX;
     var splitSpan = document.getElementById(cellId+'-split-span');
     if (splitSpan != null && splitSpan.className == 'word-unsplit' && getEditMode(sentenceNumber)) {
-        splitSpan.className='word-split'; 
+        splitSpan.className='word-split';
         var splitElement = document.getElementById(cellId+'-split');
         splitElement.value = '1';
-           
+
         var inputUnsplit = splitSpan.querySelector('.word-unsplit-field input');
         var splitInputs = splitSpan.querySelectorAll('.word-split-field input');
         var stemInput = splitInputs[0];
         var suffixInput = splitInputs[1];
-        
+
         pos = inputUnsplit.selectionStart;
-        
+
         stemInput.value = inputUnsplit.value.substring(0,pos);
-        suffixInput.value = inputUnsplit.value.substring(pos, inputUnsplit.value.length);        
+        suffixInput.value = inputUnsplit.value.substring(pos, inputUnsplit.value.length);
         stemInput.focus();
 
         e.preventDefault();
     }
-    
+
 }
 
 function unsplitWord(e) {
@@ -872,21 +892,21 @@ function unsplitWord(e) {
     var cellId = 'cell-'+sentenceNumber+'-'+gridY+'-'+gridX;
     var splitSpan = document.getElementById(cellId+'-split-span');
     if (splitSpan != null && splitSpan.className == 'word-split' && getEditMode(sentenceNumber)) {
-        splitSpan.className='word-unsplit'; 
+        splitSpan.className='word-unsplit';
         var splitElement = document.getElementById(cellId+'-split');
         splitElement.value = '0';
-           
+
         var inputUnsplit = splitSpan.querySelector('.word-unsplit-field input');
         var splitInputs = splitSpan.querySelectorAll('.word-split-field input');
         var stemInput = splitInputs[0];
         var suffixInput = splitInputs[1];
-        
+
         inputUnsplit.value = stemInput.value+suffixInput.value;
         inputUnsplit.focus();
 
         e.preventDefault();
     }
-    
+
 }
 
 
@@ -993,7 +1013,7 @@ $(document).keydown(function(e) {
             case 51: //3
                 suggestionHandle(e, 2);
             break;
-            
+
             /* Debugging the history feature
             case 52: //4
                 listOperationsHandle(e);
@@ -1003,31 +1023,31 @@ $(document).keydown(function(e) {
                 clearHistoryHandle(e);
             break;
             */
-            
+
             case 66: //b
                 redoHandle();
             break;
-            
+
             case 73: //i
                 handleWordOperation(e, 'insertWord');
             break;
-            
+
             case 74: //j
                 splitWord(e);
             break;
-            
+
             case 75: //k
                 unsplitWord(e);
             break;
-            
+
             case 76: //l
                 handleWordOperation(e, 'deleteWord');
             break;
-            
+
             case 79: //o
                 handleWordOperation(e, 'insertAfterWord');
             break;
-            
+
             case 85: //u
                 handleWordOperation(e, 'unmarkPostposition');
             break;
@@ -1035,7 +1055,7 @@ $(document).keydown(function(e) {
             case 89: //y
                 handleWordOperation(e, 'markPostposition');
             break;
-            
+
             case 90: //z
                 undoHandle();
             break;
@@ -1067,7 +1087,7 @@ $(document).keydown(function(e) {
             case 27:
             escapeHandle();
             break;
-            
+
             case 81:  //q
             hotKeyHandle(0);
             break;
@@ -1121,4 +1141,3 @@ $(document).keydown(function(e) {
     }
 
 });
-
