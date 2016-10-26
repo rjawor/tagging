@@ -31,7 +31,7 @@ with con:
             words = [(w.split('_')[0],w.split('_')[1]=='1') for w in line.split()]
             if len(words) > 0 and True in [w[1] for w in words]:
                 currDocSize +=1
-                if currDocSize > SENTENCES_PER_DOCUMENT:
+                if currDocSize >= SENTENCES_PER_DOCUMENT:
                     document_number += 1
                     cur.execute("INSERT INTO documents(name,user_id,language_id,folder_id) VALUES ('%s',%d,%d,%d)" % (DOCUMENT_NAME+' part '+str(document_number), DOCUMENT_OWNER, DOCUMENT_LANGUAGE, DOCUMENT_FOLDER))
                     currDocId = cur.lastrowid
