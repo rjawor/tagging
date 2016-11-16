@@ -7,7 +7,7 @@
 <input id="first-reload" type="hidden" value="1" />
 
 <script>
-<?php 
+<?php
     foreach ($wordAnnotationTypes as $wordAnnotationType) {
         if ($wordAnnotationType['WordAnnotationType']['multiple_choices'] == 1) {
             ?>
@@ -33,19 +33,19 @@
         }
     }
     ?>
-    
+
     var choicesObject = {
 
-    <?php    
+    <?php
     foreach ($wordAnnotationTypes as $wordAnnotationType) {
         foreach ($wordAnnotationType['WordAnnotationTypeChoice'] as $choice) {
-            echo "\"choice".$choice['id']."value\":\"".$choice['value']."\",";       
-            echo "\"choice".$choice['id']."description\":\"".$choice['description']."\",";       
+            echo "\"choice".$choice['id']."value\":\"".$choice['value']."\",";
+            echo "\"choice".$choice['id']."description\":\"".$choice['description']."\",";
         }
     }
-    
+
     ?>
-    
+
     "none":"none"};
 </script>
 
@@ -59,10 +59,11 @@
      $sentenceNumber = $offset - $currentSentenceIndex + 1;
 
      for($i = 0; $i < $currentSentenceIndex; $i++) { ?>
+
 <p>
     <?php
         echo $sentenceNumber.".&nbsp;";
-        $sentenceNumber++;   
+        $sentenceNumber++;
         foreach ($sentencesWindow[$i]['Word'] as $word) {
             if ($word['split'] == 1) {
                 echo $word['stem']."&#124;".$word['suffix'];
@@ -87,28 +88,28 @@
     <input type="hidden" id="sentence<?php echo $offset; ?>-grid-y" value="0" />
     <input type="hidden" id="sentence<?php echo $offset; ?>-edit-mode" value="<?php echo $editMode;?>" />
     <div>
-        <?php 
+        <?php
             $options = array("alt" => "previous sentence",
                             "title" => "previous sentence",
                             "onClick" => "prevSentence();");
             if ($offset > 0) {
                 $options['class'] = 'clickable-image';
             } else {
-                $options['class'] = 'disabled-image';                
+                $options['class'] = 'disabled-image';
             }
             echo $this->Html->image("up.png", $options);
 
             $options = array("alt" => "next sentence",
                             "title" => "next sentence",
                             "onClick" => "nextSentence();");
-                            
+
             if($offset < $sentencesCount - 1) {
                 $options['class'] = 'clickable-image';
             } else {
-                $options['class'] = 'disabled-image';                
+                $options['class'] = 'disabled-image';
             }
             echo $this->Html->image("down.png", $options);
-            
+
             $options = array("alt" => "export sentence to Word",
                             "title" => "export sentence to Word",
                             "style" => "cursor:pointer",
@@ -125,23 +126,23 @@
             <h3>Word export options</h3>
             <?php
                 echo $this->Form->create(false, array('url' => array('controller' => 'generator', 'action' => 'generatedocx')));
-                #echo "<pre>".print_r($sentence, true)."</pre>";                                
+                #echo "<pre>".print_r($sentence, true)."</pre>";
                 $startIndexOptions = array();
                 $endIndexOptions = array();
                 $wordIndex = 0;
                 foreach ($sentence['Word'] as $word) {
                     if ($word['split']) {
                         $wordText = $word['stem'].'-'.$word['suffix'];
-                    } else {            
+                    } else {
                         $wordText = $word['text'];
                     }
                     $startIndexOptions[$wordIndex] = $wordText;
                     $endIndexOptions[$wordIndex+1] = $wordText;
-                    
+
                     $wordIndex++;
                 }
                 $lastWordIndex = $wordIndex;
-                
+
                 $maxLevelOptions = array();
                 $levelIndex = 1;
                 foreach ($sentence['WordAnnotations'] as $annotationData) {
@@ -155,7 +156,7 @@
                     $levelIndex++;
                 }
                 $lastLevelIndex = $levelIndex - 1;
-                
+
                 echo $this->Form->input('sentenceId', array('type' => 'hidden', 'value'=>$sentence['Sentence']['id']));
                 echo $this->Form->input('startIndex', array('label'=>'From word:','options'=>$startIndexOptions, 'empty' => false));
                 echo $this->Form->input('endIndex', array('label'=>'To word:','options'=>$endIndexOptions, 'default'=>$lastWordIndex, 'empty' => false));
@@ -167,23 +168,23 @@
             <h3>Excel export options</h3>
             <?php
                 echo $this->Form->create(false, array('url' => array('controller' => 'generator', 'action' => 'generatexlsx')));
-                #echo "<pre>".print_r($sentence, true)."</pre>";                                
+                #echo "<pre>".print_r($sentence, true)."</pre>";
                 $startIndexOptions = array();
                 $endIndexOptions = array();
                 $wordIndex = 0;
                 foreach ($sentence['Word'] as $word) {
                     if ($word['split']) {
                         $wordText = $word['stem'].'-'.$word['suffix'];
-                    } else {            
+                    } else {
                         $wordText = $word['text'];
                     }
                     $startIndexOptions[$wordIndex] = $wordText;
                     $endIndexOptions[$wordIndex+1] = $wordText;
-                    
+
                     $wordIndex++;
                 }
                 $lastWordIndex = $wordIndex;
-                
+
                 $maxLevelOptions = array();
                 $levelIndex = 1;
                 foreach ($sentence['WordAnnotations'] as $annotationData) {
@@ -197,7 +198,7 @@
                     $levelIndex++;
                 }
                 $lastLevelIndex = $levelIndex - 1;
-                
+
                 echo $this->Form->input('sentenceId', array('type' => 'hidden', 'value'=>$sentence['Sentence']['id']));
                 echo $this->Form->input('startIndex', array('label'=>'From word:','options'=>$startIndexOptions, 'empty' => false));
                 echo $this->Form->input('endIndex', array('label'=>'To word:','options'=>$endIndexOptions, 'default'=>$lastWordIndex, 'empty' => false));
@@ -209,7 +210,7 @@
         <table>
             <tr>
                 <td></td>
-                <?php 
+                <?php
                 foreach ($sentence['Word'] as $word) {
                     $className = "bracket-cell";
                     if($word['is_postposition']) {
@@ -224,16 +225,16 @@
 						echo $this->Html->image("preloader.gif", array("id" => 'cell-'.$offset.'-0-'.$word['position'].'-preloader',
    				                                                       "title" => "loading suggestions...",
                                                                        "class" => "preloader-inactive"
-																	
+
 																 )
 									           );
 					?>
                     <div id="cell-<?php echo $offset.'-0-'.$word['position'].'-suggestion-box'; ?>" class="suggestion-box-inactive">
                     </div>
-                </td>    
-                
+                </td>
+
                 <?php } ?>
-                
+
             </tr>
             <tr class="words-row">
                 <td class="annotation-column"><?php echo $sentenceNumber; $sentenceNumber++;?>.</td>
@@ -260,7 +261,7 @@
                             </span>
                             <span class="edit-field">
                                 <span class="word-split-field">
-                                    <input type="text" value="<?php echo $word['stem'] ?>" />&#124;<input type="text" value="<?php echo $word['suffix'] ?>" />                                    
+                                    <input type="text" value="<?php echo $word['stem'] ?>" />&#124;<input type="text" value="<?php echo $word['suffix'] ?>" />
                                 </span>
                                 <span class="word-unsplit-field">
                                    <input type="text" value="<?php echo $word['text'] ?>" />
@@ -275,7 +276,7 @@
                                                               );
                                        echo "&nbsp;";
                                    }
-                                   if (!isset($word['postposition_id'])) {                       
+                                   if (!isset($word['postposition_id'])) {
                                        echo $this->Html->image("plusNext.png", array("id" => "insertAfterWord".$wordIndex,
                                                                                  "alt" => "insert word after current (ctrl + o)",
                                                                                  "title" => "insert word after current (ctrl + o)",
@@ -284,7 +285,7 @@
                                                               );
                                        echo "&nbsp;";
                                    }
-                                   if (!isset($word['postposition_id'])) {                       
+                                   if (!isset($word['postposition_id'])) {
                                        echo $this->Html->image("delete.png", array("id" => "deleteWord".$wordIndex,
                                                                                  "alt" => "delete word (ctrl + l)",
                                                                                  "title" => "delete word (ctrl + l)",
@@ -293,8 +294,8 @@
                                                                            )
                                                               );
                                        echo "&nbsp;";
-                                   }                       
-                                   if (!isset($word['postposition_id']) && $wordIndex < count($sentence['Word']) - 1 && !$word['is_postposition'] && !isset($sentence['Word'][$wordIndex+1]['postposition_id'])) {                       
+                                   }
+                                   if (!isset($word['postposition_id']) && $wordIndex < count($sentence['Word']) - 1 && !$word['is_postposition'] && !isset($sentence['Word'][$wordIndex+1]['postposition_id'])) {
                                        echo $this->Html->image("curlyBracket.png", array("id" => "markPostposition".$wordIndex,
                                                                                  "alt" => "mark the next word as postposition of current (ctrl + y)",
                                                                                  "title" => "mark the next word as postposition of current (ctrl + y)",
@@ -303,7 +304,7 @@
                                                               );
                                        echo "&nbsp;";
                                    }
-                                   
+
                                    if (isset($word['postposition_id']) || $word['is_postposition']) {
                                    echo $this->Html->image("curlyBracketX.png", array("id" => "unmarkPostposition".$wordIndex,
                                                                              "alt" => "unmark postposition binding (ctrl + u)",
@@ -332,7 +333,7 @@
                                    }
                                ?>
                             </span>
-                        </span>                   
+                        </span>
                     </td>
                 <?php
                         $wordIndex++;
@@ -343,6 +344,7 @@
                 $annotationTypeCount = 1;
                 foreach ($sentence['WordAnnotations'] as $wordAnnotations): ?>
             <tr>
+                <span id="awesomedebug" style="display:none"><?php print_r($wordAnnotations['type']['WordAnnotationType']['name']); ?></span>
                 <td class="annotation-column" title="<?php echo $wordAnnotations['type']['WordAnnotationType']['description'] ?>"><?php echo $wordAnnotations['type']['WordAnnotationType']['name'] ?></td>
                 <?php
                     $wordIndex = 0;
@@ -362,18 +364,18 @@
                                     foreach ($annotation['WordAnnotationTypeChoice'] as $selectedChoice) {
                                         array_push($selectedChoices, $selectedChoice['id']); ?>
                                         <input type="button" class="choice-selected" title="<?php echo $selectedChoice['description']; ?>" value="<?php echo $selectedChoice['value']; ?>" />
-                                <?php        
+                                <?php
                                     }
                                 } ?>
                             </span>
                             <input type="hidden" id="cell-<?php echo $offset.'-'.$annotationTypeCount.'-'.$wordIndex.'-value'; ?>" value="<?php echo implode(",", $selectedChoices); ?>" />
 
                             <span class="edit-field">
-                            <?php                                    
+                            <?php
                                 if ($wordAnnotations['type']['WordAnnotationType']['multiple_choices']) {
                                 ?>
-                                
-                                <input onfocus="this.value='';" class="multiple-suggestions-input-<?php echo $wordAnnotations['type']['WordAnnotationType']['id']?>" id="cell-<?php echo $offset.'-'.$annotationTypeCount.'-'.$wordIndex.'-input';?>"/>                                    
+
+                                <input onfocus="this.value='';" class="multiple-suggestions-input-<?php echo $wordAnnotations['type']['WordAnnotationType']['id']?>" id="cell-<?php echo $offset.'-'.$annotationTypeCount.'-'.$wordIndex.'-input';?>"/>
                                 <?php
 
 
@@ -385,21 +387,25 @@
                                 <?php
                                         $choiceIndex++;
                                     }
-                                
+
                                 } else { // regular strict choices
                                     $choiceIndex = 0;
                                     foreach ($wordAnnotations['type']['WordAnnotationTypeChoice'] as $choice) {
+                                        $choiceLabel = $choice['value'];
+                                        if ($choiceIndex < count($hotKeys)) {
+                                            $choiceLabel .= '&nbsp;['.$hotKeys[$choiceIndex].']';
+                                        }
                                 ?>
-                                        <input id="cell-<?php echo $offset.'-'.$annotationTypeCount.'-'.$wordIndex.'-choice-'.$choiceIndex; ?>" onfocus="this.blur()" type="button" onclick="handleChoiceClick(this)" class="<?php echo in_array($choice['id'], $selectedChoices) ? 'choice-selected' : 'choice-available' ?>" title="<?php echo $choice['description']; ?>" value="<?php echo $choice['value'];if ($choiceIndex < count($hotKeys)) { echo '&nbsp;['.$hotKeys[$choiceIndex].']'; ?>"/>
+                                        <input id="cell-<?php echo $offset.'-'.$annotationTypeCount.'-'.$wordIndex.'-choice-'.$choiceIndex; ?>" onfocus="this.blur()" type="button" onclick="handleChoiceClick(this)" class="<?php echo in_array($choice['id'], $selectedChoices) ? 'choice-selected' : 'choice-available' ?>" title="<?php echo $choice['description']; ?>" value="<?php echo $choiceLabel; ?>"/>
                                         <input type="hidden" id="cell-<?php echo $offset.'-'.$annotationTypeCount.'-'.$wordIndex.'-choice-'.$choiceIndex.'-type-id'; ?>" value="<?php echo $choice['id'] ?>" />
-                                <?php       }
-                                        
+                                <?php
+
                                         $choiceIndex++;
                                     }
                                 }
                             ?>
                                </span>
-                                
+
                         <?php } else { #text field ?>
                             <input type="hidden" id="cell-<?php echo $offset.'-'.$annotationTypeCount.'-'.$wordIndex.'-type'; ?>" value="word-text" />
                             <input type="hidden" id="cell-<?php echo $offset.'-'.$annotationTypeCount.'-'.$wordIndex.'-value'; ?>" value="<?php echo isset($annotation['text_value']) ? normalizeText($annotation['text_value']) : '';  ?>" />
@@ -409,14 +415,14 @@
                             </span>
                             <span class="edit-field">
                                 <input type="text" value="<?php echo isset($annotation['text_value']) ? $annotation['text_value'] : '';  ?>" />
-                            </span>                            
+                            </span>
                         <?php } ?>
                     </td>
                 <?php
                     $wordIndex++;
                     endforeach; ?>
             </tr>
-            <?php 
+            <?php
                 $annotationTypeCount++;
                 endforeach; ?>
 
@@ -435,7 +441,7 @@
                     </span>
                     <span class="edit-field">
                         <input type="text" value="<?php echo isset($sentenceAnnotations['annotation']['text']) ? $sentenceAnnotations['annotation']['text'] : '';  ?>" />
-                    </span>                            
+                    </span>
                 </td>
             </tr>
             <?php
@@ -450,7 +456,7 @@
 <p>
     <?php
         echo $sentenceNumber.".&nbsp;";
-        $sentenceNumber++;   
+        $sentenceNumber++;
         foreach ($sentencesWindow[$i]['Word'] as $word) {
             if ($word['split'] == 1) {
                 echo $word['stem']."&#124;".$word['suffix'];

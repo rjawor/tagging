@@ -37,7 +37,7 @@ class DashboardController extends AppController {
                                                                 'recursive' => -1
                                                             )
                                                    );
-            
+
 
             if ($offset < $contextSize) {
                 $computedOffset = 0;
@@ -57,21 +57,21 @@ class DashboardController extends AppController {
                                                                 'limit' => $limit
                                                             )
                                                     );
-                                                    
+
             if ($offset < $contextSize) {
                 $currentSentenceIndex = $offset;
             } else {
                 $currentSentenceIndex = $contextSize;
             }
-           
+
             $sentenceData = Utils::getSentenceData($sentencesWindow[$currentSentenceIndex]['Sentence']['id']);
 
             $this->set('sentence', $sentenceData['sentence']);
             $this->set('wordAnnotationCount', $sentenceData['wordAnnotationCount']);
             $this->set('wordAnnotationTypes', $sentenceData['wordAnnotationTypes']);
             $this->set('sentenceAnnotationCount', $sentenceData['sentenceAnnotationCount']);
-            
-            
+
+
             $this->set('sentencesCount', $sentencesCount);
             $this->set('sentencesWindow', $sentencesWindow);
             $this->set('currentSentenceIndex', $currentSentenceIndex);
@@ -80,10 +80,10 @@ class DashboardController extends AppController {
             $this->set('editMode', $editMode);
             $this->set('documentId', $documentId);
             $this->set('userRoleId', $currentUser['User']['role_id']);
-            $this->set('hotKeys', array('q', 'w', 'e', 'r', 'a', 's', 'd', 'f', 'z', 'x', 'c', 'v'));
+            $this->set('hotKeys', array('q', 'w', 'e', 'r', 'a', 's', 'd', 'f', 'z', 'x', 'c', 'v', 't', 'y', 'u','i','o','g','h','j','k','l','b','n','m'));
         }
     }
-        
+
     public function viewWord($wordId) {
         $this->autoRender = false;
         $documentModel = ClassRegistry::init('Document');
@@ -91,25 +91,25 @@ class DashboardController extends AppController {
         $documentId = $data[0]['documents']['id'];
         $offset = $data[0]['sentences']['position'];
         $gridX = $data[0]['words']['position'];
-        
+
         return $this->redirect(array('action' => 'index', $documentId, $offset, $gridX));
-        
+
     }
     public function setCurrentDocument($document_id, $offset) {
         $this->autoRender = false;
 
         $userModel = ClassRegistry::init('User');
         $currentUser = $userModel->findById($this->Auth->user('id'));
-        
+
         $currentUser['User']['current_document_id'] = $document_id;
         $currentUser['User']['current_document_offset'] = $offset;
-        
+
         $userModel->save($currentUser);
-        
-        
+
+
         return $this->redirect(array('action' => 'index'));
     }
-    
+
 }
 
 ?>
