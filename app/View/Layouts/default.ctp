@@ -14,7 +14,7 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-$systemDescription = __d('cake_dev', Configuration::read('SystemDescription'));
+$systemDescription = __d('cake_dev', Configure::read('SystemDescription'));
 $cakeDescription = __d('cake_dev', 'CakePHP');
 $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 ?>
