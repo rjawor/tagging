@@ -66,13 +66,13 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 
             <div id='cssmenu'>
                 <ul>
-	            <li><a href='/tagging/dashboard'><span>Dashboard</span></a></li>
-                <li><a href='/tagging/documents'><span>Documents</span></a></li>
-                <li><a href='/tagging/statistics'><span>Statistics</span></a></li>
+	            <li><?= $this->Html->link('Dashboard', array('controller' => 'dashboard', 'action' => 'index'))?></li>
+                <li><?= $this->Html->link('Documents', array('controller' => 'documents', 'action' => 'index'))?></li>
+                <li><?= $this->Html->link('Statistics', array('controller' => 'statistics', 'action' => 'index'))?></li>
 	            <?php
 	            $user = AuthComponent::user();
 	            if ($user['role_id'] == 1) { ?>
-                    <li><a href='/tagging/configuration'><span>Configuration</span></a></li>
+                    <li><?= $this->Html->link('Configuration', array('controller' => 'configuration', 'action' => 'index'))?></li>
                 <?php
                 }
                 ?>

@@ -16,12 +16,12 @@ App::uses('Debugger', 'Utility');
         <li><b>Dashboard</b> - work on current document,</li>
         <li><b>Documents</b> - import and browse the documents,</li>
         <li><b>Statistics</b> - compute statistics of words and collocations,</li>
-        <li><b>Help</b> - access the help wiki.</li>
         <?php
         $user = AuthComponent::user();
         if ($user['role_id'] == 1) { ?>
-        <li><b>Configuration</b> - changing the system parameters, including annotation types.</li>
+        <li><b>Configuration</b> - change the system parameters, including annotation types,</li>
         <?php }
         ?>
+        <li><b>Help</b> - access the system wiki.</li>
     </ul>
 </p>
