@@ -8,13 +8,15 @@
 App::uses('Debugger', 'Utility');
 ?>
 
-<?php echo $this->Html->image("iatagger.png", array("alt" => "IA tagger")); ?>
+<?php echo $this->Html->image(Configure::read('SystemLogo'), array("alt" => Configure::read('SystemDescription'))); ?>
 
 <p>
-    Welcome to the IA tagger. Use the menu bar to navigate:
+    Welcome to <?= Configure::read('SystemDescription') ?>. Use the menu bar to navigate:
     <ul>
         <li><b>Dashboard</b> - work on current document,</li>
-        <li><b>Documents</b> - import and browsing of the documents,</li>
+        <li><b>Documents</b> - import and browse the documents,</li>
+        <li><b>Statistics</b> - compute statistics of words and collocations,</li>
+        <li><b>Help</b> - access the help wiki.</li>
         <?php
         $user = AuthComponent::user();
         if ($user['role_id'] == 1) { ?>

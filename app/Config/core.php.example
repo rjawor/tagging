@@ -21,6 +21,7 @@
 // Visual configuration settings
 
  Configure::write('SystemDescription','tagger name');
+ Configure::write('SystemLogo','logo.png');
 
 /**
  * CakePHP Debug Level:
