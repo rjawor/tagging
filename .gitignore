@@ -1,4 +1,4 @@
-app/tmp
+app/tmp/cache/persistent
 app/Config/core.php
 app/Config/database.php
 app/Plugin/TinyMCE/.gitignore

@@ -14,7 +14,7 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-$systemDescription = __d('cake_dev', 'IA tagger');
+$systemDescription = __d('cake_dev', Configuration::read('SystemDescription'));
 $cakeDescription = __d('cake_dev', 'CakePHP');
 $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 ?>
@@ -39,8 +39,8 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
 		echo $this->fetch('script');
-		
-		
+
+
 	?>
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
 </head>
@@ -63,12 +63,12 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 			        <h2>Test version</h2>
 			<?php } ?>
 			<?php echo $this->fetch('meta'); ?>
-			 
+
             <div id='cssmenu'>
                 <ul>
 	            <li><a href='/tagging/dashboard'><span>Dashboard</span></a></li>
                 <li><a href='/tagging/documents'><span>Documents</span></a></li>
-                <li><a href='/tagging/statistics'><span>Statistics</span></a></li>                
+                <li><a href='/tagging/statistics'><span>Statistics</span></a></li>
 	            <?php
 	            $user = AuthComponent::user();
 	            if ($user['role_id'] == 1) { ?>
@@ -76,10 +76,10 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
                 <?php
                 }
                 ?>
-                <li class='last'><a href='http://rjawor.vm.wmi.amu.edu.pl/wiki/' target='_blank'><span>Help</span></a></li>                
+                <li class='last'><a href='http://rjawor.vm.wmi.amu.edu.pl/wiki/' target='_blank'><span>Help</span></a></li>
 
                 </ul>
-            </div>            
+            </div>
 		</div>
 		<div id="content">
 

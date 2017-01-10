@@ -18,6 +18,10 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
+// Visual configuration settings
+
+ Configure::write('SystemDescription','tagger name');
+
 /**
  * CakePHP Debug Level:
  *
