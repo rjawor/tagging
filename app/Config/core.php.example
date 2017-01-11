@@ -18,6 +18,10 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
+// System installation path
+
+Configure::write('SystemInstallationPath','/tagging');
+
 // Visual configuration settings
 
  Configure::write('SystemDescription','tagger name');

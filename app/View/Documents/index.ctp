@@ -15,7 +15,7 @@
                                   )
                        );
                  ?></td>
-            <td><a href="/tagging/documents/index/<?php echo $folder['Catalogue']['id'];?>"><?php echo $folder['Catalogue']['name']; ?></a></td>
+            <td><a href="<?= Configure::read('SystemInstallationPath') ?>/documents/index/<?php echo $folder['Catalogue']['id'];?>"><?php echo $folder['Catalogue']['name']; ?></a></td>
             <td>
                 <?php
                     echo $this->Html->link(

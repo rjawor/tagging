@@ -7,7 +7,7 @@ App::uses('Utils', 'Lib');
 App::uses('Document', 'Model');
 
 class GeneratorController extends AppController {
-    
+
     public function generatedocx() {
         if ($this->request->is('post')) {
             $sentenceId = $this->request['data']['sentenceId'];
@@ -53,10 +53,10 @@ class GeneratorController extends AppController {
                 if ($wordIndex >= $startIndex && $wordIndex < $endIndex) {
                     $cell = $table->addCell(2000);
                     if ($word['postposition_id']) {
-                        $cell->addImage('/var/www/html/tagging/app/webroot/img/leftBracket.png', array('width'=>40, 'height'=>15, 'align'=>'right'));
+                        $cell->addImage('/var/www/html'.Configure::read('SystemInstallationPath').'/app/webroot/img/leftBracket.png', array('width'=>40, 'height'=>15, 'align'=>'right'));
                     }
                     if ($word['is_postposition']) {
-                        $cell->addImage('/var/www/html/tagging/app/webroot/img/rightBracket.png', array('width'=>40, 'height'=>15, 'align'=>'left'));
+                        $cell->addImage('/var/www/html'.Configure::read('SystemInstallationPath').'/app/webroot/img/rightBracket.png', array('width'=>40, 'height'=>15, 'align'=>'left'));
                     }
                 }
                 $wordIndex++;
@@ -311,7 +311,7 @@ class GeneratorController extends AppController {
 
     public function generatedocxlsx($documentId) {
         $tmpDocumentPath = '/tmp/IAtagger_generated.xlsx';
-        shell_exec("/var/www/html/tagging/tools/scripts/generate-doc-xlsx.py ".$tmpDocumentPath." ".$documentId);
+        shell_exec('/var/www/html'.Configure::read('SystemInstallationPath')."/tools/scripts/generate-doc-xlsx.py ".$tmpDocumentPath." ".$documentId);
         $this->response->file(
             $tmpDocumentPath,
             array('download' => true, 'name' => 'IAtagger_table.xlsx')

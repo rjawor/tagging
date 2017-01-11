@@ -26,6 +26,9 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 		<?php echo $systemDescription ?>:
 		<?php echo $title_for_layout; ?>
 	</title>
+	<script>
+		var systemInstallationPath = "<?= Configure::read('SystemInstallationPath')?>";
+	</script>
 	<?php
 		echo $this->Html->meta('icon');
 

@@ -21,7 +21,7 @@ function increasePage() {
 function moveToFolder(selectElement, documentId) {
     var folderId = selectElement.options[ selectElement.selectedIndex ].value;
     if (folderId >= 0) {
-        location.href='/tagging/documents/moveToFolder/'+documentId+'/'+folderId;
+        location.href=systemInstallationPath+'/documents/moveToFolder/'+documentId+'/'+folderId;
     }
 }
 
@@ -59,9 +59,9 @@ function prevSentence() {
         if (offset > 0) {
             offset--;
             offsetElement.value = offset;
-            $.ajax({async:true, url:"/tagging/dashboard/setCurrentDocument/"+documentId+"/"+offset});
-            $.post("/tagging/history/clear");
-            document.location.href = "/tagging/dashboard/index/"+documentId+"/"+offset;
+            $.ajax({async:true, url:systemInstallationPath+"/dashboard/setCurrentDocument/"+documentId+"/"+offset});
+            $.post(systemInstallationPath+"/history/clear");
+            document.location.href = systemInstallationPath+"/dashboard/index/"+documentId+"/"+offset;
         }
     }
 }
@@ -76,9 +76,9 @@ function nextSentence(documentId) {
         if (offset < sentencesCount - 1) {
             offset++;
             offsetElement.value = offset;
-            $.ajax({async:true, url:"/tagging/dashboard/setCurrentDocument/"+documentId+"/"+offset});
-            $.post("/tagging/history/clear");
-            document.location.href = "/tagging/dashboard/index/"+documentId+"/"+offset;
+            $.ajax({async:true, url:systemInstallationPath+"/dashboard/setCurrentDocument/"+documentId+"/"+offset});
+            $.post(systemInstallationPath+"/history/clear");
+            document.location.href = systemInstallationPath+"/dashboard/index/"+documentId+"/"+offset;
         }
     }
 }
@@ -147,7 +147,7 @@ function updateSuggestions() {
     document.getElementById(wordCellId+'-preloader').className="preloader-active";
     $.ajax({
 		type: "POST",
-		url: "/tagging/words/getSuggestions",
+		url: systemInstallationPath+"/words/getSuggestions",
 		data: { wordId: wordId, gridX:getGridX(getSentenceNumber()) },
     })
     .done(function( jsonString ) {
@@ -178,7 +178,7 @@ function applySuggestion(gridX, suggestionIndex) {
                     modifyValue(getSentenceNumber(), gridX, gridY, newValue);
                 }
             }
-            $.post( "/tagging/history/storeOperation", {type: 'applySuggestion', modifications:modifications} );
+            $.post( systemInstallationPath+"/history/storeOperation", {type: 'applySuggestion', modifications:modifications} );
 
         }
     }
@@ -204,11 +204,11 @@ function updateSuggestionBox(suggestionBox, suggestions) {
         //alert(JSON.stringify(suggestions));
         for (var i = 0; i < suggestions.count; i++) {
             var index = i+1;
-            suggestionsHtml += '<tr><td><img style="cursor:pointer" src="/tagging/img/apply.png" title="apply suggestion (ctrl + '+index+')" onclick="applySuggestion('+suggestions.gridX+','+i+')" alt="apply suggestion"></td>';
+            suggestionsHtml += '<tr><td><img style="cursor:pointer" src="'+systemInstallationPath+'/img/apply.png" title="apply suggestion (ctrl + '+index+')" onclick="applySuggestion('+suggestions.gridX+','+i+')" alt="apply suggestion"></td>';
             if (suggestions.data[i].suggestionCount == 0) {
 	            suggestionsHtml += '<td><input title="this suggestion comes from predefined rules" type="button" class="suggestion-count-box" value="R" /></td>';
             } else {
-	            suggestionsHtml += '<td><a title="view one of the words with this annotation" href="/tagging/dashboard/viewWord/'+suggestions.data[i].wordId+'" target="_blank"><img src="/tagging/img/editSmall.png"/></a></td>';
+	            suggestionsHtml += '<td><a title="view one of the words with this annotation" href="'+systemInstallationPath+'/dashboard/viewWord/'+suggestions.data[i].wordId+'" target="_blank"><img src="'+systemInstallationPath+'/img/editSmall.png"/></a></td>';
 		        suggestionsHtml += '<td><input title="suggestion frequency score" type="button" class="suggestion-count-box" value="'+suggestions.data[i].suggestionCount+'" /></td>';
             }
 	        suggestionsHtml += '<td>'+suggestions.data[i].suggestion.text+'</td>';
@@ -464,7 +464,7 @@ function updateCellValue(sentenceNumber, gridX, gridY) {
     }
     if (oldValue != newValue) {
         var opData =
-        $.post( "/tagging/history/storeOperation", {type: 'modifyCellValue', gridX:gridX, gridY:gridY, oldValue:oldValue, newValue:newValue} );
+        $.post( systemInstallationPath+"/history/storeOperation", {type: 'modifyCellValue', gridX:gridX, gridY:gridY, oldValue:oldValue, newValue:newValue} );
     }
 
 }
@@ -585,14 +585,14 @@ function saveCell(sentenceNumber, gridX, gridY) {
         var wordId = document.getElementById(cellId+'-word-id').value;
         $.ajax({
           type: 'POST',
-          url: "/tagging/wordAnnotations/saveWordTextAnnotation",
+          url: systemInstallationPath+"/wordAnnotations/saveWordTextAnnotation",
           data: { wordId: wordId, wordAnnotationTypeId: wordAnnotationTypeId, text: valueElement.value },
           async:false
         });
     } else if (cellTypeElement.value == 'sentence-text') {
         var sentenceAnnotationTypeId = document.getElementById(cellId+'-sentence-annotation-type-id').value;
         var sentenceId = document.getElementById(cellId+'-sentence-id').value;
-        $.post( "/tagging/sentenceAnnotations/saveSentenceAnnotation", { sentenceId: sentenceId, sentenceAnnotationTypeId: sentenceAnnotationTypeId, text: valueElement.value} );
+        $.post( systemInstallationPath+"/sentenceAnnotations/saveSentenceAnnotation", { sentenceId: sentenceId, sentenceAnnotationTypeId: sentenceAnnotationTypeId, text: valueElement.value} );
      } else if (cellTypeElement.value == 'word') {
         var splitElement = document.getElementById(cellId+'-split');
         var wordId = document.getElementById(cellId+'-word-id').value;
@@ -600,7 +600,7 @@ function saveCell(sentenceNumber, gridX, gridY) {
         if (splitElement.value == '0') {
             $.ajax({
               type: 'POST',
-              url: "/tagging/words/saveWord",
+              url: systemInstallationPath+"/words/saveWord",
               data: { wordId: wordId, text: valueElement.value, wordSplit:0},
               async:false
             });
@@ -611,7 +611,7 @@ function saveCell(sentenceNumber, gridX, gridY) {
             var suffix = stemAndSuffix[1];
             $.ajax({
               type: 'POST',
-              url: "/tagging/words/saveWord",
+              url: systemInstallationPath+"/words/saveWord",
               data: { wordId: wordId, text: valueElement.value, wordSplit:1, stem: stem, suffix:suffix},
               async:false
             });
@@ -624,7 +624,7 @@ function saveCell(sentenceNumber, gridX, gridY) {
         if (selectedChoicesIdsString == '') {
             selectedChoicesIdsString = 'none';
         }
-        $.ajax({async:true, url:"/tagging/wordAnnotations/saveWordChoicesAnnotation/"+wordId+"/"+wordAnnotationTypeId+"/"+selectedChoicesIdsString});
+        $.ajax({async:true, url:systemInstallationPath+"/wordAnnotations/saveWordChoicesAnnotation/"+wordId+"/"+wordAnnotationTypeId+"/"+selectedChoicesIdsString});
     }
 
 }
@@ -925,7 +925,7 @@ function toggleVisibility(id) {
 
 function undoHandle() {
     if (!getEditMode(getSentenceNumber())) {
-        $.post("/tagging/history/undo", function(data) {
+        $.post(systemInstallationPath+"/history/undo", function(data) {
                                performOperation(data);
                             });
     }
@@ -933,7 +933,7 @@ function undoHandle() {
 
 function redoHandle() {
     if (!getEditMode(getSentenceNumber())) {
-        $.post("/tagging/history/redo", function(data) {
+        $.post(systemInstallationPath+"/history/redo", function(data) {
                                performOperation(data);
                             });
     }
@@ -955,7 +955,7 @@ function performOperation(operationData) {
                operation.type == 'insertWord' ||
                operation.type == 'deleteWord'
                ) {
-        window.location.href = '/tagging/words/'+operation.type+'/'+operation.documentId+'/'
+        window.location.href = systemInstallationPath+'/words/'+operation.type+'/'+operation.documentId+'/'
                                                                    +operation.documentOffset+'/'
                                                                    +operation.sentenceId+'/'
                                                                    +operation.position+'/1';
@@ -963,12 +963,12 @@ function performOperation(operationData) {
 }
 
 function clearHistoryHandle(e) {
-    $.post("/tagging/history/clear");
+    $.post(systemInstallationPath+"/history/clear");
     e.preventDefault();
 }
 
 function listOperationsHandle(e) {
-    $.post("/tagging/history/listOperations", function( data ) {
+    $.post(systemInstallationPath+"/history/listOperations", function( data ) {
                            alert("operations: " + data );
                         });
     e.preventDefault();
@@ -987,7 +987,7 @@ function copyAnnotations(sourceX, targetX) {
         }
     }
     if (modifications.length > 0) {
-        $.post( "/tagging/history/storeOperation", {type: 'applySuggestion', modifications:modifications} );
+        $.post( systemInstallationPath+"/history/storeOperation", {type: 'applySuggestion', modifications:modifications} );
     }
 }
 
