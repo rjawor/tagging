@@ -1,5 +1,5 @@
 <?php
-    include('predefined_stats.php');    
+    include('predefined_stats.php');
 ?>
 
 <h3>Statistics generator</h3>
@@ -49,6 +49,7 @@
                         <form method="post" name="<?php echo $position['main']['short'].'_'.$collocation['desc'].'_including'; ?>" action="<?= Configure::read('SystemInstallationPath') ?>/statistics/collocations">
                         <input type="hidden" name="mainValue" value="<?php echo $position['main']['value'].','.$position['including']['value'];?>"/>
                         <input type="hidden" name="collocationValue" value="<?php echo $collocation['value'];?>"/>
+                        <input type="hidden" name="immediate" value="<?php echo isset($collocation['immediate']);?>"/>
                         <?php foreach($documentIds as $documentId) {
                         ?>
                             <input type="hidden" name="documentIds[]" value="<?php echo $documentId;?>" />
