@@ -131,9 +131,9 @@ class QueryBuilder {
             documents
             inner join sentences on documents.id = sentences.document_id and sentences.id = $sentenceId inner join languages on languages.id = documents.language_id
             inner join words on sentences.id = words.sentence_id
-            inner join word_annotations on words.id = word_annotations.word_id
-            inner join word_annotation_type_choices_word_annotations on word_annotation_type_choices_word_annotations.word_annotation_id = word_annotations.id
-            inner join word_annotation_type_choices on word_annotation_type_choices.id = word_annotation_type_choices_word_annotations.word_annotation_type_choice_id
+            left join word_annotations on words.id = word_annotations.word_id
+            left join word_annotation_type_choices_word_annotations on word_annotation_type_choices_word_annotations.word_annotation_id = word_annotations.id
+            left join word_annotation_type_choices on word_annotation_type_choices.id = word_annotation_type_choices_word_annotations.word_annotation_type_choice_id
 
         group by words.id
 
