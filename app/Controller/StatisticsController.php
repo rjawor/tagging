@@ -107,9 +107,11 @@ class StatisticsController extends AppController {
                 $this->set('page', $page);
 
                 $this->set('totalPages', (int) ($totalCount / $this->RESULTS_PER_PAGE) + 1);
-
+                $this->set('offset', $this->RESULTS_PER_PAGE*$page);
                 $options['limit'] = $this->RESULTS_PER_PAGE;
                 $options['offset'] = $this->RESULTS_PER_PAGE*$page;
+
+
                 $words = $wordModel->find('all', $options);
 
 	            $annotatedWords = array();
@@ -152,7 +154,8 @@ class StatisticsController extends AppController {
                 if ($this->request['data']['immediate'] == 1) {
                     $MAX_DIST = 1;
                 } else {
-                    $MAX_DIST = 10;
+                    // this is set to 0 for no limits
+                    $MAX_DIST = 0;
                 }
 
                 $languageModel = ClassRegistry::init('Language');
@@ -176,46 +179,29 @@ class StatisticsController extends AppController {
 	            $mainParams = explode(',',$this->request['data']['mainValue']);
 	            $collocationParams = explode(',',$this->request['data']['collocationValue']);
 
+                $page = 0;
+                if (!empty($this->request['data']['page'])) {
+                    $page = $this->request['data']['page'];
+                }
+                $this->set('page', $page);
+
                 $sentenceModel = ClassRegistry::init('Sentence');
-                $rawCollocations = $sentenceModel->query(QueryBuilder::collocations($documentIds, $mainParams, $collocationParams));
 
-                $collocations = array();
-                $contexts = array();
-
-                $prevMwId = -1;
-                $minDist  = -1;
-                foreach ($rawCollocations as $rawCollocation) {
-                    $mwId = $rawCollocation['MW']['id'];
-                    $cwId = $rawCollocation['CW']['id'];
-                    $dist = $rawCollocation[0]['dist'];
-                    if ($mwId != $prevMwId) {
-                        $minDist  = $dist;
-                    }
-                    if ($dist == $minDist && $dist < $MAX_DIST + 1) {
-                        if ($dist > 0) { // it might be that the word can be its own collocation
-
-                            array_push($collocations, array(
-                                                          'mwId' => $mwId,
-                                                          'cwId' => $cwId,
-                                                          'mwText' => $this->getWordText($rawCollocation['MW']),
-                                                          'cwText' => $this->getWordText($rawCollocation['CW']),
-                                                          'sepWords' => ($dist-1)
-                                                      )
-                                      );
-                            array_push($contexts, $documentModel->query(" select * from documents inner join languages on languages.id = documents.language_id inner join sentences on documents.id = sentences.document_id and sentences.id = ".$rawCollocation['MW']['sentence_id']." inner join words on sentences.id = words.sentence_id order by words.position;"));
+                $totalCount = $sentenceModel->query(QueryBuilder::matchingSentencesCount($documentIds, $mainParams, $collocationParams, $MAX_DIST, 0))[0][0]['total_count'];
+                $this->set('totalPages', (int) ($totalCount / $this->RESULTS_PER_PAGE) + 1);
+                $this->set('offset', $this->RESULTS_PER_PAGE*$page);
 
 
-                        }
-                    }
-                    $prevMwId = $mwId;
+                $sentenceIdsRaw = $sentenceModel->query(QueryBuilder::matchingSentencesIds($documentIds, $mainParams, $collocationParams, $MAX_DIST, 0, $this->RESULTS_PER_PAGE, $this->RESULTS_PER_PAGE*$page));
+
+                $sentencesWithCollocations = array();
+                foreach ($sentenceIdsRaw as $record) {
+                    $sentenceId = $record['sub']['sentence_id'];
+                    array_push($sentencesWithCollocations, $sentenceModel->query(QueryBuilder::sentenceWithCollocations($sentenceId, $mainParams, $collocationParams)));
                 }
 
-                if (count($collocations) != count($contexts)) {
-                    die("annotatedWords is of different length than contexts");
-                }
-
-                $this->set('collocations', $collocations);
-                $this->set('contexts', $contexts);
+                $this->set('sentencesWithCollocations', $sentencesWithCollocations);
+                $this->set('sentencesTotalCount', $totalCount);
             } else {
                 $this->Session->setFlash("Empty search query, add search criteria for all searched words.");
                 return $this->redirect(array('action' => 'generator'));

@@ -6,8 +6,8 @@ foreach ($wordAnnotationTypes as $wordAnnotationType) {
         foreach ($wordAnnotationType['WordAnnotationTypeChoice'] as $choice) {
             $text = $choice['value']." (".$wordAnnotationType['WordAnnotationType']['name'].")";
             $description = $choice['description']." on the level: ".$wordAnnotationType['WordAnnotationType']['description'];
-            array_push($suggestions, "{ value: \"".$text."\", label: \"".$text."\"}");            
-            array_push($choices, array('id' => $choice['id'], 'value' => $text, 'description'=>$description));            
+            array_push($suggestions, "{ value: \"".$text."\", label: \"".$text."\"}");
+            array_push($choices, array('id' => $choice['id'], 'value' => $text, 'description'=>$description));
         }
     }
 }
@@ -100,48 +100,3 @@ Selected criteria: (clicking on a criterion deletes it) <br/><br/>
 
     echo $this->Form->end('Find 2-word collocations');
 ?>
-
-<br/>
-<br/>
-<br/>
-<hr/>
-<br/>
-<h2>Find 3-word collocations</h2>
-
-<label for="multiWord1">First word:</label>
-<input id="multiWord1" type="text" class="multiple-suggestions-input" value=""/>
-Selected criteria: (clicking on a criterion deletes it) <br/><br/>
-<?php foreach ($choices as $choice) { ?>
-    <input name="multiWord1Button" id="<?php echo $choice['id'];?>" type="button" class="choice-inactive" title="<?php echo $choice['description']; ?>" value="<?php echo $choice['value']; ?>" onclick="this.className='choice-inactive';"/>
-<?php } ?>
-<br/><br/>
-<label for="multiWord2">Second word:</label>
-<input id="multiWord2" type="text" class="multiple-suggestions-input" value=""/>
-Selected criteria: (clicking on a criterion deletes it) <br/><br/>
-<?php foreach ($choices as $choice) { ?>
-    <input name="multiWord2Button" id="<?php echo $choice['id'];?>" type="button" class="choice-inactive" title="<?php echo $choice['description']; ?>" value="<?php echo $choice['value']; ?>" onclick="this.className='choice-inactive';"/>
-<?php } ?>
-<br /><br />
-<label for="multiWord3">Third word:</label>
-<input id="multiWord3" type="text" class="multiple-suggestions-input" value=""/>
-Selected criteria: (clicking on a criterion deletes it) <br/><br/>
-<?php foreach ($choices as $choice) { ?>
-    <input name="multiWord3Button" id="<?php echo $choice['id'];?>" type="button" class="choice-inactive" title="<?php echo $choice['description']; ?>" value="<?php echo $choice['value']; ?>" onclick="this.className='choice-inactive';"/>
-<?php } ?>
-<br /><br />
-<?php
-    echo $this->Form->create(false, array('url' => array('controller' => 'statistics', 'action' => 'multicollocations')));
-    ?>
-    <input type="hidden" id="multiWord1Value" name="data[multiWord1Value]" />
-    <input type="hidden" id="multiWord2Value" name="data[multiWord2Value]" />
-    <input type="hidden" id="multiWord3Value" name="data[multiWord3Value]" />
-    <input type="hidden" name="immediate" value="false" />
-
-    <?php
-    foreach($documentIds as $documentId) {
-        echo '<input type="hidden" name="documentIds[]" value="'.$documentId.'" />';
-    }
-
-    echo $this->Form->end('Find 3-word collocations');
-?>
-
