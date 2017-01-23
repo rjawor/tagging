@@ -66,7 +66,7 @@ for ($i=0;$i<count($sentencesWithCollocations);$i++) {
 
             ?>
 
-            <a href="/tagging/dashboard/viewWord/<?=$word['words']['id']?>" target="_blank"><img src="/tagging/img/edit.png" alt="edit"></a>
+            <a href="<?= Configure::read('SystemInstallationPath') ?>/dashboard/viewWord/<?=$word['words']['id']?>" target="_blank"><img src="<?= Configure::read('SystemInstallationPath') ?>/img/edit.png" alt="edit"></a>
             <b title="<?=$word[0]['tags']?>"><?=$word[0]['word_text']?></b>
 
             <?php
