@@ -26,8 +26,18 @@ class DashboardController extends AppController {
             History::clear($this->Session);
         }
 
+        $docSelectionOk = 1;
+        $documentModel = ClassRegistry::init('Document');
         if (!$documentId) {
-            $this->Session->setFlash(__('Select a document in the Documents view'));
+            $docSelectionOk = 0;
+        } else {
+            $currentDocument = $documentModel->findById($documentId);
+            if (empty($currentDocument)) {
+                $docSelectionOk = 0;
+            }
+        }
+        if ($docSelectionOk == 0) {
+            $this->Session->setFlash(__('Select a document in the Documents view'), 'flashes/success');
         } else {
             $sentenceModel = ClassRegistry::init('Sentence');
             $sentencesCount = $sentenceModel->find('count', array(
@@ -64,23 +74,27 @@ class DashboardController extends AppController {
                 $currentSentenceIndex = $contextSize;
             }
 
-            $sentenceData = Utils::getSentenceData($sentencesWindow[$currentSentenceIndex]['Sentence']['id']);
+            if ($currentSentenceIndex < count($sentencesWindow)) {
+                $sentenceData = Utils::getSentenceData($sentencesWindow[$currentSentenceIndex]['Sentence']['id']);
 
-            $this->set('sentence', $sentenceData['sentence']);
-            $this->set('wordAnnotationCount', $sentenceData['wordAnnotationCount']);
-            $this->set('wordAnnotationTypes', $sentenceData['wordAnnotationTypes']);
-            $this->set('sentenceAnnotationCount', $sentenceData['sentenceAnnotationCount']);
+                $this->set('sentence', $sentenceData['sentence']);
+                $this->set('wordAnnotationCount', $sentenceData['wordAnnotationCount']);
+                $this->set('wordAnnotationTypes', $sentenceData['wordAnnotationTypes']);
+                $this->set('sentenceAnnotationCount', $sentenceData['sentenceAnnotationCount']);
 
 
-            $this->set('sentencesCount', $sentencesCount);
-            $this->set('sentencesWindow', $sentencesWindow);
-            $this->set('currentSentenceIndex', $currentSentenceIndex);
-            $this->set('offset', $offset);
-            $this->set('gridX', $gridX);
-            $this->set('editMode', $editMode);
-            $this->set('documentId', $documentId);
-            $this->set('userRoleId', $currentUser['User']['role_id']);
-            $this->set('hotKeys', array('q', 'w', 'e', 'r', 'a', 's', 'd', 'f', 'z', 'x', 'c', 'v', 't', 'y', 'u','i','o','g','h','j','k','l','b','n','m'));
+                $this->set('sentencesCount', $sentencesCount);
+                $this->set('sentencesWindow', $sentencesWindow);
+                $this->set('currentSentenceIndex', $currentSentenceIndex);
+                $this->set('offset', $offset);
+                $this->set('gridX', $gridX);
+                $this->set('editMode', $editMode);
+                $this->set('documentId', $documentId);
+                $this->set('userRoleId', $currentUser['User']['role_id']);
+                $this->set('hotKeys', array('q', 'w', 'e', 'r', 'a', 's', 'd', 'f', 'z', 'x', 'c', 'v', 't', 'y', 'u','i','o','g','h','j','k','l','b','n','m'));
+            } else {
+                $this->Session->setFlash(__('Select a document in the Documents view'), 'flashes/success');
+            }
         }
     }
 
