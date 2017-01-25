@@ -3,16 +3,16 @@ CROSSVALID_GRAN = 10
 PASSES = 10
 
 
-LEARNING_RATE = 8
-CONTEXT = 1
-SUFFIXES = 3
+LEARNING_RATE = 1
+CONTEXT = 2
+SUFFIXES = 2
 FL = 0
-CLASS = 0
+CLASS = 1
 CLASS_CONTEXT = 2
 LOSS_FUNCTION = "squared"
 ENDING = 0
 HYPHEN = 0
-NGRAM = 0
+NGRAM = 2
 
 
 
@@ -49,6 +49,7 @@ clean:
 	rm -f prod/jayasi_full/jayasiP_data_vw.txt
 	rm -f prod/jayasi_full/jayasiP_predictions.txt
 	rm -f prod/jayasi.model
+	rm -f prod/jayasi.cache
 	rm -f prod/jayasi_predictions.txt
 	rm -f prod/jayasi_vw.txt
 	rm -f prod/jayasi_contexts.txt

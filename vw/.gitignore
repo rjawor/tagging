@@ -5,3 +5,5 @@ result/*
 prediction/*
 test/*
 train/*
+prod/jayasi.cache
+prod/jayasi.model
