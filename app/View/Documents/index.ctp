@@ -128,7 +128,7 @@
 </div>
 
 <div id="import-box">
-    <h3>Import document from a text file</h3>
+    <h3>Import document from a txt or doc file</h3>
     <?php
     echo $this->Form->create('Documents', array('type' => 'file', 'action' => 'add'));
     echo $this->Form->input('file',array( 'type' => 'file'));

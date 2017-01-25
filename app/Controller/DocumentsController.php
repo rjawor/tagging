@@ -74,7 +74,12 @@ class DocumentsController extends AppController {
             $this->redirect('/');
         }
         if ($this->request->is('post')) {
-            $handle = @fopen($this->data['Documents']['file']['tmp_name'], "r");
+            $filePath = $this->data['Documents']['file']['tmp_name'];
+            if ($this->data['Documents']['file']['type'] == "application/msword") {
+                system("antiword -m UTF-8 -w 0 $filePath > ".$filePath."_converted");
+                $filePath = $filePath."_converted";
+            }
+            $handle = @fopen($filePath, "r");
             if ($handle) {
                 $document = array('Document' => array(
                                                     'name' => $this->data['Documents']['file']['name'],
@@ -133,6 +138,7 @@ class DocumentsController extends AppController {
                     $this->Session->setFlash('Error uploading file');
                 }
                 fclose($handle);
+                unlink($filePath);
                 #CakeLog::write('debug', print_r($document, true));
                 $this->Document->saveAssociated($document, array('deep' => true));
             } else {
