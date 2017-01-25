@@ -1,0 +1,7 @@
+data.txt
+data_vw.txt
+model/*
+result/*
+prediction/*
+test/*
+train/*

@@ -55,8 +55,7 @@ clean:
 	rm -f prod/jayasi_converbs.html
 
 data.txt:
-	ssh rjawor@rjawor.vm.wmi.amu.edu.pl "/var/www/html/tagging/tools/db/tags/classifier/getData.py"
-	scp rjawor@rjawor.vm.wmi.amu.edu.pl:/tmp/data.txt .
+	./getData.py
 
 data_vw.txt: data.txt
 	./extract_features.py data.txt data_vw.txt $(CONFIG)
