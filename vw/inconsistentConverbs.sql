@@ -1,0 +1,8 @@
+#converbs
+
+select documents.id, sentences.position, words.sentence_id, words.id, (case words.split when 1 then concat(words.stem, words.suffix) else words.text end) as word_text, group_concat(word_annotation_type_choice_id order by word_annotation_type_choice_id asc) as tag from words inner join sentences on words.sentence_id = sentences.id inner join documents on sentences.document_id = documents.id and documents.language_id = 3 and documents.user_id = 3 left join word_annotations on words.id = word_annotations.word_id left join word_annotation_type_choices_word_annotations on word_annotations.id = word_annotation_type_choices_word_annotations.word_annotation_id where  tag like '%21%' group by word_id order by sentence_id, words.position INTO OUTFILE '/tmp/converbs.csv' FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n';
+
+#non-converbs
+
+select documents.id, sentences.position, words.sentence_id, words.id, (case words.split when 1 then concat(words.stem, words.suffix) else words.text end) as word_text, group_concat(word_annotation_type_choice_id order by word_annotation_type_choice_id asc) as tag from words inner join sentences on words.sentence_id = sentences.id inner join documents on sentences.document_id = documents.id and documents.language_id = 3 and documents.user_id = 3 left join word_annotations on words.id = word_annotations.word_id left join word_annotation_type_choices_word_annotations on word_annotations.id = word_annotation_type_choices_word_annotations.word_annotation_id where  tag not like '%21%' group by word_id order by sentence_id, words.position INTO OUTFILE '/tmp/non-converbs.csv' FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n';
+

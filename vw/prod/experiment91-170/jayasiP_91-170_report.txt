@@ -1,0 +1,7 @@
+14.10.2016 11:34:29
+config: prod/experiment91-170/jayasiP_91-170_predictions.txt
+
+total words: 7005, right: 6877, accuracy: 98.1727%
+precision: 0.7248
+recall: 0.6991
+f-score: 0.7117

@@ -1,0 +1,5 @@
+total words: 11501, right: 11248, accuracy: 97.8002%
+precision: 0.7481
+recall: 0.6637
+f-score: 0.7034
+
