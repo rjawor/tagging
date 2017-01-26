@@ -101,9 +101,9 @@ with open(sys.argv[1]) as in_file, open(sys.argv[2],'w') as out_file:
             else:
                 vowel_rate = 0
 
-            features['word_length'] = word_length
-            features['vowel_count'] = vowel_count
-            features['vowel_rate'] = vowel_rate
+            #features['word_length'] = word_length
+            #features['vowel_count'] = vowel_count
+            #features['vowel_rate'] = vowel_rate
 
             for i in range(1,config['ngram']+1):
                 addNgramFeatures(features, word_text, i)

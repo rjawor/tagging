@@ -3,17 +3,16 @@ CROSSVALID_GRAN = 10
 PASSES = 10
 
 
-LEARNING_RATE = 1
-CONTEXT = 2
-SUFFIXES = 2
-FL = 0
-CLASS = 1
-CLASS_CONTEXT = 2
-LOSS_FUNCTION = "squared"
+LEARNING_RATE = 8
+CONTEXT = 1
+SUFFIXES = 4
+FL = 1
+CLASS = 0
+CLASS_CONTEXT = 3
+LOSS_FUNCTION = "classic"
 ENDING = 0
 HYPHEN = 0
-NGRAM = 2
-
+NGRAM = 0
 
 
 CONFIG = learning_rate=$(LEARNING_RATE),context=$(CONTEXT),suffixes=$(SUFFIXES),fl=$(FL),class=$(CLASS),class_context=$(CLASS_CONTEXT),loss_function=$(LOSS_FUNCTION),ending=$(ENDING),hyphen=$(HYPHEN),ngram=$(NGRAM)
