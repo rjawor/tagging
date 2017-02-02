@@ -1,6 +1,6 @@
 ﻿<ref>JayP25.1</ref>_0 siṃghala_0 dīpa_0 kathā_0 aba_0 gāvauṃ_0 au_0 so_0 padumini_0 barani_1 sunāvauṃ_0
 baranaka_0 darapana_0 bhāṁti_0 bisekhā_0 jehiṃ_0 jasa_0 rūpa_0 so_0 taisei_0 dekhā_0
-<ref>JayP25.3</ref>_0 dhani_0 so_0 dīpa_0 jahaṁ_0 dīpaka_0 nārī_0 au_0 so_0 padumini_0 daiaṁ_0 avatārī_0 </dev>_0
+<ref>JayP25.3</ref>_0 dhani_0 so_0 dīpa_0 jahaṁ_0 dīpaka_0 nārī_0 au_0 so_0 padumini_0 daiaṁ_0 avatārī_0
 sāta_0 dīpa_0 baranahiṃ_0 saba_0 logū_0 ekau_0 dīpa_0 na_0 ohi_0 sari_0 jogū_0
 diyā_0 dīpa_0 nahiṃ_0 tasa_0 ujiārā_0 sarāṁ_0 dīpa_0 sari_0 hoi_1 na_0 pārā_0
 jaṃbū_0 dīpa_0 kahauṃ_0 tasa_0 nāhīṃ_0 pūja_0 na_0 laṃka_0 dīpa_0 parichāhīṃ_0
@@ -9,14 +9,14 @@ saba_0 saṃsāra_0 parathamaiṃ_0 āe_0 sātauṃ_0 dīpa_0 ekau_0 dīpa_0 na_
 gaṃdhrapasena_0 sugaṃdha_0 naresū_0 so_0 rājā_0 yaha_0 tākara_0 desū_0
 <ref>JayP26.2</ref>_0 laṃkā_0 sunā_0 jo_0 rāvana_0 rājū_0 tehu_0 cāhi_1 baṛa_0 tākara_0 sājū_0
 chappana_0 koṭi_0 kaṭaka_0 dara_0 sājā_0 sabai_0 chatrapati_0 auraṁganha_0 rājā_0
-soraha_0 sahasa_0 ghora_0 ghorasārā_0 sāvaṁkarana_0 bālakā_0 tukhārā_0 </dev>_0
+soraha_0 sahasa_0 ghora_0 ghorasārā_0 sāvaṁkarana_0 bālakā_0 tukhārā_0 |</dev>_0
 sāta_0 sahasa_0 hastī_0 siṃghalī_0 jimī_0 kabilāsa_0 erāpati_0 balī_0
 asupatī_0 ka_0 siramaura_0 kahāvā_0 gajapati_0 ka_0 āṁkusa_0 gaja_0 nāvā_0
 narapatī_0 ka_0 kahāva_0 nariṃdū_0 bhuapatī_0 ka_0 jaga_0 dosara_0 iṃdū_0
 aisa_0 cakkavai_0 rājā_0 cahūṁ_0 khaṃḍa_0 bhai_0 hoi_0 sabai_0 āi_1 sira_0 nāvahiṃ_0 sarabari_0 karai_0 na_0 koi_0
 jabahi_0 dīpa_0 niarāvā_0 jāī_1 janu_0 kabilāsa_0 niara_0 bhā_0 āī_0
 ghana_0 aṁbarāuṁ_0 lāga_0 cahūṁ_0 pāsā_0 uṭhai_1 puhumi_0 huti_0 lāga_0 akāsā_0
-<dev>tarivara_0 sabai_0 malaigiri_0 lāe_0 bhai_0 jaga_0 chāṁha_0 raini_0 hoi_1 chāe_0 </dev>_0
+<dev>tarivara_0 sabai_0 malaigiri_0 lāe_0 bhai_0 jaga_0 chāṁha_0 raini_0 hoi_1 chāe_0 |</dev>_0
 malai_0 samīra_0 sohāī_0 chāhāṁ_0 jeṭha_0 jād̤a_0 lāgai_0 tehi_0 māhāṁ_0
 ohī_0 chāṁha_0 raini_0 hoi_1 āvai_0 hariara_0 sabai_0 akāsa_0 dikhāvai_0
 paṃthika_0 jauṃ_0 pahuṁcai_0 sahi_1 ghāmū_0 dukha_0 bisarai_0 sukha_0 hoi_1 bisarāmū_0
@@ -105,7 +105,7 @@ koī_0 karai_0 besāhanā_0 kāhū_0 kera_0 bikāi_0 koī_0 calā_0 lābha_0 sau
 puni_0 siṃgāra_0 hāṭa_0 dhani_0 desā_0 kai_1 siṃgāra_0 tahaṁ_0 baiṭhī_0 besā_0
 mukha_0 taṁbora_0 tana_0 cīra_0 kusuṃbhī_0 kānanha_0 kanaka_0 jarāū_0 khuṃbhī_0
 hātha_0 bīna_0 suni_1 miriga_0 bhulāhīṃ_0 nara_0 mohahiṃ_0 suni_1 paigu_0 na_0 jāhīṃ_0
-<ref>JayP38.4</ref>_0 bhauṃha_0 dhanuka_0 taha_0 naina_0 aherī_0 mārahiṃ_0 bāna_0 sāna_0 sauṃ_0 pherī_1 </dev>_0
+<ref>JayP38.4</ref>_0 bhauṃha_0 dhanuka_0 taha_0 naina_0 aherī_0 mārahiṃ_0 bāna_0 sāna_0 sauṃ_0 pherī_1 |</dev>_0
 alaka_0 kapola_0 ḍola_1 haṃsi_0 dehīṃ_0 lāi_1 kaṭākha_0 māri_1 jiu_0 lehīṃ_0
 kuca_0 kaṃcuki_0 jānahuṁ_0 juga_0 sārī_0 aṃcala_0 dehi_0 subhāvahiṃ_0 ḍhārī_0
 keta_0 khelāra_0 hāri_1 tenha_0 pāsā_0 hātha_0 jhāri_1 hoi_1 calahiṃ_0 nirāsā_0
@@ -162,7 +162,7 @@ puni_0 cali_0 dekhā_0 rāja_0 duārū_0 mahiṃ_0 ghūṁbia_0 pāia_0 nahiṃ_
 hasti_0 siṃghalī_0 bāṁdhe_0 bārā_0 janu_0 sajīva_0 saba_0 ṭhāṛha_0 pahārā_0
 kavanau_0 seta_0 pīta_0 ratanāreṃ_0 kavanau_0 hare_0 dhūma_0 kāre_0
 baranahi_0 barana_0 gagana_0 jasa_0 meghā_0 au_0 tinha_0 gagana_0 pīṭha_0 janu_0 ṭheṃghā_0
-siṃghala_0 ke_0 barane_0 siṃghalī_0 ekeka_0 cāhi_1 so_0 ekeka_0 balī_0 </dev>_0
+siṃghala_0 ke_0 barane_0 siṃghalī_0 ekeka_0 cāhi_1 so_0 ekeka_0 balī_0 |</dev>_0
 giri_0 pahāra_0 pabbai_0 gahi_1 pelahīṃ_0 birikha_0 upāri_1 jhāri_1 mukha_0 melahiṃ_0
 māta_0 nimata_0 saba_0 garajahiṃ_0 bāṁdhe_0 nisi_0 dina_0 rahahiṃ_0 mahāuta_0 kāṁdhe_0
 dharatī_0 bhāra_0 na_0 aṁgavai_0 pāṁva_0 dharata_0 uṭha_0 hāli_1 kuruṁbha_0 ṭūṭa_0 phana_0 phāṭe_0 tinha_0 hastinha_0 kī_0 cāli_0
@@ -198,7 +198,7 @@ pāṭa_0 baisi_1 raha_0 kie_0 siṃgārū_0 saba_0 rānī_0 ohi_0 karahiṃ_0 j
 niti_0 nava_0 raṃga_0 suraṃgama_0 soī_0 prathamai_0 baisa_0 na_0 sarabari_0 koī_0
 sakala_0 dīpa_0 mahaṁ_0 cuni_1 cuni_1 ānī_0 tenha_0 mahaṁ_0 dīpaka_0 bāraha_0 bānī_0
 kuaṁri_0 batīsau_0 lakkhanī_0 asa_0 saba_0 māṁha_0 anūpa_0 jāṁvata_0 siṃghala_0 dīpai_0 sabai_0 bakhānai_0 rūpa_0
-caṃpāvati_0 jo_0 rūpa_0 utimāhāṁ_0 padumāvati_0 ki_0 joti_0 mana_0 chāhāṁ_0 </dev>_0
+caṃpāvati_0 jo_0 rūpa_0 utimāhāṁ_0 padumāvati_0 ki_0 joti_0 mana_0 chāhāṁ_0 |</dev>_0
 bhai_1 cāhai_0 asi_0 kathā_0 salonī_0 meṃṭi_1 na_0 jāi_0 likhī_0 jasi_0 honī_0
 siṃghala_0 dīpa_0 bhaeu_0 taba_0 nāūṁ_0 jauṃ_0 asa_0 diyā_0 dīnha_0 tehi_0 ṭhāūṁ_0
 prathama_0 so_0 joti_0 gagana_0 niramaī_0 puni_0 so_0 pitā_0 mātheṃ_0 mani_0 bhaī_0
@@ -268,85 +268,85 @@ tohi_0 sevā_0 bichurana_0 nahi_0 ākhauṃ_0 pīṃjara_0 hie_0 ghāli_1 tohi�
 hauṃ_0 mānusa_0 tūṁ_0 paṃkhi_0 piārā_0 dharama_0 pirīti_0 tahāṁ_0 ko_0 mārā_0
 kā_0 so_0 prīti_0 tana_0 māhaṁ_0 bidāī_0 soi_0 prīti_0 jia_0 sātha_0 jo_0 jāī_0
 prīti_0 bhāra_0 lai_1 hieṁ_0 na_0 socū_0 ohiṃ_0 paṃtha_0 bhala_0 hoi_0 ki_0 pocū_0
-prīti_0 pahāra_0 bhāra_0 jauṃ_0 kāṁdhā_0 so_0 kasa_0 chūṭa_0 lāi_1 jia_0 bāṁdhā_0
+prīti_0 pahāra_0 bhāra_0 jauṃ_0 kāṁdhā_0 so_0 kasa_0 chūṭa_0 lāi_1 jia_0 bāṁdhā_0 |_0
 suā_0 na_0 rahai_0 khuruka_0 jia_0 abahiṃ_0 kāla_0 so_0 āu_0 saturu_0 ahai_0 jo_0 kariā_0 kabahuṁ_0 so_0 baurai_0 nāu_0
-eka_0 devasa_0 kauniuṁ_0 tithi_0 āī_0 mānasarodaka_0 calī_0 anhāī_0
+eka_0 devasa_0 kauni\uṁ_0 tithi_0 āī_0 mānasarodaka_0 calī_0 anhā\ī_0
 <dev>padumāvati_0 saba_0 sakhīṃ_0 bolāīṃ_0 janu_0 phulavāri_0 sabai_0 cali_1 āīṃ_0
 koi_0 caṃpā_0 ko\i_0 kuṃda_0 sahelīṃ_0 ko\ī_0 suketa_0 karanā_0 rasabelīṃ_0
 koi_0 sugulāla_0 sudarasana_0 rātī_0 ko\i_0 bakauri_0 bakacuna_0 bihaṁsātī_0
-koi_0 su_0 bolasari_0 puhupāvatī_0 koi_0 jāhī_0 jūhī_0 sevatī_0
-koi_0 sonajarada_0 jeuṁ_0 kesari_0 koi_0 siṃgārahāra_0 nāgesari_0
-koi_0 kūjā_0 sadabaraga_0 caṁbelī_0 koī_0 kadama_0 surasa_0 rasa_0 belī_0
+koi_0 su_0 bolasari_0 puhupāvatī_0 ko\i_0 jāhī_0 jūhī_0 sevatī_0
+ko\i_0 sonajarada_0 jeuṁ_0 kesari_0 ko\i_0 siṃgārahāra_0 nāgesari_0
+ko\i_0 kūjā_0 sadabaraga_0 caṁbelī_0 ko\ī_0 kadama_0 surasa_0 rasa_0 belī_0
 calīṃ_0 sabai_0 mālati_0 saṁga_0 phūle_0 kaṁvala_0 kamoda_0 bedhi_1 rahe_0 gana_0 gaṃdhrapa_0 bāsa_0 parimalāmoda_0
-khelata_0 mānasarovara_0 gaīṃ_0 jāi_1 pāli_0 para_0 ṭhād̤hī_0 bhaīṃ_0
+khelata_0 mānasarovara_0 ga\īṃ_0 jā\i_1 pāli_0 para_0 ṭhād̤hī_0 bha\īṃ_0
 dekhi_1 sarovara_0 rahasahiṃ_0 kelī_0 padumāvati_0 sauṃ_0 kahahiṃ_0 sahelīṃ_0
 <ref>JayP60.3</ref>_0 ai_0 rānī_0 mana_0 dekhu_0 bicārī_1 ehi_0 naihara_0 rahanā_0 dina_0 cārī_0
-jau_0 lahi_0 ahai_0 pitā_0 kara_0 rājū_0 kheli_1 lehu_0 jauṃ_0 khelahu_0 ājū_0
+jau_0 lahi_1 ahai_0 pitā_0 kara_0 rājū_0 kheli_1 lehu_0 jauṃ_0 khelahu_0 ājū_0
 puni_0 sāsura_0 hama_0 gaunaba_0 kālī_0 kita_0 hama_0 kita_0 eha_0 saravara_0 pālī_0
-kita_0 āvana_0 puni_0 apane_0 hāthāṁ_0 kita_0 milikai_1 khelaba_0 eka_0 sāthāṁ_0
-sāsu_0 naṁnada_0 bolinha_0 jiu_0 lehīṃ_0 dāruna_0 sasura_0 na_0 āvai_1 dehīṃ_0
-piu_0 piāra_0 saba_0 ūpara_0 so_0 puni_0 karai_0 dahuṁ_0 kāha_0 kahuṁ_0 sukha_0 rākhai_0 kī_0 dukha_0 dahuṁ_0 kasa_0 jarama_0 nibāhu_0
-saravara_0 tīṃra_0 paduminīṃ_0 āīṃ_0 khoṃpā_0 chori_1 kesa_0 mokarāīṃ_0
+kita_0 āvana_0 puni_0 apane_0 hāthāṁ_0 kita_0 milikai_0 khelaba_0 eka_0 sāthāṁ_0
+sāsu_0 naṁnada_0 bolinha_0 ji\u_0 lehīṃ_0 dāruna_0 sasura_0 na_0 āvai_0 dehīṃ_0
+pi\u_0 pi\āra_0 saba_0 ūpara_0 so_0 puni_0 karai_0 dahuṁ_0 kāha_0 kahuṁ_0 sukha_0 rākhai_0 kī_0 dukha_0 dahuṁ_0 kasa_0 jarama_0 nibāhu_0
+saravara_0 tīṃra_0 paduminīṃ_0 ā\īṃ_0 khoṃpā_0 chori_1 kesa_0 mokarā\īṃ_0
 sasi_0 mukha_0 aṃga_0 malaigiri_0 rānī_0 nāganha_0 jhāṁpi_1 līnha_0 aradhānī_0
-onae_0 megha_0 parī_0 jaga_0 chāhāṁ_0 sasi_0 kī_0 sarana_0 līnha_0 janu_0 rāhāṁ_0
+ona\e_0 megha_0 parī_0 jaga_0 chāhāṁ_0 sasi_0 kī_0 sarana_0 līnha_0 janu_0 rāhāṁ_0
 chapi_1 gai_0 dinahi_0 bhānu_0 kai_0 dasā_0 lai_1 nisi_0 nakhata_0 cāṁda_0 paragasā_0
 bhūli_1 cakora_0 disṭi_0 tahaṁ_0 lāvā_0 megha_0 ghaṭā_0 mahaṁ_0 cāṁda_0 dekhāvā_0
 <dev>dasana_0 dāminī_0 kokila_0 bhāṣīṃ_0 bhauhaiṃ_0 dhanuka_0 gagana_0 lai_1 rākhīṃ_0
 naina_0 khaṁjana_0 du\i_0 keli_0 karehīṃ_0 kuca_0 nāraṁga_0 madhukara_0 rasa_0 lehīṃ_0
-saravara_0 rūpa_0 bimohā_0 hieṁ_0 hilora_0 karei_0 pāya_0 chuai_0 maku_0 pāvauṃ_0 tehi_0 misu_0 laharaiṃ_0 dei_0
+saravara_0 rūpa_0 bimohā_0 hi\eṁ_0 hilora_0 kare\i_0 pāya_0 chu\a\i_0 maku_0 pāvauṃ_0 tehi_0 misu_0 laharaiṃ_0 de\i_0
 dharīṃ_0 tīra_0 saba_0 chīpaka_0 sārīṃ_0 saravara_0 mahaṁ_0 paiṭhīṃ_0 saba_0 bārī_0
-pāeṁ_0 nīra_0 jānu_0 saba_0 belīṃ_0 hulasī_0 karahiṃ_0 kāma_0 kai_0 kelīṃ_0
-navala_0 basaṃta_0 saṁvārahi_1 karīṃ_0 hoi_1 paragaṭa_0 cāhahiṃ_0 rasa_0 bharīṃ_0
+pā\eṁ_0 nīra_0 jānu_0 saba_0 belīṃ_0 hulasī_0 karahiṃ_0 kāma_0 kai_0 kelīṃ_0
+navala_0 basaṃta_0 saṁvārahi_1 karīṃ_0 ho\i_1 paragaṭa_0 cāhahiṃ_0 rasa_0 bharīṃ_0
 <dev>karila_0 kesa_0 bisahara_0 bisa_0 bhare_0 laharaiṃ_0 lehi_0 kaṁvala_0 mukha_0 dhare_0
-uṭhe_0 koṃpa_0 janu_0 dārivaṁ_0 dākhā_0 bhaī_0 onaṃta_0 prema_0 kai_0 sākhā_0
-saravara_0 nahiṃ_0 samāi_0 saṁsārā_0 cāṁda_0 nahāi_0 paiṭha_0 lie_0 tārā_0
-dhani_0 so_0 nīra_0 sasi_0 taraīṃ_0 uīṃ_0 aba_0 kata_0 disṭi_0 kaṁvala_0 au_0 kuīṃ_0
-cakaī_0 bichuri_1 pukārai_0 kahāṁ_0 milahu_0 ho_0 nāṁha_0 eka_0 cāṁda_0 nisi_0 saraga_0 para_0 dina_0 dosara_0 jala_0 māṁha_0
-<dev>lāgīṃ_0 keli_0 karai_0 maṁjha_0 nīrā_0 haṃsa_0 lajāi_1 baiṭha_0 hoi_1 tīrā_0
-padumāvati_0 kautuka_0 kari_1 rākhī_0 tumha_0 sasi_0 hohu_0 tarāina_0 sākhī_0
-bādi_0 melikai_1 khela_0 pasārā_0 hāru_0 dei_0 jauṃ_0 khelata_0 hārā_0
+uṭhe_0 koṃpa_0 janu_0 dārivaṁ_0 dākhā_0 bha\ī_0 onaṃta_0 prema_0 kai_0 sākhā_0
+saravara_0 nahiṃ_0 samā\i_0 saṁsārā_0 cāṁda_0 nahā\i_0 paiṭha_0 li\e_0 tārā_0
+dhani_0 so_0 nīra_0 sasi_0 tara\īṃ_0 u\īṃ_0 aba_0 kata_0 disṭi_0 kaṁvala_0 au_0 ku\īṃ_0
+caka\ī_0 bichuri_1 pukārai_0 kahāṁ_0 milahu_0 ho_0 nāṁha_0 eka_0 cāṁda_0 nisi_0 saraga_0 para_0 dina_0 dosara_0 jala_0 māṁha_0
+<dev>lāgīṃ_0 keli_0 karai_0 maṁjha_0 nīrā_0 haṃsa_0 lajā\i_1 baiṭha_0 ho\i_1 tīrā_0
+padumāvati_0 kautuka_0 kari_1 rākhī_0 tumha_0 sasi_0 hohu_0 tarā\ina_0 sākhī_0
+bādi_0 meli_1 kai_0 khela_0 pasārā_0 hāru_0 de\i_0 jauṃ_0 khelata_0 hārā_0
 saṁvarahi_0 sāṁvari_0 gorihi_0 gorī_0 āpani_0 āpani_0 līnhi_0 so_0 jorī_0
-<dev>būjhi_0 khela_0 khelahu_0 eka_0 sāthā_0 hāru_0 na_0 hoi_0 parāeṁ_0 hāthā_0
-ājuhi_0 khela_0 bahuri_0 kita_0 hoī_0 khela_0 gaeṁ_0 kata_0 khelai_0 koī_0
-dhani_0 so_0 khela_0 khelahi_0 rasa_0 pemā_0 rautāī_0 au_0 kūsala_0 khemā_0
-muhamada_0 bāri_0 parema_0 kī_0 jeuṁ_0 bhāvai_0 teuṁ_0 khelu_0 tīlahi_0 phūlahi_0 saṃga_0 jeuṁ_0 hoi_0 phulāela_0 tela_0
-sakhī_0 eka_0 teiṁ_0 khela_0 na_0 jānā_0 cita_0 aceta_0 bhai_0 hāra_0 gaṁvānā_0
+<dev>būjhi_0 khela_0 khelahu_0 eka_0 sāthā_0 hāru_0 na_0 ho\i_0 parā\eṁ_0 hāthā_0
+<dev>\ājuhi_0 khela_0 bahuri_0 kita_0 ho\ī_0 khela_0 ga\eṁ_0 kata_0 khelai_0 ko\ī_0
+dhani_0 so_0 khela_0 khelahi_0 rasa_0 pemā_0 rautā\ī_0 au_0 kūsala_0 khemā_0
+muhamada_0 bāri_0 parema_0 kī_0 je\uṁ_0 bhāvai_0 te\uṁ_0 khelu_0 tīlahi_0 phūlahi_0 saṃga_0 je\uṁ_0 ho\i_0 phulā\ela_0 tela_0
+sakhī_0 eka_0 te\iṁ_0 khela_0 na_0 jānā_0 cita_0 aceta_0 bha\i_0 hāra_0 gaṁvānā_0
 kaṁvala_0 ḍāra_0 gahi_1 bhai_0 bekarārā_0 kāsoṃ_0 pukārauṃ_0 āpana_0 hārā_0
-kata_0 khelai_0 āiuṁ_0 ehi_0 sāthāṁ_0 hāra_0 gaṁvāi_1 caliuṁ_0 saiṃ_0 hāthāṁ_0
-ghara_0 paiṭhata_0 pūṁchaba_0 ehi_0 hārū_0 kaunu_0 utara_0 pāubi_0 paisārū_0
+kata_0 khelai_0 ā\i\uṁ_0 ehi_0 sāthāṁ_0 hāra_0 gaṁvā\i_1 cali\uṁ_0 saiṃ_0 hāthāṁ_0
+ghara_0 paiṭhata_0 pūṁchaba_0 ehi_0 hārū_0 kaunu_0 utara_0 pā\ubi_0 paisārū_0
 naina_0 sīpa_0 āṁsunha_0 tasa_0 bhare_0 jānahu_0 moṃti_0 girahiṃ_0 saba_0 d̤hare_0
 sakhinha_0 kahā_0 bhorī_0 kokilā_0 kaunu_0 pāni_0 jehi_0 paunu_0 na_0 milā_0
-hāru_0 gaṁvāi_1 so_0 aisehiṃ_0 rovā_0 heri_1 herāi_1 lehu_0 jauṃ_0 khovā_0
-lāgīṃ_0 saba_0 mili_1 herai_0 būd̤i_1 būd̤i_1 eka_0 sātha_0 koī_0 uṭhī_1 moṃti_0 lai_0 ghoṃghā_0 kāhū_0 hātha_0
-kahā_0 mānasara_0 cahā_0 so_0 pāī_0 pārasa_0 rūpa_0 ihāṁ_0 lāgi_0 āī_0
+hāru_0 gaṁvā\i_1 so_0 aisehiṃ_0 rovā_0 heri_0 herā\i_0 lehu_0 jauṃ_0 khovā_0
+lāgīṃ_0 saba_0 mili_1 herai_0 būd̤i_1 būd̤i_1 eka_0 sātha_0 ko\ī_0 uṭhī_1 moṃti_0 lai_0 ghoṃghā_0 kāhū_0 hātha_0
+kahā_0 mānasara_0 cahā_0 so_0 pā\ī_0 pārasa_0 rūpa_0 ihāṁ_0 lāgi_0 ā\ī_0
 bhā_0 niramara_0 tenha_0 pāyana_0 paraseṃ_0 pāvā_0 rūpa_0 rūpa_0 keṃ_0 daraseṃ_0
-<dev>malai_0 samīra_0 bāsa_0 tana_0 āī_0 bhā_0 sītala_0 gai_0 tapani_0 bujhāī_0
+<dev>malai_0 samīra_0 bāsa_0 tana_0 ā\ī_0 bhā_0 sītala_0 gai_0 tapani_0 bujhā\ī_0
 na_0 janauṃ_0 kaunu_0 pauna_0 lai_1 āvā_0 punni_0 dasā_0 bhai_0 pāpa_0 gaṁvāvā_0
 tatakhana_0 hāra_0 begi_0 utirānā_0 pāvā_0 sakhinha_0 caṃda_0 bihaṁsānā_0
 bigase_0 kumuda_0 dekhi_1 sasi_0 rekhā_0 bhai_0 tehiṃ_0 rūpa_0 jahāṁ_0 jo_0 dekhā_0
-pāe_0 rūpa_0 rūpa_0 jasa_0 cahe_0 sasi_0 mukha_0 saba_0 darapana_0 hoi_0 rahe_0
-<dev>naina_0 jo_0 dekhe_0 kaṁvala_0 bhae_0 niramara_0 nīra_0 sarīra_0 haṁsata_0 jo_0 dekhe_0 haṃsa_0 bhae_0 dasana_0 joti_0 naga_0 hīra_0
+pā\e_0 rūpa_0 rūpa_0 jasa_0 cahe_0 sasi_0 mukha_0 saba_0 darapana_0 ho\i_0 rahe_0
+<dev>naina_0 jo_0 dekhe_0 kaṁvala_0 bha\e_0 niramara_0 nīra_0 sarīra_0 haṁsata_0 jo_0 dekhe_0 haṃsa_0 bha\e_0 dasana_0 joti_0 naga_0 hīra_0
 <dev>padumāvati_0 tahaṁ_0 khela_0 dhamārī_0 su\ā_0 maṁdira_0 mahaṁ_0 dekhi_0 maṁjārī_0
-kahesi_0 calauṃ_0 jauṃ_0 lahi_0 tana_0 pāṁkhā_0 ji\u_0 lai_1 ud̤ā_0 tāki_1 bana_0 ḍhāṁkhā_0
-jāi_0 parā_0 banakhaṁḍa_0 jiu_0 līnhe_0 mile_0 paṃkhi_0 bahu_0 ādara_0 kīnhe_0
+kahesi_0 calauṃ_0 jauṃ_0 lahi_1 tana_0 pāṁkhā_0 ji\u_0 lai_1 ud̤ā_0 tāki_1 bana_0 ḍhāṁkhā_0
+jā\i_0 parā_0 banakhaṁḍa_0 ji\u_0 līnhe_0 mile_0 paṃkhi_0 bahu_0 ādara_0 kīnhe_0
 āni_1 dharīṃ_0 āgeṃ_0 bahu_0 sākhā_0 bhuguti_0 na_0 miṭai_0 jauṃ_0 lahiṃ_0 bidhi_0 rākhā_0
-pāī_1 bhuguti_0 sukkha_0 mana_0 bhaeū_0 ahā_0 jo_0 dukkha_0 bisari_1 saba_0 gaeū_0
-<dev>\ai_0 gosā\iṁ_0 tū_0 aisa_0 bidhātā_0 jāṁvata_0 jīu_0 saba_0 ka_0 bhakha_0 dātā_0
+pā\ī_1 bhuguti_0 sukkha_0 mana_0 bha\e\ū_0 ahā_0 jo_0 dukkha_0 bisari_1 saba_0 ga\e\ū_0
+<dev>\ai_0 gosā\iṁ_0 tū_0 aisa_0 bidhātā_0 jāṁvata_0 jī\u_0 saba_0 ka_0 bhakha_0 dātā_0
 pāhana_0 mahaṁ_0 na_0 pataṃga_0 bisārā_0 jahaṁ_0 tohiṃ_0 saṁvara_0 dīnha_0 tu\iṁ_0 cārā_0
 <dev>taba_0 lagi_0 soga_0 bichoha_0 kara_1 bhojana_0 parā_0 na_0 peṭa_0 puna_0 bisarā_0 bhā_0 saṁvaranā_0 janu_0 sapane_0 bha\i_0 bheṃṭa_0
 padumāvatī_0 pahaṁ_0 ā\i_1 bhaṁḍārī_0 kahesi_0 maṁdira_0 mahaṁ_0 parī_0 maṁjārī_0
 su\ā_0 jo_0 utara_0 deta_0 hā_0 pūṁchā_0 ud̤i_1 gā_0 piṃjara_0 na_0 bolai_0 chaṁchā_0
 rānī_0 sunā_0 sukkha_0 saba_0 ga\e\ū_0 janu_0 nisi_0 parī_0 asta_0 dina_0 bha\e\ū_0
 gahanai_0 gahī_0 cāṁda_0 kai_0 karā_0 āṁsu_0 gagana_0 janu_0 nakhatanha_0 bharā_0
-ṭūṭi_0 pāli_0 saravara_0 bahi_1 lāge_0 kaṁvala_0 būd̤a_0 madhukara_0 ud̤i_1 bhāge_0
-ehiṃ_0 bidhi_0 āṁsu_0 nakhata_0 hoi_1 cue_0 gagana_0 chāṁd̤i_1 saravara_0 bhari_0 u\e_0
-cihura_0 cuvahiṃ_0 motinha_0 kai_0 mālā_0 aba_0 saṁketi_1 bāṁdhā_0 caha_0 bālā_0
+ṭūṭi_0 pāli_0 saravara_0 bahi_0 lāge_0 kaṁvala_0 būd̤a_0 madhukara_0 ud̤i_1 bhāge_0
+ehiṃ_0 bidhi_0 āṁsu_0 nakhata_0 ho\i_1 cu\e_0 gagana_0 chāṁd̤i_1 saravara_0 bhari_0 u\e_0
+cihura_0 cuvahiṃ_0 motinha_0 kai_0 mālā_0 aba_0 hama_0 phiri_0 bāṁdhā_0 caha_0 bālā_0
 ud̤i_1 vaha_0 su\aṭā_0 kahaṁ_0 basā_0 khojahu_0 sakhī_0 so_0 bāsu_0 dahuṁ_0 hai_0 dharati_0 ki_0 saraga_0 gā_0 pavana_0 na_0 pāvai_0 tāsu_0
-cahūṁ_0 pāsa_0 samujhāvahiṃ_0 sakhī_0 kahāṁ_0 so_0 aba_0 pāia_0 gā_0 paṁkhī_0
+cahūṁ_0 pāsa_0 samujhāvahiṃ_0 sakhī_0 kahāṁ_0 so_0 aba_0 pā\i\a_0 gā_0 paṁkhī_0
 jauṃ_0 lahi_0 piṃjara_0 ahā_0 parevā_0 ahā_0 bāṁdi_0 kīnhesi_0 niti_0 sevā_0
-tehiṃ_0 baṁdi_1 huteṃ_0 jauṃ_0 chūṭai_1 pāvā_0 puni_0 phiri_0 bāṁdi_1 hoi_0 kita_0 āvā_0
-oiṁ_0 ud̤āna_0 phara_0 tahiai_0 khāe_0 jaba_0 bhā_0 paṃkhi_0 pāṁkha_0 tana_0 pāe_0
-piṃjara_0 jehi_0 ka_0 sauṃpi_1 tehi_0 gaeū_0 jo_0 jākara_0 so_0 tākara_0 bhaeū_0
+tehiṃ_0 baṁdi_0 huteṃ_0 jauṃ_0 chūṭai_0 pāvā_0 puni_0 phiri_0 bāṁdi_0 ho\i_0 kita_0 āvā_0
+o\iṁ_0 ud̤āna_0 phara_0 tahi\ai_0 khā\e_0 jaba_0 bhā_0 paṃkhi_0 pāṁkha_0 tana_0 pā\e_0
+piṃjara_0 jehi_0 ka_0 sauṃpi_1 tehi_0 ga\e\ū_0 jo_0 jākara_0 so_0 tākara_0 bha\e\ū_0
 dasa_0 bāṭaiṃ_0 jehi_0 piṃjara_0 māhāṁ_0 kaiseṃ_0 bāṁva_0 maṁjārī_0 pāhāṁ_0
 eiṁ_0 dharatī_0 asa_0 ketana_0 līle_0 tasa_0 peṭa_0 gād̤ha_0 bahuri_0 nahiṃ_0 ḍhīle_0
 jahāṁ_0 na_0 rāti_0 na_0 devasa_0 hai_0 jahāṁ_0 na_0 pauna_0 na_0 ghāni_0 tehi_0 bana_0 hoi_1 suaṭā_0 basā_0 ko_0 re_0 milāvai_0 āni_1
@@ -364,8 +364,8 @@ bikha_0 dānā_0 kata_0 daiya_0 aṁkūrā_0 jehi_0 bhā_0 marana_0 ḍahana_0 d
 jauṃ_0 na_0 hoti_0 cārā_0 kai_0 āsā_0 kata_0 cirihāra_0 ḍhukata_0 lai_1 lāsā_0
 <ref>JayP70.5</ref>_0 eiṁ_0 bikha_0 cārai_0 saba_0 budhi_0 ṭhagī_0 au_0 bhā_0 kāla_0 hātha_0 lai_1 lagī_0
 ehi_0 jhūṭhī_0 māyā_0 mana_0 bhūlā_0 cūre_0 pāṁkha_0 jaisa_0 tana_0 phūlā_0
-yahu_0 mana_0 kaṭhina_0 marai_0 nahiṃ_0 mārā_0 jāra_0 na_0 dekh_0 dekh_0 pai_0 cārā_0
-hama_0 tau_0 buddhi_0 gaṁvāī_0 bikha_0 cārā_0 asa_0 khāi_1 tūṁ_0 suaṭā_0 paṃḍita_0 hatā_0 tūṁ_0 kata_0 phāṁdā_0 āi_1
+yahu_0 mana_0 kaṭhina_0 marai_0 nahiṃ_0 mārā_0 jāra_0 na_0 dekhu_0 dekhu_0 pai_0 cārā_0
+hama_0 tau_0 buddhi_0 gaṁvāī_0 bikha_0 cārā_0 asa_0 khāī_0 tūṁ_0 suaṭā_0 paṃḍita_0 hatā_0 tūṁ_0 kata_0 phāṁdā_0 āī_0
 suaiṃ_0 kahā_0 hamahūṁ_0 asa_0 bhūle_0 ṭūṭa_0 hiṃḍora_0 garaba_0 jehiṃ_0 jhūle_0
 kerā_0 ke_0 bana_0 līnha_0 baserā_0 parā_0 sātha_0 tahaṁ_0 bairī_0 kerā_0
 sukha_0 kuriāra_0 pharaharī_0 khānā_0 bikha_0 bhā_0 jabahiṃ_0 biādha_0 tulānā_0
@@ -378,90 +378,90 @@ suni_1 kai_0 utara_0 āṁsu_0 saba_0 poṃche_0 kaunu_0 pakha_0 bāṁdhā_0 bu
 paṃkhinha_0 budhi_0 jauṃ_0 hoti_0 ujyārī_0 pad̤hā_0 suā_0 kata_0 dharati_0 maṁjārī_0
 kata_0 tītara_0 bana_0 jībha_0 ughelā_0 sakati_0 haṁkāri_1 phāṁdi_0 giyaṁ_0 melā_0
 tā_0 dina_0 byādha_0 bhaeu_0 jiu_0 levā_0 uṭhe_0 pāṁkha_0 bhā_0 nāuṁ_0 parevā_0
-bhai_0 biādhi_0 tisnā_0 saṁga_0 khādhū_0 sūjhai_0 bhuguti_0 na_0 sūjha_1 biādhū_0
+bhai_0 biādhi_0 tisnā_0 saṁga_0 khādhū_0 sūjhai_0 bhuguti_0 na_0 sūjha_0 biādhū_0
 hamahiṃ_0 lobha_0 oiṁ_0 melā_0 cārā_0 hamahiṃ_0 garaba_0 vaha_0 cāhai_0 mārā_0
 hama_0 niciṃta_0 vaha_0 āu_0 chapānā_0 kaunu_0 biādhahi_0 dokha_0 apānā_0
 so_0 auguna_0 kata_0 kījai_0 jiu_0 d̤hījai_0 jehi_0 kāja_0 aba_0 kahanā_0 kachu_0 nāhīṃ_0 masṭa_0 bhalī_0 paṁchirāja_0
-<dev>citrasena_0 citāura_0 gad̤ha_0 rājā_0 kai_0 gad̤ha_0 koṭi_0 citra_0 jeiṁ_0 sājā_0
-<dev>tehi_0 kula_0 ratanaseni_0 ujiārā_0 dhani_0 jananī_0 janamā_0 asa_0 bārā_0
+<dev>citrasena_0 citā\ura_0 gad̤ha_0 rājā_0 kai_0 gad̤ha_0 koṭi_0 citra_0 je\iṁ_0 sājā_0
+<dev>tehi_0 kula_0 ratanaseni_0 uji\ārā_0 dhani_0 jananī_0 janamā_0 asa_0 bārā_0
 <dev>paṃḍita_0 guni_0 sāmudrika_0 dekhahiṃ_0 dekhi_1 rūpa_0 au_0 lagana_0 bisekhahiṃ_0
 <dev>ratanaseni_0 ehi_0 kula_0 autarā_0 ratana_0 joti_0 mani_0 mātheṃ_0 barā_0
-<dev>padika_0 padāratha_0 likhī_0 so_0 jorī_0 cāṁda_0 suruja_0 jasi_0 hoi_0 aṁjorī_0
-<dev>jasa_0 mālati_0 kahaṁ_0 bhaṁvara_0 biyogī_0 tasi_0 ohi_0 lāgi_0 hoi_0 yaha_0 jogī_0
-<dev>siṃghala_0 dīpa_0 jāi_1 ohi_0 pāvā_1 siddha_0 hoi_1 citaura_0 lai_1 āvā_0
-<dev>bhoga_0 bhoja_0 jasa_0 mānai_0 bikrama_0 sākā_0 kīnha_0 parakhi_1 so_0 ratana_0 pārakhī_0 sabai_0 lakhana_0 likhi_1 dīnha_0 </dev>_0
-citaura_0 gad̤ha_0 ka_0 eka_0 banijārā_0 siṃghala_0 dīpa_0 calā_0 baipārā_0
-bāṁbhana_0 eka_0 huta_0 naṣṭa_0 bhikhārī_0 so_0 puni_0 calā_0 calata_0 baipārī_0
-<dev>rini_0 kāhū_0 kara_0 līnhesi_0 kād̤hī_1 maku_0 tahaṁ_0 gaeṁ_0 hoi_0 kichu_0 bād̤hī_0
-<dev>māraga_0 kaṭhina_0 bahuta_0 dukha_0 bhae_0 nāṁghi_1 samudra_0 dīpa_0 ohi_0 gae_0
-<dev>dekhi_1 hāṭa_0 kichu_0 sūjha_0 na_0 orā_0 sabai_0 bahuta_0 kichu_0 dīkha_0 na_0 thorā_0
-<dev>pai_0 suṭhi_0 ūṁca_0 banija_0 taha_0 kerā_0 dhanī_0 pāu_0 nidhanī_0 mukha_0 herā_0
-<dev>lākha_0 karoranhi_0 bastu_0 bikāī_0 sahasanhi_0 kera_0 na_0 koi_0 onāī_0
-<dev>sabahīṃ_0 līnha_0 besāhanā_0 au_0 ghara_0 kīnha_0 bahora_1 bāṁbhana_0 tahāṁ_0 lei_0 kā_0 gāṁṭhi_0 sāṁṭhi_0 suṭhi_0 thora_0
+<dev>padika_0 padāratha_0 likhī_0 so_0 jorī_1 cāṁda_0 suruja_0 jasi_0 ho\i_0 aṁjorī_0
+<dev>jasa_0 mālati_0 kahaṁ_0 bhaṁvara_0 biyogī_0 tasi_0 ohi_0 lāgi_0 ho\i_0 yaha_0 jogī_0
+<dev>siṃghala_0 dīpa_0 jā\i_0 ohi_0 pāvā_0 siddha_0 ho\i_0 cita\ura_0 lai_0 āvā_0
+<dev>bhoga_0 bhoja_0 jasa_0 mānai_0 bikrama_0 sākā_0 kīnha_0 parakhi_0 so_0 ratana_0 pārakhī_0 sabai_0 lakhana_0 likhi_0 dīnha_0
+<dev>cita\ura_0 gad̤ha_0 ka_0 eka_0 banijārā_0 siṃghala_0 dīpa_0 calā_0 baipārā_0
+<dev>bāṁbhana_0 eka_0 huta_0 naṣṭa_0 bhikhārī_0 so_0 puni_0 calā_0 calata_0 baipārī_0
+<dev>rini_0 kāhū_0 kara_0 līnhesa_0 kād̤hī_0 maku_0 tahaṁ_0 ga\eṁ_0 ho\i_0 kichu_0 bād̤hī_0
+<dev>māraga_0 kaṭhina_0 bahuta_0 dukha_0 bha\e_0 nāṁghi_0 samudra_0 dīpa_0 ohi_0 ga\e_0
+<dev>dekhi_0 hāṭa_0 kichu_0 sūjha_0 na_0 orā_0 sabai_0 bahuta_0 kichu_0 dīkha_0 na_0 thorā_0
+<dev>pai_0 suṭhi_0 ūṁca_0 banija_0 taha_0 kerā_0 dhanī_0 pā\u_0 nidhanī_0 mukha_0 herā_0
+<dev>lākha_0 karoranhi_0 bastu_0 bikā\ī_0 sahasanhi_0 kera_0 na_0 ko\i_0 onā\ī_0
+<dev>sabahīṃ_0 līnha_0 besāhanā_0 au_0 ghara_0 kīnha_0 bahora_0 bāṁbhana_0 tahāṁ_0 le\i_0 kā_0 gāṁṭhi_0 sāṁṭhi_0 suṭhi_0 thora_0
 <dev>jhuravai_0 ṭhād̤ha_0 kahāṁ_0 hauṃ_0 āvā_0 banija_0 na_0 milā_0 rahā_0 pachitāvā_0
-<dev>lābha_0 jāni_1 āeuṁ_0 ehi_0 hāṭāṁ_0 mūra_0 gaṁvāi_1 caleuṁ_0 tehi_0 bāṭāṁ_0
-<dev>kā_0 maiṃ_0 marana_0 sikhāvana_0 sikhī_0 āeūṁ_0 marai_0 mīcu_0 huti_0 likhī_0
-apane_0 calata_0 na_0 kīnhi_0 kubānī_0 lābha_0 na_0 dīkha_0 mūra_0 bhau_0 hānī_0
-<dev>kā_0 maiṃ_0 bovā_0 jarama_0 ohi_0 bhūṁjī_0 khoi_1 caleuṁ_0 gharahūṁ_0 kai_0 pūṁjī_0
-<dev>jehi_0 bevahariyā_0 kara_0 bevahārū_0 kā_0 lai_1 deba_0 jauṃ_0 cheṃkihi_0 bārū_0
-<dev>ghara_0 kaiseṃ_0 paiṭhaba_0 maiṃ_0 chūṁchai_0 kauna_0 utara_0 deveuṁ_0 tinha_0 pūṁcheṃ_0
-<ref>JayP75d</ref>_0 <dev>sātha_0 calā_0 sata_0 bicalā_0 bhae_0 bica_0 samuṁda_0 pahāra_0 āsa_0 nirāsā_0 hauṃ_0 phirauṃ_0 tūṁbidhi_0 dehi_0 adhāra_0
-<dev>tabahi_0 biādha_0 suā_0 lai_1 āvā_0 kaṃcana_0 barana_0 anūpa_0 sohāvā_0
-<dev>beṃcai_0 lāga_0 hāṭa_0 lai_1 ohīṃ_0 mola_0 ratana_0 mānika_0 jahaṁ_0 hohīṃ_0
-suā_0 ko_0 pūṁcha_0 patiṃga_0 maṁdāre_0 calana_0 dekhi_1 āchai_0 mana_0 māre_0
-bāṁbhana_0 āi_1 suā_0 sauṃ_0 pūṁchā_0 dahuṁ_0 gunavaṃta_0 ki_0 niraguna_0 chūṁchā_0
-kahu_0 parabate_0 jo_0 guna_0 tohiṃ_0 pāhāṁ_0 guna_0 na_0 chapāia_0 hiradai_0 māhāṁ_0
-hama_0 tumha_0 jāti_0 barābhaṁna_0 doū_0 jātihi_0 jāti_0 pūṁcha_0 saba_0 koū_0
-paṃḍita_0 hahu_0 to_0 sunāvahu_0 bedū_0 bina_0 pūṁche_0 pāia_0 nahiṃ_0 bhedū_0
-hauṃ_0 bāṁbhana_0 au_0 paṃḍita_0 kahu_0 āpana_0 guna_0 soi_0 pad̤he_0 ke_0 āge_0 jo_0 pad̤hai_0 dūna_0 lābha_0 tehi_0 hoi_0
-taba_0 guna_0 mohi_0 ahā_0 ho_0 devā_0 jaba_0 piṃjara_0 huṁta_0 chūṭa_0 parevā_0
-aba_0 guna_0 kavana_0 jo_0 baṁdi_1 jajamānā_0 ghāli_1 maṁjūsā_0 beṃcai_0 ānā_0
-paṃḍita_0 hoi_0 so_0 hāṭa_0 na_0 cad̤hā_0 cahauṃ_0 bikāi_0 bhūli_1 gā_0 pad̤hā_0
-dui_0 māraga_0 dekhau_0 ehi_0 hāṭāṁ_0 daiya_0 calāvai_0 dahuṁ_0 kehi_0 bāṭāṁ_0
-rovata_0 rakata_0 bhaeu_0 mukha_0 rātā_0 tana_0 bhā_0 piara_0 kahauṃ_0 kā_0 bātā_0
-rāte_0 syāma_0 kaṃṭha_0 dui_0 gīvāṁ_0 tinha_0 dui_0 phāṁda_0 ḍarauṃ_0 suṭhi_0 jīvā_0
-aba_0 hauṃ_0 kaṃṭha_0 phāṁda_0 givaṁ_0 cīnhā_0 dahuṁ_0 kai_0 phāṁda_0 cāha_0 kā_0 kīnhā_0
-pad̤hi_1 guni_1 dekhā_0 bahuta_0 maiṃ_0 hai_0 āgeṃ_0 ḍaru_0 soi_0 dhuṁdha_0 jagata_0 saba_0 jāni_1 kai_1 bhūli_1 rahā_0 budhi_0 khoi_1
-suni_1 bāṁbhana_0 binavā_0 cirihārū_0 karu_0 paṃkhinha_0 kahaṁ_0 mayā_0 na_0 mārū_0
-kata_0 re_0 niṭhura_0 jiu_0 badhasi_0 parāvā_0 hatyā_0 kera_0 na_0 tohi_0 ḍaru_0 āvā_0
-kahesi_0 paṃkhi_0 khādhuka_0 mānavā_0 niṭhura_0 te_0 kahia_0 je_0 para_0 maṁsu_0 khavā_0
-āvahiṃ_0 roi_1 jāhi_0 kai_1 rovanā_0 tabahuṁ_0 na_0 tajahiṃ_0 bhoga_0 sukha_0 sovanā_0
-au_0 jānahiṃ_0 tana_0 hoihi_0 nāsū_0 pokhahiṃ_0 māṁsu_0 parāeṁ_0 māṁsū_0
-jauṃ_0 na_0 hota_0 asa_0 para_0 maṁsa_0 khādhū_0 kata_0 paṁkhinha_0 kahaṁ_0 dharata_0 biādhū_0
-jauṃ_0 re_0 byādha_0 paṃkhī_0 niti_0 dharaīṃ_0 so_0 beṃcata_0 mana_0 lobha_0 na_0 karaī_0
-bāṁbhana_0 suā_0 besāhā_0 suni_1 mati_0 beda_0 garaṃtha_0 milā_0 āi_1 kai_0 sāthinha_0 bhā_0 citaura_0 ke_0 paṃtha_0
-taba_0 lagi_0 citraseni_0 siva_0 sājā_0 ratanaseni_0 citaura_0 bhā_0 rājā_0
-āi_1 bāta_0 tehiṃ_0 āgeṃ_0 calī_0 rājā_0 banija_0 āva_0 siṃghalī_0
-hahiṃ_0 gajamoṃti_0 bharīṃ_0 saba_0 sīpī_0 auru_0 bastu_0 bahu_0 siṃghala_0 dīpī_0
-bāṁbhana_0 eka_0 suā_0 lai_1 āvā_0 kaṃcana_0 barana_0 anūpa_0 sohāvā_0
-rāte_0 syāma_0 kaṃṭha_0 dui_0 kāṁṭhā_0 rāte_0 ḍahana_0 likhe_0 saba_0 pāṭhā_0
-au_0 dui_0 naina_0 sohāvana_0 rātā_0 rātā_0 ṭhora_0 amia_0 rasa_0 bātā_0
-mastaka_0 ṭīkā_0 kāṁdha_0 janeū_0 kabi_0 biāsa_0 paṃḍita_0 sahadeū_0
-bola_0 aratha_0 soṃ_0 bole_0 sunata_0 sīsa_0 pe_0 ḍola_0 rājamaṁdira_0 mahaṁ_0 cāhia_0 asa_0 vaha_0 suā_0 amola_0
-bhaī_0 rajāesu_0 jana_0 daurāe_0 bāṁbhana_0 suā_0 begi_0 lai_1 āe_0
-bipra_0 asīsi_0 binati_0 audhārā_0 suā_0 jīu_0 nahiṃ_0 karauṃ_0 ninārā_0
-pai_0 yaha_0 peṭa_0 bhaeu_0 bisavāsī_0 jehiṃ_0 nāe_0 saba_0 tapā_0 saṁṃnyāsī_0
-dārā_0 seja_0 jahāṁ_0 jehi_0 nāhīṃ_0 bhuiṁ_0 pari_0 rahai_0 lāi_1 giva_0 bāhīṃ_0
-aṃdha_0 rahai_0 jo_0 dekha_0 na_0 nainā_0 gūṁga_0 rahai_0 mukha_0 āva_0 na_0 vainā_0
-bahira_0 rahai_0 saravana_0 nahiṃ_0 sunā_0 pai_0 eka_0 peṭa_0 na_0 raha_0 niragunā_0
-kai_1 kai_1 phera_0 aṃta_0 bahu_0 doṣī_0 bārahiṃ_0 bāra_0 phirai_0 na_0 saṁtoṣī_0
-so_0 mohiṃ_0 liheṃ_0 maṁgāvai_0 lāvai_0 bhūkha_0 piāsa_0 jauṃ_0 na_0 hota_0 asa_0 bairī_0 tau_0 kehi_0 kāhū_0 kai_0 āsa_0
-suaiṃ_0 asīsa_0 dīnha_0 bad̤a_0 sājū_0 bad̤a_0 paratāpa_0 akhaṁḍita_0 rājū_0
-bhāgavaṁta_0 bad̤a_0 vidhi_0 autārā_0 jahāṁ_0 bhāga_0 taha_0 rūpa_0 johārā_0
-kou_0 kehu_0 pāsa_0 āsa_0 kai_1 gaunā_0 jo_0 nirāsa_0 did̤ha_0 āsana_0 maunā_0
-kou_0 bina_0 pūṁche_0 bola_0 jo_0 bolā_0 hoi_0 bola_0 māṁṭī_0 ke_0 molā_0
-pad̤hi_1 guni_1 jāni_1 beda_0 mata_0 bheū_0 pūṁchī_0 bāta_0 kahī_0 sahadeū_0
-gunī_0 na_0 koī_0 āpu_0 sarāhā_0 jau_0 so_0 bikāi_0 kahā_1 pai_0 cāhā_0
-jauṃ_0 lahi_1 guna_0 paragaṭa_0 nahiṃ_0 hoī_0 tau_0 lahi_0 marama_0 na_0 jānai_0 koī_0
-catura_0 beda_0 hauṃ_0 paṃḍita_0 hīrāmani_0 mohi_0 nāuṁ_0 padumāvati_0 soṃ_0 meravauṃ_0 seva_0 karauṃ_0 tehi_0 ṭhāuṁ_0
-ratanaseni_0 hīrāmani_0 cīnhā_0 eka_0 lākha_0 bāṁbhana_0 kahaṁ_0 dīnhā_0
-bipra_0 asīsā_0 kīnha_0 payānā_0 suā_0 so_0 rājamaṁdira_0 mahaṁ_0 ānā_0
-baranauṃ_0 kāha_0 suā_0 kai_0 bhākhā_0 dhani_0 so_0 nāuṁ_0 hīrāmani_0 rākhā_0
-jauṃ_0 bolai_0 tau_0 mānika_0 mūṁgā_0 nāhiṃ_0 tau_0 mauna_0 bāṁdha_0 hoi_0 gūṁgā_0
-jauṃ_0 bolai_0 rājā_0 mukha_0 jovā_0 janahuṁ_0 moti_0 hia_0 hāra_0 pirovā_0
-janahuṁ_0 māri_1 mukha_0 aṃbrita_0 melā_0 gura_0 hoi_1 āpu_0 kīnha_0 caha_0 celā_0
-suruja_0 cāṁda_0 kai_1 kaththā_0 kahā_0 pema_0 ka_0 gahana_0 lāi_0 cita_0 rahā_0
-jo_0 jo_0 sunai_0 dhunai_0 sira_0 rājā_0 prīti_0 ka_0 hoi_0 agāhu_0 asa_0 gunavaṃta_0 nāhiṃ_0 bhala_0 suaṭā_0 bāura_0 karihai_0 kāhu_0
+<dev>lābha_0 jāni_1 ā\e\uṁ_0 ehi_0 hāṭāṁ_0 mūra_0 gaṁvā\i_0 cale\uṁ_0 tehi_0 bāṭāṁ_0
+<dev>kā_0 maiṃ_0 marana_0 sikhāvana_0 sikhī_0 ā\e\ūṁ_0 marai_0 mīcu_0 huti_0 likhī_0
+<dev>\apane_0 calata_0 na_0 kīnhi_0 kubānī_0 lābha_0 na_0 dīkha_0 mūra_0 bhau_0 hānī_0
+<dev>kā_0 maiṃ_0 bovā_0 jarama_0 ohi_0 bhūṁjī_0 kho\i_0 cale\uṁ_0 gharahūṁ_0 kai_0 pūṁjī_0
+<dev>jehi_0 bevahariyā_0 kara_1 bevahārū_0 kā_0 lai_1 deba_0 jauṃ_0 cheṃkihi_0 bārū_0
+<dev>ghara_0 kaiseṃ_0 paiṭhaba_0 maiṃ_0 chūṁchai_0 kauna_0 utara_0 deve\uṁ_0 tinha_0 pūṁcheṃ_0
+<dev>sātha_0 calā_0 sata_0 bicalā_0 bha\e_0 bica_0 samuṁda_0 pahāra_0 āsa_0 nirāsā_0 hauṃ_0 phirauṃ_0 tūṁbidhi_0 dehi_0 adhāra_0
+<dev>tabahi_0 bi\ādha_0 su\ā_0 lai_0 āvā_0 kaṃcana_0 barana_0 anūpa_0 sohāvā_0
+<dev>beṃcai_0 lāga_0 hāṭa_0 lai_0 ohīṃ_0 mola_0 ratana_0 mānika_0 jahaṁ_0 hohīṃ_0
+<dev>su\ā_0 ko_0 pūṁcha_0 patiṃga_0 maṁdāre_0 calana_0 dekhi_1 āchai_0 mana_0 māre_0
+<dev>bāṁbhana_0 ā\i_0 su\ā_0 sauṃ_0 pūṁchā_0 dahuṁ_0 gunavaṃta_0 ki_0 niraguna_0 chūṁchā_0
+<dev>kahu_0 parabate_0 jo_0 guna_0 tohiṃ_0 pāhāṁ_0 guna_0 na_0 chapā\i\a_0 hiradai_0 māhāṁ_0
+<dev>hama_0 tumha_0 jāti_0 barābhaṁna_0 do\ū_0 jātihi_0 jāti_0 pūṁcha_0 saba_0 ko\ū_0
+<dev>paṃḍita_0 hahu_0 to_0 sunāvahu_0 bedū_0 bina_0 pūṁche_0 pā\i\a_0 nahiṃ_0 bhedū_0
+<dev>hauṃ_0 bāṁbhana_0 au_0 paṃḍita_0 kahu_0 āpana_0 guna_0 so\i_0 pad̤he_0 ke_0 āge_0 jo_0 pad̤hai_0 dūna_0 lābha_0 tehi_0 ho\i_0
+<dev>taba_0 guna_0 mohi_0 ahā_0 ho_1 devā_0 jaba_0 piṃjara_0 huṁta_0 chūṭa_0 parevā_0
+<dev>\aba_0 guna_0 kavana_0 jo_0 baṁdi_0 jajamānā_0 ghāli_1 maṁjūsā_0 beṃcai_0 ānā_0
+<dev>paṃḍita_0 ho\i_0 so_0 hāṭa_0 na_0 cad̤hā_0 cahauṃ_0 bikā\i_0 bhūli_1 gā_0 pad̤hā_0
+<dev>du\i_0 māraga_0 dekhau_0 ehi_0 hāṭāṁ_0 daiya_0 calāvai_0 dahuṁ_0 kehi_0 bāṭāṁ_0
+<dev>rovata_0 rakata_0 bha\e\u_0 mukha_0 rātā_0 tana_0 bhā_0 pi\ara_0 kahauṃ_0 kā_0 bātā_0
+<dev>rāte_0 syāma_0 kaṃṭha_0 du\i_0 gīvāṁ_0 tinha_0 du\i_0 phāṁda_0 ḍarauṃ_0 suṭhi_0 jīvā_0
+<dev>\aba_0 hauṃ_0 kaṃṭha_0 phāṁda_0 givaṁ_0 cīnhā_0 dahuṁ_0 kai_0 phāṁda_0 cāha_0 kā_0 kīnhā_0
+<dev>pad̤hi_0 guni_0 dekhā_0 bahuta_0 maiṃ_0 hai_0 āgeṃ_0 ḍaru_0 so\i_0 dhuṁdha_0 jagata_0 saba_0 jāni_1 kai_0 bhūli_1 rahā_0 budhi_0 kho\i_0
+<dev>suni_0 bāṁbhana_0 binavā_0 cirihārū_0 karu_0 paṃkhinha_0 kahaṁ_0 mayā_0 na_0 mārū_0
+<dev>kata_0 re_0 niṭhura_0 ji\u_0 badhasi_0 parāvā_0 hatyā_0 kera_0 na_0 tohi_0 ḍaru_0 āvā_0
+<dev>kahesi_0 paṃkhi_0 khādhuka_0 mānavā_0 niṭhura_0 te_0 kahi\a_0 je_0 para_0 maṁsu_0 khavā_0
+<dev>\āvahiṃ_0 ro\i_0 jāhi_0 kai_0 rovanā_0 tabahuṁ_0 na_0 tajahiṃ_0 bhoga_0 sukha_0 sovanā_0
+<dev>\au_0 jānahiṃ_0 tana_0 ho\ihi_0 nāsū_0 pokhahiṃ_0 māṁsu_0 parā\eṁ_0 māṁsū_0
+<dev>jauṃ_0 na_0 hota_0 asa_0 para_0 maṁsa_0 khādhū_0 kata_0 paṁkhinha_0 kahaṁ_0 dharata_0 bi\ādhū_0
+<dev>jauṃ_0 re_0 byādha_0 paṃkhī_0 niti_0 dhara\īṃ_0 so_0 beṃcata_0 mana_0 lobha_0 na_0 kara\ī_0
+<dev>bāṁbhana_0 su\ā_0 besāhā_0 suni_1 mati_0 beda_0 garaṃtha_0 milā_0 ā\i_0 kai_0 sāthinha_0 bhā_0 cita\ura_0 ke_0 paṃtha_0
+<dev>taba_0 lagi_0 citraseni_0 siva_0 sājā_0 ratanaseni_0 cita\ura_0 bhā_0 rājā_0
+<dev>\ā\i_0 bāta_0 tehiṃ_0 āgeṃ_0 calī_0 rājā_0 banija_0 āva_0 siṃghalī_0
+<dev>hahiṃ_0 gajamoṃti_0 bharīṃ_0 saba_0 sīpī_0 auru_0 bastu_0 bahu_0 siṃghala_0 dīpī_0
+<dev>bāṁbhana_0 eka_0 su\ā_0 lai_0 āvā_0 kaṃcana_0 barana_0 anūpa_0 sohāvā_0
+<dev>rāte_0 syāma_0 kaṃṭha_0 du\i_0 kāṁṭhā_0 rāte_0 ḍahana_0 likhe_0 saba_0 pāṭhā_0
+<dev>\au_0 du\i_0 naina_0 sohāvana_0 rātā_0 rātā_0 ṭhora_0 ami\a_0 rasa_0 bātā_0
+<dev>mastaka_0 ṭīkā_0 kāṁdha_0 jane\ū_0 kabi_0 bi\āsa_0 paṃḍita_0 sahade\ū_0
+<dev>bola_0 aratha_0 soṃ_0 bole_0 sunata_0 sīsa_0 pe_0 ḍola_1 rājamaṁdira_0 mahaṁ_0 cāhi\a_0 asa_0 vaha_0 su\ā_0 amola_0
+<dev>bha\ī_0 rajā\esu_0 jana_0 daurā\e_0 bāṁbhana_0 su\ā_0 begi_0 la\i_0 ā\e_0
+<dev>bipra_0 asīsi_0 binati_0 audhārā_0 su\ā_0 jī\u_0 nahiṃ_0 karauṃ_0 ninārā_0
+<dev>pai_0 yaha_0 peṭa_0 bha\e\u_0 bisavāsī_0 jehiṃ_0 nā\e_0 saba_0 tapā_0 saṁṃnyāsī_0
+<dev>dārā_0 seja_0 jahāṁ_0 jehi_0 nāhīṃ_0 bhu\iṁ_0 rahai_0 lā\i_0 giva_0 bāhīṃ_0
+<dev>\aṃdha_0 rahai_0 jo_0 dekha_0 na_0 nainā_0 gūṁga_0 rahai_0 mukha_0 āva_0 na_0 vainā_0
+<dev>bahira_0 rahai_0 saravana_0 nahiṃ_0 sunā_0 pai_0 eka_0 peṭa_0 na_0 raha_0 niragunā_0
+<dev>kai_0 kai_0 phera_0 aṃta_0 bahu_0 doṣī_0 bārahiṃ_0 bāra_0 phirai_0 na_0 saṁtoṣī_0
+<dev>so_0 mohiṃ_0 liheṃ_0 maṁgāvai_0 lāvai_0 bhūkha_0 pi\āsa_0 jauṃ_0 na_0 hota_0 asa_0 bairī_0 tau_0 kehi_0 kāhū_0 kai_0 āsa_0
+<dev>su\aiṃ_0 asīsa_0 dīnha_0 bad̤a_0 sājū_0 bad̤a_0 paratāpa_0 akhaṁḍita_0 rājū_0
+<dev>bhāgavaṁta_0 bad̤a_0 vidhi_0 autārā_0 jahāṁ_0 bhāga_0 taha_0 rūpa_0 johārā_0
+<dev>ko\u_0 kehu_0 pāsa_0 āsa_0 kai_0 gaunā_0 jo_0 nirāsa_0 did̤ha_0 āsana_0 maunā_0
+<dev>ko\u_0 bina_0 pūṁche_0 bola_0 jo_0 bolā_0 ho\i_0 bola_0 māṁṭī_0 ke_0 molā_0
+<dev>pad̤hi_0 guni_0 jāni_1 beda_0 mata_0 bhe\ū_0 pūṁchī_0 bāta_0 kahī_0 sahade\ū_0
+<dev>gunī_0 na_0 ko\ī_0 āpu_0 sarāhā_0 jau_0 so_0 bikā\i_0 kahā_1 pai_1 cāhā_0
+<dev>jauṃ_0 lahi_0 guna_0 paragaṭa_0 nahiṃ_0 ho\ī_0 tau_0 lahi_0 marama_0 na_0 jānai_0 ko\ī_0
+<dev>catura_0 beda_0 hauṃ_0 paṃḍita_0 hīrāmani_0 mohi_0 nā\uṁ_0 padumāvati_0 soṃ_0 meravauṃ_0 seva_0 karauṃ_0 tehi_0 ṭhā\uṁ_0
+<dev>ratanaseni_0 hīrāmani_0 cīnhā_0 eka_0 lākha_0 bāṁbhana_0 kahaṁ_0 dīnhā_0
+<dev>bipra_0 asīsā_0 kīnha_0 payānā_0 su\ā_0 so_0 rājamaṁdira_0 mahaṁ_0 ānā_0
+<dev>baranauṃ_0 kāha_0 su\ā_0 kai_0 bhākhā_0 dhani_0 so_0 nā\uṁ_0 hīrāmani_0 rākhā_0
+<dev>jauṃ_0 bolai_0 tau_0 mānika_0 mūṁgā_0 nāhiṃ_0 tau_0 mauna_0 bāṁdha_0 ho\i_0 gūṁgā_0
+<dev>jauṃ_0 bolai_0 rājā_0 mukha_0 jovā_0 janahuṁ_0 moti_0 hi\a_0 hāra_0 pirovā_0
+<dev>janahuṁ_0 māri_0 mukha_0 aṃbrita_0 melā_0 gura_0 ho\i_0 āpu_0 kīnha_0 caha_0 celā_0
+<dev>suruja_0 cāṁda_0 kai_1 kaththā_0 kahā_1 pema_0 ka_0 gahana_0 lā\i_0 cita_0 rahā_0
+<dev>jo_0 jo_0 sunai_0 dhunai_0 sira_0 rājā_0 prīti_0 ka_0 ho\i_0 agāhu_0 asa_0 gunavaṃta_0 nāhiṃ_0 bhala_0 su\aṭā_0 bā\ura_0 karihai_0 kāhu_0
 dina_0 dasa_0 pāṁca_0 tahāṁ_0 jo_0 bhae_0 rājā_0 katahuṁ_0 ahereṃ_0 gae_0
 nāgamatī_0 rūpavaṃtī_0 rānī_0 saba_0 ranivāsa_0 pāṭa_0 paradhānī_0
 kai_0 siṃgāra_0 darapana_0 kara_0 līnhā_0 darasana_0 dekhi_1 garava_0 jiyaṁ_0 kīnhā_0
@@ -524,1104 +524,3 @@ tūṁ_0 risi_0 bharī_0 na_0 dekhasi_0 āgū_0 risi_0 mahaṁ_0 kākara_0 bhaeu
 birasa_0 birodha_0 risihi_0 pai_1 hoī_0 risi_0 mārai_0 tehi_0 māra_1 na_0 koī_0
 jehi_0 kī_0 risi_0 marie_0 rasa_0 jījai_0 so_0 rasa_0 taji_1 risi_0 kabahuṁ_0 na_0 kījai_0
 jehi_0 risi_0 tehi_0 rasa_0 jogai_0 na_0 jāī_0 binu_0 rasa_0 haradi_0 hoi_0 piarāī_0
-kaṃta_0 suhāga_0 ki_0 pāia_0 sāṁdhā_0 pāvai_0 soi_0 jo_0 ohiṃ_0 cita_0 bāṁdhā_0
-aghāī_1
-uparāji_1
-dei_1
-kari_1
-bharapūri_1
-barani_1
-jāni_1
-suni_1
-ṭeki_1
-ḍari_1
-sukhāī_1 mili_1
-serasāhi_1
-jori_1 jori_1
-cāhi_1
-johāri_1
-cāhi_1 āgari_1
-dāni_1
-serasāhi_1
-lāi_1
-jori_1
-bedhi_1
-mili_1
-dai_1
-bhari_1
-dhūri_1
-sāhi_1
-caupāī_1
-barani_1
-cāhi_1
-jāī_1
-uṭhai_1
-sahi_1
-barani_1
-pāki_1 pāki_1
-apūri_1
-dekhi_1
-kaha_1
-kari_1
-jāri_1
-anāī_1 banāī_1
-dekhi_1
-barani_1
-apūri_1 bhedī_1
-dekhi_1
-meli_1
-bedhi_1
-raci_1 raci_1
-ḍhārī_1
-bharipūrī_1
-gavāṁi_1
-suni_1 suni_1
-ḍola_1 lāi_1 māri_1
-hāri_1 jhāri_1
-lāi_1 nāṭhi_1 uṭhi_1
-baurāī_1
-dekhi_1
-cāhi_1 nirakhi_1
-bāṁci_1 bāji_1
-bhaṁvarī_1
-dekhi_1
-gujari_1
-baiṭhi_1
-hoī_1
-bīti_1
-tapi_1
-suni_1
-baiṭhi_1
-barani_1 kahi_1
-cāhi_1
-gahi_1 upāri_1 jhāri_1
-hāli_1
-pari_1
-bhari_1
-saṁvāri_1
-lāi_1 lai_1
-dekhi_1 chapi_1
-baisi_1
-cuni_1 cuni_1
-meṃṭi_1
-ghāṭi_1
-gād̤i_1
-uṭhī_1
-kād̤hi_1
-rāi_1
-dai_1
-pad̤hai_1
-sāṁdhi_1 bhūli_1
-suni_1
-jāni_1 bhari_1
-dai_1
-ghāli_1
-lāi_1
-cali_1
-bedhi_1
-dekhi_1
-bicārī_1
-lahi_1 kheli_1
-chori_1
-jhāṁpi_1
-chapi_1
-bhūli_1
-saṁvārahi_1
-lajāi_1
-kari_1
-meli_1
-gahi_1
-mili_1 būd̤i_1 būd̤i_1
-tāki_1
-āni_1
-bisari_1
-ud̤i_1
-ud̤i_1
-chāṁd̤i_1
-ud̤i_1
-sauṃpi_1
-āni_1
-lai_1
-chāṃd̤i_1
-bhūli_1
-cūri_1 dhari_1
-dhari_1
-lāi_1
-suni_1
-haṁkāri_1
-dekhi_1
-jāni_1
-kara_1
-dekhi_1
-ho_1
-ghāli_1
-bhūli_1
-jāni_1 bhūli_1
-suni_1
-jāhi_1
-suni_1
-ḍola_1
-pari_1
-jāni_1
-kahā_1 lāi_1
-kasi_1
-saṁvari_1
-āgari_1
-suni_1
-samujhi_1
-māri_1
-dai_1
-suni_1
-dei_1
-matī_1 cali_1
-jani_1
-nibāhi_1
-biraci_1
-bithari_1
-dei_1
-māra_1
-hāri_1
-nāi_1
-tāki_1
-bararuci_1
-bāṁdhī_0 sisṭi_0 ahai_0 sata_0 kerī_0 āhi_1 kī_0 cerī_0
-sata_0 kahaṁ_0 satī_0 saṁvārai_0 sarā_0 āgi_0 lāi_1 cahuṁ_0 disi_0 sata_0 jarā_0
-so_0 sata_0 chāṁd̤i_1 jo_0 dharama_0 bināsā_0 kā_0 mati_1 hieṁ_0 kīnha_0 sata_0 nāsā_0
-au_0 pāeuṁ_0 mānusa_0 kai_0 bhākhā_0 nāhiṃ_0 ta_0 kahāṁ_0 mūṁṭhi_0 bhari_0 pāṁkhā_0
-JayP94.1_0 hīrāmani_0 kamala_0 bakhānā_0 suni_1 rājā_0 hoi_1 bhaṁvara_0 bhulānā_0
-suni_1 samuṁda_0 cakhu_0 bhe_0 kilakilā_0 kaṁvalahi_0 cahauṃ_0 bhaṁvara_0 hoi_1 milā_0
-uata_0 sūra_0 jasa_0 dekhia_0 cāṁda_0 chapai_0 tehi_0 dhūpa_0 aisai_0 sabai_0 jāhiṃ_0 chapi_1 padumāvati_0 rūpa_0
-suni_1
-sūjhi_1 chāṁd̤i_1
-jāni_1
-ud̤i_1
-dhari_1
-haṁkāri_1
-jani_1
-barani_1
-chori_1
-lai_1
-bāni_1
-chapi_1
-dai_1
-chapi_1
-lāi_1
-gahi_1
-banāvari_1
-bedhi_1
-bedhi_1
-bedhi_1
-besari_1
-hirāmani_1
-hiragāi_1
-lāji_1
-bhari_1
-suni_1 lājichapi_1
-gād̤i_1 chāṁd̤i_1
-gahi_1
-paṁvanāri_1
-kari_1
-sāji_1
-lāi_1
-pīṭhi_1
-mori_1
-hāri_1 māra_1
-pahuṁci_1
-lahari_1
-bedhi_1 araghāni_1
-pahuṁci_1
-barani_1
-būd̤i_1
-jani_1
-bad̤i_1 sajīvani_1
-jagāi_1
-pahuṁci_1
-dai_1
-baiṭhi_1
-jori_1
-suni_1 māra_1
-jāni_1
-kheli_1
-dūri_1
-sāji_1
-pachitāhi_1
-chāṁd̤i_1 jani_1
-kāṁvari_1
-baiṭhi_1
-āgari_1
-mili_1
-suni_1
-chād̤i_1
-chād̤i_1
-chād̤i_1
-dhāī_1
-dūri_1
-jāni_1
-uṭhi_1
-dai_1
-dhuni_1
-āni_1
-dai_1
-saṁkalapi_1
-kāṁthari_1
-jāni_1
-dekhi_1
-cāhi_1
-chād̤i_1
-ghāli_1
-lahari_1
-gahi_1
-daheṃd̤i_1
-ḍari_1
-bhāṁvari_1
-lahari_1
-cāhi_1 cāhi_1 pātari_1
-uṭhi_1
-uṭhi_1 roiāi_1
-utari_1
-ūṁci_1
-dai_1
-saṁvari_1
-mori_1
-tori_1
-suni_1
-pāṁvari_1
-chori_1
-māra_1
-haṭhi_1 mari_1
-tapani_1
-bhūli_1
-sahi_1
-gahi_1
-meli_1
-lāi_1
-bhari_1
-rahanā_1
-dhari_1
-barani_1
-dekhi_1
-suni_1
-chād̤i_1
-araghāni_1 āni_1
-suni_1
-suni_1
-ḍari_1
-mili_1
-mari_1 mili_1
-bhūli_1
-bāṁbhani_1
-sonāri_1 kalavāri_1
-dai_1
-pavani_1
-kheli_1
-kheli_1 dai_1
-kheli_1
-dūri_1
-ḍāri_1
-baṃsakāri_1
-dekhi_1
-niraguni_1 niraguni_1
-āni_1
-mari_1
-tani_1 tani_1
-dhari_1 ḍola_1
-dai_1
-bharathari_1 āhi_1
-suni_1
-chāṁd̤i_1
-dhuni_1
-chād̤i_1
-baiṭhi_1
-suni_1
-bicāri_1
-mili_1
-chapi_1
-tori_1
-lāgi_1
-pari_1
-dharahari_1
-kheli_1 lāi_1 dai_1
-chād̤i_1
-ghāli_1 jāri_1
-jari_1
-suni_1
-uṭhi_1
-chād̤i_1
-uṭhi_1
-gahi_1
-had̤āvari_1
-nistari_1
-suni_1
-paṭhāī_1 āchari_1
-bhari_1
-saṁvari_1
-saṁvari_1
-nevachāvari_1
-tīsari_1
-suni_1
-āhi_1
-chād̤i_1
-apūri_1
-jani_1
-būd̤i_1
-dai_1
-tori_1
-āhi_1
-chād̤i_1
-ḍari_1
-kheli_1
-sākhi_1
-suni_1
-sari_0 pahuṁcāi_1 joga_0 karu_0 sāthā_0 disṭi_0 cāhi_1 hoi_0 agumana_0 hāthā_0
-gad̤ha_0 kai_1 garaba_0 kheha_0 mili_1 gae_0 maṃdira_0 uṭhahiṃ_0 ḍhahiṃ_0 bhai_1 nae_0
-rahai_0 dehu_0 jauṃ_0 gad̤ha_0 jani_0
-saṁvari_1 rakata_0 nainanha_0 bhari_1 cuvā_0 roi_1 haṁkārā_0 māṁjhī_0 suvā_0
-bāṁdhā_0 kaṃṭha_0 parā_0 jari_1 kāṁṭhā_0 biraha_0 ka_0 jarā_0 jāi_0 kahaṁ_0 nāṁṭhā_0
-masi_0 nainā_0 likhanī_0 baruni_0 roi_1 roi_1 likhā_0 akaththa_0 ākhara_0 dahai_0 na_0 kahuṁ_0 gahai_0 so_0 dīnha_0 suvā_0 ke_0 haththa_0
-mukha_0 bacana_0 kahesu_0 parevā_0 mori_0 bahuta_0
-naina_0 bhikhāri_0 māṁgai_1 sīkhā_0 agumana_0 dauri_1 lehiṃ_0 pai_1 bhīkhā_0
-jehi_0 na_0 pīra_0 tehi_0 kā_0 kari_1 ciṃtā_0 prītama_0 niṭhura_0 hoi_0 asa_0 niṃtā_0
-biraha_0 agini_0 tana_0 jari_1 bana_0 jare_0 naina_0 nīra_0 sāera_0 saba_0 bhare_0
-pātī_0 likhī_0 saṁvari_1 tumha_0 nāmāṁ_0 rakata_0 likhe_0 ākhara_0 bhe_0 syāmāṁ_0
-kathā_0 kahānī_0 suni_1 suṭhi_0 jarā_0 jānahuṁ_0 ghīu_0 baisaṃdara_0 parā_0
-kā_0 rānī_0 pūṁchahu_0 yaha_0 bātā_0 jani_0 koi_0 hoi_0 prema_0 kara_0 rātā_0
-sūraja_0 būd̤i_1 uṭhā_0 parabhātā_0 au_0 maṁjīṭha_0 ṭesū_0 bana_0 rātā_0
-tumha_0 tau_0 kheli_1 maṁdira_0 kahaṁ_0 āīṃ_0 ohika_0 marama_0 jasa_0 jāna_0 gosāīṃ_0
-kahesi_0 marai_0 ko_0 bārahi_0 bārā_0 ekahiṃ_0 bāra_0 houṁ_0 jari_1 chārā_0
-JayP229.4_0 sara_0 raci_1 rahā_0 āgi_0 jauṃ_0 lāī_0 mahādeva_0 gauraiṃ_0 sudhi_0 pāī_0
-kahi_1 kai_1 suai_0 chod̤i_1 daiī_0 pātī_0 jānahuṁ_0 dibba_0 chuata_0 tasi_0 tātī_0
-jari_1 jari_1 hād̤a_0 bhae_0 saba_0 cūnā_0 tahāṁ_0 māṁsu_0 kā_0 rakata_0 bihūnā_0
-oiṁ_0 tohi_0 lāgi_0 kayā_0 asi_0 jārī_0 tapata_0 mīna_0 jala_0 dei_1 na_0 pārī_0
-pai_0 so_0 maramu_0 na_0 jānai_0 morā_0 jānai_0 prīti_0 jo_0 mari_1 kai_1 jorā_0
-na_0 janahu_0 karā_0 bhṛṃgi_0 kai_0 hoī_0 na_0 janahu_0 abahiṃ_0 jiai_0 mari_1 soī_0
-JayP232.3_0 hauṃ_0 jo_0 gaiī_0 mad̤ha_0 maṃḍapa_0 bhorī_0 tahavāṁ_0 tūṁ_0 na_0 gāṁṭhi_0 gahi_1 jorī_1
-bhā_0 bisaṁbhāra_0 dekhi_1 kai_1 nainā_0 sakhinha_0 lāja_0 kā_0 bolauṃ_0 bainā_0
-hahūṁ_0 aisi_0 hauṃ_0 to_0 sauṃ_0 sakasi_0 tau_0 prīti_0 nibāhu_0 rāhu_0 bedhi_1 hohu_0 arajuna_0 jīti_1 draupadī_0 byāhu_0
-rājā_0 ihāṁ_0 taisa_0 tapi_1 jhūrā_0 bhā_0 jari_1 biraha_0 chāra_0 kara_0 kūrā_0
-mūri_0 saṃjīvani_0 āni_1 kai_1 au_0 mukha_0 melā_0 nīra_0 garura_0 paṃkha_0 jasa_0 jhārai_0 aṃbrita_0 barasā_0 kīra_0
-dekhesi_0 jāga_0 suaiṃ_0 sira_0 nāvā_0 pātī_0 dai_1 mukha_0 bacana_0 sunāvā_0
-suni_1 padumāvati_0 kai_0 asi_0 mayā_0 bhā_0 vasaṃta_0 upanī_0 nai_0 kayā_0
-aba_0 yaha_0 kavana_0 pavana_0 maiṃ_0 piyā_0 bhā_0 tana_0 paṃkha_0 paṃkhi_0 mari_1 jiyā_0
-bāṁka_0 cad̤hāu_0 suraṃga_0 gad̤ha_0 cad̤hata_0 gaeu_0 hoi_1 bhora_0 bhai_0 pukāra_0 gad̤ha_0 ūpara_0 cad̤he_0 seṃdhi_0 dai_1 cora_0
-jogī_0 jo_0 gad̤ha_0 seṃdhi_0 dai_1 āvahiṃ_0 kahahu_0 sabada_0 siddhi_0 jehiṃ_0 pāvahiṃ_0
-jasa_0 bhaṁḍāra_0 ye_0 mūsahiṃ_0 cad̤hahiṃ_0 raini_0 dai_1 seṃdhi_0 tasa_0 cāhī_0 puni_0 enha_0 kahaṁ_0 mārahu_0 sūrī_0 bedhi_1
-siddha_0 ḍarahiṃ_0 nahiṃ_0 apane_0 jīvāṁ_0 kharaga_0 dekhi_1 kai_1 nāvahiṃ_0 gīvāṁ_0
-jagata_0 barābara_0 dai_1 saba_0 cāṁpā_0 ḍarā_0 iṃdra_0 bāsuki_0 hiya_0 kāṁpā_0
-chatranha_0 saraga_0 chāi_1 gā_0 sūruja_0 gaeu_0 alopi_1 dinahiṃ_0 rāti_0 asa_0 dekhia_0 cad̤hā_0 iṃdra_0 asa_0 kopi_1
-baru_0 jiu_0 jani_0 rājā_0 sumeru_0 na_0 ḍolā_0
-jauṃ_0 pai_1 jāi_0 pema_0 siuṁ_0 jūjhā_0 kata_0 tapi_1 marahiṃ_0 siddha_0 jinha_0 būjhā_0
-sīsa_0 dīnha_0 maiṃ_0 agumana_0 pema_0 pāya_0 sira_0 meli_1 aba_0 so_0 prīti_0 nibāheṃ_0 calauṃ_0 siddha_0 hoi_1 kheli_1
-bhalehiṃ_0 āni_1 giyaṁ_0 melī_0 phāṁsī_0 hieṁ_0 na_0 soca_0 rosa_0 risi_0 nāsī_0
-jīu_0 cāhi_0
-paragaṭa_0 ḍhāri_1 sakai_0 nahiṃ_0 āṁsū_0 ghaṭi_1 ghaṭi_1 māṁsu_0 guputa_0 hoi_0 nāsū_0
-citahi_0 jo_0 citra_0 kīnha_0 dhani_0 rovaṁ_0 raṃga_0 sameṃṭi_1 sahasa_0 sāla_0 dukha_0 āhi_0 bhari_1 muruchi_1 parī_0 gā_0 meṃṭi_1
-koī_0 mukha_0 aṃbrita_0 āni_1 nicovā_0 janu_0 bikha_0 dīnha_0 adhika_0 dhani_0 sovā_0
-mūṁṭhi_0 jāi_0 bolā_0
-khinahiṃ_0 bejha_0 kai_1 bānanhi_0 mārā_0 kapi_1 kaṁpi_1 nāri_0 marai_0 bikarārā_0
-nisaṁsi_1 ūbhi_0 mari_1 līnhesi_0 svāṁsā_0 bhaī_0 adhāra_0 jiyana_0 kai_0 āsā_0
-tūṁ_0 gajagāmini_0 garaba_0 gahīlī_0 aba_0 kasa_0 āsa_0 chāṁd̤i_1 sata_0 ḍhīlī_0
-bhāna_0 nāuṁ_0 suni_1 kaṁvala_0 bigāsā_0 phiri_1 kai_1 bhaṁvara_0 līnha_0 madhu_0 bāsā_0
-biraha_0 na_0 bola_0 āva_0 mukha_0 tāīṃ_0 mari_1 mari_1 bola_0 jīva_0 bariyāīṃ_0
-davaiṃ_0 biraha_0 dāruna_0 hiya_0 kāṁpā_0 kholi_1 na_0 jāi_0 biraha_0 dukha_0 jhāṁpā_0
-yaha_0 lahari_0
-sakhī_0 āni_1 biṣa_0 dehu_0 tau_0 maraūṁ_0 jiu_0 nahiṃ_0 peṭa_0 tāhi_0 ḍara_0 ḍaraūṁ_0
-jahaṁ_0 lagi_0 caṃdana_0 malaigiri_0 au_0 sāera_0 saba_0 nīra_0 saba_0 mili_1 āi_1 bujhāvahiṃ_0 bujhai_0 na_0 āgi_0 sarīra_0
-prīti_0 beli_0 jani_0 arujhai_0 koī_0 arujheṃ_0 mueṁ_0 chūṭai_0 soī_0
-prīti_0 akeli_0
-padumāvati_0 uṭhi_1 ṭekai_0 pāyā_0 tumha_0 huṁta_0 hoi_0 prītama_0 kai_0 chāyā_0
-sajīvani_0 dūri_0 sakatī_0
-kauna_0 khaṃḍa_0 asa_0 rahā_0 lukāī_0 āvai_0 kāla_0 heri_1 phiri_1 jāī_0
-suni_1 jogī_0 kai_0 ammara_0 karanī_0 nevarī_0 biraha_0 bithā_0
-jani_1
-mili_1
-dekhi_1
-bhikhāri_1 jani_1
-bedhi_1
-dhuni_1
-dhari_1
-sahi_1
-meli_1 baiṭhi_1
-suni_1
-dei_1
-dai_1
-dhari_1
-lāi_1
-jāni_1 jani_1
-āhi_1
-āpuni_1
-nāi_1
-kaṭāri_1 hani_1
-ghāli_1
-āni_1
-mili_1
-āni_1
-chori_1
-bāni_1
-raci_1 raci_1
-lāi_1
-saṁbhāri_1 rājakuṁvari_1
-murajhāni_1
-paiṭhi_1
-baiṭhi_1
-āni_1
-āchari_1
-chapi_1
-mili_1
-āni_1
-nevachāvari_1
-chad̤āī_1
-cāhi_1
-sovanāri_1
-dhuni_1
-chori_1
-mili_1 jarāi_1
-suni_1
-lāli_1
-āhi_1 jani_1
-kavani_1
-raci_1
-chapi_1
-raci_1
-barani_1
-sāṁdhi_1
-ali_1
-lāi_1
-saṁvari_1 seja_0 dhani_0 mana_0 bhau_0 saṃkā_0 ṭhād̤hi_0 tivāni_1 ṭeki_1 kai_1 laṃkā_0
-suni_0 dhani_0 ḍara_0 hiradaiṃ_0 taba_0 tāīṃ_0 jau_0 lagi_0 milā_0 nahiṃ_0 sāīṃ_0
-kavana_0 so_0 karī_0 jo_0 bhaṁvara_0 na_0 rāī_0 ḍāri_0 na_0 ṭūṭai_0 phara_0 garuāī_0
-khaṃjana_0 chapā_0 dekhi_1 kai_1 nainā_0 kokila_0 chapā_0 sunata_0 bainā_0
-gīvaṁ_0 dekhi_1 kaiṃ_1 chapā_0 maṁjūrū_0 laṃka_0 dekhi_1 kai_1 chapā_0 sadūrū_0
-JayP302.7_0 bhujana_0 chapāni_0 kaṁvala_0 paunārī_0 jaṃgha_0 chapā_0 kedalī_0 hoi_1 bārī_0
-āchariṃ_0 rūpa_0 chapānīṃ_0 jabahiṃ_0 calī_0 dhani_0 sāji_1 jāvaṁta_0 garaba_0 gahīli_0 hutiṃ_0 sabai_0 chapīṃ_0 mana_0 lāji_1
-jogī_0 āhi_0 na_0 bhogī_0 hoī_0 khāi_1 kurakuṭā_0 gā_0 pari_1 soī_0
-abahuṁ_0 jagāvahiṃ_0 celā_0 jāgū_0 āvā_0 gurū_0 pāya_0 uṭhi_1 lāgū_0
-bolahiṃ_0 sabada_0 sahelīṃ_0 kāna_0 lāgi_1 gahi_1 māṁtha_0 gorakha_0 āi_1 ṭhād̤ha_0 bhā_0 uṭhu_0 re_0 celā_0 nātha_0
-gorakha_0 sabada_0 suddha_0 bhā_0 rājā_0 rāmā_0 suni_1 rāvana_0 hoi_1 gājā_0
-chapi_1
-tori_1
-tori_1
-bhikhāri_1
-chāṁd̤i_1
-bhikhāri_1
-mari_1 dosari_1
-mari_1 mili_1
-ud̤i_1
-bhikhāri_1
-suni_1
-suni_1
-kheli_1
-āchahi_1
-mari_1
-chāṁd̤i_1
-āgari_1 gari_1
-mili_1 mili_1
-pari_1 kheli_1
-sāri_1 sahi_1
-pāki_1
-mili_1
-suni_1
-meli_1
-bedhi_1 ud̤i_1
-jākari_1
-ḍāri_1 cakori_1
-nebachāvari_1
-bedhi_1
-cāhi_1
-besari_1
-saṁvāri_1 lāi_1
-dosari_1
-pari_1
-raṁgīli_1
-surasari_1
-kalapi_1
-citavani_1
-bhari_1
-gaṁvāi_1
-uṭhai_1
-suni_1
-baiṭhi_1
-vāri_1
-bhari_1
-chapi_1
-āni_1 lahari_1
-bhari_1
-dekhi_1
-rabi_1
-saravari_1
-kopi_1
-mili_1
-bhari_1
-tapani_1
-caraci_1
-jūd̤i_1
-beili_1
-dharani_1 savāri_1
-dai_1
-mili_1
-mili_1
-dekhi_1
-bali_1
-hahari_1
-samujhi_1
-samujhi_1
-saṁvari_1
-jani_1
-gahi_1 gahi_1 tapani_1
-būd̤i_1
-akeli_1
-jhaṁkori_1
-pūrī_1
-apūri_1 mili_1
-palāni_1
-saṁvari_1 cali_1
-kheli_1 meli_1
-jari_1
-kaṁpi_1 kaṁpi_1
-akeli_1
-jarāi_1
-cāṁcari_1 lāi_1
-būd̤i_1
-saṁvari_1
-saṁvāri_1
-suni_1
-sahi_1
-āgari_1
-uṭhi_1
-āni_1
-hāri_1
-gahi_1
-tilori_1
-koili_1
-būd̤i_1
-suni_1
-ujāri_1 baiṭhi_1
-suni_1
-pāṁvari_1 bhari_1
-dhuni_1
-ḍāri_1 lāi_1
-rari_1 kāṁvari_1
-jani_1
-ud̤i_1
-baiṭhi_1
-koili_1
-jari_1 kahi_1
-meli_1
-suni_1
-ud̤i_1
-tori_1
-jari_1
-koili_1
-utari_1
-barābari_1
-jāni_1
-lāi_1
-saṁvari_1
-suni_1
-dai_1
-kahi_1
-āni_1
-jani_1
-lāi_1
-ghāli_1
-suni_1
-bhari_1
-biyāhi_1
-tivāni_1
-suni_1
-gahi_1
-āni_1
-gahi_1
-lāi_1
-pākari_1
-pauṃd̤i_1
-phari_1
-bajāi_1
-ghāli_1
-dei_1
-jori_1
-jori_1
-saṃci_1
-jāri_1
-āhi_1
-dai_1 saṃci_1
-būd̤ai_1
-suni_1
-āchari_1
-chāṁd̤i_1
-nibāhi_1
-bori_1
-lāi_1
-gahi_1
-tori_1
-chāṁd̤i_1
-bhūli_1
-ud̤i_1
-jamakātari_1
-āni_1
-dhari_1
-jāni_1
-suni_1
-dhari_1
-āhi_1
-gahi_1
-milāi_1
-gahi_1 pari_1
-lahari_1
-boli_1
-dekhi_1 nāgari_1
-cūri_1
-raci_1
-jari_1
-saṁbhāri_1
-suni_1
-jākari_1
-āni_1
-meli_1
-suni_1
-cūri_1
-dai_1
-līli_1 meli_1
-chāṁd̤i_1
-dai_1
-mili_1
-kahi_1
-jani_1 samujhi_1 haṁkāri_1
-cāhi_1
-kahi_1 kahi_1
-bicāri_1
-marori_1
-tapi_1
-cāhi_1
-dai_1
-mili_1
-uṭhi_1
-jani_1
-āni_1
-lai_1
-dekhi_1 dekhi_1
-bhari_1
-nāi_1
-nāṭhi_1
-āgari_1
-bhari_1
-jani_1
-jāni_1
-tapani_1
-nāgani_1
-chūṭī_1
-dai_1
-ṭhāvaṁhi_1
-pokhari_1
-bakhāni_1
-chāṁd̤i_1
-ud̤i_1
-pahili_1
-saṁvari_1
-lāi_1 sīṃci_1
-mili_1
-gani_1
-āni_1
-ḍari_1
-baiṭhi_1
-jani_1
-suni_1
-mili_1
-lāi_1
-āni_1
-cāhi_1
-tapi_1 tapi_1
-saravari_1 lahari_1
-uṭhi_1
-nihāri_1
-lahari_1
-mirici_1
-jāri_1
-būd̤i_1
-muni_1
-koili_1
-bhuṁjaili_1
-jani_1
-jari_1
-bisāṁidhi_1
-mori_1
-taṁvacūri_1
-besari_1
-mori_1
-dhari_1
-mili_1
-cetani_1
-nisari_1
-jani_1
-cetani_1
-cetani_1
-cetani_1
-āhi_1
-samujhi_1
-kauni_1
-tori_1
-bhikhāri_1
-lai_1
-haṁkāri_1
-barani_1
-dhuni_1 dhuni_1 dai_1
-nāi_1
-jari_1
-sāhi_1
-suni_1
-johāri_1
-mili_1
-birori_1
-ḍhīli_1
-jāri_1
-cetani_1
-āchari_1 dekhāi_1 dhari_1
-suni_1
-cuni_1 cuni_1
-cetani_1
-lāi_1
-ghāli_1
-ruci_1
-āchari_1 nāgari_1
-cāhi_1
-pātari_1
-barani_1
-mūṁṭhi_1
-chūṭī_1
-ghāli_1
-chori_1
-gahi_1 saṁvari_1 saṁvari_1
-raci_1
-uṭhi_1
-chapi_1
-tapi_1 tapi_1
-mūṁṭhi_1
-chohāi_1
-ḍola_1
-ghāli_1
-gahi_1
-cāhi_1
-gahi_1
-baīṭhi_1
-sravanani_1
-kāhi_1 bhari_1
-jani_1
-gahi_1
-gahi_1
-āhi_1
-cali_1
-chapi_1
-ghūri_1
-barani_1
-chili_1
-ghāli_1
-barani_1
-chapi_1
-chāṁd̤i_1
-ali_1
-ud̤i_1
-suni_1 jari_1 tarapi_1
-sāhi_1
-suni_1
-jāni_1
-baiṭhi_1
-kalapi_1
-bedhi_1
-gahi_1 pāu_1
-jani_1
-suni_1
-ud̤i_1 dai_1
-chari_1
-saṁci_1
-suni_1
-jari_1
-cuni_1 cuni_1
-sāri_1
-cāhi_1 dekhi_1
-gahi_1
-baiṭhi_1
-ghāli_1
-sāri_1 cāhi_1
-ḍari_1 jhurāi_1
-suni_1
-chāṁd̤i_1
-sāhi_1
-sāhi_1
-ṭhakurāī_1
-saṁci_1
-cāhi_1
-chāī_1
-upāri_1 peṃd̤i_1 jhāri_1 ḍāri_1
-uṭhi_1
-barābari_1
-sāṁkari_1
-uṭhi_1 nisari_1
-apūri_1
-kopi_1
-sāri_1 saṁvāri_1
-meli_1
-ghāli_1
-meli_1
-meli_1
-banāī_1
-kopi_1
-cāṁpi_1 mili_1
-chāṁd̤i_1
-sāhi_1
-chapi_1
-dekhi_1
-dekhi_1
-utari_1
-mili_1
-dai_1
-dai_1
-bāji_1
-jhari_1
-sāhi_1
-karori_1
-bedhi_1 sāhi_1
-sāhi_1
-bāji_1
-mahuvari_1
-pātasāhi_1
-vari_1
-suni_1 suni_1 pātari_1
-sāhi_1
-sāhi_1
-bāji_1
-kheli_1
-meli_1
-raci_1
-jari_1
-sāhi_1 āni_1
-dai_1
-chāṁd̤i_1
-pakari_1
-nāi_1
-kuṁvari_1
-lāi_1
-dai_1
-sāji_1
-pātasāhi_1
-saṁvari_1
-saṁvari_1
-kālhi_1
-dhari_1
-pātasāhi_1 āhi_1
-meṃṭi_1
-pātasāhi_1 āni_1
-dekhi_1
-dai_1
-sāhi_1
-dhari_1 dhari_1
-ṭeṃgani_1
-sāri_1
-chāni_1
-cāhi_1
-barani_1
-rūpamāṁjari_1
-mirici_1
-meli_1
-cīri_1
-tari_1 tari_1
-mirici_1
-lāi_1
-dhuṃgāri_1
-meli_1
-lāi_1
-khaḍi_1
-lāi_1
-lāi_1
-pāki_1
-cetani_1
-dai_1
-suhāī_1
-sāhi_1
-sāri_1
-sāhi_1
-saṁvāri_1
-sāhi_1
-sāhi_1
-āni_1
-suni_1
-dai_1
-koṃhāi_1
-cuni_1
-pheri_1
-āgari_1
-chapi_1
-suni_1
-lai_1
-dhari_1
-baiṭhi_1
-lai_1
-savari_1 saṁvari_1
-jori_1
-āni_1
-ghāli_1
-bhānahi_1
-suni_1
-chari_1
-sāhi_1
-dai_1
-dai_1 sāhi_1
-baiṭhi_1
-jaisi_1
-nirakhi_1 sāhi_1
-dai_1
-pahuṁci_1
-gahi_1
-lai_1
-gahi_1
-ṭāri_1
-suni_1
-lāi_1 gahi_1
-chāṁd̤i_1
-meli_1
-āni_1
-sāṁkari_1
-dhari_1 jani_1
-suni_1
-uparī_1
-bali_1
-gahi_1
-ḍāṁd̤i_1
-āni_1
-uṭhi_1
-aṃjuli_1 dhari_1
-gād̤i_1 khani_1
-kheli_1
-cūpi_1
-uṭhi_1
-dosari_1
-sāṁpi_1 āni_1 āni_1
-cāhi_1
-ḍola_1
-dhari_1
-mili_1
-āni_1
-saṁvāri_1
-haṁkāri_1
-āni_1
-dhari_1 ghāli_1
-suni_1
-suni_1
-nisari_1
-kahuṁki_1
-suni_1
-mili_1
-tori_1
-māni_1
-jani_1
-chapāi_1
-surasari_1
-chāṁd̤i_1
-māni_1
-raci_1
-āhi_1
-kavani_1
-dekhi_1
-āni_1
-ghāli_1
-bisari_1
-suni_1
-ḍola_1
-phāri_1
-pāṁvari_1
-suni_1
-kāhi_1
-bali_1
-āṁki_1
-jāni_1
-mori_1 tori_1
-dhaṁdhāri_1
-pāṁvari_1
-suni_1
-chori_1
-āni_1
-saṁvari_1
-bihari_1
-dhari_1
-suni_1
-palāni_1
-āni_1
-chori_1
-suni_1
-lai_1
-suni_1
-sāhi_1
-kopi_1
-badani_1 raci_1
-ṭaṁkori_1 māra_1
-ghāli_1
-suni_1 suni_1
-gahi_1
-piyahi_1 jori_1
-gahi_1
-phaṁdavāri_1
-boli_1
-dai_1
-meli_1
-kopi_1
-chāṁd̤i_1 dai_1
-chāṁd̤i_1
-raci_1
-od̤hāi_1
-gahi_1
-sauṃpi_1
-kopi_1
-sāhi_1
-sāhi_1
-gahi_1
-dai_1
-jani_1
-ghāli_1
-jamakātari_1
-jhari_1
-jani_1
-jāni_1
-mili_1 pahili_1 hāṁki_1
-bāni_1
-jūjhi_1
-hāṁki_1
-cāṁcari_1 kheli_1
-mili_1
-jani_1
-haṭhi_1
-dhari_1
-kopi_1
-kavani_1
-suni_1
-āni_1
-suni_1
-dai_1
-āni_1
-suni_1
-kavani_1 tumhāra_1
-nevachāvari_1
-āni_1
-chāṁd̤i_1
-ud̤i_1
-tori_1
-bāṁbhani_1
-tori_1
-dūri_1
-suni_1
-dhari_1
-bedhi_1
-uṭhi_1 chāṁd̤i_1
-jhāri_1
-kaud̤i_1
-nevachāvari_1
-būd̤i_1 bāṁci_1 jūd̤i_1
-raci_1 bhāṁvari_1
-dai_1
-dai_1
-pātasāhi_1
-sāhi_1
-pātasāhi_1
-jori_1
-lāi_1
-jāni_1
-dai_1
-dai_1 anaruci_1
-dai_1
