@@ -15,6 +15,16 @@ class DocumentsController extends AppController {
         return $languageOptions;
     }
 
+    private function getEpoqueOptions() {
+        $epoqueModel = ClassRegistry::init('Epoque');
+        $epoques = $epoqueModel->find('all');
+        $epoqueOptions = array();
+        foreach ($epoques as $epoque) {
+            $epoqueOptions[$epoque['Epoque']['id']] = $epoque['Epoque']['name'];
+        }
+        return $epoqueOptions;
+    }
+
     public function index($folderId = 0) {
         $this->Document->recursive = 0;
         $folderModel = ClassRegistry::init('Catalogue', true);
@@ -25,13 +35,18 @@ class DocumentsController extends AppController {
             $this->set('currentFolder', null);
             $folderCondition = null;
         }
-        $this->set('documents', $this->Document->find(
-                                                    'all',
-                                                    array(
-                                                        'conditions' => array('Document.catalogue_id' => $folderCondition)
-                                                    )
-                                                 )
-               );
+
+        $findOptions = array(
+                            'conditions' => array('Document.catalogue_id' => $folderCondition)
+                        );
+        if (!empty($this->data['primary_sort'])) {
+            $findOptions['order'] = array($this->parameterToColumn($this->data['primary_sort']));
+            if (!empty($this->data['secondary_sort'])) {
+                array_push($findOptions['order'], $this->parameterToColumn($this->data['secondary_sort']));
+            }
+        }
+
+        $this->set('documents', $this->Document->find('all', $findOptions));
 
         $wordCountsRaw = $this->Document->query('select documents.id, count(words.id) as word_count  from documents inner join sentences on documents.id = sentences.document_id inner join words on sentences.id = words.sentence_id group by documents.id;');
 
@@ -47,6 +62,19 @@ class DocumentsController extends AppController {
         $this->set('folders', $folderModel->find('all'));
         $this->set('roleId', $this->Auth->user()['role_id']);
         $this->set('languageOptions', $this->getLanguageOptions());
+        $this->set('epoqueOptions', $this->getEpoqueOptions());
+        $this->set('primary_sort', isset($this->data['primary_sort'])? $this->data['primary_sort']:"");
+        $this->set('secondary_sort', isset($this->data['secondary_sort']) ? $this->data['secondary_sort']:"");
+    }
+
+    private function parameterToColumn($param) {
+        if ($param == 'name') {
+            return "Document.name";
+        } else if ($param == 'language') {
+            return "Language.description";
+        } else if ($param == 'epoque') {
+            return "Epoque.name";
+        }
     }
 
     public function view($id = null, $editMode = 0) {
@@ -83,7 +111,7 @@ class DocumentsController extends AppController {
             if ($handle) {
                 $document = array('Document' => array(
                                                     'name' => $this->data['Documents']['file']['name'],
-                                                    'language_id' => $this->data['Documents']['language'],
+                                                    'language_id' => $this->data['Documents']['language'],        'epoque_id' => $this->data['Documents']['epoque'],
                                                     'user_id' => $this->Auth->user('id')
                                                 ),
                                   'Sentence' => array()
@@ -361,6 +389,7 @@ class DocumentsController extends AppController {
             $this->request->data = $document;
         }
         $this->set('languageOptions', $this->getLanguageOptions());
+        $this->set('epoqueOptions', $this->getEpoqueOptions());
     }
 
 }

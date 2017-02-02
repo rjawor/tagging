@@ -1,3 +1,14 @@
+<div id="import-box">
+    <h3>Import document from a txt or doc file</h3>
+    <?php
+    echo $this->Form->create('Documents', array('type' => 'file', 'action' => 'add'));
+    echo $this->Form->input('file',array( 'type' => 'file'));
+    echo $this->Form->input('language', array('type' => 'select', 'options' => $languageOptions,'empty' => false));
+    echo $this->Form->input('epoque', array('type' => 'select', 'options' => $epoqueOptions,'empty' => true));
+    echo $this->Form->end('Submit');
+    ?>
+</div>
+
 <div id="document-list">
     <?php
     if (is_null($currentFolder)) {
@@ -56,12 +67,36 @@
     }
     ?>
     <h3>Documents in folder: <?php echo $currentFolderName; ?></h3>
-    <table>
+    <a href="#" onclick="toggleVisibility('sorting_options');">Show/hide sorting options</a>
+    <div id="sorting_options" style="display:none">
+        <form method="POST" action="">
+        <p style="margin-top:5px;margin-bottom:5px">
+            Sort by:
+            <select name="primary_sort">
+                <option value="">none</option>
+                <option <?= $primary_sort == 'name' ? "selected":""?> value="name">Name</option>
+                <option <?= $primary_sort == 'language' ? "selected":""?> value="language">Language</option>
+                <option <?= $primary_sort == 'epoque' ? "selected":""?> value="epoque">Epoque</option>
+            </select>
+            and then by:
+            <select name="secondary_sort">
+                <option value="">none</option>
+                <option <?= $secondary_sort == 'name' ? "selected":""?> value="name">Name</option>
+                <option <?= $secondary_sort == 'language' ? "selected":""?> value="language">Language</option>
+                <option <?= $secondary_sort == 'epoque' ? "selected":""?> value="epoque">Epoque</option>
+            </select>
+        </p>
+        <input type="submit" value="sort" />
+        </form>
+    </div>
+
+    <table width="700px">
         <tr>
             <th>Id</th>
             <th></th>
             <th>Name</th>
             <th>Language</th>
+            <th>Epoque</th>
             <th>Owner</th>
             <th>Words</th>
             <th width="200px">Actions</th>
@@ -85,6 +120,7 @@
                 ?>
             </td>
             <td><?php echo $document['Language']['description']; ?> (<?php echo $document['Language']['code']; ?>)</td>
+            <td><?= isset($document['Epoque']) ? $document['Epoque']['name'] : "n/a" ?></td>
             <td><?php echo $document['User']['username']; ?></td>
             <td><?php echo $wordCounts[$document['Document']['id']]; ?></td>
             <td>
@@ -125,14 +161,4 @@
         <?php endforeach; ?>
 
     </table>
-</div>
-
-<div id="import-box">
-    <h3>Import document from a txt or doc file</h3>
-    <?php
-    echo $this->Form->create('Documents', array('type' => 'file', 'action' => 'add'));
-    echo $this->Form->input('file',array( 'type' => 'file'));
-    echo $this->Form->input('language', array('type' => 'select', 'options' => $languageOptions,'empty' => false));
-    echo $this->Form->end('Submit');
-    ?>
 </div>

@@ -54,6 +54,18 @@ CREATE TABLE IF NOT EXISTS `tagger_dbmodel`.`languages` (
   PRIMARY KEY (`id`))
 ENGINE = InnoDB;
 
+-- -----------------------------------------------------
+-- Table `tagger_dbmodel`.`epoques`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `tagger_dbmodel`.`epoques` ;
+
+CREATE TABLE IF NOT EXISTS `tagger_dbmodel`.`epoques` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(200) NULL,
+  `description` TEXT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
+
 
 -- -----------------------------------------------------
 -- Table `tagger_dbmodel`.`catalogues`
@@ -77,6 +89,7 @@ CREATE TABLE IF NOT EXISTS `tagger_dbmodel`.`documents` (
   `name` VARCHAR(70) NULL,
   `user_id` INT NULL,
   `language_id` INT NULL,
+  `epoque_id` INT NULL,
   `catalogue_id` INT NULL,
   PRIMARY KEY (`id`),
   INDEX `fk_documents_users1_idx` (`user_id` ASC),
@@ -90,6 +103,11 @@ CREATE TABLE IF NOT EXISTS `tagger_dbmodel`.`documents` (
   CONSTRAINT `fk_documents_languages1`
     FOREIGN KEY (`language_id`)
     REFERENCES `tagger_dbmodel`.`languages` (`id`)
+    ON DELETE SET NULL
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_documents_epoques1`
+    FOREIGN KEY (`epoque_id`)
+    REFERENCES `tagger_dbmodel`.`epoques` (`id`)
     ON DELETE SET NULL
     ON UPDATE NO ACTION,
   CONSTRAINT `fk_documents_catalogues1`
