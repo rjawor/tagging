@@ -344,7 +344,6 @@
                 $annotationTypeCount = 1;
                 foreach ($sentence['WordAnnotations'] as $wordAnnotations): ?>
             <tr>
-                <span id="awesomedebug" style="display:none"><?php print_r($wordAnnotations['type']['WordAnnotationType']['name']); ?></span>
                 <td class="annotation-column" title="<?php echo $wordAnnotations['type']['WordAnnotationType']['description'] ?>"><?php echo $wordAnnotations['type']['WordAnnotationType']['name'] ?></td>
                 <?php
                     $wordIndex = 0;
@@ -405,8 +404,30 @@
                                 }
                             ?>
                                </span>
+                        <?php
+                    } else if ($wordAnnotations['type']['WordAnnotationType']['word_reference']) {
+                    ?>
+                        <input type="hidden" id="cell-<?php echo $offset.'-'.$annotationTypeCount.'-'.$wordIndex.'-type'; ?>" value="word-reference" />
+                        <input type="hidden" id="cell-<?php echo $offset.'-'.$annotationTypeCount.'-'.$wordIndex.'-value'; ?>" value="<?php echo isset($annotation['numeric_value']) ? $annotation['numeric_value']."@#@".$annotation['text_value'] : '';  ?>" />
 
-                        <?php } else { #text field ?>
+                        <span class="ro-display">
+                            <?php if (isset($annotation['numeric_value']) && $annotation['numeric_value'] > 0 && isset($annotation['text_value'])) { ?>
+                                        <a href="<?= Configure::read('SystemInstallationPath')?>/dashboard/viewWord/<?=$annotation['numeric_value']?>" target="_blank"><img onclick="if(event.stopPropagation){event.stopPropagation();}event.cancelBubble=true;" src="<?= Configure::read('SystemInstallationPath') ?>/img/anchor.png" alt="anchor"></a>&nbsp;                                        <?=$annotation['text_value']?>
+                            <?php
+                            } ?>
+
+                        </span>
+                        <span class="edit-field">
+                            <div class="word-reference-picker">
+                            <table>
+                            <?php
+                            echo $this->Html->image("preloader.gif", array(       				                                                       "title" => "loading previous sentences..."));
+                            ?>
+                            </table>
+                            </div>
+                        </span>
+                    <?php
+                    } else { #text field ?>
                             <input type="hidden" id="cell-<?php echo $offset.'-'.$annotationTypeCount.'-'.$wordIndex.'-type'; ?>" value="word-text" />
                             <input type="hidden" id="cell-<?php echo $offset.'-'.$annotationTypeCount.'-'.$wordIndex.'-value'; ?>" value="<?php echo isset($annotation['text_value']) ? normalizeText($annotation['text_value']) : '';  ?>" />
 

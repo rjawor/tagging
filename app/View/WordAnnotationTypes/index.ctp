@@ -22,6 +22,7 @@
             <th>Description</th>
             <th>Strict choices</th>
             <th>Multiple choices</th>
+            <th>Word reference</th>
             <th>Order</th>
             <th style="max-width:300px;">Actions</th>
         </tr>
@@ -33,8 +34,9 @@
             <td><?php echo $wordAnnotationType['WordAnnotationType']['description']; ?></td>
             <td><?php echo $wordAnnotationType['WordAnnotationType']['strict_choices']?"+":"-"; ?></td>
             <td><?php echo $wordAnnotationType['WordAnnotationType']['multiple_choices']?"+":"-"; ?></td>
+            <td><?php echo $wordAnnotationType['WordAnnotationType']['word_reference']?"+":"-"; ?></td>
             <td>
-                <?php 
+                <?php
                     if ($wordAnnotationType['WordAnnotationType']['position'] > 0) {
                         echo $this->Html->image('up.png', array(
                                                               'alt' => 'Move up',
@@ -68,7 +70,7 @@
                         array('confirm' => 'Are you sure?')
                     );
                 ?>
-                
+
                 <?php
                     if ($wordAnnotationType['WordAnnotationType']['strict_choices']) {
                         echo "&nbsp;&nbsp;";
@@ -84,4 +86,3 @@
 
     </table>
 </div>
-

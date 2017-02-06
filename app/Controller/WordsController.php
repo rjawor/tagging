@@ -11,16 +11,49 @@ App::uses('History', 'Lib');
 class WordsController extends AppController {
 
 
+    public function getWordReferences() {
+        $this->autoRender = false;
+        if ($this->request->is('post')) {
+            $gridX = $this->request->data['gridX'];
+            $gridY = $this->request->data['gridY'];
+            $wordId = $this->request->data['wordId'];
+
+            $documentModel = ClassRegistry::init('Document');
+            $result = $documentModel->query("select documents.id, sentences.position as sentence_pos, words.position as word_pos from documents inner join sentences on documents.id = sentences.document_id inner join words on sentences.id = words.sentence_id where words.id = ".$wordId);
+
+
+            $documentId = $result[0]['documents']['id'];
+            $sentencePos = $result[0]['sentences']['sentence_pos'];
+
+            $documentModel->recursive = 2;
+            $document = $documentModel->findById($documentId);
+
+            $documentData = array();
+            foreach($document['Sentence'] as $sentence) {
+                if ($sentence['position'] > $sentencePos) {
+                    break;
+                }
+                $sentenceData = array();
+                foreach($sentence['Word'] as $word) {
+                    $wordText = $word['split'] ? $word['stem'].'|'.$word['suffix'] : $word['text'];
+                    array_push($sentenceData, array('wordId'=>$word['id'], 'wordText' => $wordText));
+                }
+                array_push($documentData, $sentenceData);
+            }
+
+            return json_encode(array('document' => $documentData,'wordId'=>$wordId, 'gridX' => $gridX, 'gridY' => $gridY));
+        }
+    }
 
     public function getSuggestions() {
         $this->autoRender = false;
-        if ($this->request->is('post')) {	        
+        if ($this->request->is('post')) {
 	        $gridX = $this->request->data['gridX'];
 
 	        $wordId = $this->request->data['wordId'];
             $this->Word->recursive = 0;
 	        $word = $this->Word->findById($wordId);
-	        
+
             $identicalWords = array();
 //	        CakeLog::write('debug', 'Getting suggestions for word: '.print_r($word,true));
             $this->Word->recursive = 2;
@@ -33,7 +66,7 @@ class WordsController extends AppController {
     	            $identicalWords = $this->Word->find('all', array('conditions' => array('id !=' => $wordId, 'text'=>$word['Word']['text'])));
     	        }
 	        }
-	        
+
 //	        CakeLog::write('debug', 'Identical words: '.print_r($identicalWords,true));
 
             $annotatedWords = array();
@@ -43,8 +76,8 @@ class WordsController extends AppController {
                     $this->insertIntoWordsArray($annotatedWords, $annotatedWord);
                 }
             }
-            usort($annotatedWords, array($this, 'compareAnnotatedWords'));      
-	        
+            usort($annotatedWords, array($this, 'compareAnnotatedWords'));
+
 //  	        CakeLog::write('debug', 'Annotated words: '.print_r($annotatedWords,true));
 
             $wordAnnotationTypeModel = ClassRegistry::init('WordAnnotationType');
@@ -58,7 +91,7 @@ class WordsController extends AppController {
 	            $awIndex++;
 	            $suggestionsIndex++;
 	        }
-	        
+
 	        $acIndex = 0;
 	        $autocompleteWords = $this->getAutocompleteWords($wordId);
 	        while($acIndex < count($autocompleteWords) && $suggestionsIndex < $limit) {
@@ -66,12 +99,12 @@ class WordsController extends AppController {
 	            $acIndex++;
 	            $suggestionsIndex++;
 	        }
-        	    
+
 //        	CakeLog::write('debug', 'suggestionsData: '.print_r($suggestionsData, true));
 	        return json_encode(array("gridX" => $gridX, "count" => count($suggestionsData), "data"=>$suggestionsData));
 		}
     }
-    
+
     private function compareAnnotatedWords($a, $b) {
         if ($a['count'] == $b['count']) {
            return 0;
@@ -79,10 +112,10 @@ class WordsController extends AppController {
 
         return ($a['count'] < $b['count']) ? 1 : -1;
     }
-    
+
     private function getAutocompleteWords($wordId) {
-    
-        
+
+
         $rules = array(
                      array(
                         "conditions" => array(
@@ -124,15 +157,15 @@ class WordsController extends AppController {
                                       )
                      )
                  );
-    
+
         $result = array();
         foreach ($rules as $rule) {
             $count = $this->Word->find('count', array('conditions' => array("Word.id" => $wordId)+$rule["conditions"]));
             if($count > 0) {
                 array_push($result, new AnnotatedWord($rule['complete']));
-            }            
+            }
         }
-        
+
         return $result;
     }
 
@@ -148,7 +181,7 @@ class WordsController extends AppController {
         $array = array_values($array);
         array_push($array, array('word'=>$annotatedWord, 'count' => ($baseCount + 1)));
     }
-    
+
     private function arrayContainsAnnotation(&$array, $annotatedWord) {
         for ($i=0;$i<count($array);$i++) {
             if ($array[$i]['word']->containsAnnotation($annotatedWord)) {
@@ -158,7 +191,7 @@ class WordsController extends AppController {
         }
         return false;
     }
-    
+
 
     public function saveWord() {
         $this->autoRender = false;
@@ -186,14 +219,14 @@ class WordsController extends AppController {
                         'split' => $split
                     )
                 );
-            
+
             }
-            
+
 
             $this->Word->save($data);
-        }        
+        }
     }
-    
+
     private function insertEmptyWord($sentenceId, $position) {
         $this->Word->recursive = 0;
 
@@ -206,13 +239,13 @@ class WordsController extends AppController {
                                     'position >=' => $position
                                 )
                             );
-	
+
 	    $newWord = array('Word'=>array('sentence_id' => $sentenceId, 'position' => $position));
 	    $this->Word->create();
 	    $this->Word->save($newWord);
 	    return $this->Word->id;
     }
-    
+
     private function removeWord($sentenceId, $position, $preventHistory = 0) {
         $this->Word->recursive = 0;
 
@@ -230,7 +263,7 @@ class WordsController extends AppController {
         $this->Word->delete($deletedWord['Word']['id']);
     }
 
- 
+
 
     public function insertWord($documentId, $documentOffset, $sentenceId, $position, $preventHistory = 0) {
         $this->autoRender = false;
@@ -243,15 +276,15 @@ class WordsController extends AppController {
                                                           "documentOffset" => $documentOffset,
                                                           "sentenceId" => $sentenceId,
                                                           "position" => $position
-                                                    ));            
-        }        
-        return $this->redirect(array('controller' => 'dashboard', 'action' => 'index', $documentId, $documentOffset, $position, 1-$preventHistory));    
-    }    
+                                                    ));
+        }
+        return $this->redirect(array('controller' => 'dashboard', 'action' => 'index', $documentId, $documentOffset, $position, 1-$preventHistory));
+    }
 
     public function insertAfterWord($documentId, $documentOffset, $sentenceId, $position, $preventHistory = 0) {
         $this->autoRender = false;
         $this->insertEmptyWord($sentenceId, $position+1);
-        
+
         History::offsetOperations($this->Session, $position+2, 1);
         if ($preventHistory == 0) {
             History::storeOperation($this->Session, array("type"=>"insertWord",
@@ -259,30 +292,30 @@ class WordsController extends AppController {
                                                           "documentOffset" => $documentOffset,
                                                           "sentenceId" => $sentenceId,
                                                           "position" => $position+1
-                                                    ));            
+                                                    ));
         }
-        return $this->redirect(array('controller' => 'dashboard', 'action' => 'index', $documentId, $documentOffset, $position+1, 1-$preventHistory));    
-    }    
+        return $this->redirect(array('controller' => 'dashboard', 'action' => 'index', $documentId, $documentOffset, $position+1, 1-$preventHistory));
+    }
 
     public function deleteWord($documentId, $documentOffset, $sentenceId, $position, $preventHistory = 0) {
         $this->autoRender = false;
         $this->removeWord($sentenceId, $position, $preventHistory);
-        return $this->redirect(array('controller' => 'dashboard', 'action' => 'index', $documentId, $documentOffset, $position));    
-    }    
+        return $this->redirect(array('controller' => 'dashboard', 'action' => 'index', $documentId, $documentOffset, $position));
+    }
 
 
     public function markPostposition($documentId, $documentOffset, $sentenceId, $position, $preventHistory = 0) {
         $this->autoRender = false;
-        
+
         $baseWord = $this->Word->find('first', array('conditions'=> array('sentence_id'=>$sentenceId, 'position'=>$position)));
         $postposition = $this->Word->find('first', array('conditions'=> array('sentence_id'=>$sentenceId, 'position'=>$position+1)));
-        
+
         $baseWord['Word']['postposition_id'] = $postposition['Word']['id'];
-        $postposition['Word']['is_postposition'] = 1;        
+        $postposition['Word']['is_postposition'] = 1;
 
         $this->Word->save($baseWord);
         $this->Word->save($postposition);
-        
+
         if ($preventHistory == 0) {
             History::storeOperation($this->Session, array("type"=>"markPostposition",
                                                           "documentId" => $documentId,
@@ -291,12 +324,12 @@ class WordsController extends AppController {
                                                           "position" => $position
                                                     ));
         }
-        return $this->redirect(array('controller' => 'dashboard', 'action' => 'index', $documentId, $documentOffset, $position));    
-    }    
+        return $this->redirect(array('controller' => 'dashboard', 'action' => 'index', $documentId, $documentOffset, $position));
+    }
 
     public function unmarkPostposition($documentId, $documentOffset, $sentenceId, $position, $preventHistory = 0) {
         $this->autoRender = false;
-        
+
         $currentWord = $this->Word->find('first', array('conditions'=> array('sentence_id'=>$sentenceId, 'position'=>$position)));
         if ($currentWord['Word']['is_postposition']) {
             $postposition = $currentWord;
@@ -305,9 +338,9 @@ class WordsController extends AppController {
             $baseWord = $currentWord;
             $postposition = $this->Word->find('first', array('conditions'=> array('sentence_id'=>$sentenceId, 'position'=>$position+1)));
         }
-        
+
         $baseWord['Word']['postposition_id'] = null;
-        $postposition['Word']['is_postposition'] = 0;        
+        $postposition['Word']['is_postposition'] = 0;
 
         $this->Word->save($baseWord);
         $this->Word->save($postposition);
@@ -320,37 +353,37 @@ class WordsController extends AppController {
                                                           "position" => $baseWord['Word']['position']
                                                     ));
         }
-        
-        
-        return $this->redirect(array('controller' => 'dashboard', 'action' => 'index', $documentId, $documentOffset, $position));    
-    }    
-    
+
+
+        return $this->redirect(array('controller' => 'dashboard', 'action' => 'index', $documentId, $documentOffset, $position));
+    }
+
     public function copyFromPrev($documentId, $documentOffset, $sentenceId, $position) {
         $this->autoRender = false;
         $currentWord = $this->Word->find('first', array('conditions'=> array('sentence_id'=>$sentenceId, 'position'=>$position)));
         $prevWord = $this->Word->find('first', array('conditions'=> array('sentence_id'=>$sentenceId, 'position'=>$position-1)));
-        $this->copyAnnotations($prevWord['Word']['id'], $currentWord['Word']['id']);           
-        
-        return $this->redirect(array('controller' => 'dashboard', 'action' => 'index', $documentId, $documentOffset, $position, 1));    
-    }    
+        $this->copyAnnotations($prevWord['Word']['id'], $currentWord['Word']['id']);
+
+        return $this->redirect(array('controller' => 'dashboard', 'action' => 'index', $documentId, $documentOffset, $position, 1));
+    }
 
     public function copyFromNext($documentId, $documentOffset, $sentenceId, $position) {
         $this->autoRender = false;
         $currentWord = $this->Word->find('first', array('conditions'=> array('sentence_id'=>$sentenceId, 'position'=>$position)));
         $nextWord = $this->Word->find('first', array('conditions'=> array('sentence_id'=>$sentenceId, 'position'=>$position+1)));
-        $this->copyAnnotations($nextWord['Word']['id'], $currentWord['Word']['id']);           
-        
-        return $this->redirect(array('controller' => 'dashboard', 'action' => 'index', $documentId, $documentOffset, $position, 1));    
-    }    
+        $this->copyAnnotations($nextWord['Word']['id'], $currentWord['Word']['id']);
+
+        return $this->redirect(array('controller' => 'dashboard', 'action' => 'index', $documentId, $documentOffset, $position, 1));
+    }
 
     private function copyAnnotations($sourceWordId, $targetWordId) {
         $wordAnnotationModel = ClassRegistry::init('WordAnnotation');
         $wordAnnotationTypeChoicesWordAnnotationModel = ClassRegistry::init('WordAnnotationTypeChoicesWordAnnotation');
-        
+
         $sourceAnnotations = $wordAnnotationModel->find('all', array('conditions'=> array('word_id'=>$sourceWordId, 'type_id !='=>1)));
         //CakeLog::write('debug',"copying from word: ".$sourceWordId." to word: ".$targetWordId." annotations: ". print_r($sourceAnnotations, true));
         if (count($sourceAnnotations > 0)) {
-            $wordAnnotationModel->deleteAll(array('word_id' => $targetWordId, 'type_id !='=>1));    
+            $wordAnnotationModel->deleteAll(array('word_id' => $targetWordId, 'type_id !='=>1));
         }
         foreach ($sourceAnnotations as $sourceAnnotation) {
             $newAnnotation = array(
@@ -370,9 +403,9 @@ class WordsController extends AppController {
                 $wordAnnotationTypeChoicesWordAnnotationModel->save($newConnection);
             }
         }
-        
+
     }
-    
+
 }
 
 ?>

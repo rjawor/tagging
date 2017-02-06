@@ -178,6 +178,7 @@ CREATE TABLE IF NOT EXISTS `tagger_dbmodel`.`word_annotation_types` (
   `name` VARCHAR(45) NULL,
   `strict_choices` TINYINT(1) NULL,
   `multiple_choices` TINYINT(1) NULL,
+  `word_reference` TINYINT(1) NULL,
   `description` TEXT NULL,
   `position` INT NULL,
   PRIMARY KEY (`id`))
@@ -192,6 +193,7 @@ DROP TABLE IF EXISTS `tagger_dbmodel`.`word_annotations` ;
 CREATE TABLE IF NOT EXISTS `tagger_dbmodel`.`word_annotations` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `text_value` VARCHAR(255) NULL,
+  `numeric_value` INT NULL,
   `type_id` INT NULL,
   `word_id` INT NULL,
   PRIMARY KEY (`id`),

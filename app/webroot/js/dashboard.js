@@ -105,6 +105,21 @@ function updateSentence() {
             if (editField != null) {
                 editField.focus();
             }
+
+            if ($('#'+cellId+'-type').val() == 'word-reference') {
+
+                var wordId = $('#'+cellId+'-word-id').val();
+
+                $.ajax({
+            		type: "POST",
+            		url: systemInstallationPath+"/words/getWordReferences",
+            		data: { wordId: wordId, gridX:getGridX(getSentenceNumber()), gridY:getGridY(getSentenceNumber()) },
+                })
+                .done(function( jsonString ) {
+                    updateWordReferences(jsonString);
+                });
+
+            }
         } else {
             activeCell.className = 'selected';
         }
@@ -117,6 +132,42 @@ function updateSentence() {
 
         adjustScroll();
     }
+}
+
+function updateWordReferences(jsonString) {
+    var sentenceNumber = getSentenceNumber();
+    var wordReferences = jQuery.parseJSON(jsonString);
+    var cellId = 'cell-'+sentenceNumber+'-'+wordReferences.gridY+'-'+wordReferences.gridX;
+
+    var wordReferencePicker = $('#'+cellId+' .word-reference-picker');
+
+    var referencesHtml = '<img src="'+systemInstallationPath+'/img/delete.png" title="delete anchor" onclick="setWordReference('+wordReferences.gridY+','+wordReferences.gridX+',0,\'\');if(event.stopPropagation){event.stopPropagation();}event.cancelBubble=true;"/>';
+    referencesHtml += '<table>';
+    for(var i = 0;i<wordReferences.document.length;i++) {
+        referencesHtml += '<tr>';
+        for (var j=0;j<wordReferences.document[i].length;j++) {
+            referencesHtml += '<td style="cursor:pointer" onclick="setWordReference('+wordReferences.gridY+','+wordReferences.gridX+','+wordReferences.document[i][j]['wordId']+',\''+wordReferences.document[i][j]['wordText']+'\');if(event.stopPropagation){event.stopPropagation();}event.cancelBubble=true;">'+wordReferences.document[i][j]['wordText']+'</td>';
+        }
+        referencesHtml += '</tr>';
+    }
+    referencesHtml += '</table>'
+    wordReferencePicker.html(referencesHtml);
+    wordReferencePicker.scrollTop($(wordReferencePicker)[0].scrollHeight);
+
+}
+
+function setWordReference(gridY,gridX,wordId,wordText) {
+    var sentenceNumber = getSentenceNumber();
+    var cellId = 'cell-'+sentenceNumber+'-'+gridY+'-'+gridX;
+    var oldValue = $('#'+cellId+'-value').val();
+    var newValue = wordId+'@#@'+wordText;
+    modifyValue(sentenceNumber, gridX, gridY, newValue);
+    setEditMode(sentenceNumber, false, true);
+    updateSentence();
+    updateSuggestions();
+
+    $.post( systemInstallationPath+"/history/storeOperation", {type: 'modifyCellValue', gridX:gridX, gridY:gridY, oldValue:oldValue, newValue:newValue} );
+
 }
 
 function adjustScroll() {
@@ -266,7 +317,7 @@ function setEdited(sentenceNumber, gridY, gridX) {
         return;
     }
     if (!(getEditMode(sentenceNumber) &&
-          getGridX(sentenceNumber) == gridX &&
+          getGridY(sentenceNumber) == gridY &&
           getGridX(sentenceNumber) == gridX)) {
 
         setEditMode(sentenceNumber, false); //switching off editing of current cell
@@ -408,6 +459,7 @@ function deEscapeHTML(text) {
     return text.replace(/&amp;/g,'&').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"');
 }
 
+// update the hidden input with the cell value, based on the edit field
 function updateCellValue(sentenceNumber, gridX, gridY) {
     if (gridX == null || gridY == null) {
         gridX = getGridX(sentenceNumber);
@@ -449,7 +501,7 @@ function updateCellValue(sentenceNumber, gridX, gridY) {
         var selectedChoicesIds=[];
         if (selectedChoices != null) {
             for (var i=0; i< selectedChoices.length; i++) {
-                var choiceValueArr = selectedChoices[i].value.match(/^(\w+).*/);
+                var choiceValueArr = selectedChoices[i].value.match(/^([\w\-]+).*/);
                 var choiceValue = choiceValueArr[1];
                 var selectedChoiceId = document.getElementById(selectedChoices[i].id+'-type-id').value;
                 selectedChoicesIds[selectedChoicesIds.length] = selectedChoiceId;
@@ -468,7 +520,6 @@ function updateCellValue(sentenceNumber, gridX, gridY) {
     }
 
 }
-
 
 function modifyValue(sentenceNumber, gridX, gridY, value) {
     var cellId = 'cell-'+sentenceNumber+'-'+gridY+'-'+gridX;
@@ -525,6 +576,16 @@ function updateCellDisplay(sentenceNumber, gridX, gridY) {
             var wordTextElements = cell.querySelectorAll('.edit-field .word-split-field input');
             wordTextElements[0].value = deEscapeHTML(stem);
             wordTextElements[1].value = deEscapeHTML(suffix);
+        }
+    } else if (cellTypeElement.value == 'word-reference') {
+        var arr = valueElement.value.split("@#@");
+        wordId = arr[0];
+        wordText = arr[1];
+
+        if (wordId == 0) {
+            displaySpan.innerHTML = '';
+        } else {
+            displaySpan.innerHTML = '<a href="'+systemInstallationPath+'/dashboard/viewWord/'+wordId+'" target="_blank"><img onclick="if(event.stopPropagation){event.stopPropagation();}event.cancelBubble=true;" src="'+systemInstallationPath+'/img/anchor.png" alt="anchor"></a>&nbsp;'+wordText;
         }
 
     } else if (cellTypeElement.value == 'choices' || cellTypeElement.value == 'multiple-choices') {
@@ -587,6 +648,19 @@ function saveCell(sentenceNumber, gridX, gridY) {
           type: 'POST',
           url: systemInstallationPath+"/wordAnnotations/saveWordTextAnnotation",
           data: { wordId: wordId, wordAnnotationTypeId: wordAnnotationTypeId, text: valueElement.value },
+          async:false
+        });
+    } else if (cellTypeElement.value == 'word-reference') {
+        var wordAnnotationTypeElement = document.getElementById(cellId+'-word-annotation-type-id');
+        var wordAnnotationTypeId = wordAnnotationTypeElement.value;
+        var wordId = document.getElementById(cellId+'-word-id').value;
+        var arr = valueElement.value.split('@#@');
+        referenceWordId = arr[0];
+        referenceWordText = arr[1];
+        $.ajax({
+          type: 'POST',
+          url: systemInstallationPath+"/wordAnnotations/saveWordTextAnnotation",
+          data: { wordId: wordId, wordAnnotationTypeId: wordAnnotationTypeId, text: referenceWordText, numeric:referenceWordId },
           async:false
         });
     } else if (cellTypeElement.value == 'sentence-text') {

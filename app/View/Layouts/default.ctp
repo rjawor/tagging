@@ -32,12 +32,12 @@ $cakeVersion = __d('cake_dev', 'CakePHP %s', Configure::version())
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('cake.generic');
+		echo $this->Html->css('cake.generic.css?version='.date("Ymdhis"));
 		echo $this->Html->css('menu');
 
         echo $this->Html->script('jquery');
         echo $this->Html->script('jquery-ui');
-		echo $this->Html->script('dashboard');
+		echo $this->Html->script('dashboard.js?version='.date("Ymdhis"));
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');

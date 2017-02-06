@@ -211,6 +211,18 @@ table td.actions a {
     font-weight:bold;
 }
 
+.word-reference-picker {
+	position:absolute;
+	width:500px;
+	height:200px;
+	border: 2px dashed;
+    border-color: blue;
+    border-radius: 10px;
+	background-color: white;
+	font-size:8px;
+	overflow: scroll;
+}
+
 div[name=sentence] {
     margin-top:20px;
     margin-bottom:20px;
@@ -282,7 +294,7 @@ td.selected .choice-available {
 
 .help-section {
     margin-top:20px;
-    margin-bottom:20px;    
+    margin-bottom:20px;
 }
 
 .suggestion-count-box {
