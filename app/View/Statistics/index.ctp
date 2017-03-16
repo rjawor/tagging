@@ -9,6 +9,10 @@
 </p>You can also view one of the following predefined statistics:</p>
 
 <ul>
+        <li style="margin:1em 0">
+            <form method="post" name="words_add_info" action="<?= Configure::read('SystemInstallationPath') ?>/statistics/words_add_info"></form>
+            <a href="#" onclick="document.forms['words_add_info'].submit()">Words with "add info"</a>
+        </li>
 	    <li style="margin:1em 0">
             <form method="post" name="sentences" action="<?= Configure::read('SystemInstallationPath') ?>/statistics/sentences"></form>
     	    <a href="#" onclick="document.forms['sentences'].submit()">Sentences with "add info"</a>

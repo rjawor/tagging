@@ -38,10 +38,10 @@
 
 <table>
 	<tr>
-		<?php		
-		    $image = $this->Html->image("edit.png", array("alt" => "edit"));                     
+		<?php
+		    $image = $this->Html->image("edit.png", array("alt" => "edit"));
 		?>
-		<td width="10%">Document</td><td><?= $sentence['documents']['name']?> (<?= $sentence['languages']['description'] ?>)</pre></td>
+		<td width="10%">Document</td><td><?= $sentence['documents']['name']?> (<?= $sentence['languages']['description'] ?>)</td>
 	</tr>
 	<tr>
 		<td>Sentence <?=
@@ -49,7 +49,7 @@
                         $image,
                         array('controller' => 'dashboard', 'action' => 'index', $sentence['documents']['id'], $sentence['sentences']['position']),
                         array(
-                            'target'=>'_blank', 
+                            'target'=>'_blank',
                             'escape' => false
                         ))
 
@@ -62,8 +62,6 @@
 <br/>
 <br/>
 <br/>
-	
+
 
 <?php endforeach; ?>
-
-
