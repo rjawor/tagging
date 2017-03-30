@@ -6,16 +6,13 @@
 <p>
 Welcome to the statistics generator. Here you can generate any kind of reports and statistics that suit your needs. Be sure to check the <a href="#">help section about statitics</a>.
 </p>
-<h3>Single words</h3>
 <p>
 In order to list words tagged in a specific way (i.e. singular nouns),<br/>
 <a href="<?= Configure::read('SystemInstallationPath') ?>/statistics/single_generator">open single word statistics &gt;&gt;</a>
 </p>
-<h3>Collocations</h3>
 <p>If you are interested in listing word collocations (such as singular nouns and definite articles) appearing in sentences,<br/>
 <a href="<?= Configure::read('SystemInstallationPath') ?>/statistics/collocations_generator">open collocation statistics &gt;&gt;</a>
 </p>
-<h3>Proportional statistics</h3>
 <p>Another option is generating number only proportional statistics, which let you count e.g. what is the percentage of singular nouns in all nouns.<br/>
 <a href="<?= Configure::read('SystemInstallationPath') ?>/statistics/proportional_generator">open proportional statistics &gt;&gt;</a>
 </p>
@@ -37,6 +34,7 @@ In order to list words tagged in a specific way (i.e. singular nouns),<br/>
         <li style="margin:1em 0">
             <form method="post" name="<?php echo $position['main']['short'];?>" action="<?= Configure::read('SystemInstallationPath') ?>/statistics/singleWords">
 		    <input type="hidden" name="mainValue" value="<?php echo $position['main']['value']; ?>"/>
+            <input type="hidden" name="initial" value="0"/>
 	        </form>
     	    <a href="#" onclick="document.forms['<?php echo $position['main']['short'];?>'].submit()" ><?php echo $position['main']['desc'];?></a>
     	<?php if (count($position['collocations']) > 0) {
@@ -78,6 +76,8 @@ In order to list words tagged in a specific way (i.e. singular nouns),<br/>
                     <form method="post" name="<?php echo $position['main']['short'].'_'.$proportion['desc']; ?>" action="<?= Configure::read('SystemInstallationPath') ?>/statistics/proportional">
 		            <input type="hidden" name="mainValue" value="<?php echo $position['main']['value'];?>"/>
 		            <input type="hidden" name="specificValue" value="<?php echo $proportion['value'];?>"/>
+                    <input type="hidden" name="initial" value="0"/>
+                    <input type="hidden" name="initialSpecific" value="0"/>
 	                </form>
 	                <a href="#" onclick="document.forms['<?php echo $position['main']['short'].'_'.$proportion['desc']; ?>'].submit()" ><?php echo $position['main']['short'].' including '.$proportion['desc']." (proportion)"; ?></a>
                 </li>

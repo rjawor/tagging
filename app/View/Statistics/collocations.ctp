@@ -3,8 +3,10 @@
     echo $this->element('statistics_header',
         array(
             'mainValue' => $mainValue,
+            'initial' => 0,
             'collocationValue' => $collocationValue,
             'specificValue' => 0,
+            'initialSpecific' => 0,
             'immediate' => $immediate,
             'page' => $page,
             'totalPages' => $totalPages,

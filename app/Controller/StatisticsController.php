@@ -119,6 +119,7 @@ class StatisticsController extends AppController {
         if ($this->request->is('post')) {
             if (!empty($this->request['data']['mainValue'])) {
                 $this->set('mainValue', $this->request['data']['mainValue']);
+                $this->set('initial', $this->request['data']['initial']);
 
                 $languageModel = ClassRegistry::init('Language');
                 $languageModel->recursive = 1;
@@ -145,8 +146,9 @@ class StatisticsController extends AppController {
                 $wordModel = ClassRegistry::init('Word');
 
                 $mainParams = explode(',',$this->request['data']['mainValue']);
+                $initial = $this->request['data']['initial'];
 
-                $totalCount = $wordModel->query(QueryBuilder::matchingWordsCount($mainParams, $selectedLanguages, $selectedEpoques))[0][0]['total_count'];
+                $totalCount = $wordModel->query(QueryBuilder::matchingWordsCount($mainParams, $selectedLanguages, $selectedEpoques, $initial))[0][0]['total_count'];
                 $this->set('wordCount', $totalCount);
 
                 $page = 0;
@@ -161,7 +163,7 @@ class StatisticsController extends AppController {
                 $offset = $this->RESULTS_PER_PAGE*$page;
 
 
-                $words = $wordModel->query(QueryBuilder::matchingWordsIds($mainParams, $selectedLanguages, $selectedEpoques, $limit, $offset));
+                $words = $wordModel->query(QueryBuilder::matchingWordsIds($mainParams, $selectedLanguages, $selectedEpoques, $initial, $limit, $offset));
 
 	            $wordTexts = array();
 	            $contexts = array();
@@ -263,6 +265,18 @@ class StatisticsController extends AppController {
                 $this->set('mainValue', $this->request['data']['mainValue']);
                 $this->set('specificValue', $this->request['data']['specificValue']);
 
+                $initial = $this->request['data']['initial'];
+                $initialSpecific = $this->request['data']['initialSpecific'];
+
+                if ($initial != 0) {
+                    if ($initialSpecific != $initial) {
+                        $initial = 0;
+                    }
+                }
+
+                $this->set('initial', $initial);
+                $this->set('initialSpecific', $this->request['data']['initialSpecific']);
+
                 $languageModel = ClassRegistry::init('Language');
                 $languageModel->recursive = 1;
                 $languages = $languageModel->find('all');
@@ -286,17 +300,18 @@ class StatisticsController extends AppController {
                 $this->set('selectedEpoques', $selectedEpoques);
 
 	            $mainParams = explode(',',$this->request['data']['mainValue']);
+
 	            $specificParams = array_merge($mainParams,  explode(',',$this->request['data']['specificValue']));
 
                 $wordModel = ClassRegistry::init('Word');
-                $this->set('mainCount', $wordModel->query(QueryBuilder::matchingWordsCount($mainParams, $selectedLanguages, $selectedEpoques))[0][0]['total_count']);
-                $this->set('specificCount', $wordModel->query(QueryBuilder::matchingWordsCount($specificParams, $selectedLanguages, $selectedEpoques))[0][0]['total_count']);
+                $this->set('mainCount', $wordModel->query(QueryBuilder::matchingWordsCount($mainParams, $selectedLanguages, $selectedEpoques, $initial))[0][0]['total_count']);
+                $this->set('specificCount', $wordModel->query(QueryBuilder::matchingWordsCount($specificParams, $selectedLanguages, $selectedEpoques, $initialSpecific))[0][0]['total_count']);
 
                 $tagModel = ClassRegistry::init('WordAnnotationTypeChoice');
                 $tags = array();
                 $rawTags = $tagModel->find('all');
                 foreach ($rawTags as $rawTag) {
-                    $tags[$rawTag['WordAnnotationTypeChoice']['id']] = $rawTag['WordAnnotationTypeChoice']; 
+                    $tags[$rawTag['WordAnnotationTypeChoice']['id']] = $rawTag['WordAnnotationTypeChoice'];
                 }
                 $this->set('tags', $tags);
 

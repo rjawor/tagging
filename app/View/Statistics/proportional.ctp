@@ -4,8 +4,10 @@
     echo $this->element('statistics_header',
         array(
             'mainValue' => $mainValue,
+            'initial' => $initial,
             'collocationValue' => 0,
             'specificValue' => $specificValue,
+            'initialSpecific' => $initialSpecific,
             'immediate' => 0,
             'page' => 0,
             'totalPages' => 0,
@@ -30,13 +32,27 @@
         array_push($specificTags, $tags[$param]['description']);
     }
 
+    if ($initial == 0) {
+        $mainSentencePos = 'Any';
+    } else if ($initial == 1) {
+        $mainSentencePos = 'Initial';
+    } else if ($initial == 2) {
+        $mainSentencePos = 'Non-initial';
+    }
 
+    if ($initialSpecific == 0) {
+        $specificSentencePos = 'Any';
+    } else if ($initialSpecific == 1) {
+        $specificSentencePos = 'Initial';
+    } else if ($initialSpecific == 2) {
+        $specificSentencePos = 'Non-initial';
+    }
 ?>
 <p>
-Number of words tagged as: <i><?= implode(', ', $mainTags)?></i><br/>
+Number of words tagged as: <i><?= implode(', ', $mainTags)?></i>, position in sentence: <i><?= $mainSentencePos ?></i><br/>
 <b><?= $mainCount ?></b>
 </p>
 <p>
-Number of words more specifically tagged as: <i><?= implode(', ', $specificTags)?></i><br/>
+Number of words more specifically tagged as: <i><?= implode(', ', $specificTags)?></i>, position in sentence: <i><?= $specificSentencePos ?></i><br/>
 <b><?= $specificCount ?> (<?= number_format($specificCount * 100 / $mainCount, 2) ?>%)</b>
 </p>

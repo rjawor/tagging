@@ -18,25 +18,25 @@ class QueryBuilder {
     }
 
 
-    public static function matchingWordsCount($choiceIds, $languageIds, $epoqueIds) {
+    public static function matchingWordsCount($choiceIds, $languageIds, $epoqueIds, $initial) {
 
         $result = "select count(*) as total_count from (";
-        $result .= QueryBuilder::singleWordsInnerQuery($choiceIds, $languageIds, $epoqueIds);
+        $result .= QueryBuilder::singleWordsInnerQuery($choiceIds, $languageIds, $epoqueIds, $initial);
         $result .= ") as sub2";
 
         return $result;
     }
 
 
-    public static function matchingWordsIds($choiceIds, $languageIds, $epoqueIds, $limit, $offset) {
+    public static function matchingWordsIds($choiceIds, $languageIds, $epoqueIds, $initial, $limit, $offset) {
 
-        $result = QueryBuilder::singleWordsInnerQuery($choiceIds, $languageIds, $epoqueIds);
+        $result = QueryBuilder::singleWordsInnerQuery($choiceIds, $languageIds, $epoqueIds, $initial);
         $result .= " limit $limit offset $offset";
 
         return $result;
     }
 
-    public static function singleWordsInnerQuery($choiceIds, $languageIds, $epoqueIds) {
+    public static function singleWordsInnerQuery($choiceIds, $languageIds, $epoqueIds, $initial) {
         $wMax = pow(2, count($choiceIds)) - 1;
         $result = "select documents.id as document_id,
                sentences.id as sentence_id,
@@ -66,7 +66,13 @@ class QueryBuilder {
                 $result .= " and documents.epoque_id in (".implode(",", $epoqueIds).") ";
             }
             $result.="
-            inner join words on sentences.id = words.sentence_id
+            inner join words on sentences.id = words.sentence_id";
+            if ($initial == 1) {
+                $result.=" and words.position = 0 ";
+            } else  if ($initial == 2) {
+                $result.=" and words.position > 0 ";                
+            }
+    $result.="
             inner join word_annotations on words.id = word_annotations.word_id
             inner join word_annotation_type_choices_word_annotations on word_annotations.id = word_annotation_type_choices_word_annotations.word_annotation_id
 

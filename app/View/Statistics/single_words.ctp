@@ -4,8 +4,10 @@
     echo $this->element('statistics_header',
         array(
             'mainValue' => $mainValue,
+            'initial' => $initial,
             'collocationValue' => 0,
             'specificValue' => 0,
+            'initialSpecific' => 0,
             'immediate' => 0,
             'page' => $page,
             'totalPages' => $totalPages,

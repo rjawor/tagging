@@ -67,4 +67,10 @@ Selected criteria: (clicking on a criterion deletes it) <br/><br/>
     echo $this->Form->create(false, array('url' => array('controller' => 'statistics', 'action' => 'singleWords')));
     ?>
     <input type="hidden" id="singleWordValue" name="data[mainValue]" />
+
+    Position in sentence<br/>
+    <input style="float:none" type="radio" name="data[initial]" id="initial0" value="0" checked="true"/><i>Any</i><br/>
+    <input style="float:none" type="radio" name="data[initial]" id="initial1" value="1" />Initial<br/>
+    <input style="float:none" type="radio" name="data[initial]" id="initial2" value="2" />Non-initial<br/>
+
     <div class="submit"><input  type="submit" value="Find words" onclick="addCriterionBeforeSubmit('singleWord')"/></div></form>

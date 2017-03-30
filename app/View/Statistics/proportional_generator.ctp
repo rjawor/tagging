@@ -55,6 +55,9 @@ function addCriterionBeforeSubmit(elementId) {
 </script>
 
 <h2>Proportional statistics</h2>
+<?php
+echo $this->Form->create(false, array('url' => array('controller' => 'statistics', 'action' => 'proportional')));
+?>
 
 <label for="mainWord">Main search criteria:</label>
 <input id="mainWord" type="text" class="multiple-suggestions-input" value=""/>
@@ -62,6 +65,11 @@ Selected criteria: (clicking on a criterion deletes it) <br/><br/>
 <?php foreach ($choices as $choice) { ?>
     <input name="mainWordButton" id="<?php echo $choice['id'];?>" type="button" class="choice-inactive" title="<?php echo $choice['description']; ?>" value="<?php echo $choice['value']; ?>" onclick="this.className='choice-inactive';"/>
 <?php } ?>
+<br/>Position in sentence<br/>
+<input style="float:none" type="radio" name="data[initial]" id="initial0" value="0" checked="true"/><i>Any</i><br/>
+<input style="float:none" type="radio" name="data[initial]" id="initial1" value="1" />Initial<br/>
+<input style="float:none" type="radio" name="data[initial]" id="initial2" value="2" />Non-initial<br/>
+
 <br/><br/>
 <label for="specificWord">Additional specific criteria:</label>
 <input id="specificWord" type="text" class="multiple-suggestions-input" value=""/>
@@ -69,10 +77,11 @@ Selected criteria: (clicking on a criterion deletes it) <br/><br/>
 <?php foreach ($choices as $choice) { ?>
     <input name="specificWordButton" id="<?php echo $choice['id'];?>" type="button" class="choice-inactive" title="<?php echo $choice['description']; ?>" value="<?php echo $choice['value']; ?>" onclick="this.className='choice-inactive';"/>
 <?php } ?>
+<br/>Position in sentence<br/>
+<input style="float:none" type="radio" name="data[initialSpecific]" id="initial0" value="0" checked="true"/><i>Any</i><br/>
+<input style="float:none" type="radio" name="data[initialSpecific]" id="initial1" value="1" />Initial<br/>
+<input style="float:none" type="radio" name="data[initialSpecific]" id="initial2" value="2" />Non-initial<br/>
 <br /><br />
-    <?php
-    echo $this->Form->create(false, array('url' => array('controller' => 'statistics', 'action' => 'proportional')));
-    ?>
     <input type="hidden" id="mainWordValue" name="data[mainValue]" />
     <input type="hidden" id="specificWordValue" name="data[specificValue]" />
     <input type="hidden" name="immediate" value="false" />
