@@ -119,37 +119,35 @@ class StatisticsController extends AppController {
         if ($this->request->is('post')) {
             if (!empty($this->request['data']['mainValue'])) {
                 $this->set('mainValue', $this->request['data']['mainValue']);
-                $documentModel = ClassRegistry::init('Document');
-                $documentModel->recursive = 1;
-                $documents = $documentModel->find('all');
-                $this->set('documents', $documents);
 
                 $languageModel = ClassRegistry::init('Language');
                 $languageModel->recursive = 1;
                 $languages = $languageModel->find('all');
                 $this->set('languages', $languages);
 
-                $this->set('documentFilter', array_key_exists('documentFilter', $this->request['data'])? $this->request['data']['documentFilter'] : 0  );
-
-                if (isset($this->request['data']['documentIds'])) {
-        	        $documentIds = $this->request['data']['documentIds'];
-                } else {
-                    $documentIds = array();
+                $selectedLanguages = array('any');
+                if (array_key_exists('languages', $this->request['data'])) {
+                    $selectedLanguages = $this->request['data']['languages'];
                 }
+                $this->set('selectedLanguages', $selectedLanguages);
 
-                $this->set('documentIds', $documentIds);
-	            $params = explode(',',$this->request['data']['mainValue']);
+                $epoqueModel = ClassRegistry::init('Epoque');
+                $epoqueModel->recursive = 1;
+                $epoques = $epoqueModel->find('all');
+                $this->set('epoques', $epoques);
+
+                $selectedEpoques = array('any');
+                if (array_key_exists('epoques', $this->request['data'])) {
+                    $selectedEpoques = $this->request['data']['epoques'];
+                }
+                $this->set('selectedEpoques', $selectedEpoques);
+
                 $wordModel = ClassRegistry::init('Word');
-                $wordModel->recursive = 2;
-                $options = array('order'=>'case Word.split when 1 then concat(Word.stem, Word.suffix) else Word.text end','conditions'=> array('Word.id IN ('.QueryBuilder::singleWordChoices($params).')'));
-                if (!empty($documentIds)) {
-                    array_push($options['conditions'],'Word.id IN ('.QueryBuilder::singleWordDocuments($documentIds).')');
-                } else {
-                    array_push($options['conditions'],'false');
-                }
 
-                $totalCount = $wordModel->find('count', $options);
-                $this->set('word_count', $totalCount);
+                $mainParams = explode(',',$this->request['data']['mainValue']);
+
+                $totalCount = $wordModel->query(QueryBuilder::matchingWordsCount($mainParams, $selectedLanguages, $selectedEpoques))[0][0]['total_count'];
+                $this->set('wordCount', $totalCount);
 
                 $page = 0;
                 if (!empty($this->request['data']['page'])) {
@@ -159,35 +157,29 @@ class StatisticsController extends AppController {
 
                 $this->set('totalPages', (int) ($totalCount / $this->RESULTS_PER_PAGE) + 1);
                 $this->set('offset', $this->RESULTS_PER_PAGE*$page);
-                $options['limit'] = $this->RESULTS_PER_PAGE;
-                $options['offset'] = $this->RESULTS_PER_PAGE*$page;
+                $limit = $this->RESULTS_PER_PAGE;
+                $offset = $this->RESULTS_PER_PAGE*$page;
 
 
-                $words = $wordModel->find('all', $options);
+                $words = $wordModel->query(QueryBuilder::matchingWordsIds($mainParams, $selectedLanguages, $selectedEpoques, $limit, $offset));
 
-	            $annotatedWords = array();
+	            $wordTexts = array();
 	            $contexts = array();
 
-
                 foreach($words as $word) {
-                    array_push($annotatedWords, new AnnotatedWord($word));
-                    array_push($contexts, $documentModel->query(" select * from documents inner join languages on languages.id = documents.language_id inner join sentences on documents.id = sentences.document_id and sentences.id = ".$word['Word']['sentence_id']." inner join words on sentences.id = words.sentence_id order by words.position;"));
+                    array_push($wordTexts, array(
+                                               'id' => $word['words']['word_id'],
+                                               'text' => $word[0]['word_text']
+                    ));
+                    array_push($contexts, $wordModel->query("select * from documents inner join languages on languages.id = documents.language_id left join epoques on epoques.id = documents.epoque_id inner join sentences on documents.id = sentences.document_id and sentences.id = ".$word['sentences']['sentence_id']." inner join words on sentences.id = words.sentence_id order by words.position;"));
                 }
 
-                if (count($annotatedWords) != count($contexts)) {
-                    die("annotatedWords is of different length than contexts");
-                }
-
-                $this->set('words', $annotatedWords);
+                $this->set('words', $wordTexts);
                 $this->set('contexts', $contexts);
 
-                $wordAnnotationTypeModel = ClassRegistry::init('WordAnnotationType');
-                $wordAnnotationTypeModel->recursive = 0;
-                $this->set('wordAnnotationTypes', $wordAnnotationTypeModel->find('all'));
-
             } else {
-                $this->Session->setFlash("Empty search query, add search criteria for all searched words.");
-                return $this->redirect(array('action' => 'generator'));
+                $this->Session->setFlash("Empty search query, add search criteria for all search fields.");
+                return $this->redirect(array('action' => 'single_generator'));
             }
 
         }
@@ -201,7 +193,6 @@ class StatisticsController extends AppController {
                 $this->set('mainValue', $this->request['data']['mainValue']);
                 $this->set('collocationValue', $this->request['data']['collocationValue']);
                 $this->set('immediate', $this->request['data']['immediate']);
-                $this->set('documentFilter', array_key_exists('documentFilter', $this->request['data'])? $this->request['data']['documentFilter'] : 0  );
                 if ($this->request['data']['immediate'] == 1) {
                     $MAX_DIST = 1;
                 } else {
@@ -214,18 +205,22 @@ class StatisticsController extends AppController {
                 $languages = $languageModel->find('all');
                 $this->set('languages', $languages);
 
-                $documentModel = ClassRegistry::init('Document');
-                $documentModel->recursive = 1;
-                $documents = $documentModel->find('all');
-                $this->set('documents', $documents);
-
-                if (isset($this->request['data']['documentIds'])) {
-        	        $documentIds = $this->request['data']['documentIds'];
-                } else {
-                    $documentIds = array();
+                $selectedLanguages = array('any');
+                if (array_key_exists('languages', $this->request['data'])) {
+                    $selectedLanguages = $this->request['data']['languages'];
                 }
+                $this->set('selectedLanguages', $selectedLanguages);
 
-                $this->set('documentIds', $documentIds);
+                $epoqueModel = ClassRegistry::init('Epoque');
+                $epoqueModel->recursive = 1;
+                $epoques = $epoqueModel->find('all');
+                $this->set('epoques', $epoques);
+
+                $selectedEpoques = array('any');
+                if (array_key_exists('epoques', $this->request['data'])) {
+                    $selectedEpoques = $this->request['data']['epoques'];
+                }
+                $this->set('selectedEpoques', $selectedEpoques);
 
 	            $mainParams = explode(',',$this->request['data']['mainValue']);
 	            $collocationParams = explode(',',$this->request['data']['collocationValue']);
@@ -238,12 +233,12 @@ class StatisticsController extends AppController {
 
                 $sentenceModel = ClassRegistry::init('Sentence');
 
-                $totalCount = $sentenceModel->query(QueryBuilder::matchingSentencesCount($documentIds, $mainParams, $collocationParams, $MAX_DIST, 0))[0][0]['total_count'];
+                $totalCount = $sentenceModel->query(QueryBuilder::matchingSentencesCount($mainParams, $collocationParams, $selectedLanguages, $selectedEpoques, $MAX_DIST, 0))[0][0]['total_count'];
                 $this->set('totalPages', (int) ($totalCount / $this->RESULTS_PER_PAGE) + 1);
                 $this->set('offset', $this->RESULTS_PER_PAGE*$page);
 
 
-                $sentenceIdsRaw = $sentenceModel->query(QueryBuilder::matchingSentencesIds($documentIds, $mainParams, $collocationParams, $MAX_DIST, 0, $this->RESULTS_PER_PAGE, $this->RESULTS_PER_PAGE*$page));
+                $sentenceIdsRaw = $sentenceModel->query(QueryBuilder::matchingSentencesIds($mainParams, $collocationParams, $selectedLanguages, $selectedEpoques, $MAX_DIST, 0, $this->RESULTS_PER_PAGE, $this->RESULTS_PER_PAGE*$page));
 
                 $sentencesWithCollocations = array();
                 foreach ($sentenceIdsRaw as $record) {
@@ -254,8 +249,60 @@ class StatisticsController extends AppController {
                 $this->set('sentencesWithCollocations', $sentencesWithCollocations);
                 $this->set('sentencesTotalCount', $totalCount);
             } else {
-                $this->Session->setFlash("Empty search query, add search criteria for all searched words.");
-                return $this->redirect(array('action' => 'generator'));
+                $this->Session->setFlash("Empty search query, add search criteria for all search fields.");
+                return $this->redirect(array('action' => 'collocations_generator'));
+            }
+        }
+
+    }
+
+    public function proportional() {
+        if ($this->request->is('post')) {
+            if (!empty($this->request['data']['mainValue']) &&
+                !empty($this->request['data']['specificValue'])) {
+                $this->set('mainValue', $this->request['data']['mainValue']);
+                $this->set('specificValue', $this->request['data']['specificValue']);
+
+                $languageModel = ClassRegistry::init('Language');
+                $languageModel->recursive = 1;
+                $languages = $languageModel->find('all');
+                $this->set('languages', $languages);
+
+                $selectedLanguages = array('any');
+                if (array_key_exists('languages', $this->request['data'])) {
+                    $selectedLanguages = $this->request['data']['languages'];
+                }
+                $this->set('selectedLanguages', $selectedLanguages);
+
+                $epoqueModel = ClassRegistry::init('Epoque');
+                $epoqueModel->recursive = 1;
+                $epoques = $epoqueModel->find('all');
+                $this->set('epoques', $epoques);
+
+                $selectedEpoques = array('any');
+                if (array_key_exists('epoques', $this->request['data'])) {
+                    $selectedEpoques = $this->request['data']['epoques'];
+                }
+                $this->set('selectedEpoques', $selectedEpoques);
+
+	            $mainParams = explode(',',$this->request['data']['mainValue']);
+	            $specificParams = array_merge($mainParams,  explode(',',$this->request['data']['specificValue']));
+
+                $wordModel = ClassRegistry::init('Word');
+                $this->set('mainCount', $wordModel->query(QueryBuilder::matchingWordsCount($mainParams, $selectedLanguages, $selectedEpoques))[0][0]['total_count']);
+                $this->set('specificCount', $wordModel->query(QueryBuilder::matchingWordsCount($specificParams, $selectedLanguages, $selectedEpoques))[0][0]['total_count']);
+
+                $tagModel = ClassRegistry::init('WordAnnotationTypeChoice');
+                $tags = array();
+                $rawTags = $tagModel->find('all');
+                foreach ($rawTags as $rawTag) {
+                    $tags[$rawTag['WordAnnotationTypeChoice']['id']] = $rawTag['WordAnnotationTypeChoice']; 
+                }
+                $this->set('tags', $tags);
+
+            } else {
+                $this->Session->setFlash("Empty search query, add search criteria for all search fields.");
+                return $this->redirect(array('action' => 'proportional_generator'));
             }
         }
 
@@ -310,7 +357,7 @@ class StatisticsController extends AppController {
                 $this->set('collocations', $rawCollocations);
                 $this->set('contexts', $contexts);
             } else {
-                $this->Session->setFlash("Empty search query, add search criteria for all searched words.");
+                $this->Session->setFlash("Empty search query, add search criteria for all search fields.");
                 return $this->redirect(array('action' => 'generator'));
             }
         }
@@ -325,18 +372,22 @@ class StatisticsController extends AppController {
     }
 
     public function index() {
-        $documentModel = ClassRegistry::init('Document');
-        $documentModel->recursive = 0;
-        $documents = $documentModel->find('all');
-        $documentIds = array();
-        foreach($documents as $document) {
-            array_push($documentIds, $document['Document']['id']);
-        }
-        $this->set('documentIds', $documentIds);
-
     }
 
-    public function generator() {
+
+    public function single_generator() {
+        $this->prepareGenerator();
+    }
+
+    public function collocations_generator() {
+        $this->prepareGenerator();
+    }
+
+    public function proportional_generator() {
+        $this->prepareGenerator();
+    }
+
+    private function prepareGenerator() {
         $wordAnnotationTypeModel = ClassRegistry::init('WordAnnotationType');
         $wordAnnotationTypes = $wordAnnotationTypeModel->find('all', array('order' => 'position'));
         $this->set('wordAnnotationTypes', $wordAnnotationTypes);

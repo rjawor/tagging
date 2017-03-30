@@ -34,6 +34,10 @@ function enterHandle(e) {
     e.target.value='';
     buttonName = e.target.id+'Button';
     valueName = e.target.id+'Value';
+    addSearchCriterion(selectedValue, buttonName, valueName);
+}
+
+function addSearchCriterion(selectedValue, buttonName, valueName) {
     $("[name=\""+buttonName+"\"][type=\"button\"][value=\""+selectedValue+"\"]").attr('class', 'choice-selected');
     var selected = $("[name=\""+buttonName+"\"][class=\"choice-selected\"]");
     var ids = [];
@@ -43,34 +47,14 @@ function enterHandle(e) {
     $('#'+valueName).val(ids.join());
 }
 
+function addCriterionBeforeSubmit(elementId) {
+    addSearchCriterion($('#'+elementId).val(), elementId+'Button', elementId+'Value');
+
+}
+
 </script>
 
-<h2>Find annotated words</h2>
-
-<label for="singleWord">Add annotation criterion:</label>
-<input id="singleWord" type="text" class="multiple-suggestions-input" value=""/>
-Selected criteria: (clicking on a criterion deletes it) <br/><br/>
-<?php foreach ($choices as $choice) { ?>
-    <input id="<?php echo $choice['id'];?>" name="singleWordButton" type="button" class="choice-inactive" title="<?php echo $choice['description']; ?>" value="<?php echo $choice['value']; ?>" onclick="this.className='choice-inactive';"/>
-<?php } ?>
-<br /><br />
-<?php
-    echo $this->Form->create(false, array('url' => array('controller' => 'statistics', 'action' => 'singleWords')));
-    ?>
-    <input type="hidden" id="singleWordValue" name="data[mainValue]" />
-    <?php
-    foreach($documentIds as $documentId) {
-        echo '<input type="hidden" name="documentIds[]" value="'.$documentId.'" />';
-    }
-    echo $this->Form->end('Find words');
-?>
-
-<br/>
-<br/>
-<br/>
-<hr/>
-<br/>
-<h2>Find 2-word collocations</h2>
+<h2>Find collocations</h2>
 
 <label for="mainWord">First word:</label>
 <input id="mainWord" type="text" class="multiple-suggestions-input" value=""/>
@@ -86,17 +70,11 @@ Selected criteria: (clicking on a criterion deletes it) <br/><br/>
     <input name="collocationWordButton" id="<?php echo $choice['id'];?>" type="button" class="choice-inactive" title="<?php echo $choice['description']; ?>" value="<?php echo $choice['value']; ?>" onclick="this.className='choice-inactive';"/>
 <?php } ?>
 <br /><br />
-<?php
+    <?php
     echo $this->Form->create(false, array('url' => array('controller' => 'statistics', 'action' => 'collocations')));
     ?>
     <input type="hidden" id="mainWordValue" name="data[mainValue]" />
     <input type="hidden" id="collocationWordValue" name="data[collocationValue]" />
     <input type="hidden" name="immediate" value="false" />
 
-    <?php
-    foreach($documentIds as $documentId) {
-        echo '<input type="hidden" name="documentIds[]" value="'.$documentId.'" />';
-    }
-
-    echo $this->Form->end('Find 2-word collocations');
-?>
+    <div class="submit"><input  type="submit" value="Find 2-word collocations" onclick="addCriterionBeforeSubmit('mainWord');addCriterionBeforeSubmit('collocationWord');"/></div></form>

@@ -17,7 +17,72 @@ class QueryBuilder {
         return $result;
     }
 
-    private static function matchingSentencesInnerQuery($documentIds, $mainChoiceIds, $collocationChoiceIds, $maxDist, $twoWay) {
+
+    public static function matchingWordsCount($choiceIds, $languageIds, $epoqueIds) {
+
+        $result = "select count(*) as total_count from (";
+        $result .= QueryBuilder::singleWordsInnerQuery($choiceIds, $languageIds, $epoqueIds);
+        $result .= ") as sub2";
+
+        return $result;
+    }
+
+
+    public static function matchingWordsIds($choiceIds, $languageIds, $epoqueIds, $limit, $offset) {
+
+        $result = QueryBuilder::singleWordsInnerQuery($choiceIds, $languageIds, $epoqueIds);
+        $result .= " limit $limit offset $offset";
+
+        return $result;
+    }
+
+    public static function singleWordsInnerQuery($choiceIds, $languageIds, $epoqueIds) {
+        $wMax = pow(2, count($choiceIds)) - 1;
+        $result = "select documents.id as document_id,
+               sentences.id as sentence_id,
+               words.id as word_id,
+               (case words.split when 1 then concat(words.stem, words.suffix) else words.text end) as word_text,
+               words.position,
+               sum(
+                   case word_annotation_type_choices_word_annotations.word_annotation_type_choice_id ";
+                   $counter = 0;
+                   foreach ($choiceIds as $choiceId) {
+                       $power2 = pow(2,$counter);
+                       $result .= "when $choiceId then $power2\n";
+                       $counter++;
+                   }
+    $result.="
+                       else 0
+                   end
+               ) as criteria_mask
+
+        from
+            documents
+            inner join sentences on documents.id = sentences.document_id";
+            if(!in_array('any', $languageIds)) {
+                $result .= " and documents.language_id in (".implode(",", $languageIds).") ";
+            }
+            if(!in_array('any', $epoqueIds)) {
+                $result .= " and documents.epoque_id in (".implode(",", $epoqueIds).") ";
+            }
+            $result.="
+            inner join words on sentences.id = words.sentence_id
+            inner join word_annotations on words.id = word_annotations.word_id
+            inner join word_annotation_type_choices_word_annotations on word_annotations.id = word_annotation_type_choices_word_annotations.word_annotation_id
+
+        group by
+            documents.id,
+            sentences.id,
+            words.id
+
+        having
+            criteria_mask = $wMax
+
+        order by documents.id, sentences.id, words.position";
+        return $result;
+    }
+
+    private static function matchingSentencesInnerQuery($mainChoiceIds, $collocationChoiceIds, $languageIds, $epoqueIds, $maxDist, $twoWay) {
         $w1Max = pow(2, count($mainChoiceIds)) - 1;
         $w2Max = pow(2, count($collocationChoiceIds)) - 1;
 
@@ -59,11 +124,12 @@ class QueryBuilder {
             from
                 documents
                 inner join sentences on documents.id = sentences.document_id";
-        if (!empty($documentIds)) {
-            $result .= " AND `sentences`.`document_id` IN (".implode(',', $documentIds).") ";
-        } else {
-            $result .= " AND false ";
-        }
+                if(!in_array('any', $languageIds)) {
+                    $result .= " and documents.language_id in (".implode(",", $languageIds).") ";
+                }
+                if(!in_array('any', $epoqueIds)) {
+                    $result .= " and documents.epoque_id in (".implode(",", $epoqueIds).") ";
+                }
         $result .="
                 inner join words on sentences.id = words.sentence_id
                 inner join word_annotations on words.id = word_annotations.word_id
@@ -98,6 +164,7 @@ class QueryBuilder {
         select documents.id,
                documents.name,
                languages.code,
+               epoques.name,
                sentences.id,
                words.id,
                case words.split when 1 then concat(words.stem, '|', words.suffix) else words.text end as word_text,
@@ -130,6 +197,7 @@ class QueryBuilder {
         from
             documents
             inner join sentences on documents.id = sentences.document_id and sentences.id = $sentenceId inner join languages on languages.id = documents.language_id
+            left join epoques on epoques.id = documents.epoque_id
             inner join words on sentences.id = words.sentence_id
             left join word_annotations on words.id = word_annotations.word_id
             left join word_annotation_type_choices_word_annotations on word_annotation_type_choices_word_annotations.word_annotation_id = word_annotations.id
@@ -142,19 +210,19 @@ class QueryBuilder {
         return $result;
     }
 
-    public static function matchingSentencesCount($documentIds, $mainChoiceIds, $collocationChoiceIds, $maxDist, $twoWay) {
+    public static function matchingSentencesCount($mainChoiceIds, $collocationChoiceIds, $languageIds, $epoqueIds, $maxDist, $twoWay) {
 
         $result = "select count(*) as total_count from (";
-        $result .= QueryBuilder::matchingSentencesInnerQuery($documentIds, $mainChoiceIds, $collocationChoiceIds, $maxDist, $twoWay);
+        $result .= QueryBuilder::matchingSentencesInnerQuery($mainChoiceIds, $collocationChoiceIds, $languageIds, $epoqueIds, $maxDist, $twoWay);
         $result .= ") as sub2";
 
         return $result;
     }
 
 
-    public static function matchingSentencesIds($documentIds, $mainChoiceIds, $collocationChoiceIds, $maxDist, $twoWay, $limit, $offset) {
+    public static function matchingSentencesIds($mainChoiceIds, $collocationChoiceIds, $languageIds, $epoqueIds, $maxDist, $twoWay, $limit, $offset) {
 
-        $result = QueryBuilder::matchingSentencesInnerQuery($documentIds, $mainChoiceIds, $collocationChoiceIds, $maxDist, $twoWay);
+        $result = QueryBuilder::matchingSentencesInnerQuery($mainChoiceIds, $collocationChoiceIds, $languageIds, $epoqueIds, $maxDist, $twoWay);
         $result .= " limit $limit offset $offset";
 
         return $result;

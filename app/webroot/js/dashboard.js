@@ -1,3 +1,34 @@
+function epoqueCheckboxAnyClicked() {
+    $('.epoqueCheckbox').prop('checked', false);
+    setPage(0);
+    document.getElementById('filter_form').submit();
+}
+
+
+function epoqueCheckboxClicked() {
+    $('#epoqueAny').prop('checked', false);
+    setPage(0);
+    document.getElementById('filter_form').submit();
+}
+
+function langCheckboxAnyClicked() {
+    $('.langCheckbox').prop('checked', false);
+    setPage(0);
+    document.getElementById('filter_form').submit();
+}
+
+
+function langCheckboxClicked() {
+    $('#langAny').prop('checked', false);
+    setPage(0);
+    document.getElementById('filter_form').submit();
+}
+
+function setPage(pageNumber) {
+    $('#page_number').val(pageNumber);
+    document.getElementById('filter_form').submit();
+}
+
 function decreasePage() {
     $('#page_number').val( function(i, oldval) {
         if (parseInt(oldval) > 0) {
@@ -6,6 +37,7 @@ function decreasePage() {
             return oldval;
         }
     });
+    document.getElementById('filter_form').submit();
 }
 function increasePage() {
     $('#page_number').val( function(i, oldval) {
@@ -16,6 +48,7 @@ function increasePage() {
             return oldval;
         }
     });
+    document.getElementById('filter_form').submit();
 }
 
 function moveToFolder(selectElement, documentId) {
