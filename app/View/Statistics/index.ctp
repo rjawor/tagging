@@ -70,7 +70,7 @@ In order to list words tagged in a specific way (i.e. singular nouns),<br/>
     	    }
             echo "</ul>";
     	}?>
-        <?php if (array_key_exists('proportions', $positon) && count($position['proportions']) > 0) {
+        <?php if (array_key_exists('proportions', $position) && count($position['proportions']) > 0) {
             echo "<ul>";
     	    foreach ($position['proportions'] as $proportion) {
     	        ?>
