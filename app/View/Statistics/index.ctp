@@ -4,7 +4,7 @@
 
 <h2>Statistics generator</h2>
 <p>
-Welcome to the statistics generator. Here you can generate any kind of reports and statistics that suit your needs. Be sure to check the <a href="#">help section about statitics</a>.
+Welcome to the statistics generator. Here you can generate any kind of reports and statistics that suit your needs. Be sure to check the <a href="http://rjawor.vm.wmi.amu.edu.pl/wiki/index.php/User%27s_manual#Statistics" target="_blank">help section about statitics</a>.
 </p>
 <p>
 In order to list words tagged in a specific way (i.e. singular nouns),<br/>
