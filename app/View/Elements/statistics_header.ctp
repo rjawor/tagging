@@ -29,7 +29,7 @@
             </td>
             <td style="max-width:none">
                 <input <?php if(in_array('any', $selectedDocuments)) echo "checked";  ?> style="float:none" onclick="documentCheckboxAnyClicked();" id="documentAny" type="checkbox" name="data[documents][]" value="any"><i>Any</i>
-                <div id="documentFilterArea" style="height:300px;overflow-y:auto">
+                <div id="documentFilterArea" style="max-height:300px;overflow-y:auto">
                     <table>
                     <?php
                         $docsPerRow = 5;
