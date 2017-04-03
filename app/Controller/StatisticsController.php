@@ -115,40 +115,80 @@ class StatisticsController extends AppController {
             $this->set('sentences', $sentences);
         }
 	}
+
+    private function prepareFilter() {
+        $languageModel = ClassRegistry::init('Language');
+        $languageModel->recursive = 1;
+        $languages = $languageModel->find('all');
+        $this->set('languages', $languages);
+
+        $selectedLanguages = array('any');
+        if (array_key_exists('languages', $this->request['data'])) {
+            $selectedLanguages = $this->request['data']['languages'];
+        }
+        $this->set('selectedLanguages', $selectedLanguages);
+
+        $epoqueModel = ClassRegistry::init('Epoque');
+        $epoqueModel->recursive = 1;
+        $epoques = $epoqueModel->find('all');
+        $this->set('epoques', $epoques);
+
+        $selectedEpoques = array('any');
+        if (array_key_exists('epoques', $this->request['data'])) {
+            $selectedEpoques = $this->request['data']['epoques'];
+        }
+        $this->set('selectedEpoques', $selectedEpoques);
+
+        $documentModel = ClassRegistry::init('Document');
+        $documentModel->recursive = 1;
+        $conditions = array();
+        if (!in_array('any', $selectedLanguages)) {
+            $conditions['Document.language_id'] = $selectedLanguages;
+        }
+        if (!in_array('any', $selectedEpoques)) {
+            $conditions['Document.epoque_id'] = $selectedEpoques;
+        }
+        $options = array();
+        if (count($conditions > 0)) {
+            $options['conditions'] = $conditions;
+        }
+        $documents = $documentModel->find('all', $options);
+        $this->set('documents', $documents);
+
+        $selectedDocuments = array('any');
+        if (array_key_exists('documents', $this->request['data'])) {
+            $selectedDocuments = $this->request['data']['documents'];
+        }
+        $this->set('selectedDocuments', $selectedDocuments);
+
+        if (array_key_exists('documentsScrollTop', $this->request['data'])) {
+            $this->set('documentsScrollTop', $this->request['data']['documentsScrollTop']);
+        } else {
+            $this->set('documentsScrollTop',0);
+        }
+
+        return array(
+                'selectedLanguages' => $selectedLanguages,
+                'selectedEpoques' => $selectedEpoques,
+                'selectedDocuments' => $selectedDocuments
+        );
+
+    }
+
     public function singleWords() {
         if ($this->request->is('post')) {
             if (!empty($this->request['data']['mainValue'])) {
                 $this->set('mainValue', $this->request['data']['mainValue']);
                 $this->set('initial', $this->request['data']['initial']);
 
-                $languageModel = ClassRegistry::init('Language');
-                $languageModel->recursive = 1;
-                $languages = $languageModel->find('all');
-                $this->set('languages', $languages);
-
-                $selectedLanguages = array('any');
-                if (array_key_exists('languages', $this->request['data'])) {
-                    $selectedLanguages = $this->request['data']['languages'];
-                }
-                $this->set('selectedLanguages', $selectedLanguages);
-
-                $epoqueModel = ClassRegistry::init('Epoque');
-                $epoqueModel->recursive = 1;
-                $epoques = $epoqueModel->find('all');
-                $this->set('epoques', $epoques);
-
-                $selectedEpoques = array('any');
-                if (array_key_exists('epoques', $this->request['data'])) {
-                    $selectedEpoques = $this->request['data']['epoques'];
-                }
-                $this->set('selectedEpoques', $selectedEpoques);
+                $filter = $this->prepareFilter();
 
                 $wordModel = ClassRegistry::init('Word');
 
                 $mainParams = explode(',',$this->request['data']['mainValue']);
                 $initial = $this->request['data']['initial'];
 
-                $totalCount = $wordModel->query(QueryBuilder::matchingWordsCount($mainParams, $selectedLanguages, $selectedEpoques, $initial))[0][0]['total_count'];
+                $totalCount = $wordModel->query(QueryBuilder::matchingWordsCount($mainParams, $filter, $initial))[0][0]['total_count'];
                 $this->set('wordCount', $totalCount);
 
                 $page = 0;
@@ -163,7 +203,7 @@ class StatisticsController extends AppController {
                 $offset = $this->RESULTS_PER_PAGE*$page;
 
 
-                $words = $wordModel->query(QueryBuilder::matchingWordsIds($mainParams, $selectedLanguages, $selectedEpoques, $initial, $limit, $offset));
+                $words = $wordModel->query(QueryBuilder::matchingWordsIds($mainParams, $filter, $initial, $limit, $offset));
 
 	            $wordTexts = array();
 	            $contexts = array();
@@ -202,27 +242,7 @@ class StatisticsController extends AppController {
                     $MAX_DIST = 0;
                 }
 
-                $languageModel = ClassRegistry::init('Language');
-                $languageModel->recursive = 1;
-                $languages = $languageModel->find('all');
-                $this->set('languages', $languages);
-
-                $selectedLanguages = array('any');
-                if (array_key_exists('languages', $this->request['data'])) {
-                    $selectedLanguages = $this->request['data']['languages'];
-                }
-                $this->set('selectedLanguages', $selectedLanguages);
-
-                $epoqueModel = ClassRegistry::init('Epoque');
-                $epoqueModel->recursive = 1;
-                $epoques = $epoqueModel->find('all');
-                $this->set('epoques', $epoques);
-
-                $selectedEpoques = array('any');
-                if (array_key_exists('epoques', $this->request['data'])) {
-                    $selectedEpoques = $this->request['data']['epoques'];
-                }
-                $this->set('selectedEpoques', $selectedEpoques);
+                $filter = $this->prepareFilter();
 
 	            $mainParams = explode(',',$this->request['data']['mainValue']);
 	            $collocationParams = explode(',',$this->request['data']['collocationValue']);
@@ -235,12 +255,12 @@ class StatisticsController extends AppController {
 
                 $sentenceModel = ClassRegistry::init('Sentence');
 
-                $totalCount = $sentenceModel->query(QueryBuilder::matchingSentencesCount($mainParams, $collocationParams, $selectedLanguages, $selectedEpoques, $MAX_DIST, 0))[0][0]['total_count'];
+                $totalCount = $sentenceModel->query(QueryBuilder::matchingSentencesCount($mainParams, $collocationParams, $filter, $MAX_DIST, 0))[0][0]['total_count'];
                 $this->set('totalPages', (int) ($totalCount / $this->RESULTS_PER_PAGE) + 1);
                 $this->set('offset', $this->RESULTS_PER_PAGE*$page);
 
 
-                $sentenceIdsRaw = $sentenceModel->query(QueryBuilder::matchingSentencesIds($mainParams, $collocationParams, $selectedLanguages, $selectedEpoques, $MAX_DIST, 0, $this->RESULTS_PER_PAGE, $this->RESULTS_PER_PAGE*$page));
+                $sentenceIdsRaw = $sentenceModel->query(QueryBuilder::matchingSentencesIds($mainParams, $collocationParams, $filter, $MAX_DIST, 0, $this->RESULTS_PER_PAGE, $this->RESULTS_PER_PAGE*$page));
 
                 $sentencesWithCollocations = array();
                 foreach ($sentenceIdsRaw as $record) {

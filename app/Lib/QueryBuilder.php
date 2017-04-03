@@ -18,25 +18,25 @@ class QueryBuilder {
     }
 
 
-    public static function matchingWordsCount($choiceIds, $languageIds, $epoqueIds, $initial) {
+    public static function matchingWordsCount($choiceIds, $filter, $initial) {
 
         $result = "select count(*) as total_count from (";
-        $result .= QueryBuilder::singleWordsInnerQuery($choiceIds, $languageIds, $epoqueIds, $initial);
+        $result .= QueryBuilder::singleWordsInnerQuery($choiceIds, $filter, $initial);
         $result .= ") as sub2";
 
         return $result;
     }
 
 
-    public static function matchingWordsIds($choiceIds, $languageIds, $epoqueIds, $initial, $limit, $offset) {
+    public static function matchingWordsIds($choiceIds, $filter, $initial, $limit, $offset) {
 
-        $result = QueryBuilder::singleWordsInnerQuery($choiceIds, $languageIds, $epoqueIds, $initial);
+        $result = QueryBuilder::singleWordsInnerQuery($choiceIds, $filter, $initial);
         $result .= " limit $limit offset $offset";
 
         return $result;
     }
 
-    public static function singleWordsInnerQuery($choiceIds, $languageIds, $epoqueIds, $initial) {
+    public static function singleWordsInnerQuery($choiceIds, $filter, $initial) {
         $wMax = pow(2, count($choiceIds)) - 1;
         $result = "select documents.id as document_id,
                sentences.id as sentence_id,
@@ -59,18 +59,21 @@ class QueryBuilder {
         from
             documents
             inner join sentences on documents.id = sentences.document_id";
-            if(!in_array('any', $languageIds)) {
-                $result .= " and documents.language_id in (".implode(",", $languageIds).") ";
+            if(!in_array('any', $filter['selectedLanguages'])) {
+                $result .= " and documents.language_id in (".implode(",", $filter['selectedLanguages']).") ";
             }
-            if(!in_array('any', $epoqueIds)) {
-                $result .= " and documents.epoque_id in (".implode(",", $epoqueIds).") ";
+            if(!in_array('any', $filter['selectedEpoques'])) {
+                $result .= " and documents.epoque_id in (".implode(",", $filter['selectedEpoques']).") ";
+            }
+            if(!in_array('any', $filter['selectedDocuments'])) {
+                $result .= " and documents.id in (".implode(",", $filter['selectedDocuments']).") ";
             }
             $result.="
             inner join words on sentences.id = words.sentence_id";
             if ($initial == 1) {
                 $result.=" and words.position = 0 ";
             } else  if ($initial == 2) {
-                $result.=" and words.position > 0 ";                
+                $result.=" and words.position > 0 ";
             }
     $result.="
             inner join word_annotations on words.id = word_annotations.word_id
@@ -88,7 +91,7 @@ class QueryBuilder {
         return $result;
     }
 
-    private static function matchingSentencesInnerQuery($mainChoiceIds, $collocationChoiceIds, $languageIds, $epoqueIds, $maxDist, $twoWay) {
+    private static function matchingSentencesInnerQuery($mainChoiceIds, $collocationChoiceIds, $filter, $maxDist, $twoWay) {
         $w1Max = pow(2, count($mainChoiceIds)) - 1;
         $w2Max = pow(2, count($collocationChoiceIds)) - 1;
 
@@ -130,11 +133,14 @@ class QueryBuilder {
             from
                 documents
                 inner join sentences on documents.id = sentences.document_id";
-                if(!in_array('any', $languageIds)) {
-                    $result .= " and documents.language_id in (".implode(",", $languageIds).") ";
+                if(!in_array('any', $filter['selectedLanguages'])) {
+                    $result .= " and documents.language_id in (".implode(",", $filter['selectedLanguages']).") ";
                 }
-                if(!in_array('any', $epoqueIds)) {
-                    $result .= " and documents.epoque_id in (".implode(",", $epoqueIds).") ";
+                if(!in_array('any', $filter['selectedEpoques'])) {
+                    $result .= " and documents.epoque_id in (".implode(",", $filter['selectedEpoques']).") ";
+                }
+                if(!in_array('any', $filter['selectedDocuments'])) {
+                    $result .= " and documents.id in (".implode(",", $filter['selectedDocuments']).") ";
                 }
         $result .="
                 inner join words on sentences.id = words.sentence_id
@@ -216,19 +222,19 @@ class QueryBuilder {
         return $result;
     }
 
-    public static function matchingSentencesCount($mainChoiceIds, $collocationChoiceIds, $languageIds, $epoqueIds, $maxDist, $twoWay) {
+    public static function matchingSentencesCount($mainChoiceIds, $collocationChoiceIds, $filter, $maxDist, $twoWay) {
 
         $result = "select count(*) as total_count from (";
-        $result .= QueryBuilder::matchingSentencesInnerQuery($mainChoiceIds, $collocationChoiceIds, $languageIds, $epoqueIds, $maxDist, $twoWay);
+        $result .= QueryBuilder::matchingSentencesInnerQuery($mainChoiceIds, $collocationChoiceIds, $filter, $maxDist, $twoWay);
         $result .= ") as sub2";
 
         return $result;
     }
 
 
-    public static function matchingSentencesIds($mainChoiceIds, $collocationChoiceIds, $languageIds, $epoqueIds, $maxDist, $twoWay, $limit, $offset) {
+    public static function matchingSentencesIds($mainChoiceIds, $collocationChoiceIds, $filter, $maxDist, $twoWay, $limit, $offset) {
 
-        $result = QueryBuilder::matchingSentencesInnerQuery($mainChoiceIds, $collocationChoiceIds, $languageIds, $epoqueIds, $maxDist, $twoWay);
+        $result = QueryBuilder::matchingSentencesInnerQuery($mainChoiceIds, $collocationChoiceIds, $filter, $maxDist, $twoWay);
         $result .= " limit $limit offset $offset";
 
         return $result;

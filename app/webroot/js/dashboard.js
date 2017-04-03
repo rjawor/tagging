@@ -1,32 +1,53 @@
+function documentCheckboxAnyClicked() {
+    $('.documentCheckbox').prop('checked', false);
+    setPage(0);
+    submitFilterForm();
+}
+
+
+function documentCheckboxClicked() {
+    $('#documentAny').prop('checked', false);
+    setPage(0);
+}
+
+
 function epoqueCheckboxAnyClicked() {
     $('.epoqueCheckbox').prop('checked', false);
     setPage(0);
-    document.getElementById('filter_form').submit();
+    submitFilterForm();
 }
 
 
 function epoqueCheckboxClicked() {
     $('#epoqueAny').prop('checked', false);
     setPage(0);
-    document.getElementById('filter_form').submit();
+    // Narrowing epoque filter may cause some selected documents
+    // to become invisible, yet active in the sql conditions.
+    // It is necessary to clear the document filter.
+    $('#documentAny').prop('checked', true);
+    documentCheckboxAnyClicked();
 }
 
 function langCheckboxAnyClicked() {
     $('.langCheckbox').prop('checked', false);
     setPage(0);
-    document.getElementById('filter_form').submit();
+    submitFilterForm();
 }
 
 
 function langCheckboxClicked() {
     $('#langAny').prop('checked', false);
     setPage(0);
-    document.getElementById('filter_form').submit();
+    // Narrowing language filter may cause some selected documents
+    // to become invisible, yet active in the sql conditions.
+    // It is necessary to clear the document filter.
+    $('#documentAny').prop('checked', true);
+    documentCheckboxAnyClicked();
 }
 
 function setPage(pageNumber) {
     $('#page_number').val(pageNumber);
-    document.getElementById('filter_form').submit();
+    submitFilterForm();
 }
 
 function decreasePage() {
@@ -37,7 +58,7 @@ function decreasePage() {
             return oldval;
         }
     });
-    document.getElementById('filter_form').submit();
+    submitFilterForm();
 }
 function increasePage() {
     $('#page_number').val( function(i, oldval) {
@@ -48,6 +69,11 @@ function increasePage() {
             return oldval;
         }
     });
+    submitFilterForm();
+}
+
+function submitFilterForm() {
+    $('#documentsScrollTop').val($('#documentFilterArea').scrollTop());
     document.getElementById('filter_form').submit();
 }
 
