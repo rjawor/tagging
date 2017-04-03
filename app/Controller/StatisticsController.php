@@ -297,35 +297,14 @@ class StatisticsController extends AppController {
                 $this->set('initial', $initial);
                 $this->set('initialSpecific', $this->request['data']['initialSpecific']);
 
-                $languageModel = ClassRegistry::init('Language');
-                $languageModel->recursive = 1;
-                $languages = $languageModel->find('all');
-                $this->set('languages', $languages);
-
-                $selectedLanguages = array('any');
-                if (array_key_exists('languages', $this->request['data'])) {
-                    $selectedLanguages = $this->request['data']['languages'];
-                }
-                $this->set('selectedLanguages', $selectedLanguages);
-
-                $epoqueModel = ClassRegistry::init('Epoque');
-                $epoqueModel->recursive = 1;
-                $epoques = $epoqueModel->find('all');
-                $this->set('epoques', $epoques);
-
-                $selectedEpoques = array('any');
-                if (array_key_exists('epoques', $this->request['data'])) {
-                    $selectedEpoques = $this->request['data']['epoques'];
-                }
-                $this->set('selectedEpoques', $selectedEpoques);
-
+                $filter = $this->prepareFilter();
 	            $mainParams = explode(',',$this->request['data']['mainValue']);
 
 	            $specificParams = array_merge($mainParams,  explode(',',$this->request['data']['specificValue']));
 
                 $wordModel = ClassRegistry::init('Word');
-                $this->set('mainCount', $wordModel->query(QueryBuilder::matchingWordsCount($mainParams, $selectedLanguages, $selectedEpoques, $initial))[0][0]['total_count']);
-                $this->set('specificCount', $wordModel->query(QueryBuilder::matchingWordsCount($specificParams, $selectedLanguages, $selectedEpoques, $initialSpecific))[0][0]['total_count']);
+                $this->set('mainCount', $wordModel->query(QueryBuilder::matchingWordsCount($mainParams, $filter, $initial))[0][0]['total_count']);
+                $this->set('specificCount', $wordModel->query(QueryBuilder::matchingWordsCount($specificParams, $filter, $initialSpecific))[0][0]['total_count']);
 
                 $tagModel = ClassRegistry::init('WordAnnotationTypeChoice');
                 $tags = array();
