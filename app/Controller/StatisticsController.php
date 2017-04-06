@@ -31,37 +31,27 @@ class StatisticsController extends AppController {
 
     public function words_add_info() {
         if ($this->request->is('post')) {
-            $documentModel = ClassRegistry::init('Document');
-            $documentModel->recursive = 1;
-            $documents = $documentModel->find('all');
-            $this->set('documents', $documents);
-
-            $languageModel = ClassRegistry::init('Language');
-            $languageModel->recursive = 1;
-            $languages = $languageModel->find('all');
-            $this->set('languages', $languages);
-
-            $this->set('documentFilter', array_key_exists('documentFilter', $this->request['data'])? $this->request['data']['documentFilter'] : 0  );
-
-            if (isset($this->request['data']['documentIds'])) {
-    	        $documentIds = $this->request['data']['documentIds'];
-            } else {
-                $documentIds = array();
-            }
-
-            $this->set('documentIds', $documentIds);
+            $filter = $this->prepareFilter();
 
             $wordModel = ClassRegistry::init('Words');
 
             $query = "select * from documents inner join sentences on documents.id = sentences.document_id inner join words on sentences.id = words.sentence_id inner join word_annotations on words.id = word_annotations.word_id and word_annotations.type_id = 8 and word_annotations.text_value != ''";
             $queryCount = "select count(*) as total from documents inner join sentences on documents.id = sentences.document_id inner join words on sentences.id = words.sentence_id inner join word_annotations on words.id = word_annotations.word_id and word_annotations.type_id = 8 and word_annotations.text_value != ''";
-            if (count($documentIds) > 0) {
-            	$query = $query." where documents.id in (".join(',', $documentIds).")";
-                $queryCount = $queryCount." where documents.id in (".join(',', $documentIds).")";
+            if (!in_array('any', $filter['selectedLanguages'])) {
+            	$query = $query." and documents.language_id in (".join(',', $filter['selectedLanguages']).")";
+                $queryCount = $queryCount." and documents.language_id in (".join(',', $filter['selectedLanguages']).")";
+            }
+            if (!in_array('any', $filter['selectedEpoques'])) {
+            	$query = $query." and documents.epoque_id in (".join(',', $filter['selectedEpoques']).")";
+                $queryCount = $queryCount." and documents.epoque_id in (".join(',', $filter['selectedEpoques']).")";
+            }
+            if (!in_array('any', $filter['selectedDocuments'])) {
+            	$query = $query." and documents.id in (".join(',', $filter['selectedDocuments']).")";
+                $queryCount = $queryCount." and documents.id in (".join(',', $filter['selectedDocuments']).")";
             }
 
             $totalCount = (int) $wordModel->query($queryCount)[0][0]['total'];
-            $this->set('word_count', $totalCount);
+            $this->set('wordCount', $totalCount);
 
             $page = 0;
             if (!empty($this->request['data']['page'])) {
