@@ -1,37 +1,25 @@
-<form method="post" id="filter_form">
-    <input id="documentFilterInput" type="hidden" name="data[documentFilter]" value="<?php echo $documentFilter; ?>" />
-    <a href="#" onclick="toggleDocumentFilter();">Show/hide document filtering</a>
-    <span id="documentFilter" style="display:<?= !empty($documentFilter) && $documentFilter ? "inline":"none" ?>">
-        <h3>Show collocations only from the following documents:</h3>
-        <input type="button" value="select all" onclick="selectAll();" />&nbsp;<input type="button" value="select none" onclick="selectNone();"/>&nbsp;Select by language:&nbsp;
-        <?php foreach ($languages as $language) { ?>
-        <a href="#" onclick="selectByLang('<?= $language['Language']['code'] ?>');"><?= $language['Language']['description'] ?></a>
-        <?php } ?>
-        <table>
-            <tr>
-                <th></th>
-                <th>Document name</th>
-                <th>Document language</th>
-            </tr>
-        <?php
-        foreach ($documents as $document) {
-            ?>
-            <tr>
-                <td style="vertical-align:middle"><input class="checkboxDoc<?= $document['Language']['code'] ?>" onclick="document.getElementById('filter_form').submit()" type="checkbox" name="data[documentIds][]" value="<?php echo $document['Document']['id']; ?>" <?php if (in_array($document['Document']['id'], $documentIds)){echo "checked='checked'";}?>/></td>
-                <td><?php echo $document['Document']['name']; ?></td>
-                <td><?php echo $document['Language']['code']; ?></td>
-            </tr>
-            <?php
-        }
-        ?>
-        </table>
-    </span>
-</form>
-
-<br/><br/>
-
-
 <h3>Sentences with "add info"</h3>
+
+<?php
+    echo $this->element('statistics_header',
+        array(
+            'mainValue' => 0,
+            'initial' => 0,
+            'collocationValue' => 0,
+            'specificValue' => 0,
+            'initialSpecific' => 0,
+            'immediate' => 0,
+            'page' => 0,
+            'totalPages' => 0,
+            'itemName' => 'sentences',
+            'itemTotalCount' => 0,
+            'selectedLanguages' => $selectedLanguages,
+            'selectedEpoques' => $selectedEpoques,
+            'enablePagination' => false
+
+        )
+    );
+?>
 
 
 <?php foreach($sentences as $sentence): ?>
