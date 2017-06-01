@@ -1,12 +1,21 @@
 <form method="post" id="filter_form">
     <input type="hidden" name="data[mainValue]" value="<?php echo $mainValue; ?>" />
-    <input type="hidden" name="data[initial]" value="<?php echo $initial; ?>" />
     <input type="hidden" name="data[collocationValue]" value="<?php echo $collocationValue; ?>" />
+    <input type="hidden" name="data[initial]" value="<?php echo $initial; ?>" />
     <input type="hidden" name="data[specificValue]" value="<?php echo $specificValue; ?>" />
     <input type="hidden" name="data[initialSpecific]" value="<?php echo $initialSpecific; ?>" />
     <input type="hidden" name="data[immediate]" value="<?php echo $immediate; ?>" />
     <input id="page_number" type="hidden" name="data[page]" value="<?php echo $page; ?>" />
     <input id="total_pages" type="hidden"value="<?php echo $totalPages; ?>" />
+    <?php
+    if (isset($wordValues)) {
+        foreach($wordValues as $wordValue) {
+            ?>
+            <input type="hidden" name="data[wordValues][]" value="<?= $wordValue ?>" />
+            <?php
+        }
+    }
+    ?>
     <h4>Narrow by:</h4>
     <table>
         <tr>

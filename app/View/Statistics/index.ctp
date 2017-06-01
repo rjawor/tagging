@@ -43,8 +43,8 @@ In order to list words tagged in a specific way (i.e. singular nouns),<br/>
     	        ?>
                 <li style="margin:1em 0">
                     <form method="post" name="<?php echo $position['main']['short'].'_'.$collocation['desc']; ?>" action="<?= Configure::read('SystemInstallationPath') ?>/statistics/collocations">
-		            <input type="hidden" name="mainValue" value="<?php echo $position['main']['value'];?>"/>
-		            <input type="hidden" name="collocationValue" value="<?php echo $collocation['value'];?>"/>
+		            <input type="hidden" name="wordValues[]" value="<?php echo $position['main']['value'];?>"/>
+		            <input type="hidden" name="wordValues[]" value="<?php echo $collocation['value'];?>"/>
 		            <input type="hidden" name="immediate" value="<?php echo isset($collocation['immediate']);?>"/>
 	                </form>
 	                <a href="#" onclick="document.forms['<?php echo $position['main']['short'].'_'.$collocation['desc']; ?>'].submit()" ><?php echo $position['main']['short'].' + '.$collocation['desc']; ?></a>
@@ -53,8 +53,8 @@ In order to list words tagged in a specific way (i.e. singular nouns),<br/>
 	                ?>
                     <li>
                         <form method="post" name="<?php echo $position['main']['short'].'_'.$collocation['desc'].'_including'; ?>" action="<?= Configure::read('SystemInstallationPath') ?>/statistics/collocations">
-                        <input type="hidden" name="mainValue" value="<?php echo $position['main']['value'].','.$position['including']['value'];?>"/>
-                        <input type="hidden" name="collocationValue" value="<?php echo $collocation['value'];?>"/>
+                        <input type="hidden" name="wordValues[]" value="<?php echo $position['main']['value'].','.$position['including']['value'];?>"/>
+                        <input type="hidden" name="wordValues[]" value="<?php echo $collocation['value'];?>"/>
                         <input type="hidden" name="immediate" value="<?php echo isset($collocation['immediate']);?>"/>
                         </form>
                         including: <a href="#" onclick="document.forms['<?php echo $position['main']['short'].'_'.$collocation['desc'].'_including'; ?>'].submit()"><?php echo $position['including']['short'].' + '.$collocation['desc']; ?></a>

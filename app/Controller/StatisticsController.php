@@ -204,10 +204,9 @@ class StatisticsController extends AppController {
 
     public function collocations() {
         if ($this->request->is('post')) {
-            if (!empty($this->request['data']['mainValue']) &&
-                !empty($this->request['data']['collocationValue'])) {
-                $this->set('mainValue', $this->request['data']['mainValue']);
-                $this->set('collocationValue', $this->request['data']['collocationValue']);
+            if (!empty($this->request['data']['wordValues'][0]) &&
+                !empty($this->request['data']['wordValues'][1])) {
+                $this->set('wordValues', $this->request['data']['wordValues']);
                 $this->set('immediate', $this->request['data']['immediate']);
                 if ($this->request['data']['immediate'] == 1) {
                     $MAX_DIST = 1;
@@ -218,8 +217,6 @@ class StatisticsController extends AppController {
 
                 $filter = $this->prepareFilter();
 
-	            $mainParams = explode(',',$this->request['data']['mainValue']);
-	            $collocationParams = explode(',',$this->request['data']['collocationValue']);
 
                 $page = 0;
                 if (!empty($this->request['data']['page'])) {
@@ -229,23 +226,23 @@ class StatisticsController extends AppController {
 
                 $sentenceModel = ClassRegistry::init('Sentence');
 
-                $totalCount = $sentenceModel->query(QueryBuilder::matchingSentencesCount($mainParams, $collocationParams, $filter, $MAX_DIST, 0))[0][0]['total_count'];
+                $totalCount = $sentenceModel->query(QueryBuilder::matchingSentencesCount($this->request['data']['wordValues'], $filter, $MAX_DIST, 0))[0][0]['total_count'];
                 $this->set('totalPages', (int) ($totalCount / $this->RESULTS_PER_PAGE) + 1);
                 $this->set('offset', $this->RESULTS_PER_PAGE*$page);
 
 
-                $sentenceIdsRaw = $sentenceModel->query(QueryBuilder::matchingSentencesIds($mainParams, $collocationParams, $filter, $MAX_DIST, 0, $this->RESULTS_PER_PAGE, $this->RESULTS_PER_PAGE*$page));
+                $sentenceIdsRaw = $sentenceModel->query(QueryBuilder::matchingSentencesIds($this->request['data']['wordValues'], $filter, $MAX_DIST, 0, $this->RESULTS_PER_PAGE, $this->RESULTS_PER_PAGE*$page));
 
                 $sentencesWithCollocations = array();
                 foreach ($sentenceIdsRaw as $record) {
                     $sentenceId = $record['sub']['sentence_id'];
-                    array_push($sentencesWithCollocations, $sentenceModel->query(QueryBuilder::sentenceWithCollocations($sentenceId, $mainParams, $collocationParams)));
+                    array_push($sentencesWithCollocations, $sentenceModel->query(QueryBuilder::sentenceWithCollocations($sentenceId, $this->request['data']['wordValues'])));
                 }
 
                 $this->set('sentencesWithCollocations', $sentencesWithCollocations);
                 $this->set('sentencesTotalCount', $totalCount);
             } else {
-                $this->Session->setFlash("Empty search query, add search criteria for all search fields.");
+                $this->Session->setFlash("Incomplete search query, add search criteria at least for two words.");
                 return $this->redirect(array('action' => 'collocations_generator'));
             }
         }

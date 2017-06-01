@@ -47,6 +47,158 @@
     ?>
 
     "none":"none"};
+    $(document).keydown(function(e) {
+        if (e.ctrlKey) {
+            switch(e.which) {
+                case 38:
+                    ctrlUpArrowHandle();
+                break;
+
+                case 40:
+                    ctrlDownArrowHandle();
+                break;
+
+                case 49: //1
+                    suggestionHandle(e, 0);
+                break;
+
+                case 50: //2
+                    suggestionHandle(e, 1);
+                break;
+
+                case 51: //3
+                    suggestionHandle(e, 2);
+                break;
+
+                /* Debugging the history feature
+                case 52: //4
+                    listOperationsHandle(e);
+                break;
+
+                case 53: //5
+                    clearHistoryHandle(e);
+                break;
+                */
+
+                case 66: //b
+                    redoHandle();
+                break;
+
+                case 73: //i
+                    handleWordOperation(e, 'insertWord');
+                break;
+
+                case 74: //j
+                    splitWord(e);
+                break;
+
+                case 75: //k
+                    unsplitWord(e);
+                break;
+
+                case 76: //l
+                    handleWordOperation(e, 'deleteWord');
+                break;
+
+                case 79: //o
+                    handleWordOperation(e, 'insertAfterWord');
+                break;
+
+                case 85: //u
+                    handleWordOperation(e, 'unmarkPostposition');
+                break;
+
+                case 89: //y
+                    handleWordOperation(e, 'markPostposition');
+                break;
+
+                case 90: //z
+                    undoHandle();
+                break;
+
+                default: return; // exit this handler for other keys
+            }
+        } else {
+            switch(e.which) {
+                case 37:
+                    leftArrowHandle();
+                break;
+
+                case 38:
+                    upArrowHandle();
+                break;
+
+                case 39:
+                    rightArrowHandle();
+                break;
+
+                case 40:
+                    downArrowHandle();
+                break;
+
+                case 13:
+                enterHandle(e);
+                break;
+
+                case 27:
+                escapeHandle();
+                break;
+
+                case 81:  //q
+                hotKeyHandle(0);
+                break;
+
+                case 87:  //w
+                hotKeyHandle(1);
+                break;
+
+                case 69:  //e
+                hotKeyHandle(2);
+                break;
+
+                case 82:  //r
+                hotKeyHandle(3);
+                break;
+
+                case 65:  //a
+                hotKeyHandle(4);
+                break;
+
+                case 83:  //s
+                hotKeyHandle(5);
+                break;
+
+                case 68:  //d
+                hotKeyHandle(6);
+                break;
+
+                case 70:  //f
+                hotKeyHandle(7);
+                break;
+
+                case 90:  //z
+                hotKeyHandle(8);
+                break;
+
+                case 88:  //x
+                hotKeyHandle(9);
+                break;
+
+                case 67:  //c
+                hotKeyHandle(10);
+                break;
+
+                case 86:  //v
+                hotKeyHandle(11);
+                break;
+
+                default: return; // exit this handler for other keys
+            }
+        }
+
+    });
+
+
 </script>
 
 <?php

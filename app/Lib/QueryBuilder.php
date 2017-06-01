@@ -91,45 +91,65 @@ class QueryBuilder {
         return $result;
     }
 
-    private static function matchingSentencesInnerQuery($mainChoiceIds, $collocationChoiceIds, $filter, $maxDist, $twoWay) {
-        $w1Max = pow(2, count($mainChoiceIds)) - 1;
-        $w2Max = pow(2, count($collocationChoiceIds)) - 1;
+    private static function valuesToParams($wordValues) {
+        $wordParams = array();
+        foreach ($wordValues as $wordValue) {
+            if (!empty($wordValue)) {
+                $params = explode(',', $wordValue);
+                array_push($wordParams,
+                    array(
+                        'params' => $params,
+                        'max' => (pow(2, count($params)) - 1)
+                    )
+                );
+            }
 
+        }
+        return $wordParams;
+    }
+
+    private static function tagsCondition($word) {
+        $result = "sum(
+            case word_annotation_type_choices_word_annotations.word_annotation_type_choice_id ";
+        $counter = 0;
+        foreach ($word['params'] as $choiceId) {
+            $power2 = pow(2,$counter);
+            $result .= "when $choiceId then $power2\n";
+            $counter++;
+        }
+        $result.="
+                else 0
+            end
+        ) = ".$word['max'];
+
+        return $result;
+    }
+
+    private static function matchingSentencesInnerQuery($wordValues, $filter, $maxDist, $twoWay) {
+        $wordParams = self::valuesToParams($wordValues);
         $result = "select
-               sentence_id,
-               within_distance( group_concat(position1 order by position1) , group_concat(position2 order by position2), $maxDist, $twoWay) as distance_ok
+               sentence_id,";
+        for($i=1;$i<=count($wordParams);$i++) {
+            $result .= "group_concat(position".$i." order by position".$i.") as positions".$i.",";
+        }
+        $result .= "
+               within_distance( group_concat(position1 order by position1) , group_concat(position2 order by position2), $maxDist, $twoWay) as distance_ok";
 
+        $result .= "
         from (
             select documents.id as document_id,
                    sentences.id as sentence_id,
-                   words.id as word_id,
+                   words.id as word_id,";
+        $wordCounter = 0;
+        foreach($wordParams as $word) {
+            $wordCounter++;
+            $result .= "if (".self::tagsCondition($word).", words.position, NULL) as position".$wordCounter;
+            if ($wordCounter < count($wordParams)) {
+                $result .= ",";
+            }
+        }
 
-                   if (sum(
-                       case word_annotation_type_choices_word_annotations.word_annotation_type_choice_id ";
-                       $counter = 0;
-                       foreach ($mainChoiceIds as $choiceId) {
-                           $power2 = pow(2,$counter);
-                           $result .= "when $choiceId then $power2\n";
-                           $counter++;
-                       }
-        $result.="
-                           else 0
-                       end
-                   ) = $w1Max, words.position, NULL) as position1,
-
-                   if (sum(
-                       case word_annotation_type_choices_word_annotations.word_annotation_type_choice_id ";
-                       $counter = 0;
-                       foreach ($collocationChoiceIds as $choiceId) {
-                           $power2 = pow(2,$counter);
-                           $result .= "when $choiceId then $power2\n";
-                           $counter++;
-                       }
        $result .="
-                           else 0
-                       end
-                   ) = $w2Max, words.position, NULL) as position2
-
             from
                 documents
                 inner join sentences on documents.id = sentences.document_id";
@@ -152,26 +172,33 @@ class QueryBuilder {
                 sentences.id,
                 words.id
 
-            having
-                position1 is not NULL or position2 is not NULL
-
+            having";
+        for($i=1;$i<=count($wordParams);$i++) {
+            $result .= " position".$i." is not NULL";
+            if ($i < count($wordParams)) {
+                $result .= " or";
+            }
+        }
+        $result .="
         ) as sub
 
         group by
             document_id,
             sentence_id
 
-        having
-            distance_ok = 1
-        ";
+        having";
+        for($i=1;$i<=count($wordParams);$i++) {
+            $result .= " positions".$i." is not NULL and";
+        }
+
+        $result .= " distance_ok = 1";
 
         return $result;
 
     }
 
-    public static function sentenceWithCollocations($sentenceId, $mainChoiceIds, $collocationChoiceIds) {
-        $w1Max = pow(2, count($mainChoiceIds)) - 1;
-        $w2Max = pow(2, count($collocationChoiceIds)) - 1;
+    public static function sentenceWithCollocations($sentenceId, $wordValues) {
+        $wordParams = self::valuesToParams($wordValues);
         $result = "
         select documents.id,
                documents.name,
@@ -181,30 +208,18 @@ class QueryBuilder {
                words.id,
                case words.split when 1 then concat(words.stem, '|', words.suffix) else words.text end as word_text,
                words.position,
-               if (sum(
-                   case word_annotation_type_choices_word_annotations.word_annotation_type_choice_id ";
-                   $counter = 0;
-                   foreach ($mainChoiceIds as $choiceId) {
-                       $power2 = pow(2,$counter);
-                       $result .= "when $choiceId then $power2\n";
-                       $counter++;
-                   }
-        $result.="
-                       else 0
-                   end
-               ) = $w1Max or
-               sum(
-                   case word_annotation_type_choices_word_annotations.word_annotation_type_choice_id ";
-                   $counter = 0;
-                   foreach ($collocationChoiceIds as $choiceId) {
-                       $power2 = pow(2,$counter);
-                       $result .= "when $choiceId then $power2\n";
-                       $counter++;
-                   }
-        $result .="
-                       else 0
-                   end
-               ) = $w2Max, group_concat(word_annotation_type_choices.value), NULL) as tags
+               if (";
+        $counter = 0;
+        foreach ($wordParams as $word) {
+            $counter++;
+            $result .= self::tagsCondition($word);
+            if ($counter < count($wordParams)) {
+                $result .= " or ";
+            }
+        }
+        $result .= "
+               ,group_concat(word_annotation_type_choices.value),
+               NULL) as tags
 
         from
             documents
@@ -222,47 +237,20 @@ class QueryBuilder {
         return $result;
     }
 
-    public static function matchingSentencesCount($mainChoiceIds, $collocationChoiceIds, $filter, $maxDist, $twoWay) {
+    public static function matchingSentencesCount($wordValues, $filter, $maxDist, $twoWay) {
 
         $result = "select count(*) as total_count from (";
-        $result .= QueryBuilder::matchingSentencesInnerQuery($mainChoiceIds, $collocationChoiceIds, $filter, $maxDist, $twoWay);
+        $result .= QueryBuilder::matchingSentencesInnerQuery($wordValues, $filter, $maxDist, $twoWay);
         $result .= ") as sub2";
 
         return $result;
     }
 
 
-    public static function matchingSentencesIds($mainChoiceIds, $collocationChoiceIds, $filter, $maxDist, $twoWay, $limit, $offset) {
+    public static function matchingSentencesIds($wordValues, $filter, $maxDist, $twoWay, $limit, $offset) {
 
-        $result = QueryBuilder::matchingSentencesInnerQuery($mainChoiceIds, $collocationChoiceIds, $filter, $maxDist, $twoWay);
+        $result = QueryBuilder::matchingSentencesInnerQuery($wordValues, $filter, $maxDist, $twoWay);
         $result .= " limit $limit offset $offset";
-
-        return $result;
-    }
-
-    public static function collocations($documentIds, $mainChoiceIds, $collocationChoiceIds) {
-        $result = "SELECT *, ABS(MW.`position`-CW.`position`) AS dist FROM `sentences` INNER JOIN `words` AS MW ON `sentences`.`id` = MW.`sentence_id` AND MW.`id` IN (".self::singleWordChoices($mainChoiceIds).")";
-        if (!empty($documentIds)) {
-            $result .= " AND `sentences`.`document_id` IN (".implode(',', $documentIds).")";
-        } else {
-            $result .= " AND false";
-        }
-        $result .= " INNER JOIN `words` AS CW ON `sentences`.`id` = CW.`sentence_id` AND CW.`id` IN (".self::singleWordChoices($collocationChoiceIds).") ORDER BY `sentences`.`id`, MW.`id`, dist";
-
-        return $result;
-    }
-
-    public static function multicollocations($documentIds, $multiWord1ChoiceIds, $multiWord2ChoiceIds, $multiWord3ChoiceIds) {
-        $result = "SELECT * FROM `sentences` INNER JOIN `words` AS MW1 ON `sentences`.`id` = MW1.`sentence_id` AND MW1.`id` IN (".self::singleWordChoices($multiWord1ChoiceIds).")";
-        if (!empty($documentIds)) {
-            $result .= " AND `sentences`.`document_id` IN (".implode(',', $documentIds).")";
-        } else {
-            $result .= " AND false";
-        }
-
-        $result .= " INNER JOIN `words` AS MW2 ON `sentences`.`id` = MW2.`sentence_id` AND MW2.`id` IN (".self::singleWordChoices($multiWord2ChoiceIds).")";
-
-        $result .= " INNER JOIN `words` AS MW3 ON `sentences`.`id` = MW3.`sentence_id` AND MW3.`id` IN (".self::singleWordChoices($multiWord3ChoiceIds).") ORDER BY `sentences`.`id`, MW1.`id`";
 
         return $result;
     }

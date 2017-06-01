@@ -2,9 +2,10 @@
 <?php
     echo $this->element('statistics_header',
         array(
-            'mainValue' => $mainValue,
+            'mainValue' => 0,
+            'collocationValue' => 0,
+            'wordValues' => $wordValues,
             'initial' => 0,
-            'collocationValue' => $collocationValue,
             'specificValue' => 0,
             'initialSpecific' => 0,
             'immediate' => $immediate,

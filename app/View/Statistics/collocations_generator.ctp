@@ -24,57 +24,65 @@ $(function() {
 $(document).keydown(function(e) {
     switch(e.which) {
         case 13:
-            enterHandle(e);
+            enterCriterionHandle(e);
         break;
     }
 });
-
-function enterHandle(e) {
-    selectedValue = e.target.value;
-    e.target.value='';
-    buttonName = e.target.id+'Button';
-    valueName = e.target.id+'Value';
-    addSearchCriterion(selectedValue, buttonName, valueName);
-}
-
-function addSearchCriterion(selectedValue, buttonName, valueName) {
-    $("[name=\""+buttonName+"\"][type=\"button\"][value=\""+selectedValue+"\"]").attr('class', 'choice-selected');
-    var selected = $("[name=\""+buttonName+"\"][class=\"choice-selected\"]");
-    var ids = [];
-    for (var i=0;i<selected.length;i++) {
-        ids.push(selected[i].id);
-    }
-    $('#'+valueName).val(ids.join());
-}
-
-function addCriterionBeforeSubmit(elementId) {
-    addSearchCriterion($('#'+elementId).val(), elementId+'Button', elementId+'Value');
-
-}
 
 </script>
 
 <h2>Find collocations</h2>
 
-<label for="mainWord">First word:</label>
-<input id="mainWord" type="text" class="multiple-suggestions-input" value=""/>
-Selected criteria: (clicking on a criterion deletes it) <br/><br/>
-<?php foreach ($choices as $choice) { ?>
-    <input name="mainWordButton" id="<?php echo $choice['id'];?>" type="button" class="choice-inactive" title="<?php echo $choice['description']; ?>" value="<?php echo $choice['value']; ?>" onclick="this.className='choice-inactive';"/>
-<?php } ?>
-<br/><br/>
-<label for="collocationWord">Second word:</label>
-<input id="collocationWord" type="text" class="multiple-suggestions-input" value=""/>
-Selected criteria: (clicking on a criterion deletes it) <br/><br/>
-<?php foreach ($choices as $choice) { ?>
-    <input name="collocationWordButton" id="<?php echo $choice['id'];?>" type="button" class="choice-inactive" title="<?php echo $choice['description']; ?>" value="<?php echo $choice['value']; ?>" onclick="this.className='choice-inactive';"/>
-<?php } ?>
+<?php
+echo $this->Form->create(false, array('url' => array('controller' => 'statistics', 'action' => 'collocations')));
+?>
+
+<?php
+    echo $this->element('word_criteria',
+        array(
+            'id' => 1,
+            'numeral' => 'First',
+            'visible' => true,
+            'choices' => $choices
+        )
+    );
+    echo $this->element('word_criteria',
+        array(
+            'id' => 2,
+            'numeral' => 'Second',
+            'visible' => true,
+            'choices' => $choices
+        )
+    );
+    echo $this->element('word_criteria',
+        array(
+            'id' => 3,
+            'numeral' => 'Third',
+            'visible' => false,
+            'choices' => $choices
+        )
+    );
+    echo $this->element('word_criteria',
+        array(
+            'id' => 4,
+            'numeral' => 'Fourth',
+            'visible' => false,
+            'choices' => $choices
+        )
+    );
+    echo $this->element('word_criteria',
+        array(
+            'id' => 5,
+            'numeral' => 'Fifth',
+            'visible' => false,
+            'choices' => $choices
+        )
+    );
+?>
+
+
+
 <br /><br />
-    <?php
-    echo $this->Form->create(false, array('url' => array('controller' => 'statistics', 'action' => 'collocations')));
-    ?>
-    <input type="hidden" id="mainWordValue" name="data[mainValue]" />
-    <input type="hidden" id="collocationWordValue" name="data[collocationValue]" />
     <input type="hidden" name="immediate" value="false" />
 
-    <div class="submit"><input  type="submit" value="Find 2-word collocations" onclick="addCriterionBeforeSubmit('mainWord');addCriterionBeforeSubmit('collocationWord');"/></div></form>
+    <div class="submit"><input  type="submit" value="Find collocations" onclick="addCriterionBeforeSubmit('mainWord');addCriterionBeforeSubmit('collocationWord');"/></div></form>
