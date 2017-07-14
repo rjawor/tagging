@@ -1,9 +1,0 @@
-data.txt
-data_vw.txt
-model/*
-result/*
-prediction/*
-test/*
-train/*
-prod/jayasi.cache
-prod/jayasi.model

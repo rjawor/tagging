@@ -1,5 +1,0 @@
-DONE - write feature extractors as functions
-DONE - turn on all the features
-- tune word2vec (less classes?)
-- add list of known cvb's to the classifier. Check during testing the performance on unknown words
-- print wordDicts labelled true for debugging

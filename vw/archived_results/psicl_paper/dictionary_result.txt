@@ -1,6 +1,0 @@
-31.05.2016 20:11:22
-config: dictionary-annotation
-total words: 5596, right: 5338, accuracy: 95.3896%
-precision: 0.4674
-recall: 0.5690
-f-score: 0.5132

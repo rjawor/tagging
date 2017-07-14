@@ -1,7 +1,0 @@
-26.01.2017 21:47:16
-config: prod/experiment90-220/jayasiP_90-220_predictions.txt
-
-total words: 11501, right: 11184, accuracy: 97.2437%
-precision: 0.6199
-recall: 0.7721
-f-score: 0.6877

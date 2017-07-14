@@ -1,4 +1,0 @@
-#!/bin/sh
-
-less `ls result/* | tail -1`
-
