@@ -1,0 +1,92 @@
+<?php
+
+$standardCollocations = array(
+                              array(
+                                  'desc' => 'A(INS)',
+                                  'value' => '87,42'
+                              ),
+                              array(
+                                  'desc' => 'A(NOM)',
+                                  'value' => '87,51'
+                              ),
+                              array(
+                                  'desc' => 'A(OBL)',
+                                  'value' => '87,52'
+                              ),
+                              array(
+                                  'desc' => 'O(NOM)',
+                                  'value' => '89,51'
+                              ),
+                              array(
+                                  'desc' => 'O(ACC)',
+                                  'value' => '89,6'
+                              ),
+                              array(
+                                  'desc' => 'O(OBL)',
+                                  'value' => '89,52'
+                              )
+                          );
+
+$statistics = array(
+    array(
+        'main' => array(
+                      'desc' => 'Converbs (CVB on the level "Grammar")',
+                      'short' => 'CVB',
+                      'value' => '21'
+                  ),
+        'collocations' => $standardCollocations
+    ),
+    array(
+        'main' => array(
+                      'desc' => 'Converbs...',
+                      'short' => 'CVB',
+                      'value' => '21'
+                  ),
+        'collocations' => array(
+                              array(
+                                  'desc' => 'immediately VRB',
+                                  'value' => '80',
+                                  'immediate' => true
+                              )
+                          )
+    ),
+    array(
+        'main' => array(
+                      'desc' => 'Participles (PTCP on the levels "Grammar" and "POS")',
+                      'short' => 'PTCP(PTCP)',
+                      'value' => '65,81'
+                  ),
+        'collocations' => $standardCollocations
+    ),
+    array(
+        'main' => array(
+                      'desc' => 'Verb participles (PTCP on the level "Grammar", V on "SYNTAX")',
+                      'short' => 'PTCP(V)',
+                      'value' => '65,90'
+                  ),
+        'collocations' => $standardCollocations
+    ),
+    array(
+        'main' => array(
+                      'desc' => 'Infinitives (INF on the level "POS")',
+                      'short' => 'INF',
+                      'value' => '41'
+                  ),
+        'collocations' => $standardCollocations
+    ),
+    array(
+        'main' => array(
+                      'desc' => 'Verbs (VRB on the level "POS", V on the level "syntax")',
+                      'short' => 'VRB(V)',
+                      'value' => '80,90'
+                  ),
+        'including' => array(
+                      'short' => 'PPP(V)',
+                      'value' => '57,90'
+                  ),
+        'collocations' => $standardCollocations
+    )
+
+);
+
+?>

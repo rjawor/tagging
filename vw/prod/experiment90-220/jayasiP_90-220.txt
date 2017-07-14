@@ -1,0 +1,1049 @@
+﻿<ref>JayP90.1</ref><dev>utara dhāi taba dīnha risāī risi āpuhi buddhi aurahi khāī |</dev>
+<ref>JayP90.2</ref><dev>maiṃ jo kahā risi karahu na bālā ko na gaeu ehi risi kara ghālā |</dev>
+<ref>JayP90.3</ref><dev>tūṁ risi bharī na dekhasi āgū risi mahaṁ kākara bhaeu sohāgū |</dev>
+<ref>JayP90.4</ref><dev>birasa birodha risihi pai hoī risi mārai tehi māra na koī |</dev>
+<ref>JayP90.5</ref><dev>jehi kī risi marie rasa jījai so rasa taji risi kabahuṁ na kījai |</dev>
+<ref>JayP90.6</ref><dev>jehi risi tehi rasa jogai na jāī binu rasa haradi hoi piarāī |</dev>
+<ref>JayP90.7</ref><dev>kaṃta suhāga ki pāia sāṁdhā pāvai soi jo ohiṃ cita bāṁdhā |</dev>
+<ref>JayP90d</ref><dev>rahai jo piya ke āesu au baratai hoi khīna soi cāṁda asa niramari jarama na hoi malīna |</dev>
+<ref>JayP91.1</ref><dev>juā <cvb>hāri</cvb> samujhī mana rānī suā dīnha rājā kahaṁ ānī |</dev>
+<ref>JayP91.2</ref><dev>māna mate hauṃ garaba jo kīnhā kaṃta tumhāra marama maiṃ cīnhā |</dev>
+<ref>JayP91.3</ref><dev>sevā karai jo barahau māsā etanika auguna karahu bināsā |</dev>
+<ref>JayP91.4</ref><dev>jauṃ tumha dei <cvb>nāi</cvb> <cvb>kai</cvb> gīvāṁ chāṁd̤ahu nahiṃ binu māre jīvāṁ |</dev>
+<ref>JayP91.5</ref><dev>milatahi mahaṁ janu ahahu nināre tumha sauṃ ahai adesa piāre |</dev>
+<ref>JayP91.6</ref><dev>maiṃ jānā tumha mohīṃ māhāṁ dekhauṃ tāki tau hahu saba pāhāṁ |</dev>
+<ref>JayP91.7</ref><dev>kā rānī kā cerī koī jā kahaṁ mayā karahu bhali soī |</dev>
+<ref>JayP91d</ref><dev>tumha soṃ koi na jītā hāre bararuci bhoja pahileṃ āpu jo khovai karai tumhārā khoja |</dev>
+<ref>JayP92.1</ref><dev>rājaiṃ kahā satta kahu suā binu sata kasa jasa seṃvara bhuā |</dev>
+<ref>JayP92.2</ref><dev>hoi mukha rāta satta kī bātā jahāṁ satta tahaṁ dharama saṁghātā |</dev>
+<ref>JayP92.3</ref><dev>bāṁdhī sisṭi ahai sata kerī lakhimī āhi satta kī cerī |</dev>
+<ref>JayP92.4</ref><dev>satta jahāṁ sāhasa sidhi pāvā jauṃ satavādī puruṣa kahāvā |</dev>
+<ref>JayP92.5</ref><dev>sata kahaṁ satī saṁvārai sarā āgi <cvb>lāi</cvb> cahuṁ disi sata jarā |</dev>
+<ref>JayP92.6</ref><dev>dui jaga tarā satta jeiṁ rākhā au piāra daiahi sata bhākhā |</dev>
+<ref>JayP92.7</ref><dev>so sata <cvb>chāṁd̤i</cvb> jo dharama bināsā kā mati hieṁ kīnha sata nāsā |</dev>
+<ref>JayP92d</ref><dev>tumha sayāna au paṃḍita asata na bhākhahu kāu satta kahahu so mosoṃ dahuṁ kākara aniyāu |</dev>
+<ref>JayP93.1</ref><dev>satta kahata rājā jiu jāū pai mukha asata na bhākhauṃ kāū |</dev>
+<ref>JayP93.2</ref><dev>hauṃ sata <cvb>lai</cvb> nisarā ehi pateṃ siṃghala dīpa rāja ghara hateṃ |</dev>
+<ref>JayP93.3</ref><dev>padumāvati rājā kai bārī paduma gaṃdha sasi bidhi autārī |</dev>
+<ref>JayP93.4</ref><dev>sasi mukha aṃga malaigiri rānī kanaka sugaṃdha duādasa bānī |</dev>
+<ref>JayP93.5</ref><dev>haṁhiṃ jo padumini siṃghala māhāṁ sugaṁdha surūpa so ohi kī chāhāṁ |</dev>
+<ref>JayP93.6</ref><dev>hīrāmani hauṃ tehi ka parevā kaṃṭhā phūṭa karata tehi sevā |</dev>
+<ref>JayP93.7</ref><dev>au pāeuṁ mānusa kai bhākhā nāhiṃ ta kahāṁ mūṁṭhi bhari pāṁkhā |</dev>
+<ref>JayP93d</ref><dev>jau lahi jioṃ rāta dina sumirauṃ marauṃ to ohi <cvb>lai</cvb> nāuṁ mukha rātā tana hariara kīnhe ohūṁ jagata <cvb>lai</cvb> lāuṁ |</dev>
+<ref>JayP94.1</ref><dev>hīrāmani jauṃ kamala bakhānā <cvb>suni</cvb> rājā <cvb>hoi</cvb> bhaṁvara bhulānā |</dev>
+<ref>JayP94.2</ref><dev>āgeṃ āu paṃkhi ujiāre kahahi so dīpa pataṃga kai māre |</dev>
+<ref>JayP94.3</ref><dev>rahā jo kanaka subāsi ka ṭhāūṁ kasa na hoi hīrāmani nāūṁ |</dev>
+<ref>JayP94.4</ref><dev>ko rājā kasa dīpa utaṃgū jehi re sunata mana bhaeu pataṃgū |</dev>
+<ref>JayP94.5</ref><dev><cvb>suni</cvb> so samuṁda cakhu bhe kilakilā kaṁvalahi cahauṃ bhaṁvara hoi milā |</dev>
+<ref>JayP94.6</ref><dev>kahu sugaṃdha dhani kasi niramarī bhā ali saṃga ki abahīṃ karī |</dev>
+<ref>JayP94.7</ref><dev>au kahu tahāṁ jo padumini lonī ghara ghara saba ke hoi jasi honī |</dev>
+<ref>JayP94d</ref><dev>sabai bakhāna tahāṁ kara kahata so mosoṃ āu cahauṃ dīpa vaha dekhā sunata uṭhā tasa cāu |</dev>
+<ref>JayP95.1</ref><dev>kā rājā hauṃ baranauṃ tāsū siṃghala dīpa ādi kabilāsū |</dev>
+<ref>JayP95.2</ref><dev>jo gā tahāṁ bhulāneu soī ge juga bīta na bahurā koī |</dev>
+<ref>JayP95.3</ref><dev>ghara ghara padumini chatisau jātī sadā basaṃta devasa au rātī |</dev>
+<ref>JayP95.4</ref><dev>jehi jehi barana phūla phulavārī tehi tehi barana sugaṃdha so nārī |</dev>
+<ref>JayP95.5</ref><dev>gaṃdhrapaseni tahāṁ bad̤a rājā acharinha māhaṁ iṃdra bidhi sājā |</dev>
+<ref>JayP95.6</ref><dev>so padumāvati tākari bārī au saba dīpa māhiṃ ujiārī |</dev>
+<ref>JayP95.7</ref><dev>cahūṁ khaṃḍa ke bara jo onāhīṃ garabanha rājā bolai nāhīṃ |</dev>
+<ref>JayP95d</ref><dev>uata sūra jasa dekhia cāṁda chapai tehi dhūpa aisai sabai jāhiṃ chapi padumāvati ke rūpa |</dev>
+<ref>JayP96.1</ref><dev><cvb>suni</cvb> rabi nāuṁ ratana bhā rātā paṃḍita pheri ihai kahu bātā |</dev>
+<ref>JayP96.2</ref><dev>tuiṁ suraṃga mūrati vaha kahī cita mahaṁ <cvb>lāgi</cvb> citra hoi rahī |</dev>
+<ref>JayP96.3</ref><dev>janu <cvb>hoi</cvb> suruja <cvb>āi</cvb> mana basī saba ghaṭa pūri hiaiṃ paragasī |</dev>
+<ref>JayP96.4</ref><dev>aba hauṃ suruja cāṁda vaha chāyā jala binu mīna rakata binu kāyā |</dev>
+<ref>JayP96.5</ref><dev>kirini karā bhā pema aṁkūrū jauṃ sasi saraga milaiṃ <cvb>hoi</cvb> sūrū |</dev>
+<ref>JayP96.6</ref><dev>sahasahuṁ karāṁ rūpa mana bhūlā jahaṁ jahaṁ disṭi kavala janu phūlā |</dev>
+<ref>JayP96.7</ref><dev>tahāṁ bhaṁvara jeuṁ kaṁvalā gaṃdhī bhai sasi rāhu keri rini baṃdhī |</dev>
+<ref>JayP96d</ref><dev>tīni loka caudaha khaṃḍa sabai parai mohi <cvb>sūjhi</cvb> pema <cvb>chāṁd̤i</cvb> kichu auru na lonā jauṃ dekhauṃ mana <cvb>būjhi</cvb> |</dev>
+<ref>JayP97.1</ref><dev>pema sunata mana bhūlu na rājā kaṭhina pema sira dei tau chājā |</dev>
+<ref>JayP97.2</ref><dev>pema phāṁda jo parā na chūṭā jīu dīnha bahu phāṁda na ṭūṭā |</dev>
+<ref>JayP97.3</ref><dev>giragiṭa chaṃda dharai dukha tetā khina khina rāta pīta khina setā |</dev>
+<ref>JayP97.4</ref><dev><cvb>jāni</cvb> puchāri jo bhai banabāsī rovaṁ rovaṁ pare phāṁda nagavāsī |</dev>
+<ref>JayP97.5</ref><dev>pāṁkhanha phiri phiri parāso phāṁdū <cvb>ud̤i</cvb> na sakai arujhī bhā bāṁdū |</dev>
+<ref>JayP97.6</ref><dev>muyoṃ muyoṃ ahanisi cilalāī ohi rosa nāganha <cvb>dhari</cvb> khāī |</dev>
+<ref>JayP97.7</ref><dev>pāṁḍuka suā kaṃṭha ohi cīnhā jehi giyaṁ parā cāha jiu dīnhā |</dev>
+<ref>JayP97d</ref><dev>tītira giyaṁ jo phāṁda hai nitahi pukārai dokhu sakati <cvb>haṁkāri</cvb> phāṁda giyaṁ melai kaba mārai hoi mokha |</dev>
+<ref>JayP98.1</ref><dev>rājaiṃ līnha <cvb>ūbha</cvb> bhari sāṁsā aisa bola jani bolu nirāsā |</dev>
+<ref>JayP98.2</ref><dev>bhalehiṃ pema hai kaṭhina duhelā dui jaga tarā pema jeiṁ khelā |</dev>
+<ref>JayP98.3</ref><dev>dukha bhītara jo pema madhu rākhā gaṃjana marana sahai so cākhā |</dev>
+<ref>JayP98.4</ref><dev>jeiṁ nahiṃ sīsa pema paṁtha lāvā so prithimī mahaṁ kāhe koṃ āvā |</dev>
+<ref>JayP98.5</ref><dev>aba maiṃ pema paṁtha sira melā pāṁva na ṭhelu rākhu <cvb>kai</cvb> celā |</dev>
+<ref>JayP98.6</ref><dev>pema bāra so kahai jo dekhā jeiṁ na dekha kā jāna bisekhā |</dev>
+<ref>JayP98.7</ref><dev>taba <cvb>lagi</cvb> dukha prītama nahiṃ bheṃṭā jaba bheṃṭā jaramanha dukha meṭā |</dev>
+<ref>JayP98d</ref><dev>jasi anūpa tuiṁ dekhī nakha sikha <cvb>barani</cvb> siṃgāra hai mohi āsa milana kai jauṃ meravai karatāra |</dev>
+<ref>JayP99.1</ref><dev>kā siṃgāra ohi baranauṃ rājā ohi ka siṃgāra ohi pai chājā |</dev>
+<ref>JayP99.2</ref><dev>prathama hi sīsa kasturī kesā bali bāsuki kau auru naresā |</dev>
+<ref>JayP99.3</ref><dev>bhaṁvara kesa vaha mālati rānī bisahara lurahiṃ lehiṃ araghānī |</dev>
+<ref>JayP99.4</ref><dev>benī <cvb>chori</cvb> jhāru jauṃ bārā saraga patāra hoi aṁdhiyārā |</dev>
+<ref>JayP99.5</ref><dev>koṃvala kuṭila kesa naga kāre laharanhi bhare bhuaṃga bisāre |</dev>
+<ref>JayP99.6</ref><dev>bedhe jānu malaigiri bāsā sīsa cad̤he loṭahiṃ cahuṁ pāsā |</dev>
+<ref>JayP99.7</ref><dev>ghuṁghuravāri alakaiṃ bikha bharīṃ siṃkarīṃ pema cahahiṃ giyaṁ parīṃ |</dev>
+<ref>JayP99d</ref><dev>asa phaṁdavāre kesa vai rājā parā sīsa giyaṁ phāṁda asṭau kurī nāga oragāne bhai kesanhi ke bāṁda |</dev>
+<ref>JayP100.1</ref><dev>baranauṃ māṁga sīsa uparāhīṃ seṃdura abahiṃ cad̤hā tehi nāhīṃ |</dev>
+<ref>JayP100.2</ref><dev>binu seṃdura asa jānahuṁ diyā ujiara paṃtha raini mahaṁ kiyā |</dev>
+<ref>JayP100.3</ref><dev>kaṃcana rekha kasauṭī kasī janu āna mahaṁ dāmini paragasī |</dev>
+<ref>JayP100.4</ref><dev>suruja kirina jasa gajana bisekhī jamunā māṁjha sarasutī dekhī |</dev>
+<ref>JayP100.5</ref><dev>khāṁḍai dhāra ruhira janu bharā karavata lai benī para dharā |</dev>
+<ref>JayP100.6</ref><dev>tehi para <cvb>pūri</cvb> dhare jauṃ moṃtī jamunā māṁjha gāṁga kai sotī |</dev>
+<ref>JayP100.7</ref><dev>karavata tapā lehiṃ <cvb>hoi</cvb> cūrū maku so ruhira <cvb>lai</cvb> dei seṃdūrū |</dev>
+<ref>JayP100d</ref><dev>kanaka duādasa bāni hoi caha sohāga vaha māṁga sevā karahiṃ nakhata au taraīṃ uai gagana nisi gāṁga |</dev>
+<ref>JayP101.1</ref><dev>kahauṃ lilāṭa duija kai jotī duijihi joti kahāṁ jaga otī |</dev>
+<ref>JayP101.2</ref><dev>sahasa karāṁ jo suruja dipāī <cvb>dekhi</cvb> lilāṭa sou <cvb>chapi</cvb> jāī |</dev>
+<ref>JayP101.3</ref><dev>kā sarabari tehi deuṁ mayaṃkū cāṁda kalaṃkī vaha nikalaṃkū |</dev>
+<ref>JayP101.4</ref><dev>au cāṁdahi puni rāhu garāsā vaha binu rāhu sadā paragāsā |</dev>
+<ref>JayP101.5</ref><dev>tehi lilāṭa para tilaka baīṭhā duiji pāṭa jānahuṁ dhuva ḍīṭhā |</dev>
+<ref>JayP101.6</ref><dev>kanaka pāṭa janu baiṭheu rājā sabai siṃgāra atra lai sājā |</dev>
+<ref>JayP101.7</ref><dev>ohi āgeṃ thira rahai na koū dahuṁ kā kahaṁ asa jurā saṁjoū |</dev>
+<ref>JayP101d</ref><dev>kharaga dhanuka au cakra bāna dai jaga mārana tinha nāuṁ <cvb>sunikai</cvb> parā <cvb>muruchi</cvb> <cvb>kai</cvb> rājā mo kahaṁ bhae eka ṭhāuṁ |</dev>
+<ref>JayP102.1</ref><dev>bhauhaiṃ syāma dhanuku janu tānā jāsauṃ hera māra bikha bānā |</dev>
+<ref>JayP102.2</ref><dev>uhai dhanuka unha bhaiṃhanha cad̤hā kei hatiyāra kāla asa gad̤hā |</dev>
+<ref>JayP102.3</ref><dev>uhai dhanuka kirasuna pahaṁ ahā uhai dhanuka rāghau kara gahā |</dev>
+<ref>JayP102.4</ref><dev>uhai dhanuka rāvana saṁghārā uhai dhanuka kaṃsāsura mārā |</dev>
+<ref>JayP102.5</ref><dev>uhai dhanuka bedhā huta rāhū mārā ohīṃ sahassara bāhū |</dev>
+<ref>JayP102.6</ref><dev>uhai dhanuka maiṃ opahaṁ cīnhā dhānuka āpa bejha jaga kīnhā |</dev>
+<ref>JayP102.7</ref><dev>unha bhaiṃhanhi sari keu na jītā āchariṃ chapīṃ chapīṃ gopītā |</dev>
+<ref>JayP102d</ref><dev>bhaiṃha dhanuka dhani dhānuka dosara sari na karāi gagana dhanuka jo ūgavai lājanha so <cvb>chapi</cvb> jāi |</dev>
+<ref>JayP103.1</ref><dev>naina bāṁka sari pūja na koū māna samuṁda asa ulathahiṃ doū |</dev>
+<ref>JayP103.2</ref><dev>rāte kaṁvala karahiṃ ali bhavāṁ ghūmahiṃ <cvb>māṁti</cvb> cahahiṃ upasavāṁ |</dev>
+<ref>JayP103.3</ref><dev>uṭhahiṃ turaṃga lehiṃ nahiṃ bāgā cāhahiṃ ulathi gagana kahaṁ lāgā |</dev>
+<ref>JayP103.4</ref><dev>pavana jhakorahiṃ dehi halorā saraga <cvb>lāi</cvb> bhuiṁ <cvb>lāī</cvb> bahorā |</dev>
+<ref>JayP103.5</ref><dev>jaga ḍolai ḍolata naināhāṁ <cvb>ulaṭi</cvb> ad̤āra cāha pala māhāṁ |</dev>
+<ref>JayP103.6</ref><dev>jabahiṃ phirāva gaṁgana <cvb>gahi</cvb> borā asa vai bhavara cakra ke jorā |</dev>
+<ref>JayP103.7</ref><dev>samuda hiṃḍora karahiṃ janu jhūle khaṃjana lurahiṃ miriga janu bhūle |</dev>
+<ref>JayP103d</ref><dev>subhara samuṁda asa naina dui mānika bhare taraṃga āvata tīra jāhiṃ phiri kāla bhavara tenha saṃga |</dev>
+<ref>JayP104.1</ref><dev>barunī kā baranauṃ imi banī sāṁdhe bāna jānu dui anī |</dev>
+<ref>JayP104.2</ref><dev>jurī rāma rāvana kai sainā bīca samuṃda bhae dui nainā |</dev>
+<ref>JayP104.3</ref><dev>vārahiṃ pāra banāvari sāṁdhī jāsauṃ hera lāga bikha bāṁdhī |</dev>
+<ref>JayP104.4</ref><dev>unha bānanha asa ko ko na mārā bedhi rahā sagarauṃ saṃsārā |</dev>
+<ref>JayP104.5</ref><dev>gaṁgana nakhata jasa jāhiṃ na gane haiṃ saba bāna ohi ke hane |</dev>
+<ref>JayP104.6</ref><dev>dharatī bāna <cvb>bedhi</cvb> saba rākhī sākhā <cvb>ṭhād̤hi</cvb> dehiṃ saba sākhī |</dev>
+<ref>JayP104.7</ref><dev>rovaṁ rovaṁ mānusa tana ṭhād̤he sotahi sota <cvb>bedhi</cvb> tana kād̤he |</dev>
+<ref>JayP104d</ref><dev>baruni bāna saba opahaṁ bedhe rana bana ṭhaṃkha saujanha tana saba rovāṁ paṃkhinha tana saba paṃkha |</dev>
+<ref>JayP105.1</ref><dev>nāsika kharaga deuṁ kehi jogū kharaga khīna ohi badana saṁjogū |</dev>
+<ref>JayP105.2</ref><dev>nāsika <cvb>dekhi</cvb> lajāneu suā sūka āi besari hoi uā |</dev>
+<ref>JayP105.3</ref><dev>suā so piara hirāmani lājā auru bhāu kā baranauṃ rājā |</dev>
+<ref>JayP105.4</ref><dev>suā so nāṁka kaṭhora paṁvārī vaha koṃvali tila puhupa saṁvārī |</dev>
+<ref>JayP105.5</ref><dev>puhupa sugaṃdha karahiṃ saba āsā maku <cvb>hiragāi</cvb> lei hama bāsā |</dev>
+<ref>JayP105.6</ref><dev>adhara dasana para nāsika sobhā dārivaṁ <cvb>dekhi</cvb> suā mana lobhā |</dev>
+<ref>JayP105.7</ref><dev>khaṃjana duhuṁ disi keli karāhīṃ dahuṁ vaha rasa ko pāva ko nāhīṃ |</dev>
+<ref>JayP105d</ref><dev><cvb>dekhi</cvb> amia rasa adharanhi bhaeu nāsikā kīra pavana bāsa pahuṁcāvai asa rama chāṁd̤a na tīra |</dev>
+<ref>JayP106.1</ref><dev>adhara suraṃga amia rasa bhare biṃba suraga <cvb>lāji</cvb> bana phare |</dev>
+<ref>JayP106.2</ref><dev>phūla dupaharī mānahuṁ rātā phūla jharahiṃ jaba jaba kaha bātā |</dev>
+<ref>JayP106.3</ref><dev>hīrā gahai so vidruma dhārā bihaṁsata jagata hoi ujiārā |</dev>
+<ref>JayP106.4</ref><dev>bhae maṁjīṭha pānanha raṃga lāgeṃ kusuma raṃga thira rahā na āgeṃ |</dev>
+<ref>JayP106.5</ref><dev>asa kai adhara amia <cvb>bhari</cvb> rākhe abahiṃ achata na kāhūṁ cākhe |</dev>
+<ref>JayP106.6</ref><dev>mukha taṁbola raṁga dhārahiṃ rasā kehi mukha joga so aṃbrita basā |</dev>
+<ref>JayP106.7</ref><dev>rātā jagata <cvb>dekhi</cvb> raṁga rāte ruhira bhare āchahiṃ bihaṁsāte |</dev>
+<ref>JayP106d</ref><dev>amia adhara asa rājā saba jaga āsa karei kehi kahaṁ kaṁvala bigāsā ko madhukara rasa lei |</dev>
+<ref>JayP107.1</ref><dev>dasana cauka baiṭhe janu hīrā au bica bica raṁga syāma gaṁbhīrā |</dev>
+<ref>JayP107.2</ref><dev>janu bhādauṃ nisi dāmini dīsī camaki uṭhī tasi bhīni batīsī |</dev>
+<ref>JayP107.3</ref><dev>vaha jo joti hīrā uparāhīṃ hīrā dipahiṃ so tehi parichāhīṃ |</dev>
+<ref>JayP107.4</ref><dev>jehi dina dasana joti niramaī bahutanha joti joti ohi bhaī |</dev>
+<ref>JayP107.5</ref><dev>rabi sasi nakhata dīnha ahiṃ jotī ratana padāratha mānika moṃtī |</dev>
+<ref>JayP107.6</ref><dev>jahaṁ jahaṁ bihaṁsi subhāvahiṃ haṁsī tahaṁ tahaṁ <cvb>chiṭaki</cvb> joti paragasī |</dev>
+<ref>JayP107.7</ref><dev>dāmini <cvb>damaki</cvb> na sarabari pūjā puni vaha joti auru ko dūjā |</dev>
+<ref>JayP107d</ref><dev>vihaṁsata haṁsata dasana tasa camake pāhana uṭhe jharakki dārivaṁ sari jo na kai sakā phāṭeu hiyā <cvb>darakki</cvb> |</dev>
+<ref>JayP108.1</ref><dev>rasanā kahauṃ jo kaha rasa bātā aṃbrita bacana sunata mana rātā |</dev>
+<ref>JayP108.2</ref><dev>harai so sura cātrika kokilā bīna baṃsi vaha bainu na milā |</dev>
+<ref>JayP108.3</ref><dev>cātrika kokila rahahiṃ jo nāhīṃ <cvb>suni</cvb> vaha baina <cvb>lājichapi</cvb> jāhīṃ |</dev>
+<ref>JayP108.4</ref><dev>bhare pema madhu bolai bolā sunai so <cvb>māti</cvb> <cvb>ghurmi</cvb> kai ḍolā |</dev>
+<ref>JayP108.5</ref><dev>catura beda mati saba ohi pāhāṁ riga jaju sāma atharbana māhāṁ |</dev>
+<ref>JayP108.6</ref><dev>eka eka bola aratha caugunā iṃdra moha baramhā sira dhunā |</dev>
+<ref>JayP108.7</ref><dev>amara bhāratha piṃgala au gītā aratha jūjha paṃḍita nahiṃ jītā |</dev>
+<ref>JayP108d</ref><dev>bhāvasatī byākarana sarasutī piṃgala pāṭha purāna beda bheda saiṃ bāta kaha tasa janu lāgahiṃ bāna |</dev>
+<ref>JayP109.1</ref><dev>puni baranauṃ kā suraṁga kapolā eka nāraṁga ke duau amolā |</dev>
+<ref>JayP109.2</ref><dev>puhupa paṃka rasa aṃbrita sāṁdhe keiṁ ye suraṁga khiraurā bāṁdhe |</dev>
+<ref>JayP109.3</ref><dev>tehi kapola bāeṁ tila parā jeiṁ tila dekha so <cvb>tila</cvb> <cvb>tila</cvb> jarā |</dev>
+<ref>JayP109.4</ref><dev>janu ghuṁghucī vaha tila karamuhāṁ biraha bāna sāṁdhā sāmuhāṁ |</dev>
+<ref>JayP109.5</ref><dev>agini bāna tila jānahuṁ sūjhā eka kaṭākha lākha dui jūjhā |</dev>
+<ref>JayP109.6</ref><dev>so tila kāla meṃṭi nahiṃ gaeū aba vaha gāla kāla jaga bhaeū |</dev>
+<ref>JayP109.7</ref><dev>dekhata naina parī parichāhīṃ tehateṃ rāta syāma uparāhīṃ |</dev>
+<ref>JayP109d</ref><dev>so tila <cvb>dekhi</cvb> kapola para gaṁgana rahā dhuva <cvb>gād̤i</cvb> khinahi uṭhai khina būd̤ai ḍolai nahiṃ tila <cvb>chāṁd̤i</cvb> |</dev>
+<ref>JayP110.1</ref><dev>srabana sīpa dui dīpa saṁvāre kuṁḍala kanaka race uṁjiāre |</dev>
+<ref>JayP110.2</ref><dev>mani kuṃḍala camakahiṃ ati lone janu kauṃdhā laukahiṃ duhuṁ kone |</dev>
+<ref>JayP110.3</ref><dev>duhuṁ disi cāṁda suruja camakāhīṃ nakhatanha bhare <cvb>nirakhi</cvb>nahiṃ jāhīṃ |</dev>
+<ref>JayP110.4</ref><dev>tehi para khūṁṭa dīpa dui bāre dui dhuva duau khūṁṭa baisāre |</dev>
+<ref>JayP110.5</ref><dev>pahire khuṃbhī siṃghala dīpī jānahuṁ bharī kacapacī sīpī |</dev>
+<ref>JayP110.6</ref><dev>khina khina jabahiṃ cīra sira gahā kāṁpata bīja duhūṁ disi rahā |</dev>
+<ref>JayP110.7</ref><dev>ḍarapahiṃ deva loka siṃghalā parai na bīja <cvb>ṭūṭi</cvb> ehi kalā |</dev>
+<ref>JayP110d</ref><dev>karahiṃ nakhata saba sevā sravana dipahiṃ asa dou cāṁda suruja asa gahane auru jagata kā kou |</dev>
+<ref>JayP111.1</ref><dev>baranauṃ gīvaṁ kuṁja kai rīsī kaṃja nāra janu lāgeu sīsī |</dev>
+<ref>JayP111.2</ref><dev>kuṃdai <cvb>pheri</cvb> jānu giu kād̤hī harī puchāri ṭhagī janu ṭhād̤hī |</dev>
+<ref>JayP111.3</ref><dev>janu hiya <cvb>kād̤hi</cvb> parevā ṭhād̤hā tehi teṃ adhika bhāu giu bād̤hā |</dev>
+<ref>JayP111.4</ref><dev>cāka <cvb>cad̤hāi</cvb> sāṁca janu kīnhā bāga turaṃga jānu gahi līnhā |</dev>
+<ref>JayP111.5</ref><dev>giu maṁjūra taṁvacura jo hārā vahai pukārahiṃ sāṁjha saṁkārā |</dev>
+<ref>JayP111.6</ref><dev>puni tihi ṭhāuṁ parī tiri rekhā ghūṁṭata pīka līka saba dekhā |</dev>
+<ref>JayP111.7</ref><dev>dhani so gīva dīnheu bidhi bhāū dahuṁ kāsauṃ <cvb>lai</cvb> karai merāū |</dev>
+<ref>JayP111d</ref><dev>kaṃṭha sirī mukutāhala mālā sohai abharana gīvaṁ ko <cvb>hoi</cvb> hāra kaṃṭha ohi lāgai keiṁ tapu sādhā jīvaṁ |</dev>
+<ref>JayP112.1</ref><dev>kanaka daṃḍa dui bhujā kalāī jānahuṁ <cvb>pheri</cvb> kuṁdereṃ bhāīṃ |</dev>
+<ref>JayP112.2</ref><dev>kadali [ āṃbha kī jānahuṁ jorī au rātī ohi kaṁvala hathorī |</dev>
+<ref>JayP112.3</ref><dev>jānahuṁ rakata hathorīṃ būd̤īṃ rabi parabhāta tāta vaha jūd̤īṃ |</dev>
+<ref>JayP112.4</ref><dev>hiyā <cvb>kād̤hi</cvb> janu līnhesi hāthāṁ rakata bharī aṁgurī tehiṃ sāthāṁ |</dev>
+<ref>JayP112.5</ref><dev>au pahireṃ naga jarī aṁgūṭhī jaga binu jīva jīva ohi mūṭhī |</dev>
+<ref>JayP112.6</ref><dev>bāṁhū kaṃgana ṭād̤a salonī ḍolati bāṁha bhāu gati lonī |</dev>
+<ref>JayP112.7</ref><dev>jānahuṁ gati bed̤ini de[ ārāī bāha ḍolāi jīu <cvb>lai</cvb> jāī |</dev>
+<ref>JayP112d</ref><dev>bhuja upamā paṁvanāri na pūjī [ īna bhaī tehi ciṃta ṭhāṁvahiṃ ṭhāṁva beha bhe hiradaiṃ ūbhi sāṁsa <cvb>lei</cvb> niṃta |</dev>
+<ref>JayP113.1</ref><dev>hiyā thāra kaṃca kaṃcana lāḍū kanaka kacora uṭhe <cvb>kari</cvb> cāḍū |</dev>
+<ref>JayP113.2</ref><dev>kuṃdana bela <cvb>sāji</cvb> janu kūṁde aṃbrita bhare ratana dui mūṁde |</dev>
+<ref>JayP113.3</ref><dev>bedhe bhaṁvara kaṃṭa ketukī cāhahiṃ bedha kīnha keṃcukī |</dev>
+<ref>JayP113.4</ref><dev>jobana bāna lehiṃ nahiṃ bāgā cāhahiṃ hulasi hieṁ haṭha lāgā |</dev>
+<ref>JayP113.5</ref><dev>agini bāna dui jānahu sāṁdhe jaga bedhahiṃ jauṃ hohiṃ na bāṁdhe |</dev>
+<ref>JayP113.6</ref><dev>utaga jaṁbhīra hoi rakhāvārī <cvb>chui</cvb> ko sakai rājā kai bārī |</dev>
+<ref>JayP113.7</ref><dev>dārivaṁ dā[ ā phare anacakhe asa nāraga dahuṁ kā kahaṁ rākhe |</dev>
+<ref>JayP113d</ref><dev>rājā bahuta mue <cvb>tapilāi</cvb> <cvb>lāi</cvb> bhuiṁ mātha kāhūṁ chuai na pāre gae marorata hātha |</dev>
+<ref>JayP114.1</ref><dev>peṭa patra caṃdana janu lāvā kuṃkuha kesari barana sohāvā |</dev>
+<ref>JayP114.2</ref><dev>khīra ahāra na kara sukuvāṁrā pāna phūla ke rahai adhārā |</dev>
+<ref>JayP114.3</ref><dev>syāma bhuaṃgini romāvalī nābhī <cvb>nikasi</cvb> kaṁvala kahaṁ calī |</dev>
+<ref>JayP114.4</ref><dev><cvb>āi</cvb> duhūṁ nāraṁga bica bhaī <cvb>dekhi</cvb> maṁjūra <cvb>ṭhamaki</cvb> rahi gaī |</dev>
+<ref>JayP114.5</ref><dev>janahuṁ cad̤hī bhaṁvaranhi kai pāṁtī caṃdana khāṁbha <cvb>bāsa</cvb> <cvb>kai</cvb> māṁtī |</dev>
+<ref>JayP114.6</ref><dev>kai kāliṃdrī biraha satāī <cvb>cali</cvb> payāga araila bica āī |</dev>
+<ref>JayP114.7</ref><dev>nābhī kuṃḍara bānārasī sauhaṁ ko hoi mīcu tahaṁ basī |</dev>
+<ref>JayP114d</ref><dev>sira karavata tana karasī <cvb>lai</cvb> <cvb>lai</cvb> bahuta sījhe tehi āsa bahuta dhūma ghūṁṭata maiṃ dekhe utaru na dei nirāsa |</dev>
+<ref>JayP115.1</ref><dev>bairini pīṭhi līnha oiṁ pācheṃ janu <cvb>phiri</cvb> calī apacharā kācheṃ |</dev>
+<ref>JayP115.2</ref><dev>malayagiri kai pīṭhi saṁvārī benī nāga cad̤hā janu kārī |</dev>
+<ref>JayP115.3</ref><dev>laharaiṃ deta pīṭhi janu cad̤hā cīra od̤hāvā kaṃcuki mad̤hā |</dev>
+<ref>JayP115.4</ref><dev>dahuṁ kā kahaṁ asi benī kīnhī caṃdana bāsa bhuaṃganha dīnhī |</dev>
+<ref>JayP115.5</ref><dev>kisna <cvb>kai</cvb> karā cad̤hā ohi māthe taba so chūṭa aba chūṭa na nātheṃ |</dev>
+<ref>JayP115.6</ref><dev>kārī kaṁvala gahe mukhā dekhā sasi pācheṃ jasa rāhu bise[ ā |</dev>
+<ref>JayP115.7</ref><dev>ko dekhai pāvai vaha nāgū so dekhai mātheṃ mani bhāgū |</dev>
+<ref>JayP115d</ref><dev>pannaga pakaja mu[ ā gahe khaṃjana tahāṁ baīṭha chāta siṃghāsana rāja dhana tā kahaṁ hoi jo ḍīṭha |</dev>
+<ref>JayP116.1</ref><dev>laṃka puhumi asa āhi na kāhūṁ kehari kahauṃ na ohi sari tāhūṁ |</dev>
+<ref>JayP116.2</ref><dev>basā laṃka baranai jaga jhīnī tehi teṃ adhika laṃka vaha khīnī |</dev>
+<ref>JayP116.3</ref><dev>parihaṁsa piara bhae tehiṃ basā līnhe laṃka loganha kahaṁ ḍaṁsā |</dev>
+<ref>JayP116.4</ref><dev>jānahuṁ nalini khaṃḍa dui bhaī duhuṁ bica laṃka tāra <cvb>rahi</cvb> gaī |</dev>
+<ref>JayP116.5</ref><dev>hiya soṃ <cvb>mori</cvb> calai vaha tāgā paiga deta kata <cvb>sahi</cvb> saka lāgā |</dev>
+<ref>JayP116.6</ref><dev>chudra ghaṃṭi mohahiṃ nara rājā iṃdra akhāra <cvb>āi</cvb> janu sājā |</dev>
+<ref>JayP116.7</ref><dev>mānahuṁ bīna gahe kāminī rāgahiṃ sabai rāga rāginī |</dev>
+<ref>JayP116d</ref><dev>siṃgha na jītā laṃka sari <cvb>hāri</cvb> līnha bana bāsu tehiṃ risa rakata piai manaī kara khāi <cvb>māra</cvb> <cvb>kai</cvb> māṁsu |</dev>
+<ref>JayP117.1</ref><dev>nābhī kuṃḍara malai samīrū samuṁda bhaṁvara jasa bhaṁvai gaṁbhīrū |</dev>
+<ref>JayP117.2</ref><dev>bahutai bhaṁvara bauṃḍarā bhae pahuṁci na sake saraga kahaṁ gae |</dev>
+<ref>JayP117.3</ref><dev>caṃdana māṁjha kuraṃgini khojū dahuṁ ko pāva ko rājā bhojū |</dev>
+<ref>JayP117.4</ref><dev>ko ohi lāgi hivaṃcala sījhā kā kahaṁ likhī aisa ko rījhā |</dev>
+<ref>JayP117.5</ref><dev>tīvai kaṁvala sugaṃdha sarīrū samuṁda lahari sohai tana cīrū |</dev>
+<ref>JayP117.6</ref><dev>jhūlahiṃ ratana pāṭha ke jhoṃpā <cvb>sāji</cvb> madana dahuṁ kāpahaṁ kopā |</dev>
+<ref>JayP117.7</ref><dev>abahiṃ so āhi kaṁvala kai karī na janauṃ kavana bhaṁvara kahaṁ dharī |</dev>
+<ref>JayP117d</ref><dev>bedhi rahā jaga bāsanā parimala meda sugaṃdha tehi araghāni bhaṁvara saba lubudhe tajahiṃ na nīvī baṃdha |</dev>
+<ref>JayP118.1</ref><dev>baranauṃ nitaṁba laṃka kai sobhā au gaja gavana <cvb>dekhi</cvb> saba lobhā |</dev>
+<ref>JayP118.2</ref><dev>jure jaṃgha sobhā ati pāe kerā khāṁbha <cvb>pheri</cvb> janu lāe |</dev>
+<ref>JayP118.3</ref><dev>kaṁvala carana ati rāta bisekhe rahahiṃ pāṭa para puhumi na dekhe |</dev>
+<ref>JayP118.4</ref><dev>devatā hātha hātha pagu lehī pagu para jahāṁ sīsa tahaṁ dehīṃ |</dev>
+<ref>JayP118.5</ref><dev>māṁthe bhāga ko dahuṁ asa pāvā kaṁvala carana <cvb>lai</cvb> sīsa cad̤hāvā |</dev>
+<ref>JayP118.6</ref><dev>cūrā cāṁda suruja ujiārā pāyala bīca karahiṃ jhanakārā |</dev>
+<ref>JayP118.7</ref><dev>anavaṭa bichiā nakhata tarāīṃ <cvb>pahuṁci</cvb> sakai ko pāvanhi tāīṃ |</dev>
+<ref>JayP118d</ref><dev><cvb>barani</cvb> siṃgāra na jāneuṁ nakhasikha jaisa abhoga tasa jaga kichau na pāvauṃ upamā deuṁ ohi joga |</dev>
+<ref>JayP119.1</ref><dev>sunatahi rājā gā muruchāī jānahuṁ lahari suruja kai āī |</dev>
+<ref>JayP119.2</ref><dev>pema ghāva dukha jāna na koī jehi lāgai jānai pai soī |</dev>
+<ref>JayP119.3</ref><dev>parā so pema samuṃda apārā laharahiṃ lahara hoi bisaṁbhārā |</dev>
+<ref>JayP119.4</ref><dev>biraha bhaṁvara <cvb>hoi</cvb> bhāṁvari deī khina khina jīva hilorahi leī |</dev>
+<ref>JayP119.5</ref><dev>khinahi nisāsa <cvb>būd̤i</cvb> jiu jāī khinahi uṭhai nisaṁsai baurāī |</dev>
+<ref>JayP119.6</ref><dev>khinahi pīta khina hoi mukha setā khinahi ceta khina hoi acetā |</dev>
+<ref>JayP119.7</ref><dev>kaṭhina marana teṃ pema bevasthā na jiaṁ jibana na dasaīṁ avasthā |</dev>
+<ref>JayP119d</ref><dev>jani lenihāranha līnha jiu harahiṃ tarāsahiṃ tāhi etanā bola na āva mukha karahiṃ tarāhi tarāhi |</dev>
+<ref>JayP120.1</ref><dev>jahaṁ lagi kuṭuṁba loga au negī rājā rāya āe saba begī |</dev>
+<ref>JayP120.2</ref><dev>jāṁvata gunī gārurī āe ojhā baida sayāna bolāe |</dev>
+<ref>JayP120.3</ref><dev>caracahiṃ ceṣṭā parakhahiṃ nārī niara nāhiṃ oṣada tehi bārī |</dev>
+<ref>JayP120.4</ref><dev>hai rājahiṃ laṣṣana kai karā sakati bāna mohā hai parā |</dev>
+<ref>JayP120.5</ref><dev>nahiṃ so rāma hanivaṁta bad̤i dūrī <cvb>kolai</cvb> āva sajīvani mūrī |</dev>
+<ref>JayP120.6</ref><dev>binau karahiṃ jete gad̤hapati kājiu kīnha kavani mati matī |</dev>
+<ref>JayP120.7</ref><dev>kahahu so pīra kāha binu khāṁgā samuṁda sumeru āva tumha māṁgā |</dev>
+<ref>JayP120d</ref><dev>dhāvana tahāṁ paṭhāvahu dehiṃ lākha dasa roka hai so beli jehi bārī ānahiṃ sabai baroka |</dev>
+<ref>JayP121.1</ref><dev>jauṃ bhā ceta uṭhā bairāgā bāura janahuṁ <cvb>soi</cvb> asa jāgā |</dev>
+<ref>JayP121.2</ref><dev>āvana jagata bālaka jasa rovā uṭhā <cvb>roi</cvb> ho gyāna so khovā |</dev>
+<ref>JayP121.3</ref><dev>hauṃ to ahā amarapura jahāṁ ihāṁ maranapura āeuṁ kahāṁ |</dev>
+<ref>JayP121.4</ref><dev>keiṁ upakāra marana kara kīnhā sakati <cvb>jagāi</cvb> jīu <cvb>hari</cvb> līnhā |</dev>
+<ref>JayP121.5</ref><dev>sovata ahā jahāṁ sukha khāvā kasa na tahāṁ sovata vidhi rākhā |</dev>
+<ref>JayP121.6</ref><dev>aba jiu tahāṁ ihāṁ tana sūnā kaba lagi rahai parāna bihūnā |</dev>
+<ref>JayP121.7</ref><dev>jau jiu ghaṭihi kāla ke hāthāṁ ghaṭana nīka pai jīva nisāthāṁ |</dev>
+<ref>JayP121d</ref><dev>ahuṭha hātha tana saravara hiyā kaṁvala tehi māṁha nainanhi jānahu niareṃ kara pahuṁcata avagāha |</dev>
+<ref>JayP122.1</ref><dev>sabanhi kahā mana samajhahu rājā kāla sateṃ kai <cvb>jūjhi</cvb> na chājā |</dev>
+<ref>JayP122.2</ref><dev>tāsauṃ <cvb>jūjhi</cvb> jāta jauṃ jītā jāta ta kirasuna <cvb>taji</cvb> gopītā |</dev>
+<ref>JayP122.3</ref><dev>au nahiṃ nehu kāhu sauṃ kījai nāuṁ mīṭha khāeṁ jiu dījai |</dev>
+<ref>JayP122.4</ref><dev>pahilehiṃ sukkha nehu java jorā puni hoi kaṭhina nibāhata orā |</dev>
+<ref>JayP122.5</ref><dev>ahuṭha hātha tana jaisa sumerū <cvb>pahuṁci</cvb> na jāi parā tasa pherū |</dev>
+<ref>JayP122.6</ref><dev>gaṁgana disṭi sauṃ jāi pahūṁcā pema adisṭi gaṁgana sauṃ ūṁcā |</dev>
+<ref>JayP122.7</ref><dev>dhuva teṃ ūṁca pema dhuva uvā sira dai pāu dei so chuvā |</dev>
+<ref>JayP122d</ref><dev>tumha rājā au sukhiā karahu rāja sukha bhoga ehi re paṃtha so pahuṁcai sahai jo dukkha viyoga |</dev>
+<ref>JayP123.1</ref><dev>suaiṃ kahā mana samujhahu rājā karata pirīta kaṭhina hai kājā |</dev>
+<ref>JayP123.2</ref><dev>tumha abahīṃ jeīṃ ghara poīṃ kaṁvala na <cvb>baiṭhi</cvb> baiṭha hahu koīṃ |</dev>
+<ref>JayP123.3</ref><dev>jānahi bhaṁvara jo tehi paṁtha lūṭe jīu dīnha au dieṁ na chūṭe |</dev>
+<ref>JayP123.4</ref><dev>kaṭhina āhi siṃghala kara rājū pāia nāhiṃ rāja ke sājū |</dev>
+<ref>JayP123.5</ref><dev>ohiṃ paṁtha jāi jo hoi udāsī jogī jatī tapā saṃnyāsī |</dev>
+<ref>JayP123.6</ref><dev>bhoga <cvb>jori</cvb> pāita vaha bhogū <cvb>taji</cvb> so bhoga koi karata na jogū |</dev>
+<ref>JayP123.7</ref><dev>tumha rājā cāhahu sukha pāvā jogahi bhogahi kata <cvb>bani</cvb> āvā |</dev>
+<ref>JayP123d</ref><dev>sādhanha siddhi na pāia jau lahi sādha na tappa soī jānahiṃ bāpure jo sira karahiṃ kalappa |</dev>
+<ref>JayP124.1</ref><dev>kā bhā joga kahānī katheṃ nikasai na ghiu bāju dadhi matheṃ |</dev>
+<ref>JayP124.2</ref><dev>jauṃ lahi āpu herāi na koī tau lahi herata pāva na soī |</dev>
+<ref>JayP124.3</ref><dev>pema pahāra kaṭhina bidhi gad̤hā so pai cad̤hai sīsa soṃ cad̤hā |</dev>
+<ref>JayP124.4</ref><dev>paṃtha sūrinha kara uṭhā aṃkūrū cora cad̤hai ki cad̤hai maṁsūrū |</dev>
+<ref>JayP124.5</ref><dev>tū rājā kā pahirasi kaṃthā toreṃ ghaṭahi māṁha dasa paṃthā |</dev>
+<ref>JayP124.6</ref><dev>kāma krodha tisnā mada māyā pāṁcau cora na chād̤ahiṃ kāyā |</dev>
+<ref>JayP124.7</ref><dev>nava seṃdhai ohi ghara maṁjhiārā ghara mūsahiṃ <cvb>nisi</cvb> <cvb>kai</cvb> ujiārā |</dev>
+<ref>JayP124d</ref><dev>abahūṁ jāgu ayāne hota āva nisu bhora puni kichu hātha na lāgihi mūsi jāhiṃ jaba cora |</dev>
+<ref>JayP125.1</ref><dev><cvb>suni</cvb> so bāta rājā mana jāgā palaka na māra pema cita lāgā |</dev>
+<ref>JayP125.2</ref><dev>nainanha ḍharahiṃ moti au mūṁgā jasa gura <cvb>khāi</cvb> rahā hoi gūṁgā |</dev>
+<ref>JayP125.3</ref><dev>hieṁ kī joti dīpa vaha sūjhā yaha jo dīpa adhiara bhā būjhā |</dev>
+<ref>JayP125.4</ref><dev>ulaṭi disṭi māyā sauṃ rūṭhī palaṭi na phirī <cvb>jāni</cvb> <cvb>kai</cvb> jūṭhī |</dev>
+<ref>JayP125.5</ref><dev>jau pai nāhīṃ asthira dasā jaga ujāra kā kījai basā |</dev>
+<ref>JayP125.6</ref><dev>gurū biraha cinagī pai melā jo <cvb>sulagāi</cvb> lei so celā |</dev>
+<ref>JayP125.7</ref><dev>aba kai phaniga bhṛgi kai karā bhaṁvara houṁ jehi kārana jarā |</dev>
+<ref>JayP125d</ref><dev>phūla phūla phiri pūchauṃ jauṃ pahuṁcauṃ ohi keta tana nevachāvara kai milaiṃ jyauṃ madhukara jiu deta |</dev>
+<ref>JayP126.1</ref><dev>tajā rāja rājā bhā jogī au kiṃgarī kara gaheṃ biyogī |</dev>
+<ref>JayP126.2</ref><dev>tana bisaṁbhara mana bāura raṭā arujhā pema parī sira jaṭā |</dev>
+<ref>JayP126.3</ref><dev>caṃda badana au caṃdana dehā bhasama <cvb>cad̤hāi</cvb> kīnha tana khehā |</dev>
+<ref>JayP126.4</ref><dev>mekhala siṃgī cakra dhaṁdhārī jogauṭā rudrākha adhārī |</dev>
+<ref>JayP126.5</ref><dev>kaṃthā <cvb>pahiri</cvb> ḍaṃḍa kara gahā siddhi hoi kahaṁ gorakha kahā |</dev>
+<ref>JayP126.6</ref><dev>muṃdrā sravana kaṃṭha japamālā kara udapāna kāṁdha baghachālā |</dev>
+<ref>JayP126.7</ref><dev>pāṁvari pāṁva līnha sira chātā khappara līnha <cvb>bhesa</cvb> <cvb>kai</cvb> rātā |</dev>
+<ref>JayP126d</ref><dev>calā bhuguti māṁgai kahaṁ <cvb>sāji</cvb> kayā tapa joga siddha houṁ padumāvati pāeṁ hiradai jehi ka biyoga |</dev>
+<ref>JayP127.1</ref><dev>ganaka kahahiṃ karu gavana ājū dina <cvb>lai</cvb> calahi pharai sidhi kājū |</dev>
+<ref>JayP127.2</ref><dev>pema paṃtha dina gharī na dekhā taba dekhai jaba hoi sarekhā |</dev>
+<ref>JayP127.3</ref><dev>jehi tana pema kahāṁ tehi māṁsū kathā na rakata nayananhi āṁsū |</dev>
+<ref>JayP127.4</ref><dev>paṁḍita bhulāna na jānai cālū jīu leta dina pūṁcha na kālū |</dev>
+<ref>JayP127.5</ref><dev>satī ki baurī pūṁchai pāṁd̤e au ghara <cvb>paiṭhi</cvb> sameṭai bhāṁd̤e |</dev>
+<ref>JayP127.6</ref><dev><cvb>mari</cvb> jo calai gāṁga gati leī tehi dina gharī kahāṁ ko deī |</dev>
+<ref>JayP127.7</ref><dev>maiṃ ghara bāra kahāṁ kara pāvā ghara kāyā puni aṃta parāvā |</dev>
+<ref>JayP127d</ref><dev>hauṃ re paṁkherū paṁkhī jehi bana mora nibāhu kheli calā tehi bana kahaṁ tumha āpana ghara jāhu |</dev>
+<ref>JayP128.1</ref><dev>cahuṁ disi āna soṃṭianha pherī bhai kaṭakāī rājā kerī |</dev>
+<ref>JayP128.2</ref><dev>jāṁvata ahai sakala oragānā sāṁvara lehu dūri hai jānā |</dev>
+<ref>JayP128.3</ref><dev>siṃghala dīpa <cvb>jāi</cvb> saba cāhā mola na pāuba jahāṁ besāhā |</dev>
+<ref>JayP128.4</ref><dev>saba nibahihi tahaṁ āpani sāṁṭhī sāṁṭhī binā rahaba mukha māṁṭī |</dev>
+<ref>JayP128.5</ref><dev>rājā calā <cvb>sāji</cvb> <cvb>kai</cvb> jogū sājahu begi calai saba logū |</dev>
+<ref>JayP128.6</ref><dev>garaba jo cad̤he turai kī pīṭhī aba so tajahu saraga sauṃ ḍīṭhī |</dev>
+<ref>JayP128.7</ref><dev>maṃtrā lehu hohu saṁga lāgū gudari jāi saba <cvb>hoihi</cvb> āgū |</dev>
+<ref>JayP128d</ref><dev>kā niciṃta re manuse āpani ciṃtā āchu lehi sajaga <cvb>hoi</cvb> agumana phiri pachitāhi na pāchu |</dev>
+<ref>JayP129.1</ref><dev>binavai ratanaseni kai māyā māṁtheṃ chatra pāṭa niti pāyā |</dev>
+<ref>JayP129.2</ref><dev>berasahu nava lakha lacchi piārī rāja <cvb>chāṁd̤i</cvb> jani hohu bhikārī |</dev>
+<ref>JayP129.3</ref><dev>niti caṃdana lāgai jehi dehā so tana dekhu bharaba aba khehā |</dev>
+<ref>JayP129.4</ref><dev>saba dina raheu karata tumha bhogū so kaise sādhava tapa jogū |</dev>
+<ref>JayP129.5</ref><dev>kaiseṃ dhūpa sahaba binu chāhāṁ kaiseṃ nīṃda parihi bhuiṁ māhāṁ |</dev>
+<ref>JayP129.6</ref><dev>kaiseṃ od̤haba kāṁvari kaṃthā kaiseṃ pāuṁ calaba tumha paṃthā |</dev>
+<ref>JayP129.7</ref><dev>kaiseṃ sahaba khinahi khina bhūkhā kaiseṃ khāba kurakuṭā rūkhā |</dev>
+<ref>JayP129d</ref><dev>rāja pāṭa dara parigaha saba tumha soṃ ujiāra <cvb>baiṭhi</cvb> bhoga rasa mānahu kai na calahu aṁdhiāra |</dev>
+<ref>JayP130.1</ref><dev>mohiṃ yaha lobha sunāu na māyā kākara sukha kākara yaha kāyā |</dev>
+<ref>JayP130.2</ref><dev>jauṃ niāna tana hoihi chārā māṁṭī <cvb>pokhi</cvb> mareṃ ko bhārā |</dev>
+<ref>JayP130.3</ref><dev>kā bhūlahu ehi caṃdana covāṁ bairī jahāṁ āṁga ke rovāṁ |</dev>
+<ref>JayP130.4</ref><dev>hātha pāu saravana au āṁkhī ye saba hī bharahaiṃ puni sākhī |</dev>
+<ref>JayP130.5</ref><dev>sota sota bolihiṃ tana dokhū kahu kaiseṃ hohi gati mokhū |</dev>
+<ref>JayP130.6</ref><dev>jauṃ bhala hota rāja au bhogū gopicaṃda kasa sādhata jogū |</dev>
+<ref>JayP130.7</ref><dev>onahūṁ sisṭi jauṃ dekha parevā tajā rāja kajarī bana sevā |</dev>
+<ref>JayP130d</ref><dev>dekhu aṃta asa hoihi gurū dīnha upadesa siṃghala dīpa jāba maiṃ mātā mora adesa |</dev>
+<ref>JayP131.1</ref><dev>rovai nāgamatī ranivāsū keiṁ tumha kaṃta dīnha bana bāsū |</dev>
+<ref>JayP131.2</ref><dev>aba ko hamahiṃ karihi bhoginī hamahūṁ sātha hoiba joginī |</dev>
+<ref>JayP131.3</ref><dev>kai hama lāvahu apane sāthāṁ kai aba <cvb>māri</cvb> calahu saiṃ hāthāṁ |</dev>
+<ref>JayP131.4</ref><dev>tumha asa bichure pīu pirītā jahavāṁ rāma tahāṁ saṁga sītā |</dev>
+<ref>JayP131.5</ref><dev>jau lahi jiu saṁga chod̤a na kāyā karihauṃ seva pakharihauṃ pāyā |</dev>
+<ref>JayP131.6</ref><dev>bhalehiṃ paduminī rūpa anūpā hamateṃ koi na āgari rūpā |</dev>
+<ref>JayP131.7</ref><dev>bhavai bhalehiṃ puruṣanha kai ḍīṭhī jinha jānā tinha dīnhi na pīṭhī |</dev>
+<ref>JayP131d</ref><dev>dehiṃ asīsa sabai <cvb>mili</cvb> tumha mātheṃ niti chāta rāja karahu gad̤ha citaura rākhahu piya ahibāta |</dev>
+<ref>JayP132.1</ref><dev>tumha tiriā mati hīna tumhārī mūrukha so jo matai ghara nārīṃ |</dev>
+<ref>JayP132.2</ref><dev>rāghau jauṃ sītā saṁga lāī rāvana harī kavana sidhi pāī |</dev>
+<ref>JayP132.3</ref><dev>yahu saṃsāra sapana kara lekhā <cvb>bichuri</cvb> gae jānahu nahiṃ dekhā |</dev>
+<ref>JayP132.4</ref><dev>rājā bharathari <cvb>suni</cvb> re ayānī jehi ke ghara soraha sai rānī |</dev>
+<ref>JayP132.5</ref><dev>kucanha liheṃ taravā saharāīṃ bhā jogī koi sātha na leīṃ |</dev>
+<ref>JayP132.6</ref><dev>joginha kāha bhoga soṃ kājū cahai na meharī cahai na rājū |</dev>
+<ref>JayP132.7</ref><dev>jūd̤a kurakuṭā pai bhakhu cāhā jogihi tāta bhāta dahuṁ kāhā |</dev>
+<ref>JayP132d</ref><dev>kahā na mānai rājā tajī sabāīṃ bhīra calā <cvb>chād̤i</cvb> saba rovata <cvb>phiri</cvb> <cvb>kai</cvb> dei na dhīra |</dev>
+<ref>JayP133.1</ref><dev>rovai matā na bahurai bārā ratana calā jaga bhā aṁdhiārā |</dev>
+<ref>JayP133.2</ref><dev>bāra mora rajiyāura ratā so lai calā suvā parabatā |</dev>
+<ref>JayP133.3</ref><dev>rovahiṃ rānī tajahiṃ parānā phorahiṃ balaya karahiṃ kharihānā |</dev>
+<ref>JayP133.4</ref><dev>cūrajiṃ giva abharana au hārū aba kākahaṁ hama karaba siṃgārū |</dev>
+<ref>JayP133.5</ref><dev>jākahaṁ kahahiṃ <cvb>rahasi</cvb> <cvb>kai</cvb> piū soi calā kākara yahu jīū |</dev>
+<ref>JayP133.6</ref><dev><cvb>marai</cvb> cahahiṃ pai <cvb>marai</cvb> na pāvahiṃ uṭhai āga taba loga bujhāvahiṃ |</dev>
+<ref>JayP133.7</ref><dev>gharī eka suṭhi bhaeu aṁdorā puni pācheṃ bītā hoi rorā |</dev>
+<ref>JayP133d</ref><dev>ṭūṭa manai nava motī phūṭa manai dasa kāṁca līnha <cvb>sameṭi</cvb> obarina hoigā dukha kara nāṁca |</dev>
+<ref>JayP134.1</ref><dev>nikasā rājā siṃgī pūrī <cvb>chād̤i</cvb> nagara melā hoi dūrī |</dev>
+<ref>JayP134.2</ref><dev>rāya rāne saba bhae biyogī soraha sahasa kuṁvara bhae jogī |</dev>
+<ref>JayP134.3</ref><dev>māyā moha harī saiṃ hāthāṁ dekhenhi būjhi niāna na sāthāṁ |</dev>
+<ref>JayP134.4</ref><dev>chād̤enhi loga kuṭuṁba ghara soū bhe nināra dukha sukha <cvb>taji</cvb> doū |</dev>
+<ref>JayP134.5</ref><dev>saṁvarai rājā soi akelā jehi re paṃtha khelai hoi celā |</dev>
+<ref>JayP134.6</ref><dev>nagara nagara au gāvaṁhiṃ gāūṁ calā <cvb>chād̤i</cvb> saba ṭhāvaṁhiṃ ṭhāūṁ |</dev>
+<ref>JayP134.7</ref><dev>kākara ghara kākara mad̤ha māyā tākara saba jākara jiu kāyā |</dev>
+<ref>JayP134d</ref><dev>calā kaṭaka joginha <cvb>kara</cvb> <cvb>kai</cvb> geruā saba bheṣu kosa bīsa cārihuṁ disi jānahuṁ phūlā ṭesu |</dev>
+<ref>JayP135.1</ref><dev>āgeṃ saguna saguniāṁ tākā dahiu maccha rūpe kara ṭākā |</dev>
+<ref>JayP135.2</ref><dev>bhareṃ kalasa tarunī cali āī dahiu lehu gvālina goharāī |</dev>
+<ref>JayP135.3</ref><dev>mālini āu maura <cvb>lai</cvb> gāṁtheṃ khaṃjana baiṭha nāga ke māṁtheṃ |</dev>
+<ref>JayP135.4</ref><dev>dahineṃ miriga <cvb>āi</cvb> gā dhāī pratīhāra bolā khara bāīṃ |</dev>
+<ref>JayP135.5</ref><dev>birkha saṁvariā dāhina bolā bāeṁ disi gādura nahiṃ ḍolā |</dev>
+<ref>JayP135.6</ref><dev>bāeṁ akāsī dhobini āī lovā darasana <cvb>āi</cvb> dekhāī |</dev>
+<ref>JayP135.7</ref><dev>bāeṁ kurārī dāhina kūcā pahuṁcai bhuguti jaisa mana rūcā |</dev>
+<ref>JayP135d</ref><dev>jākahaṁ hohiṃ saguna asa au gavanai jehi āsa asṭau mahāsiddhi tehi jasa kabi kahā biāsa |</dev>
+<ref>JayP136.1</ref><dev>bhaeu payāna calā puni rājā siṃghanāda joginha kara bājā |</dev>
+<ref>JayP136.2</ref><dev>kahenhi āju kachu ora payānā kālhi payāna dūri hai jānā |</dev>
+<ref>JayP136.3</ref><dev>ohiṃ melāna jaba pahuṁcihi koī taba hama kahaba puruṣa bhala soī |</dev>
+<ref>JayP136.4</ref><dev>ehi āge parabata kī pāṭī biṣama pahāra agama suṭhi ghāṭī |</dev>
+<ref>JayP136.5</ref><dev>bica bica khoha nadī au nārā ṭhāṁvahiṃ ṭhāṁva uṭhahiṃ baṭapārā |</dev>
+<ref>JayP136.6</ref><dev>hanivaṁta kera sunaba puni hāṁkā dahuṁ ko pāra hoi ko thākā |</dev>
+<ref>JayP136.7</ref><dev>asa mana <cvb>jāni</cvb> saṁbhārahu āgū aguā keri hohu pachalāgū |</dev>
+<ref>JayP136d</ref><dev>karahiṃ payāna bhora <cvb>uṭhi</cvb> nitahi kosa dasa jāhiṃ paṃthī paṃthāṁ je calahiṃ te kā rahana onāhiṃ |</dev>
+<ref>JayP137.1</ref><dev>karahu disṭi thira hohu baṭāū āgū <cvb>dekhi</cvb> dharahu bhuiṁ pāū |</dev>
+<ref>JayP137.2</ref><dev>jauṃ re ubaṭa hoi pare bhulāne gae māre paṁtha calai na jāne |</dev>
+<ref>JayP137.3</ref><dev>pāvanha <cvb>pahiri</cvb> lehu saba paṁvarī kāṁṭa na cubhai na gad̤ai aṁkavarī |</dev>
+<ref>JayP137.4</ref><dev>pare āi aba banakhaṁḍa māhāṁ ḍaṃḍaka ārana bīṃjha banāhāṁ |</dev>
+<ref>JayP137.5</ref><dev>saghana ḍhāṁkha bana cahuṁ disi phūlā bahu dukha milihi ihāṁ kara bhūlā |</dev>
+<ref>JayP137.6</ref><dev>jhāṁkhara jahāṁ so chād̤ahu paṃthā <cvb>hilagi</cvb> makoi na phārahu kaṃthā |</dev>
+<ref>JayP137.7</ref><dev>dahine bidara caṁderī bāeṁ dahuṁ kahaṁ hoba bāṭa duhuṁ ṭhāeṁ |</dev>
+<ref>JayP137d</ref><dev>eka bāṭa gau siṃghala dosara laṃka samīpa hahiṃ āge paṁtha doū dahuṁ gavanaba kehi dīpa |</dev>
+<ref>JayP138.1</ref><dev>tatakhana bolā suā sarekhā aguā soi paṃtha jeiṁ dekhā |</dev>
+<ref>JayP138.2</ref><dev>so kā ud̤ai na jehi tana pāṁkhū <cvb>lai</cvb> so parāsahiṃ būd̤ai sākhū |</dev>
+<ref>JayP138.3</ref><dev>jasa aṃdhā aṃdhe kara saṃgī paṃtha na pāva hoi sahalaṃgī |</dev>
+<ref>JayP138.4</ref><dev>sunu mati kāja cahasi jauṃ sājā bījānagara bijaigiri rājā |</dev>
+<ref>JayP138.5</ref><dev>pūṁchu na jahāṁ kuṃḍa aura golā taju bāeṁ aṁdhiyāra khaṭolā |</dev>
+<ref>JayP138.6</ref><dev>dakkhina dahine rahai tilaṃgā uttara māṁjhe gad̤hā khaṭaṃgā |</dev>
+<ref>JayP138.7</ref><dev>māṁjha ratanapura sauṃha duārā jhārakhaṃḍa dai bāuṁ pahārā |</dev>
+<ref>JayP138d</ref><dev>āgeṃ pāuṁ od̤aisā bāeṁ dehu so bāṭa dahināvarta <cvb>lāikai</cvb> utaru samuṃdra ke ghāṭa |</dev>
+<ref>JayP139.1</ref><dev>hota payāna jāi dina kerā miragārana mahaṁ bhaeu baserā |</dev>
+<ref>JayP139.2</ref><dev>kusa sāṁthari bhai saura supetī karavaṭa <cvb>āi</cvb> banī bhuiṁ setī |</dev>
+<ref>JayP139.3</ref><dev>kayā malai tehi bhasama malījā <cvb>cali</cvb> dasa kosa osa niti bhījā |</dev>
+<ref>JayP139.4</ref><dev>ṭhāṁvahiṃ ṭhāṁva sovahiṃ saba celā rājā jāgai āpu akelā |</dev>
+<ref>JayP139.5</ref><dev>jehi keṃ hieṁ pema raṁga jāmā kā tehi bhūkha nīṃda bisarāmā |</dev>
+<ref>JayP139.6</ref><dev>bana aṁdhiāra raini aṁdhiyārī bhādauṃ biraha bhaeu ati bhārī |</dev>
+<ref>JayP139.7</ref><dev>kiṃgarī hātha gaheṃ bairāgī pāṁca taṃtu dhuni <cvb>uṭhai</cvb> lāgī |</dev>
+<ref>JayP139d</ref><dev>naina lāgu tehi māraga padumāvati jehi dīpa jaisa sevātī sevahiṃ bana cātaka jala sīpa |</dev>
+<ref>JayP140.1</ref><dev>māseka lāga calata tehi bāṭāṁ utare <cvb>jāi</cvb> samuṁda ke ghāṭāṁ |</dev>
+<ref>JayP140.2</ref><dev>ratanaseni bhā jogī jatī <cvb>sunibheṃṭai</cvb> āeu gajapatī |</dev>
+<ref>JayP140.3</ref><dev>jogī āpu kaṭaka saba celā kauna dīpa kahaṁ cāhia khelā |</dev>
+<ref>JayP140.4</ref><dev>pahilehiṃ āe māyā kījai hama pahunaī kahaṁ āesu dījai |</dev>
+<ref>JayP140.5</ref><dev>sunahu gajapatī utaru hamārā hama tumha ekai bhāva nirārā |</dev>
+<ref>JayP140.6</ref><dev>so tinha kahaṁ jinha mahaṁ bahu bhāū jo nirabhāva na lāva nasāū |</dev>
+<ref>JayP140.7</ref><dev>yahai bahuta jo bohita pāvauṃ tumhateṃ siṃghala dīpa sidhāvauṃ |</dev>
+<ref>JayP140d</ref><dev>jahāṁ mohi niju jānā hohuṁ kaṭaka <cvb>lai</cvb> pāra jauṃ re jiauṃ <cvb>lai</cvb> bahurauṃ marauṃ to ohi ke bāra |</dev>
+<ref>JayP141.1</ref><dev>gajapati kahā sīsa baru māṁgā etane bola na hoihi khāṁgā |</dev>
+<ref>JayP141.2</ref><dev>ye saba dehuṁ <cvb>āni</cvb> nai gad̤he phūla soi jo mahesahi cad̤hai |</dev>
+<ref>JayP141.3</ref><dev>pai gosāiṁ soṃ eka binātī māraga kaṭhina jāba kehi bhāṁtī |</dev>
+<ref>JayP141.4</ref><dev>sāta samuṃda asūjha apārā mārahiṃ magara maccha ghariyārā |</dev>
+<ref>JayP141.5</ref><dev>uṭhai lahari nahiṃ jāi saṁbhārī bhāgahiṃ koi nibahai vaipārī |</dev>
+<ref>JayP141.6</ref><dev>tumha sukhiyā apane ghara rājā eta jo dukkha sahahu kehi kājā |</dev>
+<ref>JayP141.7</ref><dev>siṃghala dīpa jāi so koī hātha liye jiu āpana hoī |</dev>
+<ref>JayP141d</ref><dev>khāra khīra dadhi udadhi surā jala puni kilakilā akūta ko <cvb>cad̤hi</cvb> bāṁdhahi samuṁda ye sātauṃ hai kākara asa būta |</dev>
+<ref>JayP142.1</ref><dev>gajapati yaha mana sakatī sīū pai jehi pema kahāṁ tehi jīū |</dev>
+<ref>JayP142.2</ref><dev>jauṃ pahileṃ sira <cvb>dai</cvb> pagu dharaī mue kera mīcuhi kā karaī |</dev>
+<ref>JayP142.3</ref><dev>sukha <cvb>saṁkalapi</cvb> dukha sāṁbara līnheuṁ tau payāna siṃghala kahaṁ kīnheuṁ |</dev>
+<ref>JayP142.4</ref><dev>bhaṁvara jāna pai kaṁvala pirītī jehi mahaṁ bithā pema kai bītī |</dev>
+<ref>JayP142.5</ref><dev>au jeiṁ samuṁda pema kara dekhā teiṁ yaha samuṁda buṃda baru lekhā |</dev>
+<ref>JayP142.6</ref><dev>sāta samuṁda sata kīnha saṁbhārū jauṃ dharatī kā garuva pahārū |</dev>
+<ref>JayP142.7</ref><dev>jeiṁ pai jiya bāṁdhā satu berā baru jiya jāi <cvb>phirai</cvb> nahiṃ pherā |</dev>
+<ref>JayP142d</ref><dev>raṃganātha hauṃ jākara hātha ohi ke nāṁtha gaheṃ nāṁtha so khāṁcai phere <cvb>phirai</cvb> na māṁtha |</dev>
+<ref>JayP143.1</ref><dev>pema samuṃda aisa avagāhā jahāṁ na vāra pāra nahiṃ thāhā |</dev>
+<ref>JayP143.2</ref><dev>jauṃ vaha samuṁda kāha ehi pare jauṃ avagāha haṃsa <cvb>hoi</cvb> tire |</dev>
+<ref>JayP143.3</ref><dev>hauṃ padumāvati kara bhikhamaṁgā disṭi na āva samuṁda au gaṁgā |</dev>
+<ref>JayP143.4</ref><dev>jehi kārana giyaṁ kāṁthari kaṃthā jahāṁ so milai jāuṁ tehi paṃthā |</dev>
+<ref>JayP143.5</ref><dev>aba ehi samuṁda parauṃ <cvb>hoi</cvb> marā pema mora pānī kai karā |</dev>
+<ref>JayP143.6</ref><dev>mara <cvb>hoi</cvb> bahā katahuṁ lai jāū ohi ke paṃtha koi lai khāū |</dev>
+<ref>JayP143.7</ref><dev>asa mana <cvb>jāni</cvb> samuṁda mahaṁ paraūṁ jau koi khāi begi nistaraūṁ |</dev>
+<ref>JayP143d</ref><dev>saraga sīsa dhara dharatī hiyā so pema samuṃda naina kaud̤iyā hoi rahe <cvb>lai</cvb> <cvb>lai</cvb> uṭhahiṃ so buṃda |</dev>
+<ref>JayP144.1</ref><dev>kaṭhina biyoga joga dukha ḍāhū jarama jarata hoi ora nibāhū |</dev>
+<ref>JayP144.2</ref><dev>ḍara lajyā tahaṁ duvau gaṁvānī dekhai kachu na āgi au pānī |</dev>
+<ref>JayP144.3</ref><dev>āgi <cvb>dekhi</cvb> ohi āgia bhāvā pānī <cvb>dekhi</cvb> kai sauṃhe dhāvā |</dev>
+<ref>JayP144.4</ref><dev>jasa bāura na bujhāe būjhā jaunihiṃ bhāṁti jāi kā sūjhā |</dev>
+<ref>JayP144.5</ref><dev>magara maccha ḍara hieṁ na lekhā āpuhiṃ jāna pāra bhā dekhā |</dev>
+<ref>JayP144.6</ref><dev>au na khāhiṃ ohi siṃdha sadūrā kāṭhahu cāhi adhika so jhūrā |</dev>
+<ref>JayP144.7</ref><dev>kāyā māyā saṃga na āthī jehi jiya sauṃpā soī sāthī |</dev>
+<ref>JayP144d</ref><dev>jo kachu daraba ahā saṁga dāna dīnha saṃsāra kā jānī kehi ke sata daiya utāre pāra |</dev>
+<ref>JayP145.1</ref><dev>dhani jīvana au tākara jiyā ūṁca jagata mahaṁ jākara diyā |</dev>
+<ref>JayP145.2</ref><dev>diyā so saba japa tapa uparāhīṃ diyā barābara jaga kichu nāhīṃ |</dev>
+<ref>JayP145.3</ref><dev>eka diyā teiṁ dasa guna lāhā diyā <cvb>dekhi</cvb> dharamī mukha cāhā |</dev>
+<ref>JayP145.4</ref><dev>diyā so kāja duhūṁ jaga āvā ihāṁ jo diyā uhāṁ so pāvā |</dev>
+<ref>JayP145.5</ref><dev>diyā karai āgeṃ ujiārā jahāṁ na diyā tahāṁ aṁdhiyārā |</dev>
+<ref>JayP145.6</ref><dev>diyā maṁdila nisi karai aṁjorā diyā nāhiṃ ghara mūsahiṃ corā |</dev>
+<ref>JayP145.7</ref><dev>hātima karana diyā jauṃ sikhā diyā ahā dharamanhi mahaṁ likhā |</dev>
+<ref>JayP145d</ref><dev>niramala paṃtha kīnha tinha jinha re diyā kachu hātha kichu na koī lai jāihi diyā jāi pai sātha |</dev>
+<ref>JayP146.1</ref><dev>sata na ḍola dekhā gajapatī rājā datta satta duhuṁ satī |</dev>
+<ref>JayP146.2</ref><dev>āpana nāhiṃ kayā pai kaṃthā jīu dīnha agumana tehi paṃthā |</dev>
+<ref>JayP146.3</ref><dev>niscaiṃ calā bharama ḍara khoī sāhasa jahāṁ siddhi tahaṁ hoī |</dev>
+<ref>JayP146.4</ref><dev>niscaiṃ calā <cvb>chād̤i</cvb> ke rājū bohita dīnha dīnha nai sājū |</dev>
+<ref>JayP146.5</ref><dev>cad̤he begi au bohita pele dhani oi puruṣa pema paṁtha khele |</dev>
+<ref>JayP146.6</ref><dev>tinha pāvā uttima kabilāsū jahāṁ na mīcu sadā sukha bāsū |</dev>
+<ref>JayP146.7</ref><dev>pema paṃtha jauṃ pahuṁcai pārāṁ bahuri na <cvb>āi</cvb> milai ehi chārāṁ |</dev>
+<ref>JayP146d</ref><dev>ehi jīvana kai āsa kā jasa sapanā tila ādhu muhamada jiatahi je marahiṃ tei puruṣa kahu sādhu |</dev>
+<ref>JayP147.1</ref><dev>jasa ratha reṃgi calai gaja ṭhāṭī bohita cale samuṁda gā pāṭī |</dev>
+<ref>JayP147.2</ref><dev>dhāvahiṃ bohita mana uparāhīṃ sahasa kosa eka pala mahaṁ jāhīṃ |</dev>
+<ref>JayP147.3</ref><dev>samuṁda apāra saraga janu lāgā saraga na ghāli ganai bairāgā |</dev>
+<ref>JayP147.4</ref><dev>tatakhana cālhā eka dikhāvā janu dhaulāgiri parabata āvā |</dev>
+<ref>JayP147.5</ref><dev>uṭhī hilora jo cākha narājī lahari akāsa <cvb>lāgi</cvb> bhuiṁ bājī |</dev>
+<ref>JayP147.6</ref><dev>rājā seṃti kuṁvara saba kahahīṃ asa asa maccha sanuṁda mahaṁ rahahīṃ |</dev>
+<ref>JayP147.7</ref><dev>tehi re paṃtha hama cāhahiṃ gavanā hohu saṁjūta bahuri nahiṃ avanā |</dev>
+<ref>JayP147d</ref><dev>guru hamāra tumha rājā hama celā au nātha jahāṁ pāṁva guru rākhai celā rākhai māṁtha |</dev>
+<ref>JayP148.1</ref><dev>kevaṭa haṁse so sunata gaveṃjā samuṁda na jāna kuṁā kara meṃjā |</dev>
+<ref>JayP148.2</ref><dev>yaha tau cālha na lāgai kohū kāha kahau jau dekhahu rohū |</dev>
+<ref>JayP148.3</ref><dev>avahīṃ tau tumha dekhe nāhīṃ jehi mukha aise sahasa samāhīṃ |</dev>
+<ref>JayP148.4</ref><dev>rāja paṃkhi tinha para maṁḍarāhīṃ sahasa kosa jinha kī parichāhīṃ |</dev>
+<ref>JayP148.5</ref><dev>te oi maccha ṭhora <cvb>gahi</cvb> lehīṃ sāvaka mukha cārā lai dehīṃ |</dev>
+<ref>JayP148.6</ref><dev>garajai gaṁgana paṃkhi jauṃ bolahiṃ ḍolai samuṁda ḍahana jau kholahiṃ |</dev>
+<ref>JayP148.7</ref><dev>tahāṁ na cāṁda na suruja asūjhā cad̤hai so jo asa agumanabūjhā |</dev>
+<ref>JayP148d</ref><dev>dasa mahaṁ eka jāi koi karama dharama sata nema bohita pāra hoi jauṃ tau kūsala au khema |</dev>
+<ref>JayP149.1</ref><dev>rājaiṃ kahā kīnha so pemā jehiṃ re kahāṁ kara kūsala khemā |</dev>
+<ref>JayP149.2</ref><dev>tumha khevahu khevai jauṃ pārahu jaiseṃ āpu tarahu mohiṃ tārahu |</dev>
+<ref>JayP149.3</ref><dev>mohiṃ kūsala kara soca na otā kūsala hota jauṃ janama na hotā |</dev>
+<ref>JayP149.4</ref><dev>dharatī saraga jāṁta para doū jo tehi bica jiya rākha na koū |</dev>
+<ref>JayP149.5</ref><dev>hāṁ aba kusala eka pai māṁgauṃ pema paṃtha sata <cvb>bāṁdhi</cvb> na khāṁgauṃ |</dev>
+<ref>JayP149.6</ref><dev>jauṃ sata hieṁ to nainanha diyā samuṁda na ḍarai <cvb>paiṭhi</cvb> marajiyā |</dev>
+<ref>JayP149.7</ref><dev>tahaṁ lagi herauṃ samuṁda ḍhaṁḍhorī jahaṁ lagi ratana padāratha jorī |</dev>
+<ref>JayP149d</ref><dev>sapta patāra <cvb>khoji</cvb> jasa kād̤he beda garaṃtha sāta saraga <cvb>cad̤hi</cvb> dhāvauṃ padumāvati jehi paṃtha |</dev>
+<ref>JayP150.1</ref><dev>sāyara tirai hieṁ sata pūrā jauṃ jiyaṁ sata kāyara puni sūrā |</dev>
+<ref>JayP150.2</ref><dev>tehiṃ sata bohita <cvb>pūri</cvb> calāe jehiṃ sata pavana paṃkha janu lāe |</dev>
+<ref>JayP150.3</ref><dev>sata sāthī sata kara sahavāṁrū satta <cvb>kheilai</cvb> lāvai pārū |</dev>
+<ref>JayP150.4</ref><dev>satai tāka saba āgū pāchū jahaṁ jahaṁ magara maccha au kāchū |</dev>
+<ref>JayP150.5</ref><dev>uṭhai lahari nahiṃ jāi saṁbhārā cad̤hai saraga au parai patārā |</dev>
+<ref>JayP150.6</ref><dev>ḍolahiṃ bohita laharaiṃ khāhīṃ khina tara khinahiṃ hohiṃ uparāhīṃ |</dev>
+<ref>JayP150.7</ref><dev>rājaiṃ so satu hiradaiṃ bāṁdhā jehi sata <cvb>ṭeki</cvb> kare giri kāṁdhā |</dev>
+<ref>JayP150d</ref><dev>khāra samuṁda so nāṁghā āe samuṁda jahaṁ khīra mile samuṁda vai sātauṃ behara behara nīra |</dev>
+<ref>JayP151.1</ref><dev>khīra samuṁda kā baranauṃ nīrū seta sarūpa piyata jasa khīrū |</dev>
+<ref>JayP151.2</ref><dev>ulathahiṃ moṃtī mānika hīrā daraba <cvb>dekhi</cvb> mana dharai na dhīrā |</dev>
+<ref>JayP151.3</ref><dev>manuvāṁ cahai daraba au bhogū paṃtha bhukāi bināsai jogū |</dev>
+<ref>JayP151.4</ref><dev>jogī manahiṃ ohiṃ risa mārahiṃ daraba hātha kai samuṁda pabārahiṃ |</dev>
+<ref>JayP151.5</ref><dev>daraba lei so asthīra rājā jo jogī tehi ke kehi kājā |</dev>
+<ref>JayP151.6</ref><dev>paṃthahi paṃtha daraba ripu hoī ṭhaga baṭavāra cora saṁga soī |</dev>
+<ref>JayP151.7</ref><dev>paṃthika so jo daraba soṃ rūsai daraba <cvb>sameṃṭi</cvb> bahuta asa mūsai |</dev>
+<ref>JayP151d</ref><dev>khīra samuṁda so nāṁghā āe samuṁda dadhi māṁha jo hahiṃ neha ke bāura nā tinha dhūpa na chāṁha |</dev>
+<ref>JayP152.1</ref><dev>dadhi samuṁda dekhata mana ḍahā pema ka lubudha dagadha pai sahā |</dev>
+<ref>JayP152.2</ref><dev>pema soṃ dādhā dhani vaha jīū dahī māhiṃ <cvb>mathi</cvb> kād̤hai ghīū |</dev>
+<ref>JayP152.3</ref><dev>dadhi eka būṁda jāma saba khīrū kāṁjī buṃda binasi <cvb>hoi</cvb> nīrū |</dev>
+<ref>JayP152.4</ref><dev>svāṁsa daheṃd̤i mana maṁthanī gād̤hī hieṁ coṭa binu phūṭa na sād̤hī |</dev>
+<ref>JayP152.5</ref><dev>jehi jiyaṁ pema caṁdana tehi āgī pema bihūna phirahiṃ <cvb>ḍari</cvb> bhāgī |</dev>
+<ref>JayP152.6</ref><dev>pema ki āgi jarai jauṃ koī tākara dukha na aṁbirathā hoī |</dev>
+<ref>JayP152.7</ref><dev>jo jānai sata āpuhi jārai nisata hieṁ sata karai na pārai |</dev>
+<ref>JayP152d</ref><dev>dadhi samuṁdra puni pāra bhe pemahiṃ kahāṁ saṁbhāra bhāvai pānī sira parau bhāvai pārau aṁgāra |</dev>
+<ref>JayP153.1</ref><dev>āe udadhi samuṃda apārāṁ dharatī saraga jarai tehi jhārāṁ |</dev>
+<ref>JayP153.2</ref><dev>āgi jo upanī ohi samuṃdā laṃkā jarī ohi eka buṃdā |</dev>
+<ref>JayP153.3</ref><dev>biraha jo upanā vaha huta gād̤hā khina na bujhāi jagata tasa bād̤hā |</dev>
+<ref>JayP153.4</ref><dev>jehiṃ so biraha tehiṃ āgi na ḍīṭhī sauṃha jarai <cvb>phiri</cvb> dei na pīṭhī |</dev>
+<ref>JayP153.5</ref><dev>jaga mahaṁ kaṭhina kharaga kai dhārā tehiṃ te adhika biraha kai jhārā |</dev>
+<ref>JayP153.6</ref><dev>agama paṃtha jauṃ aisa na hoī sādha kieṁ pāvata saba koī |</dev>
+<ref>JayP153.7</ref><dev>tehi samuṃda mahaṁ rājā parā cahai jarai pai rovaṁ na jarā |</dev>
+<ref>JayP153d</ref><dev>talaphai tela karāha jimi imi talaphai tehi nīra vaha jo malaigiri pema kā buṃda samuṃda samīra |</dev>
+<ref>JayP154.1</ref><dev>surā samuṁda puni rājā āvā mahuā mada chātā dekharāvā |</dev>
+<ref>JayP154.2</ref><dev>jo tehi piai so bhāṁvari leī sīsa phirai paṁtha paigu na deī |</dev>
+<ref>JayP154.3</ref><dev>pema surā jehi ke jiya māhāṁ kata baiṭhai mahuā kī chāhāṁ |</dev>
+<ref>JayP154.4</ref><dev>guru ke pāsa dākha rasa rasā bairi babūra <cvb>māri</cvb> mana kasā |</dev>
+<ref>JayP154.5</ref><dev>birahaiṃ dagadha kīnha tana bhāṭhī hād̤a jarāi dīnha jasa kāṭhī |</dev>
+<ref>JayP154.6</ref><dev>naina nīra so potī kiyā tasa mada cuā barai janu diyā |</dev>
+<ref>JayP154.7</ref><dev>biraha sarāganhi bhūṁjai māṁsū giri giri parahiṃ rakata ke āṁsū |</dev>
+<ref>JayP154d</ref><dev>muhamada mada jo parema kā kieṁ dīpa tehi rākha sīsa na dei pataṃga <cvb>hoi</cvb> taba lagi jāi na <cvb>cākhi</cvb> |</dev>
+<ref>JayP155.1</ref><dev>puni kilakilā samuṁda mahaṁ āe kilakila uṭhā <cvb>dekhi</cvb> ḍaru khāe |</dev>
+<ref>JayP155.2</ref><dev>gā dhīraja vaha <cvb>dekhi</cvb> hilorā janu akāsa ṭūṭai cahuṁ orā |</dev>
+<ref>JayP155.3</ref><dev>uṭhai lahari parabata kī nāīṃ hoi phirai jojana lakha tāīṃ |</dev>
+<ref>JayP155.4</ref><dev>dharatī leta saraga lahi bād̤hā sakala samuṁda jānahuṁ bhā ṭhād̤hā |</dev>
+<ref>JayP155.5</ref><dev>nīra hoi tara ūpara soī mahanāraṃbha samuṁda jasa hoī |</dev>
+<ref>JayP155.6</ref><dev>phirata samuṁda jojana lakha tākā jaiseṃ phirai kumhāra ka cākā |</dev>
+<ref>JayP155.7</ref><dev>bhā paralau niarāenhi jabahīṃ marai so tākara paralau tabahīṃ |</dev>
+<ref>JayP155d</ref><dev>gai avasāna sabahiṃ kai <cvb>dekhi</cvb> samuṁda kai bād̤hi niara hota janu līlai rahā naina asa <cvb>kād̤hi</cvb> |</dev>
+<ref>JayP156.1</ref><dev>hīrāmani rājā sauṃ bolā ehī samuṁda <cvb>āi</cvb> sata ḍolā |</dev>
+<ref>JayP156.2</ref><dev>ehi ṭhāuṁ kahaṁ guru saṁga kījai guru saṁga hoi pāra tau lījai |</dev>
+<ref>JayP156.3</ref><dev>siṃdhala dīpa jo nāhiṃ nibāhū ehī ṭhāvaṁ sāṁkara saba kāhū |</dev>
+<ref>JayP156.4</ref><dev>yaha kilakilā samuṁda gaṁbhīrū jehi guna hoi so pāvai tīrū |</dev>
+<ref>JayP156.5</ref><dev>ehī samuṁda paṃtha bhaṃjadhārā khāṁḍai kai asi dhāra ninārā |</dev>
+<ref>JayP156.6</ref><dev>tīsa sahasra kosa kai pāṭā asa sāṁkara <cvb>cali</cvb> sakai na cāṁṭā |</dev>
+<ref>JayP156.7</ref><dev>khāṁḍai cāhi paini paināī bāra cāhi pātari patarāī |</dev>
+<ref>JayP156d</ref><dev>marana jiana ehī paṁtha ehī āsa nirāsa parā so gayā patārahi tirā so gā kabilāsa |</dev>
+<ref>JayP157.1</ref><dev>koi bohita jasa pavana ud̤āhīṃ koī <cvb>camaki</cvb> bīju bara jāhīṃ |</dev>
+<ref>JayP157.2</ref><dev>koī bhala jasa dhāva tukhārā koī jaisa baila gariārā |</dev>
+<ref>JayP157.3</ref><dev>koī haruva janahuṁ ratha hāṁkā koī garuva bhāra teṃ thākā |</dev>
+<ref>JayP157.4</ref><dev>koī reṃgahiṃ jānahuṁ cāṁṭī koī <cvb>ṭūṭi</cvb> hohiṃ sira māṁṭī |</dev>
+<ref>JayP157.5</ref><dev>koī khāhiṃ pavana kara jholā koī karahiṃ pāta jeuṁ dolā |</dev>
+<ref>JayP157.6</ref><dev>koī parahiṃ bhaṁvara jala māhāṁ phirata rahahiṃ koi dehiṃ na bāhāṁ |</dev>
+<ref>JayP157.7</ref><dev>rājā kara agumana bhā khevā khevaka āgeṃ suvā parevā |</dev>
+<ref>JayP157d</ref><dev>koi dina milā sabere koi āvā pachirāti jākara sāja jaisa huta so utarā tehi bhāṁti |</dev>
+<ref>JayP158.1</ref><dev>sataeṁ samuṁda mānasara āe sata jo kīnha sāhasa sidhi pāe |</dev>
+<ref>JayP158.2</ref><dev><cvb>dekhi</cvb> mānasara rūpa sohāvā hiyaṁ hulāsa puraini <cvb>hoi</cvb> chāvā |</dev>
+<ref>JayP158.3</ref><dev>gā aṁdhiyāra raini masi chūṭī bhā bhinusāra kirina rabi phūṭī |</dev>
+<ref>JayP158.4</ref><dev>astu astu sāthī saba bole aṃdha jo ahe naina bidhi khole |</dev>
+<ref>JayP158.5</ref><dev>kaṁvala bigasa tahaṁ bihaṁsī dehī bhaṃvara dasana <cvb>hoi</cvb> <cvb>hoi</cvb> rasa lehīṃ |</dev>
+<ref>JayP158.6</ref><dev>haṁsahiṃ haṃsa au karahiṃ kirīrā cunahiṃ ratana mukatāhala hīrā |</dev>
+<ref>JayP158.7</ref><dev>jauṃ asa <cvb>sādhi</cvb> āva tapa jogū pūjai āsa māna rasa bhogū |</dev>
+<ref>JayP158d</ref><dev>bhaṁvara jo manasā mānasara līnha kaṁvala rasa <cvb>āi</cvb> ghuna jo hiyāva na <cvb>kai</cvb> sakā jhūra kāṭha tasa khāi |</dev>
+<ref>JayP159.1</ref><dev>pūṁchā rājaiṃ kahu guru suvā na janauṃ āju kahāṁ dina uvā |</dev>
+<ref>JayP159.2</ref><dev>pavana bāsa sītala <cvb>lai</cvb> āvā kayā ḍahata janu caṃdana lāvā |</dev>
+<ref>JayP159.3</ref><dev>kabahuṁ na aisa jud̤āna sarīrū parā agini mahaṁ malai samīrū |</dev>
+<ref>JayP159.4</ref><dev>nikasata āva kirina rabi rekhā timira gae jaga niramara dekhā |</dev>
+<ref>JayP159.5</ref><dev>uṭhe megha asa jānahuṁ āgeṃ camakai bīju gaṁgana para lāgeṃ |</dev>
+<ref>JayP159.6</ref><dev>tehi ūpara jasa sasi paragāsū au so kacapacinha bhaeu garāsū |</dev>
+<ref>JayP159.7</ref><dev>aura nakhata cahuṁ disi ujiāre ṭhāṁvahiṃ ṭhāṁva dīpa asa bāre |</dev>
+<ref>JayP159d</ref><dev>auru dachina disi niareṃ kaṃcana meru dekhāva jasa basaṃta ritu āvai taisa bāsa jaga pāva |</dev>
+<ref>JayP160.1</ref><dev>tūṁ rājā jasa bikrama ādī tūṁ haricaṃda baina sata bādī |</dev>
+<ref>JayP160.2</ref><dev>gopicaṃda tūṁ jītā jogāṁ au bharatharī na pūja biyogāṁ |</dev>
+<ref>JayP160.3</ref><dev>gorakha siddhi dīnha tohi hāthū tāre gurū machiṃdara nāthū |</dev>
+<ref>JayP160.4</ref><dev>jītā prema tūṁ puhumi akāsū disṭi parā siṃghala kabilāsū |</dev>
+<ref>JayP160.5</ref><dev>vai jo megha gad̤ha lāga akāsāṁ bijurī kanai koṭa cahuṁ pāsāṁ |</dev>
+<ref>JayP160.6</ref><dev>tehi para sasi jo kacapacinha bharā rājamaṁdira sonai naga jarā |</dev>
+<ref>JayP160.7</ref><dev>aura jo nakhata kahasi cahuṁ pāsāṁ saba rāninha ke āhiṃ avāsāṁ |</dev>
+<ref>JayP160d</ref><dev>gaṁgana sarovara sasi kaṁvala kumuda tarāīṃ pāsa tūṁ rabi uvā jo bhaṁvara <cvb>hoi</cvb> pavana milā <cvb>lai</cvb> bāsa |</dev>
+<ref>JayP161.1</ref><dev>so gad̤ha dekhu gaṁganu teṃ ūṁcā naina dekha kara nāhiṃ pahūṁcā |</dev>
+<ref>JayP161.2</ref><dev>bijurī cakra phirai cahuṁ pherī au jamakāta phirai jama kerī |</dev>
+<ref>JayP161.3</ref><dev>dhāi jo bājā <cvb>kai</cvb> mana sādhā mārā cakra bhaeu dui ādhā |</dev>
+<ref>JayP161.4</ref><dev>caṃda suruja au nakhata tarāīṃ tehi ḍara aṁtarikha phiraiṃ sabāīṃ |</dev>
+<ref>JayP161.5</ref><dev>pavana jāi tahaṁ pahuṁcai cahā mārā taisa <cvb>ṭūṭi</cvb> bhuiṁ bahā |</dev>
+<ref>JayP161.6</ref><dev>agini uṭhī jari bujhī niānā dhuāṁ uṭhā <cvb>uṭhi</cvb> bīca bilānā |</dev>
+<ref>JayP161.7</ref><dev>pāni uṭhā <cvb>uṭhi</cvb> jāi na chuvā bahurā <cvb>roiāi</cvb> bhuiṁ cuvā |</dev>
+<ref>JayP161d</ref><dev>rāvana cahā sauhaṁ <cvb>hoi</cvb> herā <cvb>utari</cvb> gae dasa māṁtha saṃkara dharā lilāṭa bhuiṁ auru ko jogī nātha |</dev>
+<ref>JayP162.1</ref><dev>tahāṁ dekhu padumāvati rāmā bhaṁvara na jāi na paṃkhī nāmā |</dev>
+<ref>JayP162.2</ref><dev>aba sidhi eka deuṁ tohi jogū pahileṃ darasa hoi taba bhogū |</dev>
+<ref>JayP162.3</ref><dev>kaṃcana meru dekhāvasi jahāṁ mahādeva kara maṃḍapa tahāṁ |</dev>
+<ref>JayP162.4</ref><dev>ohika khaṃḍa jasa parabata merū meruhi lāgi hoi ati pherū |</dev>
+<ref>JayP162.5</ref><dev>māgha māsa pāchila pakha lāgeṃ sirī paṃcamī hoihi āgeṃ |</dev>
+<ref>JayP162.6</ref><dev>ugharihi mahādeva kara bārū pūjihi <cvb>jāi</cvb> sakala saṁsārū |</dev>
+<ref>JayP162.7</ref><dev>padumāvati puni pūjai āvā hoihi ehi misu disṭi merāvā |</dev>
+<ref>JayP162d</ref><dev>tumha gavanahu maṁḍapa ohi hauṃ padumāvati pāsa pūjai <cvb>āi</cvb> basaṃta jauṃ pūjai mana kai āsa |</dev>
+<ref>JayP163.1</ref><dev>rājaiṃ kahā darasa jauṃ pāvauṃ parabata kāha gaṁgana kahaṁ dhāvauṃ |</dev>
+<ref>JayP163.2</ref><dev>jehi parabata para darasana lahanā sira sauṃ cad̤haiṃ pāya kā kahanā |</dev>
+<ref>JayP163.3</ref><dev>mohi bhāva ūṁcai so ṭhāūṁ ūṁce leuṁ prītama kai nāūṁ |</dev>
+<ref>JayP163.4</ref><dev>puruṣahi cāhia ūṁca hiāū dina dina ūṁce rākha pāū |</dev>
+<ref>JayP163.5</ref><dev>sadā ūṁca seia pai bārū ūṁce sauṃ kījai bevahārū |</dev>
+<ref>JayP163.6</ref><dev>ūṁce cad̤he ūṁca khaṁḍa sūjhā ūṁce pāsa ūṁci budhi būjhā |</dev>
+<ref>JayP163.7</ref><dev>ūṁce saṃga saṃga niti kījai ūṁce kāja jīva bali dījai |</dev>
+<ref>JayP163d</ref><dev>dina dina ūṁca hoi so jehi ūṁce para cāu ūṁce cad̤hata paria jauṃ ūṁca na chād̤ia kāu |</dev>
+<ref>JayP164.1</ref><dev>hīrāmani <cvb>dai</cvb> bacā kahānī calā kahāṁ padumāvati rānī |</dev>
+<ref>JayP164.2</ref><dev>rājā calā <cvb>saṁvari</cvb> so latā parabata kahaṁ jo calā parabatā |</dev>
+<ref>JayP164.3</ref><dev>kā parabata <cvb>cad̤hi</cvb> dekhai rājā ūṁca maṁḍapa sonai saba sājā |</dev>
+<ref>JayP164.4</ref><dev>aṃbrita phara saba lāga apūrī o tahaṁ lāgi sajīvani mūrī |</dev>
+<ref>JayP164.5</ref><dev>caumukha maṃḍapa cahūṁ kevārā baiṭhe devatā cahūṁ duārā |</dev>
+<ref>JayP164.6</ref><dev>bhītara maṁḍapa cāri khaṁbha lāge jinha vai chue pāpa tinha bhāge |</dev>
+<ref>JayP164.7</ref><dev>saṃkha ghaṃṭa ghana bājahiṃ soī au bahu homa jāpa tahaṁ hoī |</dev>
+<ref>JayP164d</ref><dev>mahādeva kara maṃḍapa jagata jātarā āu jo hiṃchā mana jehi keṃ so taisai phala pāu |</dev>
+<ref>JayP165.1</ref><dev>rājā bāura biraha biyogī celā sahasa bīsa saṁga jogī |</dev>
+<ref>JayP165.2</ref><dev>padumāvati ke darasana āsā daṁḍavata kīnha maṁḍapa cahuṁ pāsā |</dev>
+<ref>JayP165.3</ref><dev>puruba bāra <cvb>hoi</cvb> <cvb>kai</cvb> sira nāvā nāvata sīsa deva pahaṁ āvā |</dev>
+<ref>JayP165.4</ref><dev>namo namo nārāyana devā kā mohiṃ joga sakauṃ kara sevā |</dev>
+<ref>JayP165.5</ref><dev>tūṁ dayāla saba ke uparāhīṃ sevā keri āsa tohi nāhīṃ |</dev>
+<ref>JayP165.6</ref><dev>nā mohi guna na jībha rasa bātā tūṁ dayāla guna niraguna dātā |</dev>
+<ref>JayP165.7</ref><dev>puravau mori dāsa kai āsā hauṃ māraga jīvauṃ hari svāṁsā |</dev>
+<ref>JayP165d</ref><dev>tehi bidhi binai na jānauṃ jehi bidhi astuti tori karu sudisṭi au kiripā hiṃchā pūjai mori |</dev>
+<ref>JayP166.1</ref><dev><cvb>kai</cvb> astuti jauṃ manāvā sabada akūṭa maṁḍapa mahaṁ āvā |</dev>
+<ref>JayP166.2</ref><dev>mānusa pema bhaeu baikuṃṭhī nāhiṃ ta kāha chāra eka mūṁṭhī |</dev>
+<ref>JayP166.3</ref><dev>pemahi māhaṁ biraha au rasā maina ke ghara madhu aṃbrita basā |</dev>
+<ref>JayP166.4</ref><dev>nisata dhāi jauṃ marai to kāhā sata jauṃ karai baisei hoi lāhā |</dev>
+<ref>JayP166.5</ref><dev>eka bāra jauṃ manu <cvb>kai</cvb> sevā sevahi phala parasana hoi devā |</dev>
+<ref>JayP166.6</ref><dev><cvb>suni</cvb> <cvb>kai</cvb> sabada maṁḍapa jhanakārā baiṭhā <cvb>āi</cvb> puruba ke bārā |</dev>
+<ref>JayP166.7</ref><dev>piṃḍa cad̤hāi chāra jeta āṁṭī māṁṭī hou aṃta jauṃ māṁṭī |</dev>
+<ref>JayP166d</ref><dev>māṁṭī mola na kichu lahai au māṁṭī saba mola disṭi jo māṁṭī soṃ karai māṁṭī hoi amola |</dev>
+<ref>JayP167.1</ref><dev><cvb>baiṭha</cvb> siṃgha chālā <cvb>hoi</cvb> tapā padumāvati padumāvati japā |</dev>
+<ref>JayP167.2</ref><dev>disṭi samādhi ohi sauṃ lāgī jehi darasana kārana bairāgī |</dev>
+<ref>JayP167.3</ref><dev>kiṃgarī gahe bajāvai jhūrai bhora sāṁjha siṃgī niti pūrai |</dev>
+<ref>JayP167.4</ref><dev>kaṃthā jarai āgi janu lāī biraha dhaṁdhāra jarata na bujhāī |</dev>
+<ref>JayP167.5</ref><dev>naina rāta nisi māraga jāgeṃ cakita cakora jānu sasi lāgeṃ |</dev>
+<ref>JayP167.6</ref><dev>kuṃḍala gaheṃ sīsa bhuiṁ lāvā pāṁvari houṁ jahāṁ ohi pāvā |</dev>
+<ref>JayP167.7</ref><dev>jaṭā <cvb>chori</cvb> <cvb>kai</cvb> bāra bohārauṃ jehi paṁtha hoi sīsa tahaṁ vārauṃ |</dev>
+<ref>JayP167d</ref><dev>cārahuṁ cakra phirai mana khojana ḍaṁḍa na rahai thira māra <cvb>hoi</cvb> ke bhasama pavana saṁga dhāvauṃ jahāṁ so prāna adhāra |</dev>
+<ref>JayP168.1</ref><dev>padumāvati tehi joga saṁjogāṁ parī pema basa gaheṃ biyogāṁ |</dev>
+<ref>JayP168.2</ref><dev>nīṃda na parai raini jauṃ āvā seja kevāṁcha jānu koi lāvā |</dev>
+<ref>JayP168.3</ref><dev>dahai cāṁda au caṃdana cīrū dagadha karai tana biraha gaṁbhīrū |</dev>
+<ref>JayP168.4</ref><dev>kalapa samāna raini haṭhi bād̤hī tila tila <cvb>mari</cvb> juga juga bara gād̤hī |</dev>
+<ref>JayP168.5</ref><dev>gahai bīna maku raini bihāī sasi bāhana taba rahai onāī |</dev>
+<ref>JayP168.6</ref><dev>puni dhani siṃgha urehai lāgai aisī bithā raini saba jāgai |</dev>
+<ref>JayP168.7</ref><dev>kahāṁ so bhaṁvara kaṁvala rasa levā <cvb>āi</cvb> parahu hoi ghirini parevā |</dev>
+<ref>JayP168d</ref><dev>so dhani biraha pataṃga <cvb>hoi</cvb> jarā cāha tehi dīpa kaṃta na āvahu bhṛṃgi <cvb>hoi</cvb> ko caṃdana tana līpa |</dev>
+<ref>JayP169.1</ref><dev>parī biraha bana jānahuṁ gherī agama asūjha jahāṁ lagi herī |</dev>
+<ref>JayP169.2</ref><dev>catura disā citavai janu bhūlī so bana kavana jo mālati phūlī |</dev>
+<ref>JayP169.3</ref><dev>kaṁvala bhaṁvara ohī bana pāvai ko <cvb>milāi</cvb> tana tapani bujhāvai |</dev>
+<ref>JayP169.4</ref><dev>aṃga anala asa kaṁvala sarīrā hiya bhā piyara pema kī pīrā |</dev>
+<ref>JayP169.5</ref><dev>cahai darasa rabi kīnha bigāsū bhaṁvara disṭi mahaṁ kai so akāsū |</dev>
+<ref>JayP169.6</ref><dev>pūṁchai dhāi bāri kahu bātā tūṁ jasa kaṁvala karī raṁga rātā |</dev>
+<ref>JayP169.7</ref><dev>kesari barana hiyā bhā torā mānahuṁ manahiṃ bhaeu kachu phorā |</dev>
+<ref>JayP169d</ref><dev>pavanu na pāvai saṁcarai bhaṁvara na tahāṁ baīṭha <cvb>bhūli</cvb> kuraṃgini kasi bhaī manahuṁ sagha tui ḍīṭha |</dev>
+<ref>JayP170.1</ref><dev>dhāi siṃgha baru khāteu mārī kai tasi rahati ahī jasi bārī |</dev>
+<ref>JayP170.2</ref><dev>jobana sueuṁ ki navala basaṃtū tehi bana pareu hasti maimaṃtū |</dev>
+<ref>JayP170.3</ref><dev>aba jobana bārī ko rākhā kuṃjara biraha bidhāṁsai sākhā |</dev>
+<ref>JayP170.4</ref><dev>maiṃ jānā jobana rasa bhogū jobana kaṭhina saṁtāpa viyogū |</dev>
+<ref>JayP170.5</ref><dev>jobana garua apela pahārū sahi na jāi jobana kara bhārū |</dev>
+<ref>JayP170.6</ref><dev>jobana asa maimaṃta na koī navai hasti jauṃ āṁkusa hoī |</dev>
+<ref>JayP170.7</ref><dev>jobana bhara bhādauṃ jasa gaṃgā laharaiṃ dei samāi na aṃgā |</dev>
+<ref>JayP170d</ref><dev>parī athāha dhāi hauṃ jobana udadhi gaṁbhīra tehiṃ citavauṃ cāriuṁ disi ko <cvb>gahi</cvb> lāvai tīra |</dev>
+<ref>JayP171.1</ref><dev>padumāvati tūṁ subudhi sayānī tohiṃ sari samuṁda na pūjai rānī |</dev>
+<ref>JayP171.2</ref><dev>nadī samāhiṃ samuṁda mahaṁ <cvb>āī</cvb> samuṁda <cvb>ḍoli</cvb> kahu kahāṁ samāī |</dev>
+<ref>JayP171.3</ref><dev>abahīṃ kaṁvala karī hiya torā āihi bhaṁvara jo to kahaṁ jorā |</dev>
+<ref>JayP171.4</ref><dev>jobana turai hātha gahi lījai jahāṁ jāi tahaṁ jāi na dījai |</dev>
+<ref>JayP171.5</ref><dev>jobana jo re mataṁga gaja ahai gahu giāna jimi āṁkusa gahai |</dev>
+<ref>JayP171.6</ref><dev>abahiṃ bāri tūṁ pema na khelā kā jānasi kasa hoi duhelā |</dev>
+<ref>JayP171.7</ref><dev>gaṁgana disṭi karu jāi tarāhīṃ suruja dekhi kara āvai nāhīṃ |</dev>
+<ref>JayP171d</ref><dev>jaba lagi pīu milai tohiṃ sādhu pema kai pīra jaiseṃ sīpa sevāti kahaṁ tapai samuṁda maṁjha nīra |</dev>
+<ref>JayP172.1</ref><dev>dahai dhāi jobana au jīū hoi na biraha agini mahaṁ ghīū |</dev>
+<ref>JayP172.2</ref><dev>karavata sahauṃ hota doi ādhā sahī na jāi biraha kai dādhā |</dev>
+<ref>JayP172.3</ref><dev>birahā subhara samuṁda asaṁbhārā bhaṁvara <cvb>meli</cvb> jiu laharanhi mārā |</dev>
+<ref>JayP172.4</ref><dev>biraha nāga <cvb>hoi</cvb> sira cad̤hi ḍasā au <cvb>hoi</cvb> agini caṁdana mahaṁ basā |</dev>
+<ref>JayP172.5</ref><dev>jobana paṃkhī biraha biādhū kehari bhayo kuraṁgini khādhū |</dev>
+<ref>JayP172.6</ref><dev>kanaka bāna jobana kata kīnhā au tana kaṭhina biraha dukha dīnhā |</dev>
+<ref>JayP172.7</ref><dev>jobana jalahiṃ biraha masi chuvā phūlahiṃ bhaṃvara pharahiṃ bhā suvā |</dev>
+<ref>JayP172d</ref><dev>jovana cāṁda uvā jasa biraha bhaeu saṁga rāhu ghaṭatahi ghaṭata khīna bhā kahai na pārauṃ kāhu |</dev>
+<ref>JayP173.1</ref><dev>naina jo cakra phirai cahuṁ orāṁ caracai dhāi samāi na korāṁ |</dev>
+<ref>JayP173.2</ref><dev>kahesi pema jauṃ upanā bārī bāṁdhu satta mana ḍola na bhārī |</dev>
+<ref>JayP173.3</ref><dev>jehi jiya mahaṁ sata hoi pahārū parai pahāra na bāṁke bārū |</dev>
+<ref>JayP173.4</ref><dev>satī jo jarai pema piya lāgī jauṃ sata hieṁ tau sītala āgī |</dev>
+<ref>JayP173.5</ref><dev>jobana cāṁda jo caudasi karā biraha ki cinagi cāṁda puni jarā |</dev>
+<ref>JayP173.6</ref><dev>pavana baṃdha hoi jogī jatī kāma baṃdha hoi kāmini satī |</dev>
+<ref>JayP173.7</ref><dev>āu basaṃta phūla phulavārī deva bāra saba jaihahiṃ bārī |</dev>
+<ref>JayP173d</ref><dev>puni tumha jāhu basaṃta <cvb>lai</cvb> <cvb>pūji</cvb> manāvahu deva jiu pāia jaga janame piu pāia <cvb>kai</cvb> seva |</dev>
+<ref>JayP174.1</ref><dev>jaba lagi avadhi cāha so āī dina juga bara birahina kahaṁ jāī |</dev>
+<ref>JayP174.2</ref><dev>nīṃda bhūkha aha nisi gai doū hieṁ mājha jasa kalapai koū |</dev>
+<ref>JayP174.3</ref><dev>rovaṁhiṃ rovaṁ lāge janu cāṁṭe sotahi sota bedhe bikha kāṁṭe |</dev>
+<ref>JayP174.4</ref><dev>dagadha karāha jarai saba jīū begi na āu malaigiri pīū |</dev>
+<ref>JayP174.5</ref><dev>kavana deva kahaṁ jāya parāsauṃ jehi sumeru hiya lāi garāsauṃ |</dev>
+<ref>JayP174.6</ref><dev>guputa jo phala sāṁsahi paragaṭe aba <cvb>hoi</cvb> subhara cahahiṃ puni ghaṭe |</dev>
+<ref>JayP174.7</ref><dev>bhae saṁjoga jauṃ re asa maranā bhogī bhaeṁ bhoga kā karanā |</dev>
+<ref>JayP174d</ref><dev>jobana caṃcala ḍhīṭha hai karai nikājahiṃ kāja dhani kulavaṃti jo kula dharai <cvb>kari</cvb> jobana mahaṁ lāja |</dev>
+<ref>JayP175.1</ref><dev>tehi biyoga hīrāmani āvā padumāvati jānahuṁ jiu pāvā |</dev>
+<ref>JayP175.2</ref><dev>kaṃṭha <cvb>lāgi</cvb> so hausura roī adhika moha jo milai bichoī |</dev>
+<ref>JayP175.3</ref><dev>āgi bujhī dukha hiyaṁ jo gaṁbhīrū nainanha <cvb>āi</cvb> cuvā <cvb>hoi</cvb> nīrū |</dev>
+<ref>JayP175.4</ref><dev>rahī roi jaba padumini rānī <cvb>haṁsi</cvb> pūchahiṃ saba sakhī sayānī |</dev>
+<ref>JayP175.5</ref><dev>mile rahasa cāhia bhā dūnā kata roia jauṃ mile bichūnā |</dev>
+<ref>JayP175.6</ref><dev>tehi ka utara padumāvati kahā bichurana dukkha hieṁ bhari rahā |</dev>
+<ref>JayP175.7</ref><dev>milā jo <cvb>āi</cvb> hieṁ sukha bharā vaha dukha naina nīra <cvb>hoi</cvb> ḍharā |</dev>
+<ref>JayP175d</ref><dev>bichuraṃtā jaba bheṃṭiai so jānai jehi nehu sukkha suhelā uggavai dukkha jharai jeuṁ mehu |</dev>
+<ref>JayP176.1</ref><dev>puni rānī <cvb>haṁsi</cvb> kūsala pūṁchā kata gavanehu piṃjara <cvb>kai</cvb> chūṁchā |</dev>
+<ref>JayP176.2</ref><dev>rānī tumha juga juga sukha pāṭū chāja na paṃkhihi piṃjara ṭhāṭū |</dev>
+<ref>JayP176.3</ref><dev>jauṃ bhā paṁkha kahāṁ thira rahanā cāhai ud̤ā paṁkhi jauṃ ḍahanā |</dev>
+<ref>JayP176.4</ref><dev>piṃjara mahaṁ jo parevā orā <cvb>āi</cvb> maṁjāri kīnha tahaṁ pherā |</dev>
+<ref>JayP176.5</ref><dev>devaseka āi hātha pai melā tehi ḍara banobāsa kahaṁ khelā |</dev>
+<ref>JayP176.6</ref><dev>tahāṁ biādha <cvb>jāi</cvb> nara sāṁdhā chūṭha na pāva mīcu kara bāṁdhā |</dev>
+<ref>JayP176.7</ref><dev>oiṁ <cvb>dhari</cvb> becā bāṁbhana hāthāṁ jaṁbū dīpa gaeuṁ tehi sāthāṁ |</dev>
+<ref>JayP176d</ref><dev>tahāṁ citragad̤ha citaura citraseni kara rāja ṭīkā dīnha putra kahaṁ āpu līnha siva sāja |</dev>
+<ref>JayP177.1</ref><dev>baiṭha jo rāja pitā ke ṭhāūṁ rājā ratanaseni ohi nāūṁ |</dev>
+<ref>JayP177.2</ref><dev>kā baranauṃ dhani desa diyārā jahaṁ asa naga upanā ujiyārā |</dev>
+<ref>JayP177.3</ref><dev>dhani mātā dhani pitā bakhānā jehi keṃ baṃsa aṃsa asa ānā |</dev>
+<ref>JayP177.4</ref><dev>lakhana batīsau kula niramarā barani na jāi rūpa au karā |</dev>
+<ref>JayP177.5</ref><dev>oiṁ hauṃ līnha ahā asa bhāgū cāhai sonahi milā sohāgū |</dev>
+<ref>JayP177.6</ref><dev>so naga <cvb>dekhi</cvb> iṃcha maiṃ morī hai yaha ratana padāratha jorī |</dev>
+<ref>JayP177.7</ref><dev>hai sasi joga ihai pai bhānū tahāṁ tumhāra maiṃ kīnha bakhānū |</dev>
+<ref>JayP177d</ref><dev>kahāṁ ratana ratanākara kaṃcana kahāṁ sumeru daiva jauṃ jorī duhuṁ likhī milai so kavanehu pheru |</dev>
+<ref>JayP178.1</ref><dev><cvb>suni</cvb> <cvb>kai</cvb> biraha cinagi ohi parī ratana pāva jauṃ kaṃcana karī |</dev>
+<ref>JayP178.2</ref><dev>kaṭhina pema birahā dukha bhārī rāja <cvb>chād̤i</cvb> bhā jogi bhikārī |</dev>
+<ref>JayP178.3</ref><dev>mālati lāgi bhaṁvara jasa hoi <cvb>hoi</cvb> bāura nisarā budhi khoī |</dev>
+<ref>JayP178.4</ref><dev>kahesi pataṃga <cvb>hoi</cvb> dhaṁsi leūṁ siṃghala dīpa <cvb>jāi</cvb> jiu deūṁ |</dev>
+<ref>JayP178.5</ref><dev>puni ohi kou na chād̤a akelā soraha sahasa kuṁvara bhae celā |</dev>
+<ref>JayP178.6</ref><dev>aura ganai ko saṃga sahāī mahādeva mad̤ha melā jāī |</dev>
+<ref>JayP178.7</ref><dev>sūruja parasa darasa kī tāīṃ citavai cāṁda cakora kī nāīṃ |</dev>
+<ref>JayP178d</ref><dev>tumha bārīṃ rasa joga jehi kaṁvalahi jasa araghāni tasa sūraja <cvb>paragāsi</cvb> <cvb>kai</cvb> bhaṁvara milāeuṁ <cvb>āni</cvb> |</dev>
+<ref>JayP179.1</ref><dev>hīrāmani jauṃ kahī rasa bātā <cvb>suni</cvb> <cvb>kai</cvb> ratana padāratha rātā |</dev>
+<ref>JayP179.2</ref><dev>jasa suruja dekhata hoi opā tasa bhā viraha kāma dala kopā |</dev>
+<ref>JayP179.3</ref><dev>pai <cvb>suni</cvb> jogī kera bakhānū padumāvati mana bhā abhimānū |</dev>
+<ref>JayP179.4</ref><dev>kaṃcana jauṃ kasiai <cvb>kai</cvb> tātā taba jānia dahuṁ pīta kī rātā |</dev>
+<ref>JayP179.5</ref><dev>kaṃcana karī na kāṁcahi lobhā jauṃ naga hoi pāva taba sobhā |</dev>
+<ref>JayP179.6</ref><dev>naga kara marama so jariyā jānā jarai jo asa naga hīra pakhānā |</dev>
+<ref>JayP179.7</ref><dev>ko asa hātha siṃgha mukha ghālā ko yaha bāta pitā sauṃ cālā |</dev>
+<ref>JayP179d</ref><dev>saraga iṃdra ḍari kāṁpai bāsuki ḍarai patāra kahāṁ aisa bara prithimī mohiṃ joga saṁsāra |</dev>
+<ref>JayP180.1</ref><dev>tūṁ rānī sasi kaṃcana karā vaha naga ratana sūra niramarā |</dev>
+<ref>JayP180.2</ref><dev>biraha bajāgi bīci kā koī āgi jo chuvai jāi <cvb>jari</cvb> soī |</dev>
+<ref>JayP180.3</ref><dev>āgi bujhāi <cvb>ḍhoi</cvb> jala kād̤hai yaha na bijhāi āgi asi bād̤hai |</dev>
+<ref>JayP180.4</ref><dev>biraha ki āgi sūra nahiṃ ṭikā rāti huṁ divasa jarā au dhikā |</dev>
+<ref>JayP180.5</ref><dev>khinahiṃ saraga khina jāi patārā thira na rahai tehi āgi apārā |</dev>
+<ref>JayP180.6</ref><dev>dhani so jīva dagadha imi sahā taisa jare nahiṃ dosara kahā |</dev>
+<ref>JayP180.7</ref><dev><cvb>sulugi</cvb> <cvb>sulugi</cvb> bhītara hoi syāmā paragaṭa hoi na kahā dukha nāmā |</dev>
+<ref>JayP180d</ref><dev>kāha kahauṃ maiṃ ohi kahaṁ jei dukha kīnha ameṃṭa tehi dina āgi karauṃ yaha bāhara hoi jehī dina bheṃṭa |</dev>
+<ref>JayP181.1</ref><dev>hīrāmani jauṃ kahī rasa bātā pāeu pāna bhaeu mukha rātā |</dev>
+<ref>JayP181.2</ref><dev>calā suā rānī taba kahā bhā jo parāvā so kaiseṃ rahā |</dev>
+<ref>JayP181.3</ref><dev>jo niti calai saṁvārai pāṁkhā āju jo rahā kālhi ko rākhā |</dev>
+<ref>JayP181.4</ref><dev>na janauṃ āju kahāṁ dina uvā āehu milai calehu <cvb>mili</cvb> suvā |</dev>
+<ref>JayP181.5</ref><dev><cvb>milikaiṃ</cvb> bichurana marana kī ānā kata āehu jauṃ calehu nidānā |</dev>
+<ref>JayP181.6</ref><dev>anu rānī hauṃ rahateu rāṁdhā kaise rahauṃ bacā kara bāṁdhā |</dev>
+<ref>JayP181.7</ref><dev>tākari disṭi aisa tumha sevā jaisa kūṁja mana sahaja parevā |</dev>
+<ref>JayP181d</ref><dev>basai mīna jala dharatī aṃbā birikha akāsa jauṃ re pirīti duhana mahaṁ aṃta hohiṃ eka pāsa |</dev>
+<ref>JayP182.1</ref><dev>āvā suvā baiṭha jahaṁ jogī māraga naina biyoga biyogī |</dev>
+<ref>JayP182.2</ref><dev><cvb>āi</cvb> pema rasa kahā saṁdesū gorakha milā milā upadesū |</dev>
+<ref>JayP182.3</ref><dev>tumha kahaṁ gurū mayā bahu kīnhā līnha adesa ādi kahaṁ dīnhā |</dev>
+<ref>JayP182.4</ref><dev>sabada eka <cvb>hoi</cvb> kahā akelā guru jasa bhṛṃgi phaniga jasa celā |</dev>
+<ref>JayP182.5</ref><dev>bhṛṃgi ohi paṃkhihi pai leī ekahiṃ bāra chueṁ jiu deī |</dev>
+<ref>JayP182.6</ref><dev>tākahaṁ guru karai asi māyā nava avatāra dei nai kāyā |</dev>
+<ref>JayP182.7</ref><dev>hoi amara asa <cvb>mari</cvb> <cvb>kai</cvb> jiyā bhaṁvara kaṁvala mili kai madhu piyā |</dev>
+<ref>JayP182d</ref><dev>āvai ritū basaṃta jaba taba madhukara taba bāsu jogī joga jo imi karahi siddhi samāpati tāsu |</dev>
+<ref>JayP183.1</ref><dev>daiya daiya <cvb>kai</cvb> sisira gaṁvāī sirī paṃcimī pūjī āī |</dev>
+<ref>JayP183.2</ref><dev>bhaeu hulāsa navala ritu māṁhāṁ khinu na sohāi dhūpa au chāhāṁ |</dev>
+<ref>JayP183.3</ref><dev>padumāvati saba sakhīṃ haṁkārīṃ jāvaṁta siṃghala dīpa kī bārīṃ |</dev>
+<ref>JayP183.4</ref><dev>āju basaṃta navala riturājā paṃcimi hoi jagata saba sājā |</dev>
+<ref>JayP183.5</ref><dev>navala siṃgāra banāphati kīnhā sīsa parāsanha seṃdura dīnhā |</dev>
+<ref>JayP183.6</ref><dev><cvb>bigasi</cvb> phūla phūle bahu bāsāṁ bhaṁvara <cvb>āi</cvb> lubudhe cahuṁ pāsāṁ |</dev>
+<ref>JayP183.7</ref><dev>piyara pāta dukha jhare nipāte sukha pālau upane <cvb>hoi</cvb> rāte |</dev>
+<ref>JayP183d</ref><dev>avadhi <cvb>āi</cvb> so pūji jo iṃchā mana kīnha calahu deva mad̤ha gohane cahauṃ so pūjā dīnha |</dev>
+<ref>JayP184.1</ref><dev>phirī āna ritu bājana bāje au siṃgāra saba bārinha sāje |</dev>
+<ref>JayP184.2</ref><dev>kaṁvala karī padumāvati rānī <cvb>hoi</cvb> mālati jānahuṁ bigasānī |</dev>
+<ref>JayP184.3</ref><dev>tārā maṁḍara pahira bhala colā pahirai sasi jasa nakhata amolā |</dev>
+<ref>JayP184.4</ref><dev>sakhī kamoda sahasa dasa saṃgā sabai sugaṃdha cad̤hāe aṃgā |</dev>
+<ref>JayP184.5</ref><dev>saba rājā rāyanha kai bārīṃ barana barana pahireṃ saba sārīṃ |</dev>
+<ref>JayP184.6</ref><dev>sabai surūpa padumini jātī pāna phūla seṃdura saba rātī |</dev>
+<ref>JayP184.7</ref><dev>karahiṃ kureraiṃ suraṁga raṁgīlīṃ au covā caṃdana saba gīlīṃ |</dev>
+<ref>JayP184d</ref><dev>cahuṁ disi rahī bāsanā phulavārī asi phūli vaha basaṃta sauṃ bhūlī gā basaṃta ohiṃ bhūli |</dev>
+<ref>JayP185.1</ref><dev>bhai ahāna padumāvati calī chatīsa kurī bhai gohane bhalī |</dev>
+<ref>JayP185.2</ref><dev>bhai korī saṁga <cvb>pahiri</cvb> paṭorā bāṁbhani ṭhāuṁ sahasa aṁga morā |</dev>
+<ref>JayP185.3</ref><dev>agaravārini gaja gavana kareī vaisini pāva haṁsa gati deī |</dev>
+<ref>JayP185.4</ref><dev>caṃdelini ṭhavaṁkanha pagu ḍhārā calī cauhānī hoi jhanakārā |</dev>
+<ref>JayP185.5</ref><dev>calī sonāri sohāga sohātī au kalavāri pema madhu māṁtī |</dev>
+<ref>JayP185.6</ref><dev>bānini bhala seṃdura <cvb>dai</cvb> māṁgā kaithini calī samāi na āṁgā |</dev>
+<ref>JayP185.7</ref><dev>paṭuini <cvb>pahiri</cvb> suraṁga tana colā au baraini mukha surasa taṁbolā |</dev>
+<ref>JayP185d</ref><dev>calīṃ pavani saba gohane phūla ḍāli <cvb>lai</cvb> hātha bisvanātha kī pūjā padumāvati ke sātha |</dev>
+<ref>JayP186.1</ref><dev>kaṁvala sahāya calīṃ phulavārīṃ phara phūlanha <cvb>kai</cvb> ichā bārīṃ |</dev>
+<ref>JayP186.2</ref><dev>āpu āpu mahaṁ karahiṃ johārū yaha basaṃta saba kara tevahārū |</dev>
+<ref>JayP186.3</ref><dev>cahī manorā jhūmaka hoī phara au phūla lei saba koī |</dev>
+<ref>JayP186.4</ref><dev>phāgu <cvb>kheli</cvb> puni dāhaba holī saiṃtaba kheha uḍāuba jholī |</dev>
+<ref>JayP186.5</ref><dev>āju sāja puni devasa na dūjā kheli basaṃta lehu dai pūjā |</dev>
+<ref>JayP186.6</ref><dev>bhā āesu padumāvati kerā bahuri na <cvb>āi</cvb> karaba hama pherā |</dev>
+<ref>JayP186.7</ref><dev>tasa hama kahaṁ hoihi rakhavārī puni hama kahāṁ kahāṁ yaha bārī |</dev>
+<ref>JayP186d</ref><dev>puni re calaba ghara āpuna <cvb>pūji</cvb> bisesara deu jehikā hoi ho khelanā āju <cvb>kheli</cvb> <cvb>haṁsi</cvb> leu |</dev>
+<ref>JayP187.1</ref><dev>kāhūṁ gahī āṁba kai ḍārā kāhūṁ biraha jāṁbu ati jhārā |</dev>
+<ref>JayP187.2</ref><dev>koi nāraṁga koi jhāra cirauṃjī koi kaṭahara bad̤ahara koi nyauṃjī |</dev>
+<ref>JayP187.3</ref><dev>koi dāriuṁ koi dākha so khīrī koi sadāphara turaṁja jaṁbhīrī |</dev>
+<ref>JayP187.4</ref><dev>koi jaiphara au laiṃga supārī koi kamarakha koi guvā chuhārī |</dev>
+<ref>JayP187.5</ref><dev>koi bijaura koi nariyara jorī koi aṁbili koi mahuba khajūrī |</dev>
+<ref>JayP187.6</ref><dev>koi harapā reurī kasauṃdā koi aṁvarā koi bera karauṃdā |</dev>
+<ref>JayP187.7</ref><dev>kāhuṁ gahī kerā kī ghaurī kāhūṁ hātha parī nibakaurī |</dev>
+<ref>JayP187d</ref><dev>kāhuṁ pāī niaraiṃ kāhuṁ kahaṁ gae dūri kāhūṁ khela bhaeu bikha kāhūṁ aṃbrita mūri |</dev>
+<ref>JayP188.1</ref><dev>puni bīnahi saba phūla sahelī jo jehi āsa pāsa raha belīṃ |</dev>
+<ref>JayP188.2</ref><dev>koi kevarā koi caṃpa nevārī koī ketuki mālati phulavārī |</dev>
+<ref>JayP188.3</ref><dev>koi sadabaraga kuṃda au karanāṁ koi caṁbeli nāgesari baranāṁ |</dev>
+<ref>JayP188.4</ref><dev>koi so gulāla sudarasana kūjā koi sonajarada pāva bhali pūjā |</dev>
+<ref>JayP188.5</ref><dev>koi bolasiri puhupa bakaurī koi rupamāṁjari koi gunagaiṃrī |</dev>
+<ref>JayP188.6</ref><dev>koi siṃgārahāra tinha pāhāṁ koi sevatī kadama kī chāhāṁ |</dev>
+<ref>JayP188.7</ref><dev>koi caṃdana phūlanha janu phūlī koi ajāna bīrau tara bhūlī |</dev>
+<ref>JayP188d</ref><dev>koī phūla pāva koi pātī hātha jehi ka jaha āṁṭa koi siuṁ hāra cīra arujhānī jahāṁ chuvai tahaṁ kāṁṭa |</dev>
+<ref>JayP189.1</ref><dev>phara phūlanha saba ḍāri aunāīṃ jhuṁḍa <cvb>bāṁdhi</cvb> <cvb>kai</cvb> paṃcami gāīṃ |</dev>
+<ref>JayP189.2</ref><dev>bāje ḍhola ḍaṃḍa au bherī maṃdira tūra jhāṁjha cahuṁ pherī |</dev>
+<ref>JayP189.3</ref><dev>saṃkha sīṃga ḍapha saṃgama bāje baṃsakāri mahuvara sura sāje |</dev>
+<ref>JayP189.4</ref><dev>auru kahā jeta bājana bhale bhāṁti bhāṁti saba bājata cale |</dev>
+<ref>JayP189.5</ref><dev>rathanha cad̤hīṃ saba rūpa sohāīṃ <cvb>lai</cvb> basaṃta mad̤ha maṁḍapa sidhāīṃ |</dev>
+<ref>JayP189.6</ref><dev>navala basaṃta navala vai bārīṃ seṃdura bukkā hoi dhamārī |</dev>
+<ref>JayP189.7</ref><dev>khinahiṃ calahiṃ khina cāṁcari hoī nāṁca koḍa bhūlā saba koī |</dev>
+<ref>JayP189d</ref><dev>seṃdura kheha uṭhā tasa gagana bhaeu saba rāta rāti sakala mahi dharatī rāta birikha bana pāta |</dev>
+<ref>JayP190.1</ref><dev>ehi bidhi khelata siṃghala rānī mahādeva mad̤ha jāya tulānī |</dev>
+<ref>JayP190.2</ref><dev>sakala devatā dekhaiṃ lāge disṭi pāpa saba tinhake bhāge |</dev>
+<ref>JayP190.3</ref><dev>ye kabilāsa sunī ācharīṃ kahaṁ huta āīṃ paramesarīṃ |</dev>
+<ref>JayP190.4</ref><dev>koī kahai paduminīṃ āī koi kahai sasi nakhata tarāīṃ |</dev>
+<ref>JayP190.5</ref><dev>koī kahai phūla phulavārīṃ bhūlai sabai <cvb>dekhi</cvb> saba bārīṃ |</dev>
+<ref>JayP190.6</ref><dev>eka surūpa au seṃdura sāre jānahuṁ diyā sakala mahi bāre |</dev>
+<ref>JayP190.7</ref><dev>mu rchi pare jāṁvata je johe jānahuṁ miriga devārī mohe |</dev>
+<ref>JayP190d</ref><dev>koī parā bhaṁvara hoi bāsa līnha janu cāṁpa koi pataga bhā dīpaka <cvb>hoi</cvb> adhajara tana kāṁpa |</dev>
+<ref>JayP191.1</ref><dev>padumāvati gai deva duārū bhītara maṁḍapa kīnha paisārū |</dev>
+<ref>JayP191.2</ref><dev>devahi saṃsau bhā jiya kerā bhāgauṃ kehi disi maṁḍapa gherā |</dev>
+<ref>JayP191.3</ref><dev>eka johāra kīnha au dūjā tisaraiṃ <cvb>āi</cvb> cad̤hāenhi pūjā |</dev>
+<ref>JayP191.4</ref><dev>phara phūlanha saba maṁḍapa bharāvā caṃdana agara deva nahavāvā |</dev>
+<ref>JayP191.5</ref><dev><cvb>bhari</cvb> seṃdura āgeṃ hoi kharī parasi deva au pāenha parī |</dev>
+<ref>JayP191.6</ref><dev>auru sahelīṃ sabai biyāhīṃ mo kahaṁ deva katahuṁ bara nāhīṃ |</dev>
+<ref>JayP191.7</ref><dev>hauṃ niraguni jeiṁ kīnha na sevā guni niraguni dātā tumha devā |</dev>
+<ref>JayP191d</ref><dev>bara sajoga mohi meravahu kalasa jāti hauṃ <cvb>māni</cvb> jehi dina iṃchā pūjai begi cad̤hāvauṃ <cvb>āni</cvb> |</dev>
+<ref>JayP192.1</ref><dev>iṃchi iṃchi binaī jasi jānī puni kara <cvb>jori</cvb> ṭhād̤hi bhai rānī |</dev>
+<ref>JayP192.2</ref><dev>utara ko dei deva <cvb>mari</cvb> gaeū sabada akūṭa maṁḍapa mahaṁ bhaeū |</dev>
+<ref>JayP192.3</ref><dev><cvb>kāṭi</cvb> pabārā jaisa parevā mara bhā īsa auru ko devā |</dev>
+<ref>JayP192.4</ref><dev>bhae binu jiu nāvata au ojhā bikha bhai pūri kāla bhā gojhā |</dev>
+<ref>JayP192.5</ref><dev>jo dekhaiṃ janu bisahara ḍasā <cvb>dekhi</cvb> carita padumāvati haṁsā |</dev>
+<ref>JayP192.6</ref><dev>bhala hama <cvb>āi</cvb> manāvā devā gā janu soi ko mānai sevā |</dev>
+<ref>JayP192.7</ref><dev>ko iṃchā puravai dukha dhovā jehi <cvb>mani</cvb> āe so tani tani sovā |</dev>
+<ref>JayP192d</ref><dev>jehi <cvb>dhari</cvb> sakhī uṭhāvahiṃ sīsa bikala tehi ḍola dhara koi jīva na jānai mukha re bakata kubola |</dev>
+<ref>JayP193.1</ref><dev>tatakhana <cvb>āi</cvb> sakhī bihasānī kautuka eka na dekhahu rānī |</dev>
+<ref>JayP193.2</ref><dev>puruba bāra koi jogī chāe na janauṃ kaiṃna desa sauṃ āe |</dev>
+<ref>JayP193.3</ref><dev>janu unha joga taṃta aba khelā siddha hoi nisare saba celā |</dev>
+<ref>JayP193.4</ref><dev>unha mahaṁ eka jo gurū kahāvā janu gura dai kāhūṁ baurāvā |</dev>
+<ref>JayP193.5</ref><dev>kuṁvara batīsau lakkhana rātā dasaeṁ lakhana kahai eka bātā |</dev>
+<ref>JayP193.6</ref><dev>jānahuṁ āhi gopicaṃda jogī kai so bharathari āhi biyogī |</dev>
+<ref>JayP193.7</ref><dev>vai piṃgalā gae kajarī ārana yaha siṃghala dahuṁ so kehi kārana |</dev>
+<ref>JayP193d</ref><dev>yaha mūrati yaha muṃdrā hama na dekhā audhūta jānahuṁ hohiṃ na jogī kehu rājā kai pūta |</dev>
+<ref>JayP194.1</ref><dev><cvb>suni</cvb> so bāta rānī siuṁ cad̤hī kahāṁ so jogī dekhauṃ mad̤hī |</dev>
+<ref>JayP194.2</ref><dev><cvb>lai</cvb> saṁga sakhī kīnha tahaṁ pherā jogihi āi jānu acharinha gherā |</dev>
+<ref>JayP194.3</ref><dev>naina kacora pema mada bhare bhai sudisṭi jogī sauṃ ḍhare |</dev>
+<ref>JayP194.4</ref><dev>jogīṃ disṭi disṭi so līnhā naina rūpa nainanha jiu dīnhā |</dev>
+<ref>JayP194.5</ref><dev>jo madhu cahata parā tehi pāleṃ sudhi na rahī ohi eka piyāleṃ |</dev>
+<ref>JayP194.6</ref><dev>parā māṁti gorakha kā celā jiu tana <cvb>chāṁd̤i</cvb> saraga kahaṁ khelā |</dev>
+<ref>JayP194.7</ref><dev>kiṃgarī gahe ju huta bairāgī maratihuṁ bāra uhai dhuni lāgī |</dev>
+<ref>JayP194d</ref><dev>jehi dhaṃdhā jākara mana lāgai sapanehu sūjhu so dhaṃdha tehi kārana tapasī tapa sādhahiṃ pema mana baṃdha |</dev>
+<ref>JayP195.1</ref><dev>padamāvati jasa sunā bakhānū sahasahuṁ karāṁ dekhā tasa bhānū |</dev>
+<ref>JayP195.2</ref><dev>melesi caṃdana maku khinu jāgā adhikau sūta siara tana lāgā |</dev>
+<ref>JayP195.3</ref><dev>taba caṃdana ākhara hiyaṁ likhe bhīkha lei tui jogi na sikhe |</dev>
+<ref>JayP195.4</ref><dev>bāra āi taba gā taiṃ soī kaiseṃ bhuguti parāpati hoī |</dev>
+<ref>JayP195.5</ref><dev>aba jauṃ sūra ahai sasi rātā āihi <cvb>cad̤hi</cvb> so gaṃgana puni sātā |</dev>
+<ref>JayP195.6</ref><dev><cvb>likhi</cvb> <cvb>kai</cvb> bāta sakhī sauṃ kahī ihai ṭhāuṁ hauṃ bārati ahī |</dev>
+<ref>JayP195.7</ref><dev>paragaṭa hoi tau hoi asa bhaṃgū jagata diyā kara hoi pataṃgū |</dev>
+<ref>JayP195d</ref><dev>jāsauṃ hauṃ cakha herauṃ soi ṭhāuṁ jiu dei ehi dukha kabahuṁ na nisarauṃ ko hatyā asi lei |</dev>
+<ref>JayP196.1</ref><dev>kīnha payāna sabhanha ratha hāṁkā parabata <cvb>chād̤i</cvb> siṃghala gad̤ha tākā |</dev>
+<ref>JayP196.2</ref><dev>bhae bali sabai devatā balī hatyārini hatyā <cvb>lai</cvb> calī |</dev>
+<ref>JayP196.3</ref><dev>ko asa hitū mue gaha bāhīṃ jauṃ pai jiu apane tana nāhīṃ |</dev>
+<ref>JayP196.4</ref><dev>jauṃ lagi jiu āpana saba koī binu jiu sabai nirāpana hoī |</dev>
+<ref>JayP196.5</ref><dev>bhāi baṃdhu au loga piyārā binu jiya gharī na rākhai pārā |</dev>
+<ref>JayP196.6</ref><dev>binu jiya piṃḍa chāra kara kūrā chāra milāva soi hitu pūrā |</dev>
+<ref>JayP196.7</ref><dev>tehi jiya binu aba mara bhā rājā ko <cvb>uṭhi</cvb> baiṭhi garava sauṃ gājā |</dev>
+<ref>JayP196d</ref><dev>parī kayā bhuiṁ rovai kahāṁ re jiya bali bhīvaṁ ko <cvb>uṭhāi</cvb> baisārai bāju piyāre jīvaṁ |</dev>
+<ref>JayP197.1</ref><dev>padumāvati so maṁdira paīṭhī haṁsata siṃghāsana <cvb>jāi</cvb> baīṭhī |</dev>
+<ref>JayP197.2</ref><dev>nisi sūtī <cvb>suni</cvb> kathā bihārī bhā bihāna au sakhī haṁkārī |</dev>
+<ref>JayP197.3</ref><dev>deva <cvb>pūji</cvb> jaba āiuṁ kālī sapana eka nisi dekhiuṁ ālī |</dev>
+<ref>JayP197.4</ref><dev>janu sasi udau puruba disi kīnhā au rabi udau pachivaṁ disi līnhā |</dev>
+<ref>JayP197.5</ref><dev>puni <cvb>cali</cvb> suruja cāṁda pahaṁ āvā cāṁda suruja duhuṁ bhaeu merāvā |</dev>
+<ref>JayP197.6</ref><dev>dina au rāti jānu bhae ekā rāma <cvb>āi</cvb> rāvana gad̤ha cheṃkā |</dev>
+<ref>JayP197.7</ref><dev>tasa kichu kahā na jāi nikhedhā arajuna bāna rāhu gā bedhā |</dev>
+<ref>JayP197d</ref><dev>janahuṁ laṃka saba lūsī hanūṁ bidhāṁsī bāri <cvb>jāgi</cvb> uṭhiuṁ asa dekhata sakhi so kahahu <cvb>bicāri</cvb> |</dev>
+<ref>JayP198.1</ref><dev>sakhī so bolī sapana vicārū kālhi jo gaihu deva ke bārū |</dev>
+<ref>JayP198.2</ref><dev><cvb>pūji</cvb> manāihu bahuta binātī parasana <cvb>āi</cvb> bhaeu tumha rātī |</dev>
+<ref>JayP198.3</ref><dev>sūruja purukha cāṁda tumha rānī asa bara deva milāvā <cvb>ānī</cvb> |</dev>
+<ref>JayP198.4</ref><dev>pachivaṁ khaṃḍa kara rājā koī so āvai bara tumha kahaṁ <cvb>hoī</cvb> |</dev>
+<ref>JayP198.5</ref><dev>puni kachu jūjhi lāgi tumha rāmā rāvana sauṃ hoihi saṁgrāmā |</dev>
+<ref>JayP198.6</ref><dev>cāṁda suruja siuṁ hoi biāhū bāri bidhāṁsaba bedhaba rāhū |</dev>
+<ref>JayP198.7</ref><dev>jasa ūkhā kahaṁ anirudha milā <cvb>meṃṭi</cvb> na jāi likhā purubilā |</dev>
+<ref>JayP198d</ref><dev>sukha sohāga hai tumha kahaṁ pāna phūla rasa bhoga āju kālhi bhā cāhia asa sapane ka saṁjoga |</dev>
+<ref>JayP199.1</ref><dev><cvb>kai</cvb> basaṃta padumāvati gaī rājahiṃ taba basaṃta sudhi bhaī |</dev>
+<ref>JayP199.2</ref><dev>jauṃ jāgā na basaṃta na bārī nā so khela na khelanihārī |</dev>
+<ref>JayP199.3</ref><dev>nā ohi kī vai rūpa sahāīṃ gaiṃ herāi puni disṭi na āīṃ |</dev>
+<ref>JayP199.4</ref><dev>phūla jhareṃ sūkhīṃ phulavārīṃ disṭi parīṃ ukaṭhīṃ saba jhārīṃ |</dev>
+<ref>JayP199.5</ref><dev>keiṁ yaha basata basaṃta ujārā gā so cāṁda aṁthavā <cvb>lai</cvb> tārā |</dev>
+<ref>JayP199.6</ref><dev>aba tehi bina jaga bhā aṁdhakūpā vaha sukha chāṁha jarauṃ hauṃ dhūpā |</dev>
+<ref>JayP199.7</ref><dev>biraha davā asa ko re bujhāvā ko prītama seṃ karai merāvā |</dev>
+<ref>JayP199d</ref><dev>hiā dekhi so caṃdana ghevarā mili kai likhā bichova hātha <cvb>mīṃji</cvb> sira dhunai so raiṃvai jo niciṃta asa sova |</dev>
+<ref>JayP200.1</ref><dev>jasa bichova jala mīna duhelā jala huta <cvb>kād̤hi</cvb> agini mahaṁ melā |</dev>
+<ref>JayP200.2</ref><dev>caṃdana āṁka dāga <cvb>hoi</cvb> pare bujhahiṃ na te ākhara parajare |</dev>
+<ref>JayP200.3</ref><dev>janahuṁ sarāgini <cvb>hoi</cvb> <cvb>hoi</cvb> lāge saba bana <cvb>dāgi</cvb> siṃgha bana dāge |</dev>
+<ref>JayP200.4</ref><dev>jare miriga banakhaṁḍa tehi jvālā au te jare baiṭha tahaṁ chālā |</dev>
+<ref>JayP200.5</ref><dev>kata te aṁka likhā jehiṃ sovā maku āṁkata nahiṃ karata bichovā |</dev>
+<ref>JayP200.6</ref><dev>jasa dukhaṃta kahaṁ sākuṃtalā mādhaunalahi kāma kaṃdalā |</dev>
+<ref>JayP200.7</ref><dev>bhae aṃka nala jaisa damāvati nainā <cvb>mūṁdi</cvb> chapī padumāvati |</dev>
+<ref>JayP200d</ref><dev><cvb>āi</cvb> basaṃtā chapi rahā <cvb>hoi</cvb> phūlanha ke bhesa kehi bidhi pāvauṃ bhaṁvara <cvb>hoi</cvb> kaunu so guru upadesa |</dev>
+<ref>JayP201.1</ref><dev>rovai ratana māla janu cūrā jahaṁ hoi ṭhād̤ha hoi tahāṁ kūrā |</dev>
+<ref>JayP201.2</ref><dev>kahāṁ basaṃta so kokila bainā kahāṁ kusuma ali bedhai nainā |</dev>
+<ref>JayP201.3</ref><dev>kahaṁ so sūrati parī jo ḍīṭhī <cvb>kād̤hi</cvb> līnha jiu hieṁ paīṭhī |</dev>
+<ref>JayP201.4</ref><dev>kahāṁ so darasa parasa jehi lāhā jauṃ so basaṃta karīlahi kāhā |</dev>
+<ref>JayP201.5</ref><dev>pāta bichova rūkha jauṃ phūlā so mahuvā rovai asa bhūlā |</dev>
+<ref>JayP201.6</ref><dev>ṭapakai mahuva āṁsu tasa paraī <cvb>hoi</cvb> mahuvā basaṃta jeuṁ jharaī |</dev>
+<ref>JayP201.7</ref><dev>mora basaṃta so padumini bārī jehi binu bhaeu basaṃta ujārī |</dev>
+<ref>JayP201d</ref><dev>pāvā nabala basaṃta bana bahu ārati bahu copa aisa na jānā aṃta <cvb>hoi</cvb> pāta jharahiṃ hoi koṃpa |</dev>
+<ref>JayP202.1</ref><dev>are malicha bisavāsī devā kata maiṃ <cvb>āi</cvb> kīnhi tori sevā |</dev>
+<ref>JayP202.2</ref><dev>āpani nāu cad̤hai jo deī so tau pāra utārai <cvb>kheī</cvb> |</dev>
+<ref>JayP202.3</ref><dev>suphala lāgi paga ṭekeuṁ torā suvā ka seṃvara tūṁ bhā morā |</dev>
+<ref>JayP202.4</ref><dev>pāhana <cvb>cad̤hi</cvb> jo cahai bhā pārā so aiseṃ būd̤ai maṁjhadhārā |</dev>
+<ref>JayP202.5</ref><dev>pāhana sevāṁ kāha pasījā jarama na paluhai jauṃ niti bhījā |</dev>
+<ref>JayP202.6</ref><dev>bāura soi jo pāhana pūjā sakati ko bhāra lei sira dūjā |</dev>
+<ref>JayP202.7</ref><dev>kāhe na pūjia soi nirāsā mueṁ jiata mana jākari āsā |</dev>
+<ref>JayP202d</ref><dev>sidha tareṃḍā jinha gahā pāra bhae tehi sātha te pari būd̤e vāra hī bheṃḍa poṃchi jinha hātha |</dev>
+<ref>JayP203.1</ref><dev>deva kahā sunu baure rājā debahiṃ agumana mārā gājā |</dev>
+<ref>JayP203.2</ref><dev>jauṃ pahaleṃ apune sira paraī so kā kāhu kai dharahari karaī |</dev>
+<ref>JayP203.3</ref><dev>padumāvati rājā kai bārī <cvb>āi</cvb> sakhinha sauṃ maṁḍapa ughārī |</dev>
+<ref>JayP203.4</ref><dev>jaiseṃ cāda gohane saba tārā pareuṁ bhulāi <cvb>dekhi</cvb> uṁjiyārā |</dev>
+<ref>JayP203.5</ref><dev>camakai dasana bīja kī nāīṃ naina cakra jamakāta bhavāīṃ |</dev>
+<ref>JayP203.6</ref><dev>hauṃ tehi dīpa pataṁga <cvb>hoi</cvb> parā jiu jama gahā saraga <cvb>lai</cvb> dharā |</dev>
+<ref>JayP203.7</ref><dev>bahuri na jānauṃ dahuṁ kā bhaī dahuṁ kabilāsa ki kahaṁ upasaī |</dev>
+<ref>JayP203d</ref><dev>aba hauṃ marauṃ nisāṁsī hieṁ na āvai sāṁsa rogiā kī ko cālai baidahiṃ jahāṁ upāsa |</dev>
+<ref>JayP204.1</ref><dev>anu hauṃ dokha dehuṁ kā kāhū saṃgī kayā mayā nahiṃ tāhū |</dev>
+<ref>JayP204.2</ref><dev>hateu piyārā mīṃta bichoī sātha na lāgi āpu gai <cvb>soī</cvb> |</dev>
+<ref>JayP204.3</ref><dev>kā maiṃ kīnha jo kāyā pokhī dūkhata mohi āpu niradokhī |</dev>
+<ref>JayP204.4</ref><dev>phāgu basaṃta <cvb>kheli</cvb> gai gorī mohi tana <cvb>lāi</cvb> āga dai horī |</dev>
+<ref>JayP204.5</ref><dev>aba asa kāha chāra sira melaiṃ chārai houṁ phāgu tasa khelaiṃ |</dev>
+<ref>JayP204.6</ref><dev>kata tapa kīnha <cvb>chād̤i</cvb> <cvb>kai</cvb> rājū āhara gaeu na bhā sidha kājū |</dev>
+<ref>JayP204.7</ref><dev>pāeuṁ nahiṃ <cvb>hoi</cvb> jogī jatī aba sara cad̤haiṃ jarauṃ jasi satī |</dev>
+<ref>JayP204d</ref><dev><cvb>āi</cvb> jo prītama phiri gaeu milā na <cvb>āi</cvb> vasaṃta aba tana horī <cvb>ghāli</cvb> <cvb>kai</cvb> <cvb>jāri</cvb> karauṃ bhasamaṃta |</dev>
+<ref>JayP205.1</ref><dev>kakanūṁ paṃkhi jaisa sara sājā sara <cvb>cad̤hi</cvb> tabahiṃ jarā caha rājā |</dev>
+<ref>JayP205.2</ref><dev>sakala devatā <cvb>āi</cvb> tulāne dahuṁ kasa hoi deva asthāne |</dev>
+<ref>JayP205.3</ref><dev>biraha āgi bajrāgi asūjhā jarai sūra na bujhāeṁ būjhā |</dev>
+<ref>JayP205.4</ref><dev>tehi ka jarata uṭhai bajrāgi tīnau loka jarahiṃ tehi āgī |</dev>
+<ref>JayP205.5</ref><dev>abahuṁ kī gharī cinagi tehiṃ chūṭhahiṃ <cvb>jari</cvb> pahāra pāhana saba phūṭahiṃ |</dev>
+<ref>JayP205.6</ref><dev>devatā sabai bhasama gae jāhīṃ chāra sameṭe pāuba nāhīṃ |</dev>
+<ref>JayP205.7</ref><dev>dharatī saraga hoi saba tātā hai koī ehiṃ rākha vidhātā |</dev>
+<ref>JayP205d</ref><dev>muhamada ciragī anaṁga kī <cvb>suni</cvb> mahi gaṁgana ḍerāi dhani birahī au dhani hiyā jehi saba āgi samāi |</dev>
+<ref>JayP206.1</ref><dev>hanivaṁta bīra laṃka jeiṁ jārī parabata ohi rahā rakhavārī |</dev>
+<ref>JayP206.2</ref><dev>baiṭha tahāṁ bhā laṃkā tākā chaṭhaeṁ māsa dei <cvb>uṭhi</cvb> hāṁkā |</dev>
+<ref>JayP206.3</ref><dev>tehi kī āgi uhau puni jarā laṃkā <cvb>chād̤i</cvb> palaṃkā parā |</dev>
+<ref>JayP206.4</ref><dev><cvb>jāi</cvb> tahāṁ yaha kahā saṁdesū pārabatī au jahāṁ mahesū |</dev>
+<ref>JayP206.5</ref><dev>jogī āhi biyogī koī tumhare maṁḍapa āgi tehiṃ boī |</dev>
+<ref>JayP206.6</ref><dev>jare laṁgūra so rāte uhāṁ nikasi jo bhāge bhae karamuṁhāṁ |</dev>
+<ref>JayP206.7</ref><dev>tehi bajrāgi jarai hauṃ lāgā bajjara aṃga jarata <cvb>uṭhi</cvb> bhāgā |</dev>
+<ref>JayP206d</ref><dev>rāvana laṃkā maiṃ ḍahī oiṁ hama ḍāhana āi kanai pahāra hota hai rāvaṭa ko rākhai <cvb>gahi</cvb> pāi |</dev>
+<ref>JayP207.1</ref><dev>tatakhana pahuṁcā <cvb>āi</cvb> mahesū bāhana baila kusṭi kara bhesū |</dev>
+<ref>JayP207.2</ref><dev>kāṁthari kayā had̤āvari bāṁdhe ruṃḍamāla au hatyā kāṁdhe |</dev>
+<ref>JayP207.3</ref><dev>sesa nāga au kaṃṭhai mālā tana bibhūti hastī kara chālā |</dev>
+<ref>JayP207.4</ref><dev>pahuṁcī rudra kaṁvala ke gaṭā sasi mātheṃ au surasari jaṭā |</dev>
+<ref>JayP207.5</ref><dev>caṁvara ghaṃṭa au ḍaṁvarū hāthā gaurā pārabatī dhani sāthā |</dev>
+<ref>JayP207.6</ref><dev>au hanivaṃta bīra saṁga āvā dhare beṣa janu baṃdara chāvā |</dev>
+<ref>JayP207.7</ref><dev>autahiṃ kahenhi na lāvahu āgī tākari sapatha jarahu jehi āgī |</dev>
+<ref>JayP207d</ref><dev><cvb>kai</cvb> <cvb>tapa</cvb> karai na pārehu kai re nasāehu joga jiyata jīya kasa kād̤hahu kahahu so mohiṃ biyoga |</dev>
+<ref>JayP208.1</ref><dev>kahesi ko mohi bātanha belavāṁvā hatyā kera na tohiṃ ḍara āvā |</dev>
+<ref>JayP208.2</ref><dev>jarai dehu dukha jarauṃ apārā nistari parauṃ jarauṃ eka bārā |</dev>
+<ref>JayP208.3</ref><dev>jasa bhartahari lāgi piṃgalā mo kahaṁ padumāvati siṃghalā |</dev>
+<ref>JayP208.4</ref><dev>maiṃ puni tajā rāja au bhogū <cvb>suni</cvb> so nāuṃ līnhā tapa jogū |</dev>
+<ref>JayP208.5</ref><dev>yaha mad̤ha seeuṁ <cvb>āi</cvb> nirāsā gai so <cvb>pūji</cvb> mana pūji na āsā |</dev>
+<ref>JayP208.6</ref><dev>teiṁ yaha jiu dādhe para dādhā ādhā <cvb>nikasi</cvb> rahā ghaṭa ādhā |</dev>
+<ref>JayP208.7</ref><dev>jo adhajarata so belaṁba na lāvā karata belaṃba bahuta dukha pāvā |</dev>
+<ref>JayP208d</ref><dev>etanā bola kahata mukha uṭhī biraha kī āgi jauṃ mahesa nahiṃ bujhāvata sakala jagata huti lāgi |</dev>
+<ref>JayP209.1</ref><dev>pārabatī mana upanā cāū dekhauṃ kuṁvara kera sata bhāū |</dev>
+<ref>JayP209.2</ref><dev>dahuṁ yaha bīca ki pemahi pūjā tana mana eka ki māraga dūjā |</dev>
+<ref>JayP209.3</ref><dev>bhai surūpa jānahuṁ apacharā <cvb>bihasi</cvb> kuṁvara kara āṁcara dharā |</dev>
+<ref>JayP209.4</ref><dev>sunahu kuṁvara mosoṃ eka bātā jasa raṁga mora na aurahi rātā |</dev>
+<ref>JayP209.5</ref><dev>au bidhi rūpa dīnha hai tokāṁ uṭhā so sabada <cvb>jāi</cvb> siva lokāṁ |</dev>
+<ref>JayP209.6</ref><dev>taba hauṃ to kahaṁ iṃdra paṭhāī gai padumini taiṃ āchari pāī |</dev>
+<ref>JayP209.7</ref><dev>aba taju jarana marana tapa jogū mo soṃ mānu janama bhari bhogū |</dev>
+<ref>JayP209d</ref><dev>hauṃ āchari kabilāsa kī jehi sari <cvb>pūji</cvb> na koi mohi <cvb>taji</cvb> saṁvari jo ohi sarasi kauna lābhu tohi hoi |</dev>
+<ref>JayP210.1</ref><dev>bhalehiṃ raṃga tohi āchari rātā mohi dosareṃ sauṃ bhāva na bātā |</dev>
+<ref>JayP210.2</ref><dev>mohi ohi saṁvari mueṁ asa lāhā naina so dekhasi pūṁchasi kāhā |</dev>
+<ref>JayP210.3</ref><dev>abahīṃ tehi jiu <cvb>dei</cvb> na pāvā tohi asi āchari ṭhād̤ha manāvā |</dev>
+<ref>JayP210.4</ref><dev>jauṃ jiu dehuṁ ohi ki āsāṁ na janauṃ kāha hoi kabilāsāṁ |</dev>
+<ref>JayP210.5</ref><dev>hauṃ kabilāsa kāha <cvb>lai</cvb> karaūṁ soi kabilāsa lāgi ohi maraūṁ |</dev>
+<ref>JayP210.6</ref><dev>ohi ke bāra jīvanahiṃ vārauṃ sira <cvb>utāri</cvb> nevachāvari ḍārauṃ |</dev>
+<ref>JayP210.7</ref><dev>tākari cāha kahai jo <cvb>āī</cvb> duau jagata tehi deuṁ bad̤āī |</dev>
+<ref>JayP210d</ref><dev>ohi na mori kachu āsā hauṃ ohi āsa kareuṁ teri nirāsa prītama kahaṁ jiu na deuṁ kā deuṁ |</dev>
+<ref>JayP211.1</ref><dev>gauraiṃ <cvb>haṁsi</cvb> mahesa soṃ kahā niscaiṃ yahu birahānala dahā |</dev>
+<ref>JayP211.2</ref><dev>niscaiṃ yaha ohi kārana tapā parimala pema na āchai chapā |</dev>
+<ref>JayP211.3</ref><dev>niscaiṃ pema pīra yaha jāgā kasata kasauṭī kaṃcana lāgā |</dev>
+<ref>JayP211.4</ref><dev>badana piyara jala ḍabhakahiṃ naināṁ paragaṭa duau pema ke baināṁ |</dev>
+<ref>JayP211.5</ref><dev>yaha ohi lāgi jarama ehi sījhā cahai na aurahi ohīṃ rījhā |</dev>
+<ref>JayP211.6</ref><dev>mahādeva devanha ke pitā tumhārī sarana rāma rana jitā |</dev>
+<ref>JayP211.7</ref><dev>ehū kahaṁ tasi mayā karehū puravahu āsa ki hatyā lehū |</dev>
+<ref>JayP211d</ref><dev>hatyā dui jo cad̤hāehu kāṁdhe abahuṁ na ge aparādha tīsari lehu ehu <cvb>kai</cvb> māṁtheṃ jauṃ re lei kai sātha |</dev>
+<ref>JayP212.1</ref><dev><cvb>suni</cvb> <cvb>kai</cvb> mahādeva <cvb>kai</cvb> bhākhā siddha puruṣa rājaiṃ mana lakhā |</dev>
+<ref>JayP212.2</ref><dev>siddha aṃga nahiṃ baiṭhai mākhī siddha palaka nahiṃ lāgai āṁkhī |</dev>
+<ref>JayP212.3</ref><dev>siddhahi saṃga hoi nahiṃ chāyā siddhahi hoi na bhūkha au māyā |</dev>
+<ref>JayP212.4</ref><dev>jauṃ jaga siddhi gosāīṃ kīnhā paragaṭa guputa rahai ko cīnhā |</dev>
+<ref>JayP212.5</ref><dev>baila cad̤hā kusṭī kai mesū girijāpati sata āhi mahesū |</dev>
+<ref>JayP212.6</ref><dev>cīnhai soi rahai tehi khojā jasa bikrama au rājā bhojā |</dev>
+<ref>JayP212.7</ref><dev><cvb>kai</cvb> jiyaṁ taṃta maṃta so herā gaeu herāi jabahi bhā merā |</dev>
+<ref>JayP212d</ref><dev>binu guru paṃtha na pāia bhūlai soi jo meṃṭa jogī siddha hoi taba jaba gorakha sauṃ bheṃṭa |</dev>
+<ref>JayP213.1</ref><dev>tatakhana ratanaseni gahabarā <cvb>chād̤i</cvb> ḍaphāra pāu <cvb>lai</cvb> parā |</dev>
+<ref>JayP213.2</ref><dev>mātā pite janami kata pālā jauṃ pai phāṁda pema giyaṁ ghālā |</dev>
+<ref>JayP213.3</ref><dev>dharatī saraga mile huta doū kata nirāra <cvb>kai</cvb> dīnha bichoū |</dev>
+<ref>JayP213.4</ref><dev>padika padāratha kara huṁti khovā ṭūṭahiṃ ratana ratana tasa rovā |</dev>
+<ref>JayP213.5</ref><dev>gaṁgana meā jasa barisahiṃ bhale puhumi <cvb>apūri</cvb> salila <cvb>hoi</cvb> cale |</dev>
+<ref>JayP213.6</ref><dev>sāera upaṭi sikhara gā pāṭī jarai pāni pāhana hiya phāṭī |</dev>
+<ref>JayP213.7</ref><dev>pavana pāni <cvb>hoi</cvb> <cvb>hoi</cvb> saba giraī pema ke phāṁda kou jani paraī |</dev>
+<ref>JayP213d</ref><dev>tasa rovai jasa jarai jiu garai rakata au māṁsu rovaṁ rovaṁ saba rovahiṃ sota sota <cvb>bhari</cvb> āṁsu |</dev>
+<ref>JayP214.1</ref><dev>rovata <cvb>būd̤i</cvb> uṭhā saṁsārū mahādeva taba bhaeu mayārū |</dev>
+<ref>JayP214.2</ref><dev>kahesi na rova bahuta tau rovā aba sara bhā dārida khovā |</dev>
+<ref>JayP214.3</ref><dev>jo dukha sahai hoi sukha okāṁ dukha binu sukha na jāi sivalokāṁ |</dev>
+<ref>JayP214.4</ref><dev>aba tūṁ siddha bhayā sidhi pāī darapata kayā chūṭi gai kātha |</dev>
+<ref>JayP214.5</ref><dev>kahauṃ bāta aba <cvb>hoi</cvb> upadesī lāgu paṃtha bhūle paradesī |</dev>
+<ref>JayP214.6</ref><dev>jauṃ lahi cora seṃdha nahiṃ deī rājā kera na mūṁsai peī |</dev>
+<ref>JayP214.7</ref><dev>cad̤hai to jāi bāra vaha khūṁdī parai to seṃdhi sīsa sauṃ mūṁdī |</dev>
+<ref>JayP214d</ref><dev>kahauṃ toho siṃghala gad̤ha hai khaṁḍa sāta cad̤hāu phirā na koī jiata jiu saraga paṃtha dai pāu |</dev>
+<ref>JayP215.1</ref><dev>gad̤ha tasa bāṁka jaisi tori kāyā <cvb>parakhi</cvb> dekhu taiṃ ohi kī chāyā |</dev>
+<ref>JayP215.2</ref><dev>pāia nāhiṃ jūjhi haṭhi kīnhe jeiṁ pāvā teiṁ āpuhi cīnhe |</dev>
+<ref>JayP215.3</ref><dev>nau paurī tehi gad̤ha maṁjhiārā au tahaṁ phirahiṃ pāṁca koṭavārā |</dev>
+<ref>JayP215.4</ref><dev>dasavaṃ duāra guputa eka nāṁkī agama cad̤hāva bāṭa suṭhi bāṁkī |</dev>
+<ref>JayP215.5</ref><dev>bhedī koi jāi ohi ghāṭī jauṃ <cvb>lai</cvb> bheda cad̤hai <cvb>hoi</cvb> cāṁṭī |</dev>
+<ref>JayP215.6</ref><dev>gad̤ha tara suraṁga kuṃḍa avagāhā tehi mahaṁ paṃtha kahauṃ tohi pāhāṁ |</dev>
+<ref>JayP215.7</ref><dev>cora <cvb>paiṭhi</cvb> jasa seṃdhi saṁvārī juā paiṃta jeuṁ lāva juārī |</dev>
+<ref>JayP215d</ref><dev>jasa marajiyā samuṁda ghaṁsi mārai hātha āva taba sīpa ḍhūṁḍhi lehi ohi saraga duvārī au caḍhu siṃghala dīpa |</dev>
+<ref>JayP216.1</ref><dev>dasavaṁ duvāra tāru kā lekhā <cvb>ulaṭi</cvb> disṭi jo lāva so dekhā |</dev>
+<ref>JayP216.2</ref><dev>jāi so jāi sāṁsa mana baṃdī jasa dhaṁsi līnha kānha kāliṃdī |</dev>
+<ref>JayP216.3</ref><dev>tūṁ mana nāṁthu <cvb>māri</cvb> <cvb>kai</cvb> svāṁsā jauṃ pai marahi āpuhi karu nāṁsā |</dev>
+<ref>JayP216.4</ref><dev>paragaṭa lokacāra kahu bātā guputa lāu jāsauṃ mana rātā |</dev>
+<ref>JayP216.5</ref><dev>hauṃ hauṃ kahata maṃta saba koī jauṃ tūṁ nāhiṃ āhi saba soī |</dev>
+<ref>JayP216.6</ref><dev>jiyatahi jau re marai eka bārā puni kata mīcu ko mārai pārā |</dev>
+<ref>JayP216.7</ref><dev>āpuhi guru so āpuhi celā āpuhi saba so āpu akelā |</dev>
+<ref>JayP216d</ref><dev>āpuhi mīcu jiyana puni āpuhi tana mana soi āpuhi āpu karai jo cāhai kahāṁ ka dosara koi |</dev>
+<ref>JayP217.1</ref><dev>siddhi goṭikā rājaiṃ pāvā au bhai siddhi ganesa manāvā |</dev>
+<ref>JayP217.2</ref><dev>jaba saṃkara sidhi dīnha goṭekā parī hūla joginha gad̤ha cheṃkā |</dev>
+<ref>JayP217.3</ref><dev>jasa kharabharā cora mati kīnhī tehi bidhi seṃdhi cāha gad̤ha dīnhī |</dev>
+<ref>JayP217.4</ref><dev>sabai paduminīṃ dekhahiṃ cad̤hīṃ siṃghala ghera gaīṃ uṭha mad̤hīṃ |</dev>
+<ref>JayP217.5</ref><dev>guputa jo rahai cora so sāṁcā paragaṭa hoi jīva nahiṃ bāṁcā |</dev>
+<ref>JayP217.6</ref><dev>paṁvari paṁvari gad̤ha lāga kevārā au rājā sauṃ bhaī pukārā |</dev>
+<ref>JayP217.7</ref><dev>jogī <cvb>āi</cvb> cheṃki gad̤ha mele na janaiṃ kauna desa sauṃ khele |</dev>
+<ref>JayP217d</ref><dev>bhaī rajāesu dekhahu ko bhikhāri aba ḍhīṭha jāu baraji tina āvahu jana dui jāi basīṭha |</dev>
+<ref>JayP218.1</ref><dev><cvb>utari</cvb> basiṭha dui <cvb>āi</cvb> johāre kai tumha jogī kai banijāre |</dev>
+<ref>JayP218.2</ref><dev>bhaī rajāesu āgeṃ khelahu yaha gad̤ha <cvb>chād̤i</cvb> anata <cvb>hoi</cvb> melahu |</dev>
+<ref>JayP218.3</ref><dev>asa lāgehu kehi ke sikha dīnhe āehu marai hathi jiu līnhe |</dev>
+<ref>JayP218.4</ref><dev>ihāṁ iṃdra asa rājā tapā jabahiṃ risāi sūra <cvb>ḍari</cvb> chapā |</dev>
+<ref>JayP218.5</ref><dev>hahu banijāra tau banija besāhahu bhari baipāra lehu jo cāhahu |</dev>
+<ref>JayP218.6</ref><dev>jogī hahu tau juguti soṃ māṁgahu bhuguti lehu <cvb>lai</cvb> māraga lāgahu |</dev>
+<ref>JayP218.7</ref><dev>ihāṁ devatā asa gae hārī tumha patiṃga ko āhi bhikhārī |</dev>
+<ref>JayP218d</ref><dev>tumha jogī bairāgī kahata na mānahu kohu <cvb>māṁgi</cvb> lehu kachu bhi[yā <cvb>kheli</cvb> anata kahuṁ hohu |</dev>
+<ref>JayP219.1</ref><dev>anu hauṃ bhīkha jo āeuṁ leī kasa na leuṁ jauṃ rājā deī |</dev>
+<ref>JayP219.2</ref><dev>padumāvati rājā kai bārī hauṃ jogī tehi lāgi bhikhārī |</dev>
+<ref>JayP219.3</ref><dev>khappara lie bāra bhā māṁgaiṃ bhuguti dei lai māraga lāgaiṃ |</dev>
+<ref>JayP219.4</ref><dev>soī bhuguti parāpati pūjā kahāṁ jāuṁ asa bāra na dūjā |</dev>
+<ref>JayP219.5</ref><dev>aba dhara ihāṁ jīu ohi ṭhāūṁ bhasama hoūṁ pai tajaiṃ na nāūṁ |</dev>
+<ref>JayP219.6</ref><dev>jasa binu prāna piṃḍa hai chūṃchā dharama lāgi kahiahu jauṃ pūṁchā |</dev>
+<ref>JayP219.7</ref><dev>tumha basīṭha rājā kī orā sākhi hohu ehi bhīkhi nihorā |</dev>
+<ref>JayP219d</ref><dev>jogī bāra āva so jehi bhi[yā kai āsa jauṃ nirāsa did̤ha āsana kata gavanai kehu pāsa |</dev>
+<ref>JayP220.1</ref><dev><cvb>suni</cvb> basiṭhanha mana upanī rīsā jau pīsana ghuna jāihi pīsā |</dev>
+<ref>JayP220.2</ref><dev>jogī aisa kahai nahiṃ koī so kahu bāta joga tohi hoī |</dev>
+<ref>JayP220.3</ref><dev>vaha bad̤a rāja iṃdra kara pāṭā dharatī pareṃ saraga ko cāṁṭā |</dev>
+<ref>JayP220.4</ref><dev>jauṃ yaha bāta hoi tahaṁ calī chūṭahiṃ hasti abahi siṃghalī |</dev>
+<ref>JayP220.5</ref><dev>au chūṭahiṃ tahaṁ vajra ke goṭā bisarai bhuguti hohu tumha roṭā |</dev>
+<ref>JayP220.6</ref><dev>jahaṁ lagi disṭi na jāi pasārī tahāṁ pasārasi hātha bhikhārī |</dev>
+<ref>JayP220.7</ref><dev>āgū <cvb>dekhi</cvb> pāva dharu nāthā tahāṁ na heru ṭūṭa jahaṁ māṁthā |</dev>
+<ref>JayP220d</ref><dev>vaha rānī jehi joga hai tehi ka rāja au pāṭa suṃdari jāi rāja ghara jogihi baṃdara kāṭa |</dev>
+

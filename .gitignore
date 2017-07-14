@@ -1,0 +1,10 @@
+app/tmp/cache/models
+app/tmp/cache/persistent
+app/tmp/cache/views/
+app/tmp/logs
+app/Config/core.php
+app/Config/database.php
+app/View/Statistics/predefined_stats.php
+app/Plugin/TinyMCE/.gitignore
+app/Plugin/TinyMCE/.semver
+app/Plugin/TinyMCE/.travis.yml
